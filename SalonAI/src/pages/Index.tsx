@@ -680,12 +680,25 @@ export default function Index() {
       {/* ── HERO ──────────────────────────────────────────────── */}
       <header className="pt-7 pb-10 px-6 text-center">
         <div className="max-w-3xl mx-auto">
+          {/* Back to Salon AI */}
+          <a
+            href="/"
+            className="inline-flex items-center gap-1.5 mb-4 px-3 py-1.5 rounded-full text-xs font-semibold transition-all hover:scale-105"
+            style={{
+              background: "rgba(255,255,255,0.18)",
+              border: "1px solid rgba(255,255,255,0.35)",
+              color: "rgba(255,255,255,0.85)",
+              backdropFilter: "blur(8px)",
+            }}
+          >
+            ← Salon AI
+          </a>
           <div className="text-4xl mb-2">🤖</div>
           <h1
             className="text-4xl md:text-5xl font-black text-white mb-3 drop-shadow-lg"
             style={{ fontFamily: "Orbitron, sans-serif" }}
           >
-            KI Monster Guide 2026
+            KI (Monster) Guide 2026
           </h1>
           <p className="text-lg text-white/90 font-semibold mb-3 max-w-xl mx-auto tracking-wide">
             Monster-Karten — von der Cloud bis zum Agenten
