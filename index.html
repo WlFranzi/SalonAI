@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon AI</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2RZV4QPFD');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sky-light: #E8F2FA;
+  --sky-deep: #7A9DB8;
+  --navy: #1B2E4A;
+  --gold: #D4A84B;
+  --gold-light: #E8CC7A;
+  --accent: #003399;
+  --accent-light: #2255BB;
+  --white-warm: #FAF9F7;
+  --muted-blue: #5F7080;
+  --border: #C5D5E4;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); background: var(--sky-light); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+a { text-decoration: none; color: inherit; }
+
+.star-clip { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.card-surface { background: rgba(255,255,255,0.88); backdrop-filter: blur(4px); border-radius: 20px; border: 1px solid var(--border); }
+
+/* Nav — minimal */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(200,221,240,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); }
+nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+.nav-cta { background: var(--navy); color: var(--white-warm); border-radius: 40px; padding: 8px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
+.nav-cta:hover { background: var(--sky-deep); }
+
+/* Hero — compact */
+.hero { min-height: 56vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: linear-gradient(160deg, #D6E9F5, #C0D8EE, #B0CBE6); padding: 80px 24px 48px; }
+.hero .cloud { position: absolute; background: rgba(255,255,255,0.25); border-radius: 50px; filter: blur(1px); }
+.hero .cloud-1 { top: 10%; left: 4%; width: 240px; height: 80px; opacity: 0.3; }
+.hero .cloud-2 { top: 20%; right: 6%; width: 180px; height: 64px; opacity: 0.2; }
+.hero-content { position: relative; z-index: 10; max-width: 680px; margin: 0 auto; text-align: center; }
+.eu-stars { display: flex; align-items: center; gap: 7px; justify-content: center; margin-bottom: 20px; }
+.eu-star { width: 10px; height: 10px; background: var(--accent); opacity: 0.35; animation: twinkle 1.8s ease-in-out infinite; }
+.eu-star:nth-child(1)  { animation-delay: 0s; }
+.eu-star:nth-child(2)  { animation-delay: 0.15s; }
+.eu-star:nth-child(3)  { animation-delay: 0.30s; }
+.eu-star:nth-child(4)  { animation-delay: 0.45s; }
+.eu-star:nth-child(5)  { animation-delay: 0.60s; }
+.eu-star:nth-child(6)  { animation-delay: 0.75s; }
+.eu-star:nth-child(7)  { animation-delay: 0.90s; }
+.eu-star:nth-child(8)  { animation-delay: 1.05s; }
+.eu-star:nth-child(9)  { animation-delay: 1.20s; }
+.eu-star:nth-child(10) { animation-delay: 1.35s; }
+.eu-star:nth-child(11) { animation-delay: 1.50s; }
+.eu-star:nth-child(12) { animation-delay: 1.65s; }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.35); }
+}
+.eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 500; color: var(--muted-blue); margin-bottom: 4px; }
+.eyebrow-sub { font-size: 12px; color: var(--sky-deep); font-weight: 500; margin-bottom: 24px; letter-spacing: 0.3px; }
+.hero h1 { font-size: clamp(1.9rem, 4.5vw, 3.2rem); line-height: 1.15; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
+.hero h1 em { color: var(--sky-deep); font-style: italic; }
+
+/* Main grid */
+.main-content { padding: 32px 24px 80px; max-width: 1080px; margin: 0 auto; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+@media(max-width: 800px) { .two-col { grid-template-columns: 1fr; } }
+
+/* Tile shared */
+.tile { padding: 28px; }
+.tile-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: var(--sky-deep); margin-bottom: 5px; display: flex; align-items: center; gap: 7px; }
+.tile-label span.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.tile h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 16px; }
+
+/* Events */
+.events-section { margin-bottom: 20px; }
+.events-section h3 { font-family: 'DM Sans', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 7px; color: var(--muted-blue); }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.status-dot.upcoming { background: #4ade80; }
+.status-dot.past { background: var(--border); }
+.event-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 12px; transition: background 0.15s; }
+.event-row:hover { background: rgba(200,221,240,0.35); }
+.event-date-col { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
+.event-date-col .month { font-size: 8px; text-transform: uppercase; letter-spacing: 1px; color: var(--sky-deep); font-weight: 700; }
+.event-date-col .day { font-size: 15px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--navy); line-height: 1.2; }
+.event-info { flex: 1; padding: 0 12px; }
+.event-info .name { font-size: 13px; font-weight: 500; color: var(--navy); }
+.event-info .sub { font-size: 11px; color: var(--muted-blue); margin-top: 1px; }
+.rsvp-btn { font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; }
+.rsvp-btn:hover { background: var(--sky-deep); }
+.rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
+.li-link { display: inline-block; font-size: 10px; color: var(--sky-deep); text-decoration: underline; padding: 0 12px 6px 60px; }
+.past-row { display: flex; align-items: center; gap: 12px; padding: 7px 12px; }
+.past-row .date { font-size: 11px; color: var(--muted-blue); min-width: 80px; }
+.past-row .city { font-size: 12px; color: var(--navy); opacity: 0.7; flex: 1; }
+
+/* Bring 15 banner */
+.bring15 { margin-top: 16px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: 5px; } /* gold intentionally kept */
+.bring15 h4 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.bring15 p { font-size: 12px; color: var(--muted-blue); line-height: 1.5; }
+.b-btn { background: var(--navy); color: var(--white-warm); border-radius: 999px; padding: 10px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; white-space: nowrap; transition: background 0.2s; border: none; cursor: pointer; }
+.b-btn:hover { background: var(--sky-deep); }
+
+/* Resources tile */
+.monster-tile { background: linear-gradient(160deg, var(--navy), #24406A); border-color: rgba(255,255,255,0.08); }
+.monster-tile .tile-label { color: var(--accent-light); }
+.monster-tile h2 { color: var(--white-warm); }
+.monster-desc { font-size: 13px; color: rgba(250,249,247,0.55); line-height: 1.65; margin-bottom: 18px; }
+.resource-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px; transition: background 0.2s; }
+.resource-item:hover { background: rgba(255,255,255,0.1); }
+.resource-item .r-icon { font-size: 20px; margin-right: 12px; flex-shrink: 0; }
+.resource-item .r-info .r-name { font-size: 13px; font-weight: 600; color: var(--white-warm); }
+.resource-item .r-info .r-sub { font-size: 11px; color: rgba(250,249,247,0.45); margin-top: 2px; }
+.resource-item .r-badge { font-size: 9px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.badge-live { background: rgba(74,222,128,0.2); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+.badge-soon { background: rgba(255,255,255,0.08); color: rgba(250,249,247,0.4); border: 1px solid rgba(255,255,255,0.1); }
+.launch-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px 20px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 700; font-size: 13px; font-family: 'DM Sans', sans-serif; border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; margin-top: 6px; }
+.launch-btn:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+/* Footer */
+footer { background: var(--navy); color: var(--white-warm); padding: 48px 24px 40px; text-align: center; }
+footer p { font-size: 13px; color: rgba(250,249,247,0.5); max-width: 400px; margin: 0 auto 20px; line-height: 1.7; }
+.footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; color: rgba(250,249,247,0.65); transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+.footer-email:hover { border-color: rgba(255,255,255,0.4); color: var(--white-warm); }
+.cohost-block { margin: 36px auto 0; padding-top: 28px; border-top: 1px solid rgba(250,249,247,0.1); max-width: 460px; }
+.cohost-block h3 { font-size: 1.1rem; font-style: italic; color: rgba(250,249,247,0.8); margin-bottom: 8px; }
+.cohost-block p { font-size: 13px; color: rgba(250,249,247,0.4); margin-bottom: 16px; }
+footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px; letter-spacing: 1px; text-transform: uppercase; }
+
+@media(max-width: 640px) {
+  .hero h1 { font-size: 1.8rem; }
+  .bring15 { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────── -->
+<nav>
+  <div class="inner">
+    <a href="#" style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);">Salon <span style="color:var(--accent);">AI</span></a>
+    <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta">Join a Dinner →</a>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="hero-content">
+    <div class="eu-stars">
+      <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
+      <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
+      <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
+      <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
+    </div>
+    <p class="eyebrow">SALON AI · PRO-EUROPEAN EVENTS</p>
+    <p class="eyebrow-sub">Starting in Germany, expanding across the EU soon.</p>
+    <h1>
+      If all of Europe's dreams came true... would they just change Europe — or would they <em>change the world?</em>
+    </h1>
+  </div>
+</section>
+
+<!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
+<main class="main-content">
+  <div class="two-col" id="events">
+
+    <!-- ── LEFT: Events ──────────────────────────────────────── -->
+    <div class="card-surface tile">
+      <div class="tile-label"><span class="dot"></span>Salon AI Dinners</div>
+      <h2>Events</h2>
+
+      <!-- Upcoming -->
+      <div class="events-section">
+        <h3><span class="status-dot upcoming"></span>Upcoming <span style="margin-left:auto;color:var(--sky-deep);">RSVP OPEN</span></h3>
+
+        <div class="event-row">
+          <div class="event-date-col"><span class="month">Apr</span><span class="day">29</span></div>
+          <div class="event-info">
+            <div class="name">Salon AI Dinner — Munich</div>
+            <div class="sub">Munich · seats limited</div>
+          </div>
+          <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer"><button class="rsvp-btn">RSVP →</button></a>
+        </div>
+        <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="li-link">LinkedIn Event →</a>
+
+        <div class="event-row">
+          <div class="event-date-col"><span class="month">May</span><span class="day">TBD</span></div>
+          <div class="event-info">
+            <div class="name">Salon AI Dinner — Berlin</div>
+            <div class="sub">Berlin · date TBD</div>
+          </div>
+          <button class="rsvp-btn soon">Soon</button>
+        </div>
+
+        <div class="event-row">
+          <div class="event-date-col"><span class="month">Jun</span><span class="day">17</span></div>
+          <div class="event-info">
+            <div class="name">Salon AI Dinner — Munich</div>
+            <div class="sub">Munich · seats limited</div>
+          </div>
+          <button class="rsvp-btn soon">Soon</button>
+        </div>
+
+        <div class="event-row">
+          <div class="event-date-col"><span class="month">Jul</span><span class="day">TBD</span></div>
+          <div class="event-info">
+            <div class="name">2-Day Workshop — Munich</div>
+            <div class="sub">Munich · date TBD</div>
+          </div>
+          <button class="rsvp-btn soon">Soon</button>
+        </div>
+
+        <div class="event-row">
+          <div class="event-date-col"><span class="month">Aug</span><span class="day">22–23</span></div>
+          <div class="event-info">
+            <div class="name">2-Day AI Workshop — Munich</div>
+            <div class="sub">Munich · seats limited</div>
+          </div>
+          <button class="rsvp-btn soon">Soon</button>
+        </div>
+      </div>
+
+      <!-- Past -->
+      <div class="events-section">
+        <h3><span class="status-dot past"></span>Past Events</h3>
+        <div class="past-row">
+          <span class="date">Mar 25, 2025</span>
+          <span class="city">Munich, Germany</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;">What we built — coming soon</span>
+        </div>
+      </div>
+
+      <!-- Bring 15 banner -->
+      <div class="bring15">
+        <div>
+          <div class="b-label">Host Your Own AI Dinner</div>
+          <h4>Bring 15 people together — we'll do the rest.</h4>
+          <p>Organize your own group of 15+ and we'll host an AI Dinner for you. Perfect for politicians, companies, communities, or friend groups.</p>
+        </div>
+        <a href="mailto:hello@aiforeurope.eu?subject=Organize%20a%20Group"><button class="b-btn">Organize a group →</button></a>
+      </div>
+    </div>
+
+    <!-- ── RIGHT: Resources ──────────────────────────────────── -->
+    <div class="card-surface tile monster-tile" id="guide">
+      <div class="tile-label"><span class="dot"></span>Resources</div>
+      <h2>Resources</h2>
+      <p class="monster-desc">Adding resources dinner per dinner. Tools, guides, and templates — built for the community, in German.</p>
+
+      <div class="resource-item">
+        <span class="r-icon">🤖</span>
+        <div class="r-info">
+          <div class="r-name">KI Tools Guide</div>
+          <div class="r-sub">Alle wichtigen KI-Tools — bewertet &amp; erklärt. Auf Deutsch.</div>
+        </div>
+        <span class="r-badge badge-live">Live</span>
+      </div>
+
+      <div class="resource-item">
+        <span class="r-icon">📋</span>
+        <div class="r-info">
+          <div class="r-name">Prompt-Vorlagen</div>
+          <div class="r-sub">Praxisnahe Prompts für den Alltag</div>
+        </div>
+        <span class="r-badge badge-soon">Coming soon</span>
+      </div>
+
+      <div class="resource-item">
+        <span class="r-icon">🔒</span>
+        <div class="r-info">
+          <div class="r-name">Datenschutz-Ratgeber</div>
+          <div class="r-sub">Welche KI-Tools sind DSGVO-konform?</div>
+        </div>
+        <span class="r-badge badge-soon">Coming soon</span>
+      </div>
+
+      <a href="/resources/" class="launch-btn">
+        <span>🚀</span>
+        <span>KI Monster Guide starten</span>
+        <span style="font-size:15px;">↗</span>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────── -->
+<footer id="contact">
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:12px;">
+    Salon <span style="color:var(--accent);">AI</span>
+  </div>
+  <p>Bringing AI literacy to European communities — one dinner at a time.</p>
+  <a href="mailto:hello@aiforeurope.eu" class="footer-email">✉️ hello@aiforeurope.eu</a>
+
+  <div class="copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
+</footer>
+
+</body>
+</html>
