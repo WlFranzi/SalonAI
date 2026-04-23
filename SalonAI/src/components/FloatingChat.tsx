@@ -1,24 +1,73 @@
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-// ─── Web3Forms key ───────────────────────────────────────────────────────────
-// 1. Gehe zu https://web3forms.com
-// 2. Gib "franziska.wittleder@gmail.com" ein → bestätige die E-Mail
-// 3. Ersetze den Wert unten mit deinem Access Key
-const WEB3FORMS_KEY = "DEIN_ACCESS_KEY"; // ← hier eintragen
+// ─── API Keys (aus .env — nie ins Git committen!) ────────────────────────────
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY ?? "";
+const GEMINI_KEY = import.meta.env.VITE_GEMINI_API_KEY ?? "";
 
-async function sendConversationByEmail(msgs: Message[]) {
-  if (WEB3FORMS_KEY === "DEIN_ACCESS_KEY") return;
+const FALLBACK_ANSWER =
+  "Gute Frage! ☁️ Ich bin gerade kurz offline — aber ich leite sie direkt an Franziska weiter. Sie meldet sich bald! 😊";
+
+// ─── Gemini API ──────────────────────────────────────────────────────────────
+async function askGemini(question: string): Promise<string> {
+  if (!GEMINI_KEY) return FALLBACK_ANSWER;
+  try {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          system_instruction: {
+            parts: [
+              {
+                text: "Du bist der freundliche KI-Kompass im KI Monster Guide — einem deutschen Überblick über KI-Tools. Antworte auf Deutsch, fröhlich, kurz (max. 3 Sätze), einfach verständlich ohne Fachjargon. Verwende gelegentlich ein passendes Emoji. Wenn du etwas nicht weißt, sag das ehrlich.",
+              },
+            ],
+          },
+          contents: [{ parts: [{ text: question }] }],
+        }),
+      }
+    );
+    const data = await res.json();
+    return data?.candidates?.[0]?.content?.parts?.[0]?.text ?? FALLBACK_ANSWER;
+  } catch {
+    return FALLBACK_ANSWER;
+  }
+}
+
+// ─── Suggestion detection ────────────────────────────────────────────────────
+function isSuggestion(text: string): boolean {
+  const t = text.toLowerCase();
+  return [
+    "fehlt", "vermisse", "würde", "vorschlag", "hinzufügen",
+    "wünsche", "könnte man", "wäre schön", "noch nicht", "nicht gelistet",
+    "melden", "modell fehlt", "tool fehlt",
+  ].some((kw) => t.includes(kw));
+}
+
+// ─── Email via Web3Forms ─────────────────────────────────────────────────────
+type Message = { role: "user" | "bot"; text: string };
+
+async function sendConversationByEmail(
+  msgs: Message[],
+  type: "question" | "suggestion" = "question"
+) {
+  if (!WEB3FORMS_KEY) return;
   const body = msgs
     .map((m) => `${m.role === "user" ? "👤 Besucher" : "🤖 KI-Kompass"}: ${m.text}`)
     .join("\n\n");
+  const subject =
+    type === "suggestion"
+      ? "💡 KI Monster Guide — Vorschlag von Besucher"
+      : "🤖 KI Monster Guide — Besucher-Konversation";
   try {
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         access_key: WEB3FORMS_KEY,
-        subject: "🤖 KI Monster Guide — Besucher-Frage",
+        subject,
         from_name: "KI Monster Guide",
         email: "franziska.wittleder@gmail.com",
         message: body,
@@ -29,55 +78,16 @@ async function sendConversationByEmail(msgs: Message[]) {
   }
 }
 
-// ─── FAQ knowledge base ──────────────────────────────────────────────────────
-type FAQ = { keywords: string[]; answer: string };
-
-const FAQ_DB: FAQ[] = [
-  { keywords: ["agent", "ki-agent"], answer: "Ein KI-Agent handelt selbstständig: er öffnet Dateien, sendet E-Mails, klickt im Browser — ohne dass du jeden Schritt anweist. Denk an einen Praktikanten, dem du eine Aufgabe gibst und der sie erledigt." },
-  { keywords: ["agent harness", "harness", "orchestrator"], answer: "Agent Harness / Orchestrator = das Cockpit für mehrere KI-Agenten. Er koordiniert, wer was wann tut. Beispiele: LangChain, AutoGen, CrewAI." },
-  { keywords: ["llm", "sprachmodell", "language model"], answer: "LLM = Large Language Model. Ein riesiges KI-Modell, das mit unglaublich viel Text trainiert wurde und dadurch Sprache versteht und erzeugt. GPT, Claude und Llama sind LLMs." },
-  { keywords: ["foundation model", "basismodell", "foundation"], answer: "Foundation Models sind die großen Basis-KI-Modelle — der Motor unter der Motorhaube. Alle Tools und Agenten bauen auf ihnen auf. Beispiele: GPT-4, Claude, Gemini, Llama." },
-  { keywords: ["halluzination", "falsch", "fehler", "erfindet"], answer: "Halluzination = wenn KI mit voller Überzeugung falsche Fakten erfindet. Das ist keine Lüge, sondern eine strukturelle Schwäche: KI weiß nicht, was sie nicht weiß. Immer wichtige Infos prüfen!" },
-  { keywords: ["dsgvo", "datenschutz", "datenschutzgrundverordnung"], answer: "DSGVO = EU-Datenschutz-Grundverordnung. Unser 🧁 Cupcake-Rating zeigt dir: 1 Cupcake = EU-sicher, 5 Cupcaken = Datenschutz-Risiko. EU-Anbieter wie Hetzner, OVH oder STACKIT sind am sichersten." },
-  { keywords: ["cupcake", "bewertung", "rating"], answer: "Die Cupcake-Bewertung zeigt das Datenschutz-Risiko auf Skala 1–5: 1 = EU-sicher (empfohlen), 5 = hohes Risiko (Daten meist auf US-Servern). Schau auf jeder Karte unten rechts." },
-  { keywords: ["open source", "quelloffen"], answer: "Open Source = der Quellcode ist öffentlich. Jeder kann reinschauen, das Modell verändern und oft kostenlos selbst betreiben. Gut für Transparenz und Datenschutz." },
-  { keywords: ["closed source", "proprietär", "geheim"], answer: "Closed Source = der Quellcode ist geheim. Du kannst das Produkt nutzen, aber nicht nachschauen, wie es innen funktioniert oder wo deine Daten bleiben." },
-  { keywords: ["lokal", "self-hosted", "selbst hosten"], answer: "Lokaler Betrieb = die KI läuft auf deinem eigenen Computer oder Server. Daten verlassen nie dein Gerät — maximale Datensouveränität." },
-  { keywords: ["token"], answer: "Token = die kleinste Einheit, mit der KI Text verarbeitet (ca. ¾ eines Worts). KI-Kosten, Geschwindigkeit und Gedächtnis werden alle in Tokens gemessen." },
-  { keywords: ["context window", "kontext", "gedächtnis", "vergisst"], answer: "Context Window = wie viel Text die KI gleichzeitig im Kopf behalten kann. Kurzes Fenster → sie vergisst frühere Nachrichten." },
-  { keywords: ["prompt", "eingabe", "anweisung"], answer: "Prompt = die Eingabe oder Aufgabenstellung an eine KI. Qualität des Prompts = Qualität der Antwort. 'Schreib einen Text' ist schwach. 'Schreib einen 3-Satz-Teaser für...' ist stark." },
-  { keywords: ["rag", "dokument", "retrieval"], answer: "RAG = Retrieval-Augmented Generation. Die KI durchsucht zuerst deine eigenen Dokumente, dann antwortet sie. Wie ein Assistent, der erst im Archiv nachschlägt." },
-  { keywords: ["fine-tuning", "feintuning", "spezialisieren"], answer: "Fine-tuning = ein bereits trainiertes Modell wird auf spezifischen Daten nachgeschult. Wie ein Allgemeinarzt, der sich zum Spezialisten fortbildet." },
-  { keywords: ["api", "schnittstelle"], answer: "API = Schnittstelle, über die Programme miteinander kommunizieren. Wie ein Steckdosen-Standard: Jeder Toaster passt rein." },
-  { keywords: ["gpu", "grafikkarte", "hardware", "chip"], answer: "GPU = Grafikkarte. Ursprünglich für Videospiele entwickelt, heute die wichtigste Hardware zum Trainieren von KI-Modellen. Nvidia dominiert den Markt." },
-  { keywords: ["vibe-coding", "vibe coding"], answer: "Vibe-Coding = du beschreibst auf Deutsch, was deine App tun soll — die KI schreibt den Code. Kein Programmier-Vorwissen nötig. Tools: Lovable, Cursor, Bolt." },
-  { keywords: ["no-code", "low-code", "ohne code"], answer: "No-code / Low-code = Software bauen, ohne (viel) zu programmieren. Bausteine zusammenklicken statt Code schreiben." },
-  { keywords: ["weltmodell", "world model", "physik"], answer: "Weltmodell = eine KI, die nicht nur Texte erzeugt, sondern physikalische Gesetze der Welt versteht und simuliert. Grundlage für Robotik." },
-  { keywords: ["welche", "empfehle", "benutze", "nehme", "anfänger", "starten", "tool"], answer: "Nutze unser 🎯 Quiz! Klicke auf \"Welches KI-Tool passt zu mir?\" oben — dort kannst du nach Anwendungsfall filtern." },
-  { keywords: ["cloud", "server", "hosting", "rechenzentrum"], answer: "Cloud-Anbieter stellen die Infrastruktur bereit, auf der KI läuft. EU-Anbieter (Hetzner, OVH, STACKIT) bieten die besten Datenschutz-Garantien." },
-  { keywords: ["pyramide", "ebene", "tier", "aufbau"], answer: "Die Pyramide zeigt den KI-Stack: Cloud (unten) → Foundation Models → Specialized Models → Agentic Apps (oben). Klicke eine Ebene an, um nur die Karten dieser Ebene zu sehen." },
-  { keywords: ["fehlt", "nicht gelistet", "vermisse", "fehlendes", "modell fehlt", "noch gar nicht", "kenne nicht", "melden"], answer: "Danke für den Hinweis! ☁️ Sag mir einfach, welches Modell du vermisst — ich leite das weiter, damit es aufgenommen werden kann." },
+// ─── Quick chips ─────────────────────────────────────────────────────────────
+const QUICK_CHIPS: { text: string; type: "question" | "suggestion" }[] = [
+  { text: "Was ist ein KI-Agent?",       type: "question" },
+  { text: "Was bedeutet DSGVO?",         type: "question" },
+  { text: "Welches Tool empfiehlst du?", type: "question" },
+  { text: "Was ist ein LLM?",            type: "question" },
+  { text: "Modell fehlt hier! 🙋",       type: "suggestion" },
 ];
 
-function getAnswer(question: string): string | null {
-  const q = question.toLowerCase();
-  for (const { keywords, answer } of FAQ_DB) {
-    if (keywords.some((kw) => q.includes(kw))) return answer;
-  }
-  return null;
-}
-
-type Message = { role: "user" | "bot"; text: string };
-
-const QUICK_CHIPS: { text: string; emoji: string; type: "question" | "suggestion" }[] = [
-  { text: "Was ist ein KI-Agent?",     emoji: "❓", type: "question" },
-  { text: "Was bedeutet DSGVO?",       emoji: "🛡️", type: "question" },
-  { text: "Welches Tool empfiehlst du?", emoji: "🎯", type: "question" },
-  { text: "Modell fehlt hier! 🙋",     emoji: "➕", type: "suggestion" },
-  { text: "Was ist ein LLM?",          emoji: "❓", type: "question" },
-];
-
-// ─── Flying emoji animation (when message is sent) ─────────────────────────
+// ─── Flying emoji animation ──────────────────────────────────────────────────
 const SEND_EMOJIS = ["🌈", "✨", "⭐", "🚀", "💫", "🌟", "🎉"];
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -96,9 +106,10 @@ export default function FloatingChat() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [msgs, typing]);
 
+  // Send full conversation transcript when chat is closed
   useEffect(() => {
     if (!open && msgs.some((m) => m.role === "user") && !emailSent) {
-      sendConversationByEmail(msgs);
+      sendConversationByEmail(msgs, "question");
       setEmailSent(true);
     }
   }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -109,9 +120,9 @@ export default function FloatingChat() {
     setTimeout(() => setFlyEmoji(null), 900);
   }
 
-  function handleSend(text?: string) {
+  async function handleSend(text?: string) {
     const q = (text ?? input).trim();
-    if (!q) return;
+    if (!q || typing) return;
     setInput("");
     triggerSendAnimation();
 
@@ -119,16 +130,21 @@ export default function FloatingChat() {
     setMsgs((prev) => [...prev, userMsg]);
     setTyping(true);
 
-    setTimeout(() => {
-      const found = getAnswer(q);
-      const answer = found ?? "Gute Frage! ☁️ Ich bin nicht sicher — aber ich leite sie direkt an Franziska weiter. Sie meldet sich bald! 😊";
-      setMsgs((prev) => [...prev, { role: "bot", text: answer }]);
-      setTyping(false);
-      if (!found && !emailSent) {
-        sendConversationByEmail([userMsg, { role: "bot", text: answer }]);
-        setEmailSent(true);
-      }
-    }, 750);
+    let answer: string;
+    if (isSuggestion(q)) {
+      answer =
+        "Danke für deinen Vorschlag! 🙏 Wir nehmen uns das wirklich zu Herzen — das Orga-Team freut sich über jedes Feedback! ✨";
+      // Suggestions get emailed immediately, not just on close
+      sendConversationByEmail(
+        [userMsg, { role: "bot", text: answer }],
+        "suggestion"
+      );
+    } else {
+      answer = await askGemini(q);
+    }
+
+    setMsgs((prev) => [...prev, { role: "bot", text: answer }]);
+    setTyping(false);
   }
 
   const hasUserMsgs = msgs.some((m) => m.role === "user");
@@ -159,7 +175,8 @@ export default function FloatingChat() {
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                backgroundImage: "linear-gradient(135deg, rgba(255,0,128,0.07) 0%, rgba(255,165,0,0.07) 20%, rgba(255,255,0,0.06) 40%, rgba(0,255,128,0.07) 60%, rgba(0,200,255,0.07) 80%, rgba(180,0,255,0.07) 100%)",
+                backgroundImage:
+                  "linear-gradient(135deg, rgba(255,0,128,0.07) 0%, rgba(255,165,0,0.07) 20%, rgba(255,255,0,0.06) 40%, rgba(0,255,128,0.07) 60%, rgba(0,200,255,0.07) 80%, rgba(180,0,255,0.07) 100%)",
                 borderRadius: 22,
               }}
             />
@@ -186,7 +203,12 @@ export default function FloatingChat() {
               <div>
                 <p className="text-white font-bold text-sm leading-tight">☁️ Fragen & Feedback</p>
               </div>
-              <button onClick={() => setOpen(false)} className="text-white/40 hover:text-white/80 text-lg leading-none transition-colors">✕</button>
+              <button
+                onClick={() => setOpen(false)}
+                className="text-white/40 hover:text-white/80 text-lg leading-none transition-colors"
+              >
+                ✕
+              </button>
             </div>
 
             {/* Messages */}
@@ -208,9 +230,10 @@ export default function FloatingChat() {
                       maxWidth: "88%",
                       padding: "8px 12px",
                       borderRadius: 14,
-                      background: m.role === "user"
-                        ? "rgba(255,255,255,0.95)"
-                        : "rgba(255,255,255,0.15)",
+                      background:
+                        m.role === "user"
+                          ? "rgba(255,255,255,0.95)"
+                          : "rgba(255,255,255,0.15)",
                       color: m.role === "user" ? "#1e293b" : "rgba(255,255,255,0.95)",
                       backdropFilter: "blur(8px)",
                       border: m.role === "bot" ? "1px solid rgba(255,255,255,0.2)" : "none",
@@ -228,13 +251,21 @@ export default function FloatingChat() {
                 <div className="flex justify-start">
                   <div
                     className="flex items-center gap-1 px-3 py-2"
-                    style={{ background: "rgba(255,255,255,0.15)", borderRadius: "14px 14px 14px 4px", border: "1px solid rgba(255,255,255,0.2)" }}
+                    style={{
+                      background: "rgba(255,255,255,0.15)",
+                      borderRadius: "14px 14px 14px 4px",
+                      border: "1px solid rgba(255,255,255,0.2)",
+                    }}
                   >
                     {[0, 1, 2].map((i) => (
                       <div
                         key={i}
                         className="rounded-full bg-white/70"
-                        style={{ width: 6, height: 6, animation: `bounce 1s ${i * 0.15}s infinite` }}
+                        style={{
+                          width: 6,
+                          height: 6,
+                          animation: `bounce 1s ${i * 0.15}s infinite`,
+                        }}
                       />
                     ))}
                   </div>
@@ -243,7 +274,7 @@ export default function FloatingChat() {
               <div ref={bottomRef} />
             </div>
 
-            {/* Quick-question / suggestion chips */}
+            {/* Quick chips */}
             {!hasUserMsgs && (
               <div className="relative z-10 px-3 pb-2 flex flex-wrap gap-1.5 shrink-0">
                 {QUICK_CHIPS.map((chip) => (
@@ -280,7 +311,7 @@ export default function FloatingChat() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                placeholder="Frage stellen…"
+                placeholder="Frage stellen oder Vorschlag machen…"
                 className="flex-1 text-xs outline-none placeholder:text-white/40"
                 style={{
                   background: "rgba(255,255,255,0.12)",
@@ -298,7 +329,12 @@ export default function FloatingChat() {
                     <motion.span
                       key="fly"
                       initial={{ y: 0, x: 0, opacity: 1, scale: 1 }}
-                      animate={{ y: -60, x: Math.random() > 0.5 ? 20 : -20, opacity: 0, scale: 1.8 }}
+                      animate={{
+                        y: -60,
+                        x: Math.random() > 0.5 ? 20 : -20,
+                        opacity: 0,
+                        scale: 1.8,
+                      }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.8, ease: "easeOut" }}
                       className="absolute pointer-events-none text-lg"
@@ -310,14 +346,15 @@ export default function FloatingChat() {
                 </AnimatePresence>
                 <button
                   onClick={() => handleSend()}
-                  className="flex items-center justify-center rounded-full transition-all hover:scale-110 active:scale-90"
+                  disabled={typing}
+                  className="flex items-center justify-center rounded-full transition-all hover:scale-110 active:scale-90 disabled:opacity-50"
                   style={{
                     width: 34,
                     height: 34,
-                    background: input.trim()
+                    background: input.trim() && !typing
                       ? "rgba(255,255,255,0.95)"
                       : "rgba(255,255,255,0.2)",
-                    color: input.trim() ? "#1d4ed8" : "rgba(255,255,255,0.5)",
+                    color: input.trim() && !typing ? "#1d4ed8" : "rgba(255,255,255,0.5)",
                     fontSize: 16,
                     fontWeight: 700,
                   }}
@@ -339,7 +376,8 @@ export default function FloatingChat() {
             width: 168,
             height: 80,
             display: "block",
-            filter: "drop-shadow(0 6px 16px rgba(56,189,248,0.45)) drop-shadow(0 2px 4px rgba(0,0,0,0.12))",
+            filter:
+              "drop-shadow(0 6px 16px rgba(56,189,248,0.45)) drop-shadow(0 2px 4px rgba(0,0,0,0.12))",
           }}
           aria-label={open ? "Chat schließen" : "Fragen & Feedback"}
         >
@@ -363,21 +401,38 @@ export default function FloatingChat() {
                 Z
               "
             />
-            {/* label text rendered as foreignObject so we can use normal JSX */}
           </svg>
-          {/* Text overlay centred in the lower half of the cloud */}
           <div
             className="absolute inset-0 flex flex-col items-center justify-end pointer-events-none"
             style={{ paddingBottom: 18 }}
           >
             {open ? (
-              <span style={{ fontSize: 13, fontWeight: 700, color: "#0369a1", letterSpacing: "0.04em" }}>✕ Schließen</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: "#0369a1", letterSpacing: "0.04em" }}>
+                ✕ Schließen
+              </span>
             ) : (
               <>
-                <span style={{ fontSize: 12, fontWeight: 800, color: "#0284c7", textTransform: "uppercase", letterSpacing: "0.06em", lineHeight: 1.2 }}>
+                <span
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 800,
+                    color: "#0284c7",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.06em",
+                    lineHeight: 1.2,
+                  }}
+                >
                   Fragen?
                 </span>
-                <span style={{ fontSize: 10, fontWeight: 600, color: "#38bdf8", letterSpacing: "0.04em", lineHeight: 1.2 }}>
+                <span
+                  style={{
+                    fontSize: 10,
+                    fontWeight: 600,
+                    color: "#38bdf8",
+                    letterSpacing: "0.04em",
+                    lineHeight: 1.2,
+                  }}
+                >
                   & Feedback
                 </span>
               </>

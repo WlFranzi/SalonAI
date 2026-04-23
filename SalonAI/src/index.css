@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ── Design tokens ─────────────────────────────────────────── */
+/* ── Design tokens (aligned with Salon AI) ─────────────────── */
 :root {
-  --background:    hsl(210 60% 92%);
-  --foreground:    hsl(217 71% 12%);
-  --primary:       hsl(217 71% 45%);
-  --accent:        hsl(45 100% 55%);
+  --background:    #E8F2FA;
+  --foreground:    #1B2E4A;
+  --primary:       #003399;
+  --accent:        #003399;
+  --navy:          #1B2E4A;
+  --sky-light:     #E8F2FA;
+  --sky-deep:      #7A9DB8;
+  --border:        #C5D5E4;
 }
 
 html, body {
@@ -17,7 +21,7 @@ html, body {
   padding: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'DM Sans', 'Space Grotesk', sans-serif;
 }
 
 /* ── Flip card ─────────────────────────────────────────────── */
@@ -64,11 +68,11 @@ html, body {
 }
 
 .flip-card-front {
-  background: linear-gradient(135deg, hsl(210 60% 97%), hsl(215 70% 93%));
+  background: linear-gradient(135deg, #ffffff, #EEF5FB);
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, hsl(217 71% 28%), hsl(220 80% 18%));
+  background: linear-gradient(135deg, #1B2E4A, #0F1F35);
   transform: rotateY(180deg);
 }
 

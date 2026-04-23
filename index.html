@@ -136,6 +136,67 @@ footer p { font-size: 13px; color: rgba(250,249,247,0.5); max-width: 400px; marg
 .cohost-block p { font-size: 13px; color: rgba(250,249,247,0.4); margin-bottom: 16px; }
 footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px; letter-spacing: 1px; text-transform: uppercase; }
 
+/* ── Skills Section ─────────────────────────────────── */
+.skills-section { padding: 48px 24px 72px; background: var(--white-warm); border-top: 1px solid var(--border); }
+.skills-inner { max-width: 1080px; margin: 0 auto; }
+.skills-intro { margin-bottom: 28px; }
+
+.skill-item { border: 1px solid var(--border); border-radius: 16px; background: #fff; overflow: hidden; transition: box-shadow 0.2s; margin-bottom: 8px; }
+.skill-item:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+
+.skill-toggle {
+  width: 100%; display: flex; align-items: center; gap: 12px; padding: 15px 20px;
+  background: none; border: none; cursor: pointer; text-align: left;
+  font-family: 'DM Sans', sans-serif; transition: background 0.15s;
+}
+.skill-toggle:hover { background: var(--sky-light); }
+.skill-item.open .skill-toggle { background: var(--sky-light); border-bottom: 1px solid var(--border); }
+
+.skill-cat { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700;
+  padding: 3px 9px; border-radius: 999px;
+  background: rgba(0,51,153,0.09); color: var(--accent); white-space: nowrap; flex-shrink: 0; }
+.skill-name-text { font-size: 14px; font-weight: 600; color: var(--navy); flex: 1; }
+.skill-chevron { font-size: 18px; color: var(--sky-deep); transition: transform 0.22s; line-height: 1; flex-shrink: 0; }
+.skill-item.open .skill-chevron { transform: rotate(45deg); }
+
+.skill-body { display: none; padding: 18px 20px 20px; }
+.skill-item.open .skill-body { display: block; }
+
+.skill-scenario {
+  font-size: 12.5px; color: var(--muted-blue); background: var(--sky-light);
+  border-left: 3px solid var(--accent); padding: 9px 14px;
+  border-radius: 0 8px 8px 0; margin-bottom: 14px; line-height: 1.6; font-style: italic;
+}
+
+.skill-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+@media(max-width: 700px) { .skill-cols { grid-template-columns: 1fr; } }
+
+.s-col { border-radius: 12px; padding: 14px; }
+.s-col-old { background: var(--sky-light); border: 1px solid var(--border); }
+.s-col-now { background: rgba(0,51,153,0.05); border: 1px solid rgba(0,51,153,0.14); }
+.s-col-eu  { background: var(--navy); }
+
+.s-col-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 6px; }
+.s-col-old .s-col-label { color: var(--muted-blue); }
+.s-col-now .s-col-label { color: var(--accent); }
+.s-col-eu  .s-col-label { color: var(--gold); }
+
+.s-time { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 10px; border-radius: 999px; margin-bottom: 10px; }
+.s-col-old .s-time { background: var(--border); color: var(--muted-blue); }
+.s-col-now .s-time { background: var(--accent); color: #fff; }
+.s-col-eu  .s-time { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.75); }
+
+.s-step { display: flex; gap: 7px; margin-bottom: 7px; align-items: flex-start; }
+.s-step:last-child { margin-bottom: 0; }
+.s-num { width: 17px; height: 17px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 600; flex-shrink: 0; margin-top: 2px; }
+.s-col-old .s-num { background: var(--border); color: var(--muted-blue); }
+.s-col-now .s-num { background: rgba(0,51,153,0.13); color: var(--accent); }
+.s-col-eu  .s-num { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.65); }
+.s-step p { font-size: 11.5px; line-height: 1.6; }
+.s-col-old .s-step p { color: var(--muted-blue); }
+.s-col-now .s-step p { color: var(--navy); }
+.s-col-eu  .s-step p { color: rgba(255,255,255,0.78); }
+
 @media(max-width: 640px) {
   .hero h1 { font-size: 1.8rem; }
   .bring15 { flex-direction: column; align-items: flex-start; }
@@ -163,7 +224,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
       <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
       <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
     </div>
-    <p class="eyebrow">SALON AI · PRO-EUROPEAN EVENTS</p>
+    <p class="eyebrow">Pro EU Event Series</p>
     <p class="eyebrow-sub">Starting in Germany, expanding across the EU soon.</p>
     <h1>
       If all of Europe's dreams came true... would they just change Europe — or would they <em>change the world?</em>
@@ -204,28 +265,10 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
         </div>
 
         <div class="event-row">
-          <div class="event-date-col"><span class="month">Jun</span><span class="day">17</span></div>
-          <div class="event-info">
-            <div class="name">Salon AI Dinner — Munich</div>
-            <div class="sub">Munich · seats limited</div>
-          </div>
-          <button class="rsvp-btn soon">Soon</button>
-        </div>
-
-        <div class="event-row">
-          <div class="event-date-col"><span class="month">Jul</span><span class="day" style="font-size:11px;opacity:0.5;">soon</span></div>
-          <div class="event-info">
-            <div class="name">2-Day Workshop — Munich</div>
-            <div class="sub">Munich · date coming soon</div>
-          </div>
-          <button class="rsvp-btn soon">Soon</button>
-        </div>
-
-        <div class="event-row">
           <div class="event-date-col"><span class="month">Aug</span><span class="day">22–23</span></div>
           <div class="event-info">
             <div class="name">2-Day AI Workshop — Munich</div>
-            <div class="sub">Munich · seats limited</div>
+            <div class="sub">Munich</div>
           </div>
           <button class="rsvp-btn soon">Soon</button>
         </div>
@@ -237,7 +280,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
         <div class="past-row">
           <span class="date">Mar 25, 2025</span>
           <span class="city">Munich, Germany</span>
-          <span style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;">What we built — coming soon</span>
+          <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'">What we built — one example ↗</a>
         </div>
       </div>
 
@@ -256,44 +299,32 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <div class="card-surface tile monster-tile" id="guide">
       <div class="tile-label"><span class="dot"></span>Resources</div>
       <h2>Resources</h2>
-      <p class="monster-desc">Adding resources dinner per dinner. Tools, guides, and templates — built for the community, in German.</p>
 
-      <div class="resource-item">
+      <a href="/resources/" class="resource-item" style="cursor:pointer;">
         <span class="r-icon">🤖</span>
         <div class="r-info">
           <div class="r-name">KI (Monster) Guide</div>
           <div class="r-sub">Alle wichtigen KI-Tools — bewertet &amp; erklärt. Auf Deutsch.</div>
         </div>
-        <span class="r-badge badge-live">Live</span>
-      </div>
-
-      <div class="resource-item">
-        <span class="r-icon">📋</span>
-        <div class="r-info">
-          <div class="r-name">Prompt-Vorlagen</div>
-          <div class="r-sub">Praxisnahe Prompts für den Alltag</div>
-        </div>
-        <span class="r-badge badge-soon">Coming soon</span>
-      </div>
-
-      <div class="resource-item">
-        <span class="r-icon">🔒</span>
-        <div class="r-info">
-          <div class="r-name">Datenschutz-Ratgeber</div>
-          <div class="r-sub">Welche KI-Tools sind DSGVO-konform?</div>
-        </div>
-        <span class="r-badge badge-soon">Coming soon</span>
-      </div>
-
-      <a href="/resources/" class="launch-btn">
-        <span>🚀</span>
-        <span>KI (Monster) Guide starten</span>
-        <span style="font-size:15px;">↗</span>
+        <span class="r-badge badge-live">Live ↗</span>
       </a>
+
     </div>
 
   </div>
 </main>
+
+<!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
+<section class="skills-section" id="skills">
+  <div class="skills-inner">
+    <div class="skills-intro">
+      <p class="eyebrow" style="margin-bottom:4px;">Was du bei einem Dinner lernst</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;">KI in deinem Berufsfeld</h2>
+      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;">Sieben Berufsfelder. Wie es früher lief, was KI heute möglich macht — und wie du damit aktiv zu einem stärkeren Europa beitragen kannst.</p>
+    </div>
+    <div id="skills-list"></div>
+  </div>
+</section>
 
 <!-- ── FOOTER ────────────────────────────────────────────────────── -->
 <footer id="contact">
@@ -306,5 +337,104 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   <div class="copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
 </footer>
 
+
+<script>
+const KI_SKILLS = [
+  {
+    cat: "Design", name: "User Research auswerten",
+    banner: "Du hast gerade 12 Nutzerinterviews abgeschlossen. Die Findings-Präsentation ist am Freitag.",
+    old: { time: "~1 Woche", steps: ["Du liest alle 12 Transkripte durch, markierst Zitate und taggst Themen.","Du baust eine Affinitätskarte in FigJam – klebst Sticky Notes und ordnest sie, bis Muster entstehen.","Du schreibst das Findings-Deck: Kernthemen, Zitate, Empfehlungen. Das kostet einen ganzen Tag.","Das Produktteam will mehr Tiefe bei zwei Themen. Du gehst zurück in die Transkripte.","Du präsentierst am Freitag. Die Hälfte der Insights wird deprioritisiert, weil der Business-Impact nicht klar ist."] },
+    now: { time: "~wenige Stunden", steps: ["Dein System zeigt die Kernthemen aus allen 12 Transkripten – mit passenden Zitaten. Du wählst drei, die du vertiefen willst.","Es zieht den vollen Kontext heraus: Was kam vor und nach dem Zitat, wie war der Ton, wo widersprach sich die Person?","Du markierst, was dir wichtig erscheint. Das System gleicht deine Themen mit Support-Tickets, Churn-Daten und Unternehmensstrategie ab.","Du hinterfragst die Lücken. Das System liefert mehr Belege – oder zeigt dir, warum die Daten widersprechen.","Dein System erstellt das Deck: Themen nach Business-Impact sortiert, jedes mit Zitaten und Daten belegt."] },
+    eu: { time: "~1 Tag", steps: ["Lade öffentliche Bürgerbefragungen, Petitionen oder Kommentare zu EU-Vorhaben hoch – z.B. zur Energiewende oder Digitalstrategie.","Die KI clustert die Kernforderungen der Bürger und zeigt, welche Themen am häufigsten genannt werden – über Ländergrenzen hinweg.","Du verknüpfst die Findings mit offenen EU-Konsultationen: Wo passen Bürgermeinungen zu laufenden Gesetzgebungsverfahren?","Du erstellst eine strukturierte Eingabe für das Europäische Parlament oder eine NGO – mit echten Zitaten als Belege.","Deine Analyse wird zur Grundlage für eine Stellungnahme, die mehr bewegt als ein einzelner Kommentar."] }
+  },
+  {
+    cat: "Product", name: "Feature-Entscheidungen treffen",
+    banner: "Ein Kunde hat gerade gekündigt und ein fehlendes Feature genannt, über das dein Team seit Monaten diskutiert.",
+    old: { time: "~2 Wochen", steps: ["Du durchsuchst Salesforce nach der Kündigungsnotiz. Sie ist vage: 'fehlende Reporting-Funktionen.' Du fragst den Account Manager per Slack.","Du recherchierst, wie viele andere Kunden dasselbe angefragt haben. Die Infos sind über Support-Tickets, Salesgespräche und ein vergessenes Productboard-Tag verstreut.","Du versuchst, den Umsatz-Impact abzuschätzen: Liste von Accounts, grobe Churn-Wahrscheinlichkeit, rudimentäres Spreadsheet-Modell.","Du schreibst einen Business Case und schickst ihn rum. Die Hälfte findet es dringend, die andere Hälfte hält dich für überreagierend.","Zwei Wochen später die Präsentation. Leadership fragt, wie groß das Problem wirklich ist. Du weißt es nicht genau genug."] },
+    now: { time: "~2 Tage", steps: ["Dein System trackt jede Feature-Anfrage, jedes Support-Ticket und jeden Salesanruf. 34 Accounts haben danach gefragt, 3 haben deswegen gekündigt, Anfragen +40% letztes Quartal.","Es hat die exakten Zitate aus Kundengesprächen gezogen – nicht eine Zusammenfassung, sondern die genauen Worte.","Du schreibst ein kurzes Spec. Dein System baut daraus einen Prototypen und simuliert, wo Nutzer abspringen.","Du fragst, was das Feature auf der Roadmap verdrängt. Das System modelliert Trade-offs und zeigt, welche Wette größer ist.","Du gehst in das Review mit einem Demo, den Umsatzdaten, den Kundenzitaten, der Trade-off-Analyse und einer klaren Empfehlung."] },
+    eu: { time: "~2–3 Tage", steps: ["Lade öffentliche Ausschreibungen, Förderprogramme und Startup-Anfragen aus verschiedenen EU-Ländern hoch.","Die KI identifiziert, welche digitalen Lücken in mehreren Ländern gleichzeitig bestehen – z.B. fehlende grenzüberschreitende e-Government-Dienste.","Du baust einen Prototypen für einen pan-europäischen Service – z.B. ein Berufsanerkennungs-Tool oder eine gemeinsame Handwerker-Plattform.","Das System berechnet den potenziellen Impact: Wie viele Bürger würden profitieren? Wie groß ist der wirtschaftliche Hebel?","Du reichst das Konzept bei EU-Innovationsprogrammen wie Digital Europe oder dem EIC Accelerator ein."] }
+  },
+  {
+    cat: "Finance", name: "Marktanalysen erstellen",
+    banner: "Dein CFO will wissen, ob ihr ein neues Marktsegment betreten solltet.",
+    old: { time: "~1 Woche", steps: ["Du googelst TAM-Schätzungen, ziehst Zahlen aus drei Analystenreports, die sich widersprechen, und triangulierst im Spreadsheet.","Du baust ein Modell mit einem Annahmen-Set – Best Case im Grunde – weil du keine Zeit für mehr hast.","Du schickst den Entwurf an vier Stakeholder. Du wartest zwei Tage. Du bekommst widersprüchliches Feedback.","Du überarbeitest das Modell, merkst, dass eine Annahme falsch war, und rechnest alles neu durch.","Du baust ein 15-Folien-Deck mit einer Empfehlung, die du akzeptabel findest – aber nicht auf die du deinen Job verwetten würdest."] },
+    now: { time: "~1 Stunde", steps: ["Dein System hat Marktchancen schon monatelang getrackt: Kundenanfragen, Wettbewerbsexpansionen, Wachstumssignale.","Du startest eine tiefere Analyse. Das System modelliert vier Einstiegsszenarien: aggressiv, konservativ, partnerschaftsgeführt, akquisitionsgeführt.","Jedes Szenario zeigt exakt, wo es bricht: 'funktioniert nicht, wenn Churn über 8%', 'trägt sich nur ab 50K Deal-Größe'.","Es flaggt ein Risiko: Zwei deiner größten Accounts konkurrieren im neuen Segment – potenzieller Channel-Konflikt.","Du gehst ins Board-Meeting mit einem interaktiven Deck: Der CFO kann Annahmen live verändern."] },
+    eu: { time: "~1–2 Tage", steps: ["Analysiere öffentliche EU-Haushaltsdaten und Strukturfonds-Auszahlungen: Wo fließt Geld hin – und wo klafft eine Lücke?","Die KI modelliert Szenarien für europäische Investitionsprogramme: Was passiert, wenn Europa seinen Halbleiter-Anteil verdoppelt?","Du identifizierst Synergien zwischen nationalen Förderprogrammen, die bisher nicht koordiniert sind.","Du erstellst eine datenbasierte Policy-Empfehlung: Wo sollte Europa gezielt investieren, um Abhängigkeiten zu reduzieren?","Veröffentliche die Analyse als Open Document – für Denkfabriken, Journalisten oder Europaabgeordnete."] }
+  },
+  {
+    cat: "Marketing", name: "Positionierung verteidigen",
+    banner: "Dein CEO fragt, warum die neue Kampagne eines Wettbewerbers klingt wie eure eigene Positionierung.",
+    old: { time: "~halber Tag", steps: ["Du rufst die Website des Wettbewerbers auf, scrollst durch LinkedIn, schaust in die Ads Library.","Du machst Screenshots, stellst sie neben eure Botschaften und versuchst, die Überschneidungen zu erkennen.","Du holst dein Team in einen Raum zum Brainstormen. Ihr verlasst ihn mit einem vollgeschriebenen Whiteboard – aber nichts Konkretem.","Du briefst einen Designer für neue Landing Page-Varianten. Du wartest zwei Tage auf einen ersten Entwurf.","Du gehst zum CEO zurück mit: 'Wir arbeiten dran.'"] },
+    now: { time: "~15 Minuten", steps: ["Dein System hat die Überschneidung vor drei Tagen gemeldet – als der Wettbewerber sein Messaging geändert hat. Du wusstest es bereits.","Es hat drei Differenzierungs-Ansätze vorgeschlagen, jeder mit einem Landing Page-Mockup.","Es hat eine Conversion-Schätzung für jede Option auf Basis deiner letzten 90 Tage Kampagnen-Performance berechnet.","Du wählst Option drei. Dein System aktualisiert Landing Page, Ad-Copy und E-Mail-Sequenzen.","Du antwortest dem CEO mit der Analyse, deiner Entscheidung und der Begründung – vor dem Mittagessen."] },
+    eu: { time: "~2–3 Stunden", steps: ["Analysiere, wie außereuropäische Tech-Konzerne ihre Narrative über Europa in Medien und Politik setzen.","Die KI zeigt, wo europäische Stärken (Datenschutz, Rechtsstaat, Industrietiefe) kommunikativ unterrepräsentiert sind.","Du entwickelst eine alternative Positionierung für 'Technologie made in Europe': konkrete Differenzierungsargumente.","Du erstellst eine Kampagnen-Vorlage für NGOs, Start-ups oder Politiker, die pro-europäische Digitalpolitik kommunizieren wollen.","Teile das Framing-Dokument offen – damit andere es aufgreifen, anpassen und verbreiten können."] }
+  },
+  {
+    cat: "Sales", name: "Verluste analysieren & gegensteuern",
+    banner: "Ihr verliert Deals – und niemand kann sich einigen, warum.",
+    old: { time: "~8 Std/Woche", steps: ["Du exportierst die Closed-Lost-Deals des letzten Monats aus Salesforce und gehst sie manuell durch.","Du liest jede Deal-Notiz und versuchst herauszufinden, warum ihr verliert.","Du bemerkst, dass drei Deals dieselbe fehlende Integration erwähnen. Du schreibst dem Produktteam per Slack.","Du siehst, dass die Win Rate im Mid-Market sinkt, aber weißt nicht warum. Du verbringst eine Stunde damit, Wettbewerbsdaten zu ziehen.","Du aktualisierst die Battlecard. Du hoffst, dass die Reps sie lesen."] },
+    now: { time: "~30 Minuten", steps: ["Du öffnest ein Dashboard. Dein System hat jeden Closed-Lost-Deal bereits getaggt: Preis, fehlendes Feature, Wettbewerber, Timing.","Dein System hat erkannt, dass drei Deals im Wert von 420K dieselbe fehlende Integration nannten und ein Produktticket erstellt.","Du überprüfst das Ticket, passt die Priorität an – das Produktteam bekommt einen echten Case, keine Slack-Nachricht.","Dein System hat den 15%-Rückgang der Mid-Market Win Rate auf eine Preisänderung des Wettbewerbers zurückgeführt.","Deine zwei Reps mit schließenden Deals haben bereits einen Slack mit dem aktualisierten Talk Track bekommen."] },
+    eu: { time: "~1 Tag", steps: ["Analysiere öffentliche Beschaffungsdaten der EU: Bei welchen Ausschreibungen gewinnen wiederholt nicht-europäische Anbieter?","Die KI identifiziert Muster: Welche Vergabekriterien begünstigen systematisch US- oder chinesische Anbieter?","Du entwickelst konkrete Empfehlungen für Vergabekriterien, die strategische Autonomie stärken.","Du erstellst eine Analyse für Handelskammern, Branchenverbände oder Europaabgeordnete – mit Belegen aus realen Ausschreibungen.","Starte eine öffentliche Diskussion: Wo muss Europa seine Beschaffungsregeln anpassen?"] }
+  },
+  {
+    cat: "Consulting", name: "Empfehlungen verteidigen",
+    banner: "Dein Kunde hat dich gebeten, deine Empfehlung mit Daten zu belegen, die du noch nicht hast.",
+    old: { time: "~1 Woche", steps: ["Du bittest den Kunden per E-Mail um Zugang zu internen Daten. Er sagt, er 'klärt das mit IT' – und meldet sich zwei Tage lang nicht.","Du bastelst eine Marktübersicht aus öffentlichen Quellen und Analystenreports.","Du baust ein Slide-Deck mit deiner Empfehlung – und weißt, dass die Belege dünner sind als du möchtest.","Du schickst es an den Partner zur Review. Er hakt zwei Annahmen an.","Du präsentierst dem Kunden. Er bohrt bei den Zahlen nach. Du verbringst die Hälfte des Meetings damit, die Methodik zu verteidigen."] },
+    now: { time: "~1 Tag", steps: ["Dein System hat alles aus dem Engagement bereits aufgenommen – Kickoff-Notizen, Interview-Transkripte, jedes Dokument.","Es hat die Kundendaten mit öffentlichen Markt-Benchmarks und Branchenberichten abgeglichen – und zeigt, wo der Kunde bei Peers steht.","Du hast deine Empfehlung entwickelt. Dein System hat sie gegen drei Szenarien stress-getestet.","Du hast die Narrative gegen eine simulierte CEO-Version pressure-getestet. Das System hat zwei blinde Flecken identifiziert.","Du gehst ins Meeting mit Empfehlung, Kundendaten, externen Benchmarks und vorbereiteten Antworten auf die drei härtesten Fragen."] },
+    eu: { time: "~2–3 Tage", steps: ["Analysiere öffentliche Evaluierungsberichte zu EU-Programmen (z.B. Kohäsionsfonds, Horizon): Wo wurden Ziele erreicht, wo klafft eine Lücke?","Die KI gleicht Programm-Outputs mit sozioökonomischen Daten aus Eurostat ab.","Du identifizierst Best Practices aus einzelnen Ländern, die auf andere übertragbar wären.","Du stress-testest deine Empfehlungen: Welche politischen Einwände sind zu erwarten?","Veröffentliche die Analyse als offenes Policy Brief – für Abgeordnete, Ministerien oder NGOs."] }
+  },
+  {
+    cat: "PR & Comms", name: "VIP-Wissen zentralisieren",
+    banner: "Dein Team verwaltet eine umfangreiche Kartei an VIPs, Journalisten und Stakeholdern für ein großes Event.",
+    old: { time: "~8 Std/Woche", steps: ["Das Wissen über VIPs – 'Gast X ist Veganer', 'Journalist Y bevorzugt Exklusivinterviews' – steckt in den Köpfen von zwei, drei Leuten der Agentur. Alle anderen müssen immer erst fragen.","Wer ein Event plant und diese Personen gerade nicht erreicht, macht Fehler – oder schickt einfach das Gleiche wie letztes Mal und hofft, dass es stimmt.","Vor jedem Event verbringt das Team Stunden damit, verstreute Excel-Listen, alte E-Mails und Erinnerungen zusammenzuführen.","Sobald jemand das Team verlässt oder im Urlaub ist, geht dieses Wissen verloren. Beim nächsten Event fängt man wieder von vorne an."] },
+    now: { time: "~15 Minuten", steps: ["Das Team nutzt einen gemeinsamen Agenten, der mit jedem Dialog lernt. Sobald ein PR-Manager eingibt: 'VIP X ist jetzt Veganer', speichert der Agent dies dauerhaft.","Das gesamte Team hat Zugriff auf denselben Wissensstand – wer fragt: 'Worauf müssen wir bei Gast X achten?', erhält sofort das aktuelle Profil.","Bei der Planung eines neuen Events generiert der Agent in Sekunden eine vollständige Checkliste aller Sonderwünsche.","Du fragst: 'Schreib mir ein Briefing für die CEO über Person Y' – der Agent verknüpft aktuelle Presseberichte mit intern gespeicherten Vorlieben."] },
+    eu: { time: "~1–2 Tage", steps: ["Baue eine gemeinsame europäische Stakeholder-Datenbank: Welche Journalisten, Abgeordneten und Akteure arbeiten an welchen Themen?","Der Agent lernt aus jedem EU-Gipfel, jedem Ausschussgespräch, jeder Presseanfrage.","Vor wichtigen Abstimmungen generiert das System in Minuten ein Briefing: Wer ist im Raum, was bewegt sie?","Institutionelles Wissen geht nicht mehr verloren – das kollektive Gedächtnis einer pro-europäischen Bewegung bleibt erhalten.","Teams aus verschiedenen Ländern arbeiten auf derselben Wissensbasis – koordiniertes Lobbying wird endlich möglich."] }
+  }
+];
+
+function toggleSkill(index) {
+  document.querySelectorAll('.skill-item').forEach((item, i) => {
+    if (i === index) item.classList.toggle('open');
+    else item.classList.remove('open');
+  });
+}
+
+(function buildSkills() {
+  const container = document.getElementById('skills-list');
+  if (!container) return;
+  KI_SKILLS.forEach((skill, i) => {
+    const steps = (col, type) => col.steps.map((s, j) =>
+      `<div class="s-step"><div class="s-num">${j+1}</div><p>${s}</p></div>`
+    ).join('');
+    container.innerHTML += `
+      <div class="skill-item" id="skill-${i}">
+        <button class="skill-toggle" onclick="toggleSkill(${i})">
+          <span class="skill-cat">${skill.cat}</span>
+          <span class="skill-name-text">${skill.name}</span>
+          <span class="skill-chevron">+</span>
+        </button>
+        <div class="skill-body">
+          <p class="skill-scenario">${skill.banner}</p>
+          <div class="skill-cols">
+            <div class="s-col s-col-old">
+              <div class="s-col-label">Früher</div>
+              <span class="s-time">${skill.old.time}</span>
+              ${steps(skill.old)}
+            </div>
+            <div class="s-col s-col-now">
+              <div class="s-col-label">Heute mit KI</div>
+              <span class="s-time">${skill.now.time}</span>
+              ${steps(skill.now)}
+            </div>
+            <div class="s-col s-col-eu">
+              <div class="s-col-label">Für ein starkes Europa</div>
+              <span class="s-time">${skill.eu.time}</span>
+              ${steps(skill.eu)}
+            </div>
+          </div>
+        </div>
+      </div>`;
+  });
+})();
+</script>
 </body>
 </html>

@@ -212,7 +212,7 @@ function QuestionnaireModal({
                   style={{
                     height: 6,
                     width: step === i ? 20 : 6,
-                    background: step === i ? "#fbbf24" : "rgba(255,255,255,0.25)",
+                    background: step === i ? "#003399" : "rgba(255,255,255,0.25)",
                   }}
                 />
               ))}
@@ -239,9 +239,9 @@ function QuestionnaireModal({
           {step > 0 && missionInfo && (
             <motion.p initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="text-white/50 text-xs mt-1.5">
               {missionInfo.icon}{" "}
-              <span className="text-amber-400 font-semibold">{missionInfo.label}</span>
+              <span className="text-blue-200 font-semibold">{missionInfo.label}</span>
               {step > 1 && subSpecInfo && (
-                <> · <span className="text-amber-300">{subSpecInfo.label}</span></>
+                <> · <span className="text-blue-100">{subSpecInfo.label}</span></>
               )}
             </motion.p>
           )}
@@ -260,7 +260,7 @@ function QuestionnaireModal({
                   <button
                     key={m.id}
                     onClick={() => handleMission(m.id)}
-                    className="flex flex-col items-start gap-1 p-3.5 rounded-2xl border-2 border-slate-100 hover:border-amber-400 hover:bg-amber-50 text-left transition-all duration-150 active:scale-95"
+                    className="flex flex-col items-start gap-1 p-3.5 rounded-2xl border-2 border-slate-100 hover:border-blue-300 hover:bg-blue-50 text-left transition-all duration-150 active:scale-95"
                   >
                     <span className="text-3xl">{m.icon}</span>
                     <span className="font-semibold text-slate-800 text-sm leading-tight">{m.label}</span>
@@ -301,7 +301,7 @@ function QuestionnaireModal({
                   <button
                     key={h.id}
                     onClick={() => handleHosting(h.id)}
-                    className="flex items-center gap-4 p-4 rounded-2xl border-2 border-slate-100 hover:border-emerald-400 hover:bg-emerald-50 text-left transition-all duration-150 active:scale-95"
+                    className="flex items-center gap-4 p-4 rounded-2xl border-2 border-slate-100 hover:border-blue-300 hover:bg-blue-50 text-left transition-all duration-150 active:scale-95"
                   >
                     <span className="text-3xl shrink-0">{h.icon}</span>
                     <div>
@@ -410,41 +410,6 @@ function PyramidDiagram({
     <div className="w-full max-w-3xl mx-auto select-none">
       {/* ── Desktop Pyramid (hidden on mobile) ── */}
       <div className="hidden md:flex gap-3 items-stretch">
-      {/* ── Left column: hint button ─── */}
-      <div className="flex flex-col justify-center w-28 shrink-0">
-        <div
-          className="flex flex-col items-center gap-1.5 px-3 py-2.5 rounded-2xl text-center"
-          style={{
-            background: "rgba(255,255,255,0.15)",
-            border: "1.5px solid rgba(255,255,255,0.35)",
-            backdropFilter: "blur(8px)",
-          }}
-        >
-          <span className="text-lg leading-none">👉</span>
-          <span className="text-xs font-semibold leading-tight" style={{ color: "rgba(255,255,255,0.9)" }}>
-            Ebene anklicken → springt direkt zu den Karten
-          </span>
-        </div>
-      </div>
-      {/* ── Annotation column (right) ─── */}
-      <div className="flex flex-col justify-between w-36 shrink-0 py-[44px] order-last">
-        {[...PYRAMID_LAYERS].map((layer) => (
-          <div key={layer.id} className="flex items-start gap-1.5">
-            <span style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, marginTop: 2, flexShrink: 0 }}>←</span>
-            <span
-              style={{
-                fontFamily: "Caveat, cursive",
-                fontSize: 15.5,
-                color: "rgba(255,255,255,0.88)",
-                lineHeight: 1.35,
-                textShadow: "0 1px 4px rgba(0,0,0,0.45)",
-              }}
-            >
-              {layer.note}
-            </span>
-          </div>
-        ))}
-      </div>
       {/* ── Pyramid ──────────────────── */}
       <div className="flex-1 min-w-0">
       {/* ── Peak ─────────────────────────── */}
@@ -662,9 +627,8 @@ export default function Index() {
     <div
       className="min-h-screen"
       style={{
-        background:
-          "linear-gradient(180deg, hsl(205 80% 72%), hsl(210 70% 82%), hsl(200 50% 90%))",
-        fontFamily: "Space Grotesk, sans-serif",
+        background: "linear-gradient(160deg, #D6E9F5, #C0D8EE, #B8D0E8)",
+        fontFamily: "DM Sans, Space Grotesk, sans-serif",
       }}
     >
       {/* ── QUESTIONNAIRE MODAL ───────────────────────────────── */}
@@ -710,25 +674,6 @@ export default function Index() {
             Jedes Modell ist grundsätzlich sehr vielseitig — die Stärken, die wir hervorheben, basieren auf Nutzerfeedback aus Online-Communities (Reddit, Stack Overflow).
           </p>
 
-          {/* Quote card */}
-          <div
-            className="max-w-lg mx-auto mb-5 rounded-2xl text-left overflow-hidden"
-            style={{
-              background: "rgba(0,0,0,0.28)",
-              backdropFilter: "blur(10px)",
-              border: "1px solid rgba(255,255,255,0.18)",
-            }}
-          >
-            <div className="px-5 py-4">
-              <p className="text-[10px] text-amber-400 font-bold uppercase tracking-widest mb-2.5">
-                💡 Zum Nachdenken
-              </p>
-              <p className="text-sm leading-loose" style={{ color: "rgba(255,255,255,0.92)", fontStyle: "italic" }}>
-                „Die Nutzung von KI und Internet ist wie Ernährung: Du musst wissen, was gesund ist für deine Privatsphäre. Manchmal gönnt man sich den ‚Zuckerschock' einer praktischen App, genießt den Komfort, aber weiß genau: Eigentlich war das gerade verdammt ungesund für die Privatsphäre."
-              </p>
-            </div>
-          </div>
-
           {/* PYRAMID */}
           <PyramidDiagram active={activeFilter} onSelect={handlePyramidSelect} />
 
@@ -740,7 +685,7 @@ export default function Index() {
       </header>
 
       {/* ── STICKY FILTER BAR ─────────────────────────────────── */}
-      <div className="sticky top-0 z-50 backdrop-blur-md bg-white/20 border-b border-white/30 shadow-sm">
+      <div className="sticky top-0 z-50 backdrop-blur-md border-b shadow-sm" style={{ background: "rgba(200,221,240,0.82)", borderColor: "rgba(255,255,255,0.35)" }}>
         <div className="max-w-7xl mx-auto px-4">
           {/* Row 1: Tier filters + layer indicator */}
           <div className="flex items-center gap-2 pt-2 pb-1">
@@ -760,7 +705,7 @@ export default function Index() {
                       : "rgba(255,255,255,0.88)",
                     color: "#1e293b",
                     boxShadow: isAllActive
-                      ? "0 0 0 2.5px #fbbf24, 0 4px 16px rgba(0,0,0,0.14)"
+                      ? "0 0 0 2.5px #003399, 0 4px 16px rgba(0,0,0,0.14)"
                       : "0 2px 8px rgba(0,0,0,0.12)",
                     transform: isAllActive ? "scale(1.06)" : "scale(1)",
                   }}
@@ -862,7 +807,7 @@ export default function Index() {
               <button
                 onClick={() => setShowQuestionnaire(true)}
                 className="flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-200 hover:scale-105 active:scale-95"
-                style={{ background: "rgba(251,191,36,0.85)", color: "#1e293b" }}
+                style={{ background: "#003399", color: "#ffffff" }}
               >
                 <span>🎯</span>
                 <span>Welches KI Tool passt zu meinem Problem?</span>
@@ -870,7 +815,7 @@ export default function Index() {
             ) : (
               <>
                 <span className="text-white/45 text-[10px] font-medium shrink-0">Für dich:</span>
-                <span className="flex items-center gap-1 bg-amber-400 text-slate-900 px-3 py-1 rounded-full text-[11px] font-bold">
+                <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-white" style={{ background: "#003399" }}>
                   <span>{MISSIONS.find((m) => m.id === activeMission)?.icon}</span>
                   <span>{MISSIONS.find((m) => m.id === activeMission)?.label}</span>
                 </span>
@@ -878,14 +823,14 @@ export default function Index() {
                   const allSubSpecs = Object.values(SUB_SPECS).flat();
                   const subSpec = allSubSpecs.find((s) => s.id === activeSubSpec);
                   return subSpec ? (
-                    <span className="flex items-center gap-1 bg-violet-400 text-slate-900 px-3 py-1 rounded-full text-[11px] font-bold">
+                    <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-white" style={{ background: "#2255BB" }}>
                       <span>{subSpec.icon}</span>
                       <span>{subSpec.label}</span>
                     </span>
                   ) : null;
                 })()}
                 {activeHosting && (
-                  <span className="flex items-center gap-1 bg-emerald-400 text-slate-900 px-3 py-1 rounded-full text-[11px] font-bold">
+                  <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-white" style={{ background: "#7A9DB8" }}>
                     <span>{HOSTING_OPTIONS.find((h) => h.id === activeHosting)?.icon}</span>
                     <span>{HOSTING_OPTIONS.find((h) => h.id === activeHosting)?.label}</span>
                   </span>
@@ -914,14 +859,6 @@ export default function Index() {
         </div>
       </div>
 
-      {/* ── DATENSCHUTZ-LEISTE ────────────────────────────────── */}
-      <div className="bg-white/10 border-b border-white/20 px-4 py-1.5 text-center">
-        <p className="text-[11px] text-white/75 leading-relaxed">
-          🧁 Datenschutz-Bewertung: <span className="font-semibold">1 = EU-sicher · 2 = Gut vertretbar · 3 = Mit Vorsicht · 4 = Bedenklich · 5 = Datenschutz-Risiko</span>
-          <span className="mx-2 opacity-40">·</span>
-          <span className="font-semibold text-white/60">Alle Angaben ohne Gewähr. Stand April 2026.</span>
-        </p>
-      </div>
 
       {/* ── MAIN CONTENT ──────────────────────────────────────── */}
       <main id="cards-main" className="max-w-7xl mx-auto px-4 py-8 space-y-4">
@@ -996,23 +933,6 @@ export default function Index() {
                   <div className="text-[11px] text-slate-400">Eigener Computer</div>
                 </div>
               </div>
-              {/* Mini diagram: Computer → Model */}
-              <div className="flex items-center justify-center gap-2 py-3 rounded-xl" style={{ background: "rgba(0,0,0,0.2)" }}>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-10 h-8 rounded-md border border-slate-500/60 flex items-center justify-center text-lg" style={{ background: "rgba(71,85,105,0.5)" }}>🖥️</div>
-                  <span className="text-[9px] text-slate-400 font-semibold">DEIN PC</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="flex gap-0.5">
-                    {[0,1,2].map(i => <div key={i} className="w-1.5 h-1.5 rounded-full bg-slate-400/50" />)}
-                  </div>
-                  <span className="text-[8px] text-slate-500">intern</span>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-10 h-8 rounded-md border border-slate-500/60 flex items-center justify-center text-lg" style={{ background: "rgba(71,85,105,0.5)" }}>🧠</div>
-                  <span className="text-[9px] text-slate-400 font-semibold">MODELL</span>
-                </div>
-              </div>
               <ul className="space-y-1.5 text-xs">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
@@ -1056,33 +976,6 @@ export default function Index() {
                 <div>
                   <div className="font-black text-white text-sm" style={{ fontFamily: "Orbitron, sans-serif" }}>US Cloud</div>
                   <div className="text-[11px] text-blue-400">Server in den USA</div>
-                </div>
-              </div>
-              {/* Mini diagram: Browser → Internet → US Server */}
-              <div className="flex items-center justify-center gap-1.5 py-3 rounded-xl" style={{ background: "rgba(0,0,0,0.2)" }}>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-8 h-7 rounded-md border border-blue-500/40 flex items-center justify-center text-base" style={{ background: "rgba(59,130,246,0.15)" }}>🧑</div>
-                  <span className="text-[8px] text-blue-400 font-semibold">DU</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="flex gap-0.5">
-                    {[0,1,2].map(i => <div key={i} className="w-1.5 h-1.5 rounded-full bg-blue-400/60" />)}
-                  </div>
-                  <span className="text-[8px] text-blue-500/70">Internet</span>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-8 h-7 rounded-md border border-blue-500/40 flex items-center justify-center text-base" style={{ background: "rgba(59,130,246,0.15)" }}>🌐</div>
-                  <span className="text-[8px] text-blue-400 font-semibold">PROXY</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="flex gap-0.5">
-                    {[0,1,2].map(i => <div key={i} className="w-1.5 h-1.5 rounded-full bg-blue-400/60" />)}
-                  </div>
-                  <span className="text-[8px] text-blue-500/70">🌊 Atlantik</span>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-8 h-7 rounded-md border border-blue-500/40 flex items-center justify-center text-base" style={{ background: "rgba(59,130,246,0.15)" }}>🏭</div>
-                  <span className="text-[8px] text-blue-400 font-semibold">US-SERVER</span>
                 </div>
               </div>
               <ul className="space-y-1.5 text-xs">
@@ -1130,27 +1023,6 @@ export default function Index() {
                   <div className="text-[11px] text-emerald-400">Server in Europa</div>
                 </div>
               </div>
-              {/* Mini diagram: Browser → EU Server */}
-              <div className="flex items-center justify-center gap-2 py-3 rounded-xl" style={{ background: "rgba(0,0,0,0.2)" }}>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-9 h-7 rounded-md border border-emerald-500/40 flex items-center justify-center text-base" style={{ background: "rgba(16,185,129,0.15)" }}>🧑</div>
-                  <span className="text-[8px] text-emerald-400 font-semibold">DU</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="flex gap-0.5">
-                    {[0,1,2].map(i => <div key={i} className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />)}
-                  </div>
-                  <span className="text-[8px] text-emerald-500/70">Internet</span>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <div className="w-9 h-7 rounded-md border border-emerald-500/40 flex items-center justify-center text-base" style={{ background: "rgba(16,185,129,0.15)" }}>🏰</div>
-                  <span className="text-[8px] text-emerald-400 font-semibold">EU-SERVER</span>
-                </div>
-                <div className="flex flex-col items-center gap-0.5">
-                  <div className="w-5 h-5 rounded-full border border-emerald-400/50 flex items-center justify-center text-[9px]" style={{ background: "rgba(16,185,129,0.2)" }}>🔒</div>
-                  <span className="text-[8px] text-emerald-400/70">DSGVO</span>
-                </div>
-              </div>
               <ul className="space-y-1.5 text-xs">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
@@ -1184,10 +1056,10 @@ export default function Index() {
           <div className="px-6 pb-5">
             <div
               className="rounded-xl px-5 py-3 text-center"
-              style={{ background: "rgba(251,191,36,0.08)", border: "1px solid rgba(251,191,36,0.2)" }}
+              style={{ background: "rgba(0,51,153,0.08)", border: "1px solid rgba(0,51,153,0.18)" }}
             >
-              <p className="text-xs text-amber-300/80 leading-relaxed">
-                <span className="font-bold text-amber-300">💡 Merksatz:</span> Das KI-Modell selbst ist oft dasselbe — der Unterschied ist, <em>wo</em> es läuft und wer Zugriff auf deine Eingaben hat.
+              <p className="text-xs text-white/75 leading-relaxed">
+                <span className="font-bold text-white/90">💡 Merksatz:</span> Das KI-Modell selbst ist oft dasselbe — der Unterschied ist, <em>wo</em> es läuft und wer Zugriff auf deine Eingaben hat.
               </p>
             </div>
           </div>
