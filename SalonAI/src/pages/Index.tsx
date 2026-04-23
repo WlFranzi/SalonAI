@@ -727,14 +727,10 @@ export default function Index() {
                   onClick={() => { setActiveFilter("all"); setActiveMission(null); setActiveSubSpec(null); setActiveHosting(null); }}
                   className="flex items-center gap-1.5 px-4 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-200 shrink-0"
                   style={{
-                    background: isAllActive
-                      ? "#ffffff"
-                      : "rgba(255,255,255,0.88)",
+                    background: "#ffffff",
                     color: "#1e293b",
-                    boxShadow: isAllActive
-                      ? "0 0 0 2.5px #003399, 0 4px 16px rgba(0,0,0,0.14)"
-                      : "0 2px 8px rgba(0,0,0,0.12)",
-                    transform: isAllActive ? "scale(1.06)" : "scale(1)",
+                    border: isAllActive ? "2px solid #003399" : "2px solid transparent",
+                    boxShadow: isAllActive ? "0 2px 10px rgba(0,51,153,0.18)" : "0 1px 4px rgba(0,0,0,0.10)",
                   }}
                 >
                   <span>✨</span>
