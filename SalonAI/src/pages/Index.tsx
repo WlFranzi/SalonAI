@@ -647,29 +647,25 @@ export default function Index() {
           {/* Back to Salon AI */}
           <a
             href="/"
-            className="inline-flex items-center gap-1.5 mb-4 px-3 py-1.5 rounded-full text-xs font-semibold transition-all hover:scale-105"
+            className="inline-flex items-center gap-1.5 mb-4 px-3 py-1.5 rounded-full text-xs font-semibold transition-all hover:opacity-70"
             style={{
-              background: "rgba(255,255,255,0.18)",
-              border: "1px solid rgba(255,255,255,0.35)",
-              color: "rgba(255,255,255,0.85)",
-              backdropFilter: "blur(8px)",
+              background: "rgba(255,255,255,0.55)",
+              border: "1px solid rgba(27,46,74,0.12)",
+              color: "#1B2E4A",
             }}
           >
             ← Salon AI
           </a>
           <h1
-            className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-sm"
-            style={{ fontFamily: "Playfair Display, serif", letterSpacing: "-0.01em" }}
+            className="text-4xl md:text-5xl font-bold mb-3"
+            style={{ fontFamily: "Playfair Display, serif", letterSpacing: "-0.01em", color: "#1B2E4A" }}
           >
             KI Guide 2026
           </h1>
-          <p className="text-base text-white/75 font-normal mb-3 max-w-xl mx-auto">
+          <p className="text-base font-medium mb-3 max-w-xl mx-auto" style={{ color: "#3D526A" }}>
             Alle relevanten Modelle & Tools — von der Infrastruktur bis zur Anwendung
           </p>
-          <p
-            className="text-sm max-w-xl mx-auto mb-4 leading-relaxed"
-            style={{ color: "rgba(255,255,255,0.88)", textShadow: "0 1px 4px rgba(0,0,0,0.35)" }}
-          >
+          <p className="text-sm max-w-xl mx-auto mb-4 leading-relaxed" style={{ color: "#5A7A96" }}>
             Jedes Modell ist grundsätzlich sehr vielseitig — die Stärken, die wir hervorheben, basieren auf Nutzerfeedback aus Online-Communities (Reddit, Stack Overflow).
           </p>
 
@@ -698,11 +694,11 @@ export default function Index() {
             ) : (
               <button
                 onClick={clearQuestionnaire}
-                className="flex items-center gap-2 rounded-full transition-all hover:opacity-80"
+                className="flex items-center gap-2 rounded-full transition-all hover:opacity-70"
                 style={{
-                  background: "rgba(255,255,255,0.18)",
-                  border: "1px solid rgba(255,255,255,0.35)",
-                  color: "rgba(255,255,255,0.85)",
+                  background: "rgba(255,255,255,0.55)",
+                  border: "1px solid rgba(27,46,74,0.12)",
+                  color: "#1B2E4A",
                   fontSize: 12,
                   padding: "8px 18px",
                 }}
@@ -710,7 +706,7 @@ export default function Index() {
                 ✕ Filter zurücksetzen
               </button>
             )}
-            <p className="text-white/40 text-xs mt-1 select-none">↓ scroll</p>
+            <p className="text-xs mt-1 select-none" style={{ color: "#7A9DB8" }}>↓ scroll</p>
           </div>
         </div>
       </header>
