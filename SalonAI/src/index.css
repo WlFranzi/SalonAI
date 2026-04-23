@@ -72,7 +72,7 @@ html, body {
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, #1B2E4A, #0F1F35);
+  background: linear-gradient(135deg, #1B2E4A, #253F5E);
   transform: rotateY(180deg);
 }
 

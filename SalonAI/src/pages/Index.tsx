@@ -657,15 +657,14 @@ export default function Index() {
           >
             ← Salon AI
           </a>
-          <div className="text-4xl mb-2">🤖</div>
           <h1
-            className="text-4xl md:text-5xl font-black text-white mb-3 drop-shadow-lg"
-            style={{ fontFamily: "Orbitron, sans-serif" }}
+            className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-sm"
+            style={{ fontFamily: "Playfair Display, serif", letterSpacing: "-0.01em" }}
           >
-            KI (Monster) Guide 2026
+            KI Guide 2026
           </h1>
-          <p className="text-lg text-white/90 font-semibold mb-3 max-w-xl mx-auto tracking-wide">
-            Monster-Karten — von der Cloud bis zum Agenten
+          <p className="text-base text-white/75 font-normal mb-3 max-w-xl mx-auto">
+            Alle relevanten Modelle & Tools — von der Infrastruktur bis zur Anwendung
           </p>
           <p
             className="text-sm max-w-xl mx-auto mb-4 leading-relaxed"

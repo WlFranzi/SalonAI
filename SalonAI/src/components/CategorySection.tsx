@@ -31,11 +31,11 @@ function groupByCompany(cards: MonsterCard[]): Map<string, MonsterCard[]> {
   return map;
 }
 
-const TIER_COLORS: Record<number, { bg: string; border: string; badge: string; hover: string }> = {
-  0: { bg: "from-slate-900/80 to-slate-800/80",   border: "border-slate-600/40", badge: "bg-slate-700 text-slate-200", hover: "#94a3b8" },
-  1: { bg: "from-blue-950/80 to-blue-900/80",      border: "border-blue-700/40",  badge: "bg-blue-800 text-blue-200", hover: "#60a5fa" },
-  2: { bg: "from-violet-950/80 to-violet-900/80",  border: "border-violet-700/40",badge: "bg-violet-800 text-violet-200", hover: "#a78bfa" },
-  3: { bg: "from-orange-500/95 to-amber-500/95",    border: "border-orange-400/70", badge: "bg-orange-950/80 text-orange-100", hover: "#fbbf24" },
+const TIER_COLORS: Record<number, { topBorder: string; border: string; badge: string; hover: string }> = {
+  0: { topBorder: "#94a3b8", border: "border-slate-200", badge: "bg-slate-100 text-slate-500", hover: "#94a3b8" },
+  1: { topBorder: "#3b82f6", border: "border-blue-100",  badge: "bg-blue-50 text-blue-600",    hover: "#3b82f6" },
+  2: { topBorder: "#8b5cf6", border: "border-violet-100",badge: "bg-violet-50 text-violet-600", hover: "#8b5cf6" },
+  3: { topBorder: "#f59e0b", border: "border-amber-100", badge: "bg-amber-50 text-amber-600",  hover: "#f59e0b" },
 };
 
 export default function CategorySection({ category, index }: Props) {
@@ -47,29 +47,27 @@ export default function CategorySection({ category, index }: Props) {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
-      className={`rounded-3xl border ${colors.border} bg-gradient-to-br ${colors.bg} backdrop-blur-sm overflow-hidden`}
+      className={`rounded-2xl border ${colors.border} bg-white shadow-sm overflow-hidden`}
+      style={{ borderTop: `3px solid ${colors.topBorder}` }}
     >
       {/* Category header */}
-      <div className="flex items-center gap-4 px-6 py-5">
-        <span className="text-4xl leading-none">{category.icon}</span>
+      <div className="flex items-center gap-4 px-6 py-4">
+        <span className="text-3xl leading-none">{category.icon}</span>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3 flex-wrap">
-            <h2
-              className="text-lg font-bold text-white leading-tight"
-              style={{ fontFamily: "Orbitron, sans-serif" }}
-            >
+            <h2 className="text-base font-bold text-slate-800 leading-tight">
               {category.title}
             </h2>
             <span
-              className={`text-[11px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full ${colors.badge}`}
+              className={`text-[10px] font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full ${colors.badge}`}
             >
-              Tier {category.tier} · {category.tierLabel}
+              {category.tierLabel}
             </span>
           </div>
-          <p className="text-sm text-white/50 mt-0.5">{category.subtitle}</p>
+          <p className="text-xs text-slate-400 mt-0.5">{category.subtitle}</p>
         </div>
-        <div className="text-white/30 text-sm font-mono shrink-0">
-          {category.cards.length} Karten
+        <div className="text-slate-300 text-xs font-mono shrink-0">
+          {category.cards.length}
         </div>
       </div>
 
@@ -86,7 +84,7 @@ export default function CategorySection({ category, index }: Props) {
                       className="w-2 h-2 rounded-full"
                       style={{ backgroundColor: company?.color ?? "#888" }}
                     />
-                    <span className="text-xs font-semibold text-white/60 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
                       {company?.name ?? companyKey}
                     </span>
                   </div>
@@ -106,7 +104,7 @@ export default function CategorySection({ category, index }: Props) {
         {/* Right-fade hint for mobile — signals scrollable content */}
         <div
           className="absolute right-0 top-0 bottom-6 w-10 pointer-events-none md:hidden z-10"
-          style={{ background: "linear-gradient(to right, transparent, rgba(0,0,0,0.25))" }}
+          style={{ background: "linear-gradient(to right, transparent, rgba(200,220,240,0.6))" }}
         />
         <div className="overflow-x-auto pb-6 px-6 scrollbar-thin">
           <div className="flex gap-8 min-w-max">
@@ -119,7 +117,7 @@ export default function CategorySection({ category, index }: Props) {
                       className="w-2 h-2 rounded-full"
                       style={{ backgroundColor: company?.color ?? "#888" }}
                     />
-                    <span className="text-xs font-semibold text-white/60 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
                       {company?.name ?? companyKey}
                     </span>
                   </div>
