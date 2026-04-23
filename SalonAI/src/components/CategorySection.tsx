@@ -51,7 +51,7 @@ export default function CategorySection({ category, index }: Props) {
       style={{ borderTop: `3px solid ${colors.topBorder}` }}
     >
       {/* Category header */}
-      <div className="flex items-center gap-4 px-6 py-4">
+      <div className="flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4">
         <span className="text-3xl leading-none">{category.icon}</span>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3 flex-wrap">
@@ -73,7 +73,7 @@ export default function CategorySection({ category, index }: Props) {
 
       {category.tier === 3 ? (
         /* ── Agentic layer: wrapping grid ── */
-        <div className="px-6 pb-6">
+        <div className="px-3 sm:px-6 pb-6">
           <div className="flex flex-wrap gap-x-8 gap-y-6">
             {Array.from(groups.entries()).map(([companyKey, cards]) => {
               const company = COMPANIES[companyKey];
@@ -106,7 +106,7 @@ export default function CategorySection({ category, index }: Props) {
           className="absolute right-0 top-0 bottom-6 w-10 pointer-events-none md:hidden z-10"
           style={{ background: "linear-gradient(to right, transparent, rgba(200,220,240,0.6))" }}
         />
-        <div className="overflow-x-auto pb-6 px-6 scrollbar-thin">
+        <div className="overflow-x-auto pb-6 px-3 sm:px-6 scrollbar-thin">
           <div className="flex gap-8 min-w-max">
             {Array.from(groups.entries()).map(([companyKey, cards]) => {
               const company = COMPANIES[companyKey];

@@ -642,7 +642,7 @@ export default function Index() {
       </AnimatePresence>
 
       {/* ── HERO ──────────────────────────────────────────────── */}
-      <header className="pt-7 pb-10 px-6 text-center">
+      <header className="pt-7 pb-8 px-4 sm:px-6 text-center">
         <div className="max-w-3xl mx-auto">
           {/* Back to Salon AI */}
           <a
@@ -665,12 +665,14 @@ export default function Index() {
           <p className="text-base font-medium mb-3 max-w-xl mx-auto" style={{ color: "#3D526A" }}>
             Alle relevanten Modelle & Tools — von der Infrastruktur bis zur Anwendung
           </p>
-          <p className="text-sm max-w-xl mx-auto mb-4 leading-relaxed" style={{ color: "#5A7A96" }}>
+          <p className="hidden sm:block text-sm max-w-xl mx-auto mb-4 leading-relaxed" style={{ color: "#5A7A96" }}>
             Jedes Modell ist grundsätzlich sehr vielseitig — die Stärken, die wir hervorheben, basieren auf Nutzerfeedback aus Online-Communities (Reddit, Stack Overflow).
           </p>
 
-          {/* PYRAMID */}
-          <PyramidDiagram active={activeFilter} onSelect={handlePyramidSelect} />
+          {/* PYRAMID — hidden on mobile, too complex for small screens */}
+          <div className="hidden sm:block">
+            <PyramidDiagram active={activeFilter} onSelect={handlePyramidSelect} />
+          </div>
 
           {/* Questionnaire CTA — big & centred */}
           <div className="flex flex-col items-center gap-2 mt-6">
@@ -681,14 +683,15 @@ export default function Index() {
                 style={{
                   background: "#003399",
                   color: "#fff",
-                  fontSize: 15,
-                  padding: "14px 32px",
+                  fontSize: 14,
+                  padding: "12px 24px",
                   boxShadow: "0 6px 28px rgba(0,51,153,0.40), 0 2px 8px rgba(0,0,0,0.18)",
                   letterSpacing: "0.01em",
                 }}
               >
                 <span style={{ fontSize: 18 }}>🎯</span>
-                <span>Welches KI-Tool passt zu dir?</span>
+                <span className="hidden sm:inline">Welches KI-Tool passt zu dir?</span>
+                <span className="sm:hidden">KI-Tool finden</span>
                 <span style={{ opacity: 0.65, fontSize: 13 }}>3 Klicks →</span>
               </button>
             ) : (
@@ -875,7 +878,7 @@ export default function Index() {
 
 
       {/* ── MAIN CONTENT ──────────────────────────────────────── */}
-      <main id="cards-main" className="max-w-7xl mx-auto px-4 py-8 space-y-4">
+      <main id="cards-main" className="max-w-7xl mx-auto px-2 sm:px-4 py-6 sm:py-8 space-y-3 sm:space-y-4">
         {tiersInView.map((tier) => {
           const tierCats = visibleCategories.filter((c) => c.tier === tier);
           const info = LAYER_INFO[tier];
