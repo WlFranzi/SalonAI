@@ -99,35 +99,30 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             </p>
           )}
 
-          {/* monster image — flag badge overlaid bottom-right */}
-          <div className="flex justify-center py-2 shrink-0">
-            <div className="relative">
+          {/* monster image — free-floating, no circle border */}
+          <div className="flex justify-center items-end pt-2 pb-1 shrink-0" style={{ height: 128 }}>
+            <div className="relative flex items-center justify-center">
+              {card.discontinued ? (
+                <span className="text-6xl grayscale opacity-40">🚫</span>
+              ) : (
+                <img
+                  src={card.monster}
+                  alt={card.name}
+                  style={{
+                    width: 118,
+                    height: 118,
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.13))",
+                  }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = "none";
+                  }}
+                />
+              )}
+              {/* Flag — small, bottom-right of image */}
               <div
-                className="rounded-full flex items-center justify-center overflow-hidden shadow-md"
-                style={{
-                  width: 88,
-                  height: 88,
-                  backgroundColor: company.color + "22",
-                  border: `3px solid ${company.color}`,
-                }}
-              >
-                {card.discontinued ? (
-                  <span className="text-4xl grayscale opacity-50">🚫</span>
-                ) : (
-                  <img
-                    src={card.monster}
-                    alt={card.name}
-                    className="w-full h-full object-contain p-1"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
-                  />
-                )}
-              </div>
-              {/* Flag badge */}
-              <div
-                className="absolute -bottom-1 -right-1 text-base leading-none rounded-full bg-white shadow-md flex items-center justify-center"
-                style={{ width: 26, height: 26 }}
+                className="absolute -bottom-1 -right-2 text-sm leading-none rounded-full bg-white/80 shadow flex items-center justify-center"
+                style={{ width: 22, height: 22 }}
               >
                 {card.flag}
               </div>
@@ -137,15 +132,12 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
           {/* name block */}
           <div className="flex-1 flex flex-col items-center px-5 pb-1 text-center min-h-0">
             <div
-              className="text-xs font-bold tracking-wide uppercase mb-1 shrink-0"
-              style={{ color: company.color }}
+              className="text-[10px] font-semibold tracking-widest uppercase mb-1 shrink-0"
+              style={{ color: company.color + "cc" }}
             >
               {company.name}
             </div>
-            <h3
-              className="font-bold text-sm leading-tight text-slate-800 shrink-0"
-              style={{ fontFamily: "Orbitron, sans-serif" }}
-            >
+            <h3 className="font-bold text-sm leading-tight text-slate-800 shrink-0">
               {card.name}
             </h3>
             {/* nickname */}
