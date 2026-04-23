@@ -4,70 +4,238 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Europa 2041 – Positive Vision</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background: #E8F2FA;
+        color: #1B2E4A;
+        min-height: 100vh;
+      }
+
+      /* ── Nav ── */
+      nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 50;
+        background: rgba(200,221,240,0.88);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255,255,255,0.35);
+        padding: 0 24px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+      }
+      nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #1B2E4A;
+        text-decoration: none;
+        transition: opacity 0.15s;
+      }
+      nav a:hover { opacity: 0.6; }
+
+      /* ── Hero ── */
+      .hero {
+        position: relative;
+        min-height: 56vh;
+        max-height: 76vh;
+        overflow: hidden;
+        margin-top: 48px;
+      }
+      .hero-image {
+        width: 100%;
+        height: 100%;
+        min-height: 56vh;
+        object-fit: cover;
+        display: block;
+        filter: saturate(1.05) contrast(1.02);
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: auto 0 0 0;
+        padding: 2.5rem 1.5rem 2rem;
+        background: linear-gradient(to top, rgba(10,20,50,0.70), rgba(10,20,50,0.02));
+        color: #fff;
+      }
+      .hero-overlay h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2rem, 5vw, 3.6rem);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        line-height: 1.15;
+      }
+      .hero-overlay p {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        color: rgba(255,255,255,0.88);
+        font-weight: 300;
+      }
+
+      /* ── Content ── */
+      .content {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      section {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid #C5D5E4;
+        padding: 1.75rem 1.5rem;
+      }
+
+      section h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1B2E4A;
+        margin-bottom: 0.75rem;
+      }
+
+      section p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #3D526A;
+      }
+
+      /* ── Idea cards ── */
+      .idea-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        margin-top: 1.25rem;
+      }
+
+      article {
+        background: linear-gradient(135deg, #EEF5FB, #E2EEF8);
+        border: 1px solid #C5D5E4;
+        border-radius: 14px;
+        padding: 1.25rem 1rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+      }
+      article:hover {
+        box-shadow: 0 6px 20px rgba(0,51,153,0.10);
+        transform: translateY(-2px);
+      }
+
+      .idea-icon {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+        display: block;
+      }
+
+      article h3 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1B2E4A;
+        margin-bottom: 0.4rem;
+      }
+
+      article p {
+        font-size: 0.875rem;
+        line-height: 1.6;
+        color: #4A6280;
+        margin: 0;
+      }
+
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 2rem 1rem 3rem;
+        font-size: 0.8rem;
+        color: #7A9DB8;
+      }
+      footer a {
+        color: #003399;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      footer a:hover { text-decoration: underline; }
+    </style>
   </head>
   <body>
-    <nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(200,221,240,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.3);padding:0 24px;height:48px;display:flex;align-items:center;">
-      <a href="/" style="display:inline-flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#1B2E4A;text-decoration:none;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.65'" onmouseout="this.style.opacity='1'">
+    <nav>
+      <a href="/">
         <span style="font-size:15px;">←</span> Salon AI
       </a>
     </nav>
-    <header class="hero" style="margin-top:48px;">
+
+    <header class="hero">
       <img src="europe_2041.png" alt="Menschen im Alltag in Europa im Jahr 2041" class="hero-image" />
       <div class="hero-overlay">
         <h1>Europa 2041</h1>
-        <p>Ein Kontinent, der Nähe, Technik und Natur zusammenbringt.</p>
+        <p>Eine konkrete, positive Vision unserer gemeinsamen Zukunft.</p>
       </div>
     </header>
 
     <main class="content">
       <section>
-        <h2>Der Alltag in 15 Jahren</h2>
+        <h2>Wie wir morgen leben</h2>
         <p>
-          Öffentliche Räume sind ruhiger, grüner und zugänglicher. Arbeit, Bildung und Gesundheit sind lokal gut erreichbar,
-          ohne dass Menschen auf Chancen in anderen Regionen verzichten müssen.
+          Europa 2041: ein Kontinent, der Nähe, Technologie und Natur neu verbindet.
+          Öffentliche Räume sind ruhiger, grüner und zugänglicher. Arbeit, Bildung und Gesundheit
+          sind lokal gut erreichbar — ohne dass Menschen auf Chancen verzichten müssen.
+          Vier ungewöhnliche Ideen, die bereits heute denkbar wären.
         </p>
       </section>
 
       <section>
-        <h2>Konkrete, ungewöhnliche Ideen für Europa</h2>
+        <h2>Vier Ideen für ein anderes Europa</h2>
         <div class="idea-grid">
           <article>
-            <h3>1. Nachtzüge als mobiles Dorf</h3>
-            <p>Ein Abo verbindet 120 Städte. Züge haben Schlafkabinen, Mini-Kitas und Co-Working-Wagen.</p>
+            <span class="idea-icon">⚡</span>
+            <h3>Kinetische Mikro-Netze</h3>
+            <p>
+              Kleine Energiewandler unter Bürgersteigen und in Türen verwandeln
+              die Bewegung von Millionen Menschen täglich in sauberen Strom —
+              ohne Solaranlage, ohne Windrad.
+            </p>
           </article>
           <article>
-            <h3>2. 15-Minuten-Gesundheit</h3>
-            <p>Jede Stadt hat Gesundheits-Labore in Bibliotheken: Check-up in 12 Minuten, Diagnose am selben Tag.</p>
+            <span class="idea-icon">🌱</span>
+            <h3>Biolumineszente Stadtbeleuchtung</h3>
+            <p>
+              Genetisch optimierte Pflanzen ersetzen Straßenlaternen: Parks,
+              Wege und Plätze leuchten nachts von innen heraus —
+              wartungsfrei, ohne Stromnetz.
+            </p>
           </article>
           <article>
-            <h3>3. Bürgerdividende aus Daten</h3>
-            <p>Wenn öffentliche KI mit anonymen Stadtdaten trainiert wird, erhalten alle Bewohner eine jährliche Auszahlung.</p>
+            <span class="idea-icon">👁️</span>
+            <h3>Universelle Fähigkeits-Übersetzer</h3>
+            <p>
+              KI übersetzt Berufsqualifikationen europaweit in Echtzeit.
+              Wer als Krankenschwester in Polen ausgebildet wurde,
+              kann in Portugal am nächsten Tag arbeiten — ohne Bürokratie.
+            </p>
           </article>
           <article>
-            <h3>4. Kühlkorridore gegen Hitze</h3>
-            <p>Verbundene Schattenwege, Nebelbrunnen und Baumtunnel halten Innenstädte im Sommer 4–6°C kühler.</p>
-          </article>
-          <article>
-            <h3>5. Reparatur als neues Statussymbol</h3>
-            <p>Jedes Produkt hat einen Reparaturpass. Wer lange nutzt statt neu kauft, zahlt automatisch weniger Steuern.</p>
-          </article>
-          <article>
-            <h3>6. Mehrsprachigkeit in Echtzeit</h3>
-            <p>Öffentliche Displays und Ohrstöpsel übersetzen Gespräche live in 24 Sprachen, ohne Cloud-Profiling.</p>
+            <span class="idea-icon">🏛️</span>
+            <h3>Algorithmus-Bürgergremien</h3>
+            <p>
+              500 zufällig ausgewählte Bürgerinnen co-entscheiden mit KI-Modellen
+              über Stadtplanung und Budget — transparent, repräsentativ
+              und schneller als jedes Parlament.
+            </p>
           </article>
         </div>
       </section>
-
-      <section>
-        <h2>Messbare Ziele bis 2041</h2>
-        <ul>
-          <li>80 % der Wege in Städten emissionsfrei</li>
-          <li>Null Energiearmut im Winter</li>
-          <li>Wartezeiten auf Facharzttermine unter 10 Tagen</li>
-          <li>Jede Region mit mindestens einem europäischen Zukunftscampus</li>
-        </ul>
-      </section>
     </main>
+
+    <footer>
+      <p>Erstellt als positive Zukunftsvision für Europa. Gemeinsam Richtung 2041.</p>
+      <p style="margin-top:0.5rem;"><a href="/">← Zurück zu Salon AI</a></p>
+    </footer>
   </body>
 </html>

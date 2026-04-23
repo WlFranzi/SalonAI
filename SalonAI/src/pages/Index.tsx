@@ -677,9 +677,41 @@ export default function Index() {
           {/* PYRAMID */}
           <PyramidDiagram active={activeFilter} onSelect={handlePyramidSelect} />
 
-          {/* Bounce scroll indicator */}
-          <div className="flex justify-center mt-3">
-            <div className="animate-bounce text-white/40 text-2xl leading-none select-none">↓</div>
+          {/* Questionnaire CTA — big & centred */}
+          <div className="flex flex-col items-center gap-2 mt-6">
+            {!activeMission ? (
+              <button
+                onClick={() => setShowQuestionnaire(true)}
+                className="flex items-center gap-3 rounded-full font-bold transition-all duration-200 hover:scale-105 active:scale-95"
+                style={{
+                  background: "#003399",
+                  color: "#fff",
+                  fontSize: 15,
+                  padding: "14px 32px",
+                  boxShadow: "0 6px 28px rgba(0,51,153,0.40), 0 2px 8px rgba(0,0,0,0.18)",
+                  letterSpacing: "0.01em",
+                }}
+              >
+                <span style={{ fontSize: 18 }}>🎯</span>
+                <span>Welches KI-Tool passt zu dir?</span>
+                <span style={{ opacity: 0.65, fontSize: 13 }}>3 Klicks →</span>
+              </button>
+            ) : (
+              <button
+                onClick={clearQuestionnaire}
+                className="flex items-center gap-2 rounded-full transition-all hover:opacity-80"
+                style={{
+                  background: "rgba(255,255,255,0.18)",
+                  border: "1px solid rgba(255,255,255,0.35)",
+                  color: "rgba(255,255,255,0.85)",
+                  fontSize: 12,
+                  padding: "8px 18px",
+                }}
+              >
+                ✕ Filter zurücksetzen
+              </button>
+            )}
+            <p className="text-white/40 text-xs mt-1 select-none">↓ scroll</p>
           </div>
         </div>
       </header>
@@ -801,19 +833,10 @@ export default function Index() {
               </>
             )}
           </div>{/* end Row 1 outer flex */}
-          {/* Row 2: Questionnaire trigger / active result badge */}
+          {/* Row 2: Active filter state (only shown when questionnaire result is active) */}
+          {activeMission && (
           <div className="border-t border-white/10 mt-1 pt-1.5 pb-2 flex items-center gap-2 flex-wrap">
-            {!activeMission ? (
-              <button
-                onClick={() => setShowQuestionnaire(true)}
-                className="flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-200 hover:scale-105 active:scale-95"
-                style={{ background: "#003399", color: "#ffffff" }}
-              >
-                <span>🎯</span>
-                <span>Welches KI Tool passt zu meinem Problem?</span>
-              </button>
-            ) : (
-              <>
+            <>
                 <span className="text-white/45 text-[10px] font-medium shrink-0">Für dich:</span>
                 <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold text-white" style={{ background: "#003399" }}>
                   <span>{MISSIONS.find((m) => m.id === activeMission)?.icon}</span>
@@ -853,9 +876,9 @@ export default function Index() {
                 >
                   ✕
                 </button>
-              </>
-            )}
+            </>
           </div>
+          )}
         </div>
       </div>
 
