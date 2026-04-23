@@ -194,6 +194,14 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             );
           })()}
 
+          {/* flip hint */}
+          <div className="pb-2 flex justify-center pointer-events-none select-none">
+            <span className="text-[10px] text-slate-300 flex items-center gap-1">
+              <span style={{ display: "inline-block", transform: "scaleX(-1)" }}>↩</span>
+              Details
+            </span>
+          </div>
+
           {card.discontinued && (
             <div className="absolute bottom-10 left-0 right-0 flex justify-center pointer-events-none">
               <span className="text-white text-[10px] font-bold bg-red-600/90 px-3 py-1 rounded-full rotate-[-6deg] shadow-md">
