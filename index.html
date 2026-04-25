@@ -102,6 +102,52 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .past-row .date { font-size: 11px; color: var(--muted-blue); min-width: 80px; }
 .past-row .city { font-size: 12px; color: var(--navy); opacity: 0.7; flex: 1; }
 
+/* Photo preview button */
+.photo-preview-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(200,221,240,0.35);
+  color: var(--sky-deep);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.photo-preview-btn:hover,
+.photo-preview-btn:focus { background: rgba(180,210,235,0.6); outline: none; }
+.photo-preview-popup {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 8px 32px rgba(0,51,153,0.13);
+  z-index: 100;
+  gap: 6px;
+  flex-direction: row;
+  width: max-content;
+  max-width: 620px;
+}
+.photo-preview-popup img {
+  width: 190px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+}
+.photo-preview-btn:hover .photo-preview-popup,
+.photo-preview-btn:focus .photo-preview-popup {
+  display: flex;
+}
+
 /* Bring 15 banner */
 .bring15 { margin-top: 16px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: 5px; } /* gold intentionally kept */
@@ -269,6 +315,10 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <div class="card-surface tile">
       <div class="tile-label"><span class="dot"></span>Salon AI Dinners</div>
       <h2>Events</h2>
+      <div style="display:flex;align-items:flex-start;gap:10px;background:rgba(0,51,153,0.05);border:1px solid rgba(0,51,153,0.14);border-radius:12px;padding:12px 14px;margin-bottom:16px;">
+        <span style="font-size:18px;flex-shrink:0;line-height:1.2;">🇪🇺</span>
+        <p style="font-size:13px;color:var(--navy);line-height:1.6;font-weight:500;margin:0;"><span style="color:var(--accent);font-weight:700;">Pro-EU Event Series:</span> Baue deinen eigenen Agenten und nutze ihn, um deinen persönlichen Pro-EU-Beitragsplan zu entwickeln <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.</p>
+      </div>
 
       <!-- Upcoming -->
       <div class="events-section">
@@ -309,25 +359,16 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
         <div class="past-row">
           <span class="date">Mar 25, 2025</span>
           <span class="city">Munich, Germany</span>
-          <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'">What we built — one example ↗</a>
-        </div>
-      </div>
-
-      <!-- Workshop format info -->
-      <div style="background:rgba(0,51,153,0.04);border:1px solid rgba(0,51,153,0.10);border-radius:14px;padding:14px 16px;margin-bottom:16px;">
-        <p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:var(--accent);margin-bottom:10px;">Was beim 2-Day Workshop passiert</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;gap:10px;align-items:flex-start;">
-            <span style="font-size:15px;line-height:1;flex-shrink:0;">💻</span>
-            <span style="font-size:12.5px;color:var(--navy);line-height:1.55;">Du baust deinen ersten KI-Agenten live am eigenen Laptop — kein Vorwissen nötig.</span>
-          </div>
-          <div style="display:flex;gap:10px;align-items:flex-start;">
-            <span style="font-size:15px;line-height:1;flex-shrink:0;">⚡</span>
-            <span style="font-size:12.5px;color:var(--navy);line-height:1.55;">Du lernst, was du mit Agenten ausführen kannst — konkret, mit echten Use Cases.</span>
-          </div>
-          <div style="display:flex;gap:10px;align-items:flex-start;">
-            <span style="font-size:15px;line-height:1;flex-shrink:0;">🇪🇺</span>
-            <span style="font-size:12.5px;color:var(--navy);line-height:1.55;">Du nutzt KI, um zu brainstormen: Wie kann ich Europa von meinem eigenen Platz aus stärken — ohne Politiker zu sein?</span>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+            <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'">What we built — one example ↗</a>
+            <div class="photo-preview-btn" tabindex="0">
+              <span>📸 Event Fotos</span>
+              <div class="photo-preview-popup">
+                <img src="/resources/assets/IMG_3512.JPG" alt="Salon AI Dinner München – Laptop mit Europa 2041" />
+                <img src="/resources/assets/IMG_3526.JPG" alt="Salon AI Dinner München – gedeckter Tisch" />
+                <img src="/resources/assets/IMG_3530.JPG" alt="Salon AI Dinner München – Tischdekoration" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -368,7 +409,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <div class="skills-intro">
       <p class="eyebrow" style="margin-bottom:4px;">Was du bei einem Dinner lernst</p>
       <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;">KI in deinem Berufsfeld</h2>
-      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;">Sieben Berufsfelder. Wie es früher lief, was KI heute möglich macht — und wie du damit aktiv zu einem stärkeren Europa beitragen kannst.</p>
+      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;">Du bist bereits Profi — hier siehst du, was KI in deinem Bereich heute möglich macht, und wie du damit aktiv zu einem stärkeren Europa beitragen kannst.</p>
     </div>
     <div id="skills-list"></div>
   </div>
