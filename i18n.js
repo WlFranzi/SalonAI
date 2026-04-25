@@ -18,7 +18,7 @@ window.T = {
     hero_sub:      'Startet in Deutschland, bald in ganz Europa.',
     hero_h1:       'Wenn alle Träume Europas wahr würden... würden sie nur Europa verändern — oder würden sie <em>die Welt verändern?</em>',
     events_h2:     'Events',
-    pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU Event Series:</span> Baue deinen eigenen Agenten und nutze ihn, um deinen persönlichen Pro-EU-Beitragsplan zu entwickeln <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.',
+    pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU Eventreihe:</span> Entwickle deinen eigenen Agenten und setze ihn ein, um deinen persönlichen Pro-EU-Aktionsplan zu erstellen <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.',
     upcoming:      'Upcoming',
     rsvp_open:     'RSVP OPEN',
     munich_sub:    'München · limitierte Plätze',
