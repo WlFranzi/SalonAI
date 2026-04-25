@@ -281,6 +281,35 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   .s-col { padding: 14px; }
   .s-step p { font-size: 12px; }
 }
+
+/* Language switcher */
+#lang-switcher { position: relative; }
+.lang-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; font-weight: 600; padding: 5px 10px;
+  border-radius: 999px; border: 1px solid var(--border);
+  background: transparent; color: var(--navy);
+  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s;
+}
+.lang-btn:hover { background: var(--sky-light); }
+.lang-menu {
+  display: none; position: absolute;
+  top: calc(100% + 6px); right: 0;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; padding: 4px;
+  box-shadow: 0 8px 24px rgba(0,51,153,0.10);
+  z-index: 200; min-width: 140px;
+}
+.lang-menu.open { display: block; }
+.lang-menu button {
+  display: block; width: 100%; text-align: left;
+  padding: 7px 12px; border: none; background: transparent;
+  font-size: 13px; color: var(--navy); cursor: pointer;
+  border-radius: 8px; font-family: 'DM Sans', sans-serif;
+  transition: background 0.1s;
+}
+.lang-menu button:hover { background: var(--sky-light); }
 </style>
 </head>
 <body>
@@ -289,7 +318,23 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 <nav>
   <div class="inner">
     <a href="#" style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);">Salon <span style="color:var(--accent);">AI</span></a>
-    <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta">Join a Dinner →</a>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div id="lang-switcher">
+        <button class="lang-btn" onclick="toggleLangMenu()">
+          <span id="lang-flag">🇩🇪</span>
+          <span id="lang-code">DE</span>
+          <span style="font-size:8px;opacity:0.4;margin-left:1px;">▾</span>
+        </button>
+        <div class="lang-menu" id="lang-menu">
+          <button onclick="setLang('de')">🇩🇪 Deutsch</button>
+          <button onclick="setLang('en')">🇬🇧 English</button>
+          <button onclick="setLang('fr')">🇫🇷 Français</button>
+          <button onclick="setLang('es')">🇪🇸 Español</button>
+          <button onclick="setLang('pl')">🇵🇱 Polski</button>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Join a Dinner →</a>
+    </div>
   </div>
 </nav>
 
@@ -304,9 +349,9 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
       <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
       <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
     </div>
-    <p class="eyebrow">Pro EU Event Series</p>
-    <p class="eyebrow-sub">Starting in Germany, expanding across the EU soon.</p>
-    <h1>
+    <p class="eyebrow" data-i18n="hero_eyebrow">Pro EU Event Series</p>
+    <p class="eyebrow-sub" data-i18n="hero_sub">Starting in Germany, expanding across the EU soon.</p>
+    <h1 data-i18n="hero_h1">
       If all of Europe's dreams came true... would they just change Europe — or would they <em>change the world?</em>
     </h1>
   </div>
@@ -319,21 +364,21 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <!-- ── LEFT: Events ──────────────────────────────────────── -->
     <div class="card-surface tile">
       <div class="tile-label"><span class="dot"></span>Salon AI Dinners</div>
-      <h2>Events</h2>
+      <h2 data-i18n="events_h2">Events</h2>
       <div style="display:flex;align-items:flex-start;gap:10px;background:rgba(0,51,153,0.05);border:1px solid rgba(0,51,153,0.14);border-radius:12px;padding:12px 14px;margin-bottom:16px;">
         <span style="font-size:18px;flex-shrink:0;line-height:1.2;">🇪🇺</span>
-        <p style="font-size:13px;color:var(--navy);line-height:1.6;font-weight:500;margin:0;"><span style="color:var(--accent);font-weight:700;">Pro-EU Event Series:</span> Baue deinen eigenen Agenten und nutze ihn, um deinen persönlichen Pro-EU-Beitragsplan zu entwickeln <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.</p>
+        <p style="font-size:13px;color:var(--navy);line-height:1.6;font-weight:500;margin:0;" data-i18n="pro_eu_html"><span style="color:var(--accent);font-weight:700;">Pro-EU Event Series:</span> Baue deinen eigenen Agenten und nutze ihn, um deinen persönlichen Pro-EU-Beitragsplan zu entwickeln <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.</p>
       </div>
 
       <!-- Upcoming -->
       <div class="events-section">
-        <h3><span class="status-dot upcoming"></span>Upcoming <span style="margin-left:auto;color:var(--sky-deep);">RSVP OPEN</span></h3>
+        <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span> <span style="margin-left:auto;color:var(--sky-deep);" data-i18n="rsvp_open">RSVP OPEN</span></h3>
 
         <div class="event-row">
           <div class="event-date-col"><span class="month">Apr</span><span class="day">29</span></div>
           <div class="event-info">
             <div class="name">Salon AI Dinner — Munich</div>
-            <div class="sub">Munich · seats limited</div>
+            <div class="sub" data-i18n="munich_sub">Munich · seats limited</div>
           </div>
           <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer"><button class="rsvp-btn">RSVP →</button></a>
         </div>
@@ -343,9 +388,9 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
           <div class="event-date-col"><span class="month">May</span><span class="day" style="font-size:11px;opacity:0.5;">soon</span></div>
           <div class="event-info">
             <div class="name">Salon AI Dinner — Berlin</div>
-            <div class="sub">Berlin · date coming soon</div>
+            <div class="sub" data-i18n="berlin_sub">Berlin · date coming soon</div>
           </div>
-          <button class="rsvp-btn soon">Soon</button>
+          <button class="rsvp-btn soon" data-i18n="soon">Soon</button>
         </div>
 
         <div class="event-row">
@@ -354,20 +399,20 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
             <div class="name">2-Day AI Workshop — Berlin</div>
             <div class="sub">Berlin</div>
           </div>
-          <button class="rsvp-btn soon">Soon</button>
+          <button class="rsvp-btn soon" data-i18n="soon">Soon</button>
         </div>
       </div>
 
       <!-- Past -->
       <div class="events-section">
-        <h3><span class="status-dot past"></span>Past Events</h3>
+        <h3><span class="status-dot past"></span><span data-i18n="past_events">Past Events</span></h3>
         <div class="past-row">
           <span class="date">Mar 25, 2025</span>
           <span class="city">Munich, Germany</span>
           <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-            <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'">What we built — one example ↗</a>
+            <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'" data-i18n="what_we_built">What we built — one example ↗</a>
             <div class="photo-preview-btn" tabindex="0">
-              <span>📸 Event Fotos</span>
+              <span data-i18n="event_fotos">📸 Event Fotos</span>
               <div class="photo-preview-popup">
                 <img src="/resources/assets/IMG_3512.JPG" alt="Salon AI Dinner München – Laptop mit Europa 2041" />
                 <img src="/resources/assets/IMG_3526.JPG" alt="Salon AI Dinner München – gedeckter Tisch" />
@@ -381,24 +426,24 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
       <!-- Bring 15 banner -->
       <div class="bring15">
         <div>
-          <div class="b-label">Host Your Own AI Dinner</div>
-          <h4>Bring 15 people together — we'll do the rest.</h4>
-          <p>Organize your own group of 15+ and we'll host an AI Dinner for you. Perfect for politicians, companies, or friend groups.</p>
+          <div class="b-label" data-i18n="host_label">Host Your Own AI Dinner</div>
+          <h4 data-i18n="bring15_h4">Bring 15 people together — we'll do the rest.</h4>
+          <p data-i18n="bring15_p">Organize your own group of 15+ and we'll host an AI Dinner for you. Perfect for politicians, companies, or friend groups.</p>
         </div>
-        <a href="mailto:hello@aiforeurope.eu?subject=Organize%20a%20Group"><button class="b-btn">Organize a group →</button></a>
+        <a href="mailto:hello@aiforeurope.eu?subject=Organize%20a%20Group"><button class="b-btn" data-i18n="organize_btn">Organize a group →</button></a>
       </div>
     </div>
 
     <!-- ── RIGHT: Resources ──────────────────────────────────── -->
     <div class="card-surface tile monster-tile" id="guide">
       <div class="tile-label"><span class="dot"></span>Resources</div>
-      <h2>Resources</h2>
+      <h2 data-i18n="resources_h2">Resources</h2>
 
       <a href="/resources/" class="resource-item" style="cursor:pointer;">
         <span class="r-icon">🤖</span>
         <div class="r-info">
           <div class="r-name">KI (Monster) Guide</div>
-          <div class="r-sub">Alle wichtigen KI-Tools — bewertet &amp; erklärt. Auf Deutsch.</div>
+          <div class="r-sub" data-i18n="ki_guide_sub">Alle wichtigen KI-Tools — bewertet &amp; erklärt. Auf Deutsch.</div>
         </div>
         <span class="r-badge badge-live">Live ↗</span>
       </a>
@@ -412,8 +457,8 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 <section class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="skills-intro">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Was du aus dem Abend mitnimmst</h2>
-      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;">Was KI heute wirklich kann – und wie du daraus echten Mehrwert schaffst. Hier siehst du konkrete Beispiele aus deinem Arbeitsalltag, die wir an dem Abend besprechen.</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n="skills_h2">Was du aus dem Abend mitnimmst</h2>
+      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;" data-i18n="skills_desc">Was KI heute wirklich kann – und wie du daraus echten Mehrwert schaffst. Hier siehst du konkrete Beispiele aus deinem Arbeitsalltag, die wir an dem Abend besprechen.</p>
     </div>
     <div id="skills-list"></div>
   </div>
@@ -424,13 +469,14 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:12px;">
     Salon <span style="color:var(--accent);">AI</span>
   </div>
-  <p>Bringing AI literacy to Europeans — one dinner at a time.</p>
+  <p data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
   <a href="mailto:hello@aiforeurope.eu" class="footer-email">✉️ hello@aiforeurope.eu</a>
 
-  <div class="copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
+  <div class="copy" data-i18n="footer_copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
 </footer>
 
 
+<script src="/i18n.js"></script>
 <script>
 const KI_SKILLS = [
   {
@@ -498,43 +544,69 @@ function toggleSkill(index) {
   });
 }
 
-(function buildSkills() {
-  const container = document.getElementById('skills-list');
+window.buildSkills = function(lang) {
+  var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'de';
+  var meta = (window.SKILLS_META && window.SKILLS_META[l]) || (window.SKILLS_META && window.SKILLS_META['de']) || [];
+  var t = (window.T && window.T[l]) || (window.T && window.T['de']) || {};
+  var colOld = t.col_old || 'Früher';
+  var colNow = t.col_now || 'Heute mit KI';
+  var colEu  = t.col_eu  || 'Für ein starkes Europa';
+  var skillsNote = t.skills_note || null;
+
+  var container = document.getElementById('skills-list');
   if (!container) return;
-  KI_SKILLS.forEach((skill, i) => {
-    const steps = (col, type) => col.steps.map((s, j) =>
-      `<div class="s-step"><div class="s-num">${j+1}</div><p>${s}</p></div>`
-    ).join('');
-    container.innerHTML += `
-      <div class="skill-item" id="skill-${i}">
-        <button class="skill-toggle" onclick="toggleSkill(${i})">
-          <span class="skill-cat">${skill.cat}</span>
-          <span class="skill-name-text">${skill.name}</span>
-          <span class="skill-chevron">+</span>
-        </button>
-        <div class="skill-body">
-          <p class="skill-scenario">${skill.banner}</p>
-          <div class="skill-cols">
-            <div class="s-col s-col-old">
-              <div class="s-col-label">Früher</div>
-              <span class="s-time">${skill.old.time}</span>
-              ${steps(skill.old)}
-            </div>
-            <div class="s-col s-col-now">
-              <div class="s-col-label">Heute mit KI</div>
-              <span class="s-time">${skill.now.time}</span>
-              ${steps(skill.now)}
-            </div>
-            <div class="s-col s-col-eu">
-              <div class="s-col-label">Für ein starkes Europa</div>
-              <span class="s-time">${skill.eu.time}</span>
-              ${steps(skill.eu)}
-            </div>
-          </div>
-        </div>
-      </div>`;
+  container.innerHTML = '';
+
+  KI_SKILLS.forEach(function(skill, i) {
+    var skillMeta = meta[i] || {};
+    var cat    = skillMeta.cat    || skill.cat;
+    var name   = skillMeta.name   || skill.name;
+    var banner = skillMeta.banner || skill.banner;
+
+    var steps = function(col) {
+      return col.steps.map(function(s, j) {
+        return '<div class="s-step"><div class="s-num">' + (j+1) + '</div><p>' + s + '</p></div>';
+      }).join('');
+    };
+
+    var noteHtml = skillsNote
+      ? '<div style="font-size:11px;color:var(--sky-deep);margin-bottom:14px;padding:6px 12px;background:var(--sky-light);border-radius:8px;">📖 ' + skillsNote + '</div>'
+      : '';
+
+    container.innerHTML += '\
+      <div class="skill-item" id="skill-' + i + '">\
+        <button class="skill-toggle" onclick="toggleSkill(' + i + ')">\
+          <span class="skill-cat">' + cat + '</span>\
+          <span class="skill-name-text">' + name + '</span>\
+          <span class="skill-chevron">+</span>\
+        </button>\
+        <div class="skill-body">\
+          ' + noteHtml + '\
+          <p class="skill-scenario">' + banner + '</p>\
+          <div class="skill-cols">\
+            <div class="s-col s-col-old">\
+              <div class="s-col-label">' + colOld + '</div>\
+              <span class="s-time">' + skill.old.time + '</span>\
+              ' + steps(skill.old) + '\
+            </div>\
+            <div class="s-col s-col-now">\
+              <div class="s-col-label">' + colNow + '</div>\
+              <span class="s-time">' + skill.now.time + '</span>\
+              ' + steps(skill.now) + '\
+            </div>\
+            <div class="s-col s-col-eu">\
+              <div class="s-col-label">' + colEu + '</div>\
+              <span class="s-time">' + skill.eu.time + '</span>\
+              ' + steps(skill.eu) + '\
+            </div>\
+          </div>\
+        </div>\
+      </div>';
   });
-})();
+};
+
+// Called by i18n.js after it loads
+window.__i18nReady = false;
 </script>
 </body>
 </html>
