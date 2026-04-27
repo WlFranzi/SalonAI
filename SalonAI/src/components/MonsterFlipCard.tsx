@@ -140,13 +140,9 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             <h3 className="font-bold text-sm leading-tight text-slate-800 shrink-0">
               {card.name}
             </h3>
-            {/* nickname */}
-            <p className="text-xs font-semibold text-slate-700 mt-1.5 leading-snug">
+            {/* nickname — one punchy keyword line, no tagline */}
+            <p className="text-xs font-semibold text-slate-700 mt-2 leading-snug px-1">
               {card.nickname}
-            </p>
-            {/* tagline */}
-            <p className="text-[11px] font-medium text-slate-500 mt-2 leading-snug">
-              {card.tagline}
             </p>
           </div>
 
@@ -194,12 +190,19 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             );
           })()}
 
-          {/* flip hint */}
-          <div className="pb-2 flex justify-center pointer-events-none select-none">
-            <span className="text-[10px] text-slate-300 flex items-center gap-1">
-              <span style={{ display: "inline-block", transform: "scaleX(-1)" }}>↩</span>
-              Details
-            </span>
+          {/* flip hint — prominent CTA */}
+          <div className="pb-3 px-5 pointer-events-none select-none">
+            <div
+              className="flex items-center justify-center gap-2 w-full py-2 rounded-xl text-xs font-semibold"
+              style={{
+                background: "rgba(0,51,153,0.07)",
+                border: "1.5px dashed rgba(0,51,153,0.22)",
+                color: "#003399",
+              }}
+            >
+              <span style={{ display: "inline-block", fontSize: "14px" }}>🔄</span>
+              Umdrehen für Details
+            </div>
           </div>
 
           {card.discontinued && (

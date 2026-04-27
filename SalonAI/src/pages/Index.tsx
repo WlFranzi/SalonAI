@@ -145,13 +145,13 @@ export default function Index() {
             })}
           </div>
 
-          {/* Row 2 — privacy / hosting */}
+          {/* Row 2 — where do your data live? */}
           <div className="flex items-center gap-2">
             <span
               className="text-[11px] font-semibold shrink-0"
               style={{ color: "#5A7A96" }}
             >
-              🔒 Datenschutz:
+              ☁️ Wo bleiben deine Daten?
             </span>
             <div className="flex gap-1.5 overflow-x-auto scrollbar-none">
               {HOSTING.map((h) => {
