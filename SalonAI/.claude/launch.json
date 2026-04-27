@@ -15,8 +15,8 @@
     },
     {
       "name": "website",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-p", "4200", "/Users/franziska/Documents/SalonAI/Website"],
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "4200", "--directory", "/Users/franziska/Documents/SalonAI/Website"],
       "port": 4200
     }
   ]

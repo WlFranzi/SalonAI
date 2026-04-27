@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "salon-ai-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4000", "--directory", "/Users/franziska/Documents/SalonAI/Website"],
+      "port": 4000,
+      "cwd": "/Users/franziska/Documents/SalonAI/Website"
+    }
+  ]
+}
