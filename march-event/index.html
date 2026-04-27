@@ -124,7 +124,7 @@
 
     /* ── Section header ── */
     .section-header {
-      margin: 56px 0 28px;
+      margin: 64px 0 28px;
       display: flex;
       align-items: center;
       gap: 16px;
@@ -137,7 +137,7 @@
     }
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 700;
       color: var(--green-mid);
       white-space: nowrap;
@@ -178,10 +178,10 @@
       transform: scale(1.12) rotate(6deg);
     }
     .card h3 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 600;
       color: var(--green-mid);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       line-height: 1.3;
     }
     .card p {
@@ -190,7 +190,20 @@
       line-height: 1.7;
     }
 
-    /* Intro card — full width, slightly different */
+    /* Card accent variants */
+    .card-navy {
+      background: rgba(27,46,74,0.06);
+      border-color: rgba(27,46,74,0.15);
+    }
+    .card-navy h3 { color: var(--navy); }
+
+    .card-gold {
+      background: rgba(180,140,40,0.05);
+      border-color: rgba(180,140,40,0.18);
+    }
+    .card-gold h3 { color: #7a5c10; }
+
+    /* Intro card — full width */
     .card-intro {
       grid-column: 1 / -1;
       background: linear-gradient(135deg, rgba(27,94,32,0.07), rgba(27,94,32,0.03));
@@ -199,10 +212,11 @@
     }
     .card-intro p {
       font-size: 1.05rem;
-      max-width: 720px;
+      max-width: 760px;
+      line-height: 1.75;
     }
 
-    /* Data tool cards — slightly tinted */
+    /* Data tool cards */
     .card-data {
       background: rgba(255,255,255,0.80);
     }
@@ -244,6 +258,7 @@
       .card { padding: 28px 22px; }
       .card-intro { padding: 28px 22px; }
       .card-intro p { font-size: 0.95rem; }
+      .section-title { font-size: 1.1rem; white-space: normal; text-align: center; }
     }
   </style>
 </head>
@@ -258,7 +273,7 @@
     <div class="hero-content">
       <span class="hero-eyebrow">Salon AI · März 2026</span>
       <h1>Europa 2041</h1>
-      <p class="hero-sub">Eine konkrete, positive Vision unserer gemeinsamen Zukunft.</p>
+      <p class="hero-sub">Kein Szenario. Eine Entscheidung.</p>
     </div>
   </header>
 
@@ -269,108 +284,177 @@
     <div class="grid" style="margin-top: 0;">
       <div class="card card-intro">
         <p>
-          Europa 2041: ein Kontinent, der Nähe, Technologie und Natur neu verbindet.
-          Öffentliche Räume sind ruhiger, grüner und zugänglicher. Arbeit, Bildung und Gesundheit
-          sind lokal gut erreichbar — ohne dass Menschen auf Chancen verzichten müssen.
-          Sieben ungewöhnliche Ideen, die bereits heute denkbar wären.
+          Europa 2041 ist kein Wunschbild — es ist das Ergebnis konkreter struktureller Entscheidungen.
+          Stadtplanung, Bildung, Energie, Demokratie und wirtschaftliche Eigenständigkeit werden nicht mehr
+          verwaltet, sondern aktiv gestaltet. Diese Seite dokumentiert die Visionen, die beim Salon AI Dinner
+          im März 2026 entwickelt wurden: sieben technologische Thesen, sechs gesellschaftspolitische
+          Realitäten und die öffentlichen Datenquellen, mit denen jede davon heute bereits vorangetrieben werden kann.
         </p>
       </div>
     </div>
 
-    <!-- 7 Ideas -->
+    <!-- ─────────────────────────────────────────────── -->
+    <!-- SECTION 1: Technologie & Stadtleben            -->
+    <!-- ─────────────────────────────────────────────── -->
     <div class="section-header">
-      <span class="section-title">Sieben Ideen für ein anderes Europa</span>
+      <span class="section-title">Technologie &amp; Stadtleben</span>
     </div>
 
     <div class="grid">
       <article class="card">
         <div class="card-icon">⚡</div>
         <h3>Kinetische Mikro-Netze</h3>
-        <p>Kleine Energiewandler unter Bürgersteigen und in Türen verwandeln die Bewegung von Millionen Menschen täglich in sauberen Strom — ohne Solaranlage, ohne Windrad.</p>
+        <p>Bewegung erzeugt Strom. Mikro-Konverter unter Bürgersteigen und in Gebäudeeingängen wandeln die kinetische Energie von Millionen täglicher Bewegungen in saubere Energie um — ohne Solaranlage, ohne Windrad, ohne externe Infrastrukturabhängigkeit.</p>
       </article>
 
       <article class="card">
         <div class="card-icon">🌱</div>
         <h3>Biolumineszente Stadtbeleuchtung</h3>
-        <p>Genetisch optimierte Pflanzen ersetzen Straßenlaternen: Parks, Wege und Plätze leuchten nachts von innen heraus — wartungsfrei, ohne Stromnetz.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">👁️</div>
-        <h3>Universelle Fähigkeits-Übersetzer</h3>
-        <p>KI übersetzt Berufsqualifikationen europaweit in Echtzeit. Wer als Krankenschwester in Polen ausgebildet wurde, kann in Portugal am nächsten Tag arbeiten — ohne Bürokratie.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🏛️</div>
-        <h3>Algorithmus-Bürgergremien</h3>
-        <p>500 zufällig ausgewählte Bürger:innen co-entscheiden mit KI-Modellen über Stadtplanung und Budget — transparent, repräsentativ und schneller als jedes Parlament.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">💰</div>
-        <h3>Bürgerdividende aus Daten</h3>
-        <p>Wenn öffentliche KI mit anonymen Stadtdaten trainiert wird, erhalten alle Bewohner:innen eine jährliche Auszahlung.</p>
+        <p>Genetisch optimierte Pflanzen ersetzen die gesamte Straßenbeleuchtungsinfrastruktur. Parks, Wege und öffentliche Plätze emittieren biologisches Licht — null Wartungskosten, null Netzabhängigkeit, null laufende Kapitalausgaben.</p>
       </article>
 
       <article class="card">
         <div class="card-icon">🌿</div>
         <h3>Kühlkorridore gegen Hitze</h3>
-        <p>Verbundene Schattenwege, Nebelbrunnen und Baumtunnel halten Innenstädte im Sommer 4–6 °C kühler.</p>
+        <p>Vernetzte Schattenwege, Nebelquellen und Baumtunnel senken die Innenstadttemperatur im Sommer um 4–6 °C. Klimaanpassung auf urbaner Ebene — ohne Energieverbrauch, ohne zentrale Infrastruktur.</p>
       </article>
 
       <article class="card">
         <div class="card-icon">🔧</div>
-        <h3>Reparatur als neues Statussymbol</h3>
-        <p>Jedes Produkt hat einen Reparaturpass. Wer lange nutzt statt neu kauft, zahlt automatisch weniger Steuern.</p>
+        <h3>Reparatur als Statussignal</h3>
+        <p>Jedes Produkt trägt einen Reparaturpass. Langzeitnutzung wird automatisch steuerlich belohnt. Die ökonomische Anreizstruktur ist umgekehrt: Dauerhaftigkeit schlägt Konsum — systematisch, nicht moralisch.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💰</div>
+        <h3>Bürgerdividende aus Daten</h3>
+        <p>Öffentliche KI, die mit anonymisierten Stadtdaten trainiert wird, schüttet eine jährliche Dividende an alle Bewohner:innen aus. Öffentliche Infrastruktur generiert individuellen Return — ein neues Modell für datensouveräne Wertverteilung.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🌿</div>
+        <h3>Die Algen-Fassaden</h3>
+        <p>Gebäude als Produktionseinheiten. Algen-integrierte Fassadensysteme eliminieren zwei Kostenstellen gleichzeitig: urbane CO₂-Bindung und lokale Proteinversorgung. Jedes Gebäude operiert als geschlossener Bio-Reaktor — kein externer Energieinput, kontinuierlicher Nachbarschaftsoutput.</p>
       </article>
     </div>
 
-    <!-- EU Data Tools -->
+    <!-- ─────────────────────────────────────────────── -->
+    <!-- SECTION 2: Bildung & Infrastruktur             -->
+    <!-- ─────────────────────────────────────────────── -->
+    <div class="section-header">
+      <span class="section-title">Bildung &amp; Infrastruktur</span>
+    </div>
+
+    <div class="grid">
+      <article class="card card-navy">
+        <div class="card-icon">🚊</div>
+        <h3>Der Fluid-Campus</h3>
+        <p>Der Euro-Skills-Pass entkoppelt Bildung von Geografie. Ein 15-Jähriger absolviert drei Monate in einem Robotik-Hub in Göteborg, gefolgt von einem Regenerativ-Biologie-Modul in Andalusien. Der Hochgeschwindigkeitszug dazwischen ist der Campus. Europas Bildungssystem skaliert, ohne ein einziges neues Gebäude zu errichten.</p>
+      </article>
+
+      <article class="card card-navy">
+        <div class="card-icon">👁️</div>
+        <h3>Universelle Qualifikationsübersetzung</h3>
+        <p>KI übersetzt Berufsqualifikationen europaweit in Echtzeit. Eine in Polen ausgebildete Pflegefachkraft beginnt in Portugal am nächsten Tag mit der Arbeit. Bürokratische Barrieren eliminiert. Reibungskosten im Arbeitsmarkt: null.</p>
+      </article>
+
+      <article class="card card-navy">
+        <div class="card-icon">🍎</div>
+        <h3>Autobahnen als Food-Forests</h3>
+        <p>90 % des europäischen Schwerlastverkehrs fließt unterirdisch durch Magnetröhrensysteme — tausende Kilometer Asphalt werden freigesetzt. Die ehemalige A8 ist heute ein kontinentweiter Nahrungswald und Fahrrad-Highway. Infrastruktur, die früher €2 Mrd. jährlich an Wartungskosten verursachte, generiert jetzt ökologischen und ernährungswirtschaftlichen Ertrag.</p>
+      </article>
+    </div>
+
+    <!-- ─────────────────────────────────────────────── -->
+    <!-- SECTION 3: Macht, Wachstum & Demokratie        -->
+    <!-- ─────────────────────────────────────────────── -->
+    <div class="section-header">
+      <span class="section-title">Macht, Wachstum &amp; Demokratie</span>
+    </div>
+
+    <div class="grid">
+      <article class="card card-gold">
+        <div class="card-icon">🌍</div>
+        <h3>Die Vierte Weltmacht</h3>
+        <p>Europa hat sich als eigenständige vierte Weltmacht etabliert — die einzige Kraft, die realpolitische Grenzen anerkennt und zugleich kompromisslos für demokratische Werte einsteht. Inspiriert vom <em>Sovereign Europe Forum</em>: strategische Souveränität, kein Soft Power. Realpolitik und Rechtsstaatlichkeit — gleichzeitig, auf globalem Maßstab.</p>
+      </article>
+
+      <article class="card card-gold">
+        <div class="card-icon">🚀</div>
+        <h3>Selbstbestimmtes Wachstum</h3>
+        <p>Europa hat seinen Wettbewerbsrückstand systematisch geschlossen. Wachstum ist eigenbestimmt, nicht abhängig. Das Afrika-Partnerschaftsmodell — aufgebaut auf Augenhöhe, nicht auf Entwicklungshilfe — positioniert Europa im Zentrum der wachstumsstärksten Region der Welt für die nächsten zwei Jahrzehnte.</p>
+      </article>
+
+      <article class="card card-gold">
+        <div class="card-icon">💼</div>
+        <h3>Leistung als Systemgrundlage</h3>
+        <p>Europäische Souveränität hat einen Preis: Output. Das Wohlstandsmodell des vorigen Jahrzehnts erforderte eine Neukalibrierung. Leistung, Präzision und Einsatzbereitschaft sind keine Kulturpräferenzen — sie sind strukturelle Voraussetzungen für Europas Position als souveräner globaler Akteur.</p>
+      </article>
+
+      <article class="card card-gold">
+        <div class="card-icon">🏛️</div>
+        <h3>Liquid Democracy</h3>
+        <p>Eine Demokratiearchitektur, die die Binärwahl zwischen direkter und repräsentativer Demokratie auflöst. Bürger:innen stimmen direkt ab, wo sie kompetent sind — und delegieren ihre Stimme in anderen Feldern an vertrauenswürdige Domänenexperten. Ergebnis: kontinuierliche Politikeingabe von 500 Mio. Menschen, ohne bürokratischen Overhead. Pilotstädte verzeichnen 40 % höhere Bürgerbeteiligung und messbar schnellere Policy-Zyklen.</p>
+      </article>
+
+      <article class="card card-gold">
+        <div class="card-icon">🏛️</div>
+        <h3>Algorithmus-Bürgergremien</h3>
+        <p>500 zufällig ausgewählte Bürger:innen co-entscheiden Stadtplanung und Budgetallokation gemeinsam mit KI-Modellen. Transparent, repräsentativ und erheblich schneller als jeder parlamentarische Prozess.</p>
+      </article>
+    </div>
+
+    <!-- ─────────────────────────────────────────────── -->
+    <!-- SECTION 4: Deine Werkzeuge                     -->
+    <!-- ─────────────────────────────────────────────── -->
     <div class="section-header">
       <span class="section-title">Deine Werkzeuge — öffentliche EU-Daten</span>
     </div>
+
+    <p style="font-size:0.95rem;color:var(--muted);max-width:680px;margin-bottom:28px;line-height:1.7;">
+      Diese Datenquellen sind öffentlich, maschinenlesbar und kostenlos. Mit einem KI-Agenten lassen sich daraus in Stunden belastbare Analysen, Petitionen und Positionspapiere erstellen — ohne Vorwissen, ohne Budget.
+    </p>
 
     <div class="grid grid-2">
       <article class="card card-data">
         <div class="card-icon">⚖️</div>
         <h3>EUR-Lex</h3>
-        <p>Alle EU-Gesetze, Direktiven und Verordnungen im Volltext. Scrape den aktuellen Stand zu deinem Thema — und lass KI erklären, welche Rechte du heute schon hast.</p>
+        <p>Alle EU-Gesetze, Direktiven und Verordnungen im Volltext. KI extrahiert den aktuellen Rechtsstand zu deinem Thema — und identifiziert, welche Rechte heute bereits durchsetzbar sind.</p>
         <span class="source-url">eur-lex.europa.eu</span>
       </article>
 
       <article class="card card-data">
         <div class="card-icon">📢</div>
         <h3>EU „Have Your Say"</h3>
-        <p>Alle offenen Konsultationen mit Deadline. Ein Agent überwacht sie für dich und benachrichtigt dich, wenn ein Thema das dich betrifft in die Kommentarphase geht.</p>
+        <p>Alle offenen Konsultationen mit Deadline. Ein Agent überwacht sie automatisch und meldet sich, sobald ein relevantes Thema in die Kommentarphase tritt — mit vorbereiteten Eingabevorlagen.</p>
         <span class="source-url">ec.europa.eu/info/law/better-regulation/have-your-say</span>
       </article>
 
       <article class="card card-data">
         <div class="card-icon">🗳️</div>
         <h3>Europarl Voting Records</h3>
-        <p>Wie hat dein MEP bei jedem Gesetz gestimmt? Scrape die Abstimmungsdaten — und lass KI ein persönliches Briefing generieren bevor du deinen Abgeordneten kontaktierst.</p>
+        <p>Vollständige Abstimmungshistorie jedes MEPs. KI generiert ein persönliches Briefing vor jedem Kontakt mit deinem Abgeordneten — mit konkreten Argumenten auf Basis seiner eigenen Abstimmungen.</p>
         <span class="source-url">europarl.europa.eu/plenary/votes</span>
       </article>
 
       <article class="card card-data">
         <div class="card-icon">✍️</div>
         <h3>ECI-Register</h3>
-        <p>Alle Europäischen Bürgerinitiativen — erfolgreiche und gescheiterte. Lerne, was eine Million Unterschriften bekommt und was nicht. Vorlage für deine eigene Initiative.</p>
+        <p>Alle Europäischen Bürgerinitiativen — erfolgreiche und gescheiterte. Analyse: Was hat eine Million Unterschriften erreicht, was nicht? Vorlage für die eigene Initiative inklusive.</p>
         <span class="source-url">citizens-initiative.europa.eu</span>
       </article>
 
       <article class="card card-data">
         <div class="card-icon">📊</div>
         <h3>Eurostat</h3>
-        <p>Energiearmut, Wohnkosten, Gesundheitsversorgung — nach Region, Jahr und Bevölkerungsgruppe. Dein Argument bekommt Zahlen: deine Region vs. EU-Durchschnitt.</p>
+        <p>Energiearmut, Wohnkosten, Gesundheitsversorgung — nach Region, Jahr und Bevölkerungsgruppe. Jedes Argument bekommt eine Datenbasis: deine Region gegen den EU-Durchschnitt, in Sekunden.</p>
         <span class="source-url">ec.europa.eu/eurostat</span>
       </article>
 
       <article class="card card-data">
         <div class="card-icon">🌍</div>
         <h3>EURES Jobmobilitätsdaten</h3>
-        <p>Bürokratische Anforderungen für grenzüberschreitendes Arbeiten in jedem EU-Land. Zeigt genau, wo der Binnenmarkt in der Praxis noch nicht funktioniert.</p>
+        <p>Bürokratische Anforderungen für grenzüberschreitendes Arbeiten in jedem EU-Land. Zeigt präzise, wo der Binnenmarkt in der Praxis noch nicht funktioniert — und liefert die Rechtsgrundlage für Beschwerden.</p>
         <span class="source-url">eures.europa.eu</span>
       </article>
     </div>
@@ -378,7 +462,7 @@
   </main>
 
   <footer>
-    <p>Erstellt als positive Zukunftsvision für Europa &nbsp;·&nbsp; Salon AI 2026</p>
+    <p>Entwickelt beim Salon AI Dinner · München, März 2026</p>
     <p style="margin-top: 8px;"><a href="/">← Zurück zu Salon AI</a></p>
   </footer>
 
