@@ -579,23 +579,22 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
 <script src="/i18n.js"></script>
 <script>
-// Wrapper: custom translations for DE/EN/FR/ES/PL, Google Translate for all others
+// Google Translate for ALL non-DE languages — guarantees 100% content coverage
+// (stats bar, skills steps, dynamic JS content, cards — everything)
 window.setLangAll = function(code, btn) {
   document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
   if (btn) btn.classList.add('active');
-  var customLangs = ['de','en','fr','es','pl'];
   var host = window.location.hostname;
-  if (customLangs.indexOf(code) !== -1) {
-    // Clear GT cookie, use custom i18n
+  if (code === 'de') {
     document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
     document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
     document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-    if (typeof window.setLang === 'function') window.setLang(code);
-  } else {
-    document.cookie = 'googtrans=/de/' + code + '; path=/';
-    document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
     window.location.reload();
+    return;
   }
+  document.cookie = 'googtrans=/de/' + code + '; path=/';
+  document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
+  window.location.reload();
 };
 // Restore active pill from GT cookie on load
 (function() {
