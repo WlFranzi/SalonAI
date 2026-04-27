@@ -34,8 +34,17 @@ a { text-decoration: none; color: inherit; }
 .star-clip { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 .card-surface { background: rgba(255,255,255,0.88); backdrop-filter: blur(4px); border-radius: 20px; border: 1px solid var(--border); }
 
+/* ── Language bar ── */
+.lang-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 32px; background: rgba(27,46,74,0.97); backdrop-filter: blur(10px); display: flex; align-items: center; padding: 0 20px; gap: 8px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.lang-bar::-webkit-scrollbar { display: none; }
+.lang-bar .lang-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.28); white-space: nowrap; flex-shrink: 0; }
+.lang-bar .lang-pills { display: flex; gap: 3px; flex-shrink: 0; }
+.lang-pill { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: 'DM Sans', sans-serif; }
+.lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
+.lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
+
 /* Nav — minimal */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(200,221,240,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); }
+nav { position: fixed; top: 32px; left: 0; right: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(200,221,240,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); }
 nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
 .nav-cta { background: var(--navy); color: var(--white-warm); border-radius: 40px; padding: 8px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
 .nav-cta:hover { background: var(--sky-deep); }
@@ -354,25 +363,43 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 </head>
 <body>
 
+<!-- ── LANGUAGE BAR ── -->
+<div class="lang-bar">
+  <span class="lang-label">🌍</span>
+  <div class="lang-pills">
+    <button class="lang-pill active" data-lang="de" onclick="setLangAll('de',this)">DE</button>
+    <button class="lang-pill" data-lang="en" onclick="setLangAll('en',this)">EN</button>
+    <button class="lang-pill" data-lang="fr" onclick="setLangAll('fr',this)">FR</button>
+    <button class="lang-pill" data-lang="es" onclick="setLangAll('es',this)">ES</button>
+    <button class="lang-pill" data-lang="it" onclick="setLangAll('it',this)">IT</button>
+    <button class="lang-pill" data-lang="pt" onclick="setLangAll('pt',this)">PT</button>
+    <button class="lang-pill" data-lang="nl" onclick="setLangAll('nl',this)">NL</button>
+    <button class="lang-pill" data-lang="pl" onclick="setLangAll('pl',this)">PL</button>
+    <button class="lang-pill" data-lang="ro" onclick="setLangAll('ro',this)">RO</button>
+    <button class="lang-pill" data-lang="sv" onclick="setLangAll('sv',this)">SV</button>
+    <button class="lang-pill" data-lang="cs" onclick="setLangAll('cs',this)">CS</button>
+    <button class="lang-pill" data-lang="hu" onclick="setLangAll('hu',this)">HU</button>
+    <button class="lang-pill" data-lang="sk" onclick="setLangAll('sk',this)">SK</button>
+    <button class="lang-pill" data-lang="bg" onclick="setLangAll('bg',this)">BG</button>
+    <button class="lang-pill" data-lang="da" onclick="setLangAll('da',this)">DA</button>
+    <button class="lang-pill" data-lang="fi" onclick="setLangAll('fi',this)">FI</button>
+    <button class="lang-pill" data-lang="hr" onclick="setLangAll('hr',this)">HR</button>
+    <button class="lang-pill" data-lang="el" onclick="setLangAll('el',this)">EL</button>
+    <button class="lang-pill" data-lang="lt" onclick="setLangAll('lt',this)">LT</button>
+    <button class="lang-pill" data-lang="lv" onclick="setLangAll('lv',this)">LV</button>
+    <button class="lang-pill" data-lang="et" onclick="setLangAll('et',this)">ET</button>
+    <button class="lang-pill" data-lang="sl" onclick="setLangAll('sl',this)">SL</button>
+    <button class="lang-pill" data-lang="mt" onclick="setLangAll('mt',this)">MT</button>
+    <button class="lang-pill" data-lang="ga" onclick="setLangAll('ga',this)">GA</button>
+  </div>
+</div>
+<div id="google_translate_element" style="display:none;"></div>
+
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
     <a href="#" style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);">Salon <span style="color:var(--accent);">AI</span></a>
     <div style="display:flex;align-items:center;gap:10px;">
-      <div id="lang-switcher">
-        <button class="lang-btn" onclick="toggleLangMenu()">
-          <span id="lang-flag">🇩🇪</span>
-          <span id="lang-code">DE</span>
-          <span style="font-size:8px;opacity:0.4;margin-left:1px;">▾</span>
-        </button>
-        <div class="lang-menu" id="lang-menu">
-          <button onclick="setLang('de')">🇩🇪 Deutsch</button>
-          <button onclick="setLang('en')">🇬🇧 English</button>
-          <button onclick="setLang('fr')">🇫🇷 Français</button>
-          <button onclick="setLang('es')">🇪🇸 Español</button>
-          <button onclick="setLang('pl')">🇵🇱 Polski</button>
-        </div>
-      </div>
       <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Join a Dinner →</a>
     </div>
   </div>
@@ -551,6 +578,38 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
 
 <script src="/i18n.js"></script>
+<script>
+// Wrapper: custom translations for DE/EN/FR/ES/PL, Google Translate for all others
+window.setLangAll = function(code, btn) {
+  document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  var customLangs = ['de','en','fr','es','pl'];
+  var host = window.location.hostname;
+  if (customLangs.indexOf(code) !== -1) {
+    // Clear GT cookie, use custom i18n
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+    if (typeof window.setLang === 'function') window.setLang(code);
+  } else {
+    document.cookie = 'googtrans=/de/' + code + '; path=/';
+    document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
+    window.location.reload();
+  }
+};
+// Restore active pill from GT cookie on load
+(function() {
+  var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
+  if (match) {
+    var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
+    if (pill) { document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');}); pill.classList.add('active'); }
+  }
+})();
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 <script>
 const KI_SKILLS = [
   {

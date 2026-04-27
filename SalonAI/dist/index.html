@@ -18,10 +18,79 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/resources/assets/index-DIP5gtls.js"></script>
-    <link rel="stylesheet" crossorigin href="/resources/assets/index-DTMP6I1A.css">
+  <style>
+    .lang-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 500; height: 32px; background: rgba(27,46,74,0.97); backdrop-filter: blur(10px); display: flex; align-items: center; padding: 0 16px; gap: 8px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .lang-bar::-webkit-scrollbar { display: none; }
+    .lang-bar .lang-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.28); white-space: nowrap; flex-shrink: 0; }
+    .lang-bar .lang-pills { display: flex; gap: 3px; flex-shrink: 0; }
+    .lang-pill { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
+    .lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
+    body { padding-top: 32px; }
+  </style>
+    <script type="module" crossorigin src="/resources/assets/index-CTfLh0dR.js"></script>
+    <link rel="stylesheet" crossorigin href="/resources/assets/index-WNuyvxqD.css">
   </head>
   <body>
+    <!-- ── LANGUAGE BAR ── -->
+    <div class="lang-bar">
+      <span class="lang-label">🌍</span>
+      <div class="lang-pills">
+        <button class="lang-pill active" data-lang="de" onclick="setLangKI('de',this)">DE</button>
+        <button class="lang-pill" data-lang="en" onclick="setLangKI('en',this)">EN</button>
+        <button class="lang-pill" data-lang="fr" onclick="setLangKI('fr',this)">FR</button>
+        <button class="lang-pill" data-lang="es" onclick="setLangKI('es',this)">ES</button>
+        <button class="lang-pill" data-lang="it" onclick="setLangKI('it',this)">IT</button>
+        <button class="lang-pill" data-lang="pt" onclick="setLangKI('pt',this)">PT</button>
+        <button class="lang-pill" data-lang="nl" onclick="setLangKI('nl',this)">NL</button>
+        <button class="lang-pill" data-lang="pl" onclick="setLangKI('pl',this)">PL</button>
+        <button class="lang-pill" data-lang="ro" onclick="setLangKI('ro',this)">RO</button>
+        <button class="lang-pill" data-lang="sv" onclick="setLangKI('sv',this)">SV</button>
+        <button class="lang-pill" data-lang="cs" onclick="setLangKI('cs',this)">CS</button>
+        <button class="lang-pill" data-lang="hu" onclick="setLangKI('hu',this)">HU</button>
+        <button class="lang-pill" data-lang="sk" onclick="setLangKI('sk',this)">SK</button>
+        <button class="lang-pill" data-lang="bg" onclick="setLangKI('bg',this)">BG</button>
+        <button class="lang-pill" data-lang="da" onclick="setLangKI('da',this)">DA</button>
+        <button class="lang-pill" data-lang="fi" onclick="setLangKI('fi',this)">FI</button>
+        <button class="lang-pill" data-lang="hr" onclick="setLangKI('hr',this)">HR</button>
+        <button class="lang-pill" data-lang="el" onclick="setLangKI('el',this)">EL</button>
+        <button class="lang-pill" data-lang="lt" onclick="setLangKI('lt',this)">LT</button>
+        <button class="lang-pill" data-lang="lv" onclick="setLangKI('lv',this)">LV</button>
+        <button class="lang-pill" data-lang="et" onclick="setLangKI('et',this)">ET</button>
+        <button class="lang-pill" data-lang="sl" onclick="setLangKI('sl',this)">SL</button>
+        <button class="lang-pill" data-lang="mt" onclick="setLangKI('mt',this)">MT</button>
+        <button class="lang-pill" data-lang="ga" onclick="setLangKI('ga',this)">GA</button>
+      </div>
+    </div>
+    <div id="google_translate_element" style="display:none;"></div>
     <div id="root"></div>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
+      }
+      function setLangKI(code, btn) {
+        document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');});
+        if (btn) btn.classList.add('active');
+        var host = window.location.hostname;
+        if (code === 'de') {
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+          window.location.reload();
+        } else {
+          document.cookie = 'googtrans=/de/' + code + '; path=/';
+          document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
+          window.location.reload();
+        }
+      }
+      (function() {
+        var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
+        if (match) {
+          var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
+          if (pill) { document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');}); pill.classList.add('active'); }
+        }
+      })();
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
   </body>
 </html>
