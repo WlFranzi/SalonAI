@@ -34,17 +34,8 @@ a { text-decoration: none; color: inherit; }
 .star-clip { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 .card-surface { background: rgba(255,255,255,0.88); backdrop-filter: blur(4px); border-radius: 20px; border: 1px solid var(--border); }
 
-/* ── Language bar ── */
-.lang-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 32px; background: rgba(27,46,74,0.97); backdrop-filter: blur(10px); display: flex; align-items: center; padding: 0 20px; gap: 8px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
-.lang-bar::-webkit-scrollbar { display: none; }
-.lang-bar .lang-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.28); white-space: nowrap; flex-shrink: 0; }
-.lang-bar .lang-pills { display: flex; gap: 3px; flex-shrink: 0; }
-.lang-pill { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: 'DM Sans', sans-serif; }
-.lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
-.lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
-
 /* Nav — minimal */
-nav { position: fixed; top: 32px; left: 0; right: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(200,221,240,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(200,221,240,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); }
 nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
 .nav-cta { background: var(--navy); color: var(--white-warm); border-radius: 40px; padding: 8px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
 .nav-cta:hover { background: var(--sky-deep); }
@@ -334,65 +325,38 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 /* Language switcher */
 #lang-switcher { position: relative; }
 .lang-btn {
-  display: inline-flex; align-items: center; gap: 4px;
-  font-size: 12px; font-weight: 600; padding: 5px 10px;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 600; padding: 5px 11px;
   border-radius: 999px; border: 1px solid var(--border);
   background: transparent; color: var(--navy);
   cursor: pointer; font-family: 'DM Sans', sans-serif;
-  transition: background 0.15s;
+  transition: background 0.15s; white-space: nowrap;
 }
 .lang-btn:hover { background: var(--sky-light); }
 .lang-menu {
   display: none; position: absolute;
   top: calc(100% + 6px); right: 0;
   background: #fff; border: 1px solid var(--border);
-  border-radius: 12px; padding: 4px;
-  box-shadow: 0 8px 24px rgba(0,51,153,0.10);
-  z-index: 200; min-width: 140px;
+  border-radius: 14px; padding: 8px;
+  box-shadow: 0 8px 32px rgba(0,51,153,0.13);
+  z-index: 300; width: 336px;
 }
 .lang-menu.open { display: block; }
-.lang-menu button {
-  display: block; width: 100%; text-align: left;
-  padding: 7px 12px; border: none; background: transparent;
-  font-size: 13px; color: var(--navy); cursor: pointer;
+.lang-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+.lang-option {
+  display: flex; align-items: center; gap: 5px;
+  width: 100%; text-align: left; padding: 6px 8px;
+  border: none; background: transparent;
+  font-size: 12px; color: var(--navy); cursor: pointer;
   border-radius: 8px; font-family: 'DM Sans', sans-serif;
-  transition: background 0.1s;
+  transition: background 0.1s; white-space: nowrap;
 }
-.lang-menu button:hover { background: var(--sky-light); }
+.lang-option:hover { background: var(--sky-light); }
+.lang-option.active { background: rgba(0,51,153,0.07); font-weight: 700; color: var(--accent); }
 </style>
 </head>
 <body>
 
-<!-- ── LANGUAGE BAR ── -->
-<div class="lang-bar">
-  <span class="lang-label">🌍</span>
-  <div class="lang-pills">
-    <button class="lang-pill active" data-lang="de" onclick="setLangAll('de',this)">DE</button>
-    <button class="lang-pill" data-lang="en" onclick="setLangAll('en',this)">EN</button>
-    <button class="lang-pill" data-lang="fr" onclick="setLangAll('fr',this)">FR</button>
-    <button class="lang-pill" data-lang="es" onclick="setLangAll('es',this)">ES</button>
-    <button class="lang-pill" data-lang="it" onclick="setLangAll('it',this)">IT</button>
-    <button class="lang-pill" data-lang="pt" onclick="setLangAll('pt',this)">PT</button>
-    <button class="lang-pill" data-lang="nl" onclick="setLangAll('nl',this)">NL</button>
-    <button class="lang-pill" data-lang="pl" onclick="setLangAll('pl',this)">PL</button>
-    <button class="lang-pill" data-lang="ro" onclick="setLangAll('ro',this)">RO</button>
-    <button class="lang-pill" data-lang="sv" onclick="setLangAll('sv',this)">SV</button>
-    <button class="lang-pill" data-lang="cs" onclick="setLangAll('cs',this)">CS</button>
-    <button class="lang-pill" data-lang="hu" onclick="setLangAll('hu',this)">HU</button>
-    <button class="lang-pill" data-lang="sk" onclick="setLangAll('sk',this)">SK</button>
-    <button class="lang-pill" data-lang="bg" onclick="setLangAll('bg',this)">BG</button>
-    <button class="lang-pill" data-lang="da" onclick="setLangAll('da',this)">DA</button>
-    <button class="lang-pill" data-lang="fi" onclick="setLangAll('fi',this)">FI</button>
-    <button class="lang-pill" data-lang="hr" onclick="setLangAll('hr',this)">HR</button>
-    <button class="lang-pill" data-lang="el" onclick="setLangAll('el',this)">EL</button>
-    <button class="lang-pill" data-lang="lt" onclick="setLangAll('lt',this)">LT</button>
-    <button class="lang-pill" data-lang="lv" onclick="setLangAll('lv',this)">LV</button>
-    <button class="lang-pill" data-lang="et" onclick="setLangAll('et',this)">ET</button>
-    <button class="lang-pill" data-lang="sl" onclick="setLangAll('sl',this)">SL</button>
-    <button class="lang-pill" data-lang="mt" onclick="setLangAll('mt',this)">MT</button>
-    <button class="lang-pill" data-lang="ga" onclick="setLangAll('ga',this)">GA</button>
-  </div>
-</div>
 <div id="google_translate_element" style="display:none;"></div>
 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
@@ -401,6 +365,40 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <a href="#" style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);">Salon <span style="color:var(--accent);">AI</span></a>
     <div style="display:flex;align-items:center;gap:10px;">
       <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Join a Dinner →</a>
+      <!-- 24 EU language switcher -->
+      <div id="lang-switcher">
+        <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
+          🌍 <span id="lang-btn-label">DE</span> ▾
+        </button>
+        <div class="lang-menu" id="lang-menu-dd">
+          <div class="lang-grid">
+            <button class="lang-option active" data-lang="de" onclick="setLangAll('de')">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="en" onclick="setLangAll('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="fr" onclick="setLangAll('fr')">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="es" onclick="setLangAll('es')">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="it" onclick="setLangAll('it')">🇮🇹 Italiano</button>
+            <button class="lang-option" data-lang="pt" onclick="setLangAll('pt')">🇵🇹 Português</button>
+            <button class="lang-option" data-lang="nl" onclick="setLangAll('nl')">🇳🇱 Nederlands</button>
+            <button class="lang-option" data-lang="pl" onclick="setLangAll('pl')">🇵🇱 Polski</button>
+            <button class="lang-option" data-lang="ro" onclick="setLangAll('ro')">🇷🇴 Română</button>
+            <button class="lang-option" data-lang="sv" onclick="setLangAll('sv')">🇸🇪 Svenska</button>
+            <button class="lang-option" data-lang="cs" onclick="setLangAll('cs')">🇨🇿 Čeština</button>
+            <button class="lang-option" data-lang="hu" onclick="setLangAll('hu')">🇭🇺 Magyar</button>
+            <button class="lang-option" data-lang="sk" onclick="setLangAll('sk')">🇸🇰 Slovenčina</button>
+            <button class="lang-option" data-lang="bg" onclick="setLangAll('bg')">🇧🇬 Български</button>
+            <button class="lang-option" data-lang="da" onclick="setLangAll('da')">🇩🇰 Dansk</button>
+            <button class="lang-option" data-lang="fi" onclick="setLangAll('fi')">🇫🇮 Suomi</button>
+            <button class="lang-option" data-lang="hr" onclick="setLangAll('hr')">🇭🇷 Hrvatski</button>
+            <button class="lang-option" data-lang="el" onclick="setLangAll('el')">🇬🇷 Ελληνικά</button>
+            <button class="lang-option" data-lang="lt" onclick="setLangAll('lt')">🇱🇹 Lietuvių</button>
+            <button class="lang-option" data-lang="lv" onclick="setLangAll('lv')">🇱🇻 Latviešu</button>
+            <button class="lang-option" data-lang="et" onclick="setLangAll('et')">🇪🇪 Eesti</button>
+            <button class="lang-option" data-lang="sl" onclick="setLangAll('sl')">🇸🇮 Slovenščina</button>
+            <button class="lang-option" data-lang="mt" onclick="setLangAll('mt')">🇲🇹 Malti</button>
+            <button class="lang-option" data-lang="ga" onclick="setLangAll('ga')">🇮🇪 Gaeilge</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
@@ -579,11 +577,11 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
 <script src="/i18n.js"></script>
 <script>
-// Google Translate for ALL non-DE languages — guarantees 100% content coverage
-// (stats bar, skills steps, dynamic JS content, cards — everything)
-window.setLangAll = function(code, btn) {
-  document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
+// ── Language switcher (Google Translate, cookie+reload) ──────────
+window.setLangAll = function(code) {
+  // Close dropdown
+  var dd = document.getElementById('lang-menu-dd');
+  if (dd) dd.classList.remove('open');
   var host = window.location.hostname;
   if (code === 'de') {
     document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
@@ -596,15 +594,30 @@ window.setLangAll = function(code, btn) {
   document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
   window.location.reload();
 };
-// Restore active pill from GT cookie on load
+
+// Restore active state + button label from GT cookie on load
 (function() {
   var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-  if (match) {
-    var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
-    if (pill) { document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');}); pill.classList.add('active'); }
-  }
+  var activeCode = match ? match[1] : 'de';
+  // Mark active option
+  document.querySelectorAll('.lang-option').forEach(function(o) { o.classList.remove('active'); });
+  var activeOpt = document.querySelector('.lang-option[data-lang="' + activeCode + '"]');
+  if (activeOpt) activeOpt.classList.add('active');
+  // Update button label
+  var lbl = document.getElementById('lang-btn-label');
+  if (lbl) lbl.textContent = activeCode.toUpperCase();
 })();
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function() {
+  var dd = document.getElementById('lang-menu-dd');
+  if (dd) dd.classList.remove('open');
+});
+
+// ── Google Translate init ────────────────────────────────────────
+// Call buildSkills BEFORE GT init so ALL content is in DOM when GT translates
 function googleTranslateElementInit() {
+  if (window.buildSkills) window.buildSkills('de');
   new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
 }
 </script>

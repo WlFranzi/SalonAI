@@ -19,47 +19,76 @@
       rel="stylesheet"
     />
   <style>
-    .lang-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 500; height: 32px; background: rgba(27,46,74,0.97); backdrop-filter: blur(10px); display: flex; align-items: center; padding: 0 16px; gap: 8px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
-    .lang-bar::-webkit-scrollbar { display: none; }
-    .lang-bar .lang-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.28); white-space: nowrap; flex-shrink: 0; }
-    .lang-bar .lang-pills { display: flex; gap: 3px; flex-shrink: 0; }
-    .lang-pill { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
-    .lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
-    .lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
-    body { padding-top: 32px; }
+    /* Floating language button — bottom-right, doesn't affect React layout */
+    #ki-lang-float { position: fixed; bottom: 20px; right: 20px; z-index: 9999; }
+    #ki-lang-float-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 12px; font-weight: 600; padding: 7px 13px;
+      border-radius: 999px;
+      background: rgba(27,46,74,0.92); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.88);
+      cursor: pointer; font-family: system-ui, sans-serif;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      transition: background 0.15s; white-space: nowrap;
+    }
+    #ki-lang-float-btn:hover { background: rgba(27,46,74,1); color: #fff; }
+    #ki-lang-menu {
+      display: none; position: absolute;
+      bottom: calc(100% + 8px); right: 0;
+      background: #fff; border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px; padding: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      width: 336px;
+    }
+    #ki-lang-menu.open { display: block; }
+    .ki-lang-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .ki-lang-opt {
+      display: flex; align-items: center; gap: 5px;
+      width: 100%; text-align: left; padding: 6px 8px;
+      border: none; background: transparent;
+      font-size: 12px; color: #1B2E4A; cursor: pointer;
+      border-radius: 8px; font-family: system-ui, sans-serif;
+      transition: background 0.1s; white-space: nowrap;
+    }
+    .ki-lang-opt:hover { background: #E8F2FA; }
+    .ki-lang-opt.active { background: rgba(0,51,153,0.07); font-weight: 700; color: #003399; }
   </style>
-    <script type="module" crossorigin src="/resources/assets/index-CTfLh0dR.js"></script>
-    <link rel="stylesheet" crossorigin href="/resources/assets/index-WNuyvxqD.css">
+    <script type="module" crossorigin src="/resources/assets/index-DhDFj1Gu.js"></script>
+    <link rel="stylesheet" crossorigin href="/resources/assets/index-CYtiZRVA.css">
   </head>
   <body>
-    <!-- ── LANGUAGE BAR ── -->
-    <div class="lang-bar">
-      <span class="lang-label">🌍</span>
-      <div class="lang-pills">
-        <button class="lang-pill active" data-lang="de" onclick="setLangKI('de',this)">DE</button>
-        <button class="lang-pill" data-lang="en" onclick="setLangKI('en',this)">EN</button>
-        <button class="lang-pill" data-lang="fr" onclick="setLangKI('fr',this)">FR</button>
-        <button class="lang-pill" data-lang="es" onclick="setLangKI('es',this)">ES</button>
-        <button class="lang-pill" data-lang="it" onclick="setLangKI('it',this)">IT</button>
-        <button class="lang-pill" data-lang="pt" onclick="setLangKI('pt',this)">PT</button>
-        <button class="lang-pill" data-lang="nl" onclick="setLangKI('nl',this)">NL</button>
-        <button class="lang-pill" data-lang="pl" onclick="setLangKI('pl',this)">PL</button>
-        <button class="lang-pill" data-lang="ro" onclick="setLangKI('ro',this)">RO</button>
-        <button class="lang-pill" data-lang="sv" onclick="setLangKI('sv',this)">SV</button>
-        <button class="lang-pill" data-lang="cs" onclick="setLangKI('cs',this)">CS</button>
-        <button class="lang-pill" data-lang="hu" onclick="setLangKI('hu',this)">HU</button>
-        <button class="lang-pill" data-lang="sk" onclick="setLangKI('sk',this)">SK</button>
-        <button class="lang-pill" data-lang="bg" onclick="setLangKI('bg',this)">BG</button>
-        <button class="lang-pill" data-lang="da" onclick="setLangKI('da',this)">DA</button>
-        <button class="lang-pill" data-lang="fi" onclick="setLangKI('fi',this)">FI</button>
-        <button class="lang-pill" data-lang="hr" onclick="setLangKI('hr',this)">HR</button>
-        <button class="lang-pill" data-lang="el" onclick="setLangKI('el',this)">EL</button>
-        <button class="lang-pill" data-lang="lt" onclick="setLangKI('lt',this)">LT</button>
-        <button class="lang-pill" data-lang="lv" onclick="setLangKI('lv',this)">LV</button>
-        <button class="lang-pill" data-lang="et" onclick="setLangKI('et',this)">ET</button>
-        <button class="lang-pill" data-lang="sl" onclick="setLangKI('sl',this)">SL</button>
-        <button class="lang-pill" data-lang="mt" onclick="setLangKI('mt',this)">MT</button>
-        <button class="lang-pill" data-lang="ga" onclick="setLangKI('ga',this)">GA</button>
+    <!-- Floating language button (bottom-right, doesn't affect React layout) -->
+    <div id="ki-lang-float">
+      <button id="ki-lang-float-btn" onclick="document.getElementById('ki-lang-menu').classList.toggle('open');event.stopPropagation();">
+        🌍 <span id="ki-lang-lbl">DE</span> ▾
+      </button>
+      <div id="ki-lang-menu">
+        <div class="ki-lang-grid">
+          <button class="ki-lang-opt active" data-lang="de" onclick="setLangKI('de')">🇩🇪 Deutsch</button>
+          <button class="ki-lang-opt" data-lang="en" onclick="setLangKI('en')">🇬🇧 English</button>
+          <button class="ki-lang-opt" data-lang="fr" onclick="setLangKI('fr')">🇫🇷 Français</button>
+          <button class="ki-lang-opt" data-lang="es" onclick="setLangKI('es')">🇪🇸 Español</button>
+          <button class="ki-lang-opt" data-lang="it" onclick="setLangKI('it')">🇮🇹 Italiano</button>
+          <button class="ki-lang-opt" data-lang="pt" onclick="setLangKI('pt')">🇵🇹 Português</button>
+          <button class="ki-lang-opt" data-lang="nl" onclick="setLangKI('nl')">🇳🇱 Nederlands</button>
+          <button class="ki-lang-opt" data-lang="pl" onclick="setLangKI('pl')">🇵🇱 Polski</button>
+          <button class="ki-lang-opt" data-lang="ro" onclick="setLangKI('ro')">🇷🇴 Română</button>
+          <button class="ki-lang-opt" data-lang="sv" onclick="setLangKI('sv')">🇸🇪 Svenska</button>
+          <button class="ki-lang-opt" data-lang="cs" onclick="setLangKI('cs')">🇨🇿 Čeština</button>
+          <button class="ki-lang-opt" data-lang="hu" onclick="setLangKI('hu')">🇭🇺 Magyar</button>
+          <button class="ki-lang-opt" data-lang="sk" onclick="setLangKI('sk')">🇸🇰 Slovenčina</button>
+          <button class="ki-lang-opt" data-lang="bg" onclick="setLangKI('bg')">🇧🇬 Български</button>
+          <button class="ki-lang-opt" data-lang="da" onclick="setLangKI('da')">🇩🇰 Dansk</button>
+          <button class="ki-lang-opt" data-lang="fi" onclick="setLangKI('fi')">🇫🇮 Suomi</button>
+          <button class="ki-lang-opt" data-lang="hr" onclick="setLangKI('hr')">🇭🇷 Hrvatski</button>
+          <button class="ki-lang-opt" data-lang="el" onclick="setLangKI('el')">🇬🇷 Ελληνικά</button>
+          <button class="ki-lang-opt" data-lang="lt" onclick="setLangKI('lt')">🇱🇹 Lietuvių</button>
+          <button class="ki-lang-opt" data-lang="lv" onclick="setLangKI('lv')">🇱🇻 Latviešu</button>
+          <button class="ki-lang-opt" data-lang="et" onclick="setLangKI('et')">🇪🇪 Eesti</button>
+          <button class="ki-lang-opt" data-lang="sl" onclick="setLangKI('sl')">🇸🇮 Slovenščina</button>
+          <button class="ki-lang-opt" data-lang="mt" onclick="setLangKI('mt')">🇲🇹 Malti</button>
+          <button class="ki-lang-opt" data-lang="ga" onclick="setLangKI('ga')">🇮🇪 Gaeilge</button>
+        </div>
       </div>
     </div>
     <div id="google_translate_element" style="display:none;"></div>
@@ -68,9 +97,8 @@
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
       }
-      function setLangKI(code, btn) {
-        document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');});
-        if (btn) btn.classList.add('active');
+      function setLangKI(code) {
+        document.getElementById('ki-lang-menu').classList.remove('open');
         var host = window.location.hostname;
         if (code === 'de') {
           document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
@@ -83,13 +111,21 @@
           window.location.reload();
         }
       }
+      // Restore active state from GT cookie on load
       (function() {
         var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-        if (match) {
-          var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
-          if (pill) { document.querySelectorAll('.lang-pill').forEach(function(p){p.classList.remove('active');}); pill.classList.add('active'); }
-        }
+        var activeCode = match ? match[1] : 'de';
+        document.querySelectorAll('.ki-lang-opt').forEach(function(o){o.classList.remove('active');});
+        var activeOpt = document.querySelector('.ki-lang-opt[data-lang="' + activeCode + '"]');
+        if (activeOpt) activeOpt.classList.add('active');
+        var lbl = document.getElementById('ki-lang-lbl');
+        if (lbl) lbl.textContent = activeCode.toUpperCase();
       })();
+      // Close on outside click
+      document.addEventListener('click', function() {
+        var m = document.getElementById('ki-lang-menu');
+        if (m) m.classList.remove('open');
+      });
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
   </body>

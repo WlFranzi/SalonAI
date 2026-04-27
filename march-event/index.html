@@ -32,7 +32,7 @@
     /* ── Nav ── */
     nav {
       position: fixed;
-      top: 36px; left: 0; right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 100;
       background: rgba(13,51,32,0.82);
       backdrop-filter: blur(14px);
@@ -275,51 +275,37 @@
     }
 
     /* ── Language bar ── */
-    .lang-bar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 200;
-      height: 36px;
-      background: rgba(5,28,14,0.97);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      gap: 10px;
-      overflow-x: auto;
-      scrollbar-width: none;
+    /* ── Language switcher (nav dropdown) ── */
+    #lang-switcher-m { position: relative; margin-left: auto; }
+    .lang-btn-m {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 12px; font-weight: 600; padding: 5px 11px;
+      border-radius: 999px; border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85);
+      cursor: pointer; font-family: 'Outfit', sans-serif;
+      transition: background 0.15s; white-space: nowrap;
     }
-    .lang-bar::-webkit-scrollbar { display: none; }
-    .lang-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
-      white-space: nowrap;
-      flex-shrink: 0;
+    .lang-btn-m:hover { background: rgba(255,255,255,0.14); color: #fff; }
+    .lang-menu-m {
+      display: none; position: absolute;
+      top: calc(100% + 8px); right: 0;
+      background: #fff; border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px; padding: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      z-index: 300; width: 336px;
     }
-    .lang-pills {
-      display: flex;
-      gap: 3px;
-      flex-shrink: 0;
+    .lang-menu-m.open { display: block; }
+    .lang-grid-m { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .lang-opt-m {
+      display: flex; align-items: center; gap: 5px;
+      width: 100%; text-align: left; padding: 6px 8px;
+      border: none; background: transparent;
+      font-size: 12px; color: #1a2b1e; cursor: pointer;
+      border-radius: 8px; font-family: 'Outfit', sans-serif;
+      transition: background 0.1s; white-space: nowrap;
     }
-    .lang-pill {
-      font-size: 10.5px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: transparent;
-      color: rgba(255,255,255,0.45);
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-      font-family: 'Outfit', sans-serif;
-    }
-    .lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
-    .lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
+    .lang-opt-m:hover { background: #e8f5e9; }
+    .lang-opt-m.active { background: rgba(0,51,153,0.07); font-weight: 700; color: #003399; }
 
     /* ── Card impact line ── */
     .card-impact {
@@ -359,42 +345,44 @@
 </head>
 <body>
 
-  <!-- ── LANGUAGE BAR ── -->
-  <div class="lang-bar" id="langBar">
-    <span class="lang-label">🌍 Sprache</span>
-    <div class="lang-pills">
-      <button class="lang-pill active" data-lang="de" onclick="setLang('de',this)">DE</button>
-      <button class="lang-pill" data-lang="en" onclick="setLang('en',this)">EN</button>
-      <button class="lang-pill" data-lang="fr" onclick="setLang('fr',this)">FR</button>
-      <button class="lang-pill" data-lang="es" onclick="setLang('es',this)">ES</button>
-      <button class="lang-pill" data-lang="it" onclick="setLang('it',this)">IT</button>
-      <button class="lang-pill" data-lang="pt" onclick="setLang('pt',this)">PT</button>
-      <button class="lang-pill" data-lang="nl" onclick="setLang('nl',this)">NL</button>
-      <button class="lang-pill" data-lang="pl" onclick="setLang('pl',this)">PL</button>
-      <button class="lang-pill" data-lang="ro" onclick="setLang('ro',this)">RO</button>
-      <button class="lang-pill" data-lang="sv" onclick="setLang('sv',this)">SV</button>
-      <button class="lang-pill" data-lang="cs" onclick="setLang('cs',this)">CS</button>
-      <button class="lang-pill" data-lang="hu" onclick="setLang('hu',this)">HU</button>
-      <button class="lang-pill" data-lang="sk" onclick="setLang('sk',this)">SK</button>
-      <button class="lang-pill" data-lang="bg" onclick="setLang('bg',this)">BG</button>
-      <button class="lang-pill" data-lang="da" onclick="setLang('da',this)">DA</button>
-      <button class="lang-pill" data-lang="fi" onclick="setLang('fi',this)">FI</button>
-      <button class="lang-pill" data-lang="hr" onclick="setLang('hr',this)">HR</button>
-      <button class="lang-pill" data-lang="el" onclick="setLang('el',this)">EL</button>
-      <button class="lang-pill" data-lang="lt" onclick="setLang('lt',this)">LT</button>
-      <button class="lang-pill" data-lang="lv" onclick="setLang('lv',this)">LV</button>
-      <button class="lang-pill" data-lang="et" onclick="setLang('et',this)">ET</button>
-      <button class="lang-pill" data-lang="sl" onclick="setLang('sl',this)">SL</button>
-      <button class="lang-pill" data-lang="mt" onclick="setLang('mt',this)">MT</button>
-      <button class="lang-pill" data-lang="ga" onclick="setLang('ga',this)">GA</button>
-    </div>
-  </div>
-
   <!-- Hidden Google Translate element -->
   <div id="google_translate_element" style="display:none;"></div>
 
   <nav>
     <a href="/">← Salon AI</a>
+    <div id="lang-switcher-m">
+      <button class="lang-btn-m" id="lang-btn-m-trigger" onclick="document.getElementById('lang-menu-m-dd').classList.toggle('open');event.stopPropagation();">
+        🌍 <span id="lang-btn-m-label">DE</span> ▾
+      </button>
+      <div class="lang-menu-m" id="lang-menu-m-dd">
+        <div class="lang-grid-m">
+          <button class="lang-opt-m active" data-lang="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
+          <button class="lang-opt-m" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+          <button class="lang-opt-m" data-lang="fr" onclick="setLang('fr')">🇫🇷 Français</button>
+          <button class="lang-opt-m" data-lang="es" onclick="setLang('es')">🇪🇸 Español</button>
+          <button class="lang-opt-m" data-lang="it" onclick="setLang('it')">🇮🇹 Italiano</button>
+          <button class="lang-opt-m" data-lang="pt" onclick="setLang('pt')">🇵🇹 Português</button>
+          <button class="lang-opt-m" data-lang="nl" onclick="setLang('nl')">🇳🇱 Nederlands</button>
+          <button class="lang-opt-m" data-lang="pl" onclick="setLang('pl')">🇵🇱 Polski</button>
+          <button class="lang-opt-m" data-lang="ro" onclick="setLang('ro')">🇷🇴 Română</button>
+          <button class="lang-opt-m" data-lang="sv" onclick="setLang('sv')">🇸🇪 Svenska</button>
+          <button class="lang-opt-m" data-lang="cs" onclick="setLang('cs')">🇨🇿 Čeština</button>
+          <button class="lang-opt-m" data-lang="hu" onclick="setLang('hu')">🇭🇺 Magyar</button>
+          <button class="lang-opt-m" data-lang="sk" onclick="setLang('sk')">🇸🇰 Slovenčina</button>
+          <button class="lang-opt-m" data-lang="bg" onclick="setLang('bg')">🇧🇬 Български</button>
+          <button class="lang-opt-m" data-lang="da" onclick="setLang('da')">🇩🇰 Dansk</button>
+          <button class="lang-opt-m" data-lang="fi" onclick="setLang('fi')">🇫🇮 Suomi</button>
+          <button class="lang-opt-m" data-lang="hr" onclick="setLang('hr')">🇭🇷 Hrvatski</button>
+          <button class="lang-opt-m" data-lang="el" onclick="setLang('el')">🇬🇷 Ελληνικά</button>
+          <button class="lang-opt-m" data-lang="lt" onclick="setLang('lt')">🇱🇹 Lietuvių</button>
+          <button class="lang-opt-m" data-lang="lv" onclick="setLang('lv')">🇱🇻 Latviešu</button>
+          <button class="lang-opt-m" data-lang="et" onclick="setLang('et')">🇪🇪 Eesti</button>
+          <button class="lang-opt-m" data-lang="sl" onclick="setLang('sl')">🇸🇮 Slovenščina</button>
+          <button class="lang-opt-m" data-lang="mt" onclick="setLang('mt')">🇲🇹 Malti</button>
+          <button class="lang-opt-m" data-lang="ga" onclick="setLang('ga')">🇮🇪 Gaeilge</button>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <!-- ── HERO ── -->
@@ -756,7 +744,7 @@
     <p style="margin-top: 14px;"><a href="/">← Zurück zu Salon AI</a></p>
   </footer>
 
-  <!-- ── Google Translate ── -->
+  <!-- ── Google Translate + Language Switcher ── -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
@@ -766,11 +754,11 @@
       }, 'google_translate_element');
     }
 
-    function setLang(code, btn) {
-      document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
-      if (btn) btn.classList.add('active');
+    function setLang(code) {
+      var dd = document.getElementById('lang-menu-m-dd');
+      if (dd) dd.classList.remove('open');
+      var host = window.location.hostname;
       if (code === 'de') {
-        var host = window.location.hostname;
         document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
         document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
         document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
@@ -778,21 +766,26 @@
         return;
       }
       document.cookie = 'googtrans=/de/' + code + '; path=/';
-      document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + window.location.hostname;
+      document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
       window.location.reload();
     }
 
-    // Restore active pill from cookie on page load
+    // Restore active state + button label from GT cookie on load
     (function() {
       var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-      if (match) {
-        var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
-        if (pill) {
-          document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
-          pill.classList.add('active');
-        }
-      }
+      var activeCode = match ? match[1] : 'de';
+      document.querySelectorAll('.lang-opt-m').forEach(function(o) { o.classList.remove('active'); });
+      var activeOpt = document.querySelector('.lang-opt-m[data-lang="' + activeCode + '"]');
+      if (activeOpt) activeOpt.classList.add('active');
+      var lbl = document.getElementById('lang-btn-m-label');
+      if (lbl) lbl.textContent = activeCode.toUpperCase();
     })();
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function() {
+      var dd = document.getElementById('lang-menu-m-dd');
+      if (dd) dd.classList.remove('open');
+    });
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
