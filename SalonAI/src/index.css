@@ -113,6 +113,23 @@ html, body {
   display: none;
 }
 
+/* ── Mobile horizontal card scroll — native swipe feel ─────── */
+@media (max-width: 767px) {
+  /* Scroll-snap for the horizontal card row */
+  .overflow-x-auto.scrollbar-thin {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* Each card group snaps into view */
+  .overflow-x-auto.scrollbar-thin > .flex > div {
+    scroll-snap-align: start;
+  }
+  /* Flip cards: slightly narrower on small phones to show peek of next card */
+  .flip-card {
+    width: 252px !important;
+  }
+}
+
 /* ── Utility ───────────────────────────────────────────────── */
 .line-clamp-2 {
   display: -webkit-box;

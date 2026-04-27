@@ -298,6 +298,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   /* Nav */
   nav .inner { padding: 0 16px; }
   .nav-cta { padding: 6px 14px; font-size: 12px; }
+  .lang-btn { padding: 4px 8px; font-size: 11px; }
 
   /* Main grid */
   .main-content { padding: 20px 14px 60px; }
@@ -321,6 +322,10 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   .s-col { padding: 14px; }
   .s-step p { font-size: 12px; }
 }
+@media(max-width: 380px) {
+  /* Very small phones — hide CTA to prevent nav overflow */
+  .nav-cta { display: none; }
+}
 
 /* Language switcher */
 #lang-switcher { position: relative; }
@@ -339,10 +344,10 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
   background: #fff; border: 1px solid var(--border);
   border-radius: 14px; padding: 8px;
   box-shadow: 0 8px 32px rgba(0,51,153,0.13);
-  z-index: 300; width: 336px;
+  z-index: 300; width: 336px; max-width: calc(100vw - 20px);
 }
 .lang-menu.open { display: block; }
-.lang-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 2px; }
 .lang-option {
   display: flex; align-items: center; gap: 5px;
   width: 100%; text-align: left; padding: 6px 8px;
