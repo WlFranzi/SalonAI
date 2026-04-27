@@ -32,7 +32,7 @@
     /* ── Nav ── */
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 36px; left: 0; right: 0;
       z-index: 100;
       background: rgba(13,51,32,0.82);
       backdrop-filter: blur(14px);
@@ -274,6 +274,76 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    /* ── Language bar ── */
+    .lang-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: 36px;
+      background: rgba(5,28,14,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 10px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .lang-bar::-webkit-scrollbar { display: none; }
+    .lang-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .lang-pills {
+      display: flex;
+      gap: 3px;
+      flex-shrink: 0;
+    }
+    .lang-pill {
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: transparent;
+      color: rgba(255,255,255,0.45);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      font-family: 'Outfit', sans-serif;
+    }
+    .lang-pill:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
+    .lang-pill.active { background: rgba(255,255,255,0.18); color: #fff; border-color: rgba(255,255,255,0.30); }
+
+    /* ── Card impact line ── */
+    .card-impact {
+      margin-top: 16px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1.55;
+      border-left: 3px solid rgba(27,94,32,0.45);
+      background: rgba(27,94,32,0.07);
+      color: var(--green-mid);
+    }
+    .card-navy .card-impact {
+      border-left-color: rgba(27,46,74,0.40);
+      background: rgba(27,46,74,0.07);
+      color: var(--navy);
+    }
+    .card-gold .card-impact {
+      border-left-color: rgba(150,110,20,0.40);
+      background: rgba(150,110,20,0.07);
+      color: #6b4e10;
+    }
+
     /* ── Mobile ── */
     @media (max-width: 680px) {
       .hero { background-attachment: scroll; height: auto; min-height: 88vh; }
@@ -288,6 +358,40 @@
   </style>
 </head>
 <body>
+
+  <!-- ── LANGUAGE BAR ── -->
+  <div class="lang-bar" id="langBar">
+    <span class="lang-label">🌍 Sprache</span>
+    <div class="lang-pills">
+      <button class="lang-pill active" data-lang="de" onclick="setLang('de',this)">DE</button>
+      <button class="lang-pill" data-lang="en" onclick="setLang('en',this)">EN</button>
+      <button class="lang-pill" data-lang="fr" onclick="setLang('fr',this)">FR</button>
+      <button class="lang-pill" data-lang="es" onclick="setLang('es',this)">ES</button>
+      <button class="lang-pill" data-lang="it" onclick="setLang('it',this)">IT</button>
+      <button class="lang-pill" data-lang="pt" onclick="setLang('pt',this)">PT</button>
+      <button class="lang-pill" data-lang="nl" onclick="setLang('nl',this)">NL</button>
+      <button class="lang-pill" data-lang="pl" onclick="setLang('pl',this)">PL</button>
+      <button class="lang-pill" data-lang="ro" onclick="setLang('ro',this)">RO</button>
+      <button class="lang-pill" data-lang="sv" onclick="setLang('sv',this)">SV</button>
+      <button class="lang-pill" data-lang="cs" onclick="setLang('cs',this)">CS</button>
+      <button class="lang-pill" data-lang="hu" onclick="setLang('hu',this)">HU</button>
+      <button class="lang-pill" data-lang="sk" onclick="setLang('sk',this)">SK</button>
+      <button class="lang-pill" data-lang="bg" onclick="setLang('bg',this)">BG</button>
+      <button class="lang-pill" data-lang="da" onclick="setLang('da',this)">DA</button>
+      <button class="lang-pill" data-lang="fi" onclick="setLang('fi',this)">FI</button>
+      <button class="lang-pill" data-lang="hr" onclick="setLang('hr',this)">HR</button>
+      <button class="lang-pill" data-lang="el" onclick="setLang('el',this)">EL</button>
+      <button class="lang-pill" data-lang="lt" onclick="setLang('lt',this)">LT</button>
+      <button class="lang-pill" data-lang="lv" onclick="setLang('lv',this)">LV</button>
+      <button class="lang-pill" data-lang="et" onclick="setLang('et',this)">ET</button>
+      <button class="lang-pill" data-lang="sl" onclick="setLang('sl',this)">SL</button>
+      <button class="lang-pill" data-lang="mt" onclick="setLang('mt',this)">MT</button>
+      <button class="lang-pill" data-lang="ga" onclick="setLang('ga',this)">GA</button>
+    </div>
+  </div>
+
+  <!-- Hidden Google Translate element -->
+  <div id="google_translate_element" style="display:none;"></div>
 
   <nav>
     <a href="/">← Salon AI</a>
@@ -337,36 +441,42 @@
         <div class="card-icon">⚡</div>
         <h3>Boden, der Strom erzeugt</h3>
         <p>Piezoelektrische Platten unter Gehwegen wandeln jeden Schritt in Strom um. Ein U-Bahnhof mit 50.000 täglichen Fahrgästen erzeugt damit genug Energie für seine eigene Beleuchtung — ohne Solar, ohne Windrad, ohne neue Leitungen. Rotterdam und Amsterdam testen das bereits.</p>
+        <div class="card-impact">Für dich: Niedrigere Nebenkosten — Energie, die dein Bahnhof und dein Bürgersteig produzieren, fließt direkt ins Gemeinschaftsnetz deines Viertels.</div>
       </article>
 
       <article class="card">
         <div class="card-icon">🌱</div>
-        <h3>Pflanzen statt Straßenlaternen</h3>
-        <p>Gentechnisch veränderte Pflanzen leuchten nachts von innen — wie Glühwürmchen, nur dauerhaft. Parks, Wege und Plätze beleuchten sich selbst. Keine Wartungskosten, kein Stromverbrauch. Das Biotech-Unternehmen Bioglow hat solche Pflanzen bereits entwickelt und in Pilotumgebungen getestet.</p>
+        <h3>Wege, die sich selbst beleuchten</h3>
+        <p>Die Niederlande hat 2014 einen 500 Meter langen Radweg gebaut, dessen Steine sich tagsüber durch Sonnenlicht aufladen und nachts von selbst leuchten — kein Kabel, keine Lampe, kein Stromverbrauch. Studio Roosegaarde hat es gebaut, es funktioniert noch heute. 2041 ist das kein Kunstprojekt: europäische Gehwege, Radwege und Parkwege beleuchten sich selbst.</p>
+        <div class="card-impact">Für dich: Sichere Heimwege nach 22 Uhr — und keine Wartungskosten für die Gemeinde, die auf deiner Stromrechnung landen.</div>
       </article>
 
       <article class="card">
         <div class="card-icon">🌿</div>
         <h3>Schatten als Infrastruktur</h3>
         <p>Sevilla hat 2023 zwei zentrale Straßen mit Schattentunneln und Nebelsprühern ausgestattet. Ergebnis: 5 °C weniger Hitze, 30 % mehr Fußgänger im Sommer. In 2041 ist das kein Pilotprojekt mehr — sondern Bauvorschrift für jede europäische Innenstadt ab 100.000 Einwohnern.</p>
+        <div class="card-impact">Für dich: Du kannst draußen sein im Sommer — ohne Hitzschlag-Risiko, ohne Klimaanlage auf Volllast, ohne freiwilligen Hausarrest im Juli.</div>
       </article>
 
       <article class="card">
         <div class="card-icon">🔧</div>
         <h3>Reparieren ist günstiger als kaufen</h3>
         <p>Jedes Produkt hat einen digitalen Reparaturpass. Wer ein Gerät repariert statt neu kauft, zahlt 0 % Mehrwertsteuer. Wer ein Smartphone nach 18 Monaten wegwirft, zahlt Abgabe. Das Anreizsystem ist umgedreht — nicht durch Appelle, sondern durch Steuerpolitik.</p>
+        <div class="card-impact">Für dich: Dein Smartphone hält 6 statt 3 Jahre — das spart dir im Jahrzehnt rund €400. Reparieren lohnt sich finanziell, nicht mehr nur moralisch.</div>
       </article>
 
       <article class="card">
         <div class="card-icon">💰</div>
         <h3>Deine Stadt zahlt dir eine Dividende</h3>
         <p>Städte verkaufen anonymisierte Verkehrs- und Nutzungsdaten an Forschung und Unternehmen — und schütten den Erlös direkt an alle Bewohner:innen aus. Amsterdam plant das aktuell: ~€40 pro Person im Pilotjahr. Deine Daten gehören dir — und erzeugen Return.</p>
+        <div class="card-impact">Für dich: Die Stadt überweist dir Geld statt Rechnungen zu schicken. Nicht viel — aber es ist deins, nicht das von Google oder Meta.</div>
       </article>
 
       <article class="card">
         <div class="card-icon">🌿</div>
         <h3>Gebäude als Nahrungsproduzenten</h3>
         <p>Ein Hamburger Bürogebäude betreibt seit 2013 eine lebende Algenfassade. Die Algen produzieren Biomasse für Heizung und Nahrung — und die Fassade kostet weniger als klassische Verkleidung. 2041 ist das kein Experiment mehr: Jedes neue Stadtgebäude in Europa produziert mehr als es verbraucht.</p>
+        <div class="card-impact">Für dich: Frische Lebensmittel aus dem Nachbargebäude — günstiger als Supermarkt-Import. Und die Luft in deiner Straße ist messbar sauberer als heute.</div>
       </article>
     </div>
 
@@ -382,18 +492,21 @@
         <div class="card-icon">🚊</div>
         <h3>Europa als ein einziger Campus</h3>
         <p>Ein 16-Jähriger macht drei Monate Robotik in Göteborg, dann Regenerativlandwirtschaft in Andalusien — alles mit einem einzigen europäischen Bildungspass anerkannt. Der Zug ist der Campus. Kein neues Gebäude nötig. Bildung hört auf, am Wohnort zu kleben.</p>
+        <div class="card-impact">Für dich: Dein Kind bekommt die beste Ausbildung, ohne wegzuziehen — oder kann gehen und sicher zurückkehren. Kein Entweder-oder mehr.</div>
       </article>
 
       <article class="card card-navy">
         <div class="card-icon">👁️</div>
         <h3>Abschlüsse gelten überall — sofort</h3>
         <p>Heute dauert es Monate, bis eine polnische Pflegefachkraft in Portugal arbeiten darf — obwohl die Ausbildung identisch ist. KI übersetzt Qualifikationen in Echtzeit und vergleicht Ausbildungsstandards automatisch. Ergebnis: Wer fertig ausgebildet ist, fängt nächste Woche an — egal wo in Europa.</p>
+        <div class="card-impact">Für dich: Du arbeitest nächsten Monat in Barcelona, wenn du willst — kein Papierkrieg, keine Behördenmonate, keine Übersetzungskosten.</div>
       </article>
 
       <article class="card card-navy">
         <div class="card-icon">🍎</div>
         <h3>Autobahnen werden zu Nahrungswäldern</h3>
         <p>Schwerlasttransport fließt unterirdisch durch Magnetröhren — die Oberfläche wird frei. Rotterdam hat bereits 3 km ehemaliger Innenstadtautobahn in einen essbaren Stadtwald verwandelt. 2041 gilt das für 40 % des europäischen Autobahnnetzes: Infrastruktur, die früher Milliarden Wartungskosten schluckte, produziert jetzt Nahrung.</p>
+        <div class="card-impact">Für dich: Auf dem Radweg nach Hause Äpfel und Nüsse pflücken. Das ist das konkrete Ziel für den ehemaligen Autobahnkorridor durch deine Stadt.</div>
       </article>
     </div>
 
@@ -408,31 +521,36 @@
       <article class="card card-gold">
         <div class="card-icon">🌍</div>
         <h3>Europa handelt — ohne auf Washington zu warten</h3>
-        <p>Als die USA 2026 ihre Ukraine-Unterstützung einstellen, reagiert Europa nicht mit Appellen — sondern mit einer eigenständigen 50-Mrd.-€-Verteidigungskoalition. Zum ersten Mal in der Geschichte ohne amerikanisches Mandat. Das ist der Moment, in dem Europa aufhört, ein Soft-Power-Akteur zu sein — und anfängt, eine echte vierte Weltmacht zu werden: neben USA, China und Russland.</p>
+        <p>Als die USA 2026 ihre Ukraine-Unterstützung einstellen, reagiert Europa nicht mit Appellen — sondern mit einer eigenständigen 50-Mrd.-€-Verteidigungskoalition. Zum ersten Mal in der Geschichte ohne amerikanisches Mandat. Das ist der Moment, in dem Europa aufhört, ein Soft-Power-Akteur zu sein — und anfängt, eine echte dritte Weltmacht zu werden: neben USA und China.</p>
+        <div class="card-impact">Für dich: Du lebst in einem Kontinent, der nicht erpressbar ist — nicht durch Gaslieferungen, nicht durch außenpolitischen Druck, nicht durch Importpreise.</div>
       </article>
 
       <article class="card card-gold">
         <div class="card-icon">🚀</div>
         <h3>Afrika-Partnerschaft statt Entwicklungshilfe</h3>
         <p>Europa baut gemeinsam mit afrikanischen Partnern Solarkapazitäten auf — und erhält dafür langfristige Lieferverträge für Lithium, Kobalt und seltene Erden. Kein Almosen, kein Abhängigkeitsverhältnis: ein Geschäftsmodell auf Augenhöhe. Europa sitzt damit im Zentrum der wirtschaftlich am schnellsten wachsenden Region der Welt für die nächsten 20 Jahre.</p>
+        <div class="card-impact">Für dich: Europäische Technologie kostet weniger — weil Rohstoffe nicht mehr von drei Konzernen mit Monopol kontrolliert werden.</div>
       </article>
 
       <article class="card card-gold">
         <div class="card-icon">💼</div>
         <h3>Weniger Bürokratie, mehr Output</h3>
         <p>Deutschland verlor 2024 30 % seiner Solarmodul-Produktion an China — nicht wegen schlechterer Technologie, sondern weil Genehmigungsverfahren 4 Jahre dauern. 2041 dauern sie 4 Monate. Ergebnisfinanzierung statt Inputkontrolle: Wer liefert, bekommt. Europa schließt den Wettbewerbsrückstand — nicht durch Appelle an den Fleiß, sondern durch smarte Systemdesign-Entscheidungen.</p>
+        <div class="card-impact">Für dich: Solaranlage aufs Dach? 4 Monate Genehmigung statt 4 Jahre. Neue Firma gründen? Läuft in Wochen, nicht Jahren.</div>
       </article>
 
       <article class="card card-gold">
         <div class="card-icon">🏛️</div>
         <h3>Liquid Democracy — abstimmen wie ein Profi, ohne einer zu sein</h3>
         <p>Heute wählt man alle 4 Jahre eine Partei — und hat danach keinen Einfluss mehr. Liquid Democracy funktioniert anders: Du stimmst direkt ab, wo du dich auskennst. Wo nicht, überträgst du deine Stimme an jemanden, dem du vertraust — und kannst sie jederzeit zurückholen. <strong>Beispiel:</strong> Du kennst dich mit Klimapolitik aus → stimmst direkt ab. Steuerpolitik? Du delegierst an deine Steuerberaterin. Keine Parteibindung, keine 4-Jahres-Verträge. Pilotstädte melden 40 % höhere Beteiligung. ↓ Mehr dazu unten.</p>
+        <div class="card-impact">Für dich: Du hast zum ersten Mal echten, kontinuierlichen Einfluss auf Politik — nicht einmal alle 4 Jahre, sondern bei jeder Entscheidung, die dich betrifft.</div>
       </article>
 
       <article class="card card-gold">
         <div class="card-icon">🎲</div>
         <h3>Bürger:innen entscheiden das Budget — per Losverfahren</h3>
         <p>Paris hat 2021 150 zufällig ausgewählte Bürger:innen die Klimaplan-Budgets mitentscheiden lassen. Die Bürger:innen stimmten für ambitioniertere Maßnahmen als der Stadtrat. Die Stadt setzte 70 % davon um. 2041 ist das Standard: KI fasst Optionen zusammen, 500 ausgeloste Bürger:innen entscheiden — schneller, repräsentativer und weniger korruptionsanfällig als parlamentarische Prozesse.</p>
+        <div class="card-impact">Für dich: Deine Chance, direkt über das Stadtbudget zu entscheiden, ist höher als je zuvor in der Geschichte der Demokratie.</div>
       </article>
     </div>
 
@@ -618,14 +736,65 @@
         <p>Bürokratische Anforderungen für grenzüberschreitendes Arbeiten in jedem EU-Land. Zeigt präzise, wo der Binnenmarkt in der Praxis noch nicht funktioniert — und liefert die Rechtsgrundlage für Beschwerden.</p>
         <span class="source-url">eures.europa.eu</span>
       </article>
+
+      <article class="card card-data">
+        <div class="card-icon">🗞️</div>
+        <h3>Klar-o-Mat</h3>
+        <p>Politische Positionen zu EU-Themen einfach erklärt und verglichen — welche Partei steht wofür? Ideal als Einstieg, bevor du mit KI-Agenten tiefer in Abstimmungshistorien und Gesetzestexte einsteigst.</p>
+        <a class="source-url" href="https://klar-o-mat.de/index.html" target="_blank" rel="noopener">klar-o-mat.de ↗</a>
+      </article>
     </div>
 
   </main>
 
   <footer>
     <p>Entwickelt beim Salon AI Dinner · München, März 2026</p>
-    <p style="margin-top: 8px;"><a href="/">← Zurück zu Salon AI</a></p>
+    <p style="margin-top: 16px; font-size: 0.8rem; color: rgba(26,43,30,0.45); line-height: 1.7;">
+      <strong style="color: rgba(26,43,30,0.6);">Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten (teNeues), leading brand narratives and communications.<br>
+      <strong style="color: rgba(26,43,30,0.6);">Host</strong> Franziska Wittleder · Engineer &amp; Product Leader, 15+ years building and scaling AI-driven products at Amazon, Writer &amp; SoundCloud.
+    </p>
+    <p style="margin-top: 14px;"><a href="/">← Zurück zu Salon AI</a></p>
   </footer>
+
+  <!-- ── Google Translate ── -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'de',
+        includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    function setLang(code, btn) {
+      document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+      if (code === 'de') {
+        var host = window.location.hostname;
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
+        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+        window.location.reload();
+        return;
+      }
+      document.cookie = 'googtrans=/de/' + code + '; path=/';
+      document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + window.location.hostname;
+      window.location.reload();
+    }
+
+    // Restore active pill from cookie on page load
+    (function() {
+      var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
+      if (match) {
+        var pill = document.querySelector('.lang-pill[data-lang="' + match[1] + '"]');
+        if (pill) {
+          document.querySelectorAll('.lang-pill').forEach(function(p) { p.classList.remove('active'); });
+          pill.classList.add('active');
+        }
+      }
+    })();
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 
 </body>
 </html>
