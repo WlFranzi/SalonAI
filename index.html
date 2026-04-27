@@ -69,6 +69,20 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3.2rem); line-height: 1.15; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
 .hero h1 em { color: var(--sky-deep); font-style: italic; }
 
+/* Stats bar */
+.stats-bar { background: var(--navy); padding: 0 24px; }
+.stats-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat-item { padding: 28px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.08); }
+.stat-item:last-child { border-right: none; }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 6px; }
+.stat-label { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.3px; line-height: 1.4; }
+@media(max-width: 680px) {
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); padding: 20px 16px; }
+  .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.07); }
+  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+}
+
 /* Main grid */
 .main-content { padding: 32px 24px 80px; max-width: 1080px; margin: 0 auto; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
@@ -382,6 +396,28 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     </h1>
   </div>
 </section>
+
+<!-- ── STATS BAR ─────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number">1 Abend</div>
+      <div class="stat-label">Von Prompting bis zum laufenden Agenten</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">1 eigener Agent</div>
+      <div class="stat-label">Du gehst mit etwas nach Hause, das wirklich läuft</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">Expert:innen</div>
+      <div class="stat-label">Hands-on Hilfe beim Bauen — kein Alleingang</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">Alle Levels</div>
+      <div class="stat-label">Kein Vorwissen nötig</div>
+    </div>
+  </div>
+</div>
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
