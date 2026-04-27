@@ -57,14 +57,14 @@
     /* ── Hero ── */
     .hero {
       position: relative;
-      height: 72vh;
-      min-height: 500px;
+      height: 92vh;
+      min-height: 600px;
       background-image: url('europe_2041.png');
       background-size: cover;
       background-position: center 30%;
       background-attachment: fixed;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       text-align: center;
       color: #fff;
@@ -75,42 +75,66 @@
       inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(5,20,10,0.25) 0%,
-        rgba(5,20,10,0.15) 40%,
-        rgba(5,20,10,0.75) 80%,
-        rgba(5,20,10,0.92) 100%
+        rgba(5,20,10,0.18) 0%,
+        rgba(5,20,10,0.35) 45%,
+        rgba(5,20,10,0.82) 80%,
+        rgba(5,20,10,0.95) 100%
       );
     }
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 760px;
-      padding: 0 24px 64px;
+      max-width: 820px;
+      padding: 80px 32px 96px;
       animation: fadeUp 1.2s ease-out both;
     }
     .hero-eyebrow {
       display: inline-block;
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
-      margin-bottom: 16px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 28px;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-size: clamp(3.6rem, 8vw, 6.5rem);
       font-weight: 700;
-      line-height: 1.08;
-      letter-spacing: -0.5px;
-      text-shadow: 0 4px 30px rgba(0,0,0,0.45);
-      margin-bottom: 16px;
+      line-height: 1.04;
+      letter-spacing: -1px;
+      text-shadow: 0 4px 40px rgba(0,0,0,0.5);
+      margin-bottom: 28px;
     }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.3rem);
+    .hero-tagline {
+      font-size: clamp(1.05rem, 2vw, 1.4rem);
+      font-weight: 500;
+      color: rgba(255,255,255,0.95);
+      letter-spacing: 0.2px;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.45);
+      margin-bottom: 40px;
+    }
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: rgba(255,255,255,0.30);
+      margin: 0 auto 36px;
+    }
+    .hero-desc {
+      font-size: clamp(0.95rem, 1.6vw, 1.1rem);
       font-weight: 300;
-      color: rgba(255,255,255,0.80);
-      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+      text-shadow: 0 1px 10px rgba(0,0,0,0.35);
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+    .hero-footnote {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
     }
 
     /* ── Main container — overlaps hero ── */
@@ -252,8 +276,9 @@
 
     /* ── Mobile ── */
     @media (max-width: 680px) {
-      .hero { background-attachment: scroll; height: 60vh; }
-      .hero-content { padding-bottom: 48px; }
+      .hero { background-attachment: scroll; height: auto; min-height: 88vh; }
+      .hero-content { padding: 60px 24px 72px; }
+      .hero-desc { font-size: 0.92rem; }
       .container { margin-top: -48px; }
       .card { padding: 28px 22px; }
       .card-intro { padding: 28px 22px; }
@@ -273,7 +298,15 @@
     <div class="hero-content">
       <span class="hero-eyebrow">Salon AI · März 2026</span>
       <h1>Europa 2041</h1>
-      <p class="hero-sub">Kein Szenario. Eine Entscheidung.</p>
+      <p class="hero-tagline">Kein Szenario. Eine Entscheidung.</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">
+        Ein Kontinent, der Nähe, Technologie und Natur neu verbindet.
+        Öffentliche Räume sind ruhiger, grüner und zugänglicher.
+        Arbeit, Bildung und Gesundheit sind lokal gut erreichbar —
+        ohne dass Menschen auf Chancen verzichten müssen.
+      </p>
+      <span class="hero-footnote">Sieben ungewöhnliche Ideen, die heute bereits denkbar wären</span>
     </div>
   </header>
 
