@@ -98,7 +98,7 @@ window.LOCALES = {
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_h1:       "Si tous les rêves de l'Europe devenaient réalité… changeraient-ils seulement l'Europe — ou changeraient-ils le monde ?",
     events_h2:     "Événements",
-    pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-UE :</span> Créez votre propre agent et déployez-le pour élaborer votre plan d'action Pro-UE personnel <span style="color:var(--muted-blue);font-weight:400;">(exemples ci-dessous)</span>.',
+    pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-UE :</span> Créez votre propre agent et déployez-le pour élaborer votre plan d\'action Pro-UE personnel <span style="color:var(--muted-blue);font-weight:400;">(exemples ci-dessous)</span>.',
     upcoming:      "À venir",
     rsvp_open:     "INSCRIPTION OUVERTE",
     munich_sub:    "Munich · places limitées",

@@ -271,15 +271,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// ── Auto-init on DOMContentLoaded ─────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
-  var saved = null;
-  try { saved = localStorage.getItem('salonai_lang'); } catch(e) {}
-  var nav = (navigator.language || '').toLowerCase();
-  var detected = nav.startsWith('de') ? 'de'
-               : nav.startsWith('fr') ? 'fr'
-               : nav.startsWith('es') ? 'es'
-               : nav.startsWith('pl') ? 'pl'
-               : 'en';
-  window.setLang(saved || detected);
-});
+// ── Auto-init disabled — locales.js is the active language system ─────────────
+// Language switching is handled by locales.js / applyLocale().
+// window.T and window.SKILLS_META above are still used by buildSkills().

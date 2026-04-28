@@ -662,12 +662,12 @@ function toggleSkill(index) {
 }
 
 window.buildSkills = function(lang) {
-  var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'de';
-  var meta = (window.SKILLS_META && window.SKILLS_META[l]) || (window.SKILLS_META && window.SKILLS_META['de']) || [];
-  var t = (window.T && window.T[l]) || (window.T && window.T['de']) || {};
-  var colOld = t.col_old || 'Früher';
-  var colNow = t.col_now || 'Heute mit KI';
-  var colEu  = t.col_eu  || 'Für ein starkes Europa';
+  var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'en';
+  var meta = (window.SKILLS_META && window.SKILLS_META[l]) || (window.SKILLS_META && window.SKILLS_META['en']) || [];
+  var t = (window.T && window.T[l]) || (window.T && window.T['en']) || {};
+  var colOld = t.col_old || 'Before';
+  var colNow = t.col_now || 'With AI today';
+  var colEu  = t.col_eu  || 'For a stronger Europe';
   var skillsNote = t.skills_note || null;
 
   var container = document.getElementById('skills-list');
@@ -730,7 +730,9 @@ window.__i18nReady = false;
   var _lang = null;
   try { _lang = localStorage.getItem('salonai_lang'); } catch(e) {}
   if (!_lang) { var _m = document.cookie.match(/googtrans=\/de\/([a-z]+)/); if (_m) _lang = _m[1]; }
-  buildSkills(_lang || 'en');
+  // Also re-apply locale now that buildSkills is defined
+  if (window.applyLocale) { window.applyLocale(_lang || 'en'); }
+  else { buildSkills(_lang || 'en'); }
 })();
 
 // ── Photo carousel ──────────────────────────────────────
