@@ -362,8 +362,6 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 </head>
 <body>
 
-<div id="google_translate_element" style="display:none;"></div>
-
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
@@ -373,12 +371,12 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
-          🌍 <span id="lang-btn-label">DE</span> ▾
+          🌍 <span id="lang-btn-label">EN</span> ▾
         </button>
         <div class="lang-menu" id="lang-menu-dd">
           <div class="lang-grid">
-            <button class="lang-option active" data-lang="de" onclick="setLangAll('de')">🇩🇪 Deutsch</button>
-            <button class="lang-option" data-lang="en" onclick="setLangAll('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="de" onclick="setLangAll('de')">🇩🇪 Deutsch</button>
+            <button class="lang-option active" data-lang="en" onclick="setLangAll('en')">🇬🇧 English</button>
             <button class="lang-option" data-lang="fr" onclick="setLangAll('fr')">🇫🇷 Français</button>
             <button class="lang-option" data-lang="es" onclick="setLangAll('es')">🇪🇸 Español</button>
             <button class="lang-option" data-lang="it" onclick="setLangAll('it')">🇮🇹 Italiano</button>
@@ -431,20 +429,20 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
-      <div class="stat-number">1 Abend</div>
-      <div class="stat-label">Von Prompting bis zum laufenden Agenten</div>
+      <div class="stat-number" data-i18n="stat_1_num">1 Evening</div>
+      <div class="stat-label" data-i18n="stat_1_lbl">From prompting to a running agent</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">1 eigener Agent</div>
-      <div class="stat-label">Du gehst mit etwas nach Hause, das wirklich läuft</div>
+      <div class="stat-number" data-i18n="stat_2_num">1 own agent</div>
+      <div class="stat-label" data-i18n="stat_2_lbl">You leave with something that actually works</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">Expert:innen</div>
-      <div class="stat-label">Hands-on Hilfe beim Bauen — kein Alleingang</div>
+      <div class="stat-number" data-i18n="stat_3_num">Experts</div>
+      <div class="stat-label" data-i18n="stat_3_lbl">Hands-on help while building — no going it alone</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">Alle Levels</div>
-      <div class="stat-label">Kein Vorwissen nötig</div>
+      <div class="stat-number" data-i18n="stat_4_num">All levels</div>
+      <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed</div>
     </div>
   </div>
 </div>
@@ -459,7 +457,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
       <h2 data-i18n="events_h2">Events</h2>
       <div style="display:flex;align-items:flex-start;gap:10px;background:rgba(0,51,153,0.05);border:1px solid rgba(0,51,153,0.14);border-radius:12px;padding:12px 14px;margin-bottom:16px;">
         <span style="font-size:18px;flex-shrink:0;line-height:1.2;">🇪🇺</span>
-        <p style="font-size:13px;color:var(--navy);line-height:1.6;font-weight:500;margin:0;" data-i18n="pro_eu_html"><span style="color:var(--accent);font-weight:700;">Pro-EU Eventreihe:</span> Entwickle deinen eigenen Agenten und setze ihn ein, um deinen persönlichen Pro-EU-Aktionsplan zu erstellen <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.</p>
+        <p style="font-size:13px;color:var(--navy);line-height:1.6;font-weight:500;margin:0;" data-i18n-html="pro_eu_html"><span style="color:var(--accent);font-weight:700;">Pro-EU event series:</span> Build your own agent and deploy it to create your personal pro-EU action plan <span style="color:var(--muted-blue);font-weight:400;">(examples below)</span>.</p>
       </div>
 
       <!-- Upcoming -->
@@ -542,7 +540,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
         <span class="r-icon">🤖</span>
         <div class="r-info">
           <div class="r-name">KI Tool Guide</div>
-          <div class="r-sub" data-i18n="ki_guide_sub">Alle wichtigen KI-Tools — bewertet &amp; erklärt. Auf Deutsch.</div>
+          <div class="r-sub" data-i18n="ki_guide_sub">All key AI tools — rated &amp; explained.</div>
         </div>
         <span class="r-badge badge-live">Live ↗</span>
       </a>
@@ -556,8 +554,8 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 <section class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="skills-intro">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n="skills_h2">Was du aus dem Abend mitnimmst</h2>
-      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;" data-i18n="skills_desc">Was KI heute wirklich kann – und wie du daraus echten Mehrwert schaffst. Hier siehst du konkrete Beispiele aus deinem Arbeitsalltag, die wir an dem Abend besprechen.</p>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n="skills_h2">What you'll take home from the evening</h2>
+      <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;" data-i18n="skills_desc">What AI can really do today — and how to turn it into real value. Concrete examples from your working life, covered during the evening.</p>
     </div>
     <div id="skills-list"></div>
   </div>
@@ -581,52 +579,21 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
 
 <script src="/i18n.js"></script>
+<script src="/locales.js"></script>
 <script>
-// ── Language switcher (Google Translate, cookie+reload) ──────────
+// ── Language switcher — instant string replacement, no reload ────
 window.setLangAll = function(code) {
-  // Close dropdown
   var dd = document.getElementById('lang-menu-dd');
   if (dd) dd.classList.remove('open');
-  var host = window.location.hostname;
-  if (code === 'de') {
-    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
-    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
-    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-    window.location.reload();
-    return;
-  }
-  document.cookie = 'googtrans=/de/' + code + '; path=/';
-  document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
-  window.location.reload();
+  if (window.applyLocale) window.applyLocale(code);
 };
-
-// Restore active state + button label from GT cookie on load
-(function() {
-  var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-  var activeCode = match ? match[1] : 'de';
-  // Mark active option
-  document.querySelectorAll('.lang-option').forEach(function(o) { o.classList.remove('active'); });
-  var activeOpt = document.querySelector('.lang-option[data-lang="' + activeCode + '"]');
-  if (activeOpt) activeOpt.classList.add('active');
-  // Update button label
-  var lbl = document.getElementById('lang-btn-label');
-  if (lbl) lbl.textContent = activeCode.toUpperCase();
-})();
 
 // Close dropdown when clicking outside
 document.addEventListener('click', function() {
   var dd = document.getElementById('lang-menu-dd');
   if (dd) dd.classList.remove('open');
 });
-
-// ── Google Translate init ────────────────────────────────────────
-// Call buildSkills BEFORE GT init so ALL content is in DOM when GT translates
-function googleTranslateElementInit() {
-  if (window.buildSkills) window.buildSkills('de');
-  new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
-}
 </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 <script>
 const KI_SKILLS = [
   {
@@ -757,6 +724,14 @@ window.buildSkills = function(lang) {
 
 // Called by i18n.js after it loads
 window.__i18nReady = false;
+
+// Bootstrap: buildSkills is now defined — re-apply locale so skills render correctly
+(function() {
+  var _lang = null;
+  try { _lang = localStorage.getItem('salonai_lang'); } catch(e) {}
+  if (!_lang) { var _m = document.cookie.match(/googtrans=\/de\/([a-z]+)/); if (_m) _lang = _m[1]; }
+  buildSkills(_lang || 'en');
+})();
 
 // ── Photo carousel ──────────────────────────────────────
 const CAROUSEL_IMGS = [
