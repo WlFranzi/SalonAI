@@ -7,12 +7,12 @@ type MissionId = "all" | "bilder" | "text" | "coding" | "research";
 type HostingId = "all" | "cloud-eu" | "lokal";
 
 // ─── Filter options ──────────────────────────────────────────────────────────
-const MISSIONS: { id: MissionId; label: string; icon: string }[] = [
-  { id: "all",      label: "Alle",                    icon: "✨" },
-  { id: "bilder",   label: "Bilder & Design",         icon: "🎨" },
-  { id: "text",     label: "Text & Schreiben",        icon: "✍️" },
-  { id: "coding",   label: "Coding & Automatisierung",icon: "💻" },
-  { id: "research", label: "Recherche & Dokumente",   icon: "🔍" },
+const MISSIONS: { id: MissionId; label: string; icon: string; sub: string }[] = [
+  { id: "all",      label: "Alle Tools",              icon: "✨", sub: "" },
+  { id: "bilder",   label: "Bilder & Design",         icon: "🎨", sub: "Logo · Branding · Fotos · UI" },
+  { id: "text",     label: "Text & Schreiben",        icon: "✍️", sub: "Blog · E-Mail · Social · Copy" },
+  { id: "coding",   label: "Code & Automatisierung",  icon: "💻", sub: "Coding · Agents · APIs · CLI" },
+  { id: "research", label: "Recherche & Analyse",     icon: "🔍", sub: "PDFs · Daten · Suche · RAG" },
 ];
 
 const HOSTING: { id: HostingId; label: string; icon: string; desc: string }[] = [
@@ -123,26 +123,24 @@ export default function Index() {
 
           {/* Row 1 — use case */}
           <div className="flex gap-1.5 overflow-x-auto scrollbar-none">
-            {MISSIONS.map((m) => {
-              const isActive = mission === m.id;
-              return (
-                <button
-                  key={m.id}
-                  onClick={() => setMission(m.id)}
-                  className="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-sm font-semibold whitespace-nowrap shrink-0 transition-all duration-150 active:scale-95"
-                  style={{
-                    background: isActive ? "#003399" : "rgba(255,255,255,0.65)",
-                    color: isActive ? "#fff" : "#1B2E4A",
-                    border: isActive ? "2px solid transparent" : "1.5px solid rgba(27,46,74,0.10)",
-                    boxShadow: isActive ? "0 2px 12px rgba(0,51,153,0.28)" : "none",
-                  }}
-                >
-                  <span>{m.icon}</span>
-                  <span className="hidden sm:inline">{m.label}</span>
-                  <span className="sm:hidden">{m.label.split(" ")[0]}</span>
-                </button>
-              );
-            })}
+            {MISSIONS.map((m) => (
+              <button
+                key={m.id}
+                onClick={() => setMission(m.id)}
+                className={`flex flex-col items-center gap-0.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap ${
+                  mission === m.id
+                    ? "bg-[#1B2E4A] text-white shadow-md"
+                    : "bg-white/70 text-[#1B2E4A] hover:bg-white border border-[#C5D5E4]"
+                }`}
+              >
+                <span>{m.icon} {m.label}</span>
+                {m.sub && (
+                  <span className={`text-[10px] font-normal leading-none ${mission === m.id ? "text-white/60" : "text-slate-400"}`}>
+                    {m.sub}
+                  </span>
+                )}
+              </button>
+            ))}
           </div>
 
           {/* Row 2 — where do your data live? */}

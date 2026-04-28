@@ -124,9 +124,10 @@ html, body {
   .overflow-x-auto.scrollbar-thin > .flex > div {
     scroll-snap-align: start;
   }
-  /* Flip cards: slightly narrower on small phones to show peek of next card */
+  /* Flip cards: square, slightly narrower on small phones to show peek of next card */
   .flip-card {
-    width: 252px !important;
+    width: 236px !important;
+    height: 236px !important;
   }
 }
 
