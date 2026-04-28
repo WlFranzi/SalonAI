@@ -554,7 +554,11 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 <section class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="skills-intro">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n="skills_h2">What you'll take home from the evening</h2>
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:8px;">
+        <span style="width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0;"></span>
+        <span style="font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:600;color:var(--sky-deep);" data-i18n="skills_eyebrow">AI Workshop</span>
+      </div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin-bottom:8px;" data-i18n-html="skills_h2">What you'll take home <em style="color:var(--sky-deep);font-style:italic;">from the evening</em></h2>
       <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;" data-i18n="skills_desc">What AI can really do today — and how to turn it into real value. Concrete examples from your working life, covered during the evening.</p>
     </div>
     <div id="skills-list"></div>
@@ -662,7 +666,8 @@ function toggleSkill(index) {
 
 window.buildSkills = function(lang) {
   var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'en';
-  var loc = (window.LOCALES && (window.LOCALES[l] || window.LOCALES['en'])) || {};
+  var loc  = (window.LOCALES && (window.LOCALES[l] || window.LOCALES['en'])) || {};
+  var meta = (window.SKILLS_META && (window.SKILLS_META[l] || window.SKILLS_META['en'])) || [];
   var colOld = loc.col_old || 'Before';
   var colNow = loc.col_now || 'With AI today';
   var colEu  = loc.col_eu  || 'For a stronger Europe';
@@ -721,6 +726,60 @@ window.buildSkills = function(lang) {
 };
 
 // buildSkills is now defined above — nothing else needed here
+
+// ── Skill name / banner translations (cat+name+banner per language) ───────────
+window.SKILLS_META = {
+  de: [
+    { cat: 'Design',     name: 'User Research auswerten',               banner: 'Du hast gerade 12 Nutzerinterviews abgeschlossen. Die Findings-Präsentation ist am Freitag.' },
+    { cat: 'Product',    name: 'Feature-Entscheidungen treffen',         banner: 'Ein Kunde hat gerade gekündigt und ein fehlendes Feature genannt, über das dein Team seit Monaten diskutiert.' },
+    { cat: 'Finance',    name: 'Marktanalysen erstellen',                banner: 'Dein CFO will wissen, ob ihr ein neues Marktsegment betreten solltet.' },
+    { cat: 'Marketing',  name: 'Positionierung verteidigen',             banner: 'Dein CEO fragt, warum die neue Kampagne eines Wettbewerbers klingt wie eure eigene Positionierung.' },
+    { cat: 'Sales',      name: 'Verluste analysieren & gegensteuern',    banner: 'Ihr verliert Deals – und niemand kann sich einigen, warum.' },
+    { cat: 'Consulting', name: 'Empfehlungen verteidigen',               banner: 'Dein Kunde hat dich gebeten, deine Empfehlung mit Daten zu belegen, die du noch nicht hast.' },
+    { cat: 'PR & Comms', name: 'VIP-Wissen zentralisieren',              banner: 'Dein Team verwaltet eine umfangreiche Kartei an VIPs, Journalisten und Stakeholdern für ein großes Event.' },
+    { cat: 'Management', name: 'Standards skalieren',                    banner: 'Dein Team fragt ständig: "Ist das gut genug?" Du weißt die Antwort sofort — aber du bist nicht immer erreichbar.' },
+  ],
+  en: [
+    { cat: 'Design',     name: 'Synthesizing User Research',             banner: 'You just finished 12 user interviews. The findings presentation is on Friday.' },
+    { cat: 'Product',    name: 'Making Feature Decisions',               banner: 'A customer just churned and cited a missing feature your team has debated for months.' },
+    { cat: 'Finance',    name: 'Building Market Analyses',               banner: 'Your CFO wants to know whether you should enter a new market segment.' },
+    { cat: 'Marketing',  name: 'Defending Positioning',                  banner: 'Your CEO asks why a competitor\'s new campaign sounds just like your own positioning.' },
+    { cat: 'Sales',      name: 'Analyzing Losses & Course-Correcting',   banner: 'You\'re losing deals — and nobody can agree on why.' },
+    { cat: 'Consulting', name: 'Defending Recommendations',              banner: 'Your client has asked you to back your recommendation with data you don\'t have yet.' },
+    { cat: 'PR & Comms', name: 'Centralizing VIP Knowledge',             banner: 'Your team manages an extensive database of VIPs, journalists, and stakeholders for a major event.' },
+    { cat: 'Management', name: 'Scaling Standards & Automating Feedback',banner: 'Your team constantly asks: "Is this good enough?" You know the answer immediately — but you\'re not always available.' },
+  ],
+  fr: [
+    { cat: 'Design',     name: 'Synthétiser la recherche utilisateur',           banner: 'Vous venez de terminer 12 entretiens utilisateurs. La présentation des résultats est vendredi.' },
+    { cat: 'Product',    name: 'Prendre des décisions sur les fonctionnalités',  banner: 'Un client vient de partir en citant une fonctionnalité manquante que votre équipe débat depuis des mois.' },
+    { cat: 'Finance',    name: 'Construire des analyses de marché',              banner: 'Votre DAF veut savoir si vous devriez entrer dans un nouveau segment de marché.' },
+    { cat: 'Marketing',  name: 'Défendre le positionnement',                     banner: 'Votre PDG demande pourquoi la nouvelle campagne d\'un concurrent ressemble à votre propre positionnement.' },
+    { cat: 'Sales',      name: 'Analyser les pertes et corriger le tir',         banner: 'Vous perdez des deals — et personne ne s\'accorde sur les raisons.' },
+    { cat: 'Consulting', name: 'Défendre ses recommandations',                   banner: 'Votre client vous a demandé d\'étayer votre recommandation avec des données que vous n\'avez pas encore.' },
+    { cat: 'PR & Comms', name: 'Centraliser les connaissances VIP',              banner: 'Votre équipe gère une base de données étendue de VIPs, journalistes et parties prenantes.' },
+    { cat: 'Management', name: 'Faire évoluer les standards',                    banner: 'Votre équipe demande constamment : "Est-ce suffisamment bien ?" Vous connaissez la réponse — mais vous n\'êtes pas toujours disponible.' },
+  ],
+  es: [
+    { cat: 'Design',     name: 'Sintetizar la investigación de usuarios',        banner: 'Acabas de terminar 12 entrevistas de usuario. La presentación de hallazgos es el viernes.' },
+    { cat: 'Product',    name: 'Tomar decisiones sobre funcionalidades',         banner: 'Un cliente acaba de cancelar y mencionó una funcionalidad que falta que tu equipo lleva meses debatiendo.' },
+    { cat: 'Finance',    name: 'Crear análisis de mercado',                      banner: 'Tu CFO quiere saber si deberían entrar en un nuevo segmento de mercado.' },
+    { cat: 'Marketing',  name: 'Defender el posicionamiento',                    banner: 'Tu CEO pregunta por qué la nueva campaña de un competidor suena igual que vuestro propio posicionamiento.' },
+    { cat: 'Sales',      name: 'Analizar pérdidas y corregir el rumbo',          banner: 'Estáis perdiendo deals — y nadie puede ponerse de acuerdo en por qué.' },
+    { cat: 'Consulting', name: 'Defender recomendaciones',                       banner: 'Tu cliente te ha pedido que respaldes tu recomendación con datos que aún no tienes.' },
+    { cat: 'PR & Comms', name: 'Centralizar el conocimiento VIP',                banner: 'Tu equipo gestiona una extensa base de datos de VIPs, periodistas y partes interesadas.' },
+    { cat: 'Management', name: 'Escalar estándares',                             banner: 'Tu equipo pregunta constantemente: "¿Es esto suficientemente bueno?" Conoces la respuesta — pero no siempre estás disponible.' },
+  ],
+  pl: [
+    { cat: 'Design',     name: 'Synteza badań użytkowników',                     banner: 'Właśnie zakończyłeś 12 wywiadów z użytkownikami. Prezentacja wyników jest w piątek.' },
+    { cat: 'Product',    name: 'Podejmowanie decyzji o funkcjach',               banner: 'Klient właśnie zrezygnował, wskazując brakującą funkcję, którą Twój zespół dyskutuje od miesięcy.' },
+    { cat: 'Finance',    name: 'Tworzenie analiz rynkowych',                     banner: 'Twój CFO chce wiedzieć, czy powinniście wejść w nowy segment rynku.' },
+    { cat: 'Marketing',  name: 'Obrona pozycjonowania',                          banner: 'Twój dyrektor generalny pyta, dlaczego nowa kampania konkurenta brzmi jak Wasze własne pozycjonowanie.' },
+    { cat: 'Sales',      name: 'Analiza strat i korygowanie kursu',              banner: 'Tracicie deale — i nikt nie może się zgodzić, dlaczego.' },
+    { cat: 'Consulting', name: 'Obrona rekomendacji',                            banner: 'Twój klient poprosił Cię o poparcie rekomendacji danymi, których jeszcze nie masz.' },
+    { cat: 'PR & Comms', name: 'Centralizacja wiedzy o VIP-ach',                 banner: 'Twój zespół zarządza rozbudowaną bazą danych VIP-ów, dziennikarzy i interesariuszy.' },
+    { cat: 'Management', name: 'Skalowanie standardów',                          banner: 'Twój zespół ciągle pyta: „Czy to wystarczająco dobre?" Znasz odpowiedź — ale nie zawsze jesteś dostępny.' },
+  ],
+};
 
 // ── Photo carousel ──────────────────────────────────────
 const CAROUSEL_IMGS = [
