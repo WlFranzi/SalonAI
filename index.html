@@ -578,7 +578,6 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 </footer>
 
 
-<script src="/i18n.js"></script>
 <script src="/locales.js"></script>
 <script>
 // ── Language switcher — instant string replacement, no reload ────
@@ -663,12 +662,11 @@ function toggleSkill(index) {
 
 window.buildSkills = function(lang) {
   var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'en';
-  var meta = (window.SKILLS_META && window.SKILLS_META[l]) || (window.SKILLS_META && window.SKILLS_META['en']) || [];
-  var t = (window.T && window.T[l]) || (window.T && window.T['en']) || {};
-  var colOld = t.col_old || 'Before';
-  var colNow = t.col_now || 'With AI today';
-  var colEu  = t.col_eu  || 'For a stronger Europe';
-  var skillsNote = t.skills_note || null;
+  var loc = (window.LOCALES && (window.LOCALES[l] || window.LOCALES['en'])) || {};
+  var colOld = loc.col_old || 'Before';
+  var colNow = loc.col_now || 'With AI today';
+  var colEu  = loc.col_eu  || 'For a stronger Europe';
+  var skillsNote = null;
 
   var container = document.getElementById('skills-list');
   if (!container) return;
@@ -722,18 +720,7 @@ window.buildSkills = function(lang) {
   });
 };
 
-// Called by i18n.js after it loads
-window.__i18nReady = false;
-
-// Bootstrap: buildSkills is now defined — re-apply locale so skills render correctly
-(function() {
-  var _lang = null;
-  try { _lang = localStorage.getItem('salonai_lang'); } catch(e) {}
-  if (!_lang) { var _m = document.cookie.match(/googtrans=\/de\/([a-z]+)/); if (_m) _lang = _m[1]; }
-  // Also re-apply locale now that buildSkills is defined
-  if (window.applyLocale) { window.applyLocale(_lang || 'en'); }
-  else { buildSkills(_lang || 'en'); }
-})();
+// buildSkills is now defined above — nothing else needed here
 
 // ── Photo carousel ──────────────────────────────────────
 const CAROUSEL_IMGS = [
@@ -752,6 +739,15 @@ function carouselGo(idx, e) {
 }
 function carouselPrev(e) { carouselGo(carouselIdx - 1, e); }
 function carouselNext(e) { carouselGo(carouselIdx + 1, e); }
+</script>
+
+<!-- ── SINGLE LANGUAGE INIT — runs after every script is loaded ── -->
+<script>
+(function() {
+  var lang = null;
+  try { lang = localStorage.getItem('salonai_lang'); } catch(e) {}
+  window.applyLocale(lang || 'en');
+})();
 </script>
 </body>
 </html>

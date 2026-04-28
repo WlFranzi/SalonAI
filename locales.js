@@ -49,6 +49,9 @@ window.LOCALES = {
     stat_3_lbl:    "Hands-on help while building — no going it alone",
     stat_4_num:    "All levels",
     stat_4_lbl:    "No prior knowledge needed",
+    col_old:       "Before",
+    col_now:       "With AI today",
+    col_eu:        "For a stronger Europe",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -87,6 +90,9 @@ window.LOCALES = {
     stat_3_lbl:    "Hands-on Hilfe beim Bauen — kein Alleingang",
     stat_4_num:    "Alle Levels",
     stat_4_lbl:    "Kein Vorwissen nötig",
+    col_old:       "Früher",
+    col_now:       "Heute mit KI",
+    col_eu:        "Für ein starkes Europa",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -125,6 +131,9 @@ window.LOCALES = {
     stat_3_lbl:    "Aide pratique pendant la construction — pas seul",
     stat_4_num:    "Tous niveaux",
     stat_4_lbl:    "Aucune connaissance préalable nécessaire",
+    col_old:       "Avant",
+    col_now:       "Avec l'IA aujourd'hui",
+    col_eu:        "Pour une Europe plus forte",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -163,6 +172,9 @@ window.LOCALES = {
     stat_3_lbl:    "Ayuda práctica mientras construyes — sin ir solo",
     stat_4_num:    "Todos los niveles",
     stat_4_lbl:    "Sin conocimientos previos necesarios",
+    col_old:       "Antes",
+    col_now:       "Con IA hoy",
+    col_eu:        "Por una Europa más fuerte",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -201,6 +213,9 @@ window.LOCALES = {
     stat_3_lbl:    "Supporto pratico durante la costruzione — mai da soli",
     stat_4_num:    "Tutti i livelli",
     stat_4_lbl:    "Nessuna conoscenza pregressa richiesta",
+    col_old:       "Prima",
+    col_now:       "Con l'IA oggi",
+    col_eu:        "Per un'Europa più forte",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -239,6 +254,9 @@ window.LOCALES = {
     stat_3_lbl:    "Ajuda prática durante a construção — sem ir sozinho",
     stat_4_num:    "Todos os níveis",
     stat_4_lbl:    "Nenhum conhecimento prévio necessário",
+    col_old:       "Antes",
+    col_now:       "Com IA hoje",
+    col_eu:        "Por uma Europa mais forte",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -277,6 +295,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktische hulp tijdens het bouwen — nooit alleen",
     stat_4_num:    "Alle niveaus",
     stat_4_lbl:    "Geen voorkennis vereist",
+    col_old:       "Vroeger",
+    col_now:       "Met AI vandaag",
+    col_eu:        "Voor een sterker Europa",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -315,6 +336,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktyczna pomoc podczas budowania — nie sam",
     stat_4_num:    "Wszystkie poziomy",
     stat_4_lbl:    "Brak wymaganej wiedzy wstępnej",
+    col_old:       "Wcześniej",
+    col_now:       "Dziś z AI",
+    col_eu:        "Dla silniejszej Europy",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -353,6 +377,9 @@ window.LOCALES = {
     stat_3_lbl:    "Ajutor practic în timp ce construiești — nu singur",
     stat_4_num:    "Toate nivelurile",
     stat_4_lbl:    "Fără cunoștințe prealabile necesare",
+    col_old:       "Înainte",
+    col_now:       "Cu AI azi",
+    col_eu:        "Pentru o Europă mai puternică",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -391,6 +418,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktisk hjälp under byggandet — aldrig ensam",
     stat_4_num:    "Alla nivåer",
     stat_4_lbl:    "Ingen förkunskap krävs",
+    col_old:       "Tidigare",
+    col_now:       "Med AI idag",
+    col_eu:        "För ett starkare Europa",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -429,6 +459,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktická pomoc při stavbě — nikdy sám",
     stat_4_num:    "Všechny úrovně",
     stat_4_lbl:    "Žádné předchozí znalosti potřeba",
+    col_old:       "Dříve",
+    col_now:       "Dnes s AI",
+    col_eu:        "Pro silnější Evropu",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -467,6 +500,9 @@ window.LOCALES = {
     stat_3_lbl:    "Gyakorlati segítség építés közben — sosem egyedül",
     stat_4_num:    "Minden szint",
     stat_4_lbl:    "Nem szükséges előzetes tudás",
+    col_old:       "Korábban",
+    col_now:       "Ma AI-val",
+    col_eu:        "Egy erősebb Európáért",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -505,6 +541,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktická pomoc pri budovaní — nikdy sám",
     stat_4_num:    "Všetky úrovne",
     stat_4_lbl:    "Nevyžadujú sa žiadne predchádzajúce znalosti",
+    col_old:       "Skôr",
+    col_now:       "Dnes s AI",
+    col_eu:        "Pre silnejšiu Európu",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -543,6 +582,9 @@ window.LOCALES = {
     stat_3_lbl:    "Практическа помощ по време на изграждането — не сам",
     stat_4_num:    "Всички нива",
     stat_4_lbl:    "Не се изисква предварителни познания",
+    col_old:       "Преди",
+    col_now:       "С AI днес",
+    col_eu:        "За по-силна Европа",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -581,6 +623,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktisk hjælp under bygningen — aldrig alene",
     stat_4_num:    "Alle niveauer",
     stat_4_lbl:    "Ingen forudgående viden nødvendig",
+    col_old:       "Tidligere",
+    col_now:       "Med AI i dag",
+    col_eu:        "For et stærkere Europa",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -619,6 +664,9 @@ window.LOCALES = {
     stat_3_lbl:    "Käytännön apua rakentamisen aikana — ei yksin",
     stat_4_num:    "Kaikki tasot",
     stat_4_lbl:    "Ei vaadita aiempaa osaamista",
+    col_old:       "Ennen",
+    col_now:       "AI kanssa tänään",
+    col_eu:        "Vahvemman Euroopan puolesta",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -657,6 +705,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktična pomoć pri izgradnji — nikad sam",
     stat_4_num:    "Sve razine",
     stat_4_lbl:    "Nije potrebno predznanje",
+    col_old:       "Prije",
+    col_now:       "S AI danas",
+    col_eu:        "Za jaču Europu",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -695,6 +746,9 @@ window.LOCALES = {
     stat_3_lbl:    "Πρακτική βοήθεια κατά την κατασκευή — ποτέ μόνος",
     stat_4_num:    "Όλα τα επίπεδα",
     stat_4_lbl:    "Δεν απαιτούνται προηγούμενες γνώσεις",
+    col_old:       "Πριν",
+    col_now:       "Με AI σήμερα",
+    col_eu:        "Για μια ισχυρότερη Ευρώπη",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -733,6 +787,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktinė pagalba kuriant — niekada vienas",
     stat_4_num:    "Visi lygiai",
     stat_4_lbl:    "Išankstinių žinių nereikia",
+    col_old:       "Anksčiau",
+    col_now:       "Su AI šiandien",
+    col_eu:        "Stipresnei Europai",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -771,6 +828,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktiska palīdzība veidošanas laikā — nekad viens",
     stat_4_num:    "Visi līmeņi",
     stat_4_lbl:    "Priekšzināšanas nav nepieciešamas",
+    col_old:       "Agrāk",
+    col_now:       "Ar AI šodien",
+    col_eu:        "Spēcīgākai Eiropai",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -809,6 +869,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktiline abi ehitamise ajal — mitte üksi",
     stat_4_num:    "Kõik tasemed",
     stat_4_lbl:    "Eelteadmisi pole vaja",
+    col_old:       "Varem",
+    col_now:       "Täna AI-ga",
+    col_eu:        "Tugevama Euroopa jaoks",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -847,6 +910,9 @@ window.LOCALES = {
     stat_3_lbl:    "Praktična pomoč med gradnjo — nikoli sam",
     stat_4_num:    "Vse ravni",
     stat_4_lbl:    "Predhodno znanje ni potrebno",
+    col_old:       "Prej",
+    col_now:       "Z AI danes",
+    col_eu:        "Za močnejšo Evropo",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -885,6 +951,9 @@ window.LOCALES = {
     stat_3_lbl:    "Għajnuna prattika waqt il-bini — qatt waħdek",
     stat_4_num:    "Il-livelli kollha",
     stat_4_lbl:    "Ma hemm bżonn l-ebda għarfien minn qabel",
+    col_old:       "Qabel",
+    col_now:       "Mal-AI llum",
+    col_eu:        "Għal Ewropa aktar qawwija",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -923,6 +992,9 @@ window.LOCALES = {
     stat_3_lbl:    "Cabhair phraiticiúil le linn tógála — gan dul ina aonar",
     stat_4_num:    "Gach leibhéal",
     stat_4_lbl:    "Níl aon eolas roimh ré ag teastáil",
+    col_old:       "Roimhe seo",
+    col_now:       "Le AI inniu",
+    col_eu:        "Ar mhaithe le hEoraip níos láidre",
   },
 
 };
@@ -969,18 +1041,4 @@ window.applyLocale = function(code) {
   if (window.buildSkills) window.buildSkills(code);
 };
 
-/* Auto-apply on load — restore saved preference */
-(function() {
-  var saved = null;
-  try { saved = localStorage.getItem('salonai_lang'); } catch(e) {}
-  /* Also check GT cookie for backwards compatibility */
-  if (!saved) {
-    var m = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-    if (m) saved = m[1];
-  }
-  if (saved && window.LOCALES[saved]) {
-    window.applyLocale(saved);
-  } else {
-    window.applyLocale('en');
-  }
-})();
+/* No auto-init here — init is called explicitly from index.html after all scripts load */
