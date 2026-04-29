@@ -49,6 +49,20 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
         {/* ── FRONT ─────────────────────────────────────────── */}
         <div className="flip-card-face flip-card-front rounded-2xl shadow-lg border border-white/40 flex flex-col">
 
+          {/* ── flip hint ─────────────────────────────────────── */}
+          <div
+            className="absolute top-2 right-2 z-10 pointer-events-none"
+            style={{
+              fontSize: 15,
+              lineHeight: 1,
+              opacity: 0.38,
+              userSelect: "none",
+            }}
+            aria-hidden="true"
+          >
+            ↺
+          </div>
+
           {/* ── header row: company + source badge + flag ─────── */}
           <div className="flex items-center justify-between px-4 pt-3 pb-0 shrink-0">
             <span

@@ -2,11 +2,17 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "salon-ai-static",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4000", "--directory", "/Users/franziska/Documents/SalonAI/Website"],
-      "port": 4000,
-      "cwd": "/Users/franziska/Documents/SalonAI/Website"
+      "name": "main-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", ".", "--listen", "3333", "--no-clipboard"],
+      "port": 3333
+    },
+    {
+      "name": "ki-guide",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/franziska/Documents/SalonAI/Website/SalonAI",
+      "port": 5173
     }
   ]
 }
