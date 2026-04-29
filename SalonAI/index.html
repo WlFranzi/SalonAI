@@ -89,31 +89,19 @@
         </div>
       </div>
     </div>
-    <div id="google_translate_element" style="display:none;"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv', autoDisplay: false }, 'google_translate_element');
-      }
+      // Language stored in localStorage — syncs with main Salon AI page
       function setLangKI(code) {
         document.getElementById('ki-lang-menu').classList.remove('open');
-        var host = window.location.hostname;
-        if (code === 'de') {
-          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
-          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
-          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-          window.location.reload();
-        } else {
-          document.cookie = 'googtrans=/de/' + code + '; path=/';
-          document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
-          window.location.reload();
-        }
+        try { localStorage.setItem('salonai_lang', code); } catch(e) {}
+        window.location.reload();
       }
-      // Restore active state from GT cookie on load
+      // Restore active state from localStorage on load
       (function() {
-        var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-        var activeCode = match ? match[1] : 'de';
+        var activeCode = 'de';
+        try { activeCode = localStorage.getItem('salonai_lang') || 'de'; } catch(e) {}
         document.querySelectorAll('.ki-lang-opt').forEach(function(o){o.classList.remove('active');});
         var activeOpt = document.querySelector('.ki-lang-opt[data-lang="' + activeCode + '"]');
         if (activeOpt) activeOpt.classList.add('active');
@@ -126,6 +114,5 @@
         if (m) m.classList.remove('open');
       });
     </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
   </body>
 </html>
