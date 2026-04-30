@@ -111,6 +111,8 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .rsvp-btn { font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; }
 .rsvp-btn:hover { background: var(--sky-deep); }
 .rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
+.rsvp-btn.postponed { background: transparent; color: #c2410c; border: 1px solid #c2410c; cursor: default; font-size: 9px; letter-spacing: 0.5px; }
+.event-row.postponed { opacity: 0.8; }
 .li-link { display: inline-block; font-size: 10px; color: var(--sky-deep); text-decoration: underline; padding: 0 12px 6px 60px; }
 .past-row { display: flex; align-items: center; gap: 12px; padding: 7px 12px; }
 .past-row .date { font-size: 11px; color: var(--muted-blue); min-width: 80px; }
@@ -420,7 +422,7 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
     <p class="eyebrow" data-i18n="hero_eyebrow">Pro EU Event Series</p>
     <p class="eyebrow-sub" data-i18n="hero_sub">Starting in Germany, expanding across the EU soon.</p>
     <h1 data-i18n-html="hero_h1">
-      If all of Europe's dreams came true… would they just change Europe <span style="color:var(--sky-deep);">or would they change the world?</span>
+      If all of Europe's dreams came true… would they just change Europe <span style="color:var(--sky-deep);"><em>or would they change the world?</em></span>
     </h1>
   </div>
 </section>
@@ -462,17 +464,16 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
       <!-- Upcoming -->
       <div class="events-section">
-        <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span> <span style="margin-left:auto;color:var(--sky-deep);" data-i18n="rsvp_open">RSVP OPEN</span></h3>
+        <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span></h3>
 
-        <div class="event-row">
-          <div class="event-date-col"><span class="month">Apr</span><span class="day">29</span></div>
+        <div class="event-row postponed">
+          <div class="event-date-col"><span class="month">Mai</span><span class="day" style="font-size:11px;opacity:0.6;">7/12?</span></div>
           <div class="event-info">
             <div class="name">Salon AI Dinner — Munich</div>
-            <div class="sub" data-i18n="munich_sub">Munich · seats limited</div>
+            <div class="sub" data-i18n="munich_sub">Munich · postponed · likely May 7 or 12</div>
           </div>
-          <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer"><button class="rsvp-btn">RSVP →</button></a>
+          <button class="rsvp-btn postponed">VERSCHOBEN</button>
         </div>
-        <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="li-link">LinkedIn Event →</a>
 
         <div class="event-row">
           <div class="event-date-col"><span class="month">May</span><span class="day" style="font-size:11px;opacity:0.5;">soon</span></div>
@@ -597,6 +598,7 @@ document.addEventListener('click', function() {
   if (dd) dd.classList.remove('open');
 });
 </script>
+<script src="skills-steps.js"></script>
 <script>
 const KI_SKILLS = [
   {
@@ -678,10 +680,18 @@ window.buildSkills = function(lang) {
   container.innerHTML = '';
 
   KI_SKILLS.forEach(function(skill, i) {
-    var skillMeta = meta[i] || {};
+    var skillMeta  = meta[i] || {};
+    var stepsLang  = (window.SKILLS_STEPS && (window.SKILLS_STEPS[l] || window.SKILLS_STEPS['en']));
+    var stepsData  = (stepsLang && stepsLang[i]) || null;
+
     var cat    = skillMeta.cat    || skill.cat;
     var name   = skillMeta.name   || skill.name;
     var banner = skillMeta.banner || skill.banner;
+
+    function colData(key) {
+      // prefer translated steps, fall back to German KI_SKILLS
+      return (stepsData && stepsData[key]) || skill[key];
+    }
 
     var steps = function(col) {
       return col.steps.map(function(s, j) {
@@ -692,6 +702,10 @@ window.buildSkills = function(lang) {
     var noteHtml = skillsNote
       ? '<div style="font-size:11px;color:var(--sky-deep);margin-bottom:14px;padding:6px 12px;background:var(--sky-light);border-radius:8px;">📖 ' + skillsNote + '</div>'
       : '';
+
+    var oldCol = colData('old');
+    var nowCol = colData('now');
+    var euCol  = colData('eu');
 
     container.innerHTML += '\
       <div class="skill-item" id="skill-' + i + '">\
@@ -706,18 +720,18 @@ window.buildSkills = function(lang) {
           <div class="skill-cols">\
             <div class="s-col s-col-old">\
               <div class="s-col-label">' + colOld + '</div>\
-              <span class="s-time">' + skill.old.time + '</span>\
-              ' + steps(skill.old) + '\
+              <span class="s-time">' + oldCol.time + '</span>\
+              ' + steps(oldCol) + '\
             </div>\
             <div class="s-col s-col-now">\
               <div class="s-col-label">' + colNow + '</div>\
-              <span class="s-time">' + skill.now.time + '</span>\
-              ' + steps(skill.now) + '\
+              <span class="s-time">' + nowCol.time + '</span>\
+              ' + steps(nowCol) + '\
             </div>\
             <div class="s-col s-col-eu">\
               <div class="s-col-label">' + colEu + '</div>\
-              <span class="s-time">' + skill.eu.time + '</span>\
-              ' + steps(skill.eu) + '\
+              <span class="s-time">' + euCol.time + '</span>\
+              ' + steps(euCol) + '\
             </div>\
           </div>\
         </div>\
