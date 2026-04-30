@@ -689,8 +689,12 @@ window.buildSkills = function(lang) {
     var banner = skillMeta.banner || skill.banner;
 
     function colData(key) {
-      // prefer translated steps, fall back to German KI_SKILLS
-      return (stepsData && stepsData[key]) || skill[key];
+      // SKILLS_STEPS uses {old_time, old_steps, now_time, now_steps, eu_time, eu_steps}
+      // KI_SKILLS uses {old:{time,steps}, now:{time,steps}, eu:{time,steps}}
+      if (stepsData && stepsData[key + '_time']) {
+        return { time: stepsData[key + '_time'], steps: stepsData[key + '_steps'] };
+      }
+      return skill[key];
     }
 
     var steps = function(col) {
