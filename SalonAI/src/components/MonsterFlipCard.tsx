@@ -51,16 +51,17 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
 
           {/* ── flip hint ─────────────────────────────────────── */}
           <div
-            className="absolute top-2 right-2 z-10 pointer-events-none"
+            className="absolute top-2 right-2 z-10 flex items-center gap-1 pointer-events-none"
             style={{
-              fontSize: 15,
-              lineHeight: 1,
-              opacity: 0.38,
+              background: "rgba(0,0,0,0.07)",
+              borderRadius: 999,
+              padding: "2px 7px 2px 5px",
               userSelect: "none",
             }}
             aria-hidden="true"
           >
-            ↺
+            <span style={{ fontSize: 11, lineHeight: 1, color: "rgba(0,0,0,0.45)" }}>↺</span>
+            <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: "0.5px", color: "rgba(0,0,0,0.38)", textTransform: "uppercase" }}>umdrehen</span>
           </div>
 
           {/* ── header row: company + source badge + flag ─────── */}
@@ -110,6 +111,23 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
               {card.name}
             </h3>
           </div>
+
+          {/* ── citizen label ─────────────────────────────────── */}
+          {card.citizenLabel && (
+            <div className="px-4 pt-1 flex justify-center shrink-0">
+              <span
+                className="text-[10px] font-bold px-2 py-0.5 rounded-full"
+                style={{
+                  background: company.color + "15",
+                  color: company.color,
+                  border: `1px solid ${company.color}30`,
+                  letterSpacing: "0.1px",
+                }}
+              >
+                {card.citizenLabel}
+              </span>
+            </div>
+          )}
 
           {/* ── community verdict ─────────────────────────────── */}
           <div className="px-4 pt-2 flex-1 min-h-0">

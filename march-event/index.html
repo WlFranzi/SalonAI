@@ -428,6 +428,7 @@
       .card-intro { padding: 16px 18px; }
       .section-title { font-size: 0.95rem; white-space: normal; text-align: center; }
       .toc-bar { justify-content: flex-start; }
+      .pr-summary-boxes { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -500,15 +501,40 @@
   <main class="container">
 
     <!-- ── INTRO ── -->
-    <div id="intro" class="grid" style="margin-top: 0; scroll-margin-top: 98px;">
-      <div class="card card-intro">
-        <p>
-          Beim <strong>Salon AI Dinner im März 2026</strong> haben wir eine Frage gestellt: Wie würde Europa aussehen, wenn wir 2041 die richtigen Entscheidungen getroffen hätten?
-          Nicht Utopie — konkrete Ideen, die technologisch machbar sind und zum Teil bereits als Pilotprojekte existieren.
-          Was fehlt, ist nicht die Technologie. Es ist der politische Wille, sie zu skalieren.
-          Diese Seite fasst zusammen, was beim Dinner entstanden ist — ergänzt um öffentliche Quellen, die jede Idee heute schon belegen.
+    <div id="intro" style="margin-top: 0; scroll-margin-top: 98px;">
+
+      <!-- PR text — Amazon-style: conclusion first -->
+      <div style="max-width: 720px; margin: 0 auto 28px; padding: 0 4px;">
+        <p style="font-size: 1.05rem; font-weight: 700; color: var(--green-mid); line-height: 1.4; margin-bottom: 10px;">
+          Europa hat alle Technologien, die es braucht. Was fehlt, ist der politische Wille, sie zu skalieren.
+        </p>
+        <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 8px;">
+          Diese Seite zeigt 14 konkrete Ideen — von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA — die technologisch heute machbar sind und teilweise schon als Pilotprojekte laufen. Jede Idee ist mit öffentlichen Quellen belegt.
+        </p>
+        <p style="font-size: 0.82rem; color: var(--muted); line-height: 1.65; opacity: 0.75;">
+          Entstanden beim <strong style="opacity:1;color:var(--green-mid);">Salon AI Dinner · München · März 2026</strong> — einem Abend mit 15 Personen, die sich fragten: Was würde Europa anders machen, wenn es 2041 die richtigen Entscheidungen getroffen hätte?
         </p>
       </div>
+
+      <!-- 3-box summary row -->
+      <div class="pr-summary-boxes" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 28px;">
+        <div style="background: rgba(27,94,32,0.06); border: 1px solid rgba(27,94,32,0.15); border-radius: 12px; padding: 16px 18px;">
+          <div style="font-size: 1.4rem; margin-bottom: 6px;">🎯</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid); margin-bottom: 4px;">Das Ziel</div>
+          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Europa als dritte Weltmacht — souverän, technologisch führend, demokratisch erneuert.</p>
+        </div>
+        <div style="background: rgba(27,46,74,0.05); border: 1px solid rgba(27,46,74,0.12); border-radius: 12px; padding: 16px 18px;">
+          <div style="font-size: 1.4rem; margin-bottom: 6px;">🔑</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 4px;">Der Schlüssel</div>
+          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Keine neuen Erfindungen nötig. Bestehende Technologien politisch priorisieren und skalieren.</p>
+        </div>
+        <div style="background: rgba(180,140,40,0.05); border: 1px solid rgba(180,140,40,0.15); border-radius: 12px; padding: 16px 18px;">
+          <div style="font-size: 1.4rem; margin-bottom: 6px;">📍</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #7a5c10; margin-bottom: 4px;">Der Kontext</div>
+          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">14 Ideen aus einem Dinner-Gespräch — mit Quellen belegt, geordnet nach Lebensbereich.</p>
+        </div>
+      </div>
+
     </div>
 
     <!-- ── Munich Declaration callout ── -->

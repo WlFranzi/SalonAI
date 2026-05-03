@@ -55,7 +55,7 @@ window.LOCALES = {
     col_eu:        "For a stronger Europe",
   ,
     feature_eyebrow:  "From our last dinner · Munich, March 2026",
-    feature_desc:      "What if Europe made the right decisions by 2041? 14 concrete ideas — technologically feasible, several already running as pilot projects today.",
+    feature_desc:      "What if Europe made the right decisions by 2041? 14 concrete ideas — technologically feasible.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -101,7 +101,7 @@ window.LOCALES = {
     col_eu:        "Für ein starkes Europa",
   ,
     feature_eyebrow:  "Aus unserem letzten Dinner · München, März 2026",
-    feature_desc:      "Was wäre, wenn Europa 2041 die richtigen Entscheidungen getroffen hätte? 14 konkrete Ideen — technologisch machbar, mehrere schon heute als Pilotprojekte real.",
+    feature_desc:      "Was wäre, wenn Europa 2041 die richtigen Entscheidungen getroffen hätte? 14 konkrete Ideen — technologisch machbar.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -147,7 +147,7 @@ window.LOCALES = {
     col_eu:        "Pour une Europe plus forte",
   ,
     feature_eyebrow:  "De notre dernier dîner · Munich, mars 2026",
-    feature_desc:      "Et si l'Europe prenait les bonnes décisions d'ici 2041 ? 14 idées concrètes — faisables technologiquement, plusieurs déjà en cours comme projets pilotes.",
+    feature_desc:      "Et si l'Europe prenait les bonnes décisions d'ici 2041 ? 14 idées concrètes — faisables technologiquement.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -193,7 +193,7 @@ window.LOCALES = {
     col_eu:        "Por una Europa más fuerte",
   ,
     feature_eyebrow:  "De nuestra última cena · Múnich, marzo 2026",
-    feature_desc:      "¿Y si Europa tomara las decisiones correctas para 2041? 14 ideas concretas — tecnológicamente viables, varias ya en marcha como proyectos piloto.",
+    feature_desc:      "¿Y si Europa tomara las decisiones correctas para 2041? 14 ideas concretas — tecnológicamente viables.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -239,7 +239,7 @@ window.LOCALES = {
     col_eu:        "Per un'Europa più forte",
   ,
     feature_eyebrow:  "Dalla nostra ultima cena · Monaco, marzo 2026",
-    feature_desc:      "E se l'Europa prendesse le decisioni giuste entro il 2041? 14 idee concrete — tecnologicamente fattibili, molte già in corso come progetti pilota.",
+    feature_desc:      "E se l'Europa prendesse le decisioni giuste entro il 2041? 14 idee concrete — tecnologicamente fattibili.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -285,7 +285,7 @@ window.LOCALES = {
     col_eu:        "Por uma Europa mais forte",
   ,
     feature_eyebrow:  "Do nosso último jantar · Munique, março de 2026",
-    feature_desc:      "E se a Europa tomasse as decisões certas até 2041? 14 ideias concretas — tecnologicamente viáveis, várias já a funcionar como projetos-piloto.",
+    feature_desc:      "E se a Europa tomasse as decisões certas até 2041? 14 ideias concretas — tecnologicamente viáveis.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -331,7 +331,7 @@ window.LOCALES = {
     col_eu:        "Voor een sterker Europa",
   ,
     feature_eyebrow:  "Van ons laatste diner · München, maart 2026",
-    feature_desc:      "Wat als Europa de juiste beslissingen neemt tegen 2041? 14 concrete ideeën — technologisch haalbaar, meerdere al actief als pilotproject.",
+    feature_desc:      "Wat als Europa de juiste beslissingen neemt tegen 2041? 14 concrete ideeën — technologisch haalbaar.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -377,7 +377,7 @@ window.LOCALES = {
     col_eu:        "Dla silniejszej Europy",
   ,
     feature_eyebrow:  "Z naszej ostatniej kolacji · Monachium, marzec 2026",
-    feature_desc:      "Co by było, gdyby Europa podjęła właściwe decyzje do 2041 roku? 14 konkretnych pomysłów — wykonalnych technologicznie, kilka już działa jako projekty pilotażowe.",
+    feature_desc:      "Co by było, gdyby Europa podjęła właściwe decyzje do 2041 roku? 14 konkretnych pomysłów — wykonalnych technologicznie.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -423,7 +423,7 @@ window.LOCALES = {
     col_eu:        "Pentru o Europă mai puternică",
   ,
     feature_eyebrow:  "De la ultima noastră cină · München, martie 2026",
-    feature_desc:      "Ce-ar fi dacă Europa ar lua deciziile corecte până în 2041? 14 idei concrete — fezabile tehnologic, mai multe deja în desfășurare ca proiecte pilot.",
+    feature_desc:      "Ce-ar fi dacă Europa ar lua deciziile corecte până în 2041? 14 idei concrete — fezabile tehnologic.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -469,7 +469,7 @@ window.LOCALES = {
     col_eu:        "För ett starkare Europa",
   ,
     feature_eyebrow:  "Från vår senaste middag · München, mars 2026",
-    feature_desc:      "Vad händer om Europa fattar rätt beslut till 2041? 14 konkreta idéer — tekniskt genomförbara, flera redan aktiva som pilotprojekt.",
+    feature_desc:      "Vad händer om Europa fattar rätt beslut till 2041? 14 konkreta idéer — tekniskt genomförbara.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -515,7 +515,7 @@ window.LOCALES = {
     col_eu:        "Pro silnější Evropu",
   ,
     feature_eyebrow:  "Z naší poslední večeře · Mnichov, březen 2026",
-    feature_desc:      "Co kdyby Evropa do roku 2041 přijala správná rozhodnutí? 14 konkrétních nápadů — technologicky proveditelných, několik již funguje jako pilotní projekty.",
+    feature_desc:      "Co kdyby Evropa do roku 2041 přijala správná rozhodnutí? 14 konkrétních nápadů — technologicky proveditelných.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -561,7 +561,7 @@ window.LOCALES = {
     col_eu:        "Egy erősebb Európáért",
   ,
     feature_eyebrow:  "Utolsó vacsoránkból · München, 2026. március",
-    feature_desc:      "Mi lenne, ha Európa 2041-re meghozná a helyes döntéseket? 14 konkrét ötlet — technológiailag megvalósítható, több már pilotprojektként működik.",
+    feature_desc:      "Mi lenne, ha Európa 2041-re meghozná a helyes döntéseket? 14 konkrét ötlet — technológiailag megvalósítható.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -607,7 +607,7 @@ window.LOCALES = {
     col_eu:        "Pre silnejšiu Európu",
   ,
     feature_eyebrow:  "Z nášho posledného večera · Mníchov, marec 2026",
-    feature_desc:      "Čo keby Európa do roku 2041 urobila správne rozhodnutia? 14 konkrétnych nápadov — technologicky uskutočniteľných, niekoľko už funguje ako pilotné projekty.",
+    feature_desc:      "Čo keby Európa do roku 2041 urobila správne rozhodnutia? 14 konkrétnych nápadov — technologicky uskutočniteľných.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -653,7 +653,7 @@ window.LOCALES = {
     col_eu:        "За по-силна Европа",
   ,
     feature_eyebrow:  "От последната ни вечеря · Мюнхен, март 2026",
-    feature_desc:      "Какво ще стане, ако Европа вземе правилните решения до 2041 г.? 14 конкретни идеи — технологично осъществими, няколко вече работят като пилотни проекти.",
+    feature_desc:      "Какво ще стане, ако Европа вземе правилните решения до 2041 г.? 14 конкретни идеи — технологично осъществими.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -699,7 +699,7 @@ window.LOCALES = {
     col_eu:        "For et stærkere Europa",
   ,
     feature_eyebrow:  "Fra vores seneste middag · München, marts 2026",
-    feature_desc:      "Hvad nu hvis Europa træffer de rigtige beslutninger inden 2041? 14 konkrete idéer — teknologisk gennemførlige, flere er allerede aktive som pilotprojekter.",
+    feature_desc:      "Hvad nu hvis Europa træffer de rigtige beslutninger inden 2041? 14 konkrete idéer — teknologisk gennemførlige.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -745,7 +745,7 @@ window.LOCALES = {
     col_eu:        "Vahvemman Euroopan puolesta",
   ,
     feature_eyebrow:  "Viimeisimmästä illallisestamme · München, maaliskuu 2026",
-    feature_desc:      "Entä jos Eurooppa tekisi oikeat päätökset vuoteen 2041 mennessä? 14 konkreettista ideaa — teknologisesti toteuttamiskelpoisia, useita jo käynnissä pilottiprojekteina.",
+    feature_desc:      "Entä jos Eurooppa tekisi oikeat päätökset vuoteen 2041 mennessä? 14 konkreettista ideaa — teknologisesti toteuttamiskelpoisia.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -791,7 +791,7 @@ window.LOCALES = {
     col_eu:        "Za jaču Europu",
   ,
     feature_eyebrow:  "S naše posljednje večere · München, ožujak 2026",
-    feature_desc:      "Što ako Europa donese prave odluke do 2041.? 14 konkretnih ideja — tehnološki izvedive, nekoliko ih već djeluje kao pilot-projekti.",
+    feature_desc:      "Što ako Europa donese prave odluke do 2041.? 14 konkretnih ideja — tehnološki izvedive.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -1021,7 +1021,7 @@ window.LOCALES = {
     col_eu:        "Za močnejšo Evropo",
   ,
     feature_eyebrow:  "Z naše zadnje večerje · München, marec 2026",
-    feature_desc:      "Kaj bi bilo, če bi Evropa do leta 2041 sprejela prave odločitve? 14 konkretnih idej — tehnološko izvedljivih, več jih že deluje kot pilotni projekti.",
+    feature_desc:      "Kaj bi bilo, če bi Evropa do leta 2041 sprejela prave odločitve? 14 konkretnih idej — tehnološko izvedljivih.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1067,7 +1067,7 @@ window.LOCALES = {
     col_eu:        "Għal Ewropa aktar qawwija",
   ,
     feature_eyebrow:  "Mill-aħħar ikla tagħna · Munich, Marzu 2026",
-    feature_desc:      "X'jiġri jekk l-Ewropa tieħu d-deċiżjonijiet it-tajbin sal-2041? 14-il idea konkreta — fattibbli teknoloġikament, diversi diġà jaħdmu bħala proġetti pilota.",
+    feature_desc:      "X'jiġri jekk l-Ewropa tieħu d-deċiżjonijiet it-tajbin sal-2041? 14-il idea konkreta — fattibbli teknoloġikament.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 

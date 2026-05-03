@@ -848,7 +848,7 @@ window.buildSkills = function(lang) {
     var euCol  = colData('eu');
 
     container.innerHTML += '\
-      <div class="skill-item" id="skill-' + i + '">\
+      <div class="skill-item' + (i === 0 ? ' open' : '') + '" id="skill-' + i + '">\
         <button class="skill-toggle" onclick="toggleSkill(' + i + ')">\
           <span class="skill-cat">' + cat + '</span>\
           <span class="skill-name-text">' + name + '</span>\
