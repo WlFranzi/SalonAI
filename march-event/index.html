@@ -269,6 +269,65 @@
     }
     .card-intro strong { color: var(--green-mid); }
 
+    /* Munich Declaration callout */
+    .munich-callout {
+      grid-column: 1 / -1;
+      background: rgba(180,140,40,0.06);
+      border: 1px solid rgba(180,140,40,0.22);
+      border-left: 3px solid rgba(180,140,40,0.55);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 4px;
+    }
+    .munich-eyebrow {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #a07c18;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .munich-title {
+      font-size: 0.83rem;
+      font-weight: 700;
+      color: #5a4008;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .munich-nuggets {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .munich-nuggets li {
+      font-size: 0.78rem;
+      color: #4a3806;
+      line-height: 1.5;
+      padding-left: 16px;
+      position: relative;
+    }
+    .munich-nuggets li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #a07c18;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+    .munich-source {
+      font-size: 0.68rem;
+      color: rgba(160,124,24,0.65);
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: color 0.15s;
+    }
+    .munich-source:hover { color: #a07c18; }
+
     /* Data tool cards */
     .card-data {
       background: rgba(255,255,255,0.88);
@@ -452,6 +511,20 @@
       </div>
     </div>
 
+    <!-- ── Munich Declaration callout ── -->
+    <div class="grid" style="margin-top: 14px;">
+      <div class="munich-callout">
+        <span class="munich-eyebrow">München · Februar 2025 · Munich Security Conference</span>
+        <p class="munich-title">Nicht nur wir — was Europas Entscheider:innen gerade laut fordern:</p>
+        <ul class="munich-nuggets">
+          <li><strong>Europäische DARPA</strong> — Eine europäische Forschungsagentur für KI, Drohnen, Cyber und Weltraum soll Europa an die technologische Spitze bringen. Nicht irgendwann. Jetzt.</li>
+          <li><strong>400 Mrd. € liegen schon bereit</strong> — Der Europäische Stabilitätsmechanismus (ESM) hat 400 Mrd. € an ungenutzten Kreditlinien. Das Geld für Verteidigung und Infrastruktur existiert. Es fehlt der politische Abruf.</li>
+          <li><strong>Wirtschaftskraft ist Souveränität</strong> — KI-gestützte Produktivität, ein vollendeter Binnenmarkt und strategische Investitionen in Energie und Cloud sind keine Wachstumsthemen — sie sind Sicherheitspolitik.</li>
+        </ul>
+        <a class="munich-source" href="https://www.munichdeclaration.org" target="_blank" rel="noopener">↗ Munich Declaration 2025 · munichdeclaration.org</a>
+      </div>
+    </div>
+
     <!-- ═══════════════════════════════════════════════════════ -->
     <!-- SECTION 1 — Technologie & Stadtleben                   -->
     <!-- ═══════════════════════════════════════════════════════ -->
@@ -551,8 +624,8 @@
 
       <article class="card card-gold">
         <div class="card-icon">🌍</div>
-        <h3>Europa handelt — ohne auf Washington zu warten</h3>
-        <p>Europas sicherheitspolitische Autonomie ist keine Kapazitätsfrage — es ist eine Designfrage. Die Infrastruktur für eine eigenständige Verteidigungsarchitektur existiert. Der fehlende Baustein: ein politischer Präzedenzfall ohne amerikanisches Mandat.</p>
+        <h3>Europa als dritte Weltmacht — ohne Washington-Mandat</h3>
+        <p>Neben den USA und China existiert eine dritte Option: eine souveräne EU, die militärisch koordiniert, technologisch führt und wirtschaftlich unabhängig handelt. Die Infrastruktur dafür existiert — von der EDA bis zum ESM. Was fehlt, ist kein Geld und keine Technologie. Es ist der politische Wille, sie einzusetzen.</p>
         <a class="source-link" href="https://eda.europa.eu" target="_blank" rel="noopener">↗ European Defence Agency</a>
       </article>
 
