@@ -56,7 +56,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "From our last dinner · Munich, March 2026",
     feature_desc:      "What if Europe made the right decisions by 2041? 14 concrete ideas — technologically feasible, several already running as pilot projects today.",
-    feature_cta:       "What we built — a collection ↗"
+    feature_cta:       "What we built — one example ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -102,7 +102,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Aus unserem letzten Dinner · München, März 2026",
     feature_desc:      "Was wäre, wenn Europa 2041 die richtigen Entscheidungen getroffen hätte? 14 konkrete Ideen — technologisch machbar, mehrere schon heute als Pilotprojekte real.",
-    feature_cta:       "Was wir gebaut haben — ein Sammelsorium ↗"
+    feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -148,7 +148,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "De notre dernier dîner · Munich, mars 2026",
     feature_desc:      "Et si l'Europe prenait les bonnes décisions d'ici 2041 ? 14 idées concrètes — faisables technologiquement, plusieurs déjà en cours comme projets pilotes.",
-    feature_cta:       "Ce que nous avons construit — une collection ↗"
+    feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -194,7 +194,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "De nuestra última cena · Múnich, marzo 2026",
     feature_desc:      "¿Y si Europa tomara las decisiones correctas para 2041? 14 ideas concretas — tecnológicamente viables, varias ya en marcha como proyectos piloto.",
-    feature_cta:       "Lo que construimos — una colección ↗"
+    feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -240,7 +240,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Dalla nostra ultima cena · Monaco, marzo 2026",
     feature_desc:      "E se l'Europa prendesse le decisioni giuste entro il 2041? 14 idee concrete — tecnologicamente fattibili, molte già in corso come progetti pilota.",
-    feature_cta:       "Quello che abbiamo costruito — una raccolta ↗"
+    feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -286,7 +286,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Do nosso último jantar · Munique, março de 2026",
     feature_desc:      "E se a Europa tomasse as decisões certas até 2041? 14 ideias concretas — tecnologicamente viáveis, várias já a funcionar como projetos-piloto.",
-    feature_cta:       "O que construímos — uma coleção ↗"
+    feature_cta:       "O que construímos — um exemplo ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -332,7 +332,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Van ons laatste diner · München, maart 2026",
     feature_desc:      "Wat als Europa de juiste beslissingen neemt tegen 2041? 14 concrete ideeën — technologisch haalbaar, meerdere al actief als pilotproject.",
-    feature_cta:       "Wat we hebben gebouwd — een collectie ↗"
+    feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -378,7 +378,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Z naszej ostatniej kolacji · Monachium, marzec 2026",
     feature_desc:      "Co by było, gdyby Europa podjęła właściwe decyzje do 2041 roku? 14 konkretnych pomysłów — wykonalnych technologicznie, kilka już działa jako projekty pilotażowe.",
-    feature_cta:       "Co zbudowaliśmy — zbiór ↗"
+    feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -424,7 +424,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "De la ultima noastră cină · München, martie 2026",
     feature_desc:      "Ce-ar fi dacă Europa ar lua deciziile corecte până în 2041? 14 idei concrete — fezabile tehnologic, mai multe deja în desfășurare ca proiecte pilot.",
-    feature_cta:       "Ce am construit — o colecție ↗"
+    feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -470,7 +470,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Från vår senaste middag · München, mars 2026",
     feature_desc:      "Vad händer om Europa fattar rätt beslut till 2041? 14 konkreta idéer — tekniskt genomförbara, flera redan aktiva som pilotprojekt.",
-    feature_cta:       "Vad vi byggde — en samling ↗"
+    feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -516,7 +516,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Z naší poslední večeře · Mnichov, březen 2026",
     feature_desc:      "Co kdyby Evropa do roku 2041 přijala správná rozhodnutí? 14 konkrétních nápadů — technologicky proveditelných, několik již funguje jako pilotní projekty.",
-    feature_cta:       "Co jsme postavili — sbírka ↗"
+    feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -562,7 +562,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Utolsó vacsoránkból · München, 2026. március",
     feature_desc:      "Mi lenne, ha Európa 2041-re meghozná a helyes döntéseket? 14 konkrét ötlet — technológiailag megvalósítható, több már pilotprojektként működik.",
-    feature_cta:       "Amit építettünk — egy gyűjtemény ↗"
+    feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -608,7 +608,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Z nášho posledného večera · Mníchov, marec 2026",
     feature_desc:      "Čo keby Európa do roku 2041 urobila správne rozhodnutia? 14 konkrétnych nápadov — technologicky uskutočniteľných, niekoľko už funguje ako pilotné projekty.",
-    feature_cta:       "Čo sme postavili — zbierka ↗"
+    feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -654,7 +654,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "От последната ни вечеря · Мюнхен, март 2026",
     feature_desc:      "Какво ще стане, ако Европа вземе правилните решения до 2041 г.? 14 конкретни идеи — технологично осъществими, няколко вече работят като пилотни проекти.",
-    feature_cta:       "Какво изградихме — колекция ↗"
+    feature_cta:       "Какво изградихме — един пример ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -700,7 +700,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Fra vores seneste middag · München, marts 2026",
     feature_desc:      "Hvad nu hvis Europa træffer de rigtige beslutninger inden 2041? 14 konkrete idéer — teknologisk gennemførlige, flere er allerede aktive som pilotprojekter.",
-    feature_cta:       "Hvad vi byggede — en samling ↗"
+    feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -746,7 +746,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Viimeisimmästä illallisestamme · München, maaliskuu 2026",
     feature_desc:      "Entä jos Eurooppa tekisi oikeat päätökset vuoteen 2041 mennessä? 14 konkreettista ideaa — teknologisesti toteuttamiskelpoisia, useita jo käynnissä pilottiprojekteina.",
-    feature_cta:       "Mitä rakensimme — kokoelma ↗"
+    feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -792,7 +792,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "S naše posljednje večere · München, ožujak 2026",
     feature_desc:      "Što ako Europa donese prave odluke do 2041.? 14 konkretnih ideja — tehnološki izvedive, nekoliko ih već djeluje kao pilot-projekti.",
-    feature_cta:       "Što smo izgradili — zbirka ↗"
+    feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -838,7 +838,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Από το τελευταίο μας δείπνο · Μόναχο, Μάρτιος 2026",
     feature_desc:      "Τι θα γινόταν αν η Ευρώπη έπαιρνε τις σωστές αποφάσεις ως το 2041; 14 συγκεκριμένες ιδέες — τεχνολογικά εφικτές, αρκετές ήδη λειτουργούν ως πιλοτικά προγράμματα.",
-    feature_cta:       "Τι φτιάξαμε — μια συλλογή ↗"
+    feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -884,7 +884,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Iš mūsų paskutinės vakarienės · Miunchenas, 2026 m. kovas",
     feature_desc:      "Kas būtų, jei Europa iki 2041 m. priimtų tinkamus sprendimus? 14 konkrečių idėjų — technologiškai įgyvendinamų, kelios jau veikia kaip bandomieji projektai.",
-    feature_cta:       "Ką sukūrėme — kolekcija ↗"
+    feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -930,7 +930,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "No mūsu pēdējās vakariņas · Minhene, 2026. gada marts",
     feature_desc:      "Ko darīt, ja Eiropa līdz 2041. gadam pieņems pareizos lēmumus? 14 konkrētas idejas — tehnoloģiski iespējamas, dažas jau darbojas kā izmēģinājuma projekti.",
-    feature_cta:       "Ko mēs izveidojām — kolekcija ↗"
+    feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -976,7 +976,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Meie viimaselt õhtusöögilt · München, märts 2026",
     feature_desc:      "Mis juhtuks, kui Euroopa teeks 2041. aastaks õiged otsused? 14 konkreetset ideed — tehnoloogiliselt teostatavad, mitu neist töötab juba pilootprojektidena.",
-    feature_cta:       "Mida me ehitasime — kogu ↗"
+    feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1022,7 +1022,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Z naše zadnje večerje · München, marec 2026",
     feature_desc:      "Kaj bi bilo, če bi Evropa do leta 2041 sprejela prave odločitve? 14 konkretnih idej — tehnološko izvedljivih, več jih že deluje kot pilotni projekti.",
-    feature_cta:       "Kar smo zgradili — zbirka ↗"
+    feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1068,7 +1068,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Mill-aħħar ikla tagħna · Munich, Marzu 2026",
     feature_desc:      "X'jiġri jekk l-Ewropa tieħu d-deċiżjonijiet it-tajbin sal-2041? 14-il idea konkreta — fattibbli teknoloġikament, diversi diġà jaħdmu bħala proġetti pilota.",
-    feature_cta:       "Dak li bnejna — kollezzjoni ↗"
+    feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1114,7 +1114,7 @@ window.LOCALES = {
   ,
     feature_eyebrow:  "Ónár ndinnéar deireanach · München, Márta 2026",
     feature_desc:      "Cad a tharlódh dá ndéanfadh an Eoraip na cinntí cearta faoi 2041? 14 smaoineamh coincréiteach — indéanta ó thaobh teicneolaíochta, cuid acu ag feidhmiú cheana mar thionscadail phíolótacha.",
-    feature_cta:       "Cad a thógamar — bailiúchán ↗"
+    feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
 };
