@@ -220,14 +220,18 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .launch-btn:hover { background: var(--accent-light); transform: translateY(-1px); }
 
 /* Footer */
-footer { background: var(--navy); color: var(--white-warm); padding: 48px 24px 40px; text-align: center; }
-footer p { font-size: 13px; color: rgba(250,249,247,0.5); max-width: 400px; margin: 0 auto 20px; line-height: 1.7; }
-.footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); font-size: 13px; color: rgba(250,249,247,0.65); transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
-.footer-email:hover { border-color: rgba(255,255,255,0.4); color: var(--white-warm); }
-.cohost-block { margin: 36px auto 0; padding-top: 28px; border-top: 1px solid rgba(250,249,247,0.1); max-width: 460px; }
-.cohost-block h3 { font-size: 1.1rem; font-style: italic; color: rgba(250,249,247,0.8); margin-bottom: 8px; }
-.cohost-block p { font-size: 13px; color: rgba(250,249,247,0.4); margin-bottom: 16px; }
-footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px; letter-spacing: 1px; text-transform: uppercase; }
+footer { background: var(--navy); color: var(--white-warm); padding: 52px 24px 44px; text-align: center; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.footer-logo span { color: var(--accent); }
+.footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 auto 24px; line-height: 1.65; }
+.footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(250,249,247,0.6); transition: all 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
+.footer-email:hover { border-color: rgba(255,255,255,0.38); color: var(--white-warm); }
+.footer-meta { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(250,249,247,0.07); }
+.footer-credits { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 14px; }
+.footer-credit { font-size: 11px; color: rgba(250,249,247,0.25); line-height: 1.5; }
+.footer-credit strong { color: rgba(250,249,247,0.48); font-weight: 500; }
+footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 1.5px; text-transform: uppercase; }
+@media (max-width: 540px) { .footer-credits { flex-direction: column; gap: 8px; align-items: center; } }
 
 /* ── Skills Section ─────────────────────────────────── */
 .skills-section { padding: 48px 24px 80px; background: var(--white-warm); border-top: 1px solid var(--border); }
@@ -568,17 +572,16 @@ footer .copy { font-size: 10px; color: rgba(250,249,247,0.18); margin-top: 32px;
 
 <!-- ── FOOTER ────────────────────────────────────────────────────── -->
 <footer id="contact">
-  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:12px;">
-    Salon <span style="color:var(--accent);">AI</span>
-  </div>
-  <p data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
+  <div class="footer-logo">Salon <span>AI</span></div>
+  <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
   <a href="mailto:hello@aiforeurope.eu" class="footer-email">✉️ hello@aiforeurope.eu</a>
 
-  <div class="copy" data-i18n="footer_copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
-
-  <div style="margin-top:2rem;padding-top:1.25rem;border-top:1px solid rgba(250,249,247,0.06);display:flex;flex-direction:column;gap:0.3rem;max-width:560px;margin-left:auto;margin-right:auto;text-align:center;">
-    <p style="font-size:0.7rem;color:rgba(250,249,247,0.22);line-height:1.5;margin:0;">Creative Direction by <span style="color:rgba(250,249,247,0.38);font-weight:500;">Tatjana Mallinckrodt</span>, Head of PR &amp; Brand Strategy at Gestalten (teNeues)</p>
-    <p style="font-size:0.7rem;color:rgba(250,249,247,0.22);line-height:1.5;margin:0;">Hosted by <span style="color:rgba(250,249,247,0.38);font-weight:500;">Franziska Wittleder</span>, Engineer &amp; Product Leader with 15+ years of experience building and scaling AI-driven products at Amazon, Writer &amp; SoundCloud</p>
+  <div class="footer-meta">
+    <div class="footer-credits">
+      <span class="footer-credit"><strong>Creative Direction</strong> · Tatjana Mallinckrodt, Head of PR &amp; Brand Strategy at Gestalten (teNeues)</span>
+      <span class="footer-credit"><strong>Host</strong> · Franziska Wittleder, Engineer &amp; Product Leader · Amazon, Writer, SoundCloud</span>
+    </div>
+    <div class="copy" data-i18n="footer_copy">BUILT WITH 🧠s IN &amp; FOR EUROPE · © 2026 SALON AI</div>
   </div>
 </footer>
 
