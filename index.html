@@ -234,6 +234,93 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 @media (max-width: 540px) { .footer-credits { flex-direction: column; gap: 8px; align-items: center; } }
 
 /* ── Skills Section ─────────────────────────────────── */
+.europa-feature {
+  background: linear-gradient(135deg, #0d3320 0%, #1b5e20 60%, #0d4a28 100%);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.europa-feature::before {
+  content: '2041';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(6rem, 12vw, 10rem);
+  font-weight: 700;
+  color: rgba(255,255,255,0.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.europa-feature-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 28px 38px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.europa-feature-text { flex: 1; min-width: 240px; }
+.europa-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  display: block;
+  margin-bottom: 8px;
+}
+.europa-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+.europa-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 14px;
+}
+.europa-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+.europa-chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.15);
+  letter-spacing: 0.3px;
+}
+.europa-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.28);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+.europa-cta:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.5); transform: translateY(-1px); }
+@media (max-width: 560px) {
+  .europa-feature-inner { padding: 28px 18px 30px; }
+  .europa-feature::before { display: none; }
+}
 .skills-section { padding: 48px 24px 80px; background: var(--white-warm); border-top: 1px solid var(--border); }
 .skills-inner { max-width: 1280px; margin: 0 auto; }
 .skills-intro { margin-bottom: 28px; }
@@ -554,6 +641,25 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
   </div>
 </main>
+
+<!-- ── EUROPA 2041 FEATURE BANNER ──────────────────────────────── -->
+<div class="europa-feature">
+  <div class="europa-feature-inner">
+    <div class="europa-feature-text">
+      <span class="europa-eyebrow" data-i18n="feature_eyebrow">From our last dinner · Munich, March 2026</span>
+      <h2 class="europa-title">Europa 2041</h2>
+      <p class="europa-desc" data-i18n="feature_desc">What if Europe made the right decisions by 2041? 14 concrete ideas — technologically feasible, several already running as pilot projects today.</p>
+      <div class="europa-chips">
+        <span class="europa-chip">🏙️ Stadtleben</span>
+        <span class="europa-chip">🎓 Bildung</span>
+        <span class="europa-chip">🏛️ Demokratie</span>
+        <span class="europa-chip">🔄 Liquid Democracy</span>
+        <span class="europa-chip">📊 EU-Daten</span>
+      </div>
+      <a href="/march-event/" class="europa-cta" data-i18n="feature_cta">Explore Europa 2041 ↗</a>
+    </div>
+  </div>
+</div>
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
 <section class="skills-section" id="skills">
