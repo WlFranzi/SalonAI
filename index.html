@@ -353,7 +353,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .skill-chevron { font-size: 18px; color: var(--sky-deep); transition: transform 0.22s; line-height: 1; flex-shrink: 0; }
 .skill-item.open .skill-chevron { transform: rotate(45deg); }
 
-.skill-body { display: none; padding: 20px 24px 28px; }
+.skill-body { display: block; padding: 20px 24px 28px; }
+.skill-item:not(.open) .skill-body { display: none; }
 .skill-item.open .skill-body { display: block; }
 
 .skill-scenario {
@@ -851,7 +852,7 @@ window.buildSkills = function(lang) {
     var euCol  = colData('eu');
 
     container.innerHTML += '\
-      <div class="skill-item' + (i === 0 ? ' open' : '') + '" id="skill-' + i + '">\
+      <div class="skill-item open" id="skill-' + i + '">\
         <button class="skill-toggle" onclick="toggleSkill(' + i + ')">\
           <span class="skill-cat">' + cat + '</span>\
           <span class="skill-name-text">' + name + '</span>\
