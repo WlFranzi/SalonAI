@@ -117,6 +117,15 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .past-row { display: flex; align-items: center; gap: 12px; padding: 7px 12px; }
 .past-row .date { font-size: 11px; color: var(--muted-blue); min-width: 80px; }
 .past-row .city { font-size: 12px; color: var(--navy); opacity: 0.7; flex: 1; }
+.past-event-card { background: rgba(0,51,153,0.03); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px 12px; margin-top: 6px; }
+.past-event-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.past-event-meta .date { font-size: 10px; color: var(--muted-blue); }
+.past-event-meta .city { font-size: 10px; color: var(--muted-blue); }
+.past-event-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 5px; line-height: 1.2; }
+.past-event-desc { font-size: 11.5px; color: var(--muted-blue); line-height: 1.6; margin-bottom: 9px; max-width: 360px; }
+.past-event-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; }
+.past-event-chip { font-size: 9px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(0,51,153,0.07); color: var(--sky-deep); border: 1px solid rgba(0,51,153,0.13); white-space: nowrap; }
+.past-event-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 
 /* Photo preview button */
 @keyframes photo-pulse {
@@ -589,11 +598,23 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <!-- Past -->
       <div class="events-section">
         <h3><span class="status-dot past"></span><span data-i18n="past_events">Past Events</span></h3>
-        <div class="past-row">
-          <span class="date">Mar 25, 2025</span>
-          <span class="city">Munich, Germany</span>
-          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-            <a href="/march-event/" style="font-size:10px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(200,221,240,0.35);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(180,210,235,0.6)'" onmouseout="this.style.background='rgba(200,221,240,0.35)'" data-i18n="what_we_built">What we built — one example ↗</a>
+        <div class="past-event-card">
+          <div class="past-event-meta">
+            <span class="date">Mar 25, 2026</span>
+            <span style="color:var(--border);font-size:9px;">·</span>
+            <span class="city">Munich, Germany</span>
+          </div>
+          <h4 class="past-event-title">Europa 2041</h4>
+          <p class="past-event-desc" data-i18n="feature_desc">What would Europe look like in 2041, if we had made the right decisions? 14 ideas we collected at our KI dinner in March.</p>
+          <div class="past-event-chips">
+            <span class="past-event-chip">🏙️ Stadtleben</span>
+            <span class="past-event-chip">🎓 Bildung</span>
+            <span class="past-event-chip">🏛️ Demokratie</span>
+            <span class="past-event-chip">🔄 Liquid Democracy</span>
+            <span class="past-event-chip">📊 EU-Daten</span>
+          </div>
+          <div class="past-event-actions">
+            <a href="/march-event/" style="font-size:10px;font-weight:600;padding:3px 11px;border-radius:999px;background:rgba(0,51,153,0.1);color:var(--sky-deep);white-space:nowrap;text-decoration:none;transition:background 0.15s;" onmouseover="this.style.background='rgba(0,51,153,0.18)'" onmouseout="this.style.background='rgba(0,51,153,0.1)'" data-i18n="what_we_built">What we built — one example ↗</a>
             <div class="photo-preview-btn" tabindex="0">
               <span data-i18n="event_fotos">📸 Event Fotos</span>
               <div class="photo-preview-popup" id="photo-carousel">
@@ -643,24 +664,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </main>
 
-<!-- ── EUROPA 2041 FEATURE BANNER ──────────────────────────────── -->
-<div class="europa-feature">
-  <div class="europa-feature-inner">
-    <div class="europa-feature-text">
-      <span class="europa-eyebrow" data-i18n="feature_eyebrow">From our last dinner · Munich, March 2026</span>
-      <h2 class="europa-title">Europa 2041</h2>
-      <p class="europa-desc" data-i18n="feature_desc">What would Europe look like in 2041, if we had made the right decisions? 14 ideas we collected at our KI dinner in March.</p>
-      <div class="europa-chips">
-        <span class="europa-chip">🏙️ Stadtleben</span>
-        <span class="europa-chip">🎓 Bildung</span>
-        <span class="europa-chip">🏛️ Demokratie</span>
-        <span class="europa-chip">🔄 Liquid Democracy</span>
-        <span class="europa-chip">📊 EU-Daten</span>
-      </div>
-      <a href="/march-event/" class="europa-cta" data-i18n="feature_cta">Explore Europa 2041 ↗</a>
-    </div>
-  </div>
-</div>
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
 <section class="skills-section" id="skills">
