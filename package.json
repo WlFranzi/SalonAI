@@ -1,0 +1,10 @@
+{
+  "name": "salonai-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/locales.test.mjs tests/index.test.mjs",
+    "test:locales": "node --test tests/locales.test.mjs",
+    "test:html": "node --test tests/index.test.mjs"
+  }
+}
