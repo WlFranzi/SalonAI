@@ -53,9 +53,8 @@ window.LOCALES = {
     col_old:       "Before",
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc:      "What would Europe look like in 2041, if we had made the right decisions? 14 ideas we collected at our KI dinner in March.",
+    feature_desc:      "This page presents 14 concrete ideas—from self-illuminating bike paths to a European DARPA—that are technologically feasible today. Each idea is supported by publicly available sources.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -99,9 +98,8 @@ window.LOCALES = {
     col_old:       "Früher",
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc:      "Wie würde Europa 2041 aussehen, wenn wir die richtigen Entscheidungen getroffen hätten? 14 Ideen aus unserem KI-Dinner im März.",
+    feature_desc:      "Diese Seite zeigt 14 konkrete Ideen — von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA — die heute technologisch machbar sind. Jede Idee ist durch öffentlich zugängliche Quellen belegt.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -145,9 +143,8 @@ window.LOCALES = {
     col_old:       "Avant",
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc:      "À quoi ressemblerait l'Europe en 2041 si nous avions pris les bonnes décisions ? 14 idées recueillies lors de notre dîner IA en mars.",
+    feature_desc:      "Cette page présente 14 idées concrètes — des pistes cyclables auto-éclairantes à une DARPA européenne — technologiquement réalisables aujourd'hui. Chaque idée est étayée par des sources publiques.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -191,9 +188,8 @@ window.LOCALES = {
     col_old:       "Antes",
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc:      "¿Cómo sería Europa en 2041 si hubiéramos tomado las decisiones correctas? 14 ideas de nuestra cena de IA en marzo.",
+    feature_desc:      "Esta página presenta 14 ideas concretas — desde carriles bici autoluminosos hasta una DARPA europea — tecnológicamente viables hoy. Cada idea está respaldada por fuentes públicas.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -237,9 +233,8 @@ window.LOCALES = {
     col_old:       "Prima",
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc:      "Come sarebbe l'Europa nel 2041 se avessimo preso le decisioni giuste? 14 idee raccolte durante la nostra cena di IA a marzo.",
+    feature_desc:      "Questa pagina presenta 14 idee concrete — dalle piste ciclabili autoilluminanti a una DARPA europea — tecnologicamente realizzabili oggi. Ogni idea è supportata da fonti pubblicamente disponibili.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -283,9 +278,8 @@ window.LOCALES = {
     col_old:       "Antes",
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc:      "Como seria a Europa em 2041 se tivéssemos tomado as decisões certas? 14 ideias recolhidas no nosso jantar de IA em março.",
+    feature_desc:      "Esta página apresenta 14 ideias concretas — de ciclovias autoluminosas a uma DARPA europeia — tecnologicamente viáveis hoje. Cada ideia é sustentada por fontes públicas.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -329,9 +323,8 @@ window.LOCALES = {
     col_old:       "Vroeger",
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc:      "Hoe zou Europa er in 2041 uitzien als we de juiste beslissingen hadden genomen? 14 ideeën van ons KI-diner in maart.",
+    feature_desc:      "Deze pagina presenteert 14 concrete ideeën — van zelfverlichtende fietspaden tot een Europese DARPA — die vandaag technologisch haalbaar zijn. Elk idee wordt ondersteund door openbaar beschikbare bronnen.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -375,9 +368,8 @@ window.LOCALES = {
     col_old:       "Wcześniej",
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc:      "Jak wyglądałaby Europa w 2041 roku, gdybyśmy podjęli właściwe decyzje? 14 pomysłów zebranych na naszej kolacji KI w marcu.",
+    feature_desc:      "Ta strona przedstawia 14 konkretnych pomysłów — od samoświecących ścieżek rowerowych po europejską DARPA — technologicznie wykonalnych dziś. Każdy pomysł jest poparty publicznie dostępnymi źródłami.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -421,9 +413,8 @@ window.LOCALES = {
     col_old:       "Înainte",
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc:      "Cum ar arăta Europa în 2041 dacă am fi luat deciziile corecte? 14 idei adunate la cina noastră de IA din martie.",
+    feature_desc:      "Această pagină prezintă 14 idei concrete — de la piste de biciclete auto-iluminate la o DARPA europeană — fezabile din punct de vedere tehnologic astăzi. Fiecare idee este susținută de surse publice.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -467,9 +458,8 @@ window.LOCALES = {
     col_old:       "Tidigare",
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc:      "Hur skulle Europa se ut 2041 om vi hade fattat rätt beslut? 14 idéer från vår KI-middag i mars.",
+    feature_desc:      "Den här sidan presenterar 14 konkreta idéer — från självlysande cykelvägar till en europeisk DARPA — som är tekniskt genomförbara idag. Varje idé stöds av offentligt tillgängliga källor.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -513,9 +503,8 @@ window.LOCALES = {
     col_old:       "Dříve",
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc:      "Jak by vypadala Evropa v roce 2041, kdybychom přijali správná rozhodnutí? 14 nápadů ze setkání KI dinner v březnu.",
+    feature_desc:      "Tato stránka představuje 14 konkrétních nápadů — od samosvítících cyklostezek po evropskou DARPA — technologicky proveditelných dnes. Každý nápad je podložen veřejně dostupnými zdroji.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -559,9 +548,8 @@ window.LOCALES = {
     col_old:       "Korábban",
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc:      "Milyen lenne Európa 2041-ben, ha meghoznánk a helyes döntéseket? 14 ötlet a márciusi KI-vacsoránkról.",
+    feature_desc:      "Ez az oldal 14 konkrét ötletet mutat be — az önvilágító kerékpárutaktól az európai DARPA-ig — amelyek technológiailag ma megvalósíthatók. Minden ötletet nyilvánosan elérhető források támasztanak alá.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -605,9 +593,8 @@ window.LOCALES = {
     col_old:       "Skôr",
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc:      "Ako by vyzerala Európa v roku 2041, keby sme prijali správne rozhodnutia? 14 nápadov z nášho KI-dinner v marci.",
+    feature_desc:      "Táto stránka predstavuje 14 konkrétnych nápadov — od samosvietiacich cyklotrás po európsku DARPA — technologicky uskutočniteľných dnes. Každý nápad je podložený verejne dostupnými zdrojmi.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -651,9 +638,8 @@ window.LOCALES = {
     col_old:       "Преди",
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc:      "Как би изглеждала Европа през 2041 г., ако бяхме взели правилните решения? 14 идеи от нашата KI вечеря през март.",
+    feature_desc:      "Тази страница представя 14 конкретни идеи — от самосветещи велоалеи до европейска DARPA — технологично осъществими днес. Всяка идея е подкрепена с публично достъпни източници.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -697,9 +683,8 @@ window.LOCALES = {
     col_old:       "Tidligere",
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc:      "Hvordan ville Europa se ud i 2041, hvis vi havde truffet de rigtige beslutninger? 14 idéer fra vores KI-middag i marts.",
+    feature_desc:      "Denne side præsenterer 14 konkrete idéer — fra selvlysende cykelstier til en europæisk DARPA — der er teknologisk gennemførlige i dag. Hver idé understøttes af offentligt tilgængelige kilder.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -743,9 +728,8 @@ window.LOCALES = {
     col_old:       "Ennen",
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc:      "Millainen Eurooppa olisi vuonna 2041, jos olisimme tehneet oikeat päätökset? 14 ideaa KI-illalliseltamme maaliskuussa.",
+    feature_desc:      "Tällä sivulla esitellään 14 konkreettista ideaa — itsevalaistuvista pyöräteistä eurooppalaiseen DARPAan — jotka ovat teknologisesti toteutettavissa tänään. Jokainen idea on tuettu julkisesti saatavilla olevilla lähteillä.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -789,9 +773,8 @@ window.LOCALES = {
     col_old:       "Prije",
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc:      "Kako bi Europa izgledala 2041. da smo donijeli prave odluke? 14 ideja s našeg KI dinera u ožujku.",
+    feature_desc:      "Ova stranica predstavlja 14 konkretnih ideja — od samosvijetlećih biciklističkih staza do europske DARPA — tehnološki izvedive danas. Svaka ideja potkrijepljena je javno dostupnim izvorima.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -835,9 +818,8 @@ window.LOCALES = {
     col_old:       "Πριν",
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc:      "Πώς θα έμοιαζε η Ευρώπη το 2041 αν είχαμε πάρει τις σωστές αποφάσεις; 14 ιδέες από το δείπνο KI μας τον Μάρτιο.",
+    feature_desc:      "Αυτή η σελίδα παρουσιάζει 14 συγκεκριμένες ιδέες — από αυτοφωτιζόμενες ποδηλατοδρόμους έως μια ευρωπαϊκή DARPA — τεχνολογικά εφικτές σήμερα. Κάθε ιδέα υποστηρίζεται από δημόσια διαθέσιμες πηγές.",
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
@@ -881,9 +863,8 @@ window.LOCALES = {
     col_old:       "Anksčiau",
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc:      "Kaip atrodytų Europa 2041 m., jei būtume priėmę tinkamus sprendimus? 14 idėjų iš mūsų KI vakarienės kovo mėnesį.",
+    feature_desc:      "Šiame puslapyje pristatoma 14 konkrečių idėjų — nuo savaime šviečiančių dviračių takų iki Europos DARPA — technologiškai įgyvendinamų šiandien. Kiekviena idėja pagrįsta viešai prieinamais šaltiniais.",
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
@@ -927,9 +908,8 @@ window.LOCALES = {
     col_old:       "Agrāk",
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc:      "Kā izskatītos Eiropa 2041. gadā, ja būtu pieņemti pareizi lēmumi? 14 idejas no mūsu KI vakariņām martā.",
+    feature_desc:      "Šajā lapā ir piedāvātas 14 konkrētas idejas — no pašgaismojošiem veloceliņiem līdz Eiropas DARPA — tehnoloģiski iespējamas jau šodien. Katra ideja ir pamatota ar publiski pieejamiem avotiem.",
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
@@ -973,9 +953,8 @@ window.LOCALES = {
     col_old:       "Varem",
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc:      "Milline näeks Euroopa välja 2041. aastal, kui oleksime teinud õiged otsused? 14 ideed meie KI-õhtusöögilt märtsis.",
+    feature_desc:      "See leht esitleb 14 konkreetset ideed — isevalgustuvatest jalgrattaradadest Euroopa DARPAni — mis on täna tehnoloogiliselt teostatavad. Iga idee on toetatud avalikult kättesaadavate allikatega.",
     feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
@@ -1019,9 +998,8 @@ window.LOCALES = {
     col_old:       "Prej",
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
-  ,
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc:      "Kakšna bi bila Evropa leta 2041, če bi sprejeli prave odločitve? 14 idej z našega KI-večerje v marcu.",
+    feature_desc:      "Ta stran predstavlja 14 konkretnih idej — od samoosvetljenih kolesarskih poti do evropske DARPA — tehnološko izvedljive danes. Vsaka ideja je podprta z javno dostopnimi viri.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1065,9 +1043,8 @@ window.LOCALES = {
     col_old:       "Qabel",
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc:      "Kif tkun tidher l-Ewropa fl-2041, jekk konna ħadna d-deċiżjonijiet it-tajbin? 14-il idea mid-dinner KI tagħna f'Marzu.",
+    feature_desc:      "Din il-paġna tippreżenta 14-il idea konkreta — minn mogħdijiet taċ-ċiklisti li jiddu waħedhom sa DARPA Ewropea — li huma teknoloġikament fattibbli llum. Kull idea hija appoġġata minn sorsi disponibbli pubblikament.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
@@ -1111,9 +1088,8 @@ window.LOCALES = {
     col_old:       "Roimhe seo",
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
-  ,
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc:      "Cén chuma a bheadh ar an Eoraip in 2041 dá nglacfaimis na cinntí cearta? 14 smaoineamh ó dhinnéar KI againn i Márta.",
+    feature_desc:      "Cuireann an leathanach seo i láthair 14 smaoineamh concréiteach — ó conairí rothaíochta féin-lonracha go DARPA Eorpach — atá indéanta go teicneolaíoch inniu. Tá gach smaoineamh tacaithe ag foinsí atá ar fáil go poiblí.",
     feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
