@@ -64,7 +64,7 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: "0.5px", color: "rgba(0,0,0,0.38)", textTransform: "uppercase" }}>umdrehen</span>
           </div>
 
-          {/* ── header row: company + source badge + flag ─────── */}
+          {/* ── header row: company + flag only ──────────────── */}
           <div className="flex items-center justify-between px-4 pt-3 pb-0 shrink-0">
             <span
               className="text-[9px] font-bold tracking-widest uppercase"
@@ -72,18 +72,7 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             >
               {company.name}
             </span>
-            <div className="flex items-center gap-1.5">
-              <span
-                className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${
-                  card.sourceType === "open"
-                    ? "bg-emerald-100 text-emerald-700"
-                    : "bg-slate-100 text-slate-500"
-                }`}
-              >
-                {card.sourceType === "open" ? "OPEN" : "CLOSED"}
-              </span>
-              <span className="text-sm leading-none">{card.flag}</span>
-            </div>
+            <span className="text-sm leading-none">{card.flag}</span>
           </div>
 
           {/* ── monster image — compact ────────────────────────── */}
@@ -105,11 +94,20 @@ export default function MonsterFlipCard({ card, hoverColor = "#ffffff" }: Props)
             )}
           </div>
 
-          {/* ── tool name ─────────────────────────────────────── */}
-          <div className="px-4 pt-1 text-center shrink-0">
+          {/* ── tool name + source badge ──────────────────────── */}
+          <div className="px-4 pt-1 flex items-center justify-center gap-1.5 shrink-0">
             <h3 className="font-bold text-sm leading-tight text-slate-800">
               {card.name}
             </h3>
+            <span
+              className={`text-[8px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${
+                card.sourceType === "open"
+                  ? "bg-emerald-100 text-emerald-700"
+                  : "bg-slate-100 text-slate-400"
+              }`}
+            >
+              {card.sourceType === "open" ? "OPEN" : "CLOSED"}
+            </span>
           </div>
 
           {/* ── citizen label ─────────────────────────────────── */}
