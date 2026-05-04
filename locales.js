@@ -54,8 +54,8 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
   ,
-    feature_eyebrow:  "From our last dinner · Munich, March 2026",
-    feature_desc:      "What if Europe made the right decisions by 2041? 14 concrete ideas — technologically feasible.",
+    feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
+    feature_desc:      "What would Europe look like in 2041, if we had made the right decisions? 14 ideas we collected at our KI dinner in March.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -100,8 +100,8 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
   ,
-    feature_eyebrow:  "Aus unserem letzten Dinner · München, März 2026",
-    feature_desc:      "Was wäre, wenn Europa 2041 die richtigen Entscheidungen getroffen hätte? 14 konkrete Ideen — technologisch machbar.",
+    feature_eyebrow:  "Salon AI Dinner · München · März 2026",
+    feature_desc:      "Wie würde Europa 2041 aussehen, wenn wir die richtigen Entscheidungen getroffen hätten? 14 Ideen aus unserem KI-Dinner im März.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -146,8 +146,8 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
   ,
-    feature_eyebrow:  "De notre dernier dîner · Munich, mars 2026",
-    feature_desc:      "Et si l'Europe prenait les bonnes décisions d'ici 2041 ? 14 idées concrètes — faisables technologiquement.",
+    feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
+    feature_desc:      "À quoi ressemblerait l'Europe en 2041 si nous avions pris les bonnes décisions ? 14 idées recueillies lors de notre dîner IA en mars.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -192,8 +192,8 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
   ,
-    feature_eyebrow:  "De nuestra última cena · Múnich, marzo 2026",
-    feature_desc:      "¿Y si Europa tomara las decisiones correctas para 2041? 14 ideas concretas — tecnológicamente viables.",
+    feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
+    feature_desc:      "¿Cómo sería Europa en 2041 si hubiéramos tomado las decisiones correctas? 14 ideas de nuestra cena de IA en marzo.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -238,8 +238,8 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
   ,
-    feature_eyebrow:  "Dalla nostra ultima cena · Monaco, marzo 2026",
-    feature_desc:      "E se l'Europa prendesse le decisioni giuste entro il 2041? 14 idee concrete — tecnologicamente fattibili.",
+    feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
+    feature_desc:      "Come sarebbe l'Europa nel 2041 se avessimo preso le decisioni giuste? 14 idee raccolte durante la nostra cena di IA a marzo.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -284,8 +284,8 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
   ,
-    feature_eyebrow:  "Do nosso último jantar · Munique, março de 2026",
-    feature_desc:      "E se a Europa tomasse as decisões certas até 2041? 14 ideias concretas — tecnologicamente viáveis.",
+    feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
+    feature_desc:      "Como seria a Europa em 2041 se tivéssemos tomado as decisões certas? 14 ideias recolhidas no nosso jantar de IA em março.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -330,8 +330,8 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
   ,
-    feature_eyebrow:  "Van ons laatste diner · München, maart 2026",
-    feature_desc:      "Wat als Europa de juiste beslissingen neemt tegen 2041? 14 concrete ideeën — technologisch haalbaar.",
+    feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
+    feature_desc:      "Hoe zou Europa er in 2041 uitzien als we de juiste beslissingen hadden genomen? 14 ideeën van ons KI-diner in maart.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -376,8 +376,8 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
   ,
-    feature_eyebrow:  "Z naszej ostatniej kolacji · Monachium, marzec 2026",
-    feature_desc:      "Co by było, gdyby Europa podjęła właściwe decyzje do 2041 roku? 14 konkretnych pomysłów — wykonalnych technologicznie.",
+    feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
+    feature_desc:      "Jak wyglądałaby Europa w 2041 roku, gdybyśmy podjęli właściwe decyzje? 14 pomysłów zebranych na naszej kolacji KI w marcu.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -422,8 +422,8 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
   ,
-    feature_eyebrow:  "De la ultima noastră cină · München, martie 2026",
-    feature_desc:      "Ce-ar fi dacă Europa ar lua deciziile corecte până în 2041? 14 idei concrete — fezabile tehnologic.",
+    feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
+    feature_desc:      "Cum ar arăta Europa în 2041 dacă am fi luat deciziile corecte? 14 idei adunate la cina noastră de IA din martie.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -468,8 +468,8 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
   ,
-    feature_eyebrow:  "Från vår senaste middag · München, mars 2026",
-    feature_desc:      "Vad händer om Europa fattar rätt beslut till 2041? 14 konkreta idéer — tekniskt genomförbara.",
+    feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
+    feature_desc:      "Hur skulle Europa se ut 2041 om vi hade fattat rätt beslut? 14 idéer från vår KI-middag i mars.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -514,8 +514,8 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
   ,
-    feature_eyebrow:  "Z naší poslední večeře · Mnichov, březen 2026",
-    feature_desc:      "Co kdyby Evropa do roku 2041 přijala správná rozhodnutí? 14 konkrétních nápadů — technologicky proveditelných.",
+    feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
+    feature_desc:      "Jak by vypadala Evropa v roce 2041, kdybychom přijali správná rozhodnutí? 14 nápadů ze setkání KI dinner v březnu.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -560,8 +560,8 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
   ,
-    feature_eyebrow:  "Utolsó vacsoránkból · München, 2026. március",
-    feature_desc:      "Mi lenne, ha Európa 2041-re meghozná a helyes döntéseket? 14 konkrét ötlet — technológiailag megvalósítható.",
+    feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
+    feature_desc:      "Milyen lenne Európa 2041-ben, ha meghoznánk a helyes döntéseket? 14 ötlet a márciusi KI-vacsoránkról.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -606,8 +606,8 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
   ,
-    feature_eyebrow:  "Z nášho posledného večera · Mníchov, marec 2026",
-    feature_desc:      "Čo keby Európa do roku 2041 urobila správne rozhodnutia? 14 konkrétnych nápadov — technologicky uskutočniteľných.",
+    feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
+    feature_desc:      "Ako by vyzerala Európa v roku 2041, keby sme prijali správne rozhodnutia? 14 nápadov z nášho KI-dinner v marci.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -652,8 +652,8 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
   ,
-    feature_eyebrow:  "От последната ни вечеря · Мюнхен, март 2026",
-    feature_desc:      "Какво ще стане, ако Европа вземе правилните решения до 2041 г.? 14 конкретни идеи — технологично осъществими.",
+    feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
+    feature_desc:      "Как би изглеждала Европа през 2041 г., ако бяхме взели правилните решения? 14 идеи от нашата KI вечеря през март.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -698,8 +698,8 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
   ,
-    feature_eyebrow:  "Fra vores seneste middag · München, marts 2026",
-    feature_desc:      "Hvad nu hvis Europa træffer de rigtige beslutninger inden 2041? 14 konkrete idéer — teknologisk gennemførlige.",
+    feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
+    feature_desc:      "Hvordan ville Europa se ud i 2041, hvis vi havde truffet de rigtige beslutninger? 14 idéer fra vores KI-middag i marts.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -744,8 +744,8 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
   ,
-    feature_eyebrow:  "Viimeisimmästä illallisestamme · München, maaliskuu 2026",
-    feature_desc:      "Entä jos Eurooppa tekisi oikeat päätökset vuoteen 2041 mennessä? 14 konkreettista ideaa — teknologisesti toteuttamiskelpoisia.",
+    feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
+    feature_desc:      "Millainen Eurooppa olisi vuonna 2041, jos olisimme tehneet oikeat päätökset? 14 ideaa KI-illalliseltamme maaliskuussa.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -790,8 +790,8 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
   ,
-    feature_eyebrow:  "S naše posljednje večere · München, ožujak 2026",
-    feature_desc:      "Što ako Europa donese prave odluke do 2041.? 14 konkretnih ideja — tehnološki izvedive.",
+    feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
+    feature_desc:      "Kako bi Europa izgledala 2041. da smo donijeli prave odluke? 14 ideja s našeg KI dinera u ožujku.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -836,8 +836,8 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
   ,
-    feature_eyebrow:  "Από το τελευταίο μας δείπνο · Μόναχο, Μάρτιος 2026",
-    feature_desc:      "Τι θα γινόταν αν η Ευρώπη έπαιρνε τις σωστές αποφάσεις ως το 2041; 14 συγκεκριμένες ιδέες — τεχνολογικά εφικτές, αρκετές ήδη λειτουργούν ως πιλοτικά προγράμματα.",
+    feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
+    feature_desc:      "Πώς θα έμοιαζε η Ευρώπη το 2041 αν είχαμε πάρει τις σωστές αποφάσεις; 14 ιδέες από το δείπνο KI μας τον Μάρτιο.",
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
@@ -882,8 +882,8 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
   ,
-    feature_eyebrow:  "Iš mūsų paskutinės vakarienės · Miunchenas, 2026 m. kovas",
-    feature_desc:      "Kas būtų, jei Europa iki 2041 m. priimtų tinkamus sprendimus? 14 konkrečių idėjų — technologiškai įgyvendinamų, kelios jau veikia kaip bandomieji projektai.",
+    feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
+    feature_desc:      "Kaip atrodytų Europa 2041 m., jei būtume priėmę tinkamus sprendimus? 14 idėjų iš mūsų KI vakarienės kovo mėnesį.",
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
@@ -928,8 +928,8 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
   ,
-    feature_eyebrow:  "No mūsu pēdējās vakariņas · Minhene, 2026. gada marts",
-    feature_desc:      "Ko darīt, ja Eiropa līdz 2041. gadam pieņems pareizos lēmumus? 14 konkrētas idejas — tehnoloģiski iespējamas, dažas jau darbojas kā izmēģinājuma projekti.",
+    feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
+    feature_desc:      "Kā izskatītos Eiropa 2041. gadā, ja būtu pieņemti pareizi lēmumi? 14 idejas no mūsu KI vakariņām martā.",
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
@@ -974,8 +974,8 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
   ,
-    feature_eyebrow:  "Meie viimaselt õhtusöögilt · München, märts 2026",
-    feature_desc:      "Mis juhtuks, kui Euroopa teeks 2041. aastaks õiged otsused? 14 konkreetset ideed — tehnoloogiliselt teostatavad, mitu neist töötab juba pilootprojektidena.",
+    feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
+    feature_desc:      "Milline näeks Euroopa välja 2041. aastal, kui oleksime teinud õiged otsused? 14 ideed meie KI-õhtusöögilt märtsis.",
     feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
@@ -1020,8 +1020,8 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
   ,
-    feature_eyebrow:  "Z naše zadnje večerje · München, marec 2026",
-    feature_desc:      "Kaj bi bilo, če bi Evropa do leta 2041 sprejela prave odločitve? 14 konkretnih idej — tehnološko izvedljivih.",
+    feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
+    feature_desc:      "Kakšna bi bila Evropa leta 2041, če bi sprejeli prave odločitve? 14 idej z našega KI-večerje v marcu.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1066,8 +1066,8 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
   ,
-    feature_eyebrow:  "Mill-aħħar ikla tagħna · Munich, Marzu 2026",
-    feature_desc:      "X'jiġri jekk l-Ewropa tieħu d-deċiżjonijiet it-tajbin sal-2041? 14-il idea konkreta — fattibbli teknoloġikament.",
+    feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
+    feature_desc:      "Kif tkun tidher l-Ewropa fl-2041, jekk konna ħadna d-deċiżjonijiet it-tajbin? 14-il idea mid-dinner KI tagħna f'Marzu.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
@@ -1112,8 +1112,8 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
   ,
-    feature_eyebrow:  "Ónár ndinnéar deireanach · München, Márta 2026",
-    feature_desc:      "Cad a tharlódh dá ndéanfadh an Eoraip na cinntí cearta faoi 2041? 14 smaoineamh coincréiteach — indéanta ó thaobh teicneolaíochta, cuid acu ag feidhmiú cheana mar thionscadail phíolótacha.",
+    feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
+    feature_desc:      "Cén chuma a bheadh ar an Eoraip in 2041 dá nglacfaimis na cinntí cearta? 14 smaoineamh ó dhinnéar KI againn i Márta.",
     feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
