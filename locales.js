@@ -54,7 +54,7 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc:      "This page presents 14 concrete ideas—from self-illuminating bike paths to a European DARPA—that are technologically feasible today.",
+    feature_desc:      "The website presents ideas collected from participants from March.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -99,7 +99,7 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc:      "Diese Seite präsentiert 14 konkrete Ideen—von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA—die technologisch heute machbar sind.",
+    feature_desc:      "Die Website präsentiert Ideen, die von Teilnehmenden im März gesammelt wurden.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -144,7 +144,7 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc:      "Cette page présente 14 idées concrètes—des pistes cyclables auto-éclairées à une DARPA européenne—qui sont technologiquement réalisables aujourd'hui.",
+    feature_desc:      "Le site présente des idées collectées auprès des participants en mars.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -189,7 +189,7 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc:      "Esta página presenta 14 ideas concretas—desde carriles bici autoluminiscentes hasta una DARPA europea—que son tecnológicamente factibles hoy.",
+    feature_desc:      "La web presenta ideas recogidas de los participantes en marzo.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -234,7 +234,7 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc:      "Questa pagina presenta 14 idee concrete—dai percorsi ciclabili autoilluminanti a una DARPA europea—che sono tecnologicamente fattibili oggi.",
+    feature_desc:      "Il sito presenta idee raccolte dai partecipanti a marzo.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -279,7 +279,7 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc:      "Esta página apresenta 14 ideias concretas—de ciclovias auto-iluminadas a uma DARPA europeia—que são tecnologicamente viáveis hoje.",
+    feature_desc:      "O site apresenta ideias recolhidas dos participantes em março.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -324,7 +324,7 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc:      "Deze pagina presenteert 14 concrete ideeën—van zelfverlichtende fietspaden tot een Europese DARPA—die technologisch haalbaar zijn vandaag.",
+    feature_desc:      "De website presenteert ideeën verzameld van deelnemers in maart.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -369,7 +369,7 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc:      "Ta strona prezentuje 14 konkretnych pomysłów—od samoświecących ścieżek rowerowych po europejski DARPA—które są technologicznie wykonalne dziś.",
+    feature_desc:      "Strona prezentuje pomysły zebrane od uczestników w marcu.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -414,7 +414,7 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc:      "Această pagină prezintă 14 idei concrete—de la piste de biciclete auto-iluminate la un DARPA european—care sunt fezabile tehnologic astăzi.",
+    feature_desc:      "Site-ul prezintă idei colectate de la participanți în martie.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -459,7 +459,7 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc:      "Den här sidan presenterar 14 konkreta idéer—från självlysande cykelvägar till en europeisk DARPA—som är teknologiskt genomförbara idag.",
+    feature_desc:      "Webbplatsen presenterar idéer insamlade från deltagare i mars.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -504,7 +504,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc:      "Tato stránka představuje 14 konkrétních nápadů—od samozářivých cyklostezek po evropský DARPA—které jsou technologicky proveditelné dnes.",
+    feature_desc:      "Web prezentuje nápady sesbírané od účastníků v březnu.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -549,7 +549,7 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc:      "Ez az oldal 14 konkrét ötletet mutat be—az önvilágító kerékpárutaktól az európai DARPA-ig—amelyek technológiailag megvalósíthatók ma.",
+    feature_desc:      "A weboldal a márciusi résztvevőktől összegyűjtött ötleteket mutatja be.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -594,7 +594,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc:      "Táto stránka predstavuje 14 konkrétnych nápadov—od samosvetiacich cyklotrás po európsky DARPA—ktoré sú technologicky uskutočniteľné dnes.",
+    feature_desc:      "Web prezentuje nápady zozbierané od účastníkov v marci.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -639,7 +639,7 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc:      "Тази страница представя 14 конкретни идеи—от самосветещи велоалеи до европейски DARPA—които са технологично осъществими днес.",
+    feature_desc:      "Уебсайтът представя идеи, събрани от участниците през март.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -684,7 +684,7 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc:      "Denne side præsenterer 14 konkrete idéer—fra selvlysende cykelstier til en europæisk DARPA—der er teknologisk gennemførlige i dag.",
+    feature_desc:      "Hjemmesiden præsenterer idéer indsamlet fra deltagere i marts.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -729,7 +729,7 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc:      "Tällä sivulla esitellään 14 konkreettista ideaa—itsevalaistevista pyöräteistä eurooppalaiseen DARPAan—jotka ovat teknologisesti toteutettavissa tänään.",
+    feature_desc:      "Verkkosivusto esittelee osallistujilta maaliskuussa kerättyjä ideoita.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -774,7 +774,7 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc:      "Ova stranica predstavlja 14 konkretnih ideja—od samosvijetlećih biciklističkih staza do europskog DARPA—koje su tehnološki izvedive danas.",
+    feature_desc:      "Web stranica predstavlja ideje prikupljene od sudionika u ožujku.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -819,7 +819,7 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc:      "Αυτή η σελίδα παρουσιάζει 14 συγκεκριμένες ιδέες—από αυτοφωτιζόμενους ποδηλατόδρομους έως ένα ευρωπαϊκό DARPA—που είναι τεχνολογικά εφικτές σήμερα.",
+    feature_desc:      "Ο ιστότοπος παρουσιάζει ιδέες που συγκεντρώθηκαν από συμμετέχοντες τον Μάρτιο.",
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
@@ -864,7 +864,7 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc:      "Šiame puslapyje pristatoma 14 konkrečių idėjų—nuo savaime šviečiančių dviračių takų iki europinio DARPA—kurios technologiškai įgyvendinamos šiandien.",
+    feature_desc:      "Svetainė pristato idėjas, surinktas iš dalyvių kovo mėnesį.",
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
@@ -909,7 +909,7 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc:      "Šajā lapā ir apkopotas 14 konkrētas idejas—no pašgaisojošiem veloceliņiem līdz Eiropas DARPA—kas ir tehnoloģiski īstenojamas šodien.",
+    feature_desc:      "Vietne prezentē idejas, kas savāktas no dalībniekiem martā.",
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
@@ -954,7 +954,7 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc:      "Sellel lehel esitatakse 14 konkreetset ideed—isevalgustuvatest rattaradadest Euroopa DARPAni—mis on tehnoloogiliselt teostatavad täna.",
+    feature_desc:      "Veebisait esitab märtsis osalejatelt kogutud ideid.",
     feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
@@ -999,7 +999,7 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc:      "Ta stran predstavlja 14 konkretnih idej—od samosvetečih kolesarskih stez do evropske DARPA—ki so tehnološko izvedljive danes.",
+    feature_desc:      "Spletna stran predstavlja ideje, zbrane od udeležencev marca.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1044,7 +1044,7 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc:      "Din il-paġna tippreżenta 14-il idea konkreta—minn mogħdijiet taċ-ċiklisti awtoilluminati sa DARPA Ewropea—li huma teknikament fattibbli llum.",
+    feature_desc:      "Il-websajt tippreżenta ideat miġbura minn parteċipanti f'Marzu.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
@@ -1089,7 +1089,7 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc:      "Cuireann an leathanach seo 14 smaoineamh nithiúil i láthair—ó chosáin rothaíochta féin-shoilsithe go DARPA Eorpach—atá indéanta go teicniúil inniu.",
+    feature_desc:      "Cuireann an suíomh gréasáin smaointe i láthair a bailíodh ó rannpháirtithe i Márta.",
     feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
