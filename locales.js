@@ -54,7 +54,7 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc:      "This page presents 14 concrete ideas—from self-illuminating bike paths to a European DARPA—that are technologically feasible today. Each idea is supported by publicly available sources.",
+    feature_desc:      "This page presents 14 concrete ideas—from self-illuminating bike paths to a European DARPA—that are technologically feasible today.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -99,7 +99,7 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc:      "Diese Seite zeigt 14 konkrete Ideen — von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA — die heute technologisch machbar sind. Jede Idee ist durch öffentlich zugängliche Quellen belegt.",
+    feature_desc:      "Diese Seite präsentiert 14 konkrete Ideen—von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA—die technologisch heute machbar sind.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -144,7 +144,7 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc:      "Cette page présente 14 idées concrètes — des pistes cyclables auto-éclairantes à une DARPA européenne — technologiquement réalisables aujourd'hui. Chaque idée est étayée par des sources publiques.",
+    feature_desc:      "Cette page présente 14 idées concrètes—des pistes cyclables auto-éclairées à une DARPA européenne—qui sont technologiquement réalisables aujourd'hui.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -189,7 +189,7 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc:      "Esta página presenta 14 ideas concretas — desde carriles bici autoluminosos hasta una DARPA europea — tecnológicamente viables hoy. Cada idea está respaldada por fuentes públicas.",
+    feature_desc:      "Esta página presenta 14 ideas concretas—desde carriles bici autoluminiscentes hasta una DARPA europea—que son tecnológicamente factibles hoy.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -234,7 +234,7 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc:      "Questa pagina presenta 14 idee concrete — dalle piste ciclabili autoilluminanti a una DARPA europea — tecnologicamente realizzabili oggi. Ogni idea è supportata da fonti pubblicamente disponibili.",
+    feature_desc:      "Questa pagina presenta 14 idee concrete—dai percorsi ciclabili autoilluminanti a una DARPA europea—che sono tecnologicamente fattibili oggi.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -279,7 +279,7 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc:      "Esta página apresenta 14 ideias concretas — de ciclovias autoluminosas a uma DARPA europeia — tecnologicamente viáveis hoje. Cada ideia é sustentada por fontes públicas.",
+    feature_desc:      "Esta página apresenta 14 ideias concretas—de ciclovias auto-iluminadas a uma DARPA europeia—que são tecnologicamente viáveis hoje.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -324,7 +324,7 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc:      "Deze pagina presenteert 14 concrete ideeën — van zelfverlichtende fietspaden tot een Europese DARPA — die vandaag technologisch haalbaar zijn. Elk idee wordt ondersteund door openbaar beschikbare bronnen.",
+    feature_desc:      "Deze pagina presenteert 14 concrete ideeën—van zelfverlichtende fietspaden tot een Europese DARPA—die technologisch haalbaar zijn vandaag.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -369,7 +369,7 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc:      "Ta strona przedstawia 14 konkretnych pomysłów — od samoświecących ścieżek rowerowych po europejską DARPA — technologicznie wykonalnych dziś. Każdy pomysł jest poparty publicznie dostępnymi źródłami.",
+    feature_desc:      "Ta strona prezentuje 14 konkretnych pomysłów—od samoświecących ścieżek rowerowych po europejski DARPA—które są technologicznie wykonalne dziś.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -414,7 +414,7 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc:      "Această pagină prezintă 14 idei concrete — de la piste de biciclete auto-iluminate la o DARPA europeană — fezabile din punct de vedere tehnologic astăzi. Fiecare idee este susținută de surse publice.",
+    feature_desc:      "Această pagină prezintă 14 idei concrete—de la piste de biciclete auto-iluminate la un DARPA european—care sunt fezabile tehnologic astăzi.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -459,7 +459,7 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc:      "Den här sidan presenterar 14 konkreta idéer — från självlysande cykelvägar till en europeisk DARPA — som är tekniskt genomförbara idag. Varje idé stöds av offentligt tillgängliga källor.",
+    feature_desc:      "Den här sidan presenterar 14 konkreta idéer—från självlysande cykelvägar till en europeisk DARPA—som är teknologiskt genomförbara idag.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -504,7 +504,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc:      "Tato stránka představuje 14 konkrétních nápadů — od samosvítících cyklostezek po evropskou DARPA — technologicky proveditelných dnes. Každý nápad je podložen veřejně dostupnými zdroji.",
+    feature_desc:      "Tato stránka představuje 14 konkrétních nápadů—od samozářivých cyklostezek po evropský DARPA—které jsou technologicky proveditelné dnes.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -549,7 +549,7 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc:      "Ez az oldal 14 konkrét ötletet mutat be — az önvilágító kerékpárutaktól az európai DARPA-ig — amelyek technológiailag ma megvalósíthatók. Minden ötletet nyilvánosan elérhető források támasztanak alá.",
+    feature_desc:      "Ez az oldal 14 konkrét ötletet mutat be—az önvilágító kerékpárutaktól az európai DARPA-ig—amelyek technológiailag megvalósíthatók ma.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -594,7 +594,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc:      "Táto stránka predstavuje 14 konkrétnych nápadov — od samosvietiacich cyklotrás po európsku DARPA — technologicky uskutočniteľných dnes. Každý nápad je podložený verejne dostupnými zdrojmi.",
+    feature_desc:      "Táto stránka predstavuje 14 konkrétnych nápadov—od samosvetiacich cyklotrás po európsky DARPA—ktoré sú technologicky uskutočniteľné dnes.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -639,7 +639,7 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc:      "Тази страница представя 14 конкретни идеи — от самосветещи велоалеи до европейска DARPA — технологично осъществими днес. Всяка идея е подкрепена с публично достъпни източници.",
+    feature_desc:      "Тази страница представя 14 конкретни идеи—от самосветещи велоалеи до европейски DARPA—които са технологично осъществими днес.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -684,7 +684,7 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc:      "Denne side præsenterer 14 konkrete idéer — fra selvlysende cykelstier til en europæisk DARPA — der er teknologisk gennemførlige i dag. Hver idé understøttes af offentligt tilgængelige kilder.",
+    feature_desc:      "Denne side præsenterer 14 konkrete idéer—fra selvlysende cykelstier til en europæisk DARPA—der er teknologisk gennemførlige i dag.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -729,7 +729,7 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc:      "Tällä sivulla esitellään 14 konkreettista ideaa — itsevalaistuvista pyöräteistä eurooppalaiseen DARPAan — jotka ovat teknologisesti toteutettavissa tänään. Jokainen idea on tuettu julkisesti saatavilla olevilla lähteillä.",
+    feature_desc:      "Tällä sivulla esitellään 14 konkreettista ideaa—itsevalaistevista pyöräteistä eurooppalaiseen DARPAan—jotka ovat teknologisesti toteutettavissa tänään.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -774,7 +774,7 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc:      "Ova stranica predstavlja 14 konkretnih ideja — od samosvijetlećih biciklističkih staza do europske DARPA — tehnološki izvedive danas. Svaka ideja potkrijepljena je javno dostupnim izvorima.",
+    feature_desc:      "Ova stranica predstavlja 14 konkretnih ideja—od samosvijetlećih biciklističkih staza do europskog DARPA—koje su tehnološki izvedive danas.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -819,7 +819,7 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc:      "Αυτή η σελίδα παρουσιάζει 14 συγκεκριμένες ιδέες — από αυτοφωτιζόμενες ποδηλατοδρόμους έως μια ευρωπαϊκή DARPA — τεχνολογικά εφικτές σήμερα. Κάθε ιδέα υποστηρίζεται από δημόσια διαθέσιμες πηγές.",
+    feature_desc:      "Αυτή η σελίδα παρουσιάζει 14 συγκεκριμένες ιδέες—από αυτοφωτιζόμενους ποδηλατόδρομους έως ένα ευρωπαϊκό DARPA—που είναι τεχνολογικά εφικτές σήμερα.",
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
@@ -864,7 +864,7 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc:      "Šiame puslapyje pristatoma 14 konkrečių idėjų — nuo savaime šviečiančių dviračių takų iki Europos DARPA — technologiškai įgyvendinamų šiandien. Kiekviena idėja pagrįsta viešai prieinamais šaltiniais.",
+    feature_desc:      "Šiame puslapyje pristatoma 14 konkrečių idėjų—nuo savaime šviečiančių dviračių takų iki europinio DARPA—kurios technologiškai įgyvendinamos šiandien.",
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
@@ -909,7 +909,7 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc:      "Šajā lapā ir piedāvātas 14 konkrētas idejas — no pašgaismojošiem veloceliņiem līdz Eiropas DARPA — tehnoloģiski iespējamas jau šodien. Katra ideja ir pamatota ar publiski pieejamiem avotiem.",
+    feature_desc:      "Šajā lapā ir apkopotas 14 konkrētas idejas—no pašgaisojošiem veloceliņiem līdz Eiropas DARPA—kas ir tehnoloģiski īstenojamas šodien.",
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
@@ -954,7 +954,7 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc:      "See leht esitleb 14 konkreetset ideed — isevalgustuvatest jalgrattaradadest Euroopa DARPAni — mis on täna tehnoloogiliselt teostatavad. Iga idee on toetatud avalikult kättesaadavate allikatega.",
+    feature_desc:      "Sellel lehel esitatakse 14 konkreetset ideed—isevalgustuvatest rattaradadest Euroopa DARPAni—mis on tehnoloogiliselt teostatavad täna.",
     feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
@@ -999,7 +999,7 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc:      "Ta stran predstavlja 14 konkretnih idej — od samoosvetljenih kolesarskih poti do evropske DARPA — tehnološko izvedljive danes. Vsaka ideja je podprta z javno dostopnimi viri.",
+    feature_desc:      "Ta stran predstavlja 14 konkretnih idej—od samosvetečih kolesarskih stez do evropske DARPA—ki so tehnološko izvedljive danes.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1044,7 +1044,7 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc:      "Din il-paġna tippreżenta 14-il idea konkreta — minn mogħdijiet taċ-ċiklisti li jiddu waħedhom sa DARPA Ewropea — li huma teknoloġikament fattibbli llum. Kull idea hija appoġġata minn sorsi disponibbli pubblikament.",
+    feature_desc:      "Din il-paġna tippreżenta 14-il idea konkreta—minn mogħdijiet taċ-ċiklisti awtoilluminati sa DARPA Ewropea—li huma teknikament fattibbli llum.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
@@ -1089,7 +1089,7 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc:      "Cuireann an leathanach seo i láthair 14 smaoineamh concréiteach — ó conairí rothaíochta féin-lonracha go DARPA Eorpach — atá indéanta go teicneolaíoch inniu. Tá gach smaoineamh tacaithe ag foinsí atá ar fáil go poiblí.",
+    feature_desc:      "Cuireann an leathanach seo 14 smaoineamh nithiúil i láthair—ó chosáin rothaíochta féin-shoilsithe go DARPA Eorpach—atá indéanta go teicniúil inniu.",
     feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
