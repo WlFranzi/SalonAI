@@ -54,7 +54,7 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc:      "The website presents ideas collected from participants from March.",
+    feature_desc:      "The <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">website</a> presents a set of ideas collected from the March Dinner participants.",
     feature_cta:       "What we built — one example ↗"
   },
 
@@ -99,7 +99,7 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc:      "Die Website präsentiert Ideen, die von Teilnehmenden im März gesammelt wurden.",
+    feature_desc:      "Die <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">Website</a> präsentiert eine Sammlung von Ideen, die von den Teilnehmenden des März-Dinners eingebracht wurden.",
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗"
   },
 
@@ -144,7 +144,7 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc:      "Le site présente des idées collectées auprès des participants en mars.",
+    feature_desc:      "Le <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">site</a> présente un ensemble d'idées recueillies auprès des participants du dîner de mars.",
     feature_cta:       "Ce que nous avons construit — un exemple ↗"
   },
 
@@ -189,7 +189,7 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc:      "La web presenta ideas recogidas de los participantes en marzo.",
+    feature_desc:      "La <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">web</a> presenta un conjunto de ideas recogidas de los participantes de la cena de marzo.",
     feature_cta:       "Lo que construimos — un ejemplo ↗"
   },
 
@@ -234,7 +234,7 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc:      "Il sito presenta idee raccolte dai partecipanti a marzo.",
+    feature_desc:      "Il <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">sito</a> presenta una raccolta di idee condivise dai partecipanti alla cena di marzo.",
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗"
   },
 
@@ -279,7 +279,7 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc:      "O site apresenta ideias recolhidas dos participantes em março.",
+    feature_desc:      "O <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">site</a> apresenta um conjunto de ideias recolhidas dos participantes do jantar de março.",
     feature_cta:       "O que construímos — um exemplo ↗"
   },
 
@@ -324,7 +324,7 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc:      "De website presenteert ideeën verzameld van deelnemers in maart.",
+    feature_desc:      "De <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">website</a> presenteert een reeks ideeën verzameld van de deelnemers aan het maart-diner.",
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗"
   },
 
@@ -369,7 +369,7 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc:      "Strona prezentuje pomysły zebrane od uczestników w marcu.",
+    feature_desc:      "Strona <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">internetowa</a> prezentuje zestaw pomysłów zebranych od uczestników kolacji marcowej.",
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗"
   },
 
@@ -414,7 +414,7 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc:      "Site-ul prezintă idei colectate de la participanți în martie.",
+    feature_desc:      "Site-ul <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">web</a> prezintă un set de idei colectate de la participanții la cina din martie.",
     feature_cta:       "Ce am construit — un exemplu ↗"
   },
 
@@ -459,7 +459,7 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc:      "Webbplatsen presenterar idéer insamlade från deltagare i mars.",
+    feature_desc:      "Webbplatsen <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(öppna länk)</a> presenterar idéer insamlade från deltagarna på mars-middagen.",
     feature_cta:       "Vad vi byggde — ett exempel ↗"
   },
 
@@ -504,7 +504,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc:      "Web prezentuje nápady sesbírané od účastníků v březnu.",
+    feature_desc:      "Web <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(otevřít odkaz)</a> představuje sadu nápadů sesbíraných od účastníků březnové večeře.",
     feature_cta:       "Co jsme postavili — jeden příklad ↗"
   },
 
@@ -549,7 +549,7 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc:      "A weboldal a márciusi résztvevőktől összegyűjtött ötleteket mutatja be.",
+    feature_desc:      "A <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">weboldal</a> a márciusi vacsorán részt vevő résztvevőktől összegyűjtött ötleteket mutatja be.",
     feature_cta:       "Amit építettünk — egy példa ↗"
   },
 
@@ -594,7 +594,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc:      "Web prezentuje nápady zozbierané od účastníkov v marci.",
+    feature_desc:      "Web <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(otvoriť odkaz)</a> predstavuje sadu nápadov zozbieraných od účastníkov marcovej večere.",
     feature_cta:       "Čo sme postavili — jeden príklad ↗"
   },
 
@@ -639,7 +639,7 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc:      "Уебсайтът представя идеи, събрани от участниците през март.",
+    feature_desc:      "Уебсайтът <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(отвори връзката)</a> представя набор от идеи, събрани от участниците в мартенската вечеря.",
     feature_cta:       "Какво изградихме — един пример ↗"
   },
 
@@ -684,7 +684,7 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc:      "Hjemmesiden præsenterer idéer indsamlet fra deltagere i marts.",
+    feature_desc:      "Hjemmesiden <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(åbn link)</a> præsenterer idéer indsamlet fra deltagerne ved marts-middagen.",
     feature_cta:       "Hvad vi byggede — et eksempel ↗"
   },
 
@@ -729,7 +729,7 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc:      "Verkkosivusto esittelee osallistujilta maaliskuussa kerättyjä ideoita.",
+    feature_desc:      "Verkkosivusto <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(avaa linkki)</a> esittelee maaliskuun illallisosallistujilta kerättyjä ideoita.",
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗"
   },
 
@@ -774,7 +774,7 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc:      "Web stranica predstavlja ideje prikupljene od sudionika u ožujku.",
+    feature_desc:      "Web stranica <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(otvori vezu)</a> predstavlja skup ideja prikupljenih od sudionika večere u ožujku.",
     feature_cta:       "Što smo izgradili — jedan primjer ↗"
   },
 
@@ -819,7 +819,7 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc:      "Ο ιστότοπος παρουσιάζει ιδέες που συγκεντρώθηκαν από συμμετέχοντες τον Μάρτιο.",
+    feature_desc:      "Ο ιστότοπος <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(άνοιγμα συνδέσμου)</a> παρουσιάζει ιδέες που συγκεντρώθηκαν από τους συμμετέχοντες στο δείπνο Μαρτίου.",
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗"
   },
 
@@ -864,7 +864,7 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc:      "Svetainė pristato idėjas, surinktas iš dalyvių kovo mėnesį.",
+    feature_desc:      "Svetainėje <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(atidaryti nuorodą)</a> pristatomas kovo vakarieniaus dalyvių sukauptas idėjų rinkinys.",
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗"
   },
 
@@ -909,7 +909,7 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc:      "Vietne prezentē idejas, kas savāktas no dalībniekiem martā.",
+    feature_desc:      "Vietnē <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(atvērt saiti)</a> ir apkopotas martā rīkotās vakariņas dalībnieku ideju kopums.",
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗"
   },
 
@@ -954,7 +954,7 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc:      "Veebisait esitab märtsis osalejatelt kogutud ideid.",
+    feature_desc:      "Veebisaidil <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(ava link)</a> on esitatud märtsikuu õhtusöögi osalejatelt kogutud ideed.",
     feature_cta:       "Mida me ehitasime — üks näide ↗"
   },
 
@@ -999,7 +999,7 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc:      "Spletna stran predstavlja ideje, zbrane od udeležencev marca.",
+    feature_desc:      "Spletna stran <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(odpri povezavo)</a> predstavlja nabor idej, zbranih od udeležencev marcovske večerje.",
     feature_cta:       "Kar smo zgradili — en primer ↗"
   },
 
@@ -1044,7 +1044,7 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc:      "Il-websajt tippreżenta ideat miġbura minn parteċipanti f'Marzu.",
+    feature_desc:      "Il-websajt <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">(iftaħ il-link)</a> tippreżenta sett ta' ideat miġbura mill-parteċipanti tal-ikla ta' Marzu.",
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗"
   },
 
@@ -1089,7 +1089,7 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc:      "Cuireann an suíomh gréasáin smaointe i láthair a bailíodh ó rannpháirtithe i Márta.",
+    feature_desc:      "Cuireann an <a href=\"/march-event/\" style=\"color:var(--sky-deep);text-decoration:underline;\">suíomh gréasáin</a> i láthair sraith smaointe a bailíodh ó rannpháirtithe Dhinnéar Mhárta.",
     feature_cta:       "Cad a thógamar — sampla amháin ↗"
   },
 
