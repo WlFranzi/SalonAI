@@ -70,6 +70,46 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .hero h1 em { color: var(--sky-deep); font-style: italic; }
 .hero-subtitle { font-size: 13.5px; color: var(--navy); opacity: 0.72; font-weight: 400; line-height: 1.6; max-width: 500px; margin: 0 auto 20px; }
 
+/* ── Was ist das ── */
+.what-is-this { background: var(--sky-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 48px 24px; }
+.what-inner { max-width: 820px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }
+@media(max-width:720px) { .what-inner { grid-template-columns: 1fr; gap: 28px; } }
+.what-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 10px; }
+.what-h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.25; margin-bottom: 14px; }
+.what-desc { font-size: 13px; color: var(--muted-blue); line-height: 1.7; }
+.what-bullets { display: flex; flex-direction: column; gap: 20px; }
+.what-bullet { display: flex; gap: 16px; align-items: flex-start; }
+.what-num { font-size: 11px; font-weight: 800; color: var(--sky-deep); background: rgba(0,102,204,0.1); border-radius: 6px; padding: 3px 7px; flex-shrink: 0; margin-top: 2px; }
+.what-bullet strong { font-size: 13.5px; font-weight: 700; color: var(--navy); display: block; margin-bottom: 4px; }
+.what-bullet p { font-size: 12.5px; color: var(--muted-blue); line-height: 1.6; margin: 0; }
+
+/* ── Event requirement note ── */
+.event-requirement { font-size: 11.5px; color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 8px 14px; margin: 6px 0 16px; line-height: 1.6; }
+
+/* ── Host your own ── */
+.host-own { margin-top: 24px; background: var(--navy); border-radius: 18px; padding: 28px 24px; color: var(--white-warm); }
+.host-own-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: 8px; }
+.host-own-h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
+.host-own-desc { font-size: 12.5px; color: rgba(255,255,255,0.75); line-height: 1.65; margin-bottom: 16px; }
+.host-own-examples { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+.host-chip { font-size: 11px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 4px 11px; color: rgba(255,255,255,0.85); }
+.host-own-btn { display: inline-block; background: var(--gold); color: var(--navy); font-weight: 700; font-size: 13px; padding: 10px 22px; border-radius: 40px; text-decoration: none; transition: opacity 0.15s; }
+.host-own-btn:hover { opacity: 0.88; }
+.host-own-fine { font-size: 10.5px; color: rgba(255,255,255,0.45); margin-top: 10px; }
+
+/* ── FAQ ── */
+.faq-section { padding: 56px 24px; background: var(--white-warm); }
+.faq-inner { max-width: 700px; margin: 0 auto; }
+.faq-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 8px; }
+.faq-h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); margin-bottom: 32px; }
+.faq-list { display: flex; flex-direction: column; gap: 0; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-item summary { font-size: 13.5px; font-weight: 600; color: var(--navy); padding: 16px 4px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 18px; color: var(--sky-deep); font-weight: 300; flex-shrink: 0; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { font-size: 13px; color: var(--muted-blue); line-height: 1.7; padding: 0 4px 16px; margin: 0; }
+
 /* Stats bar */
 .stats-bar { background: var(--navy); padding: 0 24px; }
 .stats-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -498,7 +538,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="inner">
     <a href="#" style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);">Salon <span style="color:var(--accent);">AI</span></a>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://www.linkedin.com/events/7449070247892082688?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_cta">Join a Dinner →</a>
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta">🎟️ 28. Mai — 78€</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -577,6 +617,40 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </div>
 
 
+<!-- ── WAS IST DAS ────────────────────────────────────────────────── -->
+<div class="what-is-this">
+  <div class="what-inner">
+    <div class="what-text">
+      <p class="what-label">Was ist das?</p>
+      <h2 class="what-h2">Ein Abend. Dein KI-Assistent. Dann Europa.</h2>
+      <p class="what-desc">Du baust deinen eigenen KI-Assistenten — für deinen Alltag, deinen Job, dein Thema. Und dann nutzt du ihn, um als Bürger:in konkret etwas für Europa zu tun. Kein Vortrag. Kein Zuschauen. Du baust selbst.</p>
+    </div>
+    <div class="what-bullets">
+      <div class="what-bullet">
+        <span class="what-num">01</span>
+        <div>
+          <strong>KI für dich</strong>
+          <p>Du richtest deinen persönlichen KI-Agenten ein — Schritt für Schritt, Experten helfen vor Ort. Niemand bleibt hängen.</p>
+        </div>
+      </div>
+      <div class="what-bullet">
+        <span class="what-num">02</span>
+        <div>
+          <strong>KI für Europa</strong>
+          <p>Du nutzt deinen Agenten für eine echte EU-Aufgabe. MEPs anschreiben, Konsultationen einreichen, Bürgerrechte nutzen — konkret, heute, ohne Mandat.</p>
+        </div>
+      </div>
+      <div class="what-bullet">
+        <span class="what-num">03</span>
+        <div>
+          <strong>Du nimmst ihn mit</strong>
+          <p>Der Assistent gehört dir. Du verlässt den Abend mit etwas, das wirklich für dich arbeitet — nicht mit Folien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
   <div class="single-col" id="events">
@@ -595,45 +669,21 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span></h3>
 
         <div class="event-row">
-          <div class="event-date-col"><span class="month">May</span><span class="day">28</span></div>
+          <div class="event-date-col"><span class="month">Mai</span><span class="day">28</span></div>
           <div class="event-info">
-            <div class="name">Salon AI Dinner — Munich</div>
-            <div class="sub" data-i18n="munich_sub">Munich · 28 May 2025</div>
+            <div class="name">Salon AI Dinner — München</div>
+            <div class="sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · 78€</div>
           </div>
-          <a href="mailto:franziska.wittleder@gmail.com?subject=Munich%20Dinner%2028%20May" class="rsvp-btn" data-i18n="notify_me">Notify me →</a>
+          <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn">🎟️ Ticket kaufen →</a>
         </div>
         <div class="event-details">
-          <span class="event-detail-chip">🍽️ Dinner</span>
-          <span class="event-detail-chip">👥 ~20 people</span>
-          <span class="event-detail-chip">💶 Paid</span>
+          <span class="event-detail-chip">🍽️ Dinner inklusive</span>
+          <span class="event-detail-chip">👥 ~20 Personen</span>
+          <span class="event-detail-chip">💶 78€</span>
+          <span class="event-detail-chip">🕕 18:00</span>
         </div>
-
-        <div class="event-row">
-          <div class="event-date-col"><span class="month">May</span><span class="day" style="font-size:11px;opacity:0.5;">soon</span></div>
-          <div class="event-info">
-            <div class="name">Salon AI Dinner — Berlin</div>
-            <div class="sub" data-i18n="berlin_sub">Berlin · date coming soon</div>
-          </div>
-          <a href="mailto:franziska.wittleder@gmail.com?subject=Berlin%20Dinner%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
-        </div>
-        <div class="event-details">
-          <span class="event-detail-chip">🍽️ Dinner</span>
-          <span class="event-detail-chip">👥 ~20 people</span>
-          <span class="event-detail-chip">💶 Paid</span>
-        </div>
-
-        <div class="event-row">
-          <div class="event-date-col"><span class="month">Aug</span><span class="day">22–23</span></div>
-          <div class="event-info">
-            <div class="name">2-Day AI Workshop — Berlin</div>
-            <div class="sub">Berlin</div>
-          </div>
-          <a href="mailto:franziska.wittleder@gmail.com?subject=Berlin%20Workshop%20August%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
-        </div>
-        <div class="event-details">
-          <span class="event-detail-chip">🏫 Workshop</span>
-          <span class="event-detail-chip">👥 2 days</span>
-          <span class="event-detail-chip">💶 Paid</span>
+        <div class="event-requirement">
+          💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account</strong> erforderlich (ChatGPT/Claude, ~20€/Mo) — <em>vor Ort einrichtbar</em>
         </div>
       </div>
 
@@ -669,14 +719,20 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         </div>
       </div>
 
-      <!-- Bring 15 banner -->
-      <div class="bring15">
-        <div>
-          <div class="b-label" data-i18n="host_label">Host Your Own AI Dinner</div>
-          <h4 data-i18n="bring15_h4">Bring 15 people together — we'll do the rest.</h4>
-          <p data-i18n="bring15_p">Organize your own group of 15+ and we'll host an AI Dinner for you. Perfect for politicians, companies, or friend groups.</p>
+      <!-- Host your own -->
+      <div class="host-own">
+        <div class="host-own-label">🎉 Dein eigenes Dinner</div>
+        <h3 class="host-own-h3">Du willst das mit deinen Leuten erleben?</h3>
+        <p class="host-own-desc">Ab 15 Personen kommen wir zu euch — mit demselben Format, denselben Expert:innen, eurem eigenen EU-Projekt als Gruppenthema. Ob Freundeskreis, Team, Organisation oder Hochschulgruppe.</p>
+        <div class="host-own-examples">
+          <span class="host-chip">👫 Freundeskreis</span>
+          <span class="host-chip">🏢 Unternehmen</span>
+          <span class="host-chip">🎓 Uni-Gruppe</span>
+          <span class="host-chip">🏛️ Organisation</span>
+          <span class="host-chip">🗳️ Politische Gruppe</span>
         </div>
-        <a href="mailto:franziska.wittleder@gmail.com?subject=Organize%20a%20Group"><button class="b-btn" data-i18n="organize_btn">Organize a group →</button></a>
+        <a href="mailto:franziska.wittleder@gmail.com?subject=Eigenes%20Dinner%20organisieren" class="host-own-btn">Schreib mir →</a>
+        <p class="host-own-fine">franziska.wittleder@gmail.com · kostenlose Erstberatung</p>
       </div>
     </div>
 
@@ -731,6 +787,52 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <p style="font-size:13px;color:var(--muted-blue);max-width:540px;line-height:1.65;" data-i18n="skills_desc">In the first part of the evening you set up your personal AI agent for your own everyday challenges — gaining real hands-on experience. In the second part you use your agent to build a concrete plan: what you can already do today, without being in politics, to strengthen the EU.</p>
     </div>
     <div id="skills-list"></div>
+  </div>
+</section>
+
+<!-- ── FAQ ───────────────────────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <p class="faq-label">FAQ</p>
+    <h2 class="faq-h2">Häufige Fragen</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Was ist das Salon AI Dinner?</summary>
+        <p>Ein hands-on KI-Workshop im Abendformat. Du baust deinen eigenen KI-Assistenten — für deinen Alltag und deinen Job. Dann nutzt du ihn für eine konkrete EU-Aufgabe. Kein Vortrag, kein Zuschauen. Du baust selbst, mit Experten vor Ort.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Brauche ich Vorkenntnisse?</summary>
+        <p>Nein. Kein Coding, keine Technik-Kenntnisse, keine KI-Erfahrung. Das Event richtet sich ausdrücklich an alle — ob 22 oder 62, ob Gründer:in oder Rentnerin. Experten helfen während des gesamten Abends.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was muss ich mitbringen?</summary>
+        <p>Deinen Laptop — Pflicht. Windows, Mac oder Linux, aktueller Browser reicht. Außerdem brauchst du einen Pro-Account bei ChatGPT oder Claude (ca. 20€/Monat). Noch keinen? Wir helfen dir vor Ort beim Einrichten — bring eine Kreditkarte mit.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was kostet ein Pro-Account?</summary>
+        <p>Ca. 20€/Monat — für ChatGPT Plus oder Claude Pro. Ohne Pro-Account stoßt du am Abend an technische Grenzen. Du kannst den Account direkt vor Ort einrichten und nach dem Abend wieder kündigen, wenn du möchtest.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was bedeutet "KI für Europa" konkret?</summary>
+        <p>Im zweiten Teil nutzt du deinen fertigen Agenten für eine echte EU-Aufgabe. Beispiele: 23 MEPs eines Ausschusses in 20 Minuten identifiziert und individuell angeschrieben. Grenzüberschreitende Gesundheitsversorgung beantragt. EU-Konsultationseingabe verfasst. Du gehst mit einem konkreten Ergebnis nach Hause — nicht mit einer Idee.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was ist beim März-Dinner in München entstanden?</summary>
+        <p>~20 Menschen haben in einem Abend gemeinsam die Website "Europa 2041" entwickelt — KI-Assistenten gebaut, EU-Ideen gesammelt und veröffentlicht. Das Ergebnis: <a href="/march-event/" style="color:var(--sky-deep);">www.salon-ai.eu/march-event</a></p>
+      </details>
+      <details class="faq-item">
+        <summary>Gibt es Essen und Trinken?</summary>
+        <p>Ja. Essen und Drinks sind im Ticketpreis von 78€ vollständig inklusive. Es ist ein echtes Dinner — kein Seminarraum mit Keksen.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kann ich das Dinner mit meiner Gruppe organisieren?</summary>
+        <p>Ja — das ist sogar erwünscht. Ab 15 Personen kommen wir zu euch: Freundeskreis, Unternehmen, Hochschulgruppe, Organisation. Gleiches Format, eigenes EU-Gruppenthema. Schreib uns: franziska.wittleder@gmail.com</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was bei Absage?</summary>
+        <p>Bis 48 Stunden vor dem Event: volle Erstattung. Danach kann das Ticket auf eine andere Person übertragen werden. Kontakt: franziska.wittleder@gmail.com</p>
+      </details>
+    </div>
   </div>
 </section>
 
