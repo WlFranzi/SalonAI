@@ -575,34 +575,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </div>
 
-<!-- ── SOCIAL PROOF ───────────────────────────────────────────── -->
-<div class="social-proof">
-  <div class="social-proof-inner">
-    <div class="proof-attendees">
-      <strong>Previous attendees included:</strong>
-      <span class="proof-divider">·</span> startup founders
-      <span class="proof-divider">·</span> marketing leads
-      <span class="proof-divider">·</span> politicians
-      <span class="proof-divider">·</span> teachers
-      <span class="proof-divider">·</span> students
-      <span class="proof-divider">·</span> curious citizens
-    </div>
-    <div class="testimonials">
-      <div class="testimonial-card">
-        <p class="testimonial-quote">I built my first AI assistant in under 90 minutes. Honestly didn't expect that.</p>
-        <div class="testimonial-author">Anna, Marketing Manager — Munich</div>
-      </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">The EU use cases were eye-opening. I never thought about using AI for citizens' rights.</p>
-        <div class="testimonial-author">Marcus, Startup Founder — Berlin</div>
-      </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">I'm 58 and had zero AI experience. The experts made it feel completely doable.</p>
-        <div class="testimonial-author">Renate, Teacher — Munich</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
@@ -627,12 +599,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">Salon AI Dinner — Munich</div>
             <div class="sub" data-i18n="munich_sub">Munich · 28 May 2025</div>
           </div>
-          <a href="mailto:hello@aiforeurope.eu?subject=Munich%20Dinner%2028%20May" class="rsvp-btn" data-i18n="notify_me">Notify me →</a>
+          <a href="mailto:franziska.wittleder@gmail.com?subject=Munich%20Dinner%2028%20May" class="rsvp-btn" data-i18n="notify_me">Notify me →</a>
         </div>
         <div class="event-details">
           <span class="event-detail-chip">🍽️ Dinner</span>
           <span class="event-detail-chip">👥 ~20 people</span>
-          <span class="event-detail-chip">🆓 Free</span>
+          <span class="event-detail-chip">💶 Paid</span>
         </div>
 
         <div class="event-row">
@@ -641,12 +613,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">Salon AI Dinner — Berlin</div>
             <div class="sub" data-i18n="berlin_sub">Berlin · date coming soon</div>
           </div>
-          <a href="mailto:hello@aiforeurope.eu?subject=Berlin%20Dinner%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
+          <a href="mailto:franziska.wittleder@gmail.com?subject=Berlin%20Dinner%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
         </div>
         <div class="event-details">
           <span class="event-detail-chip">🍽️ Dinner</span>
           <span class="event-detail-chip">👥 ~20 people</span>
-          <span class="event-detail-chip">🆓 Free</span>
+          <span class="event-detail-chip">💶 Paid</span>
         </div>
 
         <div class="event-row">
@@ -655,7 +627,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">2-Day AI Workshop — Berlin</div>
             <div class="sub">Berlin</div>
           </div>
-          <a href="mailto:hello@aiforeurope.eu?subject=Berlin%20Workshop%20August%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
+          <a href="mailto:franziska.wittleder@gmail.com?subject=Berlin%20Workshop%20August%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
         </div>
         <div class="event-details">
           <span class="event-detail-chip">🏫 Workshop</span>
@@ -764,7 +736,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <footer id="contact">
   <div class="footer-logo">Salon <span>AI</span></div>
   <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
-  <a href="mailto:hello@aiforeurope.eu" class="footer-email">✉️ hello@aiforeurope.eu</a>
+  <a href="mailto:franziska.wittleder@gmail.com" class="footer-email">✉️ hello@salon-ai.eu</a>
 
   <div class="footer-meta">
     <div class="footer-credits">
@@ -964,7 +936,8 @@ window.buildSkills = function(lang) {
 
     var oldCol = colData('old');
     var nowCol = colData('now');
-    var euCol  = colData('eu');
+    var euColRaw = colData('eu');
+    var euCol  = { time: euColRaw.time, steps: euColRaw.steps.slice(0, 3) };
 
     container.innerHTML += '\
       <div class="skill-item open" id="skill-' + i + '">\
