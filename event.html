@@ -4,415 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title id="page-title">KI Dinner — Salon AI</title>
-  <meta name="description" id="page-desc" content="Ein Abend mit KI, Essen & echten Gesprächen." />
-
-  <!-- Open Graph for WhatsApp / iMessage preview -->
-  <meta property="og:title" id="og-title" content="KI Dinner — Salon AI" />
-  <meta property="og:description" id="og-desc" content="Wir bauen unseren eigenen KI-Assistenten — Essen & Drinks inklusive." />
+  <meta id="og-title" property="og:title" content="KI Dinner — Salon AI" />
+  <meta id="og-desc" property="og:description" content="Hands-on KI-Workshop im Abendformat. Essen & Drinks inklusive." />
   <meta property="og:image" content="https://www.salon-ai.eu/og-dinner.jpg" />
-  <meta property="og:type" content="event" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --navy: #1B2E4A;
-      --sky-deep: #0057B8;
+      --sky-deep: #7A9DB8;
       --sky-light: #E8F2FA;
-      --gold: #F5C842;
-      --white: #FFFFFF;
-      --text: #1a1a2e;
-      --muted: #5a6a7a;
-      --radius: 16px;
+      --gold: #D4A84B;
+      --accent: #003399;
+      --white-warm: #FAF9F7;
+      --border: #C5D5E4;
+      --muted: #5F7080;
     }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white-warm); color: var(--navy); min-height: 100vh; }
 
-    body {
-      font-family: 'Space Grotesk', sans-serif;
-      background: #f4f7fb;
-      color: var(--text);
-      min-height: 100vh;
-    }
+    /* NAV */
+    nav { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-link { font-size: 12px; color: var(--muted); text-decoration: none; }
+    .nav-link:hover { color: var(--navy); }
 
-    /* ── NAV ── */
-    nav {
-      background: var(--navy);
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-logo {
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 900;
-      font-size: 1.1rem;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: 0.04em;
-    }
-    .nav-logo span { color: var(--gold); }
-    .nav-link {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.7);
-      text-decoration: none;
-    }
-    .nav-link:hover { color: #fff; }
+    /* HERO */
+    .hero { background: var(--navy); padding: 48px 24px 40px; text-align: center; }
+    .host-badge { display: inline-flex; align-items: center; gap: 7px; background: rgba(212,168,75,0.15); border: 1px solid rgba(212,168,75,0.35); border-radius: 999px; padding: 5px 14px; font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 18px; letter-spacing: 0.3px; }
+    .event-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+    .event-title .host-name { color: var(--gold); }
 
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, #0d2040 100%);
-      padding: 50px 24px 44px;
-      text-align: center;
-      color: #fff;
-    }
+    .host-msg-block { font-family: 'Caveat', cursive; font-size: clamp(1.1rem, 3.5vw, 1.35rem); color: rgba(255,255,255,0.88); line-height: 1.6; max-width: 560px; margin: 0 auto 24px; background: rgba(255,255,255,0.06); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 0 10px 10px 0; text-align: left; }
 
-    .host-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(245,200,66,0.15);
-      border: 1px solid rgba(245,200,66,0.4);
-      border-radius: 999px;
-      padding: 6px 16px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--gold);
-      margin-bottom: 20px;
-      letter-spacing: 0.03em;
-    }
+    .date-chips { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+    .date-chip { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); border-radius: 999px; padding: 6px 13px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.88); }
 
-    .event-title {
-      font-family: 'Orbitron', sans-serif;
-      font-size: clamp(1.5rem, 5vw, 2.4rem);
-      font-weight: 900;
-      line-height: 1.15;
-      margin-bottom: 14px;
-    }
-    .event-title .host-name {
-      color: var(--gold);
-    }
+    /* MAIN */
+    main { max-width: 620px; margin: 0 auto; padding: 28px 20px 80px; }
 
-    .host-msg {
-      font-family: 'Caveat', cursive;
-      font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-      color: rgba(255,255,255,0.9);
-      line-height: 1.55;
-      max-width: 580px;
-      margin: 0 auto 28px;
-      background: rgba(255,255,255,0.06);
-      border-left: 3px solid var(--gold);
-      padding: 14px 18px;
-      border-radius: 0 12px 12px 0;
-      text-align: left;
-    }
+    /* CARD */
+    .card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 26px 28px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .card-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 6px; display: flex; align-items: center; gap: 7px; }
+    .card-label::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 18px; }
 
-    /* ── DATE STRIP ── */
-    .date-strip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 4px;
-    }
-    .date-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.9);
-    }
+    /* INCLUDE GRID */
+    .include-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 20px; }
+    .include-chip { display: flex; align-items: center; gap: 8px; background: var(--sky-light); border-radius: 9px; padding: 10px 12px; font-size: 12.5px; font-weight: 600; color: var(--navy); }
 
-    /* ── MAIN CONTENT ── */
-    main {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 32px 20px 80px;
-    }
+    /* DETAIL ROWS */
+    .detail-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; }
+    .detail-icon { font-size: 1.1rem; flex-shrink: 0; width: 26px; text-align: center; margin-top: 1px; }
+    .detail-text strong { display: block; font-weight: 700; font-size: 13.5px; color: var(--navy); }
+    .detail-text span { font-size: 12px; color: var(--muted); }
 
-    /* ── TICKET CARD ── */
-    .ticket-card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 28px;
-      margin-bottom: 20px;
-      border: 1px solid rgba(0,0,0,0.07);
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    }
+    /* DIVIDER */
+    .divider { height: 1px; background: var(--border); margin: 18px 0; }
 
-    .ticket-heading {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 18px;
-    }
-
-    .detail-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .detail-icon {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      width: 28px;
-      text-align: center;
-      margin-top: 1px;
-    }
-    .detail-text strong {
-      display: block;
-      font-weight: 700;
-      color: var(--navy);
-      font-size: 0.95rem;
-    }
-    .detail-text span {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .divider {
-      height: 1px;
-      background: rgba(0,0,0,0.07);
-      margin: 18px 0;
-    }
-
-    .ticket-btn {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      background: var(--sky-deep);
-      color: #fff;
-      border: none;
-      border-radius: 12px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background 0.15s, transform 0.1s;
-      margin-bottom: 10px;
-    }
+    /* TICKET BUTTON */
+    .ticket-btn { display: block; width: 100%; padding: 15px; background: var(--accent); color: #fff; border: none; border-radius: 40px; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; transition: background 0.15s; margin-bottom: 9px; letter-spacing: 0.2px; }
     .ticket-btn:hover { background: var(--navy); }
-    .ticket-btn:active { transform: scale(0.98); }
+    .ticket-note { font-size: 11.5px; color: var(--muted); text-align: center; line-height: 1.5; }
 
-    .ticket-note {
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-align: center;
-      line-height: 1.5;
-    }
+    /* REQUIREMENT */
+    .req-box { background: rgba(255,248,220,0.7); border: 1px solid rgba(180,140,0,0.2); border-radius: 10px; padding: 13px 16px; font-size: 12.5px; color: #6b4c00; line-height: 1.6; margin-bottom: 16px; }
+    .req-box strong { color: #4a3200; }
 
-    /* ── INCLUDE CHIPS ── */
-    .include-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 18px;
-    }
-    .include-chip {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--sky-light);
-      border-radius: 10px;
-      padding: 10px 12px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--navy);
-    }
+    /* ABOUT CARD */
+    .card p { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+    .franzi-row { display: flex; align-items: center; gap: 12px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .franzi-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .franzi-info strong { display: block; font-weight: 700; font-size: 13px; color: var(--navy); }
+    .franzi-info span { font-size: 11.5px; color: var(--muted); }
+    .franzi-info a { color: var(--accent); text-decoration: none; }
 
-    /* ── ABOUT SECTION ── */
-    .about-card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 28px;
-      margin-bottom: 20px;
-      border: 1px solid rgba(0,0,0,0.07);
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    }
-
-    .about-card h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 14px;
-    }
-
-    .about-card p {
-      font-size: 0.92rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-    .about-card p:last-child { margin-bottom: 0; }
-
-    .franzi-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(0,0,0,0.07);
-    }
-    .franzi-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--navy);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-    .franzi-info strong {
-      display: block;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--navy);
-    }
-    .franzi-info span {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    /* ── REQUIREMENT BOX ── */
-    .req-box {
-      background: #fff8e6;
-      border: 1px solid rgba(245,200,66,0.4);
-      border-radius: 12px;
-      padding: 16px 18px;
-      font-size: 0.88rem;
-      color: #7a5c00;
-      line-height: 1.55;
-      margin-bottom: 20px;
-    }
-    .req-box strong { color: #5a3e00; }
-
-    /* ── SHARE ── */
-    .share-card {
-      background: var(--navy);
-      border-radius: var(--radius);
-      padding: 24px;
-      text-align: center;
-      color: #fff;
-      margin-bottom: 20px;
-    }
-    .share-card h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .share-card p {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 16px;
-    }
-    .share-link-box {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 10px;
-      padding: 10px 14px;
-    }
-    .share-link-url {
-      flex: 1;
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.8);
-      word-break: break-all;
-      text-align: left;
-    }
-    .share-copy-btn {
-      flex-shrink: 0;
-      padding: 7px 13px;
-      background: var(--gold);
-      color: var(--navy);
-      border: none;
-      border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
+    /* SHARE */
+    .share-card { background: var(--navy); border-radius: 14px; padding: 22px 24px; text-align: center; margin-bottom: 16px; }
+    .share-card h2 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .share-card p { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
+    .share-link-row { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border-radius: 9px; padding: 9px 12px; }
+    .share-link-url { flex: 1; font-size: 11px; color: rgba(255,255,255,0.75); word-break: break-all; text-align: left; font-family: monospace; }
+    .share-copy-btn { flex-shrink: 0; padding: 6px 12px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; }
     .share-copy-btn.copied { background: #2a9d5c; color: #fff; }
 
-    /* ── SOLD OUT STATE ── */
-    .sold-out-banner {
-      display: none;
-      background: #ffe8e8;
-      border: 1px solid #f5a0a0;
-      border-radius: 12px;
-      padding: 16px 20px;
-      text-align: center;
-      color: #b00020;
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 16px;
-    }
+    /* NOT FOUND */
+    .not-found { display: none; text-align: center; padding: 60px 24px; }
+    .not-found h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--navy); margin-bottom: 10px; }
+    .not-found p { font-size: 13px; color: var(--muted); }
 
-    /* ── NOT FOUND ── */
-    .not-found {
-      display: none;
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--muted);
-    }
-    .not-found h2 { color: var(--navy); margin-bottom: 10px; }
+    /* FOOTER */
+    footer { text-align: center; padding: 24px; font-size: 11.5px; color: var(--muted); border-top: 1px solid var(--border); }
+    footer a { color: var(--accent); text-decoration: none; }
 
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 0.8rem;
-      color: var(--muted);
+    @media(max-width: 480px) {
+      .include-grid { grid-template-columns: 1fr; }
+      .card { padding: 20px; }
     }
-    footer a { color: var(--sky-deep); }
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">SALON <span>AI</span></a>
+  <a href="/" class="nav-logo">Salon <span>AI</span></a>
   <a href="/" class="nav-link">← salon-ai.eu</a>
 </nav>
 
-<!-- HERO — filled by JS -->
+<!-- HERO -->
 <div class="hero" id="hero">
-  <div class="host-badge" id="host-badge">👩‍💼 <span id="badge-name">Dein Name</span> organisiert diesen Abend</div>
-  <h1 class="event-title"><span id="hero-host-name" class="host-name"></span>'s<br>KI Dinner · Salon AI</h1>
-  <div class="host-msg" id="host-msg-display"></div>
-  <div class="date-strip">
-    <div class="date-chip">📅 <span id="date-label"></span></div>
+  <div class="host-badge" id="host-badge">👩 <span id="badge-name">Host</span> organisiert diesen Abend</div>
+  <h1 class="event-title"><span id="hero-host" class="host-name"></span>'s<br>KI Dinner · Salon AI</h1>
+  <div class="host-msg-block" id="host-msg-display"></div>
+  <div class="date-chips">
+    <div class="date-chip">📅 <span id="chip-date"></span></div>
     <div class="date-chip">🕕 18:00 Einlass · 18:15 Start</div>
-    <div class="date-chip">📍 Luitpoldblock, München</div>
+    <div class="date-chip">📍 München</div>
   </div>
 </div>
 
-<!-- NOT FOUND (shown if params missing) -->
 <div class="not-found" id="not-found">
   <h2>Kein Event gefunden</h2>
-  <p>Dieser Link scheint nicht vollständig zu sein.<br>Bitte frag die Person, die dich eingeladen hat, nach dem richtigen Link.</p>
+  <p>Dieser Link scheint unvollständig zu sein. Bitte frag die Person, die dich eingeladen hat.</p>
 </div>
 
-<!-- MAIN CONTENT -->
 <main id="main-content">
 
-  <div class="sold-out-banner" id="sold-out-banner">
-    😔 Dieser Abend ist leider ausgebucht. Schreib <a href="mailto:franziska.wittleder@gmail.com">Franziska</a> — vielleicht gibt es einen weiteren Termin.
-  </div>
-
   <!-- TICKET CARD -->
-  <div class="ticket-card">
-    <p class="ticket-heading">🎟️ Dein Ticket</p>
+  <div class="card">
+    <div class="card-label">Dein Ticket</div>
+    <h2>Was dich erwartet</h2>
 
     <div class="include-grid">
       <div class="include-chip">🍽️ Dinner inklusive</div>
@@ -425,7 +146,7 @@
       <div class="detail-icon">📅</div>
       <div class="detail-text">
         <strong id="ticket-date"></strong>
-        <span>18:00 Einlass · 18:15 Start</span>
+        <span>18:00 Einlass · 18:15 Start · ca. 22:00 Ende</span>
       </div>
     </div>
     <div class="detail-row">
@@ -439,42 +160,42 @@
       <div class="detail-icon">💶</div>
       <div class="detail-text">
         <strong>78€ pro Person</strong>
-        <span>Dinner & Drinks inklusive</span>
+        <span>Dinner &amp; Drinks inklusive · Kein Seminarraum</span>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <a href="#" id="ticket-btn" class="ticket-btn" target="_blank" rel="noopener">🎟️ Jetzt Ticket kaufen — 78€</a>
-    <p class="ticket-note">Bezahlung über Stripe (sicher). Nur kleiner Kreis — schnell sein lohnt sich.</p>
+    <p class="ticket-note">Bezahlung über Stripe (sicher) · Kleiner Kreis — schnell sein lohnt sich.</p>
   </div>
 
-  <!-- REQUIREMENT BOX -->
+  <!-- REQUIREMENT -->
   <div class="req-box">
-    💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account erforderlich</strong> (ChatGPT oder Claude, ~20€/Mo)<br>
-    <span style="opacity:0.8">Pro-Account noch nicht? Kein Problem — kann auch vor Ort eingerichtet werden.</span>
+    💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account erforderlich</strong> (ChatGPT, Claude, Gemini, Mistral — dein KI-Tool deiner Wahl, ca. 20€/Mo)<br>
+    <span style="opacity:0.85">Noch keinen Pro-Account? Kann auch vor Ort eingerichtet werden — Kreditkarte mitbringen.</span>
   </div>
 
   <!-- ABOUT -->
-  <div class="about-card">
-    <h2>Was erwartet dich?</h2>
-    <p>In einem Abend baust du deinen eigenen KI-Assistenten — Schritt für Schritt, ohne Vorkenntnisse. Kein Vortrag, kein PowerPoint. Wir machen es gemeinsam.</p>
-    <p>Im zweiten Teil schauen wir: Was kann dein KI-Assistent für Europa tun? Von Bürger-Initiativen bis zu europäischen Fördertöpfen — konkret, direkt anwendbar.</p>
-
+  <div class="card">
+    <div class="card-label">Der Abend</div>
+    <h2>Was passiert an diesem Abend?</h2>
+    <p><strong>Teil 1 — KI für dich:</strong> Du baust deinen eigenen KI-Assistenten — Schritt für Schritt, ohne Vorkenntnisse, ohne Coding. Kein Zuschauen, du baust selbst.</p>
+    <p><strong>Teil 2 — KI für Europa:</strong> Du nutzt deinen fertigen Agenten für eine konkrete EU-Aufgabe. Von MEP-Kontaktierung bis Förderanträgen — mit echtem Ergebnis zum Mitnehmen.</p>
     <div class="franzi-row">
       <div class="franzi-avatar">✨</div>
       <div class="franzi-info">
         <strong>Franziska Wittleder</strong>
-        <span>Hält den Abend · <a href="mailto:franziska.wittleder@gmail.com" style="color:var(--sky-deep)">Fragen? Einfach schreiben.</a></span>
+        <span>Hält den Abend · <a href="https://www.linkedin.com/in/franziska-wittleder/?locale=en" target="_blank">LinkedIn</a> · <a href="mailto:franziska.wittleder@gmail.com">Fragen? Schreib uns.</a></span>
       </div>
     </div>
   </div>
 
   <!-- SHARE -->
   <div class="share-card">
-    <h2>Link teilen</h2>
-    <p>Schick diesen Link deinen Leuten — wer zuerst kommt, mahlt zuerst.</p>
-    <div class="share-link-box">
+    <h2>Link weiterteilen</h2>
+    <p>Schick deinen Freund:innen diesen Link — wer zuerst kauft, ist dabei.</p>
+    <div class="share-link-row">
       <span class="share-link-url" id="share-url"></span>
       <button class="share-copy-btn" id="share-copy-btn" onclick="copyShareLink()">Kopieren</button>
     </div>
@@ -487,57 +208,55 @@
 </footer>
 
 <script>
-  // ── Stripe links per date ──────────────────────────────────────────────────
-  // FRANZISKA: Erstelle in deinem Stripe-Dashboard für jeden Termin einen
-  // separaten Payment Link mit Inventory-Cap (= max. Kapazität).
-  // Dann ersetze die Platzhalter unten:
-  var STRIPE_LINKS = {
+  // Stripe links per date
+  var STRIPE = {
     '19mai': 'https://buy.stripe.com/bJe6oH2sc1uCafoaiGfbq03',
     '21mai': 'https://buy.stripe.com/7sY5kD1o8ehofzI76ufbq04',
     '26mai': 'https://buy.stripe.com/aFaeVd0k42yGgDMbmKfbq05',
   };
-
   var DATE_LABELS = {
     '19mai': 'Dienstag, 19. Mai 2026',
     '21mai': 'Donnerstag, 21. Mai 2026',
     '26mai': 'Dienstag, 26. Mai 2026',
   };
 
-  // ── Parse URL params ───────────────────────────────────────────────────────
-  var params = new URLSearchParams(window.location.search);
-  var dateCode  = params.get('d') || '';
-  var hostName  = params.get('h') || '';
-  var hostEmail = params.get('e') || '';
-  var hostMsg   = params.get('msg') || '';
+  // Message template — same as host.html, generated from params
+  var TPL = 'Hey! Ich hoste am [DATUM] ein kleines Dinner zum Thema AI & Zukunft. ' +
+    'Meine Freundin Franziska (Expertin & Gründerin — linkedin.com/in/franziska-wittleder) ' +
+    'moderiert den Abend und gibt uns exklusive Insights, was gerade wirklich hinter den Kulissen passiert. 🚀\n\n' +
+    'Jeder muss seinen Laptop mitbringen — wir bauen erst unseren eigenen KI-Agenten und nutzen ihn dann, ' +
+    'um gemeinsam etwas für Europa zu bauen.\n\n' +
+    'Hättest du Lust auf guten Wein und Deep Talk? Wir sind ein kleiner Kreis. ' +
+    'Sag fix zu, indem du ein Ticket kaufst. Der Abend kommt erst zustande wenn wir min. 12 sind.\n\n' +
+    'Herzlich, [NAME]';
 
+  var params      = new URLSearchParams(window.location.search);
+  var dateCode    = params.get('d') || '';
+  var hostName    = params.get('h') || '';
   var dateLabel   = DATE_LABELS[dateCode] || '';
-  var stripeLink  = STRIPE_LINKS[dateCode] || '#';
+  var stripeLink  = STRIPE[dateCode] || '#';
 
-  // ── Validate ───────────────────────────────────────────────────────────────
   if (!dateCode || !hostName || !dateLabel) {
     document.getElementById('hero').style.display = 'none';
     document.getElementById('main-content').style.display = 'none';
     document.getElementById('not-found').style.display = 'block';
   } else {
-    // ── Populate page ──────────────────────────────────────────────────────
-    // Browser tab + OG
-    document.getElementById('page-title').textContent    = hostName + "'s KI Dinner · Salon AI";
-    document.getElementById('og-title').content          = hostName + "'s KI Dinner · Salon AI";
-    document.getElementById('og-desc').content           = hostMsg || "Wir bauen unseren eigenen KI-Assistenten — Essen & Drinks inklusive.";
+    // Populate meta
+    document.getElementById('page-title').textContent = hostName + "'s KI Dinner · Salon AI";
+    document.getElementById('og-title').content       = hostName + "'s KI Dinner · Salon AI";
 
-    // Hero
-    document.getElementById('badge-name').textContent       = hostName;
-    document.getElementById('hero-host-name').textContent   = hostName;
-    document.getElementById('host-msg-display').textContent = hostMsg || "Hey Leute! Ich organisiere ein KI Dinner — Franziska hält den Abend. Wer hat Bock?";
-    document.getElementById('date-label').textContent       = dateLabel;
+    // Populate hero
+    document.getElementById('badge-name').textContent    = hostName;
+    document.getElementById('hero-host').textContent     = hostName;
+    document.getElementById('chip-date').textContent     = dateLabel;
+    document.getElementById('host-msg-display').textContent = TPL.replace('[DATUM]', dateLabel).replace('[NAME]', hostName);
 
-    // Ticket card
+    // Populate ticket card
     document.getElementById('ticket-date').textContent = dateLabel;
     document.getElementById('ticket-btn').href         = stripeLink;
 
-    // Share URL (clean current URL)
-    var shareUrl = window.location.href;
-    document.getElementById('share-url').textContent   = shareUrl;
+    // Share URL
+    document.getElementById('share-url').textContent = window.location.href;
   }
 
   function copyShareLink() {
@@ -550,6 +269,5 @@
     });
   }
 </script>
-
 </body>
 </html>
