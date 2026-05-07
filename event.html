@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">KI Dinner — Salon AI</title>
+  <meta name="description" id="page-desc" content="Ein Abend mit KI, Essen & echten Gesprächen." />
+
+  <!-- Open Graph for WhatsApp / iMessage preview -->
+  <meta property="og:title" id="og-title" content="KI Dinner — Salon AI" />
+  <meta property="og:description" id="og-desc" content="Wir bauen unseren eigenen KI-Assistenten — Essen & Drinks inklusive." />
+  <meta property="og:image" content="https://www.salon-ai.eu/og-dinner.jpg" />
+  <meta property="og:type" content="event" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1B2E4A;
+      --sky-deep: #0057B8;
+      --sky-light: #E8F2FA;
+      --gold: #F5C842;
+      --white: #FFFFFF;
+      --text: #1a1a2e;
+      --muted: #5a6a7a;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: #f4f7fb;
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--navy);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-link {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    .nav-link:hover { color: #fff; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2040 100%);
+      padding: 50px 24px 44px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .host-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,200,66,0.15);
+      border: 1px solid rgba(245,200,66,0.4);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 20px;
+      letter-spacing: 0.03em;
+    }
+
+    .event-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.5rem, 5vw, 2.4rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .event-title .host-name {
+      color: var(--gold);
+    }
+
+    .host-msg {
+      font-family: 'Caveat', cursive;
+      font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+      color: rgba(255,255,255,0.9);
+      line-height: 1.55;
+      max-width: 580px;
+      margin: 0 auto 28px;
+      background: rgba(255,255,255,0.06);
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      border-radius: 0 12px 12px 0;
+      text-align: left;
+    }
+
+    /* ── DATE STRIP ── */
+    .date-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .date-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ── MAIN CONTENT ── */
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    /* ── TICKET CARD ── */
+    .ticket-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(0,0,0,0.07);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .ticket-heading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 18px;
+    }
+
+    .detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .detail-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      width: 28px;
+      text-align: center;
+      margin-top: 1px;
+    }
+    .detail-text strong {
+      display: block;
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+    .detail-text span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(0,0,0,0.07);
+      margin: 18px 0;
+    }
+
+    .ticket-btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: var(--sky-deep);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      margin-bottom: 10px;
+    }
+    .ticket-btn:hover { background: var(--navy); }
+    .ticket-btn:active { transform: scale(0.98); }
+
+    .ticket-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* ── INCLUDE CHIPS ── */
+    .include-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .include-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sky-light);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* ── ABOUT SECTION ── */
+    .about-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(0,0,0,0.07);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .about-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .about-card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .about-card p:last-child { margin-bottom: 0; }
+
+    .franzi-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+    .franzi-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .franzi-info strong {
+      display: block;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+    .franzi-info span {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ── REQUIREMENT BOX ── */
+    .req-box {
+      background: #fff8e6;
+      border: 1px solid rgba(245,200,66,0.4);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 0.88rem;
+      color: #7a5c00;
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+    .req-box strong { color: #5a3e00; }
+
+    /* ── SHARE ── */
+    .share-card {
+      background: var(--navy);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .share-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .share-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+    }
+    .share-link-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+    .share-link-url {
+      flex: 1;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.8);
+      word-break: break-all;
+      text-align: left;
+    }
+    .share-copy-btn {
+      flex-shrink: 0;
+      padding: 7px 13px;
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      border-radius: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .share-copy-btn.copied { background: #2a9d5c; color: #fff; }
+
+    /* ── SOLD OUT STATE ── */
+    .sold-out-banner {
+      display: none;
+      background: #ffe8e8;
+      border: 1px solid #f5a0a0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      color: #b00020;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    /* ── NOT FOUND ── */
+    .not-found {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+    .not-found h2 { color: var(--navy); margin-bottom: 10px; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--sky-deep); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">SALON <span>AI</span></a>
+  <a href="/" class="nav-link">← salon-ai.eu</a>
+</nav>
+
+<!-- HERO — filled by JS -->
+<div class="hero" id="hero">
+  <div class="host-badge" id="host-badge">👩‍💼 <span id="badge-name">Dein Name</span> organisiert diesen Abend</div>
+  <h1 class="event-title"><span id="hero-host-name" class="host-name"></span>'s<br>KI Dinner · Salon AI</h1>
+  <div class="host-msg" id="host-msg-display"></div>
+  <div class="date-strip">
+    <div class="date-chip">📅 <span id="date-label"></span></div>
+    <div class="date-chip">🕕 18:00 Einlass · 18:15 Start</div>
+    <div class="date-chip">📍 Luitpoldblock, München</div>
+  </div>
+</div>
+
+<!-- NOT FOUND (shown if params missing) -->
+<div class="not-found" id="not-found">
+  <h2>Kein Event gefunden</h2>
+  <p>Dieser Link scheint nicht vollständig zu sein.<br>Bitte frag die Person, die dich eingeladen hat, nach dem richtigen Link.</p>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="main-content">
+
+  <div class="sold-out-banner" id="sold-out-banner">
+    😔 Dieser Abend ist leider ausgebucht. Schreib <a href="mailto:franziska.wittleder@gmail.com">Franziska</a> — vielleicht gibt es einen weiteren Termin.
+  </div>
+
+  <!-- TICKET CARD -->
+  <div class="ticket-card">
+    <p class="ticket-heading">🎟️ Dein Ticket</p>
+
+    <div class="include-grid">
+      <div class="include-chip">🍽️ Dinner inklusive</div>
+      <div class="include-chip">🥂 Drinks inklusive</div>
+      <div class="include-chip">👩‍💻 Hands-on Workshop</div>
+      <div class="include-chip">🤖 Eigener KI-Assistent</div>
+    </div>
+
+    <div class="detail-row">
+      <div class="detail-icon">📅</div>
+      <div class="detail-text">
+        <strong id="ticket-date"></strong>
+        <span>18:00 Einlass · 18:15 Start</span>
+      </div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon">📍</div>
+      <div class="detail-text">
+        <strong>Luitpoldblock, München</strong>
+        <span>Genaue Adresse nach Ticketkauf</span>
+      </div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon">💶</div>
+      <div class="detail-text">
+        <strong>78€ pro Person</strong>
+        <span>Dinner & Drinks inklusive</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <a href="#" id="ticket-btn" class="ticket-btn" target="_blank" rel="noopener">🎟️ Jetzt Ticket kaufen — 78€</a>
+    <p class="ticket-note">Bezahlung über Stripe (sicher). Nur kleiner Kreis — schnell sein lohnt sich.</p>
+  </div>
+
+  <!-- REQUIREMENT BOX -->
+  <div class="req-box">
+    💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account erforderlich</strong> (ChatGPT oder Claude, ~20€/Mo)<br>
+    <span style="opacity:0.8">Pro-Account noch nicht? Kein Problem — kann auch vor Ort eingerichtet werden.</span>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about-card">
+    <h2>Was erwartet dich?</h2>
+    <p>In einem Abend baust du deinen eigenen KI-Assistenten — Schritt für Schritt, ohne Vorkenntnisse. Kein Vortrag, kein PowerPoint. Wir machen es gemeinsam.</p>
+    <p>Im zweiten Teil schauen wir: Was kann dein KI-Assistent für Europa tun? Von Bürger-Initiativen bis zu europäischen Fördertöpfen — konkret, direkt anwendbar.</p>
+
+    <div class="franzi-row">
+      <div class="franzi-avatar">✨</div>
+      <div class="franzi-info">
+        <strong>Franziska Wittleder</strong>
+        <span>Hält den Abend · <a href="mailto:franziska.wittleder@gmail.com" style="color:var(--sky-deep)">Fragen? Einfach schreiben.</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-card">
+    <h2>Link teilen</h2>
+    <p>Schick diesen Link deinen Leuten — wer zuerst kommt, mahlt zuerst.</p>
+    <div class="share-link-box">
+      <span class="share-link-url" id="share-url"></span>
+      <button class="share-copy-btn" id="share-copy-btn" onclick="copyShareLink()">Kopieren</button>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <a href="/">www.salon-ai.eu</a> · Ein Abend der sich lohnt. · <a href="mailto:franziska.wittleder@gmail.com">Kontakt</a>
+</footer>
+
+<script>
+  // ── Stripe links per date ──────────────────────────────────────────────────
+  // FRANZISKA: Erstelle in deinem Stripe-Dashboard für jeden Termin einen
+  // separaten Payment Link mit Inventory-Cap (= max. Kapazität).
+  // Dann ersetze die Platzhalter unten:
+  var STRIPE_LINKS = {
+    '19mai': 'https://buy.stripe.com/bJe6oH2sc1uCafoaiGfbq03',
+    '21mai': 'https://buy.stripe.com/7sY5kD1o8ehofzI76ufbq04',
+    '26mai': 'https://buy.stripe.com/aFaeVd0k42yGgDMbmKfbq05',
+  };
+
+  var DATE_LABELS = {
+    '19mai': 'Dienstag, 19. Mai 2026',
+    '21mai': 'Donnerstag, 21. Mai 2026',
+    '26mai': 'Dienstag, 26. Mai 2026',
+  };
+
+  // ── Parse URL params ───────────────────────────────────────────────────────
+  var params = new URLSearchParams(window.location.search);
+  var dateCode  = params.get('d') || '';
+  var hostName  = params.get('h') || '';
+  var hostEmail = params.get('e') || '';
+  var hostMsg   = params.get('msg') || '';
+
+  var dateLabel   = DATE_LABELS[dateCode] || '';
+  var stripeLink  = STRIPE_LINKS[dateCode] || '#';
+
+  // ── Validate ───────────────────────────────────────────────────────────────
+  if (!dateCode || !hostName || !dateLabel) {
+    document.getElementById('hero').style.display = 'none';
+    document.getElementById('main-content').style.display = 'none';
+    document.getElementById('not-found').style.display = 'block';
+  } else {
+    // ── Populate page ──────────────────────────────────────────────────────
+    // Browser tab + OG
+    document.getElementById('page-title').textContent    = hostName + "'s KI Dinner · Salon AI";
+    document.getElementById('og-title').content          = hostName + "'s KI Dinner · Salon AI";
+    document.getElementById('og-desc').content           = hostMsg || "Wir bauen unseren eigenen KI-Assistenten — Essen & Drinks inklusive.";
+
+    // Hero
+    document.getElementById('badge-name').textContent       = hostName;
+    document.getElementById('hero-host-name').textContent   = hostName;
+    document.getElementById('host-msg-display').textContent = hostMsg || "Hey Leute! Ich organisiere ein KI Dinner — Franziska hält den Abend. Wer hat Bock?";
+    document.getElementById('date-label').textContent       = dateLabel;
+
+    // Ticket card
+    document.getElementById('ticket-date').textContent = dateLabel;
+    document.getElementById('ticket-btn').href         = stripeLink;
+
+    // Share URL (clean current URL)
+    var shareUrl = window.location.href;
+    document.getElementById('share-url').textContent   = shareUrl;
+  }
+
+  function copyShareLink() {
+    var url = document.getElementById('share-url').textContent;
+    navigator.clipboard.writeText(url).then(function() {
+      var btn = document.getElementById('share-copy-btn');
+      btn.textContent = '✓ Kopiert!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = 'Kopieren'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+</script>
+
+</body>
+</html>
