@@ -88,6 +88,7 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .main-content { padding: 32px 24px 80px; max-width: 1080px; margin: 0 auto; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
 @media(max-width: 800px) { .two-col { grid-template-columns: 1fr; } }
+.single-col { display: block; max-width: 700px; }
 
 /* Tile shared */
 .tile { padding: 28px; }
@@ -549,7 +550,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     </div>
     <p class="eyebrow" data-i18n="hero_eyebrow">Pro EU Event Series</p>
     <p class="eyebrow-sub" data-i18n="hero_sub">Starting in Germany, expanding across the EU soon.</p>
-    <h1 data-i18n="hero_h1">A hands-on evening: build your own AI assistant, then use it for Europe.</h1>
+    <h1 data-i18n-html="hero_h1">A hands-on evening: build your own AI assistant, <em style="color:var(--sky-deep);font-style:italic;">then use it for Europe.</em></h1>
   </div>
 </section>
 
@@ -578,7 +579,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
-  <div class="two-col" id="events">
+  <div class="single-col" id="events">
 
     <!-- ── LEFT: Events ──────────────────────────────────────── -->
     <div class="card-surface tile">
@@ -679,7 +680,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </div>
     </div>
 
-    <!-- ── RIGHT: Resources ──────────────────────────────────── -->
+    <!-- ── RIGHT: Resources (hidden — link later) ────────────
     <div class="card-surface tile monster-tile" id="guide">
       <div class="tile-label"><span class="dot"></span>Resources</div>
       <h2 data-i18n="resources_h2">Resources</h2>
@@ -712,6 +713,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </a>
 
     </div>
+    ────────────────────────────────────────────────────── -->
 
   </div>
 </main>
