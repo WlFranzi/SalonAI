@@ -66,8 +66,9 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 }
 .eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 500; color: var(--muted-blue); margin-bottom: 4px; }
 .eyebrow-sub { font-size: 12px; color: var(--sky-deep); font-weight: 500; margin-bottom: 24px; letter-spacing: 0.3px; }
-.hero h1 { font-size: clamp(1.9rem, 4.5vw, 3.2rem); line-height: 1.15; font-weight: 700; color: var(--navy); margin-bottom: 24px; }
+.hero h1 { font-size: clamp(1.9rem, 4.5vw, 3.2rem); line-height: 1.15; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
 .hero h1 em { color: var(--sky-deep); font-style: italic; }
+.hero-subtitle { font-size: 13.5px; color: var(--navy); opacity: 0.72; font-weight: 400; line-height: 1.6; max-width: 500px; margin: 0 auto 20px; }
 
 /* Stats bar */
 .stats-bar { background: var(--navy); padding: 0 24px; }
@@ -126,6 +127,31 @@ nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; d
 .past-event-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; }
 .past-event-chip { font-size: 9px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(0,51,153,0.07); color: var(--sky-deep); border: 1px solid rgba(0,51,153,0.13); white-space: nowrap; }
 .past-event-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+/* Event detail chips (format, size, price) */
+.event-details { display: flex; gap: 6px; flex-wrap: wrap; padding: 0 12px 8px 60px; }
+.event-detail-chip { font-size: 10px; color: var(--muted-blue); background: rgba(200,221,240,0.4); border-radius: 999px; padding: 2px 8px; border: 1px solid var(--border); }
+
+/* Register interest link */
+.register-interest { font-size: 10px; color: var(--sky-deep); text-decoration: underline; cursor: pointer; padding: 0 12px 8px 60px; display: block; }
+.register-interest:hover { color: var(--navy); }
+
+/* Social proof strip */
+.social-proof { background: rgba(255,255,255,0.6); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 24px; }
+.social-proof-inner { max-width: 1080px; margin: 0 auto; }
+.proof-attendees { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; font-size: 11px; color: var(--muted-blue); }
+.proof-attendees strong { color: var(--navy); font-weight: 600; }
+.proof-divider { color: var(--border); }
+.testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media(max-width:720px) { .testimonials { grid-template-columns: 1fr; } }
+.testimonial-card { background: var(--white-warm); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
+.testimonial-quote { font-size: 12.5px; color: var(--navy); line-height: 1.6; margin-bottom: 10px; font-style: italic; }
+.testimonial-quote::before { content: '"'; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.3em; margin-right: 2px; }
+.testimonial-quote::after  { content: '"'; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.3em; margin-left: 2px; }
+.testimonial-author { font-size: 10px; font-weight: 600; color: var(--muted-blue); text-transform: uppercase; letter-spacing: 0.8px; }
+
+/* Bold first step in EU column — helps skimming */
+.s-col-eu .s-step:first-child p { font-weight: 600; color: var(--navy); }
 
 /* Photo preview button */
 @keyframes photo-pulse {
@@ -526,6 +552,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <h1 data-i18n-html="hero_h1">
       If all of Europe's dreams came true… would they just change Europe <span style="color:var(--sky-deep);"><em>or would they change the world?</em></span>
     </h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">A hands-on evening: build your own AI assistant, then use it for Europe.</p>
   </div>
 </section>
 
@@ -547,6 +574,35 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <div class="stat-item">
       <div class="stat-number" data-i18n="stat_4_num">All levels</div>
       <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SOCIAL PROOF ───────────────────────────────────────────── -->
+<div class="social-proof">
+  <div class="social-proof-inner">
+    <div class="proof-attendees">
+      <strong>Previous attendees included:</strong>
+      <span class="proof-divider">·</span> startup founders
+      <span class="proof-divider">·</span> marketing leads
+      <span class="proof-divider">·</span> politicians
+      <span class="proof-divider">·</span> teachers
+      <span class="proof-divider">·</span> students
+      <span class="proof-divider">·</span> curious citizens
+    </div>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">I built my first AI assistant in under 90 minutes. Honestly didn't expect that.</p>
+        <div class="testimonial-author">Anna, Marketing Manager — Munich</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">The EU use cases were eye-opening. I never thought about using AI for citizens' rights.</p>
+        <div class="testimonial-author">Marcus, Startup Founder — Berlin</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">I'm 58 and had zero AI experience. The experts made it feel completely doable.</p>
+        <div class="testimonial-author">Renate, Teacher — Munich</div>
+      </div>
     </div>
   </div>
 </div>
@@ -574,7 +630,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">Salon AI Dinner — Munich</div>
             <div class="sub" data-i18n="munich_sub">Munich · postponed · likely May 7 or 12</div>
           </div>
-          <button class="rsvp-btn postponed">VERSCHOBEN</button>
+          <button class="rsvp-btn postponed" data-i18n="event_postponed">Postponed</button>
+        </div>
+        <div class="event-details">
+          <span class="event-detail-chip">🍽️ Dinner</span>
+          <span class="event-detail-chip">👥 ~20 people</span>
+          <span class="event-detail-chip">🆓 Free</span>
         </div>
 
         <div class="event-row">
@@ -583,7 +644,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">Salon AI Dinner — Berlin</div>
             <div class="sub" data-i18n="berlin_sub">Berlin · date coming soon</div>
           </div>
-          <button class="rsvp-btn soon" data-i18n="soon">Soon</button>
+          <a href="mailto:hello@aiforeurope.eu?subject=Berlin%20Dinner%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
+        </div>
+        <div class="event-details">
+          <span class="event-detail-chip">🍽️ Dinner</span>
+          <span class="event-detail-chip">👥 ~20 people</span>
+          <span class="event-detail-chip">🆓 Free</span>
         </div>
 
         <div class="event-row">
@@ -592,7 +658,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="name">2-Day AI Workshop — Berlin</div>
             <div class="sub">Berlin</div>
           </div>
-          <button class="rsvp-btn soon" data-i18n="soon">Soon</button>
+          <a href="mailto:hello@aiforeurope.eu?subject=Berlin%20Workshop%20August%20-%20Notify%20me" class="rsvp-btn" style="text-decoration:none;" data-i18n="notify_me">Notify me →</a>
+        </div>
+        <div class="event-details">
+          <span class="event-detail-chip">🏫 Workshop</span>
+          <span class="event-detail-chip">👥 2 days</span>
+          <span class="event-detail-chip">💶 Paid</span>
         </div>
       </div>
 
@@ -788,6 +859,31 @@ const KI_SKILLS = [  {
     old: { time: "~täglich", steps: ["Du versuchst, alles über Kindstermine, Schulinfos und Arztbesuche im Kopf zu behalten — hohe mentale Last, besonders wenn ein Elternteil den Überblick hat.","Wer holt heute ab? Fußballtraining um 17 Uhr, aber auch Arzttermin um 16:30. Die Absprache läuft über WhatsApp-Nachrichten, die im Chaos untergehen.","Wichtige Infos — Schulausflug, Medikament, Allergie — versinken in Chatnachrichten und Zetteln, die der andere Elternteil nie gesehen hat.","Mental Load liegt meistens bei einer Person: erschöpfend, unsichtbar, und ohne erkennbaren Ausweg.","Im Notfall — Kind krank, Elternteil nicht erreichbar — fehlt dem anderen alle nötigen Informationen."] },
     now: { time: "~5 Min/Tag", steps: ["Ein persönlicher Familienagent, den beide Elternteile per WhatsApp erreichen: 'Was steht diese Woche an?' — Antwort sofort, vollständig, korrekt.","Alle Termine, Medikamente, Präferenzen und Schulinfos der Kinder an einem Ort. Wer auch immer fragt, bekommt dieselbe Antwort.","'Was braucht Lena morgen für die Schule?' — der Agent erinnert rechtzeitig, schickt eine WhatsApp wenn nötig.","Wochenplan automatisch erstellt: wer fährt wohin, was muss vorbereitet sein — für beide Elternteile lesbar, ohne Koordinationsaufwand.","Mental Load wird verteilt — nicht weil jemand mehr tut, sondern weil der Agent das Erinnern übernimmt."] },
     eu: { time: "~1–2 Stunden", steps: ["Dein Kind braucht einen Spezialisten. Wartezeit lokal: 6 Monate.","Als EU-Bürger hast du das Recht, dein Kind in jedem EU-Land behandeln zu lassen — und bekommst die Kosten von deiner Krankenkasse erstattet. Das nennt sich grenzüberschreitende Gesundheitsversorgung.","Dein Agent findet den nächsten Spezialisten (Österreich: 2 Wochen Wartezeit), übersetzt die Unterlagen und schreibt den Erstattungsantrag für deine Krankenkasse.","Dein Kind wird in 2 Wochen behandelt. Du teilst den Tipp in der Eltern-WhatsApp-Gruppe. 50 Familien wussten nicht, dass dieses Recht existiert.","Die Schule schickt den Einpager an alle internationalen Familien — automatisch in 12 Sprachen übersetzt."] }
+  },
+  {
+    cat: "Bürger:in", name: "Von überwältigt zu wirksam",
+    banner: "Du verfolgst die Nachrichten, bist besorgt über Europa — aber du weißt nicht, wo du anfangen sollst. Alles fühlt sich zu groß an.",
+    old: { time: "~ständig", steps: [
+      "Du liest Artikel, schaust Dokus, diskutierst mit Freunden — aber ohne klaren nächsten Schritt.",
+      "Petitionen unterschreiben: das Einzige, was sich machbar anfühlt. Aber du fragst dich, ob es etwas bewirkt.",
+      "Du willst dich engagieren, findest aber keine Zeit zwischen Job, Familie und Alltag.",
+      "Das Gefühl: die wichtigen Entscheidungen passieren woanders, von anderen Menschen.",
+      "Informationsüberflutung: jeden Tag neue Krisen, kein Überblick, was wirklich zählt."
+    ]},
+    now: { time: "~30 Min/Woche", steps: [
+      "Du fragst deinen Agenten: 'Was passiert gerade in der EU, das mich als Bürger direkt betrifft?' — eine klare, verständliche Zusammenfassung.",
+      "Der Agent zeigt dir 3 konkrete Dinge, die du diese Woche tun kannst — basierend auf dem, was dir wichtig ist.",
+      "Du schreibst in 10 Minuten eine persönliche Nachricht an deinen lokalen Abgeordneten — der Agent hilft dir, sie überzeugend zu formulieren.",
+      "Du teilst einen gut recherchierten Fakten-Thread mit deinem Netzwerk — automatisch auf deine Sprache und Zielgruppe zugeschnitten.",
+      "Du wirst zum gut informierten Ansprechpartner in deinem Freundeskreis — mit Fakten statt Meinungen."
+    ]},
+    eu: { time: "~1–3 Tage", steps: [
+      "Die EU-Kommission eröffnet eine öffentliche Konsultation zu einem Thema, das dich betrifft — z.B. KI-Regulierung oder Mindestlohn.",
+      "Dein Agent erklärt die Fragen in verständlichem Deutsch, fasst die wichtigsten Argumente zusammen und hilft dir, eine fundierte Eingabe zu verfassen.",
+      "Du reichst deine Eingabe ein. Das dauert 20 Minuten statt zwei Tage.",
+      "Du postest das Ergebnis in deiner Community. Zehn weitere Menschen reichen eigene Eingaben ein.",
+      "Bürgerbasierte Eingaben aus Deutschland übertreffen erstmals die aus Lobbygruppen — in deiner Konsultationsrunde."
+    ]}
   }
 ];
 
@@ -810,8 +906,9 @@ de: [
     { old_time:"~halber Tag", old_steps:["Website des Wettbewerbers aufgerufen, LinkedIn durchsucht, Meta Ads Library geöffnet. Screenshots gemacht, nebeneinandergelegt.","Überschneidungen identifiziert — subjektiv, ohne Datenbasis. Nicht klar, wie gravierend die Differenzierungslücke ist.","Team in einen Brainstorming-Raum geholt. Vollgeschriebenes Whiteboard. Keine konkrete Entscheidung.","Designer für neue Landing Page-Varianten gebrieft. Zwei Tage auf den ersten Entwurf gewartet.","Antwort an den CEO: 'Wir arbeiten daran.' Keine Timeline, keine Empfehlung."], now_time:"~15 Minuten", now_steps:["Das System hat die Messaging-Überschneidung vor drei Tagen gemeldet — beim ersten Auftreten. Kein manuelles Monitoring notwendig.","Drei Differenzierungsoptionen vorgeschlagen, je mit Landing Page-Mockup und Botschaftsrahmen.","Conversion-Prognose je Option: auf Basis der letzten 90 Tage Kampagnendaten. Keine Spekulation, konkrete Performance-Grundlage.","Option ausgewählt. Landing Page, Ad-Copy und E-Mail-Sequenzen aktualisiert — in einem Arbeitsschritt.","CEO informiert: Analyse, Entscheidung, Begründung, nächste Schritte — vor dem Mittagessen."], eu_time:"~1 Tag", eu_steps:["'Die EU ist Bürokratie' — die dominante Wahrnehmung in deiner Zielgruppe. Die KI recherchiert 100 konkrete EU-Errungenschaften: Roaming-Abschaffung, Fluggastrechte, Mindestlohn-Richtlinie, sauberes Trinkwasser.","Öffentliche Wissensdatenbank erstellt: 'Was die EU tatsächlich für dich leistet' — nach Lebensbereichen sortiert, quellenbelegt, kein Bürokratendeutsch.","Bürger ergänzen weitere Beispiele. Die KI übersetzt die gesamte Datenbank automatisch in alle 24 EU-Sprachen — kein Budget, kein Übersetzungsbüro.","Tausendfach geteilt. Schulen verwenden es im Politikunterricht. Lokale Abgeordnete verlinken in ihren Newslettern.","Ein EU-Informationszentrum übernimmt das Format für seine eigene Kommunikation — weil es klarer erklärt als jede offizielle Broschüre."] },
     { old_time:"~8 Std/Woche", old_steps:["Closed-Lost-Deals exportiert: 47 Zeilen, unstrukturierte Freitext-Notizen. Manuell durchgearbeitet: 3 Stunden.","Verlustgründe verstreut über Freitext-Felder, teils leer. Muster erst nach mehrfachem Lesen erkennbar.","Drei Deals nennen dieselbe fehlende Integration: Slack-Nachricht ans Produktteam. Keine strukturierte Übergabe, kein Ticket.","Mid-Market Win Rate sinkend, Ursache unklar. Wettbewerbsdaten manuell zusammengesucht: eine Stunde, kein belastbares Ergebnis.","Battlecard aktualisiert. Ob die Reps sie lesen und anwenden: offen."], now_time:"~30 Minuten", now_steps:["Dashboard geöffnet: Jeder Closed-Lost-Deal bereits getaggt nach Verlustgrund, Wettbewerber, Preispunkt, Dealphase und Rep. Kein manueller Aufwand.","Drei Deals im Wert von €420K haben dieselbe fehlende Integration genannt — Produktticket bereits erstellt, mit Business-Case und Umsatzrisiko.","Ticket reviewt, Priorität angepasst. Das Produktteam bekommt einen vollständigen Case, nicht eine Slack-Nachricht.","18% Mid-Market-Rückgang auf eine Preisänderung des Wettbewerbers zurückgeführt — mit exaktem Zeitpunkt und betroffenen Deals.","Zwei Reps mit laufenden Deals haben den aktualisierten Talk Track erhalten — direkt in Slack, mit konkreten Differenzierungsargumenten."], eu_time:"~1 Tag", eu_steps:["Freelance-Angebot in einem anderen EU-Land: 7 bürokratische Hürden, die laut EU-Binnenmarktrecht nicht existieren dürften. Die KI dokumentiert jeden Verstoß präzise: Rechtsgrundlage, Artikel, Datum.","Dokumentation veröffentlicht. In 48 Stunden melden sich 600 Freelancer mit identischen Erfahrungen aus Polen, Spanien, Portugal, Schweden.","KI strukturiert alle Fälle: Welche Hindernisse treten wo auf? Welche verstoßen konkret gegen EU-Recht? Crowdsourced Beweisdatenbank in 72 Stunden.","Petition erstellt: Rechtsverstöße belegt, in 6 Sprachen übersetzt. 80.000 Unterschriften in 2 Wochen.","Die Europäische Kommission eröffnet Vertragsverletzungsverfahren gegen 3 Mitgliedstaaten. Dein Dokument ist im offiziellen Anhang zitiert."] },
     { old_time:"~1 Woche", old_steps:["Zugang zu internen Kundendaten per E-Mail angefragt: 'klärt das mit IT.' Zwei Tage keine Rückmeldung.","Marktübersicht aus öffentlichen Quellen und Analystenreports zusammengestellt: 2 Tage, drei widersprüchliche Datenquellen.","Slide-Deck mit der Empfehlung gebaut — mit dem Wissen, dass die Belege dünner sind als nötig.","Partner-Review: zwei Annahmen angemerkt. Überarbeitung erforderlich.","Kundenpräsentation: Die Hälfte des Meetings wird damit verbracht, die Methodik zu verteidigen statt die Empfehlung zu diskutieren."], now_time:"~1 Tag", now_steps:["Alle Engagement-Daten bereits erfasst: Kickoff-Notizen, Interview-Transkripte, Kundendokumente — vollständig strukturiert und durchsuchbar.","Kundendaten mit Markt-Benchmarks und Branchenberichten abgeglichen: Wo steht der Kunde im Vergleich zu Peers? Belege, keine Annahmen.","Empfehlung gegen drei Szenarien stress-getestet: Base Case, Upside, Downside — je mit konkreten Bruchpunkten.","Narrativ pressure-getestet gegen simulierte CEO-Einwände: Zwei blinde Flecken identifiziert und geschlossen.","Ins Meeting gegangen mit Empfehlung, Peer-Benchmarks und vorbereiteten Antworten auf die drei härtesten Fragen. Entscheidung in 45 Minuten."], eu_time:"~2–3 Tage", eu_steps:["Ein Park in deiner Stadt soll einem Parkhaus weichen. Die KI analysiert 30 vergleichbare Fälle aus EU-Städten: Welche Argumente haben Entscheidungen gekippt? Welche Rechtspositionen haben sich durchgesetzt?","Community-Briefing erstellt: rechtliche Grundlagen, Präzedenzfälle, Gegenargumente — verständlich, mit direkten Links zur EU-Gesetzgebung.","Als offenes Toolkit veröffentlicht. Bürger in 8 weiteren Städten nutzen es sofort für eigene Auseinandersetzungen.","Formelle Beschwerde an die EU-Kommission verfasst — im korrekten juristischen Format, mit eingebetteten Präzedenzfällen.","Das Toolkit wird von einer europäischen Umweltorganisation als Standardleitfaden für kommunalen Naturschutz übernommen und weiterverbreitet."] },
-    { old_time:"~täglich", old_steps:["Du versuchst, alles über Kindstermine, Schulinfos und Arztbesuche im Kopf zu behalten — hohe mentale Last.","Wer holt heute ab? Fußballtraining um 17 Uhr, aber auch Arzttermin um 16:30 — Absprache läuft über WhatsApp-Nachrichten, die im Chaos untergehen.","Wichtige Infos — Schulausflug, Medikament, Allergie — versinken in Chatnachrichten und Zetteln, die der andere Elternteil nie gesehen hat.","Mental Load liegt meistens bei einer Person: erschöpfend, unsichtbar, ohne erkennbaren Ausweg.","Im Notfall fehlen dem anderen Elternteil alle nötigen Informationen."], now_time:"~5 Min/Tag", now_steps:["Ein Familienagent, den beide Elternteile per WhatsApp erreichen: 'Was steht diese Woche an?' — Antwort sofort, vollständig, korrekt.","Alle Termine, Medikamente, Präferenzen und Schulinfos der Kinder an einem Ort. Wer auch immer fragt, bekommt dieselbe Antwort.","'Was braucht Lena morgen für die Schule?' — der Agent erinnert rechtzeitig, schickt eine WhatsApp wenn nötig.","Wochenplan automatisch erstellt: wer fährt wohin, was muss vorbereitet sein — für beide Elternteile lesbar.","Mental Load wird verteilt — nicht weil jemand mehr tut, sondern weil der Agent das Erinnern übernimmt."], eu_time:"~1–2 Stunden", eu_steps:["Dein Kind braucht einen Spezialisten. Wartezeit lokal: 6 Monate.","Als EU-Bürger hast du das Recht, dein Kind in jedem EU-Land behandeln zu lassen — und bekommst die Kosten von deiner Krankenkasse erstattet. Das nennt sich grenzüberschreitende Gesundheitsversorgung.","Dein Agent findet den nächsten Spezialisten (Österreich: 2 Wochen Wartezeit), übersetzt die Unterlagen und schreibt den Erstattungsantrag für deine Krankenkasse.","Dein Kind wird in 2 Wochen behandelt. Du teilst den Tipp in der Eltern-WhatsApp-Gruppe. 50 Familien wussten nicht, dass dieses Recht existiert.","Die Schule schickt den Einpager an alle internationalen Familien — automatisch in 12 Sprachen übersetzt."] }
-  ],
+    { old_time:"~täglich", old_steps:["Du versuchst, alles über Kindstermine, Schulinfos und Arztbesuche im Kopf zu behalten — hohe mentale Last.","Wer holt heute ab? Fußballtraining um 17 Uhr, aber auch Arzttermin um 16:30 — Absprache läuft über WhatsApp-Nachrichten, die im Chaos untergehen.","Wichtige Infos — Schulausflug, Medikament, Allergie — versinken in Chatnachrichten und Zetteln, die der andere Elternteil nie gesehen hat.","Mental Load liegt meistens bei einer Person: erschöpfend, unsichtbar, ohne erkennbaren Ausweg.","Im Notfall fehlen dem anderen Elternteil alle nötigen Informationen."], now_time:"~5 Min/Tag", now_steps:["Ein Familienagent, den beide Elternteile per WhatsApp erreichen: 'Was steht diese Woche an?' — Antwort sofort, vollständig, korrekt.","Alle Termine, Medikamente, Präferenzen und Schulinfos der Kinder an einem Ort. Wer auch immer fragt, bekommt dieselbe Antwort.","'Was braucht Lena morgen für die Schule?' — der Agent erinnert rechtzeitig, schickt eine WhatsApp wenn nötig.","Wochenplan automatisch erstellt: wer fährt wohin, was muss vorbereitet sein — für beide Elternteile lesbar.","Mental Load wird verteilt — nicht weil jemand mehr tut, sondern weil der Agent das Erinnern übernimmt."], eu_time:"~1–2 Stunden", eu_steps:["Dein Kind braucht einen Spezialisten. Wartezeit lokal: 6 Monate.","Als EU-Bürger hast du das Recht, dein Kind in jedem EU-Land behandeln zu lassen — und bekommst die Kosten von deiner Krankenkasse erstattet. Das nennt sich grenzüberschreitende Gesundheitsversorgung.","Dein Agent findet den nächsten Spezialisten (Österreich: 2 Wochen Wartezeit), übersetzt die Unterlagen und schreibt den Erstattungsantrag für deine Krankenkasse.","Dein Kind wird in 2 Wochen behandelt. Du teilst den Tipp in der Eltern-WhatsApp-Gruppe. 50 Familien wussten nicht, dass dieses Recht existiert.","Die Schule schickt den Einpager an alle internationalen Familien — automatisch in 12 Sprachen übersetzt."] },
+    { old_time:"~ständig", old_steps:["Du liest Artikel, schaust Dokus, diskutierst mit Freunden — aber ohne klaren nächsten Schritt.","Petitionen unterschreiben: das Einzige, was sich machbar anfühlt. Aber du fragst dich, ob es etwas bewirkt.","Du willst dich engagieren, findest aber keine Zeit zwischen Job, Familie und Alltag.","Das Gefühl: die wichtigen Entscheidungen passieren woanders, von anderen Menschen.","Informationsüberflutung: jeden Tag neue Krisen, kein Überblick, was wirklich zählt."], now_time:"~30 Min/Woche", now_steps:["Du fragst deinen Agenten: 'Was passiert gerade in der EU, das mich als Bürger direkt betrifft?' — eine klare, verständliche Zusammenfassung.","Der Agent zeigt dir 3 konkrete Dinge, die du diese Woche tun kannst — basierend auf dem, was dir wichtig ist.","Du schreibst in 10 Minuten eine persönliche Nachricht an deinen lokalen Abgeordneten — der Agent hilft dir, sie überzeugend zu formulieren.","Du teilst einen gut recherchierten Fakten-Thread mit deinem Netzwerk — automatisch auf deine Sprache und Zielgruppe zugeschnitten.","Du wirst zum gut informierten Ansprechpartner in deinem Freundeskreis — mit Fakten statt Meinungen."], eu_time:"~1–3 Tage", eu_steps:["Die EU-Kommission eröffnet eine öffentliche Konsultation zu einem Thema, das dich betrifft — z.B. KI-Regulierung oder Mindestlohn.","Dein Agent erklärt die Fragen in verständlichem Deutsch, fasst die wichtigsten Argumente zusammen und hilft dir, eine fundierte Eingabe zu verfassen.","Du reichst deine Eingabe ein. Das dauert 20 Minuten statt zwei Tage.","Du postest das Ergebnis in deiner Community. Zehn weitere Menschen reichen eigene Eingaben ein.","Bürgerbasierte Eingaben aus Deutschland übertreffen erstmals die aus Lobbygruppen — in deiner Konsultationsrunde."] }
+    ],
 en: [
     { old_time:"~8 hrs/week", old_steps:["Knowledge about VIPs — preferences, relationship history, sensitivities — is held by two or three senior staff. Everyone else always has to ask.","Without these people, mistakes happen: wrong form of address, forgotten dietary restrictions, missed exclusivity agreements with journalists.","Before every event: hours spent merging Excel lists, old emails and oral traditions. No reliable foundation.","When a team member leaves the organisation, the knowledge is gone. At the next event: start from scratch."], now_time:"~15 minutes", now_steps:["The team maintains a shared agent that learns with every entry. Update in one sentence: 'VIP X has been vegan since March.' Permanently stored, instantly accessible to everyone.","Every team member — regardless of seniority — receives the complete, up-to-date profile on request: preferences, relationship history, open agreements.","Event checklist generated: all special requests complete, in seconds, no gaps.","CEO briefing on key people at the touch of a button: current press context combined with internally stored knowledge — personalised, not generic."], eu_time:"~1–2 days", eu_steps:["The European Parliament votes next week on the right to repair. The AI identifies in 10 minutes: 23 MEPs on the relevant committee, their voting history, their positions, their contact details.","Persuasive message drafted. Individually tailored for 3 undecided MEPs — matching background, argumentation, language. No generic template.","Toolkit published: templates for different positions, automatically translated into all 24 EU languages. Deployable in 2 clicks.","40,000 citizens send individual messages to their MEPs in 3 days. Parliamentary offices report: never seen so many personal letters on one topic.","The law is passed. The toolkit remains as an open-source tool for the next vote."] },
     { old_time:"~3–4 hrs/week", old_steps:["Draft deck received. Misses the point. Long feedback written: 45 minutes. Same thing next week.","Quality standards exist implicitly — in your head. New team members need 3–6 months to understand what 'good' means.","When you're on holiday or in back-to-back meetings: work stagnates, or mediocre quality slips through.","Same feedback again and again: 'One key message per slide.' 'Where's the so-what?' 'What should the person do next?' Written fresh every time."], now_time:"~1 session", now_steps:["10–15 before-and-after pairs uploaded — drafts as submitted, versions as revised. The AI distils your implicit judgement into explicit, comprehensible criteria.","You read the criteria: that's exactly what matters to me — I just could never articulate it this clearly.","Built an agent from it that represents your standard. New team rule: every draft goes through the agent first. You only see the already-revised version.","The agent gives structured feedback: what's missing, why, concrete improvement suggestions. Your calendar gains 3–4 hours per week for strategic work."], eu_time:"~2–3 days", eu_steps:["You run a citizens' initiative with EU consultation submissions. Quality standard varies enormously — mediocre submissions are routinely ignored.","15 strong examples collected: submissions that were cited or responded to vs. those without resonance. The AI extracts the systematic differences — concrete, actionable.","Quality agent developed: volunteers from 8 countries submit drafts and immediately receive structured feedback in German, French, Polish, Spanish.","Next EU consultation process: 180 well-considered submissions instead of 25 uneven ones. The committee cites your group by name.","Other initiatives ask about the methodology. The agent is shared as an open-source tool — and systematically raises the quality standard of European civil society."] },
@@ -821,8 +918,9 @@ en: [
     { old_time:"~half a day", old_steps:["Checked competitor's website, searched LinkedIn, opened Meta Ads Library. Screenshots taken, placed side by side.","Overlaps identified — subjectively, without data. Not clear how serious the differentiation gap is.","Brought the team into a brainstorming room. Whiteboard filled. No concrete decision.","Designer briefed for new landing page variants. Waited two days for the first draft.","Response to the CEO: 'We're working on it.' No timeline, no recommendation."], now_time:"~15 minutes", now_steps:["The system flagged the messaging overlap three days ago — at first occurrence. No manual monitoring needed.","Three differentiation options suggested, each with landing page mockup and messaging framework.","Conversion forecast per option: based on the last 90 days of campaign data. No speculation, concrete performance baseline.","Option selected. Landing page, ad copy and email sequences updated — in one step.","CEO informed: analysis, decision, rationale, next steps — before lunch."], eu_time:"~1 day", eu_steps:["'The EU is bureaucracy' — the dominant perception in your target group. The AI researches 100 concrete EU achievements: abolition of roaming charges, passenger rights, minimum wage directive, clean drinking water.","Public knowledge database created: 'What the EU actually does for you' — sorted by life area, source-backed, no bureaucratic language.","Citizens add more examples. The AI automatically translates the entire database into all 24 EU languages — no budget, no translation agency.","Shared thousands of times. Schools use it in civics classes. Local MPs link to it in their newsletters.","An EU information centre adopts the format for its own communication — because it explains more clearly than any official brochure."] },
     { old_time:"~8 hrs/week", old_steps:["Exported closed-lost deals: 47 rows, unstructured free-text notes. Worked through manually: 3 hours.","Loss reasons scattered across free-text fields, some empty. Patterns only recognisable after repeated reading.","Three deals cite the same missing integration: Slack message to the product team. No structured handoff, no ticket.","Mid-market win rate declining, cause unclear. Competitive data manually researched: one hour, no reliable result.","Battlecard updated. Whether the reps read and apply it: open question."], now_time:"~30 minutes", now_steps:["Dashboard opened: every closed-lost deal already tagged by loss reason, competitor, price point, deal stage and rep. No manual effort.","Three deals worth €420K cited the same missing integration — product ticket already created, with business case and revenue risk.","Ticket reviewed, priority adjusted. The product team receives a complete case, not a Slack message.","18% mid-market decline traced to a competitor's price change — with exact timestamp and affected deals.","Two reps with active deals received the updated talk track — directly in Slack, with concrete differentiation arguments."], eu_time:"~1 day", eu_steps:["Freelance offer in another EU country: 7 bureaucratic hurdles that shouldn't exist under EU single market law. The AI documents each violation precisely: legal basis, article, date.","Documentation published. Within 48 hours, 600 freelancers report identical experiences from Poland, Spain, Portugal, Sweden.","AI structures all cases: which barriers appear where? Which specifically violate EU law? Crowdsourced evidence database in 72 hours.","Petition created: violations documented, translated into 6 languages. 80,000 signatures in 2 weeks.","The European Commission opens infringement proceedings against 3 member states. Your document is cited in the official annex."] },
     { old_time:"~1 week", old_steps:["Access to internal client data requested by email: 'sort it out with IT.' Two days without response.","Market overview compiled from public sources and analyst reports: 2 days, three contradictory data sources.","Slide deck built with the recommendation — knowing the evidence is thinner than needed.","Partner review: two assumptions flagged. Revision required.","Client presentation: half the meeting spent defending the methodology instead of discussing the recommendation."], now_time:"~1 day", now_steps:["All engagement data already captured: kickoff notes, interview transcripts, client documents — fully structured and searchable.","Client data benchmarked against market data and industry reports: where does the client stand vs. peers? Evidence, not assumptions.","Recommendation stress-tested against three scenarios: base case, upside, downside — each with concrete inflection points.","Narrative pressure-tested against simulated CEO objections: two blind spots identified and addressed.","Walked into the meeting with recommendation, peer benchmarks and prepared answers to the three hardest questions. Decision in 45 minutes."], eu_time:"~2–3 days", eu_steps:["A park in your city is being replaced by a car park. The AI analyses 30 comparable cases from EU cities: which arguments overturned decisions? Which legal positions prevailed?","Community briefing created: legal foundations, precedents, counter-arguments — understandable, with direct links to EU legislation.","Published as an open toolkit. Citizens in 8 more cities immediately use it for their own disputes.","Formal complaint filed with the EU Commission — in correct legal format, with embedded precedents.","The toolkit is adopted by a European environmental organisation as a standard guide for municipal nature conservation."] },
-    { old_time:"~daily", old_steps:["You try to keep everything in your head — kids' appointments, school updates, doctor visits. High mental load, usually on one parent.","Who's picking up today? Football at 5pm but also a doctor's appointment at 4:30 — coordination via WhatsApp messages that get lost.","Important info — school trip, medication, allergy — buried in chat threads the other parent never saw.","Mental load sits with one person: exhausting, invisible, no way out.","In an emergency, the other parent doesn't have the information they need."], now_time:"~5 min/day", now_steps:["A personal family agent both parents can reach via WhatsApp: 'What's on this week?' — answered instantly, completely, correctly.","All appointments, medications, preferences and school info for the kids in one place. Whoever asks gets the same answer.","'What does Lena need for school tomorrow?' — the agent reminds you in time, sends a WhatsApp if needed.","Weekly plan created automatically: who goes where, what needs to be prepared — readable by both parents, no coordination overhead.","Mental load gets distributed — not because someone does more, but because the agent takes over the remembering."], eu_time:"~1–2 hours", eu_steps:["Your child needs a specialist. Local wait time: 6 months.","As an EU citizen you have the right to get your child treated in any EU country and be reimbursed by your health insurance. This is called cross-border healthcare.","Your agent finds the nearest specialist (Austria: 2-week wait), translates the paperwork and writes the reimbursement request for your health insurance.","Your child is seen in 2 weeks. You share the tip in the parents' WhatsApp group. 50 families didn't know this right existed.","The school sends the one-pager to all international families — automatically translated into 12 languages."] }
-  ]
+    { old_time:"~daily", old_steps:["You try to keep everything in your head — kids' appointments, school updates, doctor visits. High mental load, usually on one parent.","Who's picking up today? Football at 5pm but also a doctor's appointment at 4:30 — coordination via WhatsApp messages that get lost.","Important info — school trip, medication, allergy — buried in chat threads the other parent never saw.","Mental load sits with one person: exhausting, invisible, no way out.","In an emergency, the other parent doesn't have the information they need."], now_time:"~5 min/day", now_steps:["A personal family agent both parents can reach via WhatsApp: 'What's on this week?' — answered instantly, completely, correctly.","All appointments, medications, preferences and school info for the kids in one place. Whoever asks gets the same answer.","'What does Lena need for school tomorrow?' — the agent reminds you in time, sends a WhatsApp if needed.","Weekly plan created automatically: who goes where, what needs to be prepared — readable by both parents, no coordination overhead.","Mental load gets distributed — not because someone does more, but because the agent takes over the remembering."], eu_time:"~1–2 hours", eu_steps:["Your child needs a specialist. Local wait time: 6 months.","As an EU citizen you have the right to get your child treated in any EU country and be reimbursed by your health insurance. This is called cross-border healthcare.","Your agent finds the nearest specialist (Austria: 2-week wait), translates the paperwork and writes the reimbursement request for your health insurance.","Your child is seen in 2 weeks. You share the tip in the parents' WhatsApp group. 50 families didn't know this right existed.","The school sends the one-pager to all international families — automatically translated into 12 languages."] },
+    { old_time:"~constantly", old_steps:["You follow the news, watch documentaries, discuss with friends — but there's no clear next step.","Signing petitions: the only thing that feels doable. But you wonder if it changes anything.","You want to get involved, but can't find time between work, family, and daily life.","The feeling: important decisions happen elsewhere, made by other people.","Information overload: new crises every day, no overview of what really matters."], now_time:"~30 min/week", now_steps:["You ask your agent: 'What's happening in the EU right now that affects me as a citizen?' — a clear, understandable summary.","The agent shows you 3 concrete things you can do this week — based on what matters to you.","You write a personal message to your local MP in 10 minutes — the agent helps you make it persuasive.","You share a well-researched fact thread with your network — automatically tailored to your language and audience.","You become the well-informed go-to person in your friend group — with facts, not just opinions."], eu_time:"~1–3 days", eu_steps:["The EU Commission opens a public consultation on a topic that affects you — e.g. AI regulation or minimum wage.","Your agent explains the questions in plain language, summarises the key arguments, and helps you write a well-reasoned submission.","You submit your input. It takes 20 minutes instead of two days.","You post the result in your community. Ten more people submit their own inputs.","Citizen-based submissions from your country outnumber those from lobby groups — in your consultation round."] }
+    ]
   };
 }
 
@@ -916,8 +1014,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Positionierung verteidigen',             banner: 'Dein CEO fragt, warum die neue Kampagne eines Wettbewerbers klingt wie eure eigene Positionierung.' },
     { cat: 'Sales',      name: 'Verluste analysieren & gegensteuern',    banner: 'Ihr verliert Deals – und niemand kann sich einigen, warum.' },
     { cat: 'Consulting', name: 'Empfehlungen verteidigen',               banner: 'Dein Kunde hat dich gebeten, deine Empfehlung mit Daten zu belegen, die du noch nicht hast.' },
-    { cat: 'Eltern', name: 'Familienorganisation entlasten', banner: 'Zwei Elternteile, ein Vollzeitjob, drei Kindstermine diese Woche — und niemand weiß mehr, wer was übernommen hat.' }
-  ],
+    { cat: 'Eltern', name: 'Familienorganisation entlasten', banner: 'Zwei Elternteile, ein Vollzeitjob, drei Kindstermine diese Woche — und niemand weiß mehr, wer was übernommen hat.' },
+    { cat: 'Bürger:in', name: 'Von überwältigt zu wirksam', banner: 'Du verfolgst die Nachrichten, bist besorgt um Europa — aber weißt nicht, wo du anfangen sollst.' }
+    ],
   en: [
     { cat: 'PR & Comms', name: 'Centralizing VIP Knowledge',             banner: 'Your team manages an extensive database of VIPs, journalists, and stakeholders for a major event.' },
     { cat: 'Management', name: 'Scaling Standards & Automating Feedback',banner: 'Your team constantly asks: "Is this good enough?" You know the answer immediately — but you\'re not always available.' },
@@ -927,8 +1026,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Defending Positioning',                  banner: 'Your CEO asks why a competitor\'s new campaign sounds just like your own positioning.' },
     { cat: 'Sales',      name: 'Analyzing Losses & Course-Correcting',   banner: 'You\'re losing deals — and nobody can agree on why.' },
     { cat: 'Consulting', name: 'Defending Recommendations',              banner: 'Your client has asked you to back your recommendation with data you don\'t have yet.' },
-    { cat: 'Parents', name: 'Reducing Family Admin Overload', banner: 'Two parents, one full-time job, three kids\' appointments this week — and nobody knows who\'s handling what.' }
-  ],
+    { cat: 'Parents', name: 'Reducing Family Admin Overload', banner: 'Two parents, one full-time job, three kids\' appointments this week — and nobody knows who\'s handling what.' },
+    { cat: 'Citizen', name: 'From Overwhelmed to Effective', banner: 'You care about Europe but don\'t know where to start. The news is overwhelming.' }
+    ],
   fr: [
     { cat: 'PR & Comms', name: 'Centraliser les connaissances VIP',              banner: 'Votre équipe gère une base de données étendue de VIPs, journalistes et parties prenantes.' },
     { cat: 'Management', name: 'Faire évoluer les standards',                    banner: 'Votre équipe demande constamment : "Est-ce suffisamment bien ?" Vous connaissez la réponse — mais vous n\'êtes pas toujours disponible.' },
@@ -938,8 +1038,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Défendre le positionnement',                     banner: 'Votre PDG demande pourquoi la nouvelle campagne d\'un concurrent ressemble à votre propre positionnement.' },
     { cat: 'Sales',      name: 'Analyser les pertes et corriger le tir',         banner: 'Vous perdez des deals — et personne ne s\'accorde sur les raisons.' },
     { cat: 'Consulting', name: 'Défendre ses recommandations',                   banner: 'Votre client vous a demandé d\'étayer votre recommandation avec des données que vous n\'avez pas encore.' },
-    { cat: 'Parents', name: 'Alléger l\'organisation familiale', banner: 'Deux parents, un emploi à plein temps, trois rendez-vous d\'enfants cette semaine — et personne ne sait plus qui prend quoi en charge.' }
-  ],
+    { cat: 'Parents', name: 'Alléger l\'organisation familiale', banner: 'Deux parents, un emploi à plein temps, trois rendez-vous d\'enfants cette semaine — et personne ne sait plus qui prend quoi en charge.' },
+    { cat: 'Citoyen', name: 'De submergé à efficace', banner: 'Vous vous souciez de l\'Europe mais ne savez pas par où commencer. L\'actualité est écrasante.' }
+    ],
   es: [
     { cat: 'PR & Comms', name: 'Centralizar el conocimiento VIP',                banner: 'Tu equipo gestiona una extensa base de datos de VIPs, periodistas y partes interesadas.' },
     { cat: 'Management', name: 'Escalar estándares',                             banner: 'Tu equipo pregunta constantemente: "¿Es esto suficientemente bueno?" Conoces la respuesta — pero no siempre estás disponible.' },
@@ -949,8 +1050,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Defender el posicionamiento',                    banner: 'Tu CEO pregunta por qué la nueva campaña de un competidor suena igual que vuestro propio posicionamiento.' },
     { cat: 'Sales',      name: 'Analizar pérdidas y corregir el rumbo',          banner: 'Estáis perdiendo deals — y nadie puede ponerse de acuerdo en por qué.' },
     { cat: 'Consulting', name: 'Defender recomendaciones',                       banner: 'Tu cliente te ha pedido que respaldes tu recomendación con datos que aún no tienes.' },
-    { cat: 'Padres', name: 'Reducir la sobrecarga familiar', banner: 'Dos padres, un trabajo a tiempo completo, tres citas de los niños esta semana — y nadie sabe quién se encarga de qué.' }
-  ],
+    { cat: 'Padres', name: 'Reducir la sobrecarga familiar', banner: 'Dos padres, un trabajo a tiempo completo, tres citas de los niños esta semana — y nadie sabe quién se encarga de qué.' },
+    { cat: 'Ciudadano', name: 'De abrumado a eficaz', banner: 'Te preocupas por Europa pero no sabes por dónde empezar. Las noticias son abrumadoras.' }
+    ],
   it: [
     { cat: 'PR & Comms', name: 'Centralizzare le conoscenze VIP',                banner: 'Il tuo team gestisce un ampio database di VIP, giornalisti e stakeholder per un grande evento.' },
     { cat: 'Management', name: 'Scalare gli standard',                           banner: 'Il tuo team chiede costantemente: "È abbastanza buono?" Conosci la risposta immediatamente — ma non sei sempre disponibile.' },
@@ -960,8 +1062,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Difendere il posizionamento',                    banner: 'Il tuo CEO chiede perché la nuova campagna di un concorrente suona esattamente come il vostro posizionamento.' },
     { cat: 'Sales',      name: 'Analizzare le perdite e correggere il tiro',     banner: 'State perdendo trattative — e nessuno riesce ad accordarsi sul perché.' },
     { cat: 'Consulting', name: 'Difendere le raccomandazioni',                   banner: 'Il tuo cliente ti ha chiesto di supportare la tua raccomandazione con dati che non hai ancora.' },
-    { cat: 'Genitori', name: 'Alleggerire l\'organizzazione familiare', banner: 'Due genitori, un lavoro a tempo pieno, tre appuntamenti dei bambini questa settimana — e nessuno sa più chi si occupa di cosa.' }
-  ],
+    { cat: 'Genitori', name: 'Alleggerire l\'organizzazione familiare', banner: 'Due genitori, un lavoro a tempo pieno, tre appuntamenti dei bambini questa settimana — e nessuno sa più chi si occupa di cosa.' },
+    { cat: 'Cittadino', name: 'Da sopraffatto a efficace', banner: 'Ti importa dell\'Europa ma non sai da dove iniziare. Le notizie sono travolgenti.' }
+    ],
   pt: [
     { cat: 'PR & Comms', name: 'Centralizar o conhecimento VIP',                 banner: 'A tua equipa gere uma extensa base de dados de VIPs, jornalistas e partes interessadas.' },
     { cat: 'Management', name: 'Escalar padrões',                                banner: 'A tua equipa pergunta constantemente: "Isto é suficientemente bom?" Sabes a resposta imediatamente — mas não estás sempre disponível.' },
@@ -971,8 +1074,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Defender o posicionamento',                      banner: 'O teu CEO pergunta por que a nova campanha de um concorrente soa exatamente como o vosso próprio posicionamento.' },
     { cat: 'Sales',      name: 'Analisar perdas e corrigir o rumo',              banner: 'Estão a perder negócios — e ninguém consegue concordar sobre o porquê.' },
     { cat: 'Consulting', name: 'Defender recomendações',                         banner: 'O teu cliente pediu-te para fundamentares a tua recomendação com dados que ainda não tens.' },
-    { cat: 'Pais', name: 'Reduzir a sobrecarga familiar', banner: 'Dois pais, um trabalho a tempo inteiro, três compromissos das crianças esta semana — e ninguém sabe quem trata de quê.' }
-  ],
+    { cat: 'Pais', name: 'Reduzir a sobrecarga familiar', banner: 'Dois pais, um trabalho a tempo inteiro, três compromissos das crianças esta semana — e ninguém sabe quem trata de quê.' },
+    { cat: 'Cidadão', name: 'De sobrecarregado a eficaz', banner: 'Preocupas-te com a Europa mas não sabes por onde começar. As notícias são avassaladoras.' }
+    ],
   nl: [
     { cat: 'PR & Comms', name: 'VIP-kennis centraliseren',                       banner: 'Je team beheert een uitgebreide database van VIP\'s, journalisten en stakeholders voor een groot evenement.' },
     { cat: 'Management', name: 'Standaarden schalen',                            banner: 'Je team vraagt voortdurend: "Is dit goed genoeg?" Jij weet het antwoord meteen — maar je bent niet altijd beschikbaar.' },
@@ -982,8 +1086,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Positionering verdedigen',                       banner: 'Je CEO vraagt waarom de nieuwe campagne van een concurrent klinkt als jullie eigen positionering.' },
     { cat: 'Sales',      name: 'Verliezen analyseren & bijsturen',               banner: 'Jullie verliezen deals — en niemand is het eens over waarom.' },
     { cat: 'Consulting', name: 'Aanbevelingen verdedigen',                       banner: 'Je klant heeft gevraagd je aanbeveling te onderbouwen met data die je nog niet hebt.' },
-    { cat: 'Ouders', name: 'Gezinsorganisatie verlichten', banner: 'Twee ouders, een fulltime baan, drie afspraken voor de kinderen deze week — en niemand weet meer wie wat regelt.' }
-  ],
+    { cat: 'Ouders', name: 'Gezinsorganisatie verlichten', banner: 'Twee ouders, een fulltime baan, drie afspraken voor de kinderen deze week — en niemand weet meer wie wat regelt.' },
+    { cat: 'Burger', name: 'Van overweldigd naar effectief', banner: 'Je geeft om Europa maar weet niet waar je moet beginnen. Het nieuws is overweldigend.' }
+    ],
   ro: [
     { cat: 'PR & Comms', name: 'Centralizarea cunoștințelor VIP',                banner: 'Echipa ta gestionează o bază de date extinsă de VIP-uri, jurnaliști și stakeholderi pentru un eveniment major.' },
     { cat: 'Management', name: 'Scalarea standardelor',                          banner: 'Echipa ta întreabă constant: "Este suficient de bun?" Știi răspunsul imediat — dar nu ești întotdeauna disponibil.' },
@@ -993,8 +1098,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Apărarea poziționării',                          banner: 'CEO-ul tău întreabă de ce noua campanie a unui concurent sună exact ca propriul vostru poziționament.' },
     { cat: 'Sales',      name: 'Analiza pierderilor și corectarea cursului',     banner: 'Pierdeți contracte — și nimeni nu poate conveni asupra motivului.' },
     { cat: 'Consulting', name: 'Apărarea recomandărilor',                        banner: 'Clientul tău ți-a cerut să susții recomandarea cu date pe care nu le ai încă.' },
-    { cat: 'Părinți', name: 'Reducerea sarcinilor organizatorice familiale', banner: 'Doi părinți, un job cu normă întreagă, trei programări ale copiilor săptămâna aceasta — și nimeni nu mai știe cine ce face.' }
-  ],
+    { cat: 'Părinți', name: 'Reducerea sarcinilor organizatorice familiale', banner: 'Doi părinți, un job cu normă întreagă, trei programări ale copiilor săptămâna aceasta — și nimeni nu mai știe cine ce face.' },
+    { cat: 'Cetățean', name: 'De la copleșit la eficient', banner: 'Îți pasă de Europa, dar nu știi de unde să începi. Știrile sunt copleșitoare.' }
+    ],
   sv: [
     { cat: 'PR & Comms', name: 'Centralisera VIP-kunskap',                       banner: 'Ditt team hanterar en omfattande databas med VIPs, journalister och intressenter för ett stort evenemang.' },
     { cat: 'Management', name: 'Skala standards',                                banner: 'Ditt team frågar ständigt: "Är detta tillräckligt bra?" Du vet svaret omedelbart — men du är inte alltid tillgänglig.' },
@@ -1004,8 +1110,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Försvara positionering',                         banner: 'Din VD frågar varför en konkurrents nya kampanj låter precis som er egen positionering.' },
     { cat: 'Sales',      name: 'Analysera förluster & korrigera kurs',           banner: 'Ni förlorar affärer — och ingen kan komma överens om varför.' },
     { cat: 'Consulting', name: 'Försvara rekommendationer',                      banner: 'Din kund har bett dig stötta din rekommendation med data du inte har ännu.' },
-    { cat: 'Föräldrar', name: 'Minska den administrativa bördan för familjen', banner: 'Två föräldrar, ett heltidsjobb, tre barnmöten den här veckan — och ingen vet längre vem som tar hand om vad.' }
-  ],
+    { cat: 'Föräldrar', name: 'Minska den administrativa bördan för familjen', banner: 'Två föräldrar, ett heltidsjobb, tre barnmöten den här veckan — och ingen vet längre vem som tar hand om vad.' },
+    { cat: 'Medborgare', name: 'Från överväldigad till effektiv', banner: 'Du bryr dig om Europa men vet inte var du ska börja. Nyheterna är överväldigande.' }
+    ],
   cs: [
     { cat: 'PR & Comms', name: 'Centralizace znalostí o VIP',                    banner: 'Váš tým spravuje rozsáhlou databázi VIP, novinářů a zainteresovaných stran pro velkou akci.' },
     { cat: 'Management', name: 'Škálování standardů',                            banner: 'Váš tým se neustále ptá: "Je to dost dobré?" Znáte odpověď okamžitě — ale nejste vždy k dispozici.' },
@@ -1015,8 +1122,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Obhajoba pozicování',                            banner: 'Váš CEO se ptá, proč nová kampaň konkurenta zní stejně jako vaše vlastní pozicování.' },
     { cat: 'Sales',      name: 'Analýza ztrát a náprava kurzu',                  banner: 'Přicházíte o zakázky — a nikdo se neshoduje, proč.' },
     { cat: 'Consulting', name: 'Obhajoba doporučení',                            banner: 'Váš klient vás požádal, abyste svá doporučení podložili daty, která ještě nemáte.' },
-    { cat: 'Rodiče', name: 'Ulehčení rodinné organizace', banner: 'Dva rodiče, práce na plný úvazek, tři schůzky dětí tento týden — a nikdo neví, kdo co má na starosti.' }
-  ],
+    { cat: 'Rodiče', name: 'Ulehčení rodinné organizace', banner: 'Dva rodiče, práce na plný úvazek, tři schůzky dětí tento týden — a nikdo neví, kdo co má na starosti.' },
+    { cat: 'Občan', name: 'Od zahlcení k účinnosti', banner: 'Záleží ti na Evropě, ale nevíš, kde začít. Zprávy jsou zdrcující.' }
+    ],
   hu: [
     { cat: 'PR & Comms', name: 'VIP-tudás központosítása',                       banner: 'A csapatod kiterjedt VIP, újságíró és érdekelt fél adatbázist kezel egy hatalmas rendezvényhez.' },
     { cat: 'Management', name: 'Szabványok skálázása',                           banner: 'A csapatod folyton kérdezi: "Ez elég jó?" Te azonnal tudod a választ — de nem mindig vagy elérhető.' },
@@ -1026,8 +1134,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'A pozicionálás megvédése',                       banner: 'A CEO-d megkérdezi, miért hangzik egy versenytárs új kampánya pontosan úgy, mint a saját pozicionálásotok.' },
     { cat: 'Sales',      name: 'Veszteségek elemzése és pályakorrekció',         banner: 'Elveszítitek az ügyleteket — és senki sem tud megállapodni abban, miért.' },
     { cat: 'Consulting', name: 'Ajánlások megvédése',                            banner: 'Az ügyfeled arra kért, hogy ajánlásodat olyan adatokkal támaszd alá, amelyekkel még nem rendelkezel.' },
-    { cat: 'Szülők', name: 'A családi szervezés tehermentesítése', banner: 'Két szülő, teljes munkaidő, három gyerekprogram ezen a héten — és már senki sem tudja, ki mit vállalt el.' }
-  ],
+    { cat: 'Szülők', name: 'A családi szervezés tehermentesítése', banner: 'Két szülő, teljes munkaidő, három gyerekprogram ezen a héten — és már senki sem tudja, ki mit vállalt el.' },
+    { cat: 'Állampolgár', name: 'A túlterheltségtől a hatékonyságig', banner: 'Fontos neked Európa, de nem tudod, hol kezdj. A hírek nyomasztóak.' }
+    ],
   sk: [
     { cat: 'PR & Comms', name: 'Centralizácia VIP znalostí',                     banner: 'Váš tím spravuje rozsiahlu databázu VIP, novinárov a zainteresovaných strán pre veľkú udalosť.' },
     { cat: 'Management', name: 'Škálovanie štandardov',                          banner: 'Váš tím sa neustále pýta: "Je to dosť dobré?" Poznáte odpoveď okamžite — ale nie ste vždy k dispozícii.' },
@@ -1037,8 +1146,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Obhajoba pozicionovania',                        banner: 'Váš CEO sa pýta, prečo nová kampaň konkurenta znie rovnako ako vaše vlastné pozicionovanie.' },
     { cat: 'Sales',      name: 'Analýza strát a náprava kurzu',                  banner: 'Prichádzate o zákazky — a nikto sa nezhoduje, prečo.' },
     { cat: 'Consulting', name: 'Obhajoba odporúčaní',                            banner: 'Váš klient vás požiadal, aby ste odporúčania podložili dátami, ktoré ešte nemáte.' },
-    { cat: 'Rodičia', name: 'Odľahčenie rodinnej organizácie', banner: 'Dvaja rodičia, práca na plný úväzok, tri stretnutia detí tento týždeň — a nikto nevie, kto čo prevzal.' }
-  ],
+    { cat: 'Rodičia', name: 'Odľahčenie rodinnej organizácie', banner: 'Dvaja rodičia, práca na plný úväzok, tri stretnutia detí tento týždeň — a nikto nevie, kto čo prevzal.' },
+    { cat: 'Občan', name: 'Od zahltenosti k účinnosti', banner: 'Záleží ti na Európe, ale nevieš, kde začať. Správy sú zdrvujúce.' }
+    ],
   bg: [
     { cat: 'PR & Comms', name: 'Централизиране на VIP знания',                   banner: 'Екипът ви управлява обширна база данни с VIP-ове, журналисти и заинтересовани страни за голямо събитие.' },
     { cat: 'Management', name: 'Мащабиране на стандарти',                        banner: 'Екипът ви постоянно пита: "Достатъчно добро ли е това?" Знаете отговора веднага — но не винаги сте на разположение.' },
@@ -1048,8 +1158,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Защита на позиционирането',                      banner: 'Вашият изпълнителен директор пита защо новата кампания на конкурент звучи точно като вашето позициониране.' },
     { cat: 'Sales',      name: 'Анализ на загубите и коригиране на курса',       banner: 'Губите сделки — и никой не може да се съгласи защо.' },
     { cat: 'Consulting', name: 'Защита на препоръките',                          banner: 'Вашият клиент ви е помолил да обосновете препоръката си с данни, които все още нямате.' },
-    { cat: 'Родители', name: 'Облекчаване на семейната организация', banner: 'Двама родители, пълно работно време, три срещи на децата тази седмица — и никой вече не знае кой какво е поел.' }
-  ],
+    { cat: 'Родители', name: 'Облекчаване на семейната организация', banner: 'Двама родители, пълно работно време, три срещи на децата тази седмица — и никой вече не знае кой какво е поел.' },
+    { cat: 'Гражданин', name: 'От претоварен до ефективен', banner: 'Грижите ви за Европа, но не знаете откъде да започнете. Новините са огромни.' }
+    ],
   da: [
     { cat: 'PR & Comms', name: 'Centralisere VIP-viden',                         banner: 'Dit team administrerer en omfattende database med VIP\'er, journalister og interessenter til et stort arrangement.' },
     { cat: 'Management', name: 'Skalere standarder',                             banner: 'Dit team spørger konstant: "Er dette godt nok?" Du kender svaret med det samme — men du er ikke altid tilgængelig.' },
@@ -1059,8 +1170,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Forsvare positionering',                         banner: 'Din CEO spørger, hvorfor en konkurrents nye kampagne lyder ligesom jeres egen positionering.' },
     { cat: 'Sales',      name: 'Analysere tab & kurskorrigere',                  banner: 'I taber aftaler — og ingen kan blive enige om hvorfor.' },
     { cat: 'Consulting', name: 'Forsvare anbefalinger',                          banner: 'Din kunde har bedt dig om at understøtte din anbefaling med data, du endnu ikke har.' },
-    { cat: 'Forældre', name: 'Lette den familiære organisering', banner: 'To forældre, et fuldtidsjob, tre børneaftaler denne uge — og ingen ved længere, hvem der tager sig af hvad.' }
-  ],
+    { cat: 'Forældre', name: 'Lette den familiære organisering', banner: 'To forældre, et fuldtidsjob, tre børneaftaler denne uge — og ingen ved længere, hvem der tager sig af hvad.' },
+    { cat: 'Borger', name: 'Fra overvældet til effektiv', banner: 'Du bekymrer dig om Europa men ved ikke, hvor du skal starte. Nyhederne er overvældende.' }
+    ],
   fi: [
     { cat: 'PR & Comms', name: 'VIP-tiedon keskittäminen',                       banner: 'Tiimisi hallinnoi laajaa tietokantaa VIP-henkilöistä, toimittajista ja sidosryhmistä suurta tapahtumaa varten.' },
     { cat: 'Management', name: 'Standardien skaalaaminen',                       banner: 'Tiimisi kysyy jatkuvasti: "Onko tämä tarpeeksi hyvää?" Tiedät vastauksen heti — mutta et ole aina tavoitettavissa.' },
@@ -1070,8 +1182,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Asemoinnin puolustaminen',                       banner: 'Toimitusjohtajasi kysyy, miksi kilpailijan uusi kampanja kuulostaa täsmälleen omalta asemoinniltanne.' },
     { cat: 'Sales',      name: 'Tappioiden analysointi ja kurssin korjaaminen',  banner: 'Te häviätte kauppoja — ja kukaan ei pysty sopimaan miksi.' },
     { cat: 'Consulting', name: 'Suositusten puolustaminen',                      banner: 'Asiakkaasi on pyytänyt sinua tukemaan suositustasi datalla, jota sinulla ei vielä ole.' },
-    { cat: 'Vanhemmat', name: 'Perheen organisoinnin helpottaminen', banner: 'Kaksi vanhempaa, kokopäivätyö, kolme lasten tapaamista tällä viikolla — eikä kukaan enää tiedä, kuka hoitaa mitä.' }
-  ],
+    { cat: 'Vanhemmat', name: 'Perheen organisoinnin helpottaminen', banner: 'Kaksi vanhempaa, kokopäivätyö, kolme lasten tapaamista tällä viikolla — eikä kukaan enää tiedä, kuka hoitaa mitä.' },
+    { cat: 'Kansalainen', name: 'Ylikuormittuneesta tehokkaaksi', banner: 'Välität Euroopasta mutta et tiedä mistä aloittaa. Uutiset ovat ylivoimaisia.' }
+    ],
   hr: [
     { cat: 'PR & Comms', name: 'Centralizacija VIP znanja',                      banner: 'Vaš tim upravlja opsežnom bazom podataka VIP-ova, novinara i dionika za veliki događaj.' },
     { cat: 'Management', name: 'Skaliranje standarda',                           banner: 'Vaš tim stalno pita: "Je li ovo dovoljno dobro?" Vi znate odgovor odmah — ali niste uvijek dostupni.' },
@@ -1081,8 +1194,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Obrana pozicioniranja',                          banner: 'Vaš izvršni direktor pita zašto nova kampanja konkurenta zvuči baš kao vaše vlastito pozicioniranje.' },
     { cat: 'Sales',      name: 'Analiza gubitaka i korekcija kursa',             banner: 'Gubite poslove — i nitko se ne može dogovoriti zašto.' },
     { cat: 'Consulting', name: 'Obrana preporuka',                               banner: 'Vaš klijent vas je zamolio da potkrijepite svoju preporuku podacima koje još nemate.' },
-    { cat: 'Roditelji', name: 'Rasterećenje obiteljske organizacije', banner: 'Dva roditelja, puno radno vrijeme, tri dječja termina ovaj tjedan — i nitko više ne zna tko što preuzima.' }
-  ],
+    { cat: 'Roditelji', name: 'Rasterećenje obiteljske organizacije', banner: 'Dva roditelja, puno radno vrijeme, tri dječja termina ovaj tjedan — i nitko više ne zna tko što preuzima.' },
+    { cat: 'Građanin', name: 'Od preplavljenosti do učinkovitosti', banner: 'Stalo vam je do Europe, ali ne znate odakle početi. Vijesti su preplavljujuće.' }
+    ],
   el: [
     { cat: 'PR & Comms', name: 'Συγκέντρωση γνώσης VIP',                         banner: 'Η ομάδα σας διαχειρίζεται μια εκτενή βάση δεδομένων VIP, δημοσιογράφων και ενδιαφερομένων μερών.' },
     { cat: 'Management', name: 'Κλιμάκωση προτύπων',                             banner: 'Η ομάδα σας ρωτά συνεχώς: "Είναι αυτό αρκετά καλό;" Γνωρίζετε αμέσως την απάντηση — αλλά δεν είστε πάντα διαθέσιμοι.' },
@@ -1092,8 +1206,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Υπεράσπιση τοποθέτησης',                         banner: 'Ο CEO σας ρωτά γιατί η νέα καμπάνια ενός ανταγωνιστή ακούγεται ακριβώς σαν τη δική σας τοποθέτηση.' },
     { cat: 'Sales',      name: 'Ανάλυση απωλειών & διόρθωση πορείας',           banner: 'Χάνετε συμφωνίες — και κανείς δεν μπορεί να συμφωνήσει για ποιο λόγο.' },
     { cat: 'Consulting', name: 'Υπεράσπιση συστάσεων',                           banner: 'Ο πελάτης σας σας ζήτησε να υποστηρίξετε τη σύστασή σας με δεδομένα που δεν έχετε ακόμα.' },
-    { cat: 'Γονείς', name: 'Ελάφρυνση οικογενειακής οργάνωσης', banner: 'Δύο γονείς, μια πλήρης απασχόληση, τρία ραντεβού παιδιών αυτή την εβδομάδα — και κανείς δεν ξέρει πλέον ποιος αναλαμβάνει τι.' }
-  ],
+    { cat: 'Γονείς', name: 'Ελάφρυνση οικογενειακής οργάνωσης', banner: 'Δύο γονείς, μια πλήρης απασχόληση, τρία ραντεβού παιδιών αυτή την εβδομάδα — και κανείς δεν ξέρει πλέον ποιος αναλαμβάνει τι.' },
+    { cat: 'Πολίτης', name: 'Από την αγωνία στη δράση', banner: 'Νοιάζεστε για την Ευρώπη αλλά δεν ξέρετε από πού να ξεκινήσετε. Τα νέα είναι συντριπτικά.' }
+    ],
   lt: [
     { cat: 'PR & Comms', name: 'VIP žinių centralizavimas',                      banner: 'Jūsų komanda tvarko didelę VIP, žurnalistų ir suinteresuotų šalių duomenų bazę dideliam renginiui.' },
     { cat: 'Management', name: 'Standartų mastelio keitimas',                    banner: 'Jūsų komanda nuolat klausia: "Ar tai pakankamai gerai?" Jūs žinote atsakymą iš karto — bet ne visada esate pasiekiami.' },
@@ -1103,8 +1218,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Pozicionavimo gynimas',                          banner: 'Jūsų generalinis direktorius klausia, kodėl konkurento nauja kampanija skamba kaip jūsų pačių pozicionavimas.' },
     { cat: 'Sales',      name: 'Nuostolių analizė ir kurso korekcija',           banner: 'Jūs prarandate sandorius — ir niekas negali susitarti, kodėl.' },
     { cat: 'Consulting', name: 'Rekomendacijų gynimas',                          banner: 'Jūsų klientas paprašė pagrįsti rekomendaciją duomenimis, kurių dar neturite.' },
-    { cat: 'Tėvai', name: 'Šeimos organizavimo naštos mažinimas', banner: 'Du tėvai, visą darbo dieną dirbantys, trys vaikų susitikimai šią savaitę — ir niekas nebeaišku, kas ką perėmė.' }
-  ],
+    { cat: 'Tėvai', name: 'Šeimos organizavimo naštos mažinimas', banner: 'Du tėvai, visą darbo dieną dirbantys, trys vaikų susitikimai šią savaitę — ir niekas nebeaišku, kas ką perėmė.' },
+    { cat: 'Pilietis', name: 'Nuo suklupimo iki veiksmingumo', banner: 'Rūpinasi Europa, bet nežinote nuo ko pradėti. Naujienos yra didžiulės.' }
+    ],
   lv: [
     { cat: 'PR & Comms', name: 'VIP zināšanu centralizēšana',                    banner: 'Jūsu komanda pārvalda plašu VIP, žurnālistu un ieinteresēto pušu datubāzi lielam pasākumam.' },
     { cat: 'Management', name: 'Standartu mērogošana',                           banner: 'Jūsu komanda pastāvīgi jautā: "Vai tas ir pietiekami labs?" Jūs zināt atbildi uzreiz — bet ne vienmēr esat pieejams.' },
@@ -1114,8 +1230,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Pozicionēšanas aizstāvēšana',                    banner: 'Jūsu izpilddirektors jautā, kāpēc konkurenta jaunā kampaņa skan tieši kā jūsu pašu pozicionēšana.' },
     { cat: 'Sales',      name: 'Zaudējumu analīze un kursa korekcija',           banner: 'Jūs zaudējat darījumus — un neviens nevar vienoties, kāpēc.' },
     { cat: 'Consulting', name: 'Ieteikumu aizstāvēšana',                         banner: 'Jūsu klients lūdza pamatot ieteikumu ar datiem, kuru vēl nav.' },
-    { cat: 'Vecāki', name: 'Ģimenes organizācijas sloga mazināšana', banner: 'Divi vecāki, pilna laika darbs, trīs bērnu tikšanās šonedēļ — un neviens vairs nezina, kurš ko uzņēmies.' }
-  ],
+    { cat: 'Vecāki', name: 'Ģimenes organizācijas sloga mazināšana', banner: 'Divi vecāki, pilna laika darbs, trīs bērnu tikšanās šonedēļ — un neviens vairs nezina, kurš ko uzņēmies.' },
+    { cat: 'Pilsonis', name: 'No pārslogotas uz efektīvu', banner: 'Jums rūp Eiropa, bet nezināt, no kurienes sākt. Ziņas ir milzīgas.' }
+    ],
   et: [
     { cat: 'PR & Comms', name: 'VIP-teadmiste tsentraliseerimine',               banner: 'Teie meeskond haldab ulatuslikku VIP-ide, ajakirjanike ja sidusrühmade andmebaasi suureks ürituseks.' },
     { cat: 'Management', name: 'Standardite skaleerimine',                       banner: 'Teie meeskond küsib pidevalt: "Kas see on piisavalt hea?" Te teate vastust kohe — kuid te pole alati kättesaadav.' },
@@ -1125,8 +1242,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Positsioneerimise kaitsmine',                    banner: 'Teie tegevjuht küsib, miks konkurendi uus kampaania kõlab täpselt nagu teie oma positsioneerimine.' },
     { cat: 'Sales',      name: 'Kahjude analüüs ja kursi korrektsioon',          banner: 'Te kaotate tehinguid — ja keegi ei suuda kokku leppida, miks.' },
     { cat: 'Consulting', name: 'Soovituste kaitsmine',                           banner: 'Teie klient palus teil toetada oma soovitust andmetega, mida teil veel ei ole.' },
-    { cat: 'Vanemad', name: 'Perekorralduse koormuse vähendamine', banner: 'Kaks vanemat, täistööaeg, kolm laste kohtumist sel nädalal — ja keegi ei tea enam, kes mida teeb.' }
-  ],
+    { cat: 'Vanemad', name: 'Perekorralduse koormuse vähendamine', banner: 'Kaks vanemat, täistööaeg, kolm laste kohtumist sel nädalal — ja keegi ei tea enam, kes mida teeb.' },
+    { cat: 'Kodanik', name: 'Ülekoormusest tõhususeni', banner: 'Hoolite Euroopast, kuid ei tea, kust alustada. Uudised on tohutud.' }
+    ],
   sl: [
     { cat: 'PR & Comms', name: 'Centralizacija VIP znanja',                      banner: 'Vaša ekipa upravlja obsežno podatkovno bazo VIP-ov, novinarjev in deležnikov za velik dogodek.' },
     { cat: 'Management', name: 'Skaliranje standardov',                          banner: 'Vaša ekipa nenehno sprašuje: "Ali je to dovolj dobro?" Takoj veste odgovor — vendar niste vedno dosegljivi.' },
@@ -1136,8 +1254,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Obramba pozicioniranja',                         banner: 'Vaš izvršni direktor sprašuje, zakaj nova kampanja konkurenta zveni točno kot vaše lastno pozicioniranje.' },
     { cat: 'Sales',      name: 'Analiza izgub in popravljanje smeri',            banner: 'Izgubljate posle — in nihče se ne more dogovoriti, zakaj.' },
     { cat: 'Consulting', name: 'Obramba priporočil',                             banner: 'Vaša stranka vas je prosila, da podkrepite priporočilo s podatki, ki jih še nimate.' },
-    { cat: 'Starši', name: 'Razbremenitev družinske organizacije', banner: 'Dva starša, polni delovni čas, trije otroški termini ta teden — in nihče več ne ve, kdo kaj prevzema.' }
-  ],
+    { cat: 'Starši', name: 'Razbremenitev družinske organizacije', banner: 'Dva starša, polni delovni čas, trije otroški termini ta teden — in nihče več ne ve, kdo kaj prevzema.' },
+    { cat: 'Državljan', name: 'Od preobremenjeni do učinkoviti', banner: 'Skrbi vas Evropa, a ne veste, kje začeti. Novice so preveč.' }
+    ],
   mt: [
     { cat: 'PR & Comms', name: 'Ċentralizzar tal-għarfien VIP',                  banner: 'It-tim tiegħek jimmaniġġja bażi ta\' data wiesgħa ta\' VIPs, ġurnalisti u partijiet interessati.' },
     { cat: 'Management', name: 'Tkabbir tal-istandards',                         banner: 'It-tim tiegħek jistaqsi kontinwament: "Dan hu tajjeb biżżejjed?" Int taf it-tweġiba minnufih — iżda mhux dejjem disponibbli.' },
@@ -1147,8 +1266,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Difiża tal-pożizzjonament',                      banner: 'Il-CEO tiegħek jistaqsi għaliex il-kampanja ġdida ta\' kompetitur tidwi eżatt bħall-pożizzjonament tagħkom.' },
     { cat: 'Sales',      name: 'Analiżi tat-telf u korrezzjoni tal-kors',        banner: 'Qed titlefu ftehimiet — u ħadd ma jistgħu jaqblu għaliex.' },
     { cat: 'Consulting', name: 'Difiża tar-rakkomandazzjonijiet',                banner: 'Il-klijent tiegħek talab li tappoġġja r-rakkomandazzjoni tiegħek bid-data li għadek ma għandekx.' },
-    { cat: 'Ġenituri', name: 'Tnaqqis tal-piż tal-organizzazzjoni familjari', banner: 'Żewġ ġenituri, impjieg full-time, tliet appuntamenti tat-tfal din il-ġimgħa — u ħadd ma jaf aktar min jieħu ħsieb xiex.' }
-  ],
+    { cat: 'Ġenituri', name: 'Tnaqqis tal-piż tal-organizzazzjoni familjari', banner: 'Żewġ ġenituri, impjieg full-time, tliet appuntamenti tat-tfal din il-ġimgħa — u ħadd ma jaf aktar min jieħu ħsieb xiex.' },
+    { cat: 'Ċittadin', name: 'Minn mgħawweġ għal effettiv', banner: 'Tħobb l-Ewropa iżda ma tafx minn fejn tibda. L-aħbarijiet huma kbar wisq.' }
+    ],
   ga: [
     { cat: 'PR & Comms', name: 'Eolas VIP a lárú',                               banner: 'Bainistíonn do fhoireann bunachar sonraí leathan de VIPanna, iriseorí agus geallsealbhóirí do mhórimeacht.' },
     { cat: 'Management', name: 'Caighdeáin a scálú',                             banner: 'Fiafraíonn do fhoireann i gcónaí: "An bhfuil sé seo maith go leor?" Tá an freagra agat láithreach — ach ní bhíonn tú ar fáil i gcónaí.' },
@@ -1158,8 +1278,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'An suíomh a chosaint',                           banner: 'Fiafraíonn do POF cén fáth a bhfuil feachtas nua iomaitheoirí ag fuaimniú cosúil le bhur suíomh féin.' },
     { cat: 'Sales',      name: 'Caillteanais a anailísiú & cúrsa a cheartú',    banner: 'Tá sibh ag cailleadh conarthaí — agus ní féidir le haon duine aontú cén fáth.' },
     { cat: 'Consulting', name: 'Moltaí a chosaint',                              banner: 'D\'iarr do chustaiméir ort do mholadh a thacú le sonraí nach bhfuil agat fós.' },
-    { cat: 'Tuismitheoirí', name: 'Ualach an eagrúcháin teaghlaigh a laghdú', banner: 'Beirt tuismitheoirí, post lánaimseartha, trí choinne do na páistí an tseachtain seo — agus ní fios d\'éinne cé atá ag déileáil le cad.' }
-  ],
+    { cat: 'Tuismitheoirí', name: 'Ualach an eagrúcháin teaghlaigh a laghdú', banner: 'Beirt tuismitheoirí, post lánaimseartha, trí choinne do na páistí an tseachtain seo — agus ní fios d\'éinne cé atá ag déileáil le cad.' },
+    { cat: 'Saoránach', name: 'Ó mhaolaithe go héifeachtach', banner: 'Is cúram leat an Eoraip ach ní fios duit cá tosú. Tá na nuachta ag cur thar maoil.' }
+    ],
   pl: [
     { cat: 'PR & Comms', name: 'Centralizacja wiedzy o VIP-ach',                 banner: 'Twój zespół zarządza rozbudowaną bazą danych VIP-ów, dziennikarzy i interesariuszy.' },
     { cat: 'Management', name: 'Skalowanie standardów',                          banner: 'Twój zespół ciągle pyta: „Czy to wystarczająco dobre?" Znasz odpowiedź — ale nie zawsze jesteś dostępny.' },
@@ -1169,8 +1290,9 @@ window.SKILLS_META = {
     { cat: 'Marketing',  name: 'Obrona pozycjonowania',                          banner: 'Twój dyrektor generalny pyta, dlaczego nowa kampania konkurenta brzmi jak Wasze własne pozycjonowanie.' },
     { cat: 'Sales',      name: 'Analiza strat i korygowanie kursu',              banner: 'Tracicie deale — i nikt nie może się zgodzić, dlaczego.' },
     { cat: 'Consulting', name: 'Obrona rekomendacji',                            banner: 'Twój klient poprosił Cię o poparcie rekomendacji danymi, których jeszcze nie masz.' },
-    { cat: 'Rodzice', name: 'Odciążenie organizacji rodzinnej', banner: 'Dwoje rodziców, praca na pełny etat, trzy wizyty dzieci w tym tygodniu — i nikt nie wie, kto co przejął.' }
-  ],
+    { cat: 'Rodzice', name: 'Odciążenie organizacji rodzinnej', banner: 'Dwoje rodziców, praca na pełny etat, trzy wizyty dzieci w tym tygodniu — i nikt nie wie, kto co przejął.' },
+    { cat: 'Obywatel', name: 'Od przytłoczenia do skuteczności', banner: 'Zależy ci na Europie, ale nie wiesz, od czego zacząć. Wiadomości są przytłaczające.' }
+    ],
 };
 
 // ── Photo carousel ──────────────────────────────────────
@@ -1197,6 +1319,17 @@ function carouselNext(e) { carouselGo(carouselIdx + 1, e); }
 (function() {
   var lang = null;
   try { lang = localStorage.getItem('salonai_lang'); } catch(e) {}
+
+  // Auto-detect browser language on first visit (no stored preference)
+  if (!lang) {
+    var SUPPORTED = ["en","de","fr","es","it","pt","nl","pl","ro","sv",
+                     "cs","hu","sk","bg","da","fi","hr","el","lt","lv",
+                     "et","sl","mt","ga"];
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    var code = nav.split('-')[0].toLowerCase();
+    if (SUPPORTED.indexOf(code) !== -1) lang = code;
+  }
+
   window.applyLocale(lang || 'en');
 })();
 </script>
