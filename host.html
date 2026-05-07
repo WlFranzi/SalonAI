@@ -6,105 +6,129 @@
   <title>Dein KI Dinner — Salon AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --navy: #1B2E4A;
-      --sky-deep: #0057B8;
+      --sky-deep: #7A9DB8;
       --sky-light: #E8F2FA;
-      --gold: #F5C842;
-      --white: #FFFFFF;
+      --gold: #D4A84B;
+      --accent: #003399;
+      --white-warm: #FAF9F7;
+      --border: rgba(0,0,0,0.08);
+      --muted-blue: #5a7085;
       --text: #1a1a2e;
-      --muted: #5a6a7a;
-      --radius: 16px;
     }
 
     body {
-      font-family: 'Space Grotesk', sans-serif;
-      background: #f4f7fb;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white-warm);
       color: var(--text);
       min-height: 100vh;
     }
 
     /* ── NAV ── */
     nav {
-      background: var(--navy);
+      background: #fff;
+      border-bottom: 1px solid var(--border);
       padding: 14px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     .nav-logo {
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 900;
-      font-size: 1.1rem;
-      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
       text-decoration: none;
-      letter-spacing: 0.04em;
     }
-    .nav-logo span { color: var(--gold); }
+    .nav-logo span { color: var(--accent); }
     .nav-back {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+      color: var(--muted-blue);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
-    .nav-back:hover { color: #fff; }
+    .nav-back:hover { color: var(--navy); }
+
+    /* ── HERO ── */
+    .page-hero {
+      background: var(--navy);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .page-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .page-hero p {
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.65);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
 
     /* ── MAIN ── */
     main {
       max-width: 640px;
       margin: 0 auto;
-      padding: 40px 20px 80px;
+      padding: 36px 20px 80px;
     }
 
-    .page-eyebrow {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--sky-deep);
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: clamp(1.4rem, 4vw, 2rem);
-      font-weight: 900;
-      color: var(--navy);
-      line-height: 1.2;
-      margin-bottom: 10px;
-    }
-
-    .page-sub {
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.55;
-      margin-bottom: 36px;
-    }
-
-    /* ── STEPS ── */
+    /* ── STEP CARDS ── */
     .step {
       background: #fff;
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 16px;
-      border: 1px solid rgba(0,0,0,0.07);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
 
     .step-label {
-      font-size: 0.7rem;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--sky-deep);
-      margin-bottom: 10px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .step-label::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
     }
 
     .step h2 {
-      font-size: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--navy);
       margin-bottom: 16px;
@@ -118,267 +142,293 @@
     }
 
     .date-card {
-      border: 2px solid rgba(0,0,0,0.1);
+      border: 1.5px solid var(--border);
       border-radius: 12px;
-      padding: 14px 10px;
+      padding: 16px 10px;
       text-align: center;
       cursor: pointer;
       transition: all 0.15s;
-      background: #fafbfc;
+      background: var(--white-warm);
       user-select: none;
     }
     .date-card:hover {
-      border-color: var(--sky-deep);
+      border-color: var(--accent);
       background: var(--sky-light);
     }
     .date-card.selected {
-      border-color: var(--sky-deep);
-      background: var(--sky-deep);
+      border-color: var(--accent);
+      background: var(--accent);
       color: #fff;
     }
     .date-card .weekday {
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-size: 9px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      opacity: 0.7;
-      margin-bottom: 4px;
+      letter-spacing: 1.5px;
+      opacity: 0.6;
+      margin-bottom: 6px;
     }
     .date-card .day {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 900;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
       line-height: 1;
       margin-bottom: 4px;
     }
     .date-card .month {
-      font-size: 0.8rem;
+      font-size: 11px;
       font-weight: 600;
+      letter-spacing: 0.5px;
     }
+    .date-card.selected .weekday,
+    .date-card.selected .month { opacity: 0.8; }
 
     /* ── INPUTS ── */
     input[type="text"],
     input[type="email"],
     textarea {
       width: 100%;
-      padding: 12px 14px;
-      border: 1.5px solid rgba(0,0,0,0.12);
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
       border-radius: 10px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.95rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13.5px;
       color: var(--text);
-      background: #fafbfc;
+      background: var(--white-warm);
       transition: border-color 0.15s;
       outline: none;
     }
     input[type="text"]:focus,
     input[type="email"]:focus,
     textarea:focus {
-      border-color: var(--sky-deep);
+      border-color: var(--accent);
       background: #fff;
     }
     textarea {
-      min-height: 120px;
+      min-height: 160px;
       resize: vertical;
-      line-height: 1.55;
+      line-height: 1.6;
     }
     .input-hint {
-      font-size: 0.78rem;
-      color: var(--muted);
+      font-size: 11.5px;
+      color: var(--muted-blue);
       margin-top: 7px;
+      line-height: 1.5;
     }
+
+    /* ── VALIDATION ── */
+    .error-msg {
+      font-size: 11.5px;
+      color: #c0392b;
+      margin-top: 6px;
+      display: none;
+    }
+    .has-error .error-msg { display: block; }
+    .has-error input,
+    .has-error textarea { border-color: #c0392b; }
 
     /* ── GENERATE BUTTON ── */
     .generate-btn {
       width: 100%;
-      padding: 16px;
+      padding: 15px;
       background: var(--navy);
       color: #fff;
       border: none;
-      border-radius: 12px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem;
+      border-radius: 40px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
       font-weight: 700;
       cursor: pointer;
       transition: background 0.15s, transform 0.1s;
       margin-top: 8px;
+      letter-spacing: 0.2px;
     }
-    .generate-btn:hover { background: var(--sky-deep); }
+    .generate-btn:hover { background: var(--accent); }
     .generate-btn:active { transform: scale(0.98); }
-    .generate-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
     /* ── RESULT ── */
     #result {
       display: none;
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 24px;
-      border: 2px solid var(--sky-deep);
-      box-shadow: 0 4px 20px rgba(0,87,184,0.12);
-      margin-top: 16px;
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 14px;
+      color: #fff;
     }
 
-    .result-label {
-      font-size: 0.7rem;
+    .result-eyebrow {
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--sky-deep);
+      color: var(--gold);
       margin-bottom: 8px;
     }
 
     .result-title {
-      font-size: 1.05rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
       font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 16px;
+      color: #fff;
+      margin-bottom: 18px;
+      line-height: 1.3;
     }
 
     .link-box {
       display: flex;
       align-items: center;
       gap: 10px;
-      background: #f4f7fb;
+      background: rgba(255,255,255,0.08);
       border-radius: 10px;
-      padding: 12px 14px;
+      padding: 11px 14px;
       margin-bottom: 14px;
     }
     .link-url {
       flex: 1;
-      font-size: 0.85rem;
-      color: var(--navy);
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.8);
       word-break: break-all;
       font-family: monospace;
     }
     .copy-btn {
       flex-shrink: 0;
-      padding: 8px 14px;
-      background: var(--sky-deep);
-      color: #fff;
+      padding: 7px 14px;
+      background: var(--gold);
+      color: var(--navy);
       border: none;
-      border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 600;
+      border-radius: 20px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
       cursor: pointer;
-      transition: background 0.15s;
+      transition: opacity 0.15s;
     }
-    .copy-btn:hover { background: var(--navy); }
-    .copy-btn.copied { background: #2a9d5c; }
+    .copy-btn:hover { opacity: 0.85; }
+    .copy-btn.copied { background: #2a9d5c; color: #fff; }
 
     .preview-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.88rem;
+      font-size: 12.5px;
       font-weight: 600;
-      color: var(--sky-deep);
+      color: rgba(255,255,255,0.75);
       text-decoration: none;
-      padding: 10px 16px;
-      border: 1.5px solid var(--sky-deep);
-      border-radius: 10px;
+      padding: 9px 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
       transition: all 0.15s;
       margin-top: 4px;
     }
-    .preview-link:hover { background: var(--sky-light); }
+    .preview-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
 
     .result-note {
-      font-size: 0.82rem;
-      color: var(--muted);
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.5);
       margin-top: 14px;
       padding-top: 14px;
-      border-top: 1px solid rgba(0,0,0,0.07);
-      line-height: 1.5;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      line-height: 1.6;
     }
+    .result-note a { color: rgba(255,255,255,0.7); }
 
     /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 24px;
-      font-size: 0.8rem;
-      color: var(--muted);
+      font-size: 11.5px;
+      color: var(--muted-blue);
+      border-top: 1px solid var(--border);
     }
-    footer a { color: var(--sky-deep); }
+    footer a { color: var(--accent); text-decoration: none; }
 
-    /* ── VALIDATION ── */
-    .error-msg {
-      font-size: 0.82rem;
-      color: #e05252;
-      margin-top: 6px;
+    /* ── DATE VALIDATION ── */
+    .date-error {
+      font-size: 11.5px;
+      color: #c0392b;
+      margin-top: 8px;
       display: none;
     }
-    .has-error .error-msg { display: block; }
-    .has-error input, .has-error textarea { border-color: #e05252; }
+    .date-error.show { display: block; }
+
+    @media(max-width: 480px) {
+      .date-grid { grid-template-columns: repeat(3, 1fr); }
+      .step { padding: 20px; }
+    }
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">SALON <span>AI</span></a>
-  <a href="/" class="nav-back">← Zurück zur Hauptseite</a>
+  <a href="/" class="nav-logo">Salon <span>AI</span></a>
+  <a href="/" class="nav-back">← Zurück</a>
 </nav>
 
-<main>
+<div class="page-hero">
   <p class="page-eyebrow">Dein eigenes KI Dinner</p>
-  <h1>Organisier einen Abend<br>mit deinen Leuten</h1>
-  <p class="page-sub">Wähle einen Abend, gib deinen Namen ein — und du bekommst einen Link, den du einfach weiterschicken kannst. Franziska hält den Abend, du organisierst deine Runde.</p>
+  <h1>Organisiere einen Abend<br><em>mit deinen Leuten</em></h1>
+  <p>Wähle ein Datum — du bekommst einen fertigen Link, den du einfach weiterschickst. Franziska hält den Abend, du organisierst deine Runde.</p>
+</div>
+
+<main>
 
   <!-- STEP 1: Date -->
   <div class="step">
-    <p class="step-label">Schritt 1</p>
+    <div class="step-label">Schritt 1</div>
     <h2>Welcher Abend passt dir?</h2>
     <div class="date-grid" id="date-grid">
-      <div class="date-card" data-code="19mai" onclick="selectDate(this)">
+      <div class="date-card" data-code="19mai" data-label="Dienstag, 19. Mai 2026" onclick="selectDate(this)">
         <div class="weekday">Di</div>
         <div class="day">19</div>
         <div class="month">Mai 2026</div>
       </div>
-      <div class="date-card" data-code="21mai" onclick="selectDate(this)">
+      <div class="date-card" data-code="21mai" data-label="Donnerstag, 21. Mai 2026" onclick="selectDate(this)">
         <div class="weekday">Do</div>
         <div class="day">21</div>
         <div class="month">Mai 2026</div>
       </div>
-      <div class="date-card" data-code="26mai" onclick="selectDate(this)">
+      <div class="date-card" data-code="26mai" data-label="Dienstag, 26. Mai 2026" onclick="selectDate(this)">
         <div class="weekday">Di</div>
         <div class="day">26</div>
         <div class="month">Mai 2026</div>
       </div>
     </div>
+    <div class="date-error" id="date-error">Bitte wähle einen Abend.</div>
   </div>
 
   <!-- STEP 2: Name -->
   <div class="step" id="step-name">
-    <p class="step-label">Schritt 2</p>
+    <div class="step-label">Schritt 2</div>
     <h2>Dein Name</h2>
-    <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" oninput="updatePreview()" />
+    <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" oninput="syncMessage()" />
     <div class="error-msg">Bitte gib deinen Namen ein.</div>
-    <p class="input-hint">So heißt das Event — deine Runde weiß dann sofort, wer organisiert.</p>
+    <p class="input-hint">So heißt das Event — deine Runde sieht sofort, wer es organisiert.</p>
   </div>
 
   <!-- STEP 3: Message -->
-  <div class="step">
-    <p class="step-label">Schritt 3</p>
-    <h2>Deine Einladung — ändere sie gerne</h2>
-    <textarea id="host-msg" oninput="updatePreview()">Hey Leute! 🎉 Ich organisiere ein KI Dinner und würde mich freuen, wenn ihr dabei seid. Franziska hält den Abend — wir bauen unseren eigenen KI-Assistenten und lernen, wie wir ihn für Europa einsetzen können. Essen &amp; Drinks inklusive. Wer hat Bock? 🚀</textarea>
+  <div class="step" id="step-msg">
+    <div class="step-label">Schritt 3</div>
+    <h2>Deine Einladung — ändere sie wie du möchtest</h2>
+    <textarea id="host-msg"></textarea>
     <div class="error-msg">Bitte schreib eine kurze Einladung.</div>
     <p class="input-hint">Dieser Text erscheint ganz oben auf der Event-Seite — in deinem Namen.</p>
   </div>
 
   <!-- STEP 4: Email -->
-  <div class="step">
-    <p class="step-label">Schritt 4</p>
+  <div class="step" id="step-email">
+    <div class="step-label">Schritt 4</div>
     <h2>Deine E-Mail</h2>
-    <input type="email" id="host-email" placeholder="deine@email.com" oninput="updatePreview()" />
+    <input type="email" id="host-email" placeholder="deine@email.com" />
     <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
     <p class="input-hint">Du bekommst eine Nachricht, sobald alle Plätze vergeben sind.</p>
   </div>
 
   <!-- GENERATE -->
-  <button class="generate-btn" onclick="generate()" id="gen-btn">✨ Meinen Event-Link erstellen →</button>
+  <button class="generate-btn" onclick="generate()">✨ Meinen Event-Link erstellen →</button>
 
   <!-- RESULT -->
   <div id="result">
-    <p class="result-label">Dein persönlicher Link ist fertig 🎉</p>
+    <p class="result-eyebrow">Dein persönlicher Link ist fertig 🎉</p>
     <p class="result-title" id="result-title"></p>
     <div class="link-box">
       <span class="link-url" id="result-url"></span>
@@ -391,66 +441,84 @@
       Fragen? Schreib Franziska: <a href="mailto:franziska.wittleder@gmail.com">franziska.wittleder@gmail.com</a>
     </p>
   </div>
+
 </main>
 
 <footer>
-  <a href="/">www.salon-ai.eu</a> · Ein Abend der sich lohnt.
+  <a href="/">www.salon-ai.eu</a> · Salon AI · Ein Abend der sich lohnt.
 </footer>
 
 <script>
   var selectedDate = '';
+  var selectedDateLabel = '';
 
-  var DATE_LABELS = {
-    '19mai': 'Dienstag, 19. Mai 2026',
-    '21mai': 'Donnerstag, 21. Mai 2026',
-    '26mai': 'Dienstag, 26. Mai 2026',
-  };
+  // ── Default message template ──────────────────────────────────────────────
+  var MSG_TEMPLATE = 'Hey! Ich hoste am [DATUM] ein kleines Dinner zum Thema AI & Zukunft. ' +
+    'Meine Freundin Franziska (Expertin & Gründerin — https://www.linkedin.com/in/franziska-wittleder/?locale=en) ' +
+    'moderiert den Abend und gibt uns exklusive Insights, was gerade wirklich hinter den Kulissen passiert. 🚀\n\n' +
+    'Jeder muss seinen Laptop mitbringen — wir bauen erst unseren eigenen KI-Agenten und nutzen ihn dann, ' +
+    'um gemeinsam etwas für Europa zu bauen.\n\n' +
+    'Hättest du Lust auf guten Wein und Deep Talk? Wir sind ein kleiner Kreis. ' +
+    'Sag fix zu, indem du ein Ticket kaufst. Der Abend kommt erst zustande wenn wir min. 12 sind.\n\n' +
+    'Herzlich, [NAME]';
+
+  function getFilledMessage() {
+    var name = document.getElementById('host-name').value.trim() || 'dein Name';
+    var dateStr = selectedDateLabel || 'dem gewählten Datum';
+    return MSG_TEMPLATE.replace('[DATUM]', dateStr).replace('[NAME]', name);
+  }
+
+  function syncMessage() {
+    var ta = document.getElementById('host-msg');
+    ta.value = getFilledMessage();
+  }
 
   function selectDate(el) {
     document.querySelectorAll('.date-card').forEach(function(c){ c.classList.remove('selected'); });
     el.classList.add('selected');
     selectedDate = el.dataset.code;
-    updatePreview();
+    selectedDateLabel = el.dataset.label;
+    document.getElementById('date-error').classList.remove('show');
+    syncMessage();
   }
 
-  function updatePreview() {
-    // live update nothing visible — just enables the button state check
-  }
+  // Init textarea with template on load
+  window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('host-msg').value = getFilledMessage();
+  });
 
   function validate() {
     var ok = true;
 
     // date
     if (!selectedDate) {
-      document.getElementById('date-grid').style.outline = '2px solid #e05252';
-      document.getElementById('date-grid').style.borderRadius = '12px';
+      document.getElementById('date-error').classList.add('show');
+      document.getElementById('date-grid').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       ok = false;
-    } else {
-      document.getElementById('date-grid').style.outline = '';
     }
 
     // name
-    var nameEl = document.getElementById('step-name');
-    var name = document.getElementById('host-name').value.trim();
-    if (!name) {
-      nameEl.classList.add('has-error');
+    var nameStep = document.getElementById('step-name');
+    if (!document.getElementById('host-name').value.trim()) {
+      nameStep.classList.add('has-error');
       ok = false;
     } else {
-      nameEl.classList.remove('has-error');
+      nameStep.classList.remove('has-error');
     }
 
     // msg
-    var msgStep = document.querySelector('.step:nth-child(3)');
-    var msg = document.getElementById('host-msg').value.trim();
-    if (!msg) {
+    var msgStep = document.getElementById('step-msg');
+    if (!document.getElementById('host-msg').value.trim()) {
+      msgStep.classList.add('has-error');
       ok = false;
+    } else {
+      msgStep.classList.remove('has-error');
     }
 
     // email
-    var emailStep = document.querySelector('.step:nth-child(4)');
+    var emailStep = document.getElementById('step-email');
     var email = document.getElementById('host-email').value.trim();
-    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!emailOk) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       emailStep.classList.add('has-error');
       ok = false;
     } else {
@@ -463,30 +531,23 @@
   function generate() {
     if (!validate()) return;
 
-    var name = document.getElementById('host-name').value.trim();
-    var msg  = document.getElementById('host-msg').value.trim();
+    var name  = document.getElementById('host-name').value.trim();
+    var msg   = document.getElementById('host-msg').value.trim();
     var email = document.getElementById('host-email').value.trim();
 
-    var base = window.location.origin + '/event.html';
-    var params = new URLSearchParams({
-      d: selectedDate,
-      h: name,
-      e: email,
-      msg: msg
-    });
+    var base   = window.location.origin + '/event.html';
+    var params = new URLSearchParams({ d: selectedDate, h: name, e: email, msg: msg });
+    var url    = base + '?' + params.toString();
 
-    var url = base + '?' + params.toString();
-
-    document.getElementById('result-title').textContent = name + "'s KI Dinner · " + DATE_LABELS[selectedDate];
-    document.getElementById('result-url').textContent = url;
-    document.getElementById('preview-link').href = url;
+    document.getElementById('result-title').textContent = name + "'s KI Dinner · " + selectedDateLabel;
+    document.getElementById('result-url').textContent   = url;
+    document.getElementById('preview-link').href        = url;
 
     var resultEl = document.getElementById('result');
     resultEl.style.display = 'block';
     resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    // Notify Franziska via Web3Forms
-    notifyFranziska(name, email, selectedDate, DATE_LABELS[selectedDate]);
+    notifyFranziska(name, email, selectedDate, selectedDateLabel, url);
   }
 
   function copyLink() {
@@ -499,20 +560,18 @@
     });
   }
 
-  function notifyFranziska(name, email, dateCode, dateLabel) {
-    // Notify Franziska that a new host created an event
+  function notifyFranziska(name, email, dateCode, dateLabel, url) {
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: 'DEIN_WEB3FORMS_KEY', // ← Franziska: ersetze mit deinem Web3Forms Key
+        access_key: 'DEIN_WEB3FORMS_KEY', // ← ersetze mit deinem Web3Forms Key
         subject: '🎉 Neues KI Dinner — ' + name + ' · ' + dateLabel,
         from_name: 'Salon AI Host Flow',
         to: 'franziska.wittleder@gmail.com',
-        message: name + ' (' + email + ') hat ein KI Dinner erstellt für: ' + dateLabel + '\n\nEvent-Link:\n' + window.location.origin + '/event.html?d=' + dateCode + '&h=' + encodeURIComponent(name) + '&e=' + encodeURIComponent(email)
+        message: 'Neue Host-Seite erstellt:\n\nName: ' + name + '\nE-Mail: ' + email + '\nDatum: ' + dateLabel + '\n\nLink:\n' + url
       })
     }).catch(function(){});
-    // Silent fail — the host gets their link regardless
   }
 </script>
 
