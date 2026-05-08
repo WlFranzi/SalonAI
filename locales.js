@@ -19,6 +19,7 @@ window.LOCALES = {
   en: {
     nav_cta:       "Join a Dinner →",
     hero_strapline: "Because the only way to know where you and your team really stand on AI is to have built it yourself.",
+    hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     hero_eyebrow:  "Pro-EU Event Series",
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
@@ -66,6 +67,7 @@ window.LOCALES = {
   de: {
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_strapline: "Denn wer wirklich wissen will, wo er und sein Team bei KI gerade stehen, muss es einmal selbst gebaut haben.",
+    hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     hero_eyebrow:  "Pro-EU Eventreihe",
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
@@ -113,6 +115,7 @@ window.LOCALES = {
   fr: {
     nav_cta:       "Rejoindre un dîner →",
     hero_strapline: "Car la seule façon de savoir où vous et votre équipe en êtes vraiment avec l'IA, c'est de l'avoir construite vous-même.",
+    hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     hero_eyebrow:  "Série d'événements Pro-UE",
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
@@ -160,6 +163,7 @@ window.LOCALES = {
   es: {
     nav_cta:       "Unirse a una cena →",
     hero_strapline: "Porque la única forma de saber dónde estáis tú y tu equipo realmente con la IA es haberla construido tú mismo.",
+    hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     hero_eyebrow:  "Serie de eventos Pro-UE",
     hero_sub:      "Comenzando en Alemania, próximamente en toda la UE.",
     hero_subtitle: '',
@@ -207,6 +211,7 @@ window.LOCALES = {
   it: {
     nav_cta:       "Partecipa a una cena →",
     hero_strapline: "Perché l'unico modo di sapere dove tu e il tuo team siete davvero con l'IA è averla costruita tu stesso.",
+    hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     hero_eyebrow:  "Serie di eventi Pro-UE",
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
@@ -254,6 +259,7 @@ window.LOCALES = {
   pt: {
     nav_cta:       "Participar de um jantar →",
     hero_strapline: "Porque a única forma de saber onde você e a sua equipa realmente estão com a IA é tê-la construído você mesmo.",
+    hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     hero_eyebrow:  "Série de eventos Pró-UE",
     hero_sub:      "Começando na Alemanha, em breve por toda a UE.",
     hero_subtitle: '',
@@ -301,6 +307,7 @@ window.LOCALES = {
   nl: {
     nav_cta:       "Sluit je aan bij een diner →",
     hero_strapline: "Want de enige manier om te weten waar jij en je team echt staan met AI, is het zelf te hebben gebouwd.",
+    hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     hero_eyebrow:  "Pro-EU evenementenreeks",
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
@@ -348,6 +355,7 @@ window.LOCALES = {
   pl: {
     nav_cta:       "Dołącz do kolacji →",
     hero_strapline: "Bo jedyny sposób, by się dowiedzieć, gdzie ty i twój zespół naprawdę jesteście w AI, to samodzielnie coś zbudować.",
+    hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     hero_eyebrow:  "Seria wydarzeń Pro-UE",
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
@@ -395,6 +403,7 @@ window.LOCALES = {
   ro: {
     nav_cta:       "Alătură-te unei cine →",
     hero_strapline: "Pentru că singura modalitate de a ști unde te afli tu și echipa ta cu AI este să o fi construit tu însuți.",
+    hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     hero_eyebrow:  "Serie de evenimente Pro-UE",
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
@@ -442,6 +451,7 @@ window.LOCALES = {
   sv: {
     nav_cta:       "Gå med på en middag →",
     hero_strapline: "För det enda sättet att veta var du och ditt team verkligen står med AI är att ha byggt något själv.",
+    hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     hero_eyebrow:  "Pro-EU evenemangserie",
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
@@ -489,6 +499,7 @@ window.LOCALES = {
   cs: {
     nav_cta:       "Přidej se na večeři →",
     hero_strapline: "Protože jediný způsob, jak zjistit, kde vy a váš tým s AI skutečně stojíte, je něco si sám postavit.",
+    hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     hero_eyebrow:  "Série akcí Pro-EU",
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
@@ -536,6 +547,7 @@ window.LOCALES = {
   hu: {
     nav_cta:       "Csatlakozz egy vacsorához →",
     hero_strapline: "Mert csak akkor tudod, hol állsz te és a csapatod a mesterséges intelligenciával, ha magad is építettél valamit.",
+    hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     hero_eyebrow:  "Pro-EU rendezvénysorozat",
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
@@ -583,6 +595,7 @@ window.LOCALES = {
   sk: {
     nav_cta:       "Pridaj sa na večeru →",
     hero_strapline: "Pretože jediný spôsob, ako zistiť, kde vy a váš tím s AI skutočne stojíte, je niečo si sám postaviť.",
+    hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     hero_eyebrow:  "Séria udalostí Pro-EÚ",
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
@@ -630,6 +643,7 @@ window.LOCALES = {
   bg: {
     nav_cta:       "Присъедини се към вечеря →",
     hero_strapline: "Защото единственият начин да разбереш къде наистина стоите ти и екипът ти с ИИ е да го изградиш сам.",
+    hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     hero_eyebrow:  "Серия Pro-EU събития",
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
@@ -677,6 +691,7 @@ window.LOCALES = {
   da: {
     nav_cta:       "Deltag i en middag →",
     hero_strapline: "For den eneste måde at finde ud af, hvor du og dit team virkelig står med AI, er at have bygget noget selv.",
+    hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     hero_eyebrow:  "Pro-EU begivenhedsserie",
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
@@ -724,6 +739,7 @@ window.LOCALES = {
   fi: {
     nav_cta:       "Liity illalliselle →",
     hero_strapline: "Sillä ainoa tapa tietää, missä sinä ja tiimisi todella olette tekoälyssä, on rakentaa jotain itse.",
+    hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     hero_eyebrow:  "Pro-EU tapahtumasarja",
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
@@ -771,6 +787,7 @@ window.LOCALES = {
   hr: {
     nav_cta:       "Pridruži se večeri →",
     hero_strapline: "Jer jedini način da saznaš gdje vi i vaš tim doista stojite s AI-jem jest da ga sami izgradite.",
+    hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     hero_eyebrow:  "Pro-EU serija događanja",
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
@@ -818,6 +835,7 @@ window.LOCALES = {
   el: {
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
     hero_strapline: "Γιατί ο μόνος τρόπος για να ξέρεις πού πραγματικά είστε εσύ και η ομάδα σου με την Τ.Ν. είναι να την έχεις φτιάξει ο ίδιος.",
+    hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
@@ -865,6 +883,7 @@ window.LOCALES = {
   lt: {
     nav_cta:       "Prisijunk prie vakarienės →",
     hero_strapline: "Nes vienintelis būdas sužinoti, kur jūs ir jūsų komanda iš tikrųjų esate su DI, yra patiems ką nors sukurti.",
+    hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     hero_eyebrow:  "Pro-ES renginių serija",
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
@@ -912,6 +931,7 @@ window.LOCALES = {
   lv: {
     nav_cta:       "Pievienojies vakariņām →",
     hero_strapline: "Jo vienīgais veids, kā uzzināt, kur jūs un jūsu komanda patiešām atrodaties ar MI, ir pašiem to izveidot.",
+    hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     hero_eyebrow:  "Pro-ES pasākumu sērija",
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
@@ -959,6 +979,7 @@ window.LOCALES = {
   et: {
     nav_cta:       "Liitu õhtusöögiga →",
     hero_strapline: "Sest ainus viis teada saada, kus sina ja su meeskond TI-ga tegelikult olete, on see ise üles ehitada.",
+    hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     hero_eyebrow:  "Pro-EL ürituste sari",
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
@@ -1006,6 +1027,7 @@ window.LOCALES = {
   sl: {
     nav_cta:       "Pridruži se večerji →",
     hero_strapline: "Saj je edini način, da ugotoviš, kje sta ti in tvoja ekipa z UI v resnici, da jo zgradiš sam.",
+    hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     hero_eyebrow:  "Serija pro-EU dogodkov",
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
@@ -1053,6 +1075,7 @@ window.LOCALES = {
   mt: {
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
     hero_strapline: "Għax l-unika triq biex tkun taf fejn int u t-tim tiegħek tassew tinsabu fl-AI hi li tkun bnejtha int stess.",
+    hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
@@ -1100,6 +1123,7 @@ window.LOCALES = {
   ga: {
     nav_cta:       "Bí páirteach i ndinnéar →",
     hero_strapline: "Mar is é an t-aon bhealach le fáil amach cá bhfuil tú féin agus d'fhoireann i ndáiríre leis an IS, é a thógáil leat féin.",
+    hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     hero_eyebrow:  "Sraith imeachtaí Pro-AE",
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',

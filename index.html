@@ -87,16 +87,18 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
 
 /* ── Manifest: Warum es Salon AI gibt ── */
-.manifesto { background: transparent; padding: var(--s5) var(--s3); }
-.manifesto-inner { max-width: 640px; margin: 0 auto; }
+.manifesto { background: transparent; padding: var(--s4) var(--s3); }
+.manifesto-inner { max-width: 960px; margin: 0 auto; }
 .manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
-.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.85rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s3); }
-.manifesto p { font-size: var(--t-base); color: var(--navy); line-height: 1.75; margin-bottom: var(--s2); }
-.manifesto p.manifesto-lede { font-size: 1.05rem; }
-.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0 var(--s3); display: flex; flex-direction: column; gap: var(--s2); }
-.manifesto ol li { counter-increment: manifesto-c; padding-left: 38px; position: relative; font-size: var(--t-base); color: var(--navy); line-height: 1.7; }
-.manifesto ol li::before { content: counter(manifesto-c); position: absolute; left: 0; top: 1px; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--sky-deep); width: 26px; text-align: left; }
-.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); border-top: 1px solid var(--border); padding-top: var(--s2); margin-top: var(--s3); }
+.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s2); }
+.manifesto p { font-size: var(--t-sm); color: var(--navy); line-height: 1.65; margin-bottom: var(--s1); }
+.manifesto p.manifesto-lede { font-size: var(--t-base); margin-bottom: var(--s2); max-width: 720px; }
+.manifesto p.manifesto-bridge { color: var(--muted-blue); font-weight: 600; margin-bottom: var(--s2); }
+.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s3); }
+.manifesto ol li { counter-increment: manifesto-c; padding-left: 28px; position: relative; font-size: var(--t-sm); color: var(--navy); line-height: 1.6; }
+.manifesto ol li::before { content: counter(manifesto-c); position: absolute; left: 0; top: 0; font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--sky-deep); width: 22px; text-align: left; }
+.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); border-top: 1px solid var(--border); padding-top: var(--s2); margin-top: var(--s2); max-width: 720px; }
+@media (max-width: 720px) { .manifesto ol { grid-template-columns: 1fr; gap: var(--s2); } }
 
 /* ── Event requirement note ── */
 .event-requirement { font-size: var(--t-sm); color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 10px 16px; margin: 8px 0 16px; line-height: 1.6; }
@@ -609,7 +611,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <h1 data-i18n-html="hero_h1">Bau deinen KI-Assistenten und setz ihn für Europa ein.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline" style="font-style:italic;font-size:var(--t-base);color:rgba(255,255,255,0.72);font-family:'Playfair Display',Georgia,serif;line-height:1.5;max-width:560px;margin:var(--s2) auto 0;">Denn wer wirklich wissen will, wo er und sein Team bei KI gerade stehen, muss es einmal selbst gebaut haben.</p>
     <a href="#events" class="hero-cta" data-i18n="hero_cta">Zum Salon anmelden →</a>
-    <p class="hero-alumni" style="margin-top:var(--s4);font-size:var(--t-xs);color:rgba(255,255,255,0.45);letter-spacing:0.3px;line-height:1.7;">Bisherige Runden: Investor:innen · Gründer:innen · CEOs · CMOs · Architekt:innen · Ärzt:innen · PR-Agentur-Chef:innen · Design-Agentur-Chef:innen · Journalist:innen · Abgeordnete</p>
+    <p class="hero-alumni" data-i18n="hero_alumni" style="margin-top:var(--s4);font-size:var(--t-xs);color:rgba(255,255,255,0.45);letter-spacing:0.3px;line-height:1.7;">Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</p>
   </div>
 </section>
 
@@ -637,8 +639,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="manifesto-inner">
     <h2>Warum es Salon AI gibt</h2>
     <p class="manifesto-lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
-    <p>Genau deshalb gibt es Salon AI.</p>
-    <p><strong>An einem Abend passieren drei Dinge:</strong></p>
+    <p class="manifesto-bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
     <ol>
       <li>Wir lernen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI gerade stehen, muss es einmal selbst gebaut haben.</li>
       <li>Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>

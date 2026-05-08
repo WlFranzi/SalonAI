@@ -83,25 +83,24 @@ describe("index.html — hero", () => {
   });
   it("hero contains alumni signal under CTA", () => {
     assert.ok(/class="hero-alumni"/.test(html), ".hero-alumni element missing");
-    assert.ok(/Bisherige Runden/.test(html), "Hero alumni line text missing");
+    assert.ok(/Unsere bisherigen Runden vereinten Entscheidungsträger:innen/.test(html),
+      "Hero alumni line text missing or not the new sector framing");
   });
-  it("alumni line is MECE — every named role present, no umbrella categories", () => {
+  it("alumni line uses sector framing (Wirtschaft/Agenturen/Medien/Wissenschaft/Politik)", () => {
     const m = html.match(/<p class="hero-alumni"[^>]*>([^<]+)<\/p>/);
     assert.ok(m, "hero-alumni paragraph not found");
-    const required = [
-      "Investor:innen", "Gründer:innen", "CEOs", "CMOs",
-      "Architekt:innen", "Ärzt:innen",
-      "PR-Agentur-Chef:innen", "Design-Agentur-Chef:innen",
-      "Journalist:innen", "Abgeordnete",
-    ];
-    for (const g of required) {
-      assert.ok(m[1].includes(g), `Alumni line missing role: ${g}`);
+    const sectors = ["Wirtschaft", "Agenturen", "Medien", "Wissenschaft", "Politik"];
+    for (const s of sectors) {
+      assert.ok(m[1].includes(s), `Alumni line missing sector: ${s}`);
     }
-    // MECE: drop overlapping umbrella categories that the specific roles already cover
-    assert.ok(!/Führungskräfte/.test(m[1]),
-      "Drop 'Führungskräfte' — overlaps with CEOs/CMOs (not MECE)");
-    assert.ok(!/\bKreative\b/.test(m[1]),
-      "Drop 'Kreative' — overlaps with Architekt:innen/Design-Agentur-Chef:innen (not MECE)");
+    assert.ok(/Entscheidungsträger:innen/.test(m[1]),
+      "Alumni line should frame audience as 'Entscheidungsträger:innen'");
+  });
+  it("alumni line is data-i18n tagged (so it switches with locale)", () => {
+    const m = html.match(/<p class="hero-alumni"[^>]*>/);
+    assert.ok(m, "hero-alumni element missing");
+    assert.ok(/data-i18n="hero_alumni"/.test(m[0]),
+      "hero-alumni must carry data-i18n=\"hero_alumni\"");
   });
 
   it("hero contains italic strapline below H1 (HNWI signal)", () => {
