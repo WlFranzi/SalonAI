@@ -72,6 +72,14 @@
     .venue-toggle input[type=checkbox] { margin-top: 2px; flex-shrink: 0; width: 15px; height: 15px; cursor: pointer; accent-color: var(--accent); }
     .venue-toggle label { font-size: 12.5px; color: var(--muted); line-height: 1.55; cursor: pointer; }
     .venue-toggle label strong { color: var(--navy); }
+    .venue-choice { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+    .venue-opt { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 12px; background: var(--white-warm); cursor: pointer; transition: all 0.15s; }
+    .venue-opt:hover { border-color: var(--sky-deep); background: var(--sky-light); }
+    .venue-opt.selected { border-color: var(--accent); background: rgba(0,51,153,0.04); }
+    .venue-opt input[type=radio] { margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+    .venue-opt .vo-body { display: flex; flex-direction: column; gap: 3px; }
+    .venue-opt .vo-body strong { color: var(--navy); font-size: 13.5px; line-height: 1.45; }
+    .venue-opt .vo-body span { color: var(--muted); font-size: 12.5px; line-height: 1.55; }
 
     /* INPUTS */
     input[type="text"], input[type="email"], textarea {
@@ -110,15 +118,7 @@
 
     @media(max-width: 440px) { .step, .quick-email { padding: 18px; } }
 
-    /* VENUE CHOICE */
-    .venue-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .venue-option { border: 2px solid var(--border); border-radius: 12px; padding: 16px 14px; cursor: pointer; transition: all 0.15s; background: var(--white-warm); text-align: left; width: 100%; font-family: 'DM Sans', sans-serif; }
-    .venue-option:hover { border-color: var(--sky-deep); background: var(--sky-light); }
-    .venue-option.selected { border-color: var(--accent); background: rgba(0,51,153,0.05); }
-    .venue-option .vo-icon { font-size: 22px; margin-bottom: 8px; display: block; }
-    .venue-option .vo-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; display: block; }
-    .venue-option.selected .vo-title { color: var(--accent); }
-    .venue-option .vo-desc { font-size: 11.5px; color: var(--muted); line-height: 1.5; display: block; }
+    /* (legacy two-column venue grid removed — superseded by .venue-choice / .venue-opt above) */
     .venue-error { font-size: 11.5px; color: #c0392b; margin-top: 7px; display: none; }
     .venue-error.show { display: block; }
 
@@ -140,28 +140,28 @@
 </nav>
 
 <div class="hero">
-  <p class="eyebrow">Dein eigenes KI Dinner</p>
+  <p class="eyebrow">Ein Abend, den du auslöst</p>
   <h1>Du bringst Raum und Kreis.<br><em>Wir bringen den Rest.</em></h1>
-  <p>Workshop, Moderation und Catering kommen von uns. Du wählst das Datum, bekommst einen Einladungslink, schickst ihn an deine Runde. Ab zwölf Personen · 78€ pro Person.</p>
+  <p>Ein Dienstagabend, ein Tisch, zwölf Leute — die du dir aussuchst. Workshop und Catering kommen von uns. Du entscheidest nur, wer dabei sein soll. 78€ pro Person.</p>
 </div>
 
 <main>
 
   <!-- SOCIAL PROOF -->
   <div style="text-align:center; font-size:11.5px; color:var(--muted); margin:20px 0 6px; letter-spacing:0.3px;">
-    Bisherige Dinner: Investoren · Gründerinnen · Führungskräfte · Journalist:innen · Abgeordnete
+    Bisherige Runden: Investor:innen · Gründer:innen · Führungskräfte · Journalist:innen · Abgeordnete
   </div>
 
   <!-- MIN PERSONS CALLOUT -->
   <div class="min-callout">
     <span class="mc-badge">Kleiner Kreis</span>
-    Ab 12 Tickets findet der Abend statt · maximal 20 Gäste · <strong>78€ pro Person, Catering inklusive</strong>
+    Ab zwölf Tickets findet der Abend statt, höchstens zwanzig Gäste — <strong>78€ pro Person, Catering inbegriffen</strong>.
   </div>
 
   <!-- WHAT WE PROVIDE BANNER -->
   <div class="free-banner">
-    Wir liefern den Inhalt: Hands-on KI-Workshop, Moderation und Catering (Essen &amp; Drinks) — für jeden Gast im Ticketpreis enthalten.<br>
-    <strong>Du übernimmst Raum und Einladungen.</strong> Dein Platz als Gastgeber:in ist inklusive.
+    Was wir mitbringen: einen Hands-on KI-Workshop, Moderation und Catering — für jeden Gast im Ticket enthalten.<br>
+    <strong>Was bei dir liegt:</strong> der Raum und die Frage, wen du an diesem Abend sehen willst. Dein Platz als Gastgeber:in ist inklusive.
   </div>
 
   <!-- STEP 2: Date -->
@@ -187,37 +187,57 @@
     <div class="date-error" id="date-error">Bitte wähle einen Abend.</div>
   </div>
 
-  <!-- LUITPOLDBLOCK OPTIONAL TOGGLE -->
+  <!-- VENUE CHOICE -->
   <div class="step" id="step-venue-opt">
-    <div class="venue-toggle">
-      <input type="checkbox" id="need-luitpoldblock" onchange="toggleLuitpoldblock(this)" />
-      <label for="need-luitpoldblock"><strong>Ich brauche einen Raum — Luitpoldblock anfragen</strong><br><span style="font-weight:400;color:var(--muted);">Wir fragen für dich an (+280€ einmalig). Dein Link ist erst nach unserer Bestätigung teilbar.</span></label>
+    <h2>Wo soll der Abend stattfinden?</h2>
+    <div class="venue-choice">
+      <label class="venue-opt selected" data-val="own">
+        <input type="radio" name="venue" value="own" checked onchange="setVenue(this)" />
+        <span class="vo-body">
+          <strong>Ich habe einen Raum.</strong>
+          <span>Privatwohnung, Büro, eigene Location — du bringst den Ort mit.</span>
+        </span>
+      </label>
+      <label class="venue-opt" data-val="luitpoldblock">
+        <input type="radio" name="venue" value="luitpoldblock" onchange="setVenue(this)" />
+        <span class="vo-body">
+          <strong>Ich habe keinen Raum — bitte den Luitpoldblock anfragen.</strong>
+          <span>+280€ einmalig. Dein Link ist erst nach unserer Bestätigung teilbar.</span>
+        </span>
+      </label>
+      <label class="venue-opt" data-val="own_or_luitpold">
+        <input type="radio" name="venue" value="own_or_luitpold" onchange="setVenue(this)" />
+        <span class="vo-body">
+          <strong>Ich habe notfalls einen Raum — fragt trotzdem den Luitpoldblock an.</strong>
+          <span>Wir prüfen die Verfügbarkeit (+280€, falls genutzt). Du entscheidest dann.</span>
+        </span>
+      </label>
     </div>
   </div>
 
   <!-- STEP 3: Name -->
   <div class="step" id="step-name">
-    <h2>Dein Name</h2>
+    <h2>Unter welchem Namen läuft der Abend?</h2>
     <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" oninput="syncMessage()" />
     <div class="error-msg">Bitte gib deinen Namen ein.</div>
-    <p class="input-hint">So heißt das Event — deine Runde sieht sofort, wer es organisiert.</p>
+    <p class="input-hint">Dein Name steht über der Einladung. Deine Runde sieht sofort, von wem sie kommt.</p>
   </div>
 
   <!-- STEP 4: Message -->
   <div class="step" id="step-msg">
-    <h2>Deine Einladung — ändere sie wie du möchtest</h2>
+    <h2>Was du deiner Runde schickst</h2>
     <textarea id="host-msg"></textarea>
     <div class="error-msg">Bitte schreib eine kurze Einladung.</div>
-    <p class="input-hint">Dieser Text erscheint auf der Event-Seite — in deinem Namen, aber editierbar.</p>
+    <p class="input-hint">Vorschlag steht — schreib um, was du anders sagen würdest. Der Text erscheint genau so auf der Event-Seite.</p>
   </div>
 
   <!-- EMAIL — last, after investment in form -->
   <div class="quick-email" id="step-email">
     <div class="quick-email-label">Deine E-Mail</div>
-    <h2>Damit wir dich erreichen können</h2>
+    <h2>Wo wir dich erreichen</h2>
     <input type="email" id="host-email" placeholder="deine@email.com" />
     <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
-    <p class="input-hint">Wir schreiben dir bei jeder neuen Buchung — so siehst du in Echtzeit, wie voll der Abend wird.</p>
+    <p class="input-hint">Bei jeder Buchung kommt eine kurze Mail — du siehst in Echtzeit, wer dabei ist.</p>
   </div>
 
   <button class="generate-btn" id="generate-btn" onclick="generate()">Einladungslink erstellen</button>
@@ -234,18 +254,18 @@
 
     <!-- Shown only when Luitpoldblock selected — blocks sharing until confirmed -->
     <div id="luitpold-gate" style="display:none;" class="luitpold-gate">
-      <p class="luitpold-gate-title">Noch nicht teilen — Raum nicht bestätigt</p>
-      <p class="luitpold-gate-text">Wir prüfen die Verfügbarkeit des Luitpoldblocks und melden uns per E-Mail — normalerweise innerhalb von 24h. Erst danach den Link teilen.</p>
+      <p class="luitpold-gate-title">Noch nicht teilen — der Raum ist nicht bestätigt.</p>
+      <p class="luitpold-gate-text">Wir fragen den Luitpoldblock an und melden uns per E-Mail — meist innerhalb von 24 Stunden. Bis dahin bleibt der Link bei dir.</p>
       <div class="luitpold-confirm">
         <input type="checkbox" id="confirm-luitpold" onchange="onConfirmLuitpold(this)" />
-        <label for="confirm-luitpold">Ich habe die Bestätigung von Franziska erhalten — Link freischalten</label>
+        <label for="confirm-luitpold">Ich habe die Bestätigung von Franziska — Link freigeben.</label>
       </div>
     </div>
 
     <p class="result-note">
-      Schick diesen Link deinen Freund:innen — wer ein Ticket kauft, ist dabei.<br>
-      Der Abend findet statt ab <strong style="color:rgba(255,255,255,0.75);">min. 12 Tickets</strong> · max. 20 Personen · 78€/Person inkl. Catering.<br>
-      Du siehst jede neue Buchung in Echtzeit per E-Mail.<br>
+      Schick den Link an deine Runde. Wer bucht, ist dabei.<br>
+      Der Abend kommt ab <strong style="color:rgba(255,255,255,0.75);">zwölf Buchungen</strong>, höchstens zwanzig — 78€ pro Person, Catering inbegriffen.<br>
+      Jede Buchung läuft als Mail bei dir auf.<br>
       Fragen? <a href="mailto:franziska.wittleder@gmail.com">franziska.wittleder@gmail.com</a>
     </p>
   </div>
@@ -259,19 +279,23 @@
 <script>
   var selectedDate = '';
   var selectedDateLabel = '';
-  var venueType = 'own'; // default: host provides location
+  var venueType = 'own'; // 'own' | 'luitpoldblock' | 'own_or_luitpold'
 
-  function toggleLuitpoldblock(cb) {
-    venueType = cb.checked ? 'luitpoldblock' : 'own';
+  function setVenue(radio) {
+    venueType = radio.value;
+    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
+    radio.closest('.venue-opt').classList.add('selected');
     var btn = document.getElementById('generate-btn');
-    btn.textContent = cb.checked ? 'Abend vormerken' : 'Einladungslink erstellen';
+    // 'luitpoldblock' must wait for confirmation before sharing.
+    // 'own_or_luitpold' can share immediately (host has backup), Luitpoldblock-Anfrage läuft parallel.
+    btn.textContent = (venueType === 'luitpoldblock') ? 'Abend vormerken' : 'Einladungslink erstellen';
   }
 
   function onConfirmLuitpold(cb) {
     var copyBtn = document.getElementById('copy-btn');
     copyBtn.disabled = !cb.checked;
     if (cb.checked) {
-      document.getElementById('result-eyebrow').textContent = '✅ Bestätigt — teile den Link jetzt!';
+      document.getElementById('result-eyebrow').textContent = 'Bestätigt. Der Link ist freigegeben.';
     }
   }
 
@@ -334,11 +358,11 @@
 
     var name  = document.getElementById('host-name').value.trim();
     var email = document.getElementById('host-email').value.trim();
-    var isLuitpoldblock = venueType === 'luitpoldblock';
+    var venueGated = venueType === 'luitpoldblock'; // only this option blocks sharing
 
     var base = window.location.origin + '/event.html';
     var urlParams = { d: selectedDate, h: name };
-    if (isLuitpoldblock) urlParams.v = 'p';
+    if (venueGated) urlParams.v = 'p';
     var url = base + '?' + new URLSearchParams(urlParams).toString();
 
     var longLabel = DATE_LABELS_LONG[selectedDate];
@@ -346,13 +370,17 @@
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
 
-    if (isLuitpoldblock) {
-      document.getElementById('result-eyebrow').textContent = '🕐 Abend vorgemerkt — warte auf Bestätigung';
+    if (venueGated) {
+      document.getElementById('result-eyebrow').textContent = 'Vorgemerkt. Wir melden uns, sobald der Raum steht.';
       document.getElementById('luitpold-gate').style.display = 'block';
       document.getElementById('copy-btn').disabled = true;
       document.getElementById('confirm-luitpold').checked = false;
+    } else if (venueType === 'own_or_luitpold') {
+      document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Wir fragen den Luitpoldblock parallel an.';
+      document.getElementById('luitpold-gate').style.display = 'none';
+      document.getElementById('copy-btn').disabled = false;
     } else {
-      document.getElementById('result-eyebrow').textContent = '✅ Dein Link ist fertig — teile ihn jetzt!';
+      document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Teilen, wann es dir passt.';
       document.getElementById('luitpold-gate').style.display = 'none';
       document.getElementById('copy-btn').disabled = false;
     }
@@ -360,7 +388,7 @@
     document.getElementById('result').style.display = 'block';
     document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    notifyFranziska(name, email, selectedDate, longLabel, url, isLuitpoldblock);
+    notifyFranziska(name, email, selectedDate, longLabel, url, venueType);
   }
 
   function copyLink() {
@@ -374,16 +402,22 @@
   }
 
   function notifyFranziska(name, email, dateCode, dateLabel, url, venue) {
+    var venueLabel = venue === 'luitpoldblock' ? 'Luitpoldblock anfragen (kein eigener Raum)'
+                  : venue === 'own_or_luitpold' ? 'Eigener Raum vorhanden — Luitpoldblock zusätzlich anfragen'
+                  : 'Eigener Raum';
+    var subjectTag = venue === 'luitpoldblock' ? ' · Luitpoldblock anfragen'
+                  : venue === 'own_or_luitpold' ? ' · Luitpoldblock zusätzlich anfragen'
+                  : '';
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         access_key: 'DEIN_WEB3FORMS_KEY',
-        subject: '🎉 Neues KI Dinner — ' + name + ' · ' + dateLabel + (venue ? ' · Luitpoldblock anfragen' : ''),
+        subject: 'Neues KI Dinner — ' + name + ' · ' + dateLabel + subjectTag,
         from_name: 'Salon AI Host Flow',
         to: 'franziska.wittleder@gmail.com',
         message: 'Host: ' + name + '\nE-Mail: ' + email + '\nDatum: ' + dateLabel +
-          '\nLuitpoldblock-Raum: ' + (venue ? 'JA — anfragen!' : 'Nein') + '\n\nLink:\n' + url
+          '\nVenue: ' + venueLabel + '\n\nLink:\n' + url
       })
     }).catch(function(){});
   }

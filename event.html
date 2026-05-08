@@ -207,7 +207,6 @@
     <p class="survey-intro">Eine Zeile reicht. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
     <textarea class="survey-text" id="survey-text" rows="3" placeholder="Was würdest du gern in zwei Stunden gelöst sehen?"></textarea>
     <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
-    <input class="survey-name" id="survey-diet" type="text" placeholder="Lebensmittelunverträglichkeiten oder Allergien (optional)" style="margin-bottom:10px;" />
     <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Antwort senden &amp; Ticket kaufen — 78€</button>
     <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Klick öffnet Stripe-Checkout. Antwort geht parallel an Franziska.</p>
     <div class="survey-success" id="survey-success">
@@ -307,7 +306,6 @@
   function submitSurvey() {
     var answer = document.getElementById('survey-text').value.trim();
     var name   = document.getElementById('survey-name').value.trim();
-    var diet   = document.getElementById('survey-diet').value.trim();
     var btn    = document.getElementById('survey-btn');
 
     if (!answer) { alert('Bitte schreib eine kurze Antwort.'); return; }
@@ -327,7 +325,6 @@
         message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
           '\nGast: ' + name +
           '\n\nWie KI das Leben einfacher machen soll:\n' + answer +
-          (diet ? '\n\nLebensmittelunverträglichkeiten: ' + diet : '') +
           '\n\nVenue-Status: ' + (venuePending ? 'pending (Luitpoldblock-Anfrage)' : 'bestätigt')
       })
     }).then(function() {
