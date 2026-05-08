@@ -85,13 +85,28 @@ describe("index.html — hero", () => {
     assert.ok(/class="hero-alumni"/.test(html), ".hero-alumni element missing");
     assert.ok(/Bisherige Runden/.test(html), "Hero alumni line text missing");
   });
-  it("alumni line lists every audience group (incl. Kreative)", () => {
+  it("alumni line is MECE — every named role present, no umbrella categories", () => {
     const m = html.match(/<p class="hero-alumni"[^>]*>([^<]+)<\/p>/);
     assert.ok(m, "hero-alumni paragraph not found");
-    const groups = ["Investor:innen", "Gründer:innen", "Führungskräfte", "Journalist:innen", "Abgeordnete", "Kreative"];
-    for (const g of groups) {
-      assert.ok(m[1].includes(g), `Alumni line missing audience group: ${g}`);
+    const required = [
+      "Investor:innen", "Gründer:innen", "CEOs", "CMOs",
+      "Architekt:innen", "Ärzt:innen",
+      "PR-Agentur-Chef:innen", "Design-Agentur-Chef:innen",
+      "Journalist:innen", "Abgeordnete",
+    ];
+    for (const g of required) {
+      assert.ok(m[1].includes(g), `Alumni line missing role: ${g}`);
     }
+    // MECE: drop overlapping umbrella categories that the specific roles already cover
+    assert.ok(!/Führungskräfte/.test(m[1]),
+      "Drop 'Führungskräfte' — overlaps with CEOs/CMOs (not MECE)");
+    assert.ok(!/\bKreative\b/.test(m[1]),
+      "Drop 'Kreative' — overlaps with Architekt:innen/Design-Agentur-Chef:innen (not MECE)");
+  });
+
+  it("hero contains italic strapline below H1 (HNWI signal)", () => {
+    assert.ok(/class="hero-strapline"/.test(html), ".hero-strapline element missing");
+    assert.ok(/data-i18n="hero_strapline"/.test(html), "hero_strapline must be data-i18n tagged");
   });
 });
 
@@ -117,14 +132,21 @@ describe("index.html — FAQ order", () => {
 
 // ── Default language hardening ───────────────────────────────────────────────
 describe("index.html — language init", () => {
-  it("init script applies 'de' (not 'en') as default while switcher is hidden", () => {
-    assert.ok(!/applyLocale\(\s*['"]en['"]\s*\)/.test(html),
-      "Should not auto-apply 'en' as default");
-    assert.ok(/applyLocale\(\s*['"]de['"]\s*\)/.test(html),
-      "Init must call applyLocale('de')");
+  it("language switcher is visible (users can change language)", () => {
+    assert.ok(!/#lang-switcher\s*\{\s*display:\s*none/.test(html),
+      "#lang-switcher should NOT be display:none — users must be able to switch languages");
+    assert.ok(/<div id="lang-switcher">/.test(html),
+      "Language switcher container missing from HTML");
   });
-  it("language switcher is hidden via CSS (DE-only mode)", () => {
-    assert.ok(/#lang-switcher\s*\{\s*display:\s*none/.test(html),
-      "#lang-switcher must be display:none in DE-only mode");
+  it("init script reads localStorage first, then browser language, then DE fallback", () => {
+    assert.ok(/localStorage\.getItem\(['"]salonai_lang['"]\)/.test(html),
+      "Init must read salonai_lang from localStorage");
+    assert.ok(/navigator\.languages\s*&&\s*navigator\.languages\[0\]/.test(html),
+      "Init must auto-detect from navigator.languages");
+    // Final fallback must end at 'de', not 'en'
+    assert.ok(/['"]de['"]/.test(html.split("LANGUAGE INIT")[1] || ""),
+      "DE fallback must be present in init script");
+    assert.ok(!/applyLocale\(\s*['"]en['"]\s*\)/.test(html),
+      "Should not hardcode applyLocale('en')");
   });
 });

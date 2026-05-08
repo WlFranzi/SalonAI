@@ -42,7 +42,7 @@ const EU_LANGS = [
 ];
 
 const REQUIRED_KEYS = [
-  "nav_cta","hero_eyebrow","hero_h1","skills_h2","skills_desc",
+  "nav_cta","hero_eyebrow","hero_h1","hero_strapline","skills_h2","skills_desc",
   "feature_desc","feature_cta","feature_eyebrow",
   "past_events","col_old","col_now","col_eu",
   "footer_tagline",
