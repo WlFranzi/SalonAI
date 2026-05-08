@@ -3,883 +3,657 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Europa 2041 – Positive Vision · Salon AI</title>
+  <title>Europa 2041 — Salon AI · März 2026</title>
+  <meta name="description" content="Vierzehn konkrete Ideen für ein souveränes Europa 2041. Entstanden beim Salon AI Dinner München, März 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --green-dark:  #0d3320;
-      --green-mid:   #1b5e20;
-      --green-light: #e8f5e9;
-      --navy:        #1B2E4A;
-      --accent:      #003399;
-      --card-bg:     rgba(255,255,255,0.94);
-      --text:        #1a2b1e;
-      --muted:       #4a5c52;
+      --paper:      #F8F5EE;
+      --ink:        #1B2E4A;
+      --ink-deep:   #0F1E33;
+      --muted:      #6B7280;
+      --muted-soft: #8A8F97;
+      --rule:       rgba(27,46,74,0.18);
+      --rule-thin:  rgba(27,46,74,0.10);
+      --accent:     #7A5C10;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Outfit', sans-serif;
-      background: #f2f8f3;
-      color: var(--text);
-      line-height: 1.55;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 17px;
     }
+    a { color: inherit; text-decoration: none; }
 
-    /* ── Nav ── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(13,51,32,0.88);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,0.10);
-      height: 52px;
-      display: flex;
-      align-items: center;
+    /* ── Top nav ── */
+    nav.top {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(248,245,238,0.96);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule-thin);
+      height: 56px;
+      display: flex; align-items: center;
       padding: 0 28px;
     }
-    nav a {
-      color: rgba(255,255,255,0.85);
-      font-size: 13px;
-      font-weight: 500;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.15s;
-    }
-    nav a:hover { color: #fff; }
+    nav.top .back { font-size: 13px; color: var(--muted); letter-spacing: 0.2px; }
+    nav.top .back:hover { color: var(--ink); }
 
-    /* ── Hero ── */
-    .hero {
-      position: relative;
-      height: 72vh;
-      min-height: 480px;
-      background-image: url('europe_2041.png');
-      background-size: cover;
-      background-position: center 30%;
-      background-attachment: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ── Masthead ── */
+    header.masthead {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 96px 28px 56px;
       text-align: center;
-      color: #fff;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(5,20,10,0.20) 0%,
-        rgba(5,20,10,0.45) 55%,
-        rgba(5,20,10,0.70) 100%
-      );
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
-      padding: 80px 28px 72px;
-      animation: fadeUp 1.1s ease-out both;
-    }
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 10px;
+    .dateline {
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      margin-bottom: 20px;
+      color: var(--muted);
+      margin-bottom: 30px;
     }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(3rem, 7vw, 5.5rem);
+    h1.title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.6rem, 6.5vw, 4.6rem);
       font-weight: 700;
       line-height: 1.04;
-      letter-spacing: -1px;
-      text-shadow: 0 4px 40px rgba(0,0,0,0.5);
-      margin-bottom: 16px;
+      letter-spacing: -0.012em;
+      color: var(--ink-deep);
+      margin-bottom: 18px;
     }
-    .hero-tagline {
-      font-size: clamp(1rem, 1.8vw, 1.2rem);
-      font-weight: 500;
-      color: rgba(255,255,255,0.9);
-      letter-spacing: 0.2px;
-      text-shadow: 0 2px 16px rgba(0,0,0,0.45);
-    }
-
-    /* ── TOC bar ── */
-    .toc-bar {
-      position: sticky;
-      top: 52px;
-      z-index: 80;
-      background: rgba(13,51,32,0.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 0 16px;
-      height: 40px;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .toc-bar::-webkit-scrollbar { display: none; }
-    .toc-link {
-      white-space: nowrap;
-      font-size: 10.5px;
-      font-weight: 600;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      padding: 4px 10px;
-      border-radius: 20px;
-      transition: all 0.15s;
-    }
-    .toc-link:hover { color: #fff; background: rgba(255,255,255,0.1); }
-    .toc-sep { color: rgba(255,255,255,0.2); font-size: 11px; }
-
-    /* ── Main container ── */
-    .container {
-      max-width: 1060px;
-      margin: 0 auto 60px;
-      padding: 24px 16px 0;
-      position: relative;
-      z-index: 10;
-    }
-
-    /* ── Section header ── */
-    .section-header {
-      margin: 44px 0 14px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      scroll-margin-top: 98px;
-    }
-    .section-header::before, .section-header::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(27,94,32,0.18);
-    }
-    .section-title {
+    .tagline {
       font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--green-mid);
-      white-space: nowrap;
-    }
-    .section-count {
-      font-size: 10px;
-      font-weight: 600;
-      color: rgba(27,94,32,0.4);
-      letter-spacing: 0.5px;
-    }
-
-    /* ── Card grid ── */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-      gap: 12px;
-    }
-    .grid-3 { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-
-    /* ── Card ── */
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,0.9);
-      border-radius: 14px;
-      padding: 18px 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.055), 0 1px 4px rgba(0,0,0,0.03);
-      transition: transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.25s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.09), 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .card-icon {
-      font-size: 1.6rem;
-      margin-bottom: 8px;
-      display: inline-block;
-    }
-    .card h3 {
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--green-mid);
-      margin-bottom: 6px;
-      line-height: 1.25;
-    }
-    .card p {
-      font-size: 0.81rem;
+      font-style: italic;
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
       color: var(--muted);
-      line-height: 1.55;
     }
-    .source-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      margin-top: 10px;
-      font-size: 0.7rem;
-      color: rgba(27,94,32,0.5);
-      font-weight: 600;
-      text-decoration: none;
-      letter-spacing: 0.2px;
-      transition: color 0.15s;
-    }
-    .source-link:hover { color: var(--green-mid); }
 
-    /* Card accent variants */
-    .card-navy {
-      background: rgba(27,46,74,0.05);
-      border-color: rgba(27,46,74,0.14);
+    /* ── Article body ── */
+    article.body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 72px;
     }
-    .card-navy h3 { color: var(--navy); }
-    .card-navy .source-link { color: rgba(27,46,74,0.4); }
-    .card-navy .source-link:hover { color: var(--navy); }
-
-    .card-gold {
-      background: rgba(180,140,40,0.04);
-      border-color: rgba(180,140,40,0.16);
+    .lede {
+      font-size: 1.18rem;
+      line-height: 1.6;
+      color: var(--ink);
+      font-weight: 500;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 30px 0;
+      margin-bottom: 36px;
     }
-    .card-gold h3 { color: #7a5c10; }
-    .card-gold .source-link { color: rgba(120,90,16,0.45); }
-    .card-gold .source-link:hover { color: #7a5c10; }
-
-    /* Intro card — full width */
-    .card-intro {
-      grid-column: 1 / -1;
-      background: rgba(255,255,255,0.97);
-      border: 1px solid rgba(27,94,32,0.12);
-      padding: 22px 28px;
-    }
-    .card-intro p {
-      font-size: 0.88rem;
-      max-width: 820px;
+    .lede strong { font-weight: 700; }
+    .standfirst { margin-bottom: 56px; }
+    .standfirst p {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 12px;
       line-height: 1.7;
-      color: #2a3d2e;
     }
-    .card-intro strong { color: var(--green-mid); }
+    .standfirst p strong { color: var(--ink); font-weight: 600; }
 
-    /* Munich Declaration callout */
-    .munich-callout {
-      grid-column: 1 / -1;
-      background: rgba(180,140,40,0.06);
-      border: 1px solid rgba(180,140,40,0.22);
-      border-left: 3px solid rgba(180,140,40,0.55);
-      border-radius: 12px;
-      padding: 18px 22px;
-      margin-bottom: 4px;
+    /* ── Pull-aside (Munich Declaration) ── */
+    aside.pull {
+      border-left: 3px solid var(--accent);
+      padding: 22px 26px;
+      background: rgba(122,92,16,0.045);
+      margin: 12px 0 64px;
     }
-    .munich-eyebrow {
-      font-size: 9px;
+    aside.pull .pull-eyebrow {
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 2.5px;
+      letter-spacing: 2.4px;
       text-transform: uppercase;
-      color: #a07c18;
-      margin-bottom: 8px;
-      display: block;
-    }
-    .munich-title {
-      font-size: 0.83rem;
-      font-weight: 700;
-      color: #5a4008;
+      color: var(--accent);
       margin-bottom: 10px;
+    }
+    aside.pull h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 14px;
       line-height: 1.3;
     }
-    .munich-nuggets {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .munich-nuggets li {
-      font-size: 0.78rem;
-      color: #4a3806;
-      line-height: 1.5;
-      padding-left: 16px;
+    aside.pull ul { list-style: none; padding: 0; margin: 0 0 14px; }
+    aside.pull li {
+      font-size: 0.96rem;
+      color: var(--ink);
+      padding-left: 18px;
+      margin-bottom: 9px;
+      line-height: 1.62;
       position: relative;
     }
-    .munich-nuggets li::before {
-      content: '→';
+    aside.pull li::before {
+      content: '·';
       position: absolute;
-      left: 0;
-      color: #a07c18;
+      left: 4px; top: -2px;
+      color: var(--accent);
       font-weight: 700;
-      font-size: 0.75rem;
+      font-size: 1.4rem;
     }
-    .munich-source {
-      font-size: 0.68rem;
-      color: rgba(160,124,24,0.65);
+    aside.pull li strong { font-weight: 700; }
+    aside.pull a.cite {
+      font-size: 12px;
+      font-style: italic;
+      color: var(--accent);
+    }
+    aside.pull a.cite:hover { text-decoration: underline; }
+
+    /* ── Chapter ── */
+    section.chapter { margin: 56px 0 28px; scroll-margin-top: 80px; }
+    .chapter-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 28px;
+    }
+    .chapter-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+      min-width: 38px;
+    }
+    .chapter-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--ink-deep);
+      flex: 1;
+      line-height: 1.2;
+    }
+    .chapter-count {
+      font-size: 10.5px;
+      color: var(--muted-soft);
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
       font-weight: 600;
-      text-decoration: none;
-      letter-spacing: 0.3px;
-      transition: color 0.15s;
     }
-    .munich-source:hover { color: #a07c18; }
 
-    /* Data tool cards */
-    .card-data {
-      background: rgba(255,255,255,0.88);
+    /* ── Idea entries ── */
+    .idea {
+      margin-bottom: 36px;
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
     }
-    .card-data .source-url {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 0.7rem;
-      color: rgba(27,94,32,0.45);
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      text-decoration: none;
+    .idea-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent);
+      padding-top: 5px;
+      letter-spacing: 0.4px;
     }
-    .card-data .source-url:hover { color: var(--green-mid); }
+    .idea h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: var(--ink-deep);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .idea p {
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+    .source {
+      font-size: 12px;
+      font-style: italic;
+      color: var(--muted);
+      letter-spacing: 0.2px;
+    }
+    .source a { border-bottom: 1px solid transparent; }
+    .source a:hover { color: var(--ink); border-bottom-color: var(--rule); }
 
-    /* Liquid Democracy case study card */
-    .card-case {
-      border: 1.5px solid rgba(27,94,32,0.22);
-      background: linear-gradient(135deg, rgba(27,94,32,0.04), rgba(27,94,32,0.01));
+    /* ── Tools list ── */
+    .tools { list-style: none; padding: 0; margin: 0; }
+    .tools li {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--rule-thin);
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 24px;
+      align-items: start;
     }
-    .step-list { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
-    .step-row { display: flex; gap: 8px; align-items: flex-start; }
-    .step-num { font-size: 0.75rem; font-weight: 700; color: var(--green-mid); min-width: 16px; margin-top: 1px; }
-    .step-text { font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
-    .stat-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
-    .stat-chip { font-size: 0.7rem; padding: 3px 8px; border-radius: 20px; background: rgba(27,94,32,0.09); color: var(--green-mid); font-weight: 600; }
+    .tools li:last-child { border-bottom: none; }
+    .tools .tool-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink-deep);
+      line-height: 1.3;
+    }
+    .tools .tool-name a {
+      display: block;
+      font-size: 11px;
+      font-style: italic;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 4px;
+      letter-spacing: 0.2px;
+    }
+    .tools .tool-name a:hover { color: var(--accent); }
+    .tools .tool-desc {
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    @media (max-width: 600px) {
+      .tools li { grid-template-columns: 1fr; gap: 6px; }
+    }
 
-    /* Liquid Democracy process box */
-    .process-box {
-      margin-top: 10px;
-      padding: 10px 12px;
-      border-radius: 10px;
-      background: rgba(180,140,40,0.07);
-      border: 1px solid rgba(180,140,40,0.13);
+    /* ── Case study (long form) ── */
+    .case-study {
+      margin-top: 16px;
+      padding: 36px 0 8px;
+      border-top: 1px solid var(--rule);
     }
-    .process-box-title { font-size: 0.7rem; font-weight: 700; color: #7a5c10; letter-spacing: 0.3px; margin-bottom: 6px; text-transform: uppercase; }
-    .process-box p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+    .case-study .eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .case-study h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink-deep);
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+    .case-study p {
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+    .case-study p.note {
+      font-size: 0.92rem;
+      font-style: italic;
+      color: var(--muted);
+    }
+    .case-stats {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin: 18px 0 22px;
+    }
+    .case-stats span {
+      font-size: 0.82rem;
+      padding: 4px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.5);
+      color: var(--muted);
+    }
+    .phases {
+      list-style: none;
+      counter-reset: ph;
+      padding: 0;
+      margin: 12px 0 14px 4px;
+      border-left: 1px solid var(--rule);
+      padding-left: 28px;
+    }
+    .phases li {
+      counter-increment: ph;
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.6;
+      position: relative;
+    }
+    .phases li::before {
+      content: counter(ph);
+      position: absolute;
+      left: -42px; top: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      width: 28px;
+      text-align: right;
+    }
 
     /* ── Footer ── */
     footer {
-      text-align: center;
-      padding: 36px 20px 52px;
-      color: rgba(26,43,30,0.32);
-      font-size: 0.82rem;
-      font-weight: 300;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 28px 96px;
+      border-top: 1px solid var(--rule);
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.75;
     }
+    footer .credits-line { display: block; margin-bottom: 6px; }
+    footer .credits strong { color: var(--ink); font-weight: 700; }
     footer a {
-      color: var(--green-mid);
-      font-weight: 500;
-      text-decoration: none;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
     }
-    footer a:hover { text-decoration: underline; }
+    footer a:hover { border-bottom-color: var(--accent); }
+    footer .back-home { margin-top: 24px; display: inline-block; }
 
-    /* ── Animations ── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── Language switcher (hidden — DE-only for now) ── */
-    #lang-switcher-m { display: none; position: relative; margin-left: auto; }
-    /* HNWI restraint: hide decorative emojis in cards */
-    .card-icon { display: none; }
-    .lang-btn-m {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: 12px; font-weight: 600; padding: 5px 11px;
-      border-radius: 999px; border: 1px solid rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85);
-      cursor: pointer; font-family: 'Outfit', sans-serif;
-      transition: background 0.15s; white-space: nowrap;
-    }
-    .lang-btn-m:hover { background: rgba(255,255,255,0.14); color: #fff; }
-    .lang-menu-m {
-      display: none; position: absolute;
-      top: calc(100% + 8px); right: 0;
-      background: #fff; border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 14px; padding: 8px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-      z-index: 300; width: 336px; max-width: calc(100vw - 20px);
-    }
-    .lang-menu-m.open { display: block; }
-    .lang-grid-m { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 2px; }
-    .lang-opt-m {
-      display: flex; align-items: center; gap: 5px;
-      width: 100%; text-align: left; padding: 6px 8px;
-      border: none; background: transparent;
-      font-size: 12px; color: #1a2b1e; cursor: pointer;
-      border-radius: 8px; font-family: 'Outfit', sans-serif;
-      transition: background 0.1s; white-space: nowrap;
-    }
-    .lang-opt-m:hover { background: #e8f5e9; }
-    .lang-opt-m.active { background: rgba(0,51,153,0.07); font-weight: 700; color: #003399; }
-
-    /* ── Mobile ── */
-    @media (max-width: 640px) {
-      .hero { background-attachment: scroll; height: 60vh; min-height: 400px; }
-      .hero-content { padding: 60px 20px 56px; }
-      .container { margin-top: 0; padding-top: 16px; }
-      .card { padding: 14px 16px; }
-      .card-intro { padding: 16px 18px; }
-      .section-title { font-size: 0.95rem; white-space: normal; text-align: center; }
-      .toc-bar { justify-content: flex-start; }
-      .pr-summary-boxes { grid-template-columns: 1fr !important; }
+    @media (max-width: 600px) {
+      header.masthead { padding: 64px 22px 44px; }
+      article.body { padding: 0 22px 64px; }
+      .idea { grid-template-columns: 28px 1fr; gap: 10px; }
+      .lede { font-size: 1.08rem; padding: 24px 0; }
     }
   </style>
 </head>
 <body>
 
-  <div id="google_translate_element" style="display:none;"></div>
+<nav class="top">
+  <a class="back" href="/">← Salon AI</a>
+</nav>
 
-  <nav>
-    <a href="/">← Salon AI</a>
-    <div id="lang-switcher-m">
-      <button class="lang-btn-m" id="lang-btn-m-trigger" onclick="document.getElementById('lang-menu-m-dd').classList.toggle('open');event.stopPropagation();">
-        🌍 <span id="lang-btn-m-label">DE</span> ▾
-      </button>
-      <div class="lang-menu-m" id="lang-menu-m-dd">
-        <div class="lang-grid-m">
-          <button class="lang-opt-m active" data-lang="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
-          <button class="lang-opt-m" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
-          <button class="lang-opt-m" data-lang="fr" onclick="setLang('fr')">🇫🇷 Français</button>
-          <button class="lang-opt-m" data-lang="es" onclick="setLang('es')">🇪🇸 Español</button>
-          <button class="lang-opt-m" data-lang="it" onclick="setLang('it')">🇮🇹 Italiano</button>
-          <button class="lang-opt-m" data-lang="pt" onclick="setLang('pt')">🇵🇹 Português</button>
-          <button class="lang-opt-m" data-lang="nl" onclick="setLang('nl')">🇳🇱 Nederlands</button>
-          <button class="lang-opt-m" data-lang="pl" onclick="setLang('pl')">🇵🇱 Polski</button>
-          <button class="lang-opt-m" data-lang="ro" onclick="setLang('ro')">🇷🇴 Română</button>
-          <button class="lang-opt-m" data-lang="sv" onclick="setLang('sv')">🇸🇪 Svenska</button>
-          <button class="lang-opt-m" data-lang="cs" onclick="setLang('cs')">🇨🇿 Čeština</button>
-          <button class="lang-opt-m" data-lang="hu" onclick="setLang('hu')">🇭🇺 Magyar</button>
-          <button class="lang-opt-m" data-lang="sk" onclick="setLang('sk')">🇸🇰 Slovenčina</button>
-          <button class="lang-opt-m" data-lang="bg" onclick="setLang('bg')">🇧🇬 Български</button>
-          <button class="lang-opt-m" data-lang="da" onclick="setLang('da')">🇩🇰 Dansk</button>
-          <button class="lang-opt-m" data-lang="fi" onclick="setLang('fi')">🇫🇮 Suomi</button>
-          <button class="lang-opt-m" data-lang="hr" onclick="setLang('hr')">🇭🇷 Hrvatski</button>
-          <button class="lang-opt-m" data-lang="el" onclick="setLang('el')">🇬🇷 Ελληνικά</button>
-          <button class="lang-opt-m" data-lang="lt" onclick="setLang('lt')">🇱🇹 Lietuvių</button>
-          <button class="lang-opt-m" data-lang="lv" onclick="setLang('lv')">🇱🇻 Latviešu</button>
-          <button class="lang-opt-m" data-lang="et" onclick="setLang('et')">🇪🇪 Eesti</button>
-          <button class="lang-opt-m" data-lang="sl" onclick="setLang('sl')">🇸🇮 Slovenščina</button>
-          <button class="lang-opt-m" data-lang="mt" onclick="setLang('mt')">🇲🇹 Malti</button>
-          <button class="lang-opt-m" data-lang="ga" onclick="setLang('ga')">🇮🇪 Gaeilge</button>
-        </div>
-      </div>
-    </div>
-  </nav>
+<header class="masthead">
+  <p class="dateline">Salon AI · München · März 2026</p>
+  <h1 class="title">Europa 2041</h1>
+  <p class="tagline">Kein Szenario. Eine Entscheidung.</p>
+</header>
 
-  <!-- ── HERO ── -->
-  <header class="hero">
-    <div class="hero-content">
-      <span class="hero-eyebrow">Salon AI · März 2026</span>
-      <h1>Europa 2041</h1>
-      <p class="hero-tagline">Kein Szenario. Eine Entscheidung.</p>
-    </div>
-  </header>
+<article class="body">
 
-  <!-- ── TOC ── -->
-  <nav class="toc-bar" aria-label="Seiteninhalt">
-    <a class="toc-link" href="#intro">Kontext</a>
-    <span class="toc-sep">·</span>
-    <a class="toc-link" href="#stadt">Stadtleben</a>
-    <span class="toc-sep">·</span>
-    <a class="toc-link" href="#bildung">Bildung</a>
-    <span class="toc-sep">·</span>
-    <a class="toc-link" href="#demokratie">Demokratie</a>
-    <span class="toc-sep">·</span>
-    <a class="toc-link" href="#werkzeuge">EU-Daten</a>
-    <span class="toc-sep">·</span>
-    <a class="toc-link" href="#liquid">Liquid Democracy</a>
-  </nav>
+  <p class="lede">
+    Vierzehn konkrete Ideen für ein souveränes, technologisch führendes, demokratisch erneuertes Europa — gesammelt und diskutiert an einem Abend mit fünfzehn Gästen. Die Technologie ist da. <strong>Was fehlt, ist der politische Wille, sie einzusetzen.</strong>
+  </p>
 
-  <!-- ── CONTENT ── -->
-  <main class="container">
+  <div class="standfirst">
+    <p><strong>Das Ziel.</strong> Europa als dritte Weltmacht — souverän, technologisch führend, demokratisch erneuert.</p>
+    <p><strong>Der Schlüssel.</strong> Keine neuen Erfindungen nötig. Bestehende Technologien politisch priorisieren und skalieren.</p>
+    <p><strong>Der Kontext.</strong> Vierzehn Ideen aus einem Dinner-Gespräch — mit Quellen belegt, geordnet nach Lebensbereich.</p>
+  </div>
 
-    <!-- ── INTRO ── -->
-    <div id="intro" style="margin-top: 0; scroll-margin-top: 98px;">
+  <aside class="pull">
+    <p class="pull-eyebrow">München · Februar 2025 · Munich Security Conference</p>
+    <h4>Was Europas Entscheider:innen gerade laut fordern.</h4>
+    <ul>
+      <li><strong>Eine europäische DARPA.</strong> Eine Forschungsagentur für KI, Drohnen, Cyber und Weltraum, die Europa an die technologische Spitze bringt — nicht irgendwann, jetzt.</li>
+      <li><strong>400 Mrd. € liegen bereit.</strong> Der Europäische Stabilitätsmechanismus hält 400 Mrd. € an ungenutzten Kreditlinien. Das Geld für Verteidigung und Infrastruktur existiert. Es fehlt der politische Abruf.</li>
+      <li><strong>Wirtschaftskraft ist Souveränität.</strong> KI-gestützte Produktivität, ein vollendeter Binnenmarkt und strategische Investitionen in Energie und Cloud sind keine Wachstumsthemen. Sie sind Sicherheitspolitik.</li>
+    </ul>
+    <a class="cite" href="https://www.munichdeclaration.org" target="_blank" rel="noopener">Munich Declaration 2025 · munichdeclaration.org</a>
+  </aside>
 
-      <!-- PR text — Amazon-style: conclusion first -->
-      <div style="max-width: 720px; margin: 0 auto 28px; padding: 0 4px;">
-        <p style="font-size: 1.05rem; font-weight: 700; color: var(--green-mid); line-height: 1.4; margin-bottom: 10px;">
-          Wie würde Europa 2041 aussehen, wenn wir die richtigen Entscheidungen getroffen hätten?
-        </p>
-        <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 8px;">
-          14 konkrete Ideen — von selbstleuchtenden Fahrradwegen bis zur Europäischen DARPA — die technologisch heute machbar sind. Jede Idee ist durch öffentlich zugängliche Quellen belegt.
-        </p>
-        <p style="font-size: 0.82rem; color: var(--muted); line-height: 1.65; opacity: 0.75;">
-          <strong style="opacity:1;color:var(--green-mid);">Salon AI Dinner · München · März 2026</strong> — ein Abend mit 15 Personen. Die Technologie ist da. Was fehlt, ist der politische Wille.
-        </p>
-      </div>
-
-      <!-- 3-box summary row -->
-      <div class="pr-summary-boxes" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 28px;">
-        <div style="background: rgba(27,94,32,0.06); border: 1px solid rgba(27,94,32,0.15); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid); margin-bottom: 6px;">Das Ziel</div>
-          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Europa als dritte Weltmacht — souverän, technologisch führend, demokratisch erneuert.</p>
-        </div>
-        <div style="background: rgba(27,46,74,0.05); border: 1px solid rgba(27,46,74,0.12); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 6px;">Der Schlüssel</div>
-          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Keine neuen Erfindungen nötig. Bestehende Technologien politisch priorisieren und skalieren.</p>
-        </div>
-        <div style="background: rgba(180,140,40,0.05); border: 1px solid rgba(180,140,40,0.15); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #7a5c10; margin-bottom: 6px;">Der Kontext</div>
-          <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">14 Ideen aus einem Dinner-Gespräch — mit Quellen belegt, geordnet nach Lebensbereich.</p>
-        </div>
-      </div>
-
+  <section class="chapter" id="stadt">
+    <div class="chapter-meta">
+      <span class="chapter-num">I.</span>
+      <span class="chapter-title">Technologie &amp; Stadtleben</span>
+      <span class="chapter-count">Sechs Ideen</span>
     </div>
 
-    <!-- ── Munich Declaration callout ── -->
-    <div class="grid" style="margin-top: 14px;">
-      <div class="munich-callout">
-        <span class="munich-eyebrow">München · Februar 2025 · Munich Security Conference</span>
-        <p class="munich-title">Nicht nur wir — was Europas Entscheider:innen gerade laut fordern:</p>
-        <ul class="munich-nuggets">
-          <li><strong>Europäische DARPA</strong> — Eine europäische Forschungsagentur für KI, Drohnen, Cyber und Weltraum soll Europa an die technologische Spitze bringen. Nicht irgendwann. Jetzt.</li>
-          <li><strong>400 Mrd. € liegen schon bereit</strong> — Der Europäische Stabilitätsmechanismus (ESM) hat 400 Mrd. € an ungenutzten Kreditlinien. Das Geld für Verteidigung und Infrastruktur existiert. Es fehlt der politische Abruf.</li>
-          <li><strong>Wirtschaftskraft ist Souveränität</strong> — KI-gestützte Produktivität, ein vollendeter Binnenmarkt und strategische Investitionen in Energie und Cloud sind keine Wachstumsthemen — sie sind Sicherheitspolitik.</li>
-        </ul>
-        <a class="munich-source" href="https://www.munichdeclaration.org" target="_blank" rel="noopener">↗ Munich Declaration 2025 · munichdeclaration.org</a>
+    <div class="idea">
+      <span class="idea-num">1.</span>
+      <div>
+        <h3>Boden, der Strom erzeugt.</h3>
+        <p>Piezoelektrische Pflastersteine wandeln kinetische Energie in Strom. Ein U-Bahnhof mit fünfzigtausend Fahrgästen täglich deckt damit seinen Beleuchtungsbedarf — kein Solar, kein Kabel, keine neue Infrastruktur. Pavegen betreibt aktive Installationen in London, Paris und Dubai.</p>
+        <p class="source"><a href="https://pavegen.com" target="_blank" rel="noopener">Pavegen Systems</a></p>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- SECTION 1 — Technologie & Stadtleben                   -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <div id="stadt" class="section-header">
-      <span class="section-title">Technologie &amp; Stadtleben</span>
-      <span class="section-count">6 Ideen</span>
+    <div class="idea">
+      <span class="idea-num">2.</span>
+      <div>
+        <h3>Wege, die sich selbst beleuchten.</h3>
+        <p>Studio Roosegaarde baute 2014 den ersten selbstleuchtenden Radweg weltweit: 500 Meter Pflastersteine ohne Stromanschluss, in Betrieb bis heute. Das Prinzip ist trivial skalierbar — jede Straßenbelag-Ausschreibung könnte es enthalten.</p>
+        <p class="source"><a href="https://www.studioroosegaarde.net/project/van-gogh-path" target="_blank" rel="noopener">Studio Roosegaarde · Van Gogh Path</a></p>
+      </div>
     </div>
 
-    <div class="grid">
+    <div class="idea">
+      <span class="idea-num">3.</span>
+      <div>
+        <h3>Schatten als Infrastruktur.</h3>
+        <p>Sevilla rüstete 2023 zentrale Straßen mit Beschattungsstrukturen und Kühlsprühern aus. Gemessene Wirkung: bis zu fünf Grad Temperaturreduktion, dreißig Prozent mehr Fußgängerfrequenz im Sommer. Eine Blaupause für jede mediterrane Innenstadt.</p>
+        <p class="source"><a href="https://www.sevilla.org" target="_blank" rel="noopener">Stadt Sevilla</a></p>
+      </div>
+    </div>
 
-      <article class="card">
-        <div class="card-icon">⚡</div>
-        <h3>Boden, der Strom erzeugt</h3>
-        <p>Piezoelektrische Pflastersteine wandeln kinetische Energie in Strom um. Ein U-Bahnhof mit 50.000 Fahrgästen täglich deckt so seinen Beleuchtungsbedarf — kein Solar, kein Kabel, keine neue Infrastruktur. Pavegen betreibt aktive Installationen in London, Paris und Dubai.</p>
-        <a class="source-link" href="https://pavegen.com" target="_blank" rel="noopener">↗ Pavegen Systems</a>
-      </article>
+    <div class="idea">
+      <span class="idea-num">4.</span>
+      <div>
+        <h3>Reparieren ist günstiger als kaufen.</h3>
+        <p>Das EU-Recht auf Reparatur (April 2024) verpflichtet Hersteller erstmals zur Bereitstellung von Ersatzteilen. Nächster Schritt: 0 % Mehrwertsteuer auf Reparaturleistungen, eine Abgabe auf vorzeitige Entsorgung. Systemdesign schlägt Appelle.</p>
+        <p class="source"><a href="https://commission.europa.eu/topics/single-market/goods/right-repair_en" target="_blank" rel="noopener">EU-Kommission · Right to Repair</a></p>
+      </div>
+    </div>
 
-      <article class="card">
-        <div class="card-icon">🌱</div>
-        <h3>Wege, die sich selbst beleuchten</h3>
-        <p>Studio Roosegaarde baute 2014 den ersten selbstleuchtenden Radweg weltweit: 500 m Pflastersteine, kein Stromanschluss, läuft noch heute. Das Prinzip ist trivial skalierbar — jede Straßenbelag-Ausschreibung könnte es enthalten.</p>
-        <a class="source-link" href="https://www.studioroosegaarde.net/project/van-gogh-path" target="_blank" rel="noopener">↗ Studio Roosegaarde</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🌿</div>
-        <h3>Schatten als Infrastruktur</h3>
-        <p>Sevilla hat 2023 zentrale Straßen mit Beschattungsstrukturen und Kühlsprühern ausgestattet — gemessene Wirkung: bis zu 5 °C Temperaturreduktion, 30 % mehr Fußgängerfrequenz im Sommer. Blaupause für jede mediterrane Innenstadt.</p>
-        <a class="source-link" href="https://www.sevilla.org" target="_blank" rel="noopener">↗ Stadt Sevilla</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🔧</div>
-        <h3>Reparieren ist günstiger als kaufen</h3>
-        <p>Das EU-Recht auf Reparatur (April 2024) verpflichtet Hersteller erstmals zur Bereitstellung von Ersatzteilen. Nächster Schritt: 0 % MwSt. auf Reparaturleistungen, Abgabe auf vorzeitige Entsorgung. Systemdesign schlägt Appelle.</p>
-        <a class="source-link" href="https://commission.europa.eu/topics/single-market/goods/right-repair_en" target="_blank" rel="noopener">↗ EU-Kommission · Right to Repair</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">💰</div>
-        <h3>Deine Stadt zahlt dir eine Dividende</h3>
+    <div class="idea">
+      <span class="idea-num">5.</span>
+      <div>
+        <h3>Deine Stadt zahlt dir eine Dividende.</h3>
         <p>Städte verkaufen anonymisierte Nutzungs- und Verkehrsdaten an Forschung und Unternehmen. Amsterdam erprobt Modelle zur Direktausschüttung an Bürger:innen. Datensouveränität wird zum Eigentumsrecht — nicht nur zum Datenschutzthema.</p>
-        <a class="source-link" href="https://data.amsterdam.nl" target="_blank" rel="noopener">↗ Amsterdam Data</a>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🌿</div>
-        <h3>Gebäude als Nahrungsproduzenten</h3>
-        <p>Das BIQ-Haus Hamburg betreibt seit 2013 die erste urbane Algenfassade im Maßstab: Biomasse für Heizung und Warmwasser, gleichzeitig Wärmedämmung — zu vergleichbaren Kosten wie konventionelle Fassaden. Kein Prototyp. Läuft seit über 10 Jahren.</p>
-        <a class="source-link" href="https://www.internationale-bauausstellung-hamburg.de/en/projects/the-building-exhibition-within-the-building-exhibition/smart-material-houses/biq/projekt/biq.html" target="_blank" rel="noopener">↗ IBA Hamburg · BIQ Haus</a>
-      </article>
-
-    </div>
-
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- SECTION 2 — Bildung & Infrastruktur                    -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <div id="bildung" class="section-header">
-      <span class="section-title">Bildung &amp; Infrastruktur</span>
-      <span class="section-count">3 Ideen</span>
-    </div>
-
-    <div class="grid">
-
-      <article class="card card-navy">
-        <div class="card-icon">🚊</div>
-        <h3>Europa als ein einziger Campus</h3>
-        <p>Erasmus+ hat 13 Mio. Menschen grenzüberschreitende Bildungserfahrungen ermöglicht — beschränkt auf akademische Kontexte. Eine universelle Anerkennungsinfrastruktur würde Berufsausbildungen, Zertifikate und Praxiserfahrungen einschließen. Der Zug wird zum Campus.</p>
-        <a class="source-link" href="https://erasmus-plus.ec.europa.eu/european-student-card-initiative" target="_blank" rel="noopener">↗ Erasmus+ European Student Card</a>
-      </article>
-
-      <article class="card card-navy">
-        <div class="card-icon">👁️</div>
-        <h3>Abschlüsse gelten überall — sofort</h3>
-        <p>Eine polnische Pflegefachkraft wartet heute 6–12 Monate auf Anerkennung in Portugal — bei identischen Ausbildungsstandards. KI-gestützte Qualifikationsübersetzung löst das Strukturproblem in Echtzeit: kein Papierkrieg, keine Übersetzungskosten.</p>
-        <a class="source-link" href="https://europa.eu/youreurope/citizens/work/professional-qualifications/index_en.htm" target="_blank" rel="noopener">↗ EU · Berufsqualifikationen</a>
-      </article>
-
-      <article class="card card-navy">
-        <div class="card-icon">🍎</div>
-        <h3>Autobahnen werden zu Nahrungswäldern</h3>
-        <p>Rotterdam hat 3 km ehemaliger Innenstadtstraßen bereits in öffentliche Grünflächen umgewandelt. Der Voedselbos Almere produziert Nahrung auf ehemals versiegelter Fläche. Das Prinzip: Schwerlast unterirdisch oder verlagert — Oberfläche freigegeben.</p>
-        <a class="source-link" href="https://www.almere.nl" target="_blank" rel="noopener">↗ Voedselbos Almere</a>
-      </article>
-
-    </div>
-
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- SECTION 3 — Macht, Wachstum & Demokratie              -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <div id="demokratie" class="section-header">
-      <span class="section-title">Macht, Wachstum &amp; Demokratie</span>
-      <span class="section-count">5 Ideen</span>
-    </div>
-
-    <div class="grid">
-
-      <article class="card card-gold">
-        <div class="card-icon">🌍</div>
-        <h3>Europa als dritte Weltmacht — ohne Washington-Mandat</h3>
-        <p>Neben den USA und China existiert eine dritte Option: eine souveräne EU, die militärisch koordiniert, technologisch führt und wirtschaftlich unabhängig handelt. Die Infrastruktur dafür existiert — von der EDA bis zum ESM. Was fehlt, ist kein Geld und keine Technologie. Es ist der politische Wille, sie einzusetzen.</p>
-        <a class="source-link" href="https://eda.europa.eu" target="_blank" rel="noopener">↗ European Defence Agency</a>
-      </article>
-
-      <article class="card card-gold">
-        <div class="card-icon">🚀</div>
-        <h3>Afrika-Partnerschaft statt Entwicklungshilfe</h3>
-        <p>Die Global Gateway Initiative bündelt 300 Mrd. € für Investitionen in Afrika bis 2027. Return: langfristige Lieferverträge für kritische Rohstoffe. Kein Entwicklungshilfemodell — strategischer Wirtschaftszugang zur am schnellsten wachsenden Region der Welt.</p>
-        <a class="source-link" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/global-gateway_en" target="_blank" rel="noopener">↗ EU Global Gateway</a>
-      </article>
-
-      <article class="card card-gold">
-        <div class="card-icon">💼</div>
-        <h3>Weniger Bürokratie, mehr Output</h3>
-        <p>Deutschland verlor 2024 über 30 % seiner Solarmodulproduktion an China — nicht wegen schlechterer Technologie, sondern wegen 4-jähriger Genehmigungsverfahren. Ergebnisfinanzierung statt Inputkontrolle: 4 Monate statt 4 Jahre. Smarte Systemarchitektur, keine Deregulierung.</p>
-        <a class="source-link" href="https://www.ise.fraunhofer.de" target="_blank" rel="noopener">↗ Fraunhofer ISE</a>
-      </article>
-
-      <article class="card card-gold">
-        <div class="card-icon">🏛️</div>
-        <h3>Liquid Democracy — abstimmen wie ein Profi</h3>
-        <p>Liquid Democracy entkoppelt Partizipation von Parteibindung: direkte Abstimmung wo eigene Expertise besteht, Delegation an Vertrauenspersonen wo nicht — jederzeit widerruflich. Pilotstädte melden 40 % höhere Beteiligung. Die Technologie ist fertig. ↓ Details unten.</p>
-      </article>
-
-      <article class="card card-gold">
-        <div class="card-icon">🎲</div>
-        <h3>Bürger:innen entscheiden das Budget — per Losverfahren</h3>
-        <p>Paris ließ 2021 150 per Los ausgewählte Bürger:innen über Klimabudgets entscheiden. Ergebnis: ambitioniertere Maßnahmen als parlamentarische Vorschläge — 70 % davon umgesetzt. Repräsentative Bürgerräte übertreffen Parteiprozesse systematisch.</p>
-        <a class="source-link" href="https://participons.paris.fr" target="_blank" rel="noopener">↗ Participons Paris</a>
-      </article>
-
-    </div>
-
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- SECTION 4 — Deine Werkzeuge                           -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <div id="werkzeuge" class="section-header">
-      <span class="section-title">Deine Werkzeuge — öffentliche EU-Daten</span>
-      <span class="section-count">7 Quellen</span>
-    </div>
-
-    <p style="font-size:0.82rem;color:var(--muted);max-width:620px;margin-bottom:14px;line-height:1.6;">
-      Alle öffentlich, maschinenlesbar, kostenlos. Mit einem KI-Agenten entstehen daraus in Stunden belastbare Analysen, Petitionen und Positionspapiere — ohne Vorwissen, ohne Budget.
-    </p>
-
-    <div class="grid grid-3">
-
-      <article class="card card-data">
-        <div class="card-icon">⚖️</div>
-        <h3>EUR-Lex</h3>
-        <p>Alle EU-Gesetze im Volltext. KI extrahiert den Rechtsstand zu deinem Thema und identifiziert, welche Rechte heute bereits durchsetzbar sind.</p>
-        <a class="source-url" href="https://eur-lex.europa.eu" target="_blank" rel="noopener">↗ eur-lex.europa.eu</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">📢</div>
-        <h3>EU „Have Your Say"</h3>
-        <p>Alle offenen Konsultationen mit Deadline. Ein Agent überwacht sie automatisch und meldet relevante Themen mit vorbereiteten Eingabevorlagen.</p>
-        <a class="source-url" href="https://ec.europa.eu/info/law/better-regulation/have-your-say" target="_blank" rel="noopener">↗ ec.europa.eu · Have Your Say</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">🗳️</div>
-        <h3>Europarl Voting Records</h3>
-        <p>Vollständige Abstimmungshistorie jedes MEPs. KI generiert ein persönliches Briefing mit konkreten Argumenten auf Basis seiner eigenen Abstimmungen.</p>
-        <a class="source-url" href="https://europarl.europa.eu/plenary/votes" target="_blank" rel="noopener">↗ europarl.europa.eu</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">✍️</div>
-        <h3>ECI-Register</h3>
-        <p>Alle Europäischen Bürgerinitiativen — erfolgreiche und gescheiterte. Was hat eine Million Unterschriften erreicht, was nicht? Vorlage für die eigene Initiative inklusive.</p>
-        <a class="source-url" href="https://citizens-initiative.europa.eu" target="_blank" rel="noopener">↗ citizens-initiative.europa.eu</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">📊</div>
-        <h3>Eurostat</h3>
-        <p>Energiearmut, Wohnkosten, Gesundheitsversorgung — nach Region, Jahr, Bevölkerungsgruppe. Deine Region gegen den EU-Durchschnitt, in Sekunden.</p>
-        <a class="source-url" href="https://ec.europa.eu/eurostat" target="_blank" rel="noopener">↗ ec.europa.eu/eurostat</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">🌍</div>
-        <h3>EURES Jobmobilitätsdaten</h3>
-        <p>Bürokratische Anforderungen für grenzüberschreitendes Arbeiten in jedem EU-Land — mit Rechtsgrundlage für Beschwerden wo der Binnenmarkt nicht funktioniert.</p>
-        <a class="source-url" href="https://eures.europa.eu" target="_blank" rel="noopener">↗ eures.europa.eu</a>
-      </article>
-
-      <article class="card card-data">
-        <div class="card-icon">🗞️</div>
-        <h3>Klar-o-Mat</h3>
-        <p>Politische Positionen zu EU-Themen einfach erklärt und verglichen. Idealer Einstieg, bevor du mit KI-Agenten in Abstimmungshistorien und Gesetzestexte einsteigst.</p>
-        <a class="source-url" href="https://klar-o-mat.de/index.html" target="_blank" rel="noopener">↗ klar-o-mat.de</a>
-      </article>
-
-    </div>
-
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- SECTION 5 — Liquid Democracy: Ausblick & Fallstudie   -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <div id="liquid" class="section-header">
-      <span class="section-title">Liquid Democracy — Ausblick</span>
-      <span class="section-count">Wohin Demokratie gehen könnte</span>
-    </div>
-
-    <div class="grid" style="margin-bottom: 12px;">
-      <div class="card card-intro" style="grid-column: 1 / -1;">
-        <p>
-          Was wäre, wenn Demokratie nicht alle vier Jahre stattfindet, sondern kontinuierlich?
-          <strong>Liquid Democracy entkoppelt Partizipation vollständig von Parteizugehörigkeit:</strong>
-          Du stimmst direkt ab, wo du Expertise hast — und delegierst an Vertrauenspersonen, wo du es nicht hast. Jederzeit widerruflich. Pilotstädte melden 40 % höhere Beteiligung als bei klassischen Wahlen.
-          Die Technologie existiert. Was folgt, ist ein verwandter Erfolgsfall — selbe Logik, ohne den Begriff: offen, partizipativ, mit klarem Prozess, und er hat in Brüssel funktioniert.
-        </p>
+        <p class="source"><a href="https://data.amsterdam.nl" target="_blank" rel="noopener">Amsterdam Data</a></p>
       </div>
     </div>
 
-    <div class="grid">
+    <div class="idea">
+      <span class="idea-num">6.</span>
+      <div>
+        <h3>Gebäude, die Nahrung produzieren.</h3>
+        <p>Das BIQ-Haus Hamburg betreibt seit 2013 die erste urbane Algenfassade im Maßstab. Biomasse für Heizung und Warmwasser, gleichzeitig Wärmedämmung — zu vergleichbaren Kosten wie konventionelle Fassaden. Kein Prototyp, sondern seit über zehn Jahren in Betrieb.</p>
+        <p class="source"><a href="https://www.internationale-bauausstellung-hamburg.de/en/projects/the-building-exhibition-within-the-building-exhibition/smart-material-houses/biq/projekt/biq.html" target="_blank" rel="noopener">IBA Hamburg · BIQ Haus</a></p>
+      </div>
+    </div>
+  </section>
 
-      <article class="card card-gold">
-        <div class="card-icon">⚙️</div>
-        <h3>Ausblick: LiquidFeedback als politische Infrastruktur</h3>
-        <p>Die Piratenpartei nutzte LiquidFeedback ab 2010 für interne Entscheidungen mit tausenden aktiven Mitgliedern — und bewies: digitale Willensbildung funktioniert im Maßstab. Der nächste Schritt ist kommunale Infrastruktur: Bürger:innen stimmen direkt über Stadtbudgets ab, delegieren Klimafragen an Expert:innen.</p>
-        <div class="process-box">
-          <div class="process-box-title">Der Prozess</div>
-          <p>Vorschlag → Unterstützung → parallele Alternativen → Rangfolge-Abstimmung → öffentlich nachvollziehbar. Kein Hinterzimmer, keine versteckten Deals.</p>
-        </div>
-        <a class="source-link" href="https://liquidfeedback.com" target="_blank" rel="noopener">↗ LiquidFeedback</a>
-      </article>
-
-      <article class="card card-gold">
-        <div class="card-icon">📱</div>
-        <h3>Ausblick: Koordinierte Wahlblöcke ohne Partei</h3>
-        <p>40.000 Klimaaktivist:innen, die sich intern einigen und geschlossen wählen — mehr Einfluss als eine Lobbyfirma mit Millionenbudget. Sway überträgt Gewerkschaftslogik in Wahlen: koordinierte Abstimmung ohne Parteimitgliedschaft, ohne feste Bindung.</p>
-        <div class="process-box">
-          <div class="process-box-title">Drei Werkzeuge, drei Zwecke</div>
-          <p><strong>EU–INC:</strong> Gesetze entwerfen &amp; nach Brüssel bringen<br><strong>LiquidFeedback:</strong> Intern diskutieren &amp; entscheiden<br><strong>Sway:</strong> Bei echten Wahlen gemeinsam abstimmen</p>
-        </div>
-        <a class="source-link" href="https://sway.vote" target="_blank" rel="noopener">↗ Sway</a>
-      </article>
-
+  <section class="chapter" id="bildung">
+    <div class="chapter-meta">
+      <span class="chapter-num">II.</span>
+      <span class="chapter-title">Bildung &amp; Infrastruktur</span>
+      <span class="chapter-count">Drei Ideen</span>
     </div>
 
-    <!-- EU-INC adjacent case study — full-width, visually distinct -->
-    <div style="margin-top: 12px;">
-      <article class="card card-case" style="position:relative;overflow:hidden;">
-        <div style="position:absolute;top:14px;right:16px;font-size:0.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--green-mid);background:rgba(27,94,32,0.10);padding:3px 9px;border-radius:20px;border:1px solid rgba(27,94,32,0.18);">Verwandter Erfolgsfall · bereits passiert</div>
-        <div style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
-          <div style="flex:1;min-width:240px;">
-            <div class="card-icon">🇪🇺</div>
-            <h3 style="font-size:1rem;margin-bottom:6px;color:var(--green-mid);">EU–INC: Wie ein Bürger ein EU-Gesetz nach Brüssel gebracht hat</h3>
-            <p style="margin-bottom:10px;">Europäische Start-ups brauchen eine gemeinsame Rechtsform — aber kein Mitgliedsstaat will Kompetenzen abgeben. Lobbyfirmen hatten es versucht. Nichts passierte. Dann öffnete Andreas Klinger den Gesetzgebungsprozess für alle — moderiert wie ein Open-Source-Projekt, mit einem Notion-Workspace statt Büros in Brüssel.</p>
-            <p style="font-size:0.8rem;color:var(--muted);font-style:italic;margin-bottom:10px;">Das ist nicht Liquid Democracy im technischen Sinne — aber es ist dieselbe Logik: offen, partizipativ, transparent, mit klarem Entscheidungsprozess. Und es hat funktioniert.</p>
-            <div class="stat-chips">
-              <span class="stat-chip">100+ Contributors</span>
-              <span class="stat-chip">16.000 Unterzeichner</span>
-              <span class="stat-chip">Auf EU-Agenda</span>
-              <span class="stat-chip">Orrick · Bird &amp; Bird</span>
-            </div>
-            <a class="source-link" href="https://eu-inc.org" target="_blank" rel="noopener" style="margin-top:12px;">↗ EU-INC Projekt</a>
-          </div>
-          <div style="flex:1;min-width:240px;">
-            <p style="font-size:0.72rem;font-weight:700;color:var(--green-mid);letter-spacing:0.4px;margin-bottom:8px;text-transform:uppercase;">Wie es ablief — 7 Phasen</p>
-            <div class="step-list">
-              <div class="step-row"><span class="step-num">1.</span><span class="step-text">Kernteam + Kanzleien definieren das Problem: fragmentierte EU-Rechtsformen blockieren Wachstum</span></div>
-              <div class="step-row"><span class="step-num">2.</span><span class="step-text">Über 100 Open-Source-Contributors erarbeiten den Erstentwurf — öffentlich, kommentierbar</span></div>
-              <div class="step-row"><span class="step-num">3.</span><span class="step-text">Notion-Workspace: jede Seite hat Kommentarboxen, jeder kann Feedback einreichen</span></div>
-              <div class="step-row"><span class="step-num">4.</span><span class="step-text">Redaktionelles Team integriert Feedback, erstellt versionierte Release Candidates</span></div>
-              <div class="step-row"><span class="step-num">5.</span><span class="step-text">Petition: 16.000 Unterstützer:innen — politisches Gewicht für Brüssel</span></div>
-              <div class="step-row"><span class="step-num">6.</span><span class="step-text">PDF-Releases direkt an Policymaker in Brüssel übermittelt</span></div>
-              <div class="step-row"><span class="step-num">7.</span><span class="step-text">Ergebnis: paneuropäische Unternehmensrechtsform auf der offiziellen EU-Agenda</span></div>
-            </div>
-          </div>
-        </div>
-      </article>
+    <div class="idea">
+      <span class="idea-num">7.</span>
+      <div>
+        <h3>Europa als ein einziger Campus.</h3>
+        <p>Erasmus+ hat dreizehn Millionen Menschen grenzüberschreitende Bildungserfahrungen ermöglicht — beschränkt auf akademische Kontexte. Eine universelle Anerkennungsinfrastruktur würde Berufsausbildungen, Zertifikate und Praxiserfahrungen einschließen. Der Zug wird zum Campus.</p>
+        <p class="source"><a href="https://erasmus-plus.ec.europa.eu/european-student-card-initiative" target="_blank" rel="noopener">Erasmus+ · European Student Card</a></p>
+      </div>
     </div>
 
-  </main>
+    <div class="idea">
+      <span class="idea-num">8.</span>
+      <div>
+        <h3>Abschlüsse, die überall gelten — sofort.</h3>
+        <p>Eine polnische Pflegefachkraft wartet heute sechs bis zwölf Monate auf Anerkennung in Portugal — bei identischen Ausbildungsstandards. KI-gestützte Qualifikationsübersetzung löst das Strukturproblem in Echtzeit: kein Papierkrieg, keine Übersetzungskosten.</p>
+        <p class="source"><a href="https://europa.eu/youreurope/citizens/work/professional-qualifications/index_en.htm" target="_blank" rel="noopener">EU · Berufsqualifikationen</a></p>
+      </div>
+    </div>
 
-  <footer>
-    <p>Entwickelt beim Salon AI Dinner · München, März 2026</p>
-    <p style="margin-top: 12px; font-size: 0.78rem; color: rgba(26,43,30,0.4); line-height: 1.65;">
-      <strong style="color: rgba(26,43,30,0.55);">Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten (teNeues)<br>
-      <strong style="color: rgba(26,43,30,0.55);">Host</strong> Franziska Wittleder · Engineer &amp; Product Leader, 15+ years building AI-driven products at Amazon, Writer &amp; SoundCloud
+    <div class="idea">
+      <span class="idea-num">9.</span>
+      <div>
+        <h3>Aus Stadtautobahnen werden Nahrungswälder.</h3>
+        <p>Rotterdam hat drei Kilometer ehemaliger Innenstadtstraßen in öffentliche Grünflächen umgewandelt. Der Voedselbos Almere produziert Nahrung auf zuvor versiegelter Fläche. Das Prinzip: Schwerlast unterirdisch oder verlagert — Oberfläche freigegeben.</p>
+        <p class="source"><a href="https://www.almere.nl" target="_blank" rel="noopener">Voedselbos Almere</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="demokratie">
+    <div class="chapter-meta">
+      <span class="chapter-num">III.</span>
+      <span class="chapter-title">Macht, Wachstum &amp; Demokratie</span>
+      <span class="chapter-count">Fünf Ideen</span>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">10.</span>
+      <div>
+        <h3>Europa als dritte Weltmacht — ohne Washington-Mandat.</h3>
+        <p>Neben den USA und China existiert eine dritte Option: eine souveräne EU, die militärisch koordiniert, technologisch führt und wirtschaftlich unabhängig handelt. Die Infrastruktur dafür existiert — von der EDA bis zum ESM. Was fehlt, ist kein Geld und keine Technologie. Es ist der politische Wille, sie einzusetzen.</p>
+        <p class="source"><a href="https://eda.europa.eu" target="_blank" rel="noopener">European Defence Agency</a></p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">11.</span>
+      <div>
+        <h3>Afrika-Partnerschaft statt Entwicklungshilfe.</h3>
+        <p>Die Global Gateway Initiative bündelt 300 Mrd. € für Investitionen in Afrika bis 2027. Return: langfristige Lieferverträge für kritische Rohstoffe. Kein Entwicklungshilfemodell, sondern strategischer Wirtschaftszugang zur am schnellsten wachsenden Region der Welt.</p>
+        <p class="source"><a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/global-gateway_en" target="_blank" rel="noopener">EU Global Gateway</a></p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">12.</span>
+      <div>
+        <h3>Weniger Bürokratie, mehr Output.</h3>
+        <p>Deutschland verlor 2024 über 30 % seiner Solarmodulproduktion an China — nicht wegen schlechterer Technologie, sondern wegen vierjähriger Genehmigungsverfahren. Ergebnisfinanzierung statt Inputkontrolle: vier Monate statt vier Jahre. Smarte Systemarchitektur, keine Deregulierung.</p>
+        <p class="source"><a href="https://www.ise.fraunhofer.de" target="_blank" rel="noopener">Fraunhofer ISE</a></p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">13.</span>
+      <div>
+        <h3>Liquid Democracy — abstimmen wie ein Profi.</h3>
+        <p>Liquid Democracy entkoppelt Partizipation von Parteibindung: direkte Abstimmung dort, wo eigene Expertise besteht; Delegation an Vertrauenspersonen, wo nicht — jederzeit widerruflich. Pilotstädte melden vierzig Prozent höhere Beteiligung. Die Technologie ist fertig. Details unten.</p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">14.</span>
+      <div>
+        <h3>Bürger:innen entscheiden das Budget — per Losverfahren.</h3>
+        <p>Paris ließ 2021 hundertfünfzig per Los ausgewählte Bürger:innen über Klimabudgets entscheiden. Ergebnis: ambitioniertere Maßnahmen als parlamentarische Vorschläge — siebzig Prozent davon wurden umgesetzt. Repräsentative Bürgerräte übertreffen Parteiprozesse systematisch.</p>
+        <p class="source"><a href="https://participons.paris.fr" target="_blank" rel="noopener">Participons Paris</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="werkzeuge">
+    <div class="chapter-meta">
+      <span class="chapter-num">IV.</span>
+      <span class="chapter-title">Werkzeuge — öffentliche EU-Daten</span>
+      <span class="chapter-count">Sieben Quellen</span>
+    </div>
+
+    <p style="font-size:0.96rem;color:var(--muted);margin-bottom:18px;line-height:1.7;">
+      Alles öffentlich, maschinenlesbar, kostenlos. Mit einem KI-Agenten entstehen daraus in Stunden belastbare Analysen, Petitionen und Positionspapiere — ohne Vorwissen, ohne Budget.
     </p>
-    <p style="margin-top: 14px;"><a href="/">← Zurück zu Salon AI</a></p>
-  </footer>
 
-  <!-- ── Language Switcher ── -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'de',
-        includedLanguages: 'bg,hr,cs,da,nl,en,et,fi,fr,el,hu,ga,it,lv,lt,mt,pl,pt,ro,sk,sl,es,sv',
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
+    <ul class="tools">
+      <li>
+        <div class="tool-name">EUR-Lex<a href="https://eur-lex.europa.eu" target="_blank" rel="noopener">eur-lex.europa.eu</a></div>
+        <p class="tool-desc">Alle EU-Gesetze im Volltext. Eine KI extrahiert den Rechtsstand zu deinem Thema und zeigt, welche Rechte heute bereits durchsetzbar sind.</p>
+      </li>
+      <li>
+        <div class="tool-name">EU „Have Your Say"<a href="https://ec.europa.eu/info/law/better-regulation/have-your-say" target="_blank" rel="noopener">ec.europa.eu</a></div>
+        <p class="tool-desc">Alle offenen Konsultationen mit Deadline. Ein Agent überwacht sie automatisch und meldet relevante Themen mit vorbereiteten Eingabevorlagen.</p>
+      </li>
+      <li>
+        <div class="tool-name">Europarl Voting Records<a href="https://europarl.europa.eu/plenary/votes" target="_blank" rel="noopener">europarl.europa.eu</a></div>
+        <p class="tool-desc">Vollständige Abstimmungshistorie jedes MEPs. KI generiert ein persönliches Briefing mit konkreten Argumenten auf Basis seiner eigenen Abstimmungen.</p>
+      </li>
+      <li>
+        <div class="tool-name">ECI-Register<a href="https://citizens-initiative.europa.eu" target="_blank" rel="noopener">citizens-initiative.europa.eu</a></div>
+        <p class="tool-desc">Alle Europäischen Bürgerinitiativen, erfolgreiche und gescheiterte. Was hat eine Million Unterschriften erreicht, was nicht? Vorlage für die eigene Initiative inklusive.</p>
+      </li>
+      <li>
+        <div class="tool-name">Eurostat<a href="https://ec.europa.eu/eurostat" target="_blank" rel="noopener">ec.europa.eu/eurostat</a></div>
+        <p class="tool-desc">Energiearmut, Wohnkosten, Gesundheitsversorgung — nach Region, Jahr, Bevölkerungsgruppe. Deine Region gegen den EU-Durchschnitt, in Sekunden.</p>
+      </li>
+      <li>
+        <div class="tool-name">EURES Jobmobilität<a href="https://eures.europa.eu" target="_blank" rel="noopener">eures.europa.eu</a></div>
+        <p class="tool-desc">Bürokratische Anforderungen für grenzüberschreitendes Arbeiten in jedem EU-Land — mit Rechtsgrundlage für Beschwerden, wenn der Binnenmarkt nicht funktioniert.</p>
+      </li>
+      <li>
+        <div class="tool-name">Klar-o-Mat<a href="https://klar-o-mat.de/index.html" target="_blank" rel="noopener">klar-o-mat.de</a></div>
+        <p class="tool-desc">Politische Positionen zu EU-Themen einfach erklärt und vergleichbar gemacht. Idealer Einstieg, bevor du mit KI-Agenten in Abstimmungshistorien und Gesetzestexte einsteigst.</p>
+      </li>
+    </ul>
+  </section>
 
-    function setLang(code) {
-      var dd = document.getElementById('lang-menu-m-dd');
-      if (dd) dd.classList.remove('open');
-      var host = window.location.hostname;
-      if (code === 'de') {
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + host;
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + host;
-        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-        window.location.reload();
-        return;
-      }
-      document.cookie = 'googtrans=/de/' + code + '; path=/';
-      document.cookie = 'googtrans=/de/' + code + '; path=/; domain=.' + host;
-      window.location.reload();
-    }
+  <section class="chapter" id="liquid">
+    <div class="chapter-meta">
+      <span class="chapter-num">V.</span>
+      <span class="chapter-title">Liquid Democracy — wohin Demokratie gehen könnte</span>
+    </div>
 
-    (function() {
-      var match = document.cookie.match(/googtrans=\/de\/([a-z]+)/);
-      var activeCode = match ? match[1] : 'de';
-      document.querySelectorAll('.lang-opt-m').forEach(function(o) { o.classList.remove('active'); });
-      var activeOpt = document.querySelector('.lang-opt-m[data-lang="' + activeCode + '"]');
-      if (activeOpt) activeOpt.classList.add('active');
-      var lbl = document.getElementById('lang-btn-m-label');
-      if (lbl) lbl.textContent = activeCode.toUpperCase();
-    })();
+    <p style="font-size:1rem;color:var(--ink);line-height:1.7;margin-bottom:14px;">
+      Was wäre, wenn Demokratie nicht alle vier Jahre stattfindet, sondern kontinuierlich? Liquid Democracy entkoppelt Partizipation vollständig von Parteizugehörigkeit: Du stimmst direkt ab, wo du Expertise hast — und delegierst an Vertrauenspersonen, wo du sie nicht hast. Jederzeit widerruflich. Pilotstädte melden vierzig Prozent höhere Beteiligung als bei klassischen Wahlen.
+    </p>
+    <p style="font-size:1rem;color:var(--ink);line-height:1.7;margin-bottom:30px;">
+      Die Technologie existiert. Was folgt, ist ein verwandter Erfolgsfall — dieselbe Logik, ohne den Begriff: offen, partizipativ, mit klarem Prozess. Und er hat in Brüssel funktioniert.
+    </p>
 
-    document.addEventListener('click', function() {
-      var dd = document.getElementById('lang-menu-m-dd');
-      if (dd) dd.classList.remove('open');
-    });
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+    <div class="idea">
+      <span class="idea-num">A.</span>
+      <div>
+        <h3>LiquidFeedback als politische Infrastruktur.</h3>
+        <p>Die Piratenpartei nutzte LiquidFeedback ab 2010 für interne Entscheidungen mit tausenden aktiven Mitgliedern — und bewies, dass digitale Willensbildung im Maßstab funktioniert. Der nächste Schritt ist kommunale Infrastruktur: Bürger:innen stimmen direkt über Stadtbudgets ab, delegieren Klimafragen an Expert:innen. Vorschlag → Unterstützung → parallele Alternativen → Rangfolge-Abstimmung — öffentlich nachvollziehbar, ohne Hinterzimmer.</p>
+        <p class="source"><a href="https://liquidfeedback.com" target="_blank" rel="noopener">LiquidFeedback</a></p>
+      </div>
+    </div>
+
+    <div class="idea">
+      <span class="idea-num">B.</span>
+      <div>
+        <h3>Koordinierte Wahlblöcke ohne Partei.</h3>
+        <p>Vierzigtausend Klimaaktivist:innen, die sich intern einigen und geschlossen wählen — mehr Einfluss als eine Lobbyfirma mit Millionenbudget. Sway überträgt Gewerkschaftslogik in Wahlen: koordinierte Abstimmung ohne Parteimitgliedschaft, ohne feste Bindung. EU–INC entwirft Gesetze und bringt sie nach Brüssel; LiquidFeedback dient interner Diskussion und Entscheidung; Sway koordiniert die eigentliche Wahl.</p>
+        <p class="source"><a href="https://sway.vote" target="_blank" rel="noopener">Sway</a></p>
+      </div>
+    </div>
+
+    <div class="case-study">
+      <p class="eyebrow">Verwandter Erfolgsfall · bereits passiert</p>
+      <h3>EU–INC: Wie ein Bürger ein EU-Gesetz nach Brüssel gebracht hat.</h3>
+      <p>Europäische Start-ups brauchen eine gemeinsame Rechtsform — aber kein Mitgliedstaat will Kompetenzen abgeben. Lobbyfirmen hatten es versucht; nichts passierte. Dann öffnete Andreas Klinger den Gesetzgebungsprozess für alle: moderiert wie ein Open-Source-Projekt, mit einem Notion-Workspace statt Büros in Brüssel.</p>
+      <p class="note">Das ist nicht Liquid Democracy im technischen Sinne — aber dieselbe Logik: offen, partizipativ, transparent, mit klarem Entscheidungsprozess. Und es hat funktioniert.</p>
+      <div class="case-stats">
+        <span>100+ Contributors</span>
+        <span>16 000 Unterzeichner</span>
+        <span>Auf EU-Agenda</span>
+        <span>Orrick · Bird &amp; Bird</span>
+      </div>
+      <p style="font-size:0.78rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);margin:8px 0 4px;">Sieben Phasen</p>
+      <ol class="phases">
+        <li>Kernteam und Kanzleien definieren das Problem: fragmentierte EU-Rechtsformen blockieren Wachstum.</li>
+        <li>Über hundert Open-Source-Contributors erarbeiten den Erstentwurf — öffentlich und kommentierbar.</li>
+        <li>Notion-Workspace: jede Seite mit Kommentarboxen, jede Person kann Feedback einreichen.</li>
+        <li>Redaktionelles Team integriert Feedback und erstellt versionierte Release Candidates.</li>
+        <li>Petition: sechzehntausend Unterstützer:innen — politisches Gewicht für Brüssel.</li>
+        <li>PDF-Releases werden direkt an Policymaker in Brüssel übermittelt.</li>
+        <li>Ergebnis: eine paneuropäische Unternehmensrechtsform auf der offiziellen EU-Agenda.</li>
+      </ol>
+      <p class="source" style="margin-top:14px;"><a href="https://eu-inc.org" target="_blank" rel="noopener">EU-INC Projekt</a></p>
+    </div>
+  </section>
+
+</article>
+
+<footer>
+  <p style="margin-bottom:12px;">Entwickelt beim Salon AI Dinner · München, März 2026.</p>
+  <p class="credits">
+    <span class="credits-line"><strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy bei Gestalten / teNeues</span>
+    <span class="credits-line"><strong>Host</strong> Franziska Wittleder · 15+ Jahre KI, Engineering &amp; Product Leadership — Amazon, Writer, SoundCloud</span>
+  </p>
+  <a class="back-home" href="/">← Zurück zu Salon AI</a>
+</footer>
 
 </body>
 </html>
