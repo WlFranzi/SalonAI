@@ -74,6 +74,58 @@ describe("index.html — script loading", () => {
   });
 });
 
+// ── Mobile-first layout patterns ─────────────────────────────────────────────
+describe("index.html — mobile-first responsive patterns", () => {
+  // Each layout block should default to a single-column / stacked layout
+  // and use min-width media queries to enhance for larger viewports.
+  const containers = [
+    { selector: ".stats-inner",   minBreakpoint: 768 },
+    { selector: ".two-col",       minBreakpoint: 800 },
+    { selector: ".manifesto ol",  minBreakpoint: 820 },
+    { selector: ".testimonials",  minBreakpoint: 720 },
+    { selector: ".skill-cols",    minBreakpoint: 620 },
+  ];
+
+  for (const { selector, minBreakpoint } of containers) {
+    it(`${selector} defaults to grid-template-columns: 1fr (mobile-first)`, () => {
+      // Find the rule and verify default grid-template-columns is 1fr (or single column)
+      const escaped = selector.replace(/\./g, "\\.").replace(/\s+/g, "\\s+");
+      const re = new RegExp(`${escaped}\\s*\\{[^}]*grid-template-columns:\\s*1fr`);
+      assert.ok(re.test(html), `${selector} default must be grid-template-columns: 1fr`);
+    });
+    it(`${selector} enhances at min-width: ${minBreakpoint}px`, () => {
+      const re = new RegExp(`@media\\s*\\(min-width:\\s*${minBreakpoint}px\\)`);
+      assert.ok(re.test(html), `Missing min-width: ${minBreakpoint}px enhancement for ${selector}`);
+    });
+  }
+
+  it("hero uses min-height-friendly mobile padding (≤56px top default)", () => {
+    // The base .hero rule should not start with the desktop 88px padding.
+    const heroRule = html.match(/\.hero\s*\{[^}]*padding:\s*([^;]+);/);
+    assert.ok(heroRule, ".hero rule with padding not found");
+    assert.ok(!/^88px/.test(heroRule[1].trim()),
+      "Hero must not default to desktop 88px top padding");
+  });
+
+  it("hero CTA tap target is ≥48px tall on mobile", () => {
+    assert.ok(/\.hero-cta\s*\{[^}]*min-height:\s*48px/.test(html),
+      ".hero-cta should have min-height: 48px for mobile tap targets");
+  });
+
+  it("layout containers don't pair with max-width fallback to 1fr", () => {
+    // Catch the legacy desktop-first idiom for the *base* rules of these selectors.
+    // The base rule is the first occurrence — must not declare repeat(N, 1fr).
+    for (const sel of [".stats-inner", ".two-col", ".manifesto ol", ".testimonials", ".skill-cols"]) {
+      const escaped = sel.replace(/\./g, "\\.").replace(/\s+/g, "\\s+");
+      const baseRuleRe = new RegExp(`(^|[^@\\)])\\s*${escaped}\\s*\\{[^}]+\\}`, "m");
+      const m = html.match(baseRuleRe);
+      assert.ok(m, `Base rule for ${sel} not found`);
+      assert.ok(!/grid-template-columns:\s*repeat\(/.test(m[0]),
+        `Base rule for ${sel} should not declare multi-column grid (mobile-first)`);
+    }
+  });
+});
+
 // ── Hero (HNWI pass) ─────────────────────────────────────────────────────────
 describe("index.html — hero", () => {
   it("hero CTA points to #events (not directly to Stripe)", () => {
