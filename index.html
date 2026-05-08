@@ -96,18 +96,23 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .hero-cta { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.95); color: var(--navy); font-weight: 700; font-size: var(--t-base); padding: 15px 36px; border-radius: var(--r-pill); text-decoration: none; transition: all 0.2s; font-family: 'DM Sans', sans-serif; margin-top: var(--s3); letter-spacing: 0.1px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
 .hero-cta:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.28); }
 
-/* ── Was ist das ── */
-.what-is-this { background: transparent; padding: var(--s5) var(--s3); }
-.what-inner { max-width: 780px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--s5); align-items: start; }
-@media(max-width:720px) { .what-inner { grid-template-columns: 1fr; gap: var(--s4); } }
-.what-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
-.what-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s2); }
-.what-desc { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; }
-.what-bullets { display: flex; flex-direction: column; gap: var(--s3); }
-.what-bullet { display: flex; gap: var(--s2); align-items: flex-start; }
-.what-num { font-size: var(--t-xs); font-weight: 800; color: var(--accent); background: rgba(0,51,153,0.08); border-radius: var(--r-sm); padding: 3px 7px; flex-shrink: 0; margin-top: 2px; letter-spacing: 0.5px; }
-.what-bullet strong { font-size: var(--t-base); font-weight: 700; color: var(--navy); display: block; margin-bottom: 4px; }
-.what-bullet p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.65; margin: 0; }
+/* ── Was ist das (kurz, oberhalb Skills) ── */
+.what-short { background: transparent; padding: 0 var(--s3); max-width: 720px; margin: 0 auto var(--s3); text-align: center; }
+.what-short .ws-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
+.what-short h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s1); }
+.what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
+
+/* ── Manifest: Warum es Salon AI gibt ── */
+.manifesto { background: transparent; padding: var(--s5) var(--s3); }
+.manifesto-inner { max-width: 640px; margin: 0 auto; }
+.manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
+.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.85rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s3); }
+.manifesto p { font-size: var(--t-base); color: var(--navy); line-height: 1.75; margin-bottom: var(--s2); }
+.manifesto p.manifesto-lede { font-size: 1.05rem; }
+.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0 var(--s3); display: flex; flex-direction: column; gap: var(--s2); }
+.manifesto ol li { counter-increment: manifesto-c; padding-left: 38px; position: relative; font-size: var(--t-base); color: var(--navy); line-height: 1.7; }
+.manifesto ol li::before { content: counter(manifesto-c); position: absolute; left: 0; top: 1px; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--sky-deep); width: 26px; text-align: left; }
+.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); border-top: 1px solid var(--border); padding-top: var(--s2); margin-top: var(--s3); }
 
 /* ── Event requirement note ── */
 .event-requirement { font-size: var(--t-sm); color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 10px 16px; margin: 8px 0 16px; line-height: 1.6; }
@@ -641,10 +646,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="stat-label" data-i18n="stat_1_lbl">From prompting to a running agent</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_2_num">Your Agent</div>
-      <div class="stat-label" data-i18n="stat_2_lbl">You leave with something that actually works</div>
-    </div>
-    <div class="stat-item">
       <div class="stat-number" data-i18n="stat_3_num">Experts</div>
       <div class="stat-label" data-i18n="stat_3_lbl">Hands-on help while building — no going it alone</div>
     </div>
@@ -656,39 +657,22 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </div>
 
 
-<!-- ── WAS IST DAS ────────────────────────────────────────────────── -->
-<div class="what-is-this">
-  <div class="what-inner">
-    <div class="what-text">
-      <p class="what-label">Was ist das?</p>
-      <h2 class="what-h2">Ein Abend. Dein KI-Assistent. Dann Europa.</h2>
-      <p class="what-desc">Du baust deinen eigenen KI-Assistenten — für deinen Alltag, deinen Job, dein Thema. Und dann nutzt du ihn, um als Bürger:in konkret etwas für Europa zu tun. Kein Vortrag. Kein Zuschauen. Du baust selbst.</p>
-    </div>
-    <div class="what-bullets">
-      <div class="what-bullet">
-        <span class="what-num">01</span>
-        <div>
-          <strong>KI für dich</strong>
-          <p>Du richtest deinen persönlichen KI-Agenten ein — Schritt für Schritt, Experten helfen vor Ort. Niemand bleibt hängen.</p>
-        </div>
-      </div>
-      <div class="what-bullet">
-        <span class="what-num">02</span>
-        <div>
-          <strong>KI für Europa</strong>
-          <p>Du nutzt deinen Agenten für eine echte EU-Aufgabe: relevante MEPs identifizieren, Konsultationseingaben verfassen, Regulierungsvorschläge kommentieren — konkret, heute, mit sofortiger Wirkung.</p>
-        </div>
-      </div>
-      <div class="what-bullet">
-        <span class="what-num">03</span>
-        <div>
-          <strong>Du nimmst ihn mit</strong>
-          <p>Der Assistent gehört dir. Du verlässt den Abend mit etwas, das wirklich für dich arbeitet — nicht mit Folien.</p>
-        </div>
-      </div>
-    </div>
+<!-- ── MANIFEST ──────────────────────────────────────────────────── -->
+<section class="manifesto" id="warum">
+  <div class="manifesto-inner">
+    <p class="manifesto-eyebrow">Salon AI</p>
+    <h2>Warum es Salon AI gibt</h2>
+    <p class="manifesto-lede">Uns hat genervt, dass Europa bei KI hinterherhinkt. Und dass so viele Europäer:innen gar nicht wissen, was sie eigentlich tun können, um zu einem starken Europa beizutragen. Vielen fehlt sogar das Gefühl, überhaupt europäisch zu sein.</p>
+    <p>Beides hängt zusammen. Und beides lässt sich an einem einzigen Abend angehen.</p>
+    <p><strong>Salon AI macht drei Dinge gleichzeitig:</strong></p>
+    <ol>
+      <li>Wir lernen KI — und zwar mehr als „eine Frage bei ChatGPT". Auch Agenten. Auch das, was du dir bisher nicht zugetraut hast.</li>
+      <li>Wir testen, ob du das, was du gerade gelernt hast, sofort für Europa anwenden kannst. Konkret. An deinem Thema.</li>
+      <li>Du gehst nach Hause und weißt: warum Europa wichtig ist. Und hast den Mut, mit KI alles auszuprobieren, was du dir vornimmst.</li>
+    </ol>
+    <p class="manifesto-coda">Und ja, das machen wir offline. Im Gespräch. Hands-on. Weil es online schon genug Kurse gibt — und weil die richtig guten Gespräche immer noch erst entstehen, wenn man im selben Raum sitzt.</p>
   </div>
-</div>
+</section>
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
@@ -800,6 +784,13 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </main>
 
+
+<!-- ── WAS IST DAS (kurz) ────────────────────────────────────────── -->
+<div class="what-short">
+  <p class="ws-eyebrow">Was ist das?</p>
+  <h2>Ein Abend. Dein KI-Assistent. Dann Europa.</h2>
+  <p>Du baust deinen eigenen KI-Assistenten — und nutzt ihn noch im selben Abend für eine konkrete EU-Aufgabe. Kein Vortrag. Kein Zuschauen.</p>
+</div>
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
 <section class="skills-section" id="skills">
