@@ -185,7 +185,7 @@ describe("index.html — hero", () => {
 
 // ── FAQ order (trust first) ──────────────────────────────────────────────────
 describe("index.html — FAQ order", () => {
-  const summaries = Array.from(html.matchAll(/<details class="faq-item">\s*<summary>([^<]+)<\/summary>/g))
+  const summaries = Array.from(html.matchAll(/<details class="faq-item">\s*<summary[^>]*>([^<]+)<\/summary>/g))
     .map((m) => m[1].trim());
 
   it("first FAQ asks who is behind the salon (trust first)", () => {
@@ -221,5 +221,21 @@ describe("index.html — language init", () => {
       "DE fallback must be present in init script");
     assert.ok(!/applyLocale\(\s*['"]en['"]\s*\)/.test(html),
       "Should not hardcode applyLocale('en')");
+  });
+});
+
+describe(`${import.meta.url.split('/').pop()} — Google Analytics`, () => {
+  it("loads gtag.js asynchronously", () => {
+    assert.ok(
+      /src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-L2RZV4QPFD"/.test(html),
+      "Google Analytics gtag.js script tag missing"
+    );
+    assert.ok(/<script async/.test(html), "GA script tag should be loaded async");
+  });
+  it("calls gtag('config', ...) with the property ID", () => {
+    assert.ok(
+      /gtag\(\s*['"]config['"]\s*,\s*['"]G-L2RZV4QPFD['"]\s*\)/.test(html),
+      "gtag('config', 'G-L2RZV4QPFD') call missing"
+    );
   });
 });

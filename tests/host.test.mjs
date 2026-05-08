@@ -105,3 +105,19 @@ describe("host.html — result-title formatting", () => {
       "Old possessive '’s KI Dinner' construction still present");
   });
 });
+
+describe(`${import.meta.url.split('/').pop()} — Google Analytics`, () => {
+  it("loads gtag.js asynchronously", () => {
+    assert.ok(
+      /src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-L2RZV4QPFD"/.test(html),
+      "Google Analytics gtag.js script tag missing"
+    );
+    assert.ok(/<script async/.test(html), "GA script tag should be loaded async");
+  });
+  it("calls gtag('config', ...) with the property ID", () => {
+    assert.ok(
+      /gtag\(\s*['"]config['"]\s*,\s*['"]G-L2RZV4QPFD['"]\s*\)/.test(html),
+      "gtag('config', 'G-L2RZV4QPFD') call missing"
+    );
+  });
+});
