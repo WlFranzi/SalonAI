@@ -71,24 +71,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .hero .cloud { display: none; }
 .hero-content { position: relative; z-index: 10; max-width: 620px; margin: 0 auto; text-align: center; }
 .eu-stars { display: flex; align-items: center; gap: 7px; justify-content: center; margin-bottom: 20px; }
-.eu-star { width: 8px; height: 8px; background: var(--gold); opacity: 0.45; animation: twinkle 1.8s ease-in-out infinite; }
-.eu-star:nth-child(1)  { animation-delay: 0s; }
-.eu-star:nth-child(2)  { animation-delay: 0.15s; }
-.eu-star:nth-child(3)  { animation-delay: 0.30s; }
-.eu-star:nth-child(4)  { animation-delay: 0.45s; }
-.eu-star:nth-child(5)  { animation-delay: 0.60s; }
-.eu-star:nth-child(6)  { animation-delay: 0.75s; }
-.eu-star:nth-child(7)  { animation-delay: 0.90s; }
-.eu-star:nth-child(8)  { animation-delay: 1.05s; }
-.eu-star:nth-child(9)  { animation-delay: 1.20s; }
-.eu-star:nth-child(10) { animation-delay: 1.35s; }
-.eu-star:nth-child(11) { animation-delay: 1.50s; }
-.eu-star:nth-child(12) { animation-delay: 1.65s; }
-@keyframes twinkle {
-  0%, 100% { opacity: 0.25; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.35); }
-}
-.eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2.5px; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: var(--s1); }
+.eu-star { width: 6px; height: 6px; background: var(--gold); opacity: 0.32; }
+.eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.4px; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: var(--s1); }
 .eyebrow-sub { font-size: var(--t-sm); color: rgba(255,255,255,0.5); font-weight: 400; margin-bottom: var(--s3); letter-spacing: 0.2px; }
 .hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.12; font-weight: 700; color: #fff; margin-bottom: var(--s2); }
 .hero h1 em { color: var(--gold); font-style: italic; }
@@ -98,14 +82,14 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* ── Was ist das (kurz, oberhalb Skills) ── */
 .what-short { background: transparent; padding: 0 var(--s3); max-width: 720px; margin: 0 auto var(--s3); text-align: center; }
-.what-short .ws-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
+.what-short .ws-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
 .what-short h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s1); }
 .what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
 
 /* ── Manifest: Warum es Salon AI gibt ── */
 .manifesto { background: transparent; padding: var(--s5) var(--s3); }
 .manifesto-inner { max-width: 640px; margin: 0 auto; }
-.manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
+.manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.85rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s3); }
 .manifesto p { font-size: var(--t-base); color: var(--navy); line-height: 1.75; margin-bottom: var(--s2); }
 .manifesto p.manifesto-lede { font-size: 1.05rem; }
@@ -119,7 +103,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* ── Host your own ── */
 .host-own { margin-top: var(--s3); background: var(--navy); border-radius: var(--r-lg); padding: var(--s4) var(--s3); }
-.host-own-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: var(--s1); }
+.host-own-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--gold); margin-bottom: var(--s1); }
 .host-own-h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; margin-bottom: var(--s1); color: #fff; line-height: 1.25; }
 .host-own-desc { font-size: var(--t-sm); color: rgba(255,255,255,0.65); line-height: 1.65; margin-bottom: var(--s2); }
 .host-own-examples { display: flex; flex-wrap: wrap; gap: var(--s1); margin-bottom: var(--s3); }
@@ -131,7 +115,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 /* ── FAQ ── */
 .faq-section { padding: var(--s6) var(--s3); background: transparent; }
 .faq-inner { max-width: 660px; margin: 0 auto; }
-.faq-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
+.faq-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
 .faq-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s4); line-height: 1.2; }
 .faq-list { display: flex; flex-direction: column; }
 .faq-item { border-bottom: 1px solid var(--border); }
@@ -162,13 +146,13 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* Tile shared */
 .tile { padding: var(--s4); }
-.tile-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); display: flex; align-items: center; gap: var(--s1); }
+.tile-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); display: flex; align-items: center; gap: var(--s1); }
 .tile-label span.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
 .tile h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: var(--s2); color: var(--navy); line-height: 1.2; }
 
 /* Events */
 .events-section { margin-bottom: 20px; }
-.events-section h3 { font-family: 'DM Sans', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 7px; color: var(--muted-blue); }
+.events-section h3 { font-family: 'DM Sans', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 7px; color: var(--muted-blue); }
 .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 .status-dot.upcoming { background: #4ade80; }
 .status-dot.past { background: var(--border); }
@@ -232,10 +216,6 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .s-col-eu .s-step:first-child p { font-weight: 600; color: var(--navy); }
 
 /* Photo preview button */
-@keyframes photo-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0,51,153,0.18); }
-  50%       { box-shadow: 0 0 0 5px rgba(0,51,153,0); }
-}
 .photo-preview-btn {
   position: relative;
   display: inline-flex;
@@ -309,7 +289,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* Bring 15 banner */
 .bring15 { margin-top: 16px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 5px; }
+.bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 5px; }
 .bring15 h4 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
 .bring15 p { font-size: 12px; color: var(--muted-blue); line-height: 1.5; }
 .b-btn { background: var(--navy); color: var(--white-warm); border-radius: 999px; padding: 10px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; white-space: nowrap; transition: background 0.2s; border: none; cursor: pointer; }
@@ -440,7 +420,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .skills-intro { margin-bottom: var(--s4); }
 .skills-eyebrow-row { display: flex; align-items: center; gap: var(--s1); margin-bottom: var(--s1); }
 .skills-eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
-.skills-eyebrow-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); }
+.skills-eyebrow-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); }
 .skills-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s1); line-height: 1.2; }
 .skills-desc { font-size: var(--t-sm); color: var(--muted-blue); max-width: 560px; line-height: 1.65; }
 .skills-beispiele { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin: var(--s5) 0 var(--s3); }
@@ -456,7 +436,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .skill-toggle:hover { background: var(--sky-light); }
 .skill-item.open .skill-toggle { background: var(--sky-light); border-bottom: 1px solid var(--border); }
 
-.skill-cat { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700;
+.skill-cat { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700;
   padding: 3px 9px; border-radius: 999px;
   background: rgba(0,51,153,0.09); color: var(--accent); white-space: nowrap; flex-shrink: 0; }
 .skill-name-text { font-size: 14px; font-weight: 600; color: var(--navy); flex: 1; }
@@ -482,7 +462,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .s-col-now { background: rgba(0,51,153,0.05); border: 1px solid rgba(0,51,153,0.14); }
 .s-col-eu  { background: var(--navy); }
 
-.s-col-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 8px; }
+.s-col-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; margin-bottom: 8px; }
 .s-col-old .s-col-label { color: var(--muted-blue); }
 .s-col-now .s-col-label { color: var(--accent); }
 .s-col-eu  .s-col-label { color: var(--gold); }
@@ -660,15 +640,15 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
     <h2>Warum es Salon AI gibt</h2>
-    <p class="manifesto-lede">Mal ehrlich: Wenn man gerade in der EU lebt, fühlt sich das nicht so super stark an. Bei KI hinken wir hinterher. Wenn man fragt, was man als einzelne Person für Europa tun kann — kommt meistens ein Schulterzucken. Viele fühlen sich nicht mal so richtig europäisch. Ist halt so gerade.</p>
-    <p>Uns hat das genervt. Deshalb gibt's jetzt Salon AI.</p>
-    <p><strong>An einem Abend passieren drei Sachen.</strong></p>
+    <p class="manifesto-lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
+    <p>Genau deshalb gibt es Salon AI.</p>
+    <p><strong>An einem Abend passieren drei Dinge:</strong></p>
     <ol>
-      <li>Wir lernen KI — und zwar mehr als „eine Frage bei ChatGPT". Auch Agenten. Auch das, was du dir bisher nicht zugetraut hast.</li>
-      <li>Wir testen, ob du das, was du gerade gelernt hast, sofort für Europa anwenden kannst. Konkret. An deinem Thema.</li>
-      <li>Du gehst nach Hause und weißt: warum Europa wichtig ist. Und hast den Mut, mit KI alles auszuprobieren, was du dir vornimmst.</li>
+      <li>Wir lernen KI — nicht nur die simplen Alltagstricks, sondern Agenten, Automationen und die Werkzeuge mit echtem Hebel.</li>
+      <li>Wir testen sofort, ob daraus etwas entstehen kann, das für Europa relevant ist. Deine Idee, dein Thema, direkt ausprobiert.</li>
+      <li>Und man geht mit einem anderen Blick nach Hause: auf Europa — und auf die eigenen Möglichkeiten, mit KI selbst etwas zu bauen, statt nur zuzuschauen.</li>
     </ol>
-    <p class="manifesto-coda">Und ja, das machen wir offline. Im Gespräch. Hands-on. Weil es online schon genug Kurse gibt — und weil die richtig guten Gespräche immer noch erst entstehen, wenn man im selben Raum sitzt.</p>
+    <p class="manifesto-coda">Wichtig ist auch: Das Ganze passiert offline. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber die Gespräche, die wirklich etwas verändern, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken.</p>
   </div>
 </section>
 
