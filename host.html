@@ -11,14 +11,14 @@
       --navy: #1B2E4A;
       --sky-deep: #7A9DB8;
       --sky-light: #E8F2FA;
-      --gold: #D4A84B;
+      --gold: #7EC8E0;
       --accent: #003399;
       --white-warm: #FAF9F7;
       --border: #C5D5E4;
       --muted: #5F7080;
       --radius: 14px;
     }
-    body { font-family: 'DM Sans', sans-serif; background: var(--white-warm); color: var(--navy); min-height: 100vh; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white-warm); background-image: radial-gradient(ellipse 700px 350px at 15% 5%, rgba(126,200,224,0.13) 0%, transparent 70%), radial-gradient(ellipse 500px 300px at 85% 85%, rgba(126,200,224,0.09) 0%, transparent 70%); color: var(--navy); min-height: 100vh; }
 
     /* NAV */
     nav { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
@@ -34,20 +34,23 @@
     .hero p { font-size: 13.5px; color: rgba(255,255,255,0.6); max-width: 480px; margin: 0 auto; line-height: 1.6; }
 
     /* FREE TICKET BANNER */
-    .free-banner { background: rgba(212,168,75,0.12); border: 1px solid rgba(212,168,75,0.35); border-radius: 10px; padding: 12px 16px; margin: 28px 0 8px; font-size: 13px; line-height: 1.55; color: var(--navy); }
-    .free-banner strong { color: #7a5200; }
+    .free-banner { background: rgba(126,200,224,0.1); border: 1px solid rgba(126,200,224,0.35); border-radius: 10px; padding: 12px 16px; margin: 28px 0 8px; font-size: 13px; line-height: 1.55; color: var(--navy); }
+    .free-banner strong { color: var(--navy); }
+    /* MIN PERSONS CALLOUT */
+    .min-callout { display: flex; align-items: center; gap: 10px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 10px; padding: 11px 16px; margin-bottom: 8px; font-size: 12.5px; color: var(--navy); line-height: 1.55; flex-wrap: wrap; }
+    .min-callout .mc-badge { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--navy); color: #fff; border-radius: 999px; padding: 3px 10px; flex-shrink: 0; }
 
     /* MAIN */
     main { max-width: 600px; margin: 0 auto; padding: 28px 20px 80px; }
 
     /* QUICK EMAIL (top) */
-    .quick-email { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+    .quick-email { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 22px 24px; margin-bottom: 14px; box-shadow: 0 4px 20px rgba(126,200,224,0.1); }
     .quick-email-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 6px; display: flex; align-items: center; gap: 7px; }
     .quick-email-label::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
     .quick-email h2 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
 
     /* STEP CARDS */
-    .step { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+    .step { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 22px 24px; margin-bottom: 14px; box-shadow: 0 4px 20px rgba(126,200,224,0.1); }
     .step-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 6px; display: flex; align-items: center; gap: 7px; }
     .step-label::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
     .step h2 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
@@ -94,7 +97,7 @@
     .result-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 16px; line-height: 1.3; }
     .link-box { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border-radius: 9px; padding: 10px 13px; margin-bottom: 12px; }
     .link-url { flex: 1; font-size: 11.5px; color: rgba(255,255,255,0.8); word-break: break-all; font-family: monospace; }
-    .copy-btn { flex-shrink: 0; padding: 6px 13px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; }
+    .copy-btn { flex-shrink: 0; padding: 6px 13px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; letter-spacing: 0.1px; }
     .copy-btn.copied { background: #2a9d5c; color: #fff; }
     .preview-link { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); text-decoration: none; padding: 8px 14px; border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; transition: all 0.15s; }
     .preview-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
@@ -106,6 +109,27 @@
     footer a { color: var(--accent); text-decoration: none; }
 
     @media(max-width: 440px) { .step, .quick-email { padding: 18px; } }
+
+    /* VENUE CHOICE */
+    .venue-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .venue-option { border: 2px solid var(--border); border-radius: 12px; padding: 16px 14px; cursor: pointer; transition: all 0.15s; background: var(--white-warm); text-align: left; width: 100%; font-family: 'DM Sans', sans-serif; }
+    .venue-option:hover { border-color: var(--sky-deep); background: var(--sky-light); }
+    .venue-option.selected { border-color: var(--accent); background: rgba(0,51,153,0.05); }
+    .venue-option .vo-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+    .venue-option .vo-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 3px; display: block; }
+    .venue-option.selected .vo-title { color: var(--accent); }
+    .venue-option .vo-desc { font-size: 11.5px; color: var(--muted); line-height: 1.5; display: block; }
+    .venue-error { font-size: 11.5px; color: #c0392b; margin-top: 7px; display: none; }
+    .venue-error.show { display: block; }
+
+    /* LOCKED COPY STATE */
+    .copy-btn:disabled { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.3); cursor: not-allowed; }
+    .luitpold-gate { background: rgba(255,160,0,0.12); border: 1px solid rgba(255,160,0,0.4); border-radius: 9px; padding: 14px 16px; margin-bottom: 12px; }
+    .luitpold-gate-title { font-size: 13px; font-weight: 700; color: #ffc04d; margin-bottom: 5px; }
+    .luitpold-gate-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 10px; }
+    .luitpold-confirm { display: flex; align-items: flex-start; gap: 9px; cursor: pointer; }
+    .luitpold-confirm input[type=checkbox] { margin-top: 2px; flex-shrink: 0; accent-color: #4ade80; width: 15px; height: 15px; cursor: pointer; }
+    .luitpold-confirm label { font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.5; cursor: pointer; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -117,30 +141,31 @@
 
 <div class="hero">
   <p class="eyebrow">Dein eigenes KI Dinner</p>
-  <h1>Organisiere einen Abend<br><em>mit deinen Leuten</em></h1>
-  <p>Du wählst das Datum, wir bringen den Abend — Franziska hält den Workshop, du holst deine Runde zusammen.</p>
+  <h1>Du bringst Raum und Kreis.<br><em>Wir bringen den Rest.</em></h1>
+  <p>Workshop, Moderation und Catering kommen von uns. Du wählst das Datum, bekommst einen Einladungslink, schickst ihn an deine Runde. Ab zwölf Personen · 78€ pro Person.</p>
 </div>
 
 <main>
 
-  <!-- FREE TICKET BANNER -->
+  <!-- SOCIAL PROOF -->
+  <div style="text-align:center; font-size:11.5px; color:var(--muted); margin:20px 0 6px; letter-spacing:0.3px;">
+    Bisherige Dinner: Investoren · Gründerinnen · Führungskräfte · Journalist:innen · Abgeordnete
+  </div>
+
+  <!-- MIN PERSONS CALLOUT -->
+  <div class="min-callout">
+    <span class="mc-badge">Kleiner Kreis</span>
+    Ab 12 Tickets findet der Abend statt · maximal 20 Gäste · <strong>78€ pro Person, Catering inklusive</strong>
+  </div>
+
+  <!-- WHAT WE PROVIDE BANNER -->
   <div class="free-banner">
-    🎁 <strong>Als Host ist dein Ticket kostenlos.</strong> Essen, Drinks und Workshop — komplett für dich. Deine Freund:innen zahlen 78€ pro Person.<br>
-    Optional: Wir fragen im Luitpoldblock an, ob der Raum verfügbar ist — dann fallen einmalig <strong>280€ extra für den Raum</strong> an (auf alle Tickets umgerechnet ca. 20€ pro Person).
+    Wir liefern den Inhalt: Hands-on KI-Workshop, Moderation und Catering (Essen &amp; Drinks) — für jeden Gast im Ticketpreis enthalten.<br>
+    <strong>Du übernimmst Raum und Einladungen.</strong> Dein Platz als Gastgeber:in ist inklusive.
   </div>
 
-  <!-- QUICK EMAIL AT TOP -->
-  <div class="quick-email" id="step-email">
-    <div class="quick-email-label">Deine E-Mail</div>
-    <h2>Damit wir dich erreichen können</h2>
-    <input type="email" id="host-email" placeholder="deine@email.com" />
-    <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
-    <p class="input-hint">Du bekommst eine Nachricht, sobald alle Plätze vergeben sind — und wenn du den Luitpoldblock-Raum möchtest.</p>
-  </div>
-
-  <!-- STEP 1: Date -->
+  <!-- STEP 2: Date -->
   <div class="step">
-    <div class="step-label">Schritt 1</div>
     <h2>Welcher Abend passt dir?</h2>
     <div class="date-grid" id="date-grid">
       <div class="date-card" data-code="19mai" data-label="Di, 19. Mai 2026" onclick="selectDate(this)">
@@ -160,46 +185,67 @@
       </div>
     </div>
     <div class="date-error" id="date-error">Bitte wähle einen Abend.</div>
+  </div>
 
-    <!-- Venue checkbox -->
+  <!-- LUITPOLDBLOCK OPTIONAL TOGGLE -->
+  <div class="step" id="step-venue-opt">
     <div class="venue-toggle">
-      <input type="checkbox" id="venue-check" />
-      <label for="venue-check"><strong>Luitpoldblock-Raum anfragen</strong> — wir prüfen die Verfügbarkeit und melden uns. Einmalig +280€ für den Raum (optional).</label>
+      <input type="checkbox" id="need-luitpoldblock" onchange="toggleLuitpoldblock(this)" />
+      <label for="need-luitpoldblock"><strong>Ich brauche einen Raum — Luitpoldblock anfragen</strong><br><span style="font-weight:400;color:var(--muted);">Wir fragen für dich an (+280€ einmalig). Dein Link ist erst nach unserer Bestätigung teilbar.</span></label>
     </div>
   </div>
 
-  <!-- STEP 2: Name -->
+  <!-- STEP 3: Name -->
   <div class="step" id="step-name">
-    <div class="step-label">Schritt 2</div>
     <h2>Dein Name</h2>
     <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" oninput="syncMessage()" />
     <div class="error-msg">Bitte gib deinen Namen ein.</div>
     <p class="input-hint">So heißt das Event — deine Runde sieht sofort, wer es organisiert.</p>
   </div>
 
-  <!-- STEP 3: Message -->
+  <!-- STEP 4: Message -->
   <div class="step" id="step-msg">
-    <div class="step-label">Schritt 3</div>
     <h2>Deine Einladung — ändere sie wie du möchtest</h2>
     <textarea id="host-msg"></textarea>
     <div class="error-msg">Bitte schreib eine kurze Einladung.</div>
     <p class="input-hint">Dieser Text erscheint auf der Event-Seite — in deinem Namen, aber editierbar.</p>
   </div>
 
-  <button class="generate-btn" onclick="generate()">✨ Meinen Event-Link erstellen →</button>
+  <!-- EMAIL — last, after investment in form -->
+  <div class="quick-email" id="step-email">
+    <div class="quick-email-label">Deine E-Mail</div>
+    <h2>Damit wir dich erreichen können</h2>
+    <input type="email" id="host-email" placeholder="deine@email.com" />
+    <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
+    <p class="input-hint">Wir schreiben dir bei jeder neuen Buchung — so siehst du in Echtzeit, wie voll der Abend wird.</p>
+  </div>
+
+  <button class="generate-btn" id="generate-btn" onclick="generate()">Einladungslink erstellen</button>
 
   <!-- RESULT -->
   <div id="result">
-    <p class="result-eyebrow">Dein Link ist fertig 🎉</p>
+    <p class="result-eyebrow" id="result-eyebrow"></p>
     <p class="result-title" id="result-title"></p>
     <div class="link-box">
       <span class="link-url" id="result-url"></span>
       <button class="copy-btn" id="copy-btn" onclick="copyLink()">Kopieren</button>
     </div>
-    <a href="#" id="preview-link" target="_blank" class="preview-link">👀 Vorschau →</a>
+    <a href="#" id="preview-link" target="_blank" class="preview-link">Vorschau ansehen</a>
+
+    <!-- Shown only when Luitpoldblock selected — blocks sharing until confirmed -->
+    <div id="luitpold-gate" style="display:none;" class="luitpold-gate">
+      <p class="luitpold-gate-title">Noch nicht teilen — Raum nicht bestätigt</p>
+      <p class="luitpold-gate-text">Wir prüfen die Verfügbarkeit des Luitpoldblocks und melden uns per E-Mail — normalerweise innerhalb von 24h. Erst danach den Link teilen.</p>
+      <div class="luitpold-confirm">
+        <input type="checkbox" id="confirm-luitpold" onchange="onConfirmLuitpold(this)" />
+        <label for="confirm-luitpold">Ich habe die Bestätigung von Franziska erhalten — Link freischalten</label>
+      </div>
+    </div>
+
     <p class="result-note">
-      Schick diesen Link deinen Freund:innen — wer zuerst ein Ticket kauft, ist dabei.<br>
-      Du bekommst eine E-Mail wenn der Abend voll ist.<br>
+      Schick diesen Link deinen Freund:innen — wer ein Ticket kauft, ist dabei.<br>
+      Der Abend findet statt ab <strong style="color:rgba(255,255,255,0.75);">min. 12 Tickets</strong> · max. 20 Personen · 78€/Person inkl. Catering.<br>
+      Du siehst jede neue Buchung in Echtzeit per E-Mail.<br>
       Fragen? <a href="mailto:franziska.wittleder@gmail.com">franziska.wittleder@gmail.com</a>
     </p>
   </div>
@@ -213,6 +259,21 @@
 <script>
   var selectedDate = '';
   var selectedDateLabel = '';
+  var venueType = 'own'; // default: host provides location
+
+  function toggleLuitpoldblock(cb) {
+    venueType = cb.checked ? 'luitpoldblock' : 'own';
+    var btn = document.getElementById('generate-btn');
+    btn.textContent = cb.checked ? 'Abend vormerken' : 'Einladungslink erstellen';
+  }
+
+  function onConfirmLuitpold(cb) {
+    var copyBtn = document.getElementById('copy-btn');
+    copyBtn.disabled = !cb.checked;
+    if (cb.checked) {
+      document.getElementById('result-eyebrow').textContent = '✅ Bestätigt — teile den Link jetzt!';
+    }
+  }
 
   var DATE_LABELS_LONG = {
     '19mai': 'Dienstag, 19. Mai 2026',
@@ -221,18 +282,14 @@
   };
 
   // Message template — [DATUM] and [NAME] are replaced dynamically
-  var TPL = 'Hey! Ich hoste am [DATUM] ein kleines Dinner zum Thema AI & Zukunft. ' +
-    'Meine Freundin Franziska (Expertin & Gründerin — linkedin.com/in/franziska-wittleder) ' +
-    'moderiert den Abend und gibt uns exklusive Insights, was gerade wirklich hinter den Kulissen passiert. 🚀\n\n' +
-    'Jeder muss seinen Laptop mitbringen — wir bauen erst unseren eigenen KI-Agenten und nutzen ihn dann, ' +
-    'um gemeinsam etwas für Europa zu bauen.\n\n' +
-    'Hättest du Lust auf guten Wein und Deep Talk? Wir sind ein kleiner Kreis. ' +
-    'Sag fix zu, indem du ein Ticket kaufst. Der Abend kommt erst zustande wenn wir min. 12 sind.\n\n' +
-    'Herzlich, [NAME]';
+  var TPL = 'Ich organisiere am [DATUM] ein exklusives KI-Dinner — kleiner Kreis, 12–20 Personen. Franziska Wittleder moderiert den Abend.\n\n' +
+    'Wir bauen an diesem Abend unseren eigenen KI-Assistenten und setzen ihn direkt ein. Kein Vortrag, kein Zuschauen — echtes Arbeiten, gutes Essen.\n\n' +
+    '78€ pro Person, Dinner & Drinks inklusive. Würde mich freuen, wenn du dabei bist.\n\n' +
+    '[NAME]';
 
   function syncMessage() {
     var name = document.getElementById('host-name').value.trim() || '[dein Name]';
-    var date = selectedDateLabel || '[Datum auswählen]';
+    var date = (selectedDate && DATE_LABELS_LONG[selectedDate]) || '[Datum auswählen]';
     document.getElementById('host-msg').value = TPL.replace('[DATUM]', date).replace('[NAME]', name);
   }
 
@@ -250,7 +307,7 @@
   function validate() {
     var ok = true;
 
-    // email (top)
+    // email
     var emailStep = document.getElementById('step-email');
     var email = document.getElementById('host-email').value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { emailStep.classList.add('has-error'); ok = false; }
@@ -275,31 +332,42 @@
   function generate() {
     if (!validate()) return;
 
-    var name    = document.getElementById('host-name').value.trim();
-    var email   = document.getElementById('host-email').value.trim();
-    var venue   = document.getElementById('venue-check').checked;
+    var name  = document.getElementById('host-name').value.trim();
+    var email = document.getElementById('host-email').value.trim();
+    var isLuitpoldblock = venueType === 'luitpoldblock';
 
-    // Short URL: only date code and host name — message generated on event.html from template
-    var base   = window.location.origin + '/event.html';
-    var params = new URLSearchParams({ d: selectedDate, h: name });
-    var url    = base + '?' + params.toString();
+    var base = window.location.origin + '/event.html';
+    var urlParams = { d: selectedDate, h: name };
+    if (isLuitpoldblock) urlParams.v = 'p';
+    var url = base + '?' + new URLSearchParams(urlParams).toString();
 
     var longLabel = DATE_LABELS_LONG[selectedDate];
-    document.getElementById('result-title').textContent = name + "'s KI Dinner · " + longLabel;
+    document.getElementById('result-title').textContent = name + '’s KI Dinner · ' + longLabel;
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
+
+    if (isLuitpoldblock) {
+      document.getElementById('result-eyebrow').textContent = '🕐 Abend vorgemerkt — warte auf Bestätigung';
+      document.getElementById('luitpold-gate').style.display = 'block';
+      document.getElementById('copy-btn').disabled = true;
+      document.getElementById('confirm-luitpold').checked = false;
+    } else {
+      document.getElementById('result-eyebrow').textContent = '✅ Dein Link ist fertig — teile ihn jetzt!';
+      document.getElementById('luitpold-gate').style.display = 'none';
+      document.getElementById('copy-btn').disabled = false;
+    }
 
     document.getElementById('result').style.display = 'block';
     document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    notifyFranziska(name, email, selectedDate, longLabel, url, venue);
+    notifyFranziska(name, email, selectedDate, longLabel, url, isLuitpoldblock);
   }
 
   function copyLink() {
     var url = document.getElementById('result-url').textContent;
     navigator.clipboard.writeText(url).then(function() {
       var btn = document.getElementById('copy-btn');
-      btn.textContent = '✓ Kopiert!';
+      btn.textContent = 'Kopiert';
       btn.classList.add('copied');
       setTimeout(function(){ btn.textContent = 'Kopieren'; btn.classList.remove('copied'); }, 2000);
     });

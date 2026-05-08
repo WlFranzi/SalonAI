@@ -7,20 +7,20 @@
   <meta id="og-title" property="og:title" content="KI Dinner — Salon AI" />
   <meta id="og-desc" property="og:description" content="Hands-on KI-Workshop im Abendformat. Essen & Drinks inklusive." />
   <meta property="og:image" content="https://www.salon-ai.eu/og-dinner.jpg" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --navy: #1B2E4A;
       --sky-deep: #7A9DB8;
       --sky-light: #E8F2FA;
-      --gold: #D4A84B;
+      --gold: #7EC8E0;
       --accent: #003399;
       --white-warm: #FAF9F7;
       --border: #C5D5E4;
       --muted: #5F7080;
     }
-    body { font-family: 'DM Sans', sans-serif; background: var(--white-warm); color: var(--navy); min-height: 100vh; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white-warm); background-image: radial-gradient(ellipse 700px 350px at 15% 5%, rgba(126,200,224,0.13) 0%, transparent 70%), radial-gradient(ellipse 500px 300px at 85% 85%, rgba(126,200,224,0.09) 0%, transparent 70%); color: var(--navy); min-height: 100vh; }
 
     /* NAV */
     nav { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
@@ -31,11 +31,11 @@
 
     /* HERO */
     .hero { background: var(--navy); padding: 48px 24px 40px; text-align: center; }
-    .host-badge { display: inline-flex; align-items: center; gap: 7px; background: rgba(212,168,75,0.15); border: 1px solid rgba(212,168,75,0.35); border-radius: 999px; padding: 5px 14px; font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 18px; letter-spacing: 0.3px; }
+    .host-badge { display: inline-flex; align-items: center; gap: 7px; background: rgba(126,200,224,0.15); border: 1px solid rgba(126,200,224,0.4); border-radius: 999px; padding: 5px 14px; font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 18px; letter-spacing: 0.3px; }
     .event-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 14px; }
     .event-title .host-name { color: var(--gold); }
 
-    .host-msg-block { font-family: 'Caveat', cursive; font-size: clamp(1.1rem, 3.5vw, 1.35rem); color: rgba(255,255,255,0.88); line-height: 1.6; max-width: 560px; margin: 0 auto 24px; background: rgba(255,255,255,0.06); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 0 10px 10px 0; text-align: left; }
+    .host-msg-block { font-family: 'Lora', Georgia, serif; font-size: clamp(0.95rem, 2.8vw, 1.05rem); font-weight: 400; color: rgba(255,255,255,0.92); line-height: 1.8; max-width: 560px; margin: 0 auto 24px; background: rgba(255,255,255,0.06); border-left: 3px solid var(--gold); padding: 18px 22px; border-radius: 0 14px 14px 0; text-align: left; white-space: pre-line; }
 
     .date-chips { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
     .date-chip { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.1); border-radius: 999px; padding: 6px 13px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.88); }
@@ -44,7 +44,7 @@
     main { max-width: 620px; margin: 0 auto; padding: 28px 20px 80px; }
 
     /* CARD */
-    .card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 26px 28px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .card { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 26px 28px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(126,200,224,0.1); }
     .card-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 6px; display: flex; align-items: center; gap: 7px; }
     .card-label::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
     .card h2 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 18px; }
@@ -54,8 +54,7 @@
     .include-chip { display: flex; align-items: center; gap: 8px; background: var(--sky-light); border-radius: 9px; padding: 10px 12px; font-size: 12.5px; font-weight: 600; color: var(--navy); }
 
     /* DETAIL ROWS */
-    .detail-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; }
-    .detail-icon { font-size: 1.1rem; flex-shrink: 0; width: 26px; text-align: center; margin-top: 1px; }
+    .detail-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; padding-left: 2px; border-left: 2px solid var(--border); padding-left: 12px; }
     .detail-text strong { display: block; font-weight: 700; font-size: 13.5px; color: var(--navy); }
     .detail-text span { font-size: 12px; color: var(--muted); }
 
@@ -81,13 +80,39 @@
     .franzi-info a { color: var(--accent); text-decoration: none; }
 
     /* SHARE */
-    .share-card { background: var(--navy); border-radius: 14px; padding: 22px 24px; text-align: center; margin-bottom: 16px; }
+    .share-card { background: var(--navy); border-radius: 20px; padding: 22px 24px; text-align: center; margin-bottom: 16px; }
     .share-card h2 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
     .share-card p { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
     .share-link-row { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border-radius: 9px; padding: 9px 12px; }
     .share-link-url { flex: 1; font-size: 11px; color: rgba(255,255,255,0.75); word-break: break-all; text-align: left; font-family: monospace; }
     .share-copy-btn { flex-shrink: 0; padding: 6px 12px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; }
     .share-copy-btn.copied { background: #2a9d5c; color: #fff; }
+
+    /* VENUE PENDING */
+    .venue-pending-banner { background: rgba(255,200,0,0.1); border: 1px solid rgba(200,150,0,0.3); border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; font-size: 13px; color: #6b4c00; line-height: 1.6; }
+    .venue-pending-banner strong { color: #4a3200; }
+    .ticket-btn-disabled { display: block; width: 100%; padding: 15px; background: #ccc; color: #888; border: none; border-radius: 40px; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; text-align: center; cursor: not-allowed; margin-bottom: 9px; letter-spacing: 0.2px; }
+
+    /* SURVEY */
+    .survey-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 26px 28px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .survey-intro { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .survey-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .survey-option { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; padding: 10px 12px; border-radius: 9px; border: 1.5px solid var(--border); transition: all 0.14s; background: var(--white-warm); }
+    .survey-option:hover { border-color: var(--sky-deep); background: var(--sky-light); }
+    .survey-option input[type=checkbox] { margin-top: 1px; flex-shrink: 0; accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+    .survey-option label { font-size: 13px; color: var(--navy); cursor: pointer; line-height: 1.4; }
+    .survey-other { width: 100%; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: 9px; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--navy); background: var(--white-warm); outline: none; margin-top: 4px; }
+    .survey-other:focus { border-color: var(--accent); }
+    .survey-name { width: 100%; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: 9px; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--navy); background: var(--white-warm); outline: none; margin-bottom: 10px; }
+    .survey-name:focus { border-color: var(--accent); }
+    .survey-text { width: 100%; padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 11px; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--navy); background: var(--white-warm); outline: none; margin-bottom: 12px; resize: vertical; min-height: 72px; line-height: 1.5; }
+    .survey-text:focus { border-color: var(--accent); }
+    .survey-text::placeholder { color: var(--muted); }
+    .survey-btn { width: 100%; padding: 12px; background: var(--navy); color: #fff; border: none; border-radius: 40px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 0.15s; letter-spacing: 0.1px; }
+    .survey-btn:hover { background: var(--accent); }
+    .survey-success { display: none; text-align: center; padding: 18px 0 4px; }
+    .survey-success .ss-icon { font-size: 2rem; margin-bottom: 8px; }
+    .survey-success p { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
     /* NOT FOUND */
     .not-found { display: none; text-align: center; padding: 60px 24px; }
@@ -113,13 +138,13 @@
 
 <!-- HERO -->
 <div class="hero" id="hero">
-  <div class="host-badge" id="host-badge">👩 <span id="badge-name">Host</span> organisiert diesen Abend</div>
+  <div class="host-badge" id="host-badge">Eingeladen von <span id="badge-name">Host</span></div>
   <h1 class="event-title"><span id="hero-host" class="host-name"></span>'s<br>KI Dinner · Salon AI</h1>
   <div class="host-msg-block" id="host-msg-display"></div>
   <div class="date-chips">
-    <div class="date-chip">📅 <span id="chip-date"></span></div>
-    <div class="date-chip">🕕 18:00 Einlass · 18:15 Start</div>
-    <div class="date-chip">📍 München</div>
+    <div class="date-chip"><span id="chip-date"></span></div>
+    <div class="date-chip">18:00 Einlass · 18:15 Start</div>
+    <div class="date-chip">München</div>
   </div>
 </div>
 
@@ -136,44 +161,58 @@
     <h2>Was dich erwartet</h2>
 
     <div class="include-grid">
-      <div class="include-chip">🍽️ Dinner inklusive</div>
-      <div class="include-chip">🥂 Drinks inklusive</div>
-      <div class="include-chip">👩‍💻 Hands-on Workshop</div>
-      <div class="include-chip">🤖 Eigener KI-Assistent</div>
+      <div class="include-chip">Dinner inklusive</div>
+      <div class="include-chip">Drinks inklusive</div>
+      <div class="include-chip">Hands-on Workshop</div>
+      <div class="include-chip">Eigener KI-Assistent</div>
     </div>
 
     <div class="detail-row">
-      <div class="detail-icon">📅</div>
       <div class="detail-text">
         <strong id="ticket-date"></strong>
         <span>18:00 Einlass · 18:15 Start · ca. 22:00 Ende</span>
       </div>
     </div>
     <div class="detail-row">
-      <div class="detail-icon">📍</div>
       <div class="detail-text">
-        <strong>Luitpoldblock, München</strong>
+        <strong id="venue-label">München</strong>
         <span>Genaue Adresse nach Ticketkauf</span>
       </div>
     </div>
     <div class="detail-row">
-      <div class="detail-icon">💶</div>
       <div class="detail-text">
         <strong>78€ pro Person</strong>
-        <span>Dinner &amp; Drinks inklusive · Kein Seminarraum</span>
+        <span>Dinner &amp; Drinks inklusive · Kleiner Kreis, kein Seminarraum</span>
       </div>
     </div>
 
     <div class="divider"></div>
 
-    <a href="#" id="ticket-btn" class="ticket-btn" target="_blank" rel="noopener">🎟️ Jetzt Ticket kaufen — 78€</a>
-    <p class="ticket-note">Bezahlung über Stripe (sicher) · Kleiner Kreis — schnell sein lohnt sich.</p>
+    <div id="venue-pending-banner" class="venue-pending-banner" style="display:none;">
+      <strong>Veranstaltungsort wird noch bestätigt.</strong><br>
+      Der Host klärt gerade die Raumverfügbarkeit. Tickets sind verfügbar, sobald alles gesichert ist.
+    </div>
+    <p class="ticket-note">Bezahlung über Stripe · Bewusst kleiner Kreis — maximal 20 Personen.</p>
   </div>
 
   <!-- REQUIREMENT -->
   <div class="req-box">
-    💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account erforderlich</strong> (ChatGPT, Claude, Gemini, Mistral — dein KI-Tool deiner Wahl, ca. 20€/Mo)<br>
-    <span style="opacity:0.85">Noch keinen Pro-Account? Kann auch vor Ort eingerichtet werden — Kreditkarte mitbringen.</span>
+    Laptop mitbringen. KI-Pro-Account empfohlen — ChatGPT Plus, Claude Pro oder ähnliches (ca. 20€/Mo). Kann auch direkt vor Ort eingerichtet werden.
+  </div>
+
+  <!-- SURVEY + TICKET -->
+  <div class="survey-card" id="survey-card">
+    <div class="card-label">Für Franziska</div>
+    <h2>Wie erhoffst du dir, dass KI dein Leben einfacher macht?</h2>
+    <p class="survey-intro">Eine Zeile reicht. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
+    <textarea class="survey-text" id="survey-text" rows="3" placeholder="Was würdest du gern in zwei Stunden gelöst sehen?"></textarea>
+    <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
+    <input class="survey-name" id="survey-diet" type="text" placeholder="Lebensmittelunverträglichkeiten oder Allergien (optional)" style="margin-bottom:10px;" />
+    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Antwort senden &amp; Ticket kaufen — 78€</button>
+    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Klick öffnet Stripe-Checkout. Antwort geht parallel an Franziska.</p>
+    <div class="survey-success" id="survey-success">
+      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — deine Antwort ist bei Franziska. Sobald der Veranstaltungsort bestätigt ist, kannst du dein Ticket sichern.</p>
+    </div>
   </div>
 
   <!-- ABOUT -->
@@ -183,10 +222,10 @@
     <p><strong>Teil 1 — KI für dich:</strong> Du baust deinen eigenen KI-Assistenten — Schritt für Schritt, ohne Vorkenntnisse, ohne Coding. Kein Zuschauen, du baust selbst.</p>
     <p><strong>Teil 2 — KI für Europa:</strong> Du nutzt deinen fertigen Agenten für eine konkrete EU-Aufgabe. Von MEP-Kontaktierung bis Förderanträgen — mit echtem Ergebnis zum Mitnehmen.</p>
     <div class="franzi-row">
-      <div class="franzi-avatar">✨</div>
+      <div class="franzi-avatar" style="background:var(--sky-light);font-size:0.9rem;font-weight:700;color:var(--navy);">FW</div>
       <div class="franzi-info">
         <strong>Franziska Wittleder</strong>
-        <span>Hält den Abend · <a href="https://www.linkedin.com/in/franziska-wittleder/?locale=en" target="_blank">LinkedIn</a> · <a href="mailto:franziska.wittleder@gmail.com">Fragen? Schreib uns.</a></span>
+        <span>KI-Expertin · Unternehmerin · <a href="https://linkedin.com/in/franziska-wittleder" target="_blank">LinkedIn</a> · <a href="mailto:franziska.wittleder@gmail.com">Kontakt</a></span>
       </div>
     </div>
   </div>
@@ -221,18 +260,15 @@
   };
 
   // Message template — same as host.html, generated from params
-  var TPL = 'Hey! Ich hoste am [DATUM] ein kleines Dinner zum Thema AI & Zukunft. ' +
-    'Meine Freundin Franziska (Expertin & Gründerin — linkedin.com/in/franziska-wittleder) ' +
-    'moderiert den Abend und gibt uns exklusive Insights, was gerade wirklich hinter den Kulissen passiert. 🚀\n\n' +
-    'Jeder muss seinen Laptop mitbringen — wir bauen erst unseren eigenen KI-Agenten und nutzen ihn dann, ' +
-    'um gemeinsam etwas für Europa zu bauen.\n\n' +
-    'Hättest du Lust auf guten Wein und Deep Talk? Wir sind ein kleiner Kreis. ' +
-    'Sag fix zu, indem du ein Ticket kaufst. Der Abend kommt erst zustande wenn wir min. 12 sind.\n\n' +
-    'Herzlich, [NAME]';
+  var TPL = 'Ich organisiere am [DATUM] ein exklusives KI-Dinner — kleiner Kreis, 12–20 Personen. Franziska Wittleder moderiert den Abend.\n\n' +
+    'Wir bauen an diesem Abend unseren eigenen KI-Assistenten und setzen ihn direkt ein. Kein Vortrag, kein Zuschauen — echtes Arbeiten, gutes Essen.\n\n' +
+    '78€ pro Person, Dinner & Drinks inklusive. Würde mich freuen, wenn du dabei bist.\n\n' +
+    '[NAME]';
 
   var params      = new URLSearchParams(window.location.search);
   var dateCode    = params.get('d') || '';
   var hostName    = params.get('h') || '';
+  var venuePending = params.get('v') === 'p';
   var dateLabel   = DATE_LABELS[dateCode] || '';
   var stripeLink  = STRIPE[dateCode] || '#';
 
@@ -253,10 +289,60 @@
 
     // Populate ticket card
     document.getElementById('ticket-date').textContent = dateLabel;
-    document.getElementById('ticket-btn').href         = stripeLink;
+
+    // Venue label
+    document.getElementById('venue-label').textContent = venuePending ? 'München — Location wird bestätigt' : 'Luitpoldblock, München';
+
+    // Venue pending: show banner; survey button changes copy & skips Stripe
+    if (venuePending) {
+      document.getElementById('venue-pending-banner').style.display = 'block';
+      document.getElementById('survey-btn').textContent = 'Antwort senden — Ticket folgt';
+      document.getElementById('survey-btn-note').textContent = 'Sobald der Raum bestätigt ist, bekommst du den Ticket-Link per E-Mail.';
+    }
 
     // Share URL
     document.getElementById('share-url').textContent = window.location.href;
+  }
+
+  function submitSurvey() {
+    var answer = document.getElementById('survey-text').value.trim();
+    var name   = document.getElementById('survey-name').value.trim();
+    var diet   = document.getElementById('survey-diet').value.trim();
+    var btn    = document.getElementById('survey-btn');
+
+    if (!answer) { alert('Bitte schreib eine kurze Antwort.'); return; }
+    if (!name)   { alert('Bitte trag deinen Namen ein.'); return; }
+
+    btn.textContent = 'Wird gesendet…';
+    btn.disabled = true;
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: 'DEIN_WEB3FORMS_KEY',
+        subject: 'Anmeldung: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
+        from_name: 'Salon AI Event Page',
+        to: 'franziska.wittleder@gmail.com',
+        message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
+          '\nGast: ' + name +
+          '\n\nWie KI das Leben einfacher machen soll:\n' + answer +
+          (diet ? '\n\nLebensmittelunverträglichkeiten: ' + diet : '') +
+          '\n\nVenue-Status: ' + (venuePending ? 'pending (Luitpoldblock-Anfrage)' : 'bestätigt')
+      })
+    }).then(function() {
+      if (venuePending) {
+        document.getElementById('survey-success').style.display = 'block';
+        btn.style.display = 'none';
+      } else {
+        // Redirect to Stripe checkout
+        window.location.assign(stripeLink);
+      }
+    }).catch(function() {
+      btn.textContent = venuePending ? 'Antwort senden — Ticket folgt' : 'Antwort senden & Ticket kaufen — 78€';
+      btn.disabled = false;
+      alert('Fehler beim Senden — bitte nochmal versuchen.');
+    });
   }
 
   function copyShareLink() {

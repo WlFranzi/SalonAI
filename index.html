@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salon AI</title>
+<title>Salon AI Dinner München — KI-Workshop im Abendformat</title>
+<meta name="description" content="Salon AI Dinner: Einen Abend lang deinen eigenen KI-Assistenten bauen — und ihn sofort für Europa einsetzen. 28. Mai 2026 · Luitpoldblock München · 78€ inkl. Dinner & Drinks.">
+<meta property="og:title" content="Salon AI Dinner München — KI-Workshop im Abendformat">
+<meta property="og:description" content="Build your own AI agent in one evening, then deploy it for Europe. Small group · Expert guidance · Dinner included.">
+<meta property="og:url" content="https://www.salon-ai.eu">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
 <script>
@@ -19,8 +25,8 @@
   --sky-light: #EDF4FA;
   --sky-deep: #6B90AD;
   --navy: #1B2E4A;
-  --gold: #C9983A;
-  --gold-light: #E8CC7A;
+  --gold: #7EC8E0;
+  --gold-light: #C0E8F8;
   --accent: #003399;
   --accent-light: #2255BB;
   --white-warm: #FFFFFF;
@@ -39,13 +45,13 @@
   --r-lg: 20px;
   --r-pill: 999px;
   /* Type scale */
-  --t-xs: 11px;
-  --t-sm: 13px;
-  --t-base: 15px;
-  --t-lg: 18px;
+  --t-xs: 12px;
+  --t-sm: 14px;
+  --t-base: 16px;
+  --t-lg: 20px;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); background: #ffffff; -webkit-font-smoothing: antialiased; line-height: 1; }
+body { font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); background: var(--sky-light); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; line-height: 1.6; }
 h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
 a { text-decoration: none; color: inherit; }
 
@@ -87,9 +93,11 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.12; font-weight: 700; color: #fff; margin-bottom: var(--s2); }
 .hero h1 em { color: var(--gold); font-style: italic; }
 .hero-subtitle { font-size: var(--t-sm); color: rgba(255,255,255,0.6); font-weight: 400; line-height: 1.65; max-width: 460px; margin: 0 auto var(--s3); }
+.hero-cta { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.95); color: var(--navy); font-weight: 700; font-size: var(--t-base); padding: 15px 36px; border-radius: var(--r-pill); text-decoration: none; transition: all 0.2s; font-family: 'DM Sans', sans-serif; margin-top: var(--s3); letter-spacing: 0.1px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
+.hero-cta:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.28); }
 
 /* ── Was ist das ── */
-.what-is-this { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: var(--s5) var(--s3); }
+.what-is-this { background: transparent; padding: var(--s5) var(--s3); }
 .what-inner { max-width: 780px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--s5); align-items: start; }
 @media(max-width:720px) { .what-inner { grid-template-columns: 1fr; gap: var(--s4); } }
 .what-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
@@ -102,7 +110,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .what-bullet p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.65; margin: 0; }
 
 /* ── Event requirement note ── */
-.event-requirement { font-size: 11.5px; color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 8px 14px; margin: 6px 0 16px; line-height: 1.6; }
+.event-requirement { font-size: var(--t-sm); color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 10px 16px; margin: 8px 0 16px; line-height: 1.6; }
 
 /* ── Host your own ── */
 .host-own { margin-top: var(--s3); background: var(--navy); border-radius: var(--r-lg); padding: var(--s4) var(--s3); }
@@ -116,7 +124,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .host-own-fine { font-size: var(--t-xs); color: rgba(255,255,255,0.35); margin-top: var(--s1); }
 
 /* ── FAQ ── */
-.faq-section { padding: var(--s6) var(--s3); background: #fff; border-top: 1px solid var(--border); }
+.faq-section { padding: var(--s6) var(--s3); background: transparent; }
 .faq-inner { max-width: 660px; margin: 0 auto; }
 .faq-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
 .faq-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s4); line-height: 1.2; }
@@ -160,15 +168,15 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 .status-dot.upcoming { background: #4ade80; }
 .status-dot.past { background: var(--border); }
-.event-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-radius: 12px; transition: background 0.15s; }
+.event-row { display: flex; align-items: flex-start; justify-content: space-between; padding: 14px 12px; border-radius: 12px; transition: background 0.15s; gap: 12px; }
 .event-row:hover { background: var(--sky-light); }
 .event-date-col { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
-.event-date-col .month { font-size: 8px; text-transform: uppercase; letter-spacing: 1px; color: var(--sky-deep); font-weight: 700; }
+.event-date-col .month { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--sky-deep); font-weight: 700; }
 .event-date-col .day { font-size: 15px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--navy); line-height: 1.2; }
 .event-info { flex: 1; padding: 0 12px; }
 .event-info .name { font-size: var(--t-base); font-weight: 600; color: var(--navy); }
 .event-info .sub { font-size: var(--t-xs); color: var(--muted-blue); margin-top: 2px; line-height: 1.4; }
-.rsvp-btn { font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; }
+.rsvp-btn { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; }
 .rsvp-btn:hover { background: var(--sky-deep); }
 .rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
 .rsvp-btn.postponed { background: transparent; color: #c2410c; border: 1px solid #c2410c; cursor: default; font-size: 9px; letter-spacing: 0.5px; }
@@ -179,14 +187,14 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .past-row .city { font-size: 12px; color: var(--navy); opacity: 0.7; flex: 1; }
 .past-event-card { background: rgba(0,51,153,0.03); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px 12px; margin-top: 6px; }
 .past-event-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-.past-event-meta .date { font-size: 10px; color: var(--muted-blue); }
-.past-event-meta .city { font-size: 10px; color: var(--muted-blue); }
+.past-event-meta .date { font-size: 12px; color: var(--muted-blue); }
+.past-event-meta .city { font-size: 12px; color: var(--muted-blue); }
 .past-event-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 5px; line-height: 1.2; }
 .past-event-desc { font-size: 11.5px; color: var(--muted-blue); line-height: 1.6; margin-bottom: 9px; max-width: 360px; }
 .past-event-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; }
-.past-event-chip { font-size: 9px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(0,51,153,0.07); color: var(--sky-deep); border: 1px solid rgba(0,51,153,0.13); white-space: nowrap; }
+.past-event-chip { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: rgba(0,51,153,0.07); color: var(--sky-deep); border: 1px solid rgba(0,51,153,0.13); white-space: nowrap; }
 .past-event-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.past-event-action-link { font-size: 10px; font-weight: 600; padding: 3px 11px; border-radius: 999px; background: rgba(0,51,153,0.1); color: var(--sky-deep); white-space: nowrap; text-decoration: none; transition: background 0.15s; }
+.past-event-action-link { font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: rgba(0,51,153,0.1); color: var(--sky-deep); white-space: nowrap; text-decoration: none; transition: background 0.15s; }
 .past-event-action-link:hover { background: rgba(0,51,153,0.18); }
 
 /* EU info box */
@@ -203,7 +211,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .register-interest:hover { color: var(--navy); }
 
 /* Social proof strip */
-.social-proof { background: rgba(255,255,255,0.6); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 24px; }
+.social-proof { background: transparent; padding: 28px 24px; }
 .social-proof-inner { max-width: 1080px; margin: 0 auto; }
 .proof-attendees { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; font-size: 11px; color: var(--muted-blue); }
 .proof-attendees strong { color: var(--navy); font-weight: 600; }
@@ -235,7 +243,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
   border-radius: 999px;
   background: rgba(0,0,0,0.04);
   border: 1px solid rgba(0,0,0,0.1);
-  color: var(--muted);
+  color: var(--muted-blue);
   cursor: pointer;
   user-select: none;
   transition: background 0.15s;
@@ -297,7 +305,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* Bring 15 banner */
 .bring15 { margin-top: 16px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: 5px; } /* gold intentionally kept */
+.bring15 .b-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 5px; }
 .bring15 h4 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
 .bring15 p { font-size: 12px; color: var(--muted-blue); line-height: 1.5; }
 .b-btn { background: var(--navy); color: var(--white-warm); border-radius: 999px; padding: 10px 20px; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; white-space: nowrap; transition: background 0.2s; border: none; cursor: pointer; }
@@ -321,8 +329,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* Footer */
 footer { background: var(--navy); color: var(--white-warm); padding: 52px 24px 44px; text-align: center; }
-.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
-.footer-logo span { color: var(--accent); }
+.footer-logo { font-family: 'DM Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.footer-logo span { color: var(--gold); }
 .footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 auto 24px; line-height: 1.65; }
 .footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(250,249,247,0.6); transition: all 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
 .footer-email:hover { border-color: rgba(255,255,255,0.38); color: var(--white-warm); }
@@ -347,7 +355,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   right: -12px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(6rem, 12vw, 10rem);
   font-weight: 700;
   color: rgba(255,255,255,0.07);
@@ -375,7 +383,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   margin-bottom: 10px;
 }
 .europa-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: #fff;
@@ -423,7 +431,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   .europa-feature-inner { padding: 32px 20px 36px; }
   .europa-feature::before { display: none; }
 }
-.skills-section { padding: var(--s6) var(--s3) var(--s6); background: var(--sky-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.skills-section { padding: var(--s6) var(--s3) var(--s6); background: transparent; }
 .skills-inner { max-width: 900px; margin: 0 auto; }
 .skills-intro { margin-bottom: var(--s4); }
 .skills-eyebrow-row { display: flex; align-items: center; gap: var(--s1); margin-bottom: var(--s1); }
@@ -431,6 +439,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .skills-eyebrow-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; color: var(--sky-deep); }
 .skills-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s1); line-height: 1.2; }
 .skills-desc { font-size: var(--t-sm); color: var(--muted-blue); max-width: 560px; line-height: 1.65; }
+.skills-beispiele { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin: var(--s5) 0 var(--s3); }
 
 .skill-item { border: 1px solid var(--border); border-radius: 16px; background: #fff; overflow: hidden; transition: box-shadow 0.2s; margin-bottom: 8px; }
 .skill-item:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
@@ -565,9 +574,9 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
-    <a href="#" class="nav-logo">Salon <span style="color:var(--accent);">AI</span></a>
+    <a href="/" class="nav-logo">Salon <span style="color:var(--accent);">AI</span></a>
     <div class="nav-right">
-      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta">🎟️ 28. Mai — 78€</a>
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta">28. Mai · 78€</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -618,8 +627,9 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="eu-star star-clip"></div><div class="eu-star star-clip"></div><div class="eu-star star-clip"></div>
     </div>
     <p class="eyebrow" data-i18n="hero_eyebrow">Pro EU Event Series</p>
-    <p class="eyebrow-sub" data-i18n="hero_sub">Starting in Germany, expanding across the EU soon.</p>
-    <h1 data-i18n-html="hero_h1">A hands-on evening: build your own AI assistant, <em style="color:var(--sky-deep);font-style:italic;">then use it for Europe.</em></h1>
+    <p class="eyebrow-sub" data-i18n="hero_sub">München · Expanding to all 27 EU member states</p>
+    <h1 data-i18n-html="hero_h1">A hands-on evening: build your own AI assistant, <em>then use it for Europe.</em></h1>
+    <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="hero-cta" data-i18n="hero_cta">Platz sichern — 78€</a>
   </div>
 </section>
 
@@ -631,7 +641,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="stat-label" data-i18n="stat_1_lbl">From prompting to a running agent</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_2_num">1 own agent</div>
+      <div class="stat-number" data-i18n="stat_2_num">Your Agent</div>
       <div class="stat-label" data-i18n="stat_2_lbl">You leave with something that actually works</div>
     </div>
     <div class="stat-item">
@@ -639,8 +649,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="stat-label" data-i18n="stat_3_lbl">Hands-on help while building — no going it alone</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_4_num">All levels</div>
-      <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed</div>
+      <div class="stat-number" data-i18n="stat_4_num">All Levels</div>
+      <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed. Zero.</div>
     </div>
   </div>
 </div>
@@ -666,7 +676,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <span class="what-num">02</span>
         <div>
           <strong>KI für Europa</strong>
-          <p>Du nutzt deinen Agenten für eine echte EU-Aufgabe. MEPs anschreiben, Konsultationen einreichen, Bürgerrechte nutzen — konkret, heute, ohne Mandat.</p>
+          <p>Du nutzt deinen Agenten für eine echte EU-Aufgabe: relevante MEPs identifizieren, Konsultationseingaben verfassen, Regulierungsvorschläge kommentieren — konkret, heute, mit sofortiger Wirkung.</p>
         </div>
       </div>
       <div class="what-bullet">
@@ -688,11 +698,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <div class="card-surface tile">
       <div class="tile-label"><span class="dot"></span>Salon AI Dinners</div>
       <h2 data-i18n="events_h2">Events</h2>
-      <div class="eu-info-box">
-        <span class="eu-info-icon">🇪🇺</span>
-        <p data-i18n-html="pro_eu_html"><span style="color:var(--accent);font-weight:700;">Pro-EU event series:</span> Build your own agent and deploy it to create your personal pro-EU action plan <span style="color:var(--muted-blue);font-weight:400;">(examples below)</span>.</p>
-      </div>
-
       <!-- Upcoming -->
       <div class="events-section">
         <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span></h3>
@@ -701,18 +706,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
           <div class="event-date-col"><span class="month">Mai</span><span class="day">28</span></div>
           <div class="event-info">
             <div class="name">Salon AI Dinner — München</div>
-            <div class="sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · 78€</div>
+            <div class="sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
+            <div class="sub" style="margin-top:3px;font-size:12px;">💻 Laptop Pflicht · Pro-Account (ChatGPT/Claude/Gemini, ~20€/Mo) · vor Ort einrichtbar</div>
           </div>
-          <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn">🎟️ Ticket kaufen →</a>
-        </div>
-        <div class="event-details">
-          <span class="event-detail-chip">🍽️ Modern Middle Eastern Cuisine</span>
-          <span class="event-detail-chip">🥂 Drinks inklusive</span>
-          <span class="event-detail-chip">👥 kleiner Kreis</span>
-          <span class="event-detail-chip">💶 78€</span>
-        </div>
-        <div class="event-requirement">
-          💻 <strong>Laptop Pflicht</strong> &nbsp;·&nbsp; 🔑 <strong>Pro-Account erforderlich</strong> (ChatGPT, Claude, Gemini, Mistral — dein KI-Tool deiner Wahl, ~20€/Mo) — <em>vor Ort einrichtbar</em>
+          <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn">Ticket kaufen →</a>
         </div>
       </div>
 
@@ -751,17 +748,17 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <!-- Host your own -->
       <div class="host-own">
         <div class="host-own-label">🎉 Dein eigenes Dinner</div>
-        <h3 class="host-own-h3">Du willst das mit deinen Leuten erleben?</h3>
-        <p class="host-own-desc">Ab 12 bis 20 Personen kommen wir zu euch — mit demselben Format, denselben Expert:innen, eurem eigenen EU-Projekt als Gruppenthema. Ob Freundeskreis, Team, Organisation oder Hochschulgruppe.</p>
+        <h3 class="host-own-h3">Das Dinner. Mit deinem Netzwerk.</h3>
+        <p class="host-own-desc">Ab 12 bis 20 Personen bringen wir das Format zu euch — gleicher Workshop, gleiche Expert:innen, euer EU-Thema als Gruppenaufgabe. Für Freundeskreise, Unternehmen, NGOs und Politiker:innen.</p>
+        <p class="host-own-desc" style="margin-top:0;font-size:var(--t-xs);color:rgba(255,255,255,0.4);">Momentan nur in München. Interesse an Stockholm, Mailand, Berlin, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" style="color:rgba(255,255,255,0.55);text-decoration:underline;">Schreib uns.</a></p>
         <div class="host-own-examples">
-          <span class="host-chip">👫 Freundeskreis</span>
+          <span class="host-chip">👥 Freundeskreis</span>
           <span class="host-chip">🏢 Unternehmen</span>
-          <span class="host-chip">🎓 Uni-Gruppe</span>
-          <span class="host-chip">🏛️ Organisation</span>
-          <span class="host-chip">🗳️ Politische Gruppe</span>
+          <span class="host-chip">🏛️ NGO</span>
+          <span class="host-chip">🗳️ Politiker:innen</span>
         </div>
-        <a href="/host.html" class="host-own-btn">✨ Meinen Abend erstellen →</a>
-        <p class="host-own-fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link</p>
+        <a href="/host.html" class="host-own-btn">Meinen Abend erstellen →</a>
+        <p class="host-own-fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
       </div>
     </div>
 
@@ -815,6 +812,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <h2 class="skills-h2" data-i18n-html="skills_h2">What you'll take home <em style="color:var(--sky-deep);font-style:italic;">from the evening</em></h2>
       <p class="skills-desc" data-i18n="skills_desc">In the first part of the evening you set up your personal AI agent for your own everyday challenges — gaining real hands-on experience. In the second part you use your agent to build a concrete plan: what you can already do today, without being in politics, to strengthen the EU.</p>
     </div>
+    <div class="skills-beispiele">Beispiele:</div>
     <div id="skills-list"></div>
   </div>
 </section>
@@ -834,7 +832,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
       <details class="faq-item">
         <summary>Wie unterscheidet sich das von anderen KI-Workshops in München?</summary>
-        <p><strong>1. Hands-on statt Zuschauen</strong> — jede Person baut ihren eigenen KI-Assistenten, niemand schaut einer Demo zu. <strong>2. Dinner-Format</strong> — kleiner Kreis, echtes Essen &amp; Drinks inklusive, kein Seminarraum-Gefühl. <strong>3. EU-Anwendungsfall</strong> — als einziges KI-Event in Deutschland verbindet das Salon AI Dinner persönliche KI-Nutzung mit konkreten EU-Bürger:innen-Aufgaben.</p>
+        <p><strong>1. Hands-on statt Zuschauen</strong> — jede Person baut ihren eigenen KI-Assistenten, niemand schaut einer Demo zu. <strong>2. Dinner-Format</strong> — kleiner Kreis, echtes Essen &amp; Drinks inklusive, kein Seminarraum-Gefühl. <strong>3. EU-Anwendungsfall</strong> — jede:r wendet den eigenen Agenten direkt auf eine EU-Aufgabe an: MEPs identifizieren, Konsultationen einreichen, Regulierungen kommentieren.</p>
       </details>
 
       <details class="faq-item">
@@ -869,7 +867,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
       <details class="faq-item">
         <summary>Was bei Absage?</summary>
-        <p>Bis 48 Stunden vor dem Event: volle Erstattung. Danach: Ticket auf eine andere Person übertragbar. Kontakt: franziska.wittleder@gmail.com</p>
+        <p>Wir behalten immer 50% des Ticketpreises als Aufwandspauschale. Das Ticket ist jederzeit auf eine andere Person übertragbar — einfach Name und Kontakt weitergeben. Fragen: franziska.wittleder@gmail.com</p>
       </details>
 
     </div>
@@ -968,28 +966,28 @@ const KI_SKILLS = [  {
     eu: { time: "~1–2 Stunden", steps: ["Dein Kind braucht einen Spezialisten. Wartezeit lokal: 6 Monate.","Als EU-Bürger hast du das Recht, dein Kind in jedem EU-Land behandeln zu lassen — und bekommst die Kosten von deiner Krankenkasse erstattet. Das nennt sich grenzüberschreitende Gesundheitsversorgung.","Dein Agent findet den nächsten Spezialisten (Österreich: 2 Wochen Wartezeit), übersetzt die Unterlagen und schreibt den Erstattungsantrag für deine Krankenkasse.","Dein Kind wird in 2 Wochen behandelt. Du teilst den Tipp in der Eltern-WhatsApp-Gruppe. 50 Familien wussten nicht, dass dieses Recht existiert.","Die Schule schickt den Einpager an alle internationalen Familien — automatisch in 12 Sprachen übersetzt."] }
   },
   {
-    cat: "Bürger:in", name: "Von überwältigt zu wirksam",
-    banner: "Du verfolgst die Nachrichten, bist besorgt über Europa — aber du weißt nicht, wo du anfangen sollst. Alles fühlt sich zu groß an.",
-    old: { time: "~ständig", steps: [
-      "Du liest Artikel, schaust Dokus, diskutierst mit Freunden — aber ohne klaren nächsten Schritt.",
-      "Petitionen unterschreiben: das Einzige, was sich machbar anfühlt. Aber du fragst dich, ob es etwas bewirkt.",
-      "Du willst dich engagieren, findest aber keine Zeit zwischen Job, Familie und Alltag.",
-      "Das Gefühl: die wichtigen Entscheidungen passieren woanders, von anderen Menschen.",
-      "Informationsüberflutung: jeden Tag neue Krisen, kein Überblick, was wirklich zählt."
+    cat: "Unternehmer:in", name: "EU-Regulierung aktiv mitgestalten",
+    banner: "Die EU reguliert gerade dein Kerngeschäft. Du weißt, dass etwas passiert — aber nicht, wen du ansprechen musst und wie du Einfluss nimmst.",
+    old: { time: "~ständig ignoriert", steps: [
+      "EU-Gesetzgebung kommt als LinkedIn-Post von Verbänden — drei Wochen zu spät, wenn der Abstimmungstermin schon feststeht.",
+      "Du weißt nicht, welche MEPs im zuständigen Ausschuss sitzen oder wie sie in der Vergangenheit abgestimmt haben.",
+      "Konsultationen hast du nie eingereicht — der Aufwand schien größer als der Nutzen.",
+      "Dein Lobbyist schickt monatliche Updates. Weder konkret noch umsetzbar.",
+      "Regulierung passiert ohne deine Stimme. Du sitzt am Tisch — aber nicht da, wo Entscheidungen fallen."
     ]},
-    now: { time: "~30 Min/Woche", steps: [
-      "Du fragst deinen Agenten: 'Was passiert gerade in der EU, das mich als Bürger direkt betrifft?' — eine klare, verständliche Zusammenfassung.",
-      "Der Agent zeigt dir 3 konkrete Dinge, die du diese Woche tun kannst — basierend auf dem, was dir wichtig ist.",
-      "Du schreibst in 10 Minuten eine persönliche Nachricht an deinen lokalen Abgeordneten — der Agent hilft dir, sie überzeugend zu formulieren.",
-      "Du teilst einen gut recherchierten Fakten-Thread mit deinem Netzwerk — automatisch auf deine Sprache und Zielgruppe zugeschnitten.",
-      "Du wirst zum gut informierten Ansprechpartner in deinem Freundeskreis — mit Fakten statt Meinungen."
+    now: { time: "~2 Stunden", steps: [
+      "Du fragst den Agenten: 'Welche EU-Gesetzgebung betrifft mein Geschäft in den nächsten 6 Monaten?' — strukturierte Übersicht mit Abstimmungsterminen und aktuellem Stand.",
+      "3 MEPs im zuständigen Ausschuss identifiziert: Abstimmungshistorie, politische Positionen, persönliche Schwerpunkte, Kontaktdaten.",
+      "Briefing für das Gespräch vorbereitet — Argumente zugeschnitten auf Hintergrund, Partei, Wahlkreis. Kein generisches Lobbying-Template.",
+      "Konsultationseingabe verfasst: 30 Minuten statt zwei Tage. Im richtigen Format, mit Belegen, in der passenden Sprache.",
+      "Du gehst als informierter Gesprächspartner ins Meeting — nicht als Bittsteller."
     ]},
-    eu: { time: "~1–3 Tage", steps: [
-      "Die EU-Kommission eröffnet eine öffentliche Konsultation zu einem Thema, das dich betrifft — z.B. KI-Regulierung oder Mindestlohn.",
-      "Dein Agent erklärt die Fragen in verständlichem Deutsch, fasst die wichtigsten Argumente zusammen und hilft dir, eine fundierte Eingabe zu verfassen.",
-      "Du reichst deine Eingabe ein. Das dauert 20 Minuten statt zwei Tage.",
-      "Du postest das Ergebnis in deiner Community. Zehn weitere Menschen reichen eigene Eingaben ein.",
-      "Bürgerbasierte Eingaben aus Deutschland übertreffen erstmals die aus Lobbygruppen — in deiner Konsultationsrunde."
+    eu: { time: "~1–2 Tage", steps: [
+      "15 Unternehmen aus deiner Branche mobilisiert, je eine individuelle, datengestützte Konsultationseingabe einzureichen.",
+      "Der Ausschuss erhält substanzielles, praxisnahes Feedback — statt Boilerplate-Texte von Verbänden.",
+      "Du wirst als anerkannte Stimme für EU-Politik in deiner Branche wahrgenommen.",
+      "Einladung zum nächsten parlamentarischen Workshop — weil deine Eingaben zitierfähig waren.",
+      "Die Branche hat eine Stimme in Brüssel — koordiniert, evidenzbasiert, wirksam."
     ]}
   }
 ];
@@ -1118,7 +1116,7 @@ window.SKILLS_META = {
     { cat: 'Sales',      name: 'Verluste analysieren & gegensteuern',    banner: 'Ihr verliert Deals – und niemand kann sich einigen, warum.' },
     { cat: 'Consulting', name: 'Empfehlungen verteidigen',               banner: 'Dein Kunde hat dich gebeten, deine Empfehlung mit Daten zu belegen, die du noch nicht hast.' },
     { cat: 'Eltern', name: 'Familienorganisation entlasten', banner: 'Zwei Elternteile, ein Vollzeitjob, drei Kindstermine diese Woche — und niemand weiß mehr, wer was übernommen hat.' },
-    { cat: 'Bürger:in', name: 'Von überwältigt zu wirksam', banner: 'Du verfolgst die Nachrichten, bist besorgt um Europa — aber weißt nicht, wo du anfangen sollst.' }
+    { cat: 'Unternehmer:in', name: 'EU-Regulierung aktiv mitgestalten', banner: 'Die EU reguliert gerade dein Kerngeschäft. Du weißt, dass etwas passiert — aber nicht, wen du ansprechen musst.' }
     ],
   en: [
     { cat: 'PR & Comms', name: 'Centralizing VIP Knowledge',             banner: 'Your team manages an extensive database of VIPs, journalists, and stakeholders for a major event.' },
@@ -1129,7 +1127,7 @@ window.SKILLS_META = {
     { cat: 'Sales',      name: 'Analyzing Losses & Course-Correcting',   banner: 'You\'re losing deals — and nobody can agree on why.' },
     { cat: 'Consulting', name: 'Defending Recommendations',              banner: 'Your client has asked you to back your recommendation with data you don\'t have yet.' },
     { cat: 'Parents', name: 'Reducing Family Admin Overload', banner: 'Two parents, one full-time job, three kids\' appointments this week — and nobody knows who\'s handling what.' },
-    { cat: 'Citizen', name: 'From Overwhelmed to Effective', banner: 'You care about Europe but don\'t know where to start. The news is overwhelming.' }
+    { cat: 'Entrepreneur', name: 'Shaping EU Regulation', banner: 'The EU is regulating your core business. You know something is happening — but not who to approach or how to have an impact.' }
     ],
   fr: [
     { cat: 'PR & Comms', name: 'Centraliser les connaissances VIP',              banner: 'Votre équipe gère une base de données étendue de VIPs, journalistes et parties prenantes.' },
