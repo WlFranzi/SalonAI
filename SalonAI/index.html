@@ -94,6 +94,9 @@
     <script>
       // Language stored in localStorage — syncs with main Salon AI page
       function setLangKI(code) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'change_language', { 'language_code': code, 'section': 'resources' });
+        }
         document.getElementById('ki-lang-menu').classList.remove('open');
         try { localStorage.setItem('salonai_lang', code); } catch(e) {}
         window.location.reload();

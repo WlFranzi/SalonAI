@@ -321,16 +321,19 @@
   function shareLinkedIn(e) {
     if (e) e.preventDefault();
     if (!window._shareUrl) return;
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'LinkedIn' });
     window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window._shareUrl), '_blank', 'noopener');
   }
   function shareWhatsApp(e) {
     if (e) e.preventDefault();
     if (!window._shareUrl) return;
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'WhatsApp' });
     var msg = (window._shareTitle || 'Salon AI') + ' — ' + window._shareUrl;
     window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   }
   function shareNative() {
     if (!navigator.share || !window._shareUrl) return;
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Native' });
     navigator.share({ title: window._shareTitle || 'Salon AI', text: window._shareTitle || 'Salon AI', url: window._shareUrl }).catch(function(){});
   }
   if (navigator.share) {
@@ -399,6 +402,13 @@
     var email = document.getElementById('host-email').value.trim();
     var venueGated = venueType === 'luitpoldblock'; // only this option blocks sharing
 
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_invitation', {
+        'venue_type': venueType,
+        'date_code': selectedDate
+      });
+    }
+
     var base = window.location.origin + '/event.html';
     var urlParams = { d: selectedDate, h: name };
     if (venueGated) urlParams.v = 'p';
@@ -440,6 +450,7 @@
   function copyLink() {
     var url = document.getElementById('result-url').textContent;
     navigator.clipboard.writeText(url).then(function() {
+      if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Copy' });
       var btn = document.getElementById('copy-btn');
       btn.textContent = 'Kopiert';
       btn.classList.add('copied');

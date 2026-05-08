@@ -324,6 +324,14 @@
     btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
 
+    if (typeof gtag === 'function') {
+      gtag('event', 'submit_survey', {
+        'event_host': hostName,
+        'event_date': dateLabel,
+        'venue_status': venuePending ? 'pending' : 'confirmed'
+      });
+    }
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -343,6 +351,11 @@
         btn.style.display = 'none';
       } else {
         // Redirect to Stripe checkout
+        if (typeof gtag === 'function') {
+          gtag('event', 'begin_checkout', {
+            'items': [{ 'item_name': 'Salon AI Ticket: ' + hostName, 'price': 78.00, 'currency': 'EUR' }]
+          });
+        }
         window.location.assign(stripeLink);
       }
     }).catch(function() {
@@ -360,14 +373,17 @@
 
   function shareLinkedIn(e) {
     if (e) e.preventDefault();
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'LinkedIn' });
     window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(_shareUrl()), '_blank', 'noopener');
   }
   function shareWhatsApp(e) {
     if (e) e.preventDefault();
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'WhatsApp' });
     window.open('https://wa.me/?text=' + encodeURIComponent(_shareText() + ' — ' + _shareUrl()), '_blank', 'noopener');
   }
   function shareNative() {
     if (!navigator.share) return;
+    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Native' });
     navigator.share({ title: _shareText(), text: _shareText(), url: _shareUrl() }).catch(function(){});
   }
 
@@ -380,6 +396,7 @@
   function copyShareLink() {
     var url = _shareUrl();
     navigator.clipboard.writeText(url).then(function() {
+      if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Copy' });
       var btn = document.getElementById('share-copy-btn');
       var prev = btn.textContent;
       btn.textContent = '✓ Kopiert';

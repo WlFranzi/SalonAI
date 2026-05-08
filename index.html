@@ -723,8 +723,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
             <div class="event-actions-row">
-              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn">Ticket kaufen →</a>
-              <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar">In Kalender speichern</a>
+              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] });">Ticket kaufen →</a>
+              <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
               <button type="button" class="event-share-link" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
             </div>
           </div>
@@ -736,8 +736,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <div class="host-own-label" data-i18n="host_own_label">Eigener Abend</div>
         <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
         <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
-        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com">Schreib uns.</a></p>
-        <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn">Eigenen Abend ausrichten →</a>
+        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
+        <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
         <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
       </div>
     </div>
@@ -747,7 +747,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="tile-label"><span class="dot"></span>Resources</div>
       <h2 data-i18n="resources_h2">Resources</h2>
 
-      <a href="/resources/" class="resource-item" style="cursor:pointer;">
+      <a href="/resources/" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'KI Tool Guide' });">
         <span class="r-icon">🤖</span>
         <div class="r-info">
           <div class="r-name">KI Tool Guide</div>
@@ -756,7 +756,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <span class="r-badge badge-live">Live ↗</span>
       </a>
 
-      <a href="https://www.aipeanuts.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;">
+      <a href="https://www.aipeanuts.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'AI Peanuts' });">
         <span class="r-icon">📬</span>
         <div class="r-info">
           <div class="r-name">AI Peanuts</div>
@@ -765,7 +765,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <span class="r-badge badge-live">↗</span>
       </a>
 
-      <a href="https://scaling-europe.beehiiv.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;">
+      <a href="https://scaling-europe.beehiiv.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'Scaling Europe' });">
         <span class="r-icon">🎙️</span>
         <div class="r-info">
           <div class="r-name">Scaling Europe</div>
@@ -913,6 +913,9 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <script>
 // ── Language switcher — instant string replacement, no reload ────
 window.setLangAll = function(code) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'change_language', { 'language_code': code });
+  }
   var dd = document.getElementById('lang-menu-dd');
   if (dd) dd.classList.remove('open');
   if (window.applyLocale) window.applyLocale(code);
@@ -927,6 +930,9 @@ document.addEventListener('click', function() {
 // ── Event share — Web Share API on mobile, clipboard fallback on desktop
 window.shareEvent = function(ev, btn) {
   ev.preventDefault();
+  if (typeof gtag === 'function') {
+    gtag('event', 'share', { 'method': navigator.share ? 'WebShareAPI' : 'Clipboard' });
+  }
   var L = (window.LOCALES && window.LOCALES[document.documentElement.lang || 'de']) || (window.LOCALES && window.LOCALES['de']) || {};
   var data = {
     title: L.event_share_title || 'Salon AI Dinner — München',
@@ -1449,6 +1455,33 @@ function carouselNext(e) { carouselGo(carouselIdx + 1, e); }
 
   window.applyLocale(lang);
 })();
+
+// ── Visibility / Scroll Tracking (GA4) ───────────────────────────
+document.addEventListener("DOMContentLoaded", function() {
+  if (typeof gtag !== 'function') return;
+
+  var trackedSections = {};
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var sectionId = entry.target.id;
+        if (sectionId && !trackedSections[sectionId]) {
+          trackedSections[sectionId] = true;
+          gtag('event', 'view_section', {
+            'section_name': sectionId
+          });
+        }
+      }
+    });
+  }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
+
+  // IDs of the major sections to track
+  var sectionsToTrack = ['warum', 'events', 'past', 'skills', 'faq', 'contact'];
+  sectionsToTrack.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+});
 </script>
 </body>
 </html>
