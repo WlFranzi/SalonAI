@@ -144,11 +144,11 @@ describe("index.html — hero", () => {
     assert.ok(!/class="eyebrow-sub"/.test(hero[0]),
       "Hero must not contain eyebrow-sub line (declutter)");
   });
-  it("alumni line is woven into the manifesto coda (no free-floating caption)", () => {
-    const manifesto = html.match(/<section class="manifesto"[^>]*>[\s\S]*?<\/section>/);
-    assert.ok(manifesto, "manifesto section not found");
-    assert.ok(/Entscheider(?:ung)?:innen/.test(manifesto[0]),
-      "Alumni sentence should live as part of the manifesto-coda");
+  it("alumni line lives in past-events-intro (no free-floating caption)", () => {
+    const pastEvents = html.match(/<section class="past-events-section"[^>]*>[\s\S]*?<\/section>/);
+    assert.ok(pastEvents, "past-events section not found");
+    assert.ok(/class="past-events-intro"/.test(pastEvents[0]),
+      ".past-events-intro element should exist in past-events");
     assert.ok(!/class="alumni-caption"/.test(html),
       "Standalone .alumni-caption should be removed");
   });

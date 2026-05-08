@@ -172,6 +172,11 @@ window.LOCALES = {
     past_events_quote_author: "Gina, Manager",
     event_last_public: "For now, the last public Salon evening — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
+    event_share: "Share event",
+    event_share_title: "Salon AI Dinner — Munich",
+    event_share_text: "Salon AI Dinner — 28 May · Luitpoldblock Munich. Build AI hands-on, then apply it to Europe. €78 incl. dinner & drinks.",
+    event_share_copied: "Link copied!",
+    past_events_intro: "Salon AI happens offline — real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -333,6 +338,11 @@ window.LOCALES = {
     past_events_quote_author: "Gina, Manager",
     event_last_public: "Erstmal letzter öffentlicher Salon-Abend — danach nur noch auf private Einladung.",
     add_to_calendar: "In Kalender speichern",
+    event_share: "Event teilen",
+    event_share_title: "Salon AI Dinner — München",
+    event_share_text: "Salon AI Dinner — 28. Mai · Luitpoldblock München. KI hands-on bauen und auf Europa anwenden. 78€ inkl. Dinner & Drinks.",
+    event_share_copied: "Link kopiert!",
+    past_events_intro: "Salon AI passiert offline – mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Die Gespräche, die wirklich etwas verändern, entstehen meist dort, wo Menschen zusammenkommen und größer denken. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
   },
 
   /* ─────────────────────────────────────────────────────────────────

@@ -103,7 +103,6 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto ol li { counter-increment: manifesto-c; display: grid; grid-template-columns: 48px 1fr; gap: var(--s2); padding: var(--s2) 0; border-top: 1px solid var(--border); font-size: 15px; color: var(--navy); line-height: 1.55; align-items: baseline; }
 .manifesto ol li:last-child { border-bottom: 1px solid var(--border); }
 .manifesto ol li::before { content: counter(manifesto-c, decimal-leading-zero); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
-.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); padding-top: var(--s2); margin-top: var(--s2); line-height: 1.6; }
 @media (min-width: 768px) {
   .manifesto h2 { font-size: 1.9rem; margin-bottom: var(--s3); }
   .manifesto ol li { grid-template-columns: 64px 1fr; padding: var(--s3) 0; }
@@ -132,8 +131,10 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .past-events-section { padding: var(--s5) var(--s3) var(--s4); background: transparent; }
 .past-events-inner { max-width: 920px; margin: 0 auto; }
 .past-events-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s3); padding-bottom: var(--s2); border-bottom: 1px solid var(--border); }
-.past-events-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted-blue); letter-spacing: 0.3px; margin-bottom: var(--s4); }
+.past-events-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted-blue); letter-spacing: 0.3px; margin-bottom: var(--s3); }
 .past-events-meta .sep { color: var(--border); }
+.past-events-intro { font-size: 15px; color: var(--navy); line-height: 1.6; max-width: 720px; margin: 0 0 var(--s4); }
+.past-events-intro strong { font-weight: 600; }
 
 .past-events-feature { display: grid; grid-template-columns: 1fr; gap: var(--s4); align-items: start; }
 .past-events-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -219,6 +220,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px; }
 .add-to-cal-link { font-size: 12.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); padding-bottom: 1px; transition: opacity 0.15s; }
 .add-to-cal-link:hover { opacity: 0.65; }
+.event-share-link { font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 600; color: var(--navy); background: none; border: none; border-bottom: 1px solid var(--navy); padding: 0 0 1px; cursor: pointer; transition: opacity 0.15s; }
+.event-share-link:hover { opacity: 0.65; }
 .rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
 .rsvp-btn.postponed { background: transparent; color: #c2410c; border: 1px solid #c2410c; cursor: default; font-size: 9px; letter-spacing: 0.5px; }
 .event-row.postponed { opacity: 0.8; }
@@ -697,7 +700,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <li data-i18n="manifesto_item2">Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>
     </ol>
     <p data-i18n="manifesto_item3">Du gehst mit einem anderen Blick nach Hause: du kannst mit KI bauen, was du willst — oder verstehst zumindest genau, was deine Teams gerade tun. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.</p>
-    <p class="manifesto-coda" data-i18n-html="manifesto_coda">Das Ganze passiert offline – mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Die Gespräche, die wirklich etwas verändern, entstehen meist dort, wo Menschen zusammenkommen und größer denken. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong></p>
   </div>
 </section>
 
@@ -723,6 +725,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="event-actions-row">
               <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn">Ticket kaufen →</a>
               <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar">In Kalender speichern</a>
+              <button type="button" class="event-share-link" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
             </div>
           </div>
         </div>
@@ -786,6 +789,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <span class="sep">·</span>
       <span data-i18n="past_event_city">München</span>
     </div>
+
+    <p class="past-events-intro" data-i18n-html="past_events_intro">Salon AI passiert offline – mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Die Gespräche, die wirklich etwas verändern, entstehen meist dort, wo Menschen zusammenkommen und größer denken. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong></p>
 
     <div class="past-events-feature">
       <div class="past-events-photos">
@@ -918,6 +923,28 @@ document.addEventListener('click', function() {
   var dd = document.getElementById('lang-menu-dd');
   if (dd) dd.classList.remove('open');
 });
+
+// ── Event share — Web Share API on mobile, clipboard fallback on desktop
+window.shareEvent = function(ev, btn) {
+  ev.preventDefault();
+  var L = (window.LOCALES && window.LOCALES[document.documentElement.lang || 'de']) || (window.LOCALES && window.LOCALES['de']) || {};
+  var data = {
+    title: L.event_share_title || 'Salon AI Dinner — München',
+    text:  L.event_share_text  || 'Salon AI Dinner — 28. Mai · Luitpoldblock München. KI bauen + auf Europa anwenden. 78€ inkl. Dinner & Drinks.',
+    url:   'https://salon-ai.eu/'
+  };
+  var copied = L.event_share_copied || 'Link kopiert!';
+  var original = btn.textContent;
+  function showCopied() {
+    btn.textContent = copied;
+    setTimeout(function() { btn.textContent = original; }, 1800);
+  }
+  if (navigator.share) {
+    navigator.share(data).catch(function() {});
+  } else if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(data.url).then(showCopied, function() {});
+  }
+};
 </script>
 <script src="skills-steps.js"></script>
 <script>
