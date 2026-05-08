@@ -56,7 +56,8 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
 a { text-decoration: none; color: inherit; }
 
 .star-clip { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
-.card-surface { background: #fff; border-radius: var(--r-lg); border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(27,46,74,0.04), 0 4px 16px rgba(27,46,74,0.04); }
+/* Zeit-style: flat editorial, no card decoration */
+.card-surface { background: transparent; border-radius: 0; border: none; box-shadow: none; }
 
 /* Nav */
 nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border); }
@@ -65,6 +66,20 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .nav-right { display: flex; align-items: center; gap: var(--s2); }
 .nav-cta { background: var(--navy); color: #fff; border-radius: var(--r-pill); padding: 9px 22px; font-size: var(--t-sm); font-weight: 600; font-family: 'DM Sans', sans-serif; transition: background 0.18s; letter-spacing: 0.01em; }
 .nav-cta:hover { background: var(--accent); }
+
+/* ── Editorial primitives (Die-Zeit-inspired) ─────────────────────── */
+/* Masthead dateline — small caps, letterspaced, sits at the very top of hero */
+.masthead-dateline { font-size: 10px; font-weight: 600; letter-spacing: 2.6px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: var(--s3); padding-bottom: var(--s1); border-bottom: 1px solid rgba(255,255,255,0.10); display: inline-block; }
+/* Kicker — unified ressort-eyebrow used on every section */
+.kicker { display: block; font-size: 11px; font-weight: 700; letter-spacing: 2.4px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: var(--s2); }
+.kicker--center { text-align: center; }
+/* Section divider — three centered dots between cream sections */
+.section-divider { display: flex; align-items: center; justify-content: center; max-width: 480px; margin: var(--s5) auto; padding: 0 var(--s3); }
+.section-divider::before, .section-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.section-divider span { padding: 0 16px; color: var(--muted-blue); font-size: 13px; letter-spacing: 7px; opacity: 0.7; }
+/* Pull quote — large italic serif with thin rules above and below */
+.pullquote { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.35rem; line-height: 1.4; color: var(--navy); text-align: center; margin: var(--s4) auto; max-width: 600px; padding: var(--s3) 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+@media (min-width: 768px) { .pullquote { font-size: 1.55rem; } }
 
 /* Hero — mobile-first: tighter padding, expanded on desktop */
 .hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--navy); padding: 56px var(--s2) var(--s4); }
@@ -96,7 +111,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s2); }
 .manifesto p { font-size: var(--t-sm); color: var(--navy); line-height: 1.65; margin-bottom: var(--s1); }
-.manifesto p.manifesto-lede { font-size: var(--t-base); margin-bottom: var(--s2); max-width: 720px; }
+.manifesto p.manifesto-lede { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.18rem; line-height: 1.5; color: var(--navy); margin-bottom: var(--s2); max-width: 720px; }
+@media (min-width: 768px) { .manifesto p.manifesto-lede { font-size: 1.3rem; } }
 .manifesto p.manifesto-bridge { color: var(--muted-blue); font-weight: 600; margin-bottom: var(--s2); }
 .manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0; display: grid; grid-template-columns: 1fr; gap: var(--s2); }
 .manifesto ol li { counter-increment: manifesto-c; padding-left: 28px; position: relative; font-size: var(--t-sm); color: var(--navy); line-height: 1.6; }
@@ -118,18 +134,20 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .host-own-btn:hover { opacity: 0.88; }
 .host-own-fine { font-size: var(--t-xs); color: rgba(255,255,255,0.35); margin-top: var(--s1); }
 
-/* ── FAQ ── */
-.faq-section { padding: var(--s6) var(--s3); background: transparent; }
-.faq-inner { max-width: 660px; margin: 0 auto; }
-.faq-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
-.faq-h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s4); line-height: 1.2; }
-.faq-list { display: flex; flex-direction: column; }
+/* ── FAQ — Zeit-style Q&A list ── */
+.faq-section { padding: var(--s5) var(--s3); background: transparent; }
+@media (min-width: 768px) { .faq-section { padding: var(--s6) var(--s3); } }
+.faq-inner { max-width: 680px; margin: 0 auto; }
+.faq-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s2); }
+.faq-h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.85rem; font-weight: 700; color: var(--navy); margin-bottom: var(--s4); line-height: 1.18; letter-spacing: -0.008em; }
+@media (min-width: 768px) { .faq-h2 { font-size: 2.2rem; } }
+.faq-list { display: flex; flex-direction: column; border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border); }
-.faq-item summary { font-size: var(--t-base); font-weight: 600; color: var(--navy); padding: 18px 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--s2); line-height: 1.3; }
+.faq-item summary { font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); padding: var(--s3) 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: baseline; gap: var(--s2); line-height: 1.3; letter-spacing: -0.003em; }
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { content: '+'; font-size: 20px; color: var(--sky-deep); font-weight: 300; flex-shrink: 0; line-height: 1; }
-.faq-item[open] summary::after { content: '−'; }
-.faq-item p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.72; padding-bottom: 18px; margin: 0; }
+.faq-item summary::after { content: '↓'; font-size: 14px; color: var(--sky-deep); font-weight: 400; flex-shrink: 0; line-height: 1; transition: transform 0.2s; opacity: 0.6; }
+.faq-item[open] summary::after { transform: rotate(180deg); opacity: 1; }
+.faq-item p { font-size: 0.95rem; color: var(--navy); line-height: 1.7; padding: 0 0 var(--s3); margin: 0; max-width: 600px; }
 
 /* Stats bar — mobile-first: stacked, expand to 3-col at ≥768px */
 .stats-bar { background: var(--navy); padding: 0 var(--s2); }
@@ -151,11 +169,12 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 @media (min-width: 800px) { .two-col { grid-template-columns: 1fr 1fr; } }
 .single-col { display: block; max-width: 700px; margin: 0 auto; }
 
-/* Tile shared */
-.tile { padding: var(--s4); }
-.tile-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); display: flex; align-items: center; gap: var(--s1); }
-.tile-label span.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
-.tile h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: var(--s2); color: var(--navy); line-height: 1.2; }
+/* Tile shared — Zeit-style: drop dot bullets, use plain kicker */
+.tile { padding: var(--s4) 0; }
+.tile-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s2); display: block; }
+.tile-label span.dot { display: none; }
+.tile h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; font-weight: 700; margin-bottom: var(--s3); color: var(--navy); line-height: 1.18; letter-spacing: -0.005em; }
+@media (min-width: 768px) { .tile h2 { font-size: 1.95rem; } }
 
 /* Events */
 .events-section { margin-bottom: 20px; }
@@ -318,16 +337,23 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .launch-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px 20px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 700; font-size: 13px; font-family: 'DM Sans', sans-serif; border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; margin-top: 6px; }
 .launch-btn:hover { background: var(--accent-light); transform: translateY(-1px); }
 
-/* Footer */
-footer { background: var(--navy); color: var(--white-warm); padding: 52px 24px 44px; text-align: center; }
-.footer-logo { font-family: 'DM Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+/* Footer — Zeit-style impressum, mobile-first */
+footer { background: var(--navy); color: var(--white-warm); padding: var(--s5) var(--s3); }
+.footer-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: var(--s4); }
+@media (min-width: 720px) { .footer-inner { grid-template-columns: 1fr 1fr; gap: var(--s5); } }
+.footer-col-brand { text-align: left; }
+.footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.005em; }
 .footer-logo span { color: var(--gold); }
-.footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 auto 24px; line-height: 1.65; }
-.footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(250,249,247,0.6); transition: all 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
-.footer-email:hover { border-color: rgba(255,255,255,0.38); color: var(--white-warm); }
-.footer-meta { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(250,249,247,0.07); }
-.footer-credits { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 14px; }
-.footer-credit { font-size: 11px; color: rgba(250,249,247,0.25); line-height: 1.5; }
+.footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 0 16px; line-height: 1.65; }
+.footer-email { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(250,249,247,0.7); border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; transition: border-color 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
+.footer-email:hover { border-bottom-color: rgba(255,255,255,0.6); color: var(--white-warm); }
+.footer-col-meta { text-align: left; border-top: 1px solid rgba(250,249,247,0.10); padding-top: var(--s3); }
+@media (min-width: 720px) { .footer-col-meta { border-top: none; padding-top: 0; border-left: 1px solid rgba(250,249,247,0.10); padding-left: var(--s4); } }
+.footer-impressum-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: rgba(250,249,247,0.35); margin-bottom: var(--s2); display: block; }
+.footer-credits { display: flex; flex-direction: column; gap: var(--s2); margin-bottom: var(--s3); }
+.footer-credit { font-size: 12px; color: rgba(250,249,247,0.55); line-height: 1.55; }
+.footer-credit strong { color: rgba(250,249,247,0.85); font-weight: 600; }
+.copy { font-size: 10px; color: rgba(250,249,247,0.25); letter-spacing: 0.5px; padding-top: var(--s2); border-top: 1px solid rgba(250,249,247,0.08); }
 .footer-credit strong { color: rgba(250,249,247,0.48); font-weight: 500; }
 footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 1.5px; text-transform: uppercase; }
 @media (max-width: 540px) { .footer-credits { flex-direction: column; gap: 8px; align-items: center; } }
@@ -611,6 +637,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="cloud cloud-1"></div>
   <div class="cloud cloud-2"></div>
   <div class="hero-content">
+    <p class="masthead-dateline" data-i18n="masthead_dateline">Salon AI · Nr. 02 · Mai 2026</p>
     <p class="eyebrow" data-i18n="hero_eyebrow">Pro-EU Eventreihe</p>
     <p class="eyebrow-sub" data-i18n="hero_sub">München · bald in der ganzen EU</p>
     <h1 data-i18n-html="hero_h1">Bau deinen KI-Assistenten und setz ihn für Europa ein.</h1>
@@ -639,9 +666,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </div>
 
 
-<!-- ── MANIFEST ──────────────────────────────────────────────────── -->
+<!-- ── ZUR LAGE ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
+    <span class="kicker" data-i18n="manifesto_kicker">Zur Lage</span>
     <h2>Warum es Salon AI gibt</h2>
     <p class="manifesto-lede">Europa wirkt gerade nicht besonders mutig. <strong>Bei KI hängen wir hinterher</strong>, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
     <p class="manifesto-bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
@@ -650,9 +678,11 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <li><strong>Wir liefern den Kontext, der sonst fehlt</strong>: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man <strong>konkret tun kann</strong>, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>
       <li>Du gehst mit einem <strong>anderen Blick nach Hause</strong>: du kannst mit KI <strong>bauen, was du willst</strong> — oder verstehst zumindest genau, <strong>was deine Teams gerade tun</strong>. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.</li>
     </ol>
+    <blockquote class="pullquote" data-i18n="manifesto_pullquote">„Wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben."</blockquote>
     <p class="manifesto-coda">Wichtig ist auch: Das Ganze passiert <strong>offline</strong>. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber <strong>die Gespräche, die wirklich etwas verändern</strong>, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken.</p>
   </div>
 </section>
+<div class="section-divider" aria-hidden="true"><span>· · ·</span></div>
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
@@ -758,6 +788,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </main>
 
+<div class="section-divider" aria-hidden="true"><span>· · ·</span></div>
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
 <section class="skills-section" id="skills">
@@ -774,6 +805,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <div id="skills-list"></div>
   </div>
 </section>
+
+<div class="section-divider" aria-hidden="true"><span>· · ·</span></div>
 
 <!-- ── FAQ ───────────────────────────────────────────────────────── -->
 <section class="faq-section" id="faq">
@@ -839,18 +872,22 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </section>
 
-<!-- ── FOOTER ────────────────────────────────────────────────────── -->
+<!-- ── FOOTER (Impressum-style) ──────────────────────────────────── -->
 <footer id="contact">
-  <div class="footer-logo">Salon <span>AI</span></div>
-  <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
-  <a href="mailto:franziska.wittleder@gmail.com" class="footer-email">hello@salon-ai.eu</a>
-
-  <div class="footer-meta">
-    <div class="footer-credits">
-      <span class="footer-credit"><strong>Creative Direction</strong> · Tatjana Mallinckrodt, Head of PR &amp; Brand Strategy at Gestalten (teNeues)</span>
-      <span class="footer-credit"><strong>Host</strong> · Franziska Wittleder, Engineer &amp; Product Leader · Amazon, Writer, SoundCloud</span>
+  <div class="footer-inner">
+    <div class="footer-col-brand">
+      <div class="footer-logo">Salon <span>AI</span></div>
+      <p class="footer-tagline" data-i18n="footer_tagline">KI-Kompetenz für Europa — ein Salon nach dem anderen.</p>
+      <a href="mailto:franziska.wittleder@gmail.com" class="footer-email">hello@salon-ai.eu</a>
     </div>
-    <div class="copy" data-i18n="footer_copy">BUILT IN &amp; FOR EUROPE · © 2026 SALON AI</div>
+    <div class="footer-col-meta">
+      <span class="footer-impressum-label" data-i18n="footer_impressum_label">Impressum</span>
+      <div class="footer-credits">
+        <span class="footer-credit" data-i18n-html="footer_creative"><strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy bei Gestalten (teNeues)</span>
+        <span class="footer-credit" data-i18n-html="footer_host"><strong>Host</strong> Franziska Wittleder · 15+ Jahre KI bei Amazon, Writer, SoundCloud</span>
+      </div>
+      <div class="copy" data-i18n="footer_copy">Built in &amp; for Europe · © 2026 Salon AI</div>
+    </div>
   </div>
 </footer>
 
