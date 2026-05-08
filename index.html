@@ -141,18 +141,17 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .faq-item[open] summary::after { content: '−'; }
 .faq-item p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.72; padding-bottom: 18px; margin: 0; }
 
-/* Stats bar */
+/* Stats bar — three items, evenly weighted, generous breathing room */
 .stats-bar { background: var(--navy); padding: 0 var(--s3); }
-.stats-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
-.stat-item { padding: var(--s4) var(--s3); text-align: center; border-right: 1px solid rgba(255,255,255,0.07); }
-.stat-item:last-child { border-right: none; }
-.stat-number { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 6px; letter-spacing: -0.03em; }
-.stat-label { font-size: var(--t-xs); font-weight: 500; color: rgba(255,255,255,0.4); letter-spacing: 0.2px; line-height: 1.45; }
+.stats-inner { max-width: 880px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+.stat-item { padding: var(--s5) var(--s3); text-align: center; position: relative; }
+.stat-item + .stat-item::before { content: ""; position: absolute; left: 0; top: 22%; bottom: 22%; width: 1px; background: rgba(255,255,255,0.08); }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 8px; letter-spacing: -0.02em; }
+.stat-label { font-size: var(--t-xs); font-weight: 500; color: rgba(255,255,255,0.5); letter-spacing: 0.3px; line-height: 1.5; max-width: 220px; margin: 0 auto; }
 @media(max-width: 680px) {
-  .stats-inner { grid-template-columns: 1fr 1fr; }
-  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); padding: var(--s3) var(--s2); }
-  .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.07); }
-  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .stats-inner { grid-template-columns: 1fr; max-width: 320px; }
+  .stat-item { padding: var(--s3) var(--s2); }
+  .stat-item + .stat-item::before { left: 18%; right: 18%; top: 0; bottom: auto; height: 1px; width: auto; }
 }
 
 /* Main grid */
@@ -643,7 +642,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="stats-inner">
     <div class="stat-item">
       <div class="stat-number" data-i18n="stat_1_num">1 Evening</div>
-      <div class="stat-label" data-i18n="stat_1_lbl">From prompting to a running agent</div>
+      <div class="stat-label" data-i18n="stat_1_lbl">From zero to a working AI assistant — in one evening</div>
     </div>
     <div class="stat-item">
       <div class="stat-number" data-i18n="stat_3_num">Experts</div>
@@ -660,11 +659,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <p class="manifesto-eyebrow">Salon AI</p>
     <h2>Warum es Salon AI gibt</h2>
-    <p class="manifesto-lede">Uns hat genervt, dass Europa bei KI hinterherhinkt. Und dass so viele Europäer:innen gar nicht wissen, was sie eigentlich tun können, um zu einem starken Europa beizutragen. Vielen fehlt sogar das Gefühl, überhaupt europäisch zu sein.</p>
-    <p>Beides hängt zusammen. Und beides lässt sich an einem einzigen Abend angehen.</p>
-    <p><strong>Salon AI macht drei Dinge gleichzeitig:</strong></p>
+    <p class="manifesto-lede">Mal ehrlich: Wenn man gerade in der EU lebt, fühlt sich das nicht so super stark an. Bei KI hinken wir hinterher. Wenn man fragt, was man als einzelne Person für Europa tun kann — kommt meistens ein Schulterzucken. Viele fühlen sich nicht mal so richtig europäisch. Ist halt so gerade.</p>
+    <p>Uns hat das genervt. Deshalb gibt's jetzt Salon AI.</p>
+    <p><strong>An einem Abend passieren drei Sachen.</strong></p>
     <ol>
       <li>Wir lernen KI — und zwar mehr als „eine Frage bei ChatGPT". Auch Agenten. Auch das, was du dir bisher nicht zugetraut hast.</li>
       <li>Wir testen, ob du das, was du gerade gelernt hast, sofort für Europa anwenden kannst. Konkret. An deinem Thema.</li>
@@ -784,13 +782,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </main>
 
-
-<!-- ── WAS IST DAS (kurz) ────────────────────────────────────────── -->
-<div class="what-short">
-  <p class="ws-eyebrow">Was ist das?</p>
-  <h2>Ein Abend. Dein KI-Assistent. Dann Europa.</h2>
-  <p>Du baust deinen eigenen KI-Assistenten — und nutzt ihn noch im selben Abend für eine konkrete EU-Aufgabe. Kein Vortrag. Kein Zuschauen.</p>
-</div>
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->
 <section class="skills-section" id="skills">
