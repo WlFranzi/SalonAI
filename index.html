@@ -75,7 +75,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.4px; font-weight: 600; color: rgba(255,255,255,0.45); margin-bottom: var(--s1); }
 .eyebrow-sub { font-size: var(--t-sm); color: rgba(255,255,255,0.5); font-weight: 400; margin-bottom: var(--s3); letter-spacing: 0.2px; }
 .hero h1 { font-size: clamp(1.75rem, 4.5vw, 2.6rem); line-height: 1.18; font-weight: 700; color: #fff; margin-bottom: var(--s2); letter-spacing: -0.012em; max-width: 920px; text-wrap: balance; }
-.hero h1 em { color: rgba(255,255,255,0.78); font-style: italic; font-weight: 400; }
+.hero h1 em { color: #A9C5DC; font-style: italic; font-weight: 400; }
 .hero-subtitle { font-size: var(--t-sm); color: rgba(255,255,255,0.6); font-weight: 400; line-height: 1.65; max-width: 460px; margin: 0 auto var(--s3); }
 .hero-cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: #fff; color: var(--navy); font-weight: 600; font-size: var(--t-sm); padding: 12px 26px; min-height: 44px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s; font-family: 'DM Sans', sans-serif; margin-top: var(--s3); letter-spacing: 0.4px; box-shadow: none; }
 .hero-cta:hover { background: rgba(255,255,255,0.92); transform: translateY(-1px); }
@@ -128,6 +128,35 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .host-own-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--navy); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 13px 28px; min-height: 44px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s; letter-spacing: 0.3px; box-shadow: 0 4px 14px rgba(27,46,74,0.18); }
 .host-own-btn:hover { background: var(--accent); transform: translateY(-1px); }
 .host-own-fine { font-size: 0.85rem; color: var(--muted-blue); margin-top: var(--s2); line-height: 1.5; font-style: italic; }
+
+/* ── Past Events — photos + quote, hochwertig and quiet ── */
+.past-events-section { padding: var(--s5) var(--s3) var(--s4); background: transparent; }
+.past-events-inner { max-width: 880px; margin: 0 auto; }
+.past-events-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s3); padding-bottom: var(--s2); border-bottom: 1px solid var(--border); }
+.past-events-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted-blue); letter-spacing: 0.3px; margin-bottom: var(--s2); }
+.past-events-meta .sep { color: var(--border); }
+.past-events-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.012em; margin-bottom: var(--s4); }
+@media (min-width: 768px) { .past-events-title { font-size: 2rem; } }
+
+.past-events-feature { display: grid; grid-template-columns: 1fr; gap: var(--s4); align-items: center; margin-bottom: var(--s4); }
+.past-events-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.past-events-photos img { width: 100%; height: 140px; object-fit: cover; border-radius: var(--r-md); display: block; box-shadow: 0 2px 12px rgba(27,46,74,0.08); }
+.past-events-photos img:first-child { grid-column: 1 / -1; height: 220px; }
+.past-events-quote { padding: var(--s2) 0; border-left: 2px solid var(--accent); padding-left: var(--s3); }
+.past-events-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.4rem; color: var(--navy); line-height: 1.35; margin: 0 0 var(--s2); }
+.past-events-quote cite { font-style: normal; font-size: 0.78rem; color: var(--muted-blue); letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; }
+@media (min-width: 800px) {
+  .past-events-feature { grid-template-columns: 1.2fr 1fr; gap: var(--s5); }
+  .past-events-photos img { height: 130px; }
+  .past-events-photos img:first-child { height: 270px; }
+  .past-events-quote p { font-size: 1.55rem; }
+}
+
+.past-events-desc { font-size: 1rem; color: var(--navy); line-height: 1.65; margin-bottom: var(--s3); max-width: 540px; }
+.past-events-desc a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.past-events-actions { display: flex; flex-wrap: wrap; gap: var(--s3); align-items: center; }
+.past-events-actions a { font-size: 0.95rem; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--navy); padding: 0 0 2px; transition: opacity 0.15s; }
+.past-events-actions a:hover { opacity: 0.65; }
 
 /* ── FAQ ── */
 .faq-section { padding: var(--s6) var(--s3); background: transparent; }
@@ -182,8 +211,12 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .event-info { flex: 1; padding: 0 12px; }
 .event-info .name { font-size: var(--t-base); font-weight: 600; color: var(--navy); }
 .event-info .sub { font-size: var(--t-xs); color: var(--muted-blue); margin-top: 2px; line-height: 1.4; }
-.rsvp-btn { font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; }
+.rsvp-btn { font-size: 13px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; }
 .rsvp-btn:hover { background: var(--sky-deep); }
+.event-last-public { font-size: 12px; color: var(--accent); font-style: italic; margin: 4px 0 6px; line-height: 1.5; }
+.event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px; }
+.add-to-cal-link { font-size: 12.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); padding-bottom: 1px; transition: opacity 0.15s; }
+.add-to-cal-link:hover { opacity: 0.65; }
 .rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
 .rsvp-btn.postponed { background: transparent; color: #c2410c; border: 1px solid #c2410c; cursor: default; font-size: 9px; letter-spacing: 0.5px; }
 .event-row.postponed { opacity: 0.8; }
@@ -659,13 +692,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <li data-i18n="manifesto_item2">Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>
       <li data-i18n="manifesto_item3">Du gehst mit einem anderen Blick nach Hause: du kannst mit KI bauen, was du willst — oder verstehst zumindest genau, was deine Teams gerade tun. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.</li>
     </ol>
-    <p class="manifesto-coda" data-i18n="manifesto_coda">Wichtig ist auch: Das Ganze passiert offline. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber die Gespräche, die wirklich etwas verändern, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken.</p>
+    <p class="manifesto-coda" data-i18n-html="manifesto_coda">Wichtig ist auch: Das Ganze passiert offline. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber die Gespräche, die wirklich etwas verändern, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken. <strong><em>Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong></p>
   </div>
 </section>
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
-  <p class="alumni-caption" data-i18n="hero_alumni">Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</p>
   <div class="single-col" id="events">
 
     <!-- ── LEFT: Events ──────────────────────────────────────── -->
@@ -680,40 +712,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
           <div class="event-date-col"><span class="month" data-i18n="event_month">Mai</span><span class="day">28</span></div>
           <div class="event-info">
             <div class="name" data-i18n="event_name">Salon AI Dinner — München</div>
+            <div class="event-last-public" data-i18n="event_last_public">Letzter öffentlicher Salon-Abend, den Franziska selbst leitet — danach nur noch auf private Einladung.</div>
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
-          </div>
-          <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn">Ticket kaufen →</a>
-        </div>
-      </div>
-
-      <!-- Past -->
-      <div class="events-section">
-        <h3><span class="status-dot past"></span><span data-i18n="past_events">Past Events</span></h3>
-        <div class="past-event-card">
-          <div class="past-event-meta">
-            <span class="date" data-i18n="past_event_date">25. März 2026</span>
-            <span style="color:var(--border);font-size:9px;">·</span>
-            <span class="city" data-i18n="past_event_city">München</span>
-          </div>
-          <h4 class="past-event-title">Europa 2041</h4>
-          <p class="past-event-desc" data-i18n-html="feature_desc">The <a href="/march-event/" style="color:var(--sky-deep);text-decoration:underline;">website</a> presents a set of ideas collected from the March Dinner participants.</p>
-          <div class="past-event-actions">
-            <a href="/march-event/" class="past-event-action-link" data-i18n="what_we_built">Ergebnis aus dem März-Salon ansehen ↗</a>
-            <div class="photo-preview-btn" tabindex="0">
-              <span data-i18n="event_fotos">Eindrücke vom Abend</span>
-              <div class="photo-preview-popup" id="photo-carousel">
-                <img class="carousel-img" id="carousel-img" src="/resources/assets/IMG_3512.JPG" alt="Salon AI Dinner München" />
-                <div class="carousel-controls">
-                  <button onclick="carouselPrev(event)">‹</button>
-                  <div class="carousel-dots">
-                    <div class="carousel-dot active" id="dot-0"></div>
-                    <div class="carousel-dot" id="dot-1"></div>
-                    <div class="carousel-dot" id="dot-2"></div>
-                  </div>
-                  <button onclick="carouselNext(event)">›</button>
-                </div>
-              </div>
+            <div class="event-actions-row">
+              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn">Ticket kaufen →</a>
+              <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar">In Kalender speichern</a>
             </div>
           </div>
         </div>
@@ -767,6 +771,36 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
   </div>
 </main>
+
+<!-- ── PAST EVENTS · photos + quote, sits right after the buy moment ── -->
+<section class="past-events-section" id="past">
+  <div class="past-events-inner">
+    <p class="past-events-eyebrow" data-i18n="past_events">Past Events</p>
+    <div class="past-events-meta">
+      <span data-i18n="past_event_date">25. März 2026</span>
+      <span class="sep">·</span>
+      <span data-i18n="past_event_city">München</span>
+    </div>
+    <h3 class="past-events-title">Europa 2041</h3>
+
+    <div class="past-events-feature">
+      <div class="past-events-photos">
+        <img src="/resources/assets/IMG_3512.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
+        <img src="/resources/assets/IMG_3526.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
+        <img src="/resources/assets/IMG_3530.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
+      </div>
+      <blockquote class="past-events-quote">
+        <p data-i18n="past_events_quote">„War top! Highly recommended."</p>
+        <cite data-i18n="past_events_quote_author">Gina, Manager</cite>
+      </blockquote>
+    </div>
+
+    <p class="past-events-desc" data-i18n-html="feature_desc">The <a href="/march-event/">website</a> presents a set of ideas collected from the March Dinner participants.</p>
+    <div class="past-events-actions">
+      <a href="/march-event/" data-i18n="what_we_built">Ergebnis aus dem März-Salon ansehen ↗</a>
+    </div>
+  </div>
+</section>
 
 
 <!-- ── KI SKILLS ─────────────────────────────────────────────────── -->

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Salon AI//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salon-ai-may-28-2026@salon-ai.eu
+DTSTAMP:20260508T120000Z
+DTSTART:20260528T160000Z
+DTEND:20260528T200000Z
+SUMMARY:Salon AI Dinner — München
+LOCATION:Luitpoldblock\, München
+DESCRIPTION:Hands-on AI evening + dinner. The last public Salon AI Dinner hosted by Franziska Wittleder herself; afterwards by private invitation only via host.html.\n\nDoors 18:00 · Start 18:15 · Modern Middle Eastern Cuisine · Drinks included · €78\n\nhttps://www.salon-ai.eu
+URL:https://www.salon-ai.eu
+END:VEVENT
+END:VCALENDAR

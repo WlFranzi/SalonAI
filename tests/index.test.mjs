@@ -138,48 +138,36 @@ describe("index.html — hero", () => {
     assert.ok(m, "hero-cta link not found");
     assert.ok(/href="#events"/.test(m[0]), `Expected hero CTA href="#events", got: ${m[0]}`);
   });
-  it("alumni caption is OUTSIDE the hero (declutter)", () => {
-    const hero = html.match(/<section class="hero">[\s\S]*?<\/section>/);
-    assert.ok(hero, "hero section not found");
-    assert.ok(!/Entscheidungsträger:innen/.test(hero[0]),
-      "Alumni line must NOT live inside the hero anymore");
-    assert.ok(/class="alumni-caption"/.test(html),
-      ".alumni-caption element missing — alumni line should sit above the events tile");
-  });
   it("hero is decluttered — no eyebrow-sub line", () => {
     const hero = html.match(/<section class="hero">[\s\S]*?<\/section>/);
     assert.ok(hero, "hero section not found");
     assert.ok(!/class="eyebrow-sub"/.test(hero[0]),
       "Hero must not contain eyebrow-sub line (declutter)");
   });
-  it("alumni caption uses sector framing (Wirtschaft/Agenturen/Medien/Wissenschaft/Politik)", () => {
-    const m = html.match(/<p class="alumni-caption"[^>]*>([^<]+)<\/p>/);
-    assert.ok(m, "alumni-caption paragraph not found");
-    const sectors = ["Wirtschaft", "Agenturen", "Medien", "Wissenschaft", "Politik"];
-    for (const s of sectors) {
-      assert.ok(m[1].includes(s), `Alumni line missing sector: ${s}`);
-    }
-    assert.ok(/Entscheidungsträger:innen/.test(m[1]),
-      "Alumni line should frame audience as 'Entscheidungsträger:innen'");
-  });
-  it("alumni caption is data-i18n tagged (so it switches with locale)", () => {
-    const m = html.match(/<p class="alumni-caption"[^>]*>/);
-    assert.ok(m, "alumni-caption element missing");
-    assert.ok(/data-i18n="hero_alumni"/.test(m[0]),
-      "alumni-caption must carry data-i18n=\"hero_alumni\"");
+  it("alumni line is woven into the manifesto coda (no free-floating caption)", () => {
+    const manifesto = html.match(/<section class="manifesto"[^>]*>[\s\S]*?<\/section>/);
+    assert.ok(manifesto, "manifesto section not found");
+    assert.ok(/Entscheidungsträger:innen/.test(manifesto[0]),
+      "Alumni sentence should live as part of the manifesto-coda");
+    assert.ok(!/class="alumni-caption"/.test(html),
+      "Standalone .alumni-caption should be removed");
   });
 
   it("hero contains italic strapline below H1 (HNWI signal)", () => {
     assert.ok(/class="hero-strapline"/.test(html), ".hero-strapline element missing");
     assert.ok(/data-i18n="hero_strapline"/.test(html), "hero_strapline must be data-i18n tagged");
   });
-  it("manifesto body paragraphs are calm — no inline <strong> emphasis (typography restraint)", () => {
-    // Calm typography: drop bold-noise inside body paragraphs / list items.
-    // Strong only allowed in semantic places (FAQ bio name, footer role label).
+  it("manifesto items are calm — no inline <strong> in lede/list (coda allowed for audience attestation)", () => {
     const manifesto = html.match(/<section class="manifesto"[^>]*>([\s\S]*?)<\/section>/);
     assert.ok(manifesto, "manifesto section not found");
-    assert.ok(!/<strong>/.test(manifesto[1]),
-      "Manifesto must not contain <strong> tags — keep typography calm");
+    // Items + lede must stay clean
+    const items = manifesto[1].match(/<ol[\s\S]*?<\/ol>/);
+    assert.ok(items, "manifesto ol not found");
+    assert.ok(!/<strong>/.test(items[0]), "Manifesto list items must not contain <strong>");
+    const lede = manifesto[1].match(/class="manifesto-lede"[\s\S]*?<\/p>/);
+    if (lede) {
+      assert.ok(!/<strong>/.test(lede[0]), "Manifesto lede must not contain <strong>");
+    }
   });
 });
 
