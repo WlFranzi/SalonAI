@@ -109,6 +109,9 @@
     .copy-btn.copied { background: #2a9d5c; color: #fff; }
     .preview-link { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); text-decoration: none; padding: 8px 14px; border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; transition: all 0.15s; }
     .preview-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
+    .share-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .share-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.85); cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; transition: background 0.15s, border-color 0.15s; }
+    .share-pill:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.32); color: #fff; }
     .result-note { font-size: 11.5px; color: rgba(255,255,255,0.45); margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6; }
     .result-note a { color: rgba(255,255,255,0.65); }
 
@@ -155,13 +158,14 @@
   <!-- MIN PERSONS CALLOUT -->
   <div class="min-callout">
     <span class="mc-badge">Kleiner Kreis</span>
-    Ab zwölf Tickets findet der Abend statt, höchstens zwanzig Gäste — <strong>78€ pro Person, Catering inbegriffen</strong>.
+    Der Abend findet ab zwölf Buchungen statt, höchstens zwanzig Gäste.
+    <span style="display:block;margin-top:4px;font-size:11.5px;color:var(--muted);">78€ pro Person, Catering inbegriffen.</span>
   </div>
 
   <!-- WHAT WE PROVIDE BANNER -->
   <div class="free-banner">
-    Was wir mitbringen: einen Hands-on KI-Workshop, Moderation und Catering — für jeden Gast im Ticket enthalten.<br>
-    <strong>Was bei dir liegt:</strong> der Raum und die Frage, wen du an diesem Abend sehen willst. Dein Platz als Gastgeber:in ist inklusive.
+    <strong>Was wir mitbringen.</strong> Den KI-Salon, Moderation und Catering — für jeden Gast im Ticket enthalten.
+    <span style="display:block;margin-top:6px;"><strong>Was bei dir liegt.</strong> Der Raum und die Frage, wen du an diesem Abend sehen willst. Dein Platz als Gastgeber:in ist inklusive.</span>
   </div>
 
   <!-- STEP 2: Date -->
@@ -195,21 +199,21 @@
         <input type="radio" name="venue" value="own" checked onchange="setVenue(this)" />
         <span class="vo-body">
           <strong>Ich habe einen Raum.</strong>
-          <span>Privatwohnung, Büro, eigene Location — du bringst den Ort mit.</span>
+          <span>Privatwohnung, Büro, eigener Raum — der Ort kommt von dir.</span>
         </span>
       </label>
       <label class="venue-opt" data-val="luitpoldblock">
         <input type="radio" name="venue" value="luitpoldblock" onchange="setVenue(this)" />
         <span class="vo-body">
           <strong>Ich habe keinen Raum — bitte den Luitpoldblock anfragen.</strong>
-          <span>+280€ einmalig. Dein Link ist erst nach unserer Bestätigung teilbar.</span>
+          <span>Dein Link ist erst nach unserer Bestätigung teilbar. <span style="color:rgba(0,0,0,0.35);">Pauschale +280€ einmalig.</span></span>
         </span>
       </label>
       <label class="venue-opt" data-val="own_or_luitpold">
         <input type="radio" name="venue" value="own_or_luitpold" onchange="setVenue(this)" />
         <span class="vo-body">
           <strong>Ich habe notfalls einen Raum — fragt trotzdem den Luitpoldblock an.</strong>
-          <span>Wir prüfen die Verfügbarkeit (+280€, falls genutzt). Du entscheidest dann.</span>
+          <span>Wir prüfen die Verfügbarkeit. Du entscheidest dann. <span style="color:rgba(0,0,0,0.35);">+280€, falls genutzt.</span></span>
         </span>
       </label>
     </div>
@@ -225,7 +229,7 @@
 
   <!-- STEP 4: Message -->
   <div class="step" id="step-msg">
-    <h2>Was du deiner Runde schickst</h2>
+    <h2>Wie deine Einladung aussieht</h2>
     <textarea id="host-msg"></textarea>
     <div class="error-msg">Bitte schreib eine kurze Einladung.</div>
     <p class="input-hint">Vorschlag steht — schreib um, was du anders sagen würdest. Der Text erscheint genau so auf der Event-Seite.</p>
@@ -233,14 +237,13 @@
 
   <!-- EMAIL — last, after investment in form -->
   <div class="quick-email" id="step-email">
-    <div class="quick-email-label">Deine E-Mail</div>
     <h2>Wo wir dich erreichen</h2>
     <input type="email" id="host-email" placeholder="deine@email.com" />
     <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
     <p class="input-hint">Bei jeder Buchung kommt eine kurze Mail — du siehst in Echtzeit, wer dabei ist.</p>
   </div>
 
-  <button class="generate-btn" id="generate-btn" onclick="generate()">Einladungslink erstellen</button>
+  <button class="generate-btn" id="generate-btn" onclick="generate()">Salon-Einladung erstellen →</button>
 
   <!-- RESULT -->
   <div id="result">
@@ -251,6 +254,12 @@
       <button class="copy-btn" id="copy-btn" onclick="copyLink()">Kopieren</button>
     </div>
     <a href="#" id="preview-link" target="_blank" class="preview-link">Vorschau ansehen</a>
+
+    <div class="share-row" id="share-row" style="display:none;">
+      <a class="share-pill" href="#" onclick="shareLinkedIn(event)">LinkedIn</a>
+      <a class="share-pill" href="#" onclick="shareWhatsApp(event)">WhatsApp</a>
+      <button class="share-pill" id="share-native-btn" onclick="shareNative()" style="display:none;">Mehr (Instagram, …)</button>
+    </div>
 
     <!-- Shown only when Luitpoldblock selected — blocks sharing until confirmed -->
     <div id="luitpold-gate" style="display:none;" class="luitpold-gate">
@@ -263,7 +272,7 @@
     </div>
 
     <p class="result-note">
-      Schick den Link an deine Runde. Wer bucht, ist dabei.<br>
+      Teile den Link mit deinem Kreis. Wer bucht, sichert seinen Platz.<br>
       Der Abend kommt ab <strong style="color:rgba(255,255,255,0.75);">zwölf Buchungen</strong>, höchstens zwanzig — 78€ pro Person, Catering inbegriffen.<br>
       Jede Buchung läuft als Mail bei dir auf.<br>
       Fragen? <a href="mailto:franziska.wittleder@gmail.com">franziska.wittleder@gmail.com</a>
@@ -273,7 +282,7 @@
 </main>
 
 <footer>
-  <a href="/">www.salon-ai.eu</a> · Ein Abend der sich lohnt.
+  <a href="/">www.salon-ai.eu</a> · Ein Salon für Europa.
 </footer>
 
 <script>
@@ -294,9 +303,31 @@
   function onConfirmLuitpold(cb) {
     var copyBtn = document.getElementById('copy-btn');
     copyBtn.disabled = !cb.checked;
+    document.getElementById('share-row').style.display = cb.checked ? 'flex' : 'none';
     if (cb.checked) {
       document.getElementById('result-eyebrow').textContent = 'Bestätigt. Der Link ist freigegeben.';
     }
+  }
+
+  // ── Share helpers ────────────────────────────────────────────────────────────
+  function shareLinkedIn(e) {
+    if (e) e.preventDefault();
+    if (!window._shareUrl) return;
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window._shareUrl), '_blank', 'noopener');
+  }
+  function shareWhatsApp(e) {
+    if (e) e.preventDefault();
+    if (!window._shareUrl) return;
+    var msg = (window._shareTitle || 'Salon AI') + ' — ' + window._shareUrl;
+    window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  }
+  function shareNative() {
+    if (!navigator.share || !window._shareUrl) return;
+    navigator.share({ title: window._shareTitle || 'Salon AI', text: window._shareTitle || 'Salon AI', url: window._shareUrl }).catch(function(){});
+  }
+  if (navigator.share) {
+    var _ns = document.getElementById('share-native-btn');
+    if (_ns) _ns.style.display = '';
   }
 
   var DATE_LABELS_LONG = {
@@ -366,7 +397,7 @@
     var url = base + '?' + new URLSearchParams(urlParams).toString();
 
     var longLabel = DATE_LABELS_LONG[selectedDate];
-    document.getElementById('result-title').textContent = name + '’s KI Dinner · ' + longLabel;
+    document.getElementById('result-title').textContent = 'Salon AI bei ' + name + ' · ' + longLabel;
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
 
@@ -375,15 +406,22 @@
       document.getElementById('luitpold-gate').style.display = 'block';
       document.getElementById('copy-btn').disabled = true;
       document.getElementById('confirm-luitpold').checked = false;
+      document.getElementById('share-row').style.display = 'none';
     } else if (venueType === 'own_or_luitpold') {
       document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Wir fragen den Luitpoldblock parallel an.';
       document.getElementById('luitpold-gate').style.display = 'none';
       document.getElementById('copy-btn').disabled = false;
+      document.getElementById('share-row').style.display = 'flex';
     } else {
       document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Teilen, wann es dir passt.';
       document.getElementById('luitpold-gate').style.display = 'none';
       document.getElementById('copy-btn').disabled = false;
+      document.getElementById('share-row').style.display = 'flex';
     }
+
+    // Hold the current share URL for the buttons
+    window._shareUrl = url;
+    window._shareTitle = 'Salon AI bei ' + name + ' · ' + longLabel;
 
     document.getElementById('result').style.display = 'block';
     document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });

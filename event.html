@@ -83,10 +83,12 @@
     .share-card { background: var(--navy); border-radius: 20px; padding: 22px 24px; text-align: center; margin-bottom: 16px; }
     .share-card h2 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
     .share-card p { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
+    .share-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 12px; }
+    .share-btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 600; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.92); text-decoration: none; transition: background 0.15s, border-color 0.15s; }
+    .share-btn:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.32); }
+    .share-btn.share-copy.copied { background: #2a9d5c; border-color: #2a9d5c; color: #fff; }
     .share-link-row { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border-radius: 9px; padding: 9px 12px; }
-    .share-link-url { flex: 1; font-size: 11px; color: rgba(255,255,255,0.75); word-break: break-all; text-align: left; font-family: monospace; }
-    .share-copy-btn { flex-shrink: 0; padding: 6px 12px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; }
-    .share-copy-btn.copied { background: #2a9d5c; color: #fff; }
+    .share-link-url { flex: 1; font-size: 11px; color: rgba(255,255,255,0.6); word-break: break-all; text-align: left; font-family: monospace; }
 
     /* VENUE PENDING */
     .venue-pending-banner { background: rgba(255,200,0,0.1); border: 1px solid rgba(200,150,0,0.3); border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; font-size: 13px; color: #6b4c00; line-height: 1.6; }
@@ -139,11 +141,11 @@
 <!-- HERO -->
 <div class="hero" id="hero">
   <div class="host-badge" id="host-badge">Eingeladen von <span id="badge-name">Host</span></div>
-  <h1 class="event-title"><span id="hero-host" class="host-name"></span>'s<br>KI Dinner · Salon AI</h1>
+  <h1 class="event-title">Salon AI bei <span id="hero-host" class="host-name"></span></h1>
   <div class="host-msg-block" id="host-msg-display"></div>
   <div class="date-chips">
     <div class="date-chip"><span id="chip-date"></span></div>
-    <div class="date-chip">18:00 Einlass · 18:15 Start</div>
+    <div class="date-chip">Ankommen ab 18:00 · Beginn 18:15</div>
     <div class="date-chip">München</div>
   </div>
 </div>
@@ -158,19 +160,14 @@
   <!-- TICKET CARD -->
   <div class="card">
     <div class="card-label">Dein Ticket</div>
-    <h2>Was dich erwartet</h2>
+    <h2>Der Abend in Kürze</h2>
 
-    <div class="include-grid">
-      <div class="include-chip">Dinner inklusive</div>
-      <div class="include-chip">Drinks inklusive</div>
-      <div class="include-chip">Hands-on Workshop</div>
-      <div class="include-chip">Eigener KI-Assistent</div>
-    </div>
+    <p style="font-size:13.5px;color:var(--navy);line-height:1.65;margin-bottom:18px;">Dinner und Drinks gehören zum Abend. Du gehst mit deinem eigenen KI-Assistenten nach Hause.</p>
 
     <div class="detail-row">
       <div class="detail-text">
         <strong id="ticket-date"></strong>
-        <span>18:00 Einlass · 18:15 Start · ca. 22:00 Ende</span>
+        <span>Ankommen ab 18:00 · Beginn 18:15 · ca. 22:00 Ende</span>
       </div>
     </div>
     <div class="detail-row">
@@ -192,7 +189,7 @@
       <strong>Veranstaltungsort wird noch bestätigt.</strong><br>
       Der Host klärt gerade die Raumverfügbarkeit. Tickets sind verfügbar, sobald alles gesichert ist.
     </div>
-    <p class="ticket-note">Bezahlung über Stripe · Bewusst kleiner Kreis — maximal 20 Personen.</p>
+    <p class="ticket-note">Bezahlung über Stripe · Höchstens 20 Gäste.</p>
   </div>
 
   <!-- REQUIREMENT -->
@@ -202,12 +199,12 @@
 
   <!-- SURVEY + TICKET -->
   <div class="survey-card" id="survey-card">
-    <div class="card-label">Für Franziska</div>
-    <h2>Wie erhoffst du dir, dass KI dein Leben einfacher macht?</h2>
+    <div class="card-label">Vor dem Abend</div>
+    <h2>Wo könnte KI bei dir den größten Hebel haben?</h2>
     <p class="survey-intro">Eine Zeile reicht. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
-    <textarea class="survey-text" id="survey-text" rows="3" placeholder="Was würdest du gern in zwei Stunden gelöst sehen?"></textarea>
+    <textarea class="survey-text" id="survey-text" rows="3" placeholder="Welche Aufgabe würdest du am liebsten heute loswerden?"></textarea>
     <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
-    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Antwort senden &amp; Ticket kaufen — 78€</button>
+    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Antwort senden &amp; weiter zum Ticket →</button>
     <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Klick öffnet Stripe-Checkout. Antwort geht parallel an Franziska.</p>
     <div class="survey-success" id="survey-success">
       <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — deine Antwort ist bei Franziska. Sobald der Veranstaltungsort bestätigt ist, kannst du dein Ticket sichern.</p>
@@ -217,9 +214,9 @@
   <!-- ABOUT -->
   <div class="card">
     <div class="card-label">Der Abend</div>
-    <h2>Was passiert an diesem Abend?</h2>
-    <p><strong>Teil 1 — KI für dich:</strong> Du baust deinen eigenen KI-Assistenten — Schritt für Schritt, ohne Vorkenntnisse, ohne Coding. Kein Zuschauen, du baust selbst.</p>
-    <p><strong>Teil 2 — KI für Europa:</strong> Du nutzt deinen fertigen Agenten für eine konkrete EU-Aufgabe. Von MEP-Kontaktierung bis Förderanträgen — mit echtem Ergebnis zum Mitnehmen.</p>
+    <h2>Was an diesem Abend passiert</h2>
+    <p>Den ersten Teil des Abends nutzt du, um deinen eigenen KI-Assistenten zu bauen — Schritt für Schritt, ohne Coding, ohne Vorkenntnisse. Kein Zuschauen, du baust selbst.</p>
+    <p>Den zweiten Teil setzt du ihn für eine konkrete EU-Aufgabe ein — von MEP-Kontaktierung bis Förderanträgen, mit echtem Ergebnis zum Mitnehmen.</p>
     <div class="franzi-row">
       <div class="franzi-avatar" style="background:var(--sky-light);font-size:0.9rem;font-weight:700;color:var(--navy);">FW</div>
       <div class="franzi-info">
@@ -231,18 +228,23 @@
 
   <!-- SHARE -->
   <div class="share-card">
-    <h2>Link weiterteilen</h2>
-    <p>Schick deinen Freund:innen diesen Link — wer zuerst kauft, ist dabei.</p>
+    <h2>Teilen</h2>
+    <p>Teile den Link mit deinem Kreis. Wer ihn nutzt, sichert seinen Platz — Reihenfolge nach Buchung.</p>
+    <div class="share-actions">
+      <a class="share-btn share-li" href="#" onclick="shareLinkedIn(event)">LinkedIn</a>
+      <a class="share-btn share-wa" href="#" onclick="shareWhatsApp(event)">WhatsApp</a>
+      <button class="share-btn share-native" id="share-native-btn" onclick="shareNative()" style="display:none;">Mehr (Instagram, …)</button>
+      <button class="share-btn share-copy" id="share-copy-btn" onclick="copyShareLink()">Link kopieren</button>
+    </div>
     <div class="share-link-row">
       <span class="share-link-url" id="share-url"></span>
-      <button class="share-copy-btn" id="share-copy-btn" onclick="copyShareLink()">Kopieren</button>
     </div>
   </div>
 
 </main>
 
 <footer>
-  <a href="/">www.salon-ai.eu</a> · Ein Abend der sich lohnt. · <a href="mailto:franziska.wittleder@gmail.com">Kontakt</a>
+  <a href="/">www.salon-ai.eu</a> · Ein Salon für Europa. · <a href="mailto:franziska.wittleder@gmail.com">Kontakt</a>
 </footer>
 
 <script>
@@ -336,19 +338,45 @@
         window.location.assign(stripeLink);
       }
     }).catch(function() {
-      btn.textContent = venuePending ? 'Antwort senden — Ticket folgt' : 'Antwort senden & Ticket kaufen — 78€';
+      btn.textContent = venuePending ? 'Antwort senden — Ticket folgt' : 'Antwort senden & weiter zum Ticket →';
       btn.disabled = false;
       alert('Fehler beim Senden — bitte nochmal versuchen.');
     });
   }
 
+  function _shareUrl() { return window.location.href; }
+  function _shareText() {
+    return (hostName ? 'Salon AI bei ' + hostName : 'Salon AI') +
+           (dateLabel ? ' · ' + dateLabel : '');
+  }
+
+  function shareLinkedIn(e) {
+    if (e) e.preventDefault();
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(_shareUrl()), '_blank', 'noopener');
+  }
+  function shareWhatsApp(e) {
+    if (e) e.preventDefault();
+    window.open('https://wa.me/?text=' + encodeURIComponent(_shareText() + ' — ' + _shareUrl()), '_blank', 'noopener');
+  }
+  function shareNative() {
+    if (!navigator.share) return;
+    navigator.share({ title: _shareText(), text: _shareText(), url: _shareUrl() }).catch(function(){});
+  }
+
+  // Reveal native share button on devices that support it (mobile → Instagram etc. via share sheet)
+  if (navigator.share) {
+    var _ns = document.getElementById('share-native-btn');
+    if (_ns) _ns.style.display = '';
+  }
+
   function copyShareLink() {
-    var url = document.getElementById('share-url').textContent;
+    var url = _shareUrl();
     navigator.clipboard.writeText(url).then(function() {
       var btn = document.getElementById('share-copy-btn');
-      btn.textContent = '✓ Kopiert!';
+      var prev = btn.textContent;
+      btn.textContent = '✓ Kopiert';
       btn.classList.add('copied');
-      setTimeout(function(){ btn.textContent = 'Kopieren'; btn.classList.remove('copied'); }, 2000);
+      setTimeout(function(){ btn.textContent = prev; btn.classList.remove('copied'); }, 2000);
     });
   }
 </script>
