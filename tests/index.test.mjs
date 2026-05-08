@@ -29,12 +29,15 @@ describe("index.html — skills section", () => {
   it("has a #skills-list container", () => {
     assert.ok(html.includes('id="skills-list"'), "Missing #skills-list");
   });
-  it("buildSkills opens the first skill by default (i === 0)", () => {
-    // The buildSkills template appends ' open' to the className when i === 0.
-    // Look for the conditional rather than the concatenated literal.
+  it("all skill items render closed by default (no .open class on first paint)", () => {
+    // No conditional that pre-opens the first skill; all closed until user clicks.
     assert.ok(
-      /i\s*===\s*0\s*\?\s*['"`]\s*open\s*['"`]/.test(html),
-      "First skill item must conditionally receive the 'open' class on i===0"
+      !/i\s*===\s*0\s*\?\s*['"`]\s*open\s*['"`]/.test(html),
+      "Skill items should NOT auto-open the first card"
+    );
+    assert.ok(
+      !/skill-item\s+open/.test(html),
+      "No .skill-item should have .open as a literal default class"
     );
   });
   it(".skill-item.open .skill-body is display:block", () => {
@@ -78,10 +81,11 @@ describe("index.html — script loading", () => {
 describe("index.html — mobile-first responsive patterns", () => {
   // Each layout block should default to a single-column / stacked layout
   // and use min-width media queries to enhance for larger viewports.
+  // .manifesto ol is no longer a multi-col grid (editorial single-column with
+  // numbered Roman-numeral anchors); it's not part of this responsive check.
   const containers = [
     { selector: ".stats-inner",   minBreakpoint: 768 },
     { selector: ".two-col",       minBreakpoint: 800 },
-    { selector: ".manifesto ol",  minBreakpoint: 820 },
     { selector: ".testimonials",  minBreakpoint: 720 },
     { selector: ".skill-cols",    minBreakpoint: 620 },
   ];
@@ -116,7 +120,7 @@ describe("index.html — mobile-first responsive patterns", () => {
   it("layout containers don't pair with max-width fallback to 1fr", () => {
     // Catch the legacy desktop-first idiom for the *base* rules of these selectors.
     // The base rule is the first occurrence — must not declare repeat(N, 1fr).
-    for (const sel of [".stats-inner", ".two-col", ".manifesto ol", ".testimonials", ".skill-cols"]) {
+    for (const sel of [".stats-inner", ".two-col", ".testimonials", ".skill-cols"]) {
       const escaped = sel.replace(/\./g, "\\.").replace(/\s+/g, "\\s+");
       const baseRuleRe = new RegExp(`(^|[^@\\)])\\s*${escaped}\\s*\\{[^}]+\\}`, "m");
       const m = html.match(baseRuleRe);

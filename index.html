@@ -93,19 +93,23 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .what-short h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s1); }
 .what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
 
-/* ── Manifest: Warum es Salon AI gibt ── */
-.manifesto { background: transparent; padding: var(--s4) var(--s3); }
-.manifesto-inner { max-width: 960px; margin: 0 auto; }
-.manifesto-eyebrow { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); }
-.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s2); }
-.manifesto p { font-size: var(--t-sm); color: var(--navy); line-height: 1.65; margin-bottom: var(--s1); }
-.manifesto p.manifesto-lede { font-size: var(--t-base); margin-bottom: var(--s2); max-width: 720px; }
-.manifesto p.manifesto-bridge { color: var(--muted-blue); font-weight: 600; margin-bottom: var(--s2); }
-.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0; display: grid; grid-template-columns: 1fr; gap: var(--s2); }
-.manifesto ol li { counter-increment: manifesto-c; padding-left: 28px; position: relative; font-size: var(--t-sm); color: var(--navy); line-height: 1.6; }
-.manifesto ol li::before { content: counter(manifesto-c); position: absolute; left: 0; top: 0; font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--sky-deep); width: 22px; text-align: left; }
-.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); border-top: 1px solid var(--border); padding-top: var(--s2); margin-top: var(--s2); max-width: 720px; }
-@media (min-width: 820px) { .manifesto ol { grid-template-columns: repeat(3, 1fr); gap: var(--s3); } }
+/* ── Manifest: Warum es Salon AI gibt — Editorial single-column ── */
+.manifesto { background: transparent; padding: var(--s5) var(--s3) var(--s4); }
+.manifesto-inner { max-width: 720px; margin: 0 auto; }
+.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s3); }
+.manifesto p { font-size: var(--t-base); color: var(--navy); line-height: 1.7; margin-bottom: var(--s2); }
+.manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.65; margin-bottom: var(--s3); color: var(--navy); }
+.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s3) 0; }
+.manifesto ol li { counter-increment: manifesto-c; display: grid; grid-template-columns: 56px 1fr; gap: var(--s2); padding: var(--s3) 0; border-top: 1px solid var(--border); font-size: var(--t-base); color: var(--navy); line-height: 1.65; align-items: baseline; }
+.manifesto ol li:last-child { border-bottom: 1px solid var(--border); }
+.manifesto ol li::before { content: counter(manifesto-c, decimal-leading-zero); font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
+.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); padding-top: var(--s3); margin-top: 0; line-height: 1.7; }
+@media (min-width: 768px) {
+  .manifesto h2 { font-size: 2.1rem; margin-bottom: var(--s4); }
+  .manifesto p.manifesto-lede { font-size: 1.15rem; }
+  .manifesto ol li { grid-template-columns: 72px 1fr; padding: var(--s4) 0; }
+  .manifesto ol li::before { font-size: 2rem; }
+}
 
 /* ── Event requirement note ── */
 .event-requirement { font-size: var(--t-sm); color: var(--muted-blue); background: rgba(255,248,220,0.7); border: 1px solid rgba(200,160,0,0.2); border-radius: 10px; padding: 10px 16px; margin: 8px 0 16px; line-height: 1.6; }
@@ -643,15 +647,15 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <h2>Warum es Salon AI gibt</h2>
-    <p class="manifesto-lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
-    <p>Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
+    <h2 data-i18n="manifesto_h2">Warum es Salon AI gibt</h2>
+    <p class="manifesto-lede" data-i18n="manifesto_lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
+    <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
     <ol>
-      <li>Wir lernen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben.</li>
-      <li>Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>
-      <li>Du gehst mit einem anderen Blick nach Hause: du kannst mit KI bauen, was du willst — oder verstehst zumindest genau, was deine Teams gerade tun. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.</li>
+      <li data-i18n="manifesto_item1">Wir lernen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben.</li>
+      <li data-i18n="manifesto_item2">Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen. Insider-Sicht, kein Newsletter-Kram.</li>
+      <li data-i18n="manifesto_item3">Du gehst mit einem anderen Blick nach Hause: du kannst mit KI bauen, was du willst — oder verstehst zumindest genau, was deine Teams gerade tun. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.</li>
     </ol>
-    <p class="manifesto-coda">Wichtig ist auch: Das Ganze passiert offline. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber die Gespräche, die wirklich etwas verändern, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken.</p>
+    <p class="manifesto-coda" data-i18n="manifesto_coda">Wichtig ist auch: Das Ganze passiert offline. Mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Aber die Gespräche, die wirklich etwas verändern, entstehen meistens immer noch dort, wo Menschen zusammen sitzen und anfangen, größer zu denken.</p>
   </div>
 </section>
 
@@ -1037,7 +1041,7 @@ window.buildSkills = function(lang) {
     var euCol  = { time: euColRaw.time, steps: euColRaw.steps.slice(0, 3) };
 
     container.innerHTML += '\
-      <div class="skill-item' + (i === 0 ? ' open' : '') + '" id="skill-' + i + '">\
+      <div class="skill-item" id="skill-' + i + '">\
         <button class="skill-toggle" onclick="toggleSkill(' + i + ')">\
           <span class="skill-cat">' + cat + '</span>\
           <span class="skill-name-text">' + name + '</span>\
