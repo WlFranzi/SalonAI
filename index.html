@@ -987,9 +987,9 @@ en: [
 }
 
 window.buildSkills = function(lang) {
-  var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'en';
-  var loc  = (window.LOCALES && (window.LOCALES[l] || window.LOCALES['en'])) || {};
-  var meta = (window.SKILLS_META && (window.SKILLS_META[l] || window.SKILLS_META['en'])) || [];
+  var l = lang || (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e) { return null; } })() || 'de';
+  var loc  = (window.LOCALES && (window.LOCALES[l] || window.LOCALES['de'])) || {};
+  var meta = (window.SKILLS_META && (window.SKILLS_META[l] || window.SKILLS_META['de'])) || [];
   var colOld = loc.col_old || 'Before';
   var colNow = loc.col_now || 'With AI today';
   var colEu  = loc.col_eu  || 'For a stronger Europe';
@@ -1364,12 +1364,12 @@ function carouselNext(e) { carouselGo(carouselIdx + 1, e); }
     var SUPPORTED = ["en","de","fr","es","it","pt","nl","pl","ro","sv",
                      "cs","hu","sk","bg","da","fi","hr","el","lt","lv",
                      "et","sl","mt","ga"];
-    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'de';
     var code = nav.split('-')[0].toLowerCase();
     if (SUPPORTED.indexOf(code) !== -1) lang = code;
   }
 
-  window.applyLocale(lang || 'en');
+  window.applyLocale(lang || 'de');
 })();
 </script>
 </body>
