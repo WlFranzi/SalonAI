@@ -107,6 +107,17 @@ describe("index.html — hero", () => {
     assert.ok(/class="hero-strapline"/.test(html), ".hero-strapline element missing");
     assert.ok(/data-i18n="hero_strapline"/.test(html), "hero_strapline must be data-i18n tagged");
   });
+  it("manifesto items use <strong> for scannability (≥1 bold per list item)", () => {
+    // Extract ol block in the manifesto and count <strong> occurrences per <li>
+    const ol = html.match(/<section class="manifesto"[^>]*>[\s\S]*?<\/section>/);
+    assert.ok(ol, "manifesto section not found");
+    const lis = Array.from(ol[0].matchAll(/<li>([\s\S]*?)<\/li>/g));
+    assert.ok(lis.length >= 3, `Expected at least 3 manifesto list items, got ${lis.length}`);
+    for (const [i, li] of lis.entries()) {
+      const strongs = (li[1].match(/<strong>/g) || []).length;
+      assert.ok(strongs >= 1, `Manifesto item ${i + 1} has no <strong> emphasis`);
+    }
+  });
 });
 
 // ── FAQ order (trust first) ──────────────────────────────────────────────────
