@@ -387,8 +387,10 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── Language switcher ── */
-    #lang-switcher-m { position: relative; margin-left: auto; }
+    /* ── Language switcher (hidden — DE-only for now) ── */
+    #lang-switcher-m { display: none; position: relative; margin-left: auto; }
+    /* HNWI restraint: hide decorative emojis in cards */
+    .card-icon { display: none; }
     .lang-btn-m {
       display: inline-flex; align-items: center; gap: 5px;
       font-size: 12px; font-weight: 600; padding: 5px 11px;
@@ -519,18 +521,15 @@
       <!-- 3-box summary row -->
       <div class="pr-summary-boxes" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 28px;">
         <div style="background: rgba(27,94,32,0.06); border: 1px solid rgba(27,94,32,0.15); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 1.4rem; margin-bottom: 6px;">🎯</div>
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid); margin-bottom: 4px;">Das Ziel</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid); margin-bottom: 6px;">Das Ziel</div>
           <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Europa als dritte Weltmacht — souverän, technologisch führend, demokratisch erneuert.</p>
         </div>
         <div style="background: rgba(27,46,74,0.05); border: 1px solid rgba(27,46,74,0.12); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 1.4rem; margin-bottom: 6px;">🔑</div>
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 4px;">Der Schlüssel</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 6px;">Der Schlüssel</div>
           <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">Keine neuen Erfindungen nötig. Bestehende Technologien politisch priorisieren und skalieren.</p>
         </div>
         <div style="background: rgba(180,140,40,0.05); border: 1px solid rgba(180,140,40,0.15); border-radius: 12px; padding: 16px 18px;">
-          <div style="font-size: 1.4rem; margin-bottom: 6px;">📍</div>
-          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #7a5c10; margin-bottom: 4px;">Der Kontext</div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #7a5c10; margin-bottom: 6px;">Der Kontext</div>
           <p style="font-size: 0.79rem; color: var(--muted); line-height: 1.5; margin: 0;">14 Ideen aus einem Dinner-Gespräch — mit Quellen belegt, geordnet nach Lebensbereich.</p>
         </div>
       </div>
