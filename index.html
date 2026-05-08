@@ -94,20 +94,20 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
 
 /* ── Manifest: Warum es Salon AI gibt — Editorial single-column ── */
-.manifesto { background: transparent; padding: var(--s5) var(--s3) var(--s4); }
+.manifesto { background: transparent; padding: var(--s4) var(--s3) var(--s3); }
 .manifesto-inner { max-width: 720px; margin: 0 auto; }
-.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s3); }
-.manifesto p { font-size: 15px; color: var(--navy); line-height: 1.65; margin-bottom: var(--s2); }
-.manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.65; margin-bottom: var(--s3); color: var(--navy); }
-.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s3) 0; }
-.manifesto ol li { counter-increment: manifesto-c; display: grid; grid-template-columns: 56px 1fr; gap: var(--s2); padding: var(--s3) 0; border-top: 1px solid var(--border); font-size: var(--t-base); color: var(--navy); line-height: 1.65; align-items: baseline; }
+.manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s2); }
+.manifesto p { font-size: 15px; color: var(--navy); line-height: 1.55; margin-bottom: 12px; }
+.manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.55; margin-bottom: var(--s2); color: var(--navy); }
+.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0; }
+.manifesto ol li { counter-increment: manifesto-c; display: grid; grid-template-columns: 48px 1fr; gap: var(--s2); padding: var(--s2) 0; border-top: 1px solid var(--border); font-size: 15px; color: var(--navy); line-height: 1.55; align-items: baseline; }
 .manifesto ol li:last-child { border-bottom: 1px solid var(--border); }
-.manifesto ol li::before { content: counter(manifesto-c, decimal-leading-zero); font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
-.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); padding-top: var(--s3); margin-top: 0; line-height: 1.7; }
+.manifesto ol li::before { content: counter(manifesto-c, decimal-leading-zero); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
+.manifesto p.manifesto-coda { color: var(--muted-blue); font-size: var(--t-sm); padding-top: var(--s2); margin-top: var(--s2); line-height: 1.6; }
 @media (min-width: 768px) {
-  .manifesto h2 { font-size: 1.9rem; margin-bottom: var(--s4); }
-  .manifesto ol li { grid-template-columns: 72px 1fr; padding: var(--s4) 0; }
-  .manifesto ol li::before { font-size: 2rem; }
+  .manifesto h2 { font-size: 1.9rem; margin-bottom: var(--s3); }
+  .manifesto ol li { grid-template-columns: 64px 1fr; padding: var(--s3) 0; }
+  .manifesto ol li::before { font-size: 1.75rem; }
 }
 
 /* ── Event requirement note ── */
