@@ -188,10 +188,10 @@ describe("index.html — FAQ order", () => {
   const summaries = Array.from(html.matchAll(/<details class="faq-item">\s*<summary[^>]*>([^<]+)<\/summary>/g))
     .map((m) => m[1].trim());
 
-  it("first FAQ asks who is behind the salon (trust first)", () => {
+  it("first FAQ asks who hosts the salon (trust first)", () => {
     assert.ok(summaries.length > 0, "No FAQ items found");
-    assert.match(summaries[0], /Wer steht hinter/i,
-      `Expected trust question first; got: "${summaries[0]}"`);
+    assert.match(summaries[0], /Wer (veranstaltet|steht hinter)/i,
+      `Expected trust/host question first; got: "${summaries[0]}"`);
   });
   it("second FAQ asks what differentiates the salon", () => {
     assert.match(summaries[1], /unterscheidet/i,

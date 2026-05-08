@@ -38,24 +38,17 @@ describe("march-event — editorial structure", () => {
     assert.ok(/article\.body[\s\S]*?max-width:\s*680px/.test(html),
       "Single-column article.body width missing");
   });
-  it("has numbered idea entries (1.–14.)", () => {
+  it("has numbered idea entries (1.–13.) — Liquid Democracy moved out", () => {
     const ideaNums = Array.from(html.matchAll(/<span class="idea-num">(\d+)\.<\/span>/g))
       .map((m) => Number(m[1]));
-    assert.ok(ideaNums.length >= 14, `Expected at least 14 numbered ideas, got ${ideaNums.length}`);
-    // Must include 1 and 14
-    assert.ok(ideaNums.includes(1) && ideaNums.includes(14),
-      "Idea numbering should span 1–14");
+    assert.ok(ideaNums.length >= 13, `Expected at least 13 numbered ideas, got ${ideaNums.length}`);
+    assert.ok(ideaNums.includes(1) && ideaNums.includes(13),
+      "Idea numbering should span 1–13");
   });
-  it("Liquid Democracy section uses A./B. entries", () => {
-    assert.ok(/<span class="idea-num">A\./.test(html), "Liquid-democracy A. entry missing");
-    assert.ok(/<span class="idea-num">B\./.test(html), "Liquid-democracy B. entry missing");
-  });
-});
-
-describe("march-event — case study attribution", () => {
-  it("Phase 1 names Andreas Klinger", () => {
-    assert.ok(/Andreas Klinger und ein Kernteam/.test(html),
-      "Phase 1 should name Andreas Klinger explicitly");
+  it("does NOT contain Liquid Democracy / EU–INC chapter (moved to workshop-references.md)", () => {
+    assert.ok(!/id="liquid"/.test(html), "Chapter V (Liquid Democracy) should be removed");
+    assert.ok(!/EU–INC: Wie ein Bürger/.test(html),
+      "EU-INC case study should be removed (moved to workshop-references.md)");
   });
 });
 
