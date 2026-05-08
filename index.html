@@ -139,17 +139,14 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 @media (min-width: 768px) { .past-events-title { font-size: 2rem; } }
 
 .past-events-feature { display: grid; grid-template-columns: 1fr; gap: var(--s4); align-items: center; margin-bottom: var(--s4); }
-.past-events-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.past-events-photos img { width: 100%; height: 140px; object-fit: cover; border-radius: var(--r-md); display: block; box-shadow: 0 2px 12px rgba(27,46,74,0.08); }
-.past-events-photos img:first-child { grid-column: 1 / -1; height: 220px; }
+.past-events-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.past-events-photos img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center; border-radius: var(--r-md); display: block; box-shadow: 0 2px 12px rgba(27,46,74,0.08); }
 .past-events-quote { padding: var(--s2) 0; border-left: 2px solid var(--accent); padding-left: var(--s3); }
-.past-events-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.4rem; color: var(--navy); line-height: 1.35; margin: 0 0 var(--s2); }
+.past-events-quote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.35rem; color: var(--navy); line-height: 1.35; margin: 0 0 var(--s2); }
 .past-events-quote cite { font-style: normal; font-size: 0.78rem; color: var(--muted-blue); letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; }
 @media (min-width: 800px) {
-  .past-events-feature { grid-template-columns: 1.2fr 1fr; gap: var(--s5); }
-  .past-events-photos img { height: 130px; }
-  .past-events-photos img:first-child { height: 270px; }
-  .past-events-quote p { font-size: 1.55rem; }
+  .past-events-feature { grid-template-columns: 1.1fr 1fr; gap: var(--s5); align-items: center; }
+  .past-events-quote p { font-size: 1.5rem; }
 }
 
 .past-events-desc { font-size: 1rem; color: var(--navy); line-height: 1.65; margin-bottom: var(--s3); max-width: 540px; }
@@ -712,7 +709,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
           <div class="event-date-col"><span class="month" data-i18n="event_month">Mai</span><span class="day">28</span></div>
           <div class="event-info">
             <div class="name" data-i18n="event_name">Salon AI Dinner — München</div>
-            <div class="event-last-public" data-i18n="event_last_public">Letzter öffentlicher Salon-Abend, den Franziska selbst leitet — danach nur noch auf private Einladung.</div>
+            <div class="event-last-public" data-i18n="event_last_public">Erstmal letzter öffentlicher Salon-Abend, den Franziska selbst leitet — danach nur noch auf private Einladung.</div>
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
             <div class="event-actions-row">
@@ -787,7 +784,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="past-events-photos">
         <img src="/resources/assets/IMG_3512.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
         <img src="/resources/assets/IMG_3526.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
-        <img src="/resources/assets/IMG_3530.JPG" alt="Salon AI Dinner · Munich · March 2026" loading="lazy" />
       </div>
       <blockquote class="past-events-quote">
         <p data-i18n="past_events_quote">„War top! Highly recommended."</p>

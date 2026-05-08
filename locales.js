@@ -168,7 +168,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -327,7 +327,7 @@ window.LOCALES = {
     march_footer_back: "← Zurück zu Salon AI",
     past_events_quote: "„War top! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "Letzter öffentlicher Salon-Abend, den Franziska selbst leitet — danach nur noch auf private Einladung.",
+    event_last_public: "Erstmal letzter öffentlicher Salon-Abend, den Franziska selbst leitet — danach nur noch auf private Einladung.",
     add_to_calendar: "In Kalender speichern",
   },
 
@@ -486,7 +486,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -645,7 +645,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -804,7 +804,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -963,7 +963,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1122,7 +1122,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1281,7 +1281,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1440,7 +1440,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1599,7 +1599,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1758,7 +1758,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -1917,7 +1917,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2076,7 +2076,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2235,7 +2235,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2394,7 +2394,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2553,7 +2553,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2712,7 +2712,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -2871,7 +2871,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3030,7 +3030,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3189,7 +3189,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3348,7 +3348,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3507,7 +3507,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3666,7 +3666,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
@@ -3825,7 +3825,7 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"It was excellent! Highly recommended.\"",
     past_events_quote_author: "Gina, Manager",
-    event_last_public: "The last public Salon evening hosted by Franziska — afterwards by private invitation only.",
+    event_last_public: "For now, the last public Salon evening Franziska herself hosts — afterwards by private invitation only.",
     add_to_calendar: "Add to calendar",
   },
 
