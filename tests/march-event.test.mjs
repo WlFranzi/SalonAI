@@ -1,0 +1,84 @@
+/**
+ * TDD — march-event/index.html integrity (editorial rewrite)
+ * Run: node --test tests/march-event.test.mjs
+ */
+import { describe, it } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dir = path.dirname(fileURLToPath(import.meta.url));
+const html  = readFileSync(path.join(__dir, "../march-event/index.html"), "utf8");
+
+describe("march-event — editorial rewrite (no card grid)", () => {
+  it("dropped the old card-icon emoji blocks", () => {
+    assert.ok(!/class="card-icon"/.test(html),
+      "Old .card-icon emoji blocks still present");
+  });
+  it("dropped the old colorful card variants (card-navy / card-gold)", () => {
+    assert.ok(!/class="card[^"]*card-navy"/.test(html),
+      "card-navy variant still present");
+    assert.ok(!/class="card[^"]*card-gold"/.test(html),
+      "card-gold variant still present");
+  });
+  it("uses the editorial paper / ink palette", () => {
+    assert.ok(/--paper:\s*#F8F5EE/.test(html), "Cream paper background missing");
+    assert.ok(/--ink-deep:\s*#0F1E33/.test(html), "Ink-deep token missing");
+  });
+  it("dropped the Outfit font (now uses DM Sans + Playfair like the main site)", () => {
+    assert.ok(!/family=Outfit/.test(html), "Outfit font still loaded");
+    assert.ok(/family=Playfair\+Display/.test(html), "Playfair Display missing");
+    assert.ok(/family=DM\+Sans/.test(html) || /DM\+Sans/.test(html), "DM Sans missing");
+  });
+});
+
+describe("march-event — editorial structure", () => {
+  it("has a single-column article body (max-width 680px)", () => {
+    assert.ok(/article\.body[\s\S]*?max-width:\s*680px/.test(html),
+      "Single-column article.body width missing");
+  });
+  it("has numbered idea entries (1.–14.)", () => {
+    const ideaNums = Array.from(html.matchAll(/<span class="idea-num">(\d+)\.<\/span>/g))
+      .map((m) => Number(m[1]));
+    assert.ok(ideaNums.length >= 14, `Expected at least 14 numbered ideas, got ${ideaNums.length}`);
+    // Must include 1 and 14
+    assert.ok(ideaNums.includes(1) && ideaNums.includes(14),
+      "Idea numbering should span 1–14");
+  });
+  it("Liquid Democracy section uses A./B. entries", () => {
+    assert.ok(/<span class="idea-num">A\./.test(html), "Liquid-democracy A. entry missing");
+    assert.ok(/<span class="idea-num">B\./.test(html), "Liquid-democracy B. entry missing");
+  });
+});
+
+describe("march-event — case study attribution", () => {
+  it("Phase 1 names Andreas Klinger", () => {
+    assert.ok(/Andreas Klinger und ein Kernteam/.test(html),
+      "Phase 1 should name Andreas Klinger explicitly");
+  });
+});
+
+describe("march-event — language switcher disabled (DE-only)", () => {
+  it("language switcher is hidden via display:none", () => {
+    assert.ok(/#lang-switcher-m\s*\{\s*display:\s*none/.test(html) || !/#lang-switcher-m/.test(html),
+      "march-event language switcher should be hidden in DE-only mode");
+  });
+});
+
+describe("march-event — footer wording", () => {
+  it("uses 'Entstanden am Salon AI Dinner' (not 'Entwickelt')", () => {
+    assert.ok(!/Entwickelt beim Salon AI Dinner/.test(html), "Old 'Entwickelt' wording still present");
+    assert.ok(/Entstanden am Salon AI Dinner/.test(html), "New 'Entstanden' wording missing");
+  });
+  it("host credit reads '15+ Jahre KI bei Amazon, Writer, SoundCloud'", () => {
+    assert.ok(/15\+\s*Jahre\s*KI\s*bei\s*Amazon, Writer, SoundCloud/.test(html),
+      "Host bio should lead with the AI-experience signal");
+  });
+});
+
+describe("march-event — no leftover emojis in headings", () => {
+  it("does not contain decorative emojis like 🎯 / 🔑 / 📍", () => {
+    assert.ok(!/🎯|🔑|📍/.test(html), "Decorative summary-box emojis still present");
+  });
+});

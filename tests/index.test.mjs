@@ -29,15 +29,18 @@ describe("index.html — skills section", () => {
   it("has a #skills-list container", () => {
     assert.ok(html.includes('id="skills-list"'), "Missing #skills-list");
   });
-  it("buildSkills renders items with .open class by default", () => {
-    assert.ok(html.includes('"skill-item open"') || html.includes("'skill-item open'") || html.includes("skill-item open"),
-      "First skill item must default to open");
+  it("buildSkills opens the first skill by default (i === 0)", () => {
+    // The buildSkills template appends ' open' to the className when i === 0.
+    // Look for the conditional rather than the concatenated literal.
+    assert.ok(
+      /i\s*===\s*0\s*\?\s*['"`]\s*open\s*['"`]/.test(html),
+      "First skill item must conditionally receive the 'open' class on i===0"
+    );
   });
-  it("skill-body is visible by default (not display:none)", () => {
-    // The rule '.skill-body { display: block }' must come before any override
-    const bodyRule = html.match(/\.skill-body\s*\{[^}]*display\s*:\s*(\w+)/);
-    assert.ok(bodyRule, "Could not find .skill-body CSS rule");
-    assert.equal(bodyRule[1], "block", ".skill-body default must be display:block");
+  it(".skill-item.open .skill-body is display:block", () => {
+    const openBody = html.match(/\.skill-item\.open\s+\.skill-body\s*\{[^}]*display\s*:\s*(\w+)/);
+    assert.ok(openBody, "Could not find .skill-item.open .skill-body CSS rule");
+    assert.equal(openBody[1], "block", ".skill-item.open .skill-body must be display:block");
   });
 });
 
@@ -48,6 +51,13 @@ describe("index.html — past event card", () => {
   });
   it("shows Europa 2041 title in past events", () => {
     assert.ok(html.includes("Europa 2041"), "Missing Europa 2041 in past events");
+  });
+  it("date is in DE format, not US format", () => {
+    assert.ok(!/Mar 25, 2026/.test(html), "US date format still present");
+    assert.ok(/25\.\s*März\s*2026/.test(html), "DE date format missing");
+  });
+  it("location reads 'München', not 'Munich, Germany'", () => {
+    assert.ok(!/Munich,\s*Germany/.test(html), "English location string still present");
   });
 });
 
@@ -61,5 +71,60 @@ describe("index.html — script loading", () => {
   });
   it("standalone europa-feature banner is removed", () => {
     assert.ok(!html.includes('class="europa-feature"'), "europa-feature banner still present — should be deleted");
+  });
+});
+
+// ── Hero (HNWI pass) ─────────────────────────────────────────────────────────
+describe("index.html — hero", () => {
+  it("hero CTA points to #events (not directly to Stripe)", () => {
+    const m = html.match(/<a[^>]*class="[^"]*hero-cta[^"]*"[^>]*>/);
+    assert.ok(m, "hero-cta link not found");
+    assert.ok(/href="#events"/.test(m[0]), `Expected hero CTA href="#events", got: ${m[0]}`);
+  });
+  it("hero contains alumni signal under CTA", () => {
+    assert.ok(/class="hero-alumni"/.test(html), ".hero-alumni element missing");
+    assert.ok(/Bisherige Runden/.test(html), "Hero alumni line text missing");
+  });
+  it("alumni line lists every audience group (incl. Kreative)", () => {
+    const m = html.match(/<p class="hero-alumni"[^>]*>([^<]+)<\/p>/);
+    assert.ok(m, "hero-alumni paragraph not found");
+    const groups = ["Investor:innen", "Gründer:innen", "Führungskräfte", "Journalist:innen", "Abgeordnete", "Kreative"];
+    for (const g of groups) {
+      assert.ok(m[1].includes(g), `Alumni line missing audience group: ${g}`);
+    }
+  });
+});
+
+// ── FAQ order (trust first) ──────────────────────────────────────────────────
+describe("index.html — FAQ order", () => {
+  const summaries = Array.from(html.matchAll(/<details class="faq-item">\s*<summary>([^<]+)<\/summary>/g))
+    .map((m) => m[1].trim());
+
+  it("first FAQ asks who is behind the salon (trust first)", () => {
+    assert.ok(summaries.length > 0, "No FAQ items found");
+    assert.match(summaries[0], /Wer steht hinter/i,
+      `Expected trust question first; got: "${summaries[0]}"`);
+  });
+  it("second FAQ asks what differentiates the salon", () => {
+    assert.match(summaries[1], /unterscheidet/i,
+      `Expected differentiation question second; got: "${summaries[1]}"`);
+  });
+  it("third FAQ surfaces the March-Salon outcome", () => {
+    assert.match(summaries[2], /März-Salon/i,
+      `Expected März-Salon proof third; got: "${summaries[2]}"`);
+  });
+});
+
+// ── Default language hardening ───────────────────────────────────────────────
+describe("index.html — language init", () => {
+  it("init script applies 'de' (not 'en') as default while switcher is hidden", () => {
+    assert.ok(!/applyLocale\(\s*['"]en['"]\s*\)/.test(html),
+      "Should not auto-apply 'en' as default");
+    assert.ok(/applyLocale\(\s*['"]de['"]\s*\)/.test(html),
+      "Init must call applyLocale('de')");
+  });
+  it("language switcher is hidden via CSS (DE-only mode)", () => {
+    assert.ok(/#lang-switcher\s*\{\s*display:\s*none/.test(html),
+      "#lang-switcher must be display:none in DE-only mode");
   });
 });
