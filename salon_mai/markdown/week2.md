@@ -1,0 +1,549 @@
+# Couch to 5K for AI — Week 2: Onboard Your Chief of Staff
+
+**Source:** https://couchto5k.ai
+
+---
+
+Made by [Hilary Gridley](https://www.linkedin.com/in/hilarygridley/) 
+[Newsletter →](https://hils.substack.com) [Course →](https://maven.com/hilary-gridley/ai-powered-people-management)
+
+ 
+
+![Couch to 5K for AI](/couch-to-5k-for-ai.svg) 
+# Couch to 5K for AI
+ 
+30 days of ten-minute exercises to get you from chatting to building with AI.
+ Grab a workout buddy. Share with your team →
+ 
+
+## Lock in your race
+ 
+Pick a date to publicly demo something you build in 30 days. This commitment will keep you accountable to your training.
+ 
+
+Commit to get optional calendar invites.
+ Commit
+
+ 
+
+## Your 30 days of training
+ 4 weeks · 30 exercises
+ 
+Week 1 Set the Bar High Week 2 Onboard Your Chief of Staff Week 3 Build Your First Skill Week 4 Put AI to Work
+ 
+
+## Week 2: Onboard Your Chief of Staff
+ 
+Set up Claude Code as your personal system — context, calendar, reminders, and daily rhythm.
+
+ 
+
+ Day 8 Teach AI Who You Are
+ 
+
+Yesterday Claude created a folder. Today we’re going to work in that folder so that Claude can set up a simple structure for everything it needs to know about you and your work.
+ 
+1. 
+Open the Claude desktop app and navigate to Claude Code. Start a new session — you want a fresh chat for today, not yesterday’s.
+
+ 
+2. 
+Going forward, we’ll be working in the context directory folder. To get there, click the folder switcher at the top of the chat.
+
+ ![Claude Code desktop app showing the folder switcher with Desktop currently selected](/thirtydays/day-8-folder-switcher.png) 
+3. 
+If you see “context-directory” in the list, select it. If you don’t, click “Open folder…” and navigate to your Desktop to find and open it.
+
+ ![Folder switcher dropdown showing recent folders and an Open folder option](/thirtydays/day-8-folder-dropdown.png) 
+4. 
+You should now see “context-directory” in the folder switcher.
+
+ ![Claude Code desktop app with context-directory selected in the folder switcher](/thirtydays/day-8-context-directory-selected.png) 
+5. 
+Copy the prompt below and paste it into the chat box in Claude Code. Hit Enter.
+
+ 
+
+Paste this prompt
+ 
+
+Set up my context directory on the Desktop with the following folders:
+
+- me/
+- team/
+- my-manager/
+- projects/
+- company-context/
+- daily-notes/
+
+Ask me three questions that will help you fill in the most important context in this folder. Save the answers in the right folders.
+ Copy
+
+ ![Claude Code desktop app with the context directory prompt pasted and Desktop folder selected](/thirtydays/day-8-prompt-pasted.png) 
+6. 
+Claude will ask for permission before creating anything on your computer. Click Allow for each request that comes up.
+
+ ![Claude asking for permission to create the context directory structure, with Deny and Allow once buttons](/thirtydays/day-8-permission-prompt.png) 
+7. 
+Answer the three questions. The folders are there, the basics are in. You can click into any of the files to see what Claude has written in them.
+
+ 
+8. 
+Paste the prompt below and hit Enter.
+
+ 
+
+Paste this prompt
+ 
+
+Look through my Documents and Downloads folders and find one file that might be useful context about me or my work. Tell me what it is and ask if you should move it to the context directory.
+ Copy
+
+ 
+9. 
+Look at the file it recommends. If you think it will add to your context, say yes. Otherwise, say no.
+
+ 
+You didn't sit down and write a manual about yourself. You answered three questions and now Claude has somewhere to put everything it learns about you from here on out.
+ 
+You're done for the day. Tomorrow: voice input.
+ 
+
+Key Takeaway
+ 
+A context directory means you never have to re-explain yourself. Claude can help you build it over time, based on things you tell it and by finding relevant files on your computer.
+
+ ✓ Mark Day 8 complete
+
+ 
+
+ Day 9 Set Up Voice Input
+ 
+
+From here on out, you’ll be talking to Claude more than typing. Dictation is faster, lower friction, and closer to how you actually think. Set it up now and you’ll use it for the rest of the program.
+ 
+1. 
+Open the Claude desktop app and navigate to Claude Code. Select your context directory folder on the Desktop (the one you created two days ago) in the folder switcher.
+
+ ![Claude Code desktop app with context-directory selected in the folder switcher](/thirtydays/day-8-context-directory-selected.png) 
+2. 
+Click the caret next to the microphone button and toggle “Hold to record” off. This allows you to talk for a few minutes without needing to hold down the button the whole time. If your computer asks for permission to give Claude access to the microphone, allow it.
+
+ ![Microphone dropdown showing Hold to record toggle switched off](/thirtydays/day-9-hold-to-record.png) 
+3. 
+Click the microphone to begin recording.
+
+ ![Claude Code desktop app with the microphone button highlighted below the chat box](/thirtydays/day-9-microphone-button.png) 
+4. 
+Say something like: “I’m going to tell you about my goals for the next year. Please add any useful information into a markdown file in the Me folder in my context directory.”
+
+ 
+5. 
+Talk about your goals for two minutes. When you’re done, click the microphone button again to stop recording, then hit Enter.
+
+ 
+6. 
+Review Claude’s response. If it doesn’t tell you what it changed, ask it what it changed in your context directory.
+
+ 
+Take this further: I like [Wispr Flow](https://wisprflow.ai/) for dictation across all the other tools I use — it's fast and reliable. Not a paid or affiliate link, I just like it.
+ 
+You're done for the day. Tomorrow: tracking your to-dos.
+ 
+
+Key Takeaway
+ 
+Talking is faster than typing and closer to how you actually think. Dictation removes the friction between having an idea and acting on it.
+
+ ✓ Mark Day 9 complete
+
+ 
+
+ Day 10 Track Your To-Dos
+ 
+
+Claude can help you keep track of everything you have to do. You talk, it writes it down and organizes it for you.
+ 
+1. 
+Open the Claude desktop app, navigate to Claude Code, and start a new session. Select the context directory folder in the folder switcher.
+
+ 
+
+Paste this prompt
+ 
+
+I want you to help me keep track of what I need to get done. Create a file called reminders.md in my context directory. Organize it by category — whatever categories make sense based on what I tell you. I'm going to dictate everything that's on my plate right now.
+ Copy
+
+ 
+2. 
+Hit the record button and just talk. Dump everything on your plate: work tasks, life admin, errands, things you keep forgetting, stuff that's been nagging you. Don't organize it, just say it all.
+
+ 
+3. 
+Click the record button again when you're done, then press Enter.
+
+ 
+4. 
+Paste the prompt below to make sure Claude keeps your list updated going forward. (CLAUDE.md is a special file Claude reads at the start of every conversation in this folder — it's where standing instructions live.)
+
+ 
+
+Paste this prompt
+ 
+
+Add an instruction to my CLAUDE.md file (and create this file if you haven't already): whenever I mention something I need to do, a task, a reminder, or a to-do, add it to reminders.md in my context directory. Keep the file organized by category and urgency.
+ Copy
+
+ 
+Now whenever you tell Claude about something you need to do, it'll add it to your list automatically. You don't have to ask.
+ 
+You're done for the day. Tomorrow: connecting your calendar.
+ 
+Bonus: want to make idea capture even easier, directly from your phone lock screen? [Watch Hilary on "How I AI"](https://youtu.be/LJ1YZ3Uek3g?t=600) to see how. She begins talking about this at 10:00.
+ 
+
+Key Takeaway
+ 
+You don't need a task management app. Just tell Claude what's on your mind and it keeps track for you, every conversation.
+
+ ✓ Mark Day 10 complete
+
+ 
+
+ Day 11 Connect Your Calendar
+ 
+
+Once Claude is connected to your Calendar, it can help you manage your schedule and get more out of your time. This takes about two minutes.
+ 
+Part 1: Set up the connection
+ 
+1. 
+Open the Claude desktop app. In the left sidebar, click Customize.
+
+ ![Claude desktop app sidebar showing the Customize option](/thirtydays/day-11-customize-sidebar.png) 
+2. 
+Click Connect your apps.
+
+ ![Customize Claude page with Connect your apps, Create new skills, and Browse plugins options](/thirtydays/day-11-connect-your-apps.png) 
+3. 
+Find your calendar in the list (e.g. Google Calendar or Outlook) and click on it.
+
+ ![Connectors directory with Google Calendar highlighted](/thirtydays/day-11-google-calendar.png) 
+Don’t see your calendar (e.g. you use Apple Calendar)? Use the troubleshooting approach from Day 6: take a screenshot, paste it into Claude Code, and tell it you’re trying to connect your calendar to your computer. Ask it to walk you through the steps.
+ 
+4. 
+Click Connect.
+
+ ![Google Calendar connector detail page with a Connect button](/thirtydays/day-11-connect-button.png) 
+5. 
+Sign in with your Google account. When you see the permissions screen, check Select all, then click Continue.
+
+ 
+Nervous about letting AI edit your calendar? Leave the third box unchecked. You can come back and turn it on later — but know that Claude is much more helpful when it can actually make changes, not just read.
+ ![Google permissions screen showing Select all checked with all calendar permissions granted](/thirtydays/day-11-select-all.png) ![Cancel and Continue buttons at the bottom of the permissions screen](/thirtydays/day-11-continue.png) 
+That’s it. Claude can now read and write to your Google Calendar.
+ 
+Part 2: Try it out
+ 
+6. 
+Navigate to Claude Code. Select the context directory folder in the folder switcher.
+
+ 
+7. 
+Paste the prompt below and hit Enter.
+
+ 
+
+Paste this prompt
+ 
+
+Pull up my calendar for tomorrow. Now look at my reminders.md. Pick two things from the reminders list that I could realistically get done tomorrow and add them to my calendar in time slots that make sense around my existing meetings. Show me what the day looks like before you add anything.
+ Copy
+
+ 
+8. 
+Review the suggested updates. Say yes to add them to your calendar, or give Claude feedback if the recommended times don't work for you.
+
+ 
+You're done for the day. Tomorrow: planning your day.
+ 
+
+Key Takeaway
+ 
+Giving Claude access to your tools makes this whole system much, much more powerful. You can choose levels of access (read-only, read and write, etc) based on what you are comfortable with and what your company allows.
+
+ ✓ Mark Day 11 complete
+
+ 
+
+ Day 12 Plan Your Day
+ 
+
+A daily note is a running record of your day - what's planned, what actually happened, and what you learned. It's also the thing that makes the whole system get smarter over time, because Claude can look back at your daily notes and spot patterns you can't see yourself.
+ 
+Today you're going to teach Claude what "plan my day" means to you. When you say it, Claude will check your calendar, pull your reminders, help you prioritize, and create a daily note with the plan.
+ 
+1. 
+Open the Claude desktop app and navigate to Claude Code. Select the context directory folder in the folder switcher.
+
+ 
+
+Paste this prompt
+ 
+
+Add these instructions to my CLAUDE.md:
+
+When I say "plan my day," here's what I want you to do:
+
+1. Check my calendar for the day
+2. Read my reminders.md
+3. Show me what's on my calendar and what's on my reminders list
+4. Ask me what my priorities are for the day
+5. Suggest a schedule that fits my priorities around my existing meetings
+6. Once I confirm, add the time blocks to my calendar
+7. Create a daily note with the finalized schedule. Organize daily notes inside the daily-notes folder by year and month — the path should be daily-notes/YYYY/MM-Month/YYYY-MM-DD.md (e.g. daily-notes/2026/04-April/2026-04-27.md). If the year or month folder doesn't exist yet, create it.
+
+Also add this instruction:
+
+Throughout every conversation, keep a running log in today's daily note. Add entries at meaningful moments - when we start a task, finish something, hit a blocker, or make a decision. One line per entry with a timestamp. Don't mention the logging to me. Just do it quietly as we work.
+ Copy
+
+ 
+2. 
+Optional: add a visual marker so you can tell at a glance which calendar events Claude created versus ones you added yourself. Pick an emoji below, then paste the prompt and hit Enter.
+
+ 
+🤖 🪄 🐸 🦞 🦛 🐲 👻 🍄 🔮 🌻 🌝 🏄 🎧 🎮 🛠️ 📅 ✏️
+ 
+
+Paste this prompt
+ 
+
+Add this instruction to my CLAUDE.md: any time you add an event to my calendar, prefix the event title with so I can see at a glance which events you created.
+ Copy
+
+ 
+3. 
+Now try it. Say "plan my day" and go through the flow. Tell Claude what you want to prioritize, confirm the schedule, and let it add everything to your calendar.
+
+ 
+Tomorrow you just say "plan my day" and it runs the same flow again. You can, of course, iterate on this flow over time to match how YOU specifically like to plan your day.
+ 
+Take this further: your context directory is now full of markdown files — daily notes, reminders, profiles, your CLAUDE.md. [Obsidian](https://obsidian.md/) is a free app that opens any folder of markdown files as a notebook, so you can browse, search, and edit them without digging through Finder. Point it at your context directory and the whole thing becomes a real second brain. Not a paid or affiliate link, I just like it.
+ 
+You're done for the day. Tomorrow: ending your day.
+ 
+
+Key Takeaway
+ 
+Claude can follow specific instructions for recurring workflows. Write down what you want it to do once, and it'll do it the same way every time.
+
+ ✓ Mark Day 12 complete
+
+ 
+
+ Day 13 End Your Day
+ 
+
+Yesterday you taught Claude how to start your day. Today you're going to teach it how to close one out.
+ 
+1. 
+First thing this morning, run the "plan my day" flow you set up yesterday. You'll need a real day to wrap up tonight for the rest of this exercise to make sense.
+
+ 
+2. 
+Once you're ready to set up the end-of-day flow, open the Claude desktop app and navigate to Claude Code. Select the context directory folder in the folder switcher.
+
+ 
+
+Paste this prompt
+ 
+
+Update my CLAUDE.md with these instructions:
+
+When I say "wrap up my day," run an evening sweep:
+
+1. Summarize what got done today and what didn't. Update reminders.md.
+2. Tell me what I should prioritize tomorrow.
+ Copy
+
+ 
+3. 
+Now try it. Say "wrap up my day" and go through the flow.
+
+ 
+You now have a daily rhythm: "plan my day" in the morning, "wrap up my day" at night.
+ 
+You're done for the day. Tomorrow: connecting your inbox.
+ 
+
+Key Takeaway
+ 
+Bookend your day with Claude. Plan in the morning, sweep at night. The daily note captures everything in between.
+
+ ✓ Mark Day 13 complete
+
+ 
+
+ Day 14 Connect Your Inbox
+ 
+
+Your system can plan your day and track your reminders, but it can't see your inbox. A lot of what you need to do lives in email, and a lot of what slips through the cracks is an email you meant to respond to but didn't. Today you connect Claude to your email with read-only access, so it can read emails but can't send anything on your behalf.
+ 
+If you can't or don't want to connect your email, think about what would actually help you wrap your day — and ask Claude to help you set that up instead.
+ 
+Part 1: Set up the connection
+ 
+1. 
+Open the Claude desktop app. In the left sidebar, click Customize.
+
+ 
+2. 
+Click Connect your apps.
+
+ 
+3. 
+Find your email in the list (e.g. Gmail or Outlook) and click on it. You could also go with Slack.
+
+ 
+If your email service isn't listed, remember the troubleshooting guide from Day 6 — tell Claude Code what tool you want to connect and ask it to walk you through it step by step. Note: if you're on a work account and don't see email available at all, your admin has likely turned this off.
+ 
+4. 
+Click Connect, sign in with your account, and grant the permissions it asks for.
+
+ 
+That’s it. Claude can now read your email.
+ 
+Part 2: Try it out
+ 
+5. 
+Navigate to Claude Code. Select the context directory folder in the folder switcher.
+
+ 
+6. 
+Paste the prompt below and hit Enter.
+
+ 
+
+Paste this prompt
+ 
+
+Check my email from the past 48 hours. Are there any messages that look like they need a response that I haven't replied to yet? Add them to a new section in reminders.md called "Emails to respond to" with who it's from, the subject, and a one-line summary of what they need.
+ Copy
+
+ 
+7. 
+Review what Claude finds. If anything looks wrong or you want to adjust how it categorizes emails, tell it.
+
+ 
+Part 3: Add email to your evening sweep
+ 
+
+Paste this prompt
+ 
+
+Update the "wrap up my day" instructions in my CLAUDE.md to also:
+
+1. Check my email from the past 24 hours. Show me a numbered list of anything that might need a response.
+2. Ask me any quick questions that would help you draft responses, but keep it quick — I’m trying to wrap my day.
+3. Add a note to today’s daily note logging any important emails I sent or received — things that would be helpful to have a record of. Also draft responses to the outstanding emails and leave them in the same file for me to review.
+ Copy
+
+ 
+8. 
+Now try it. Say "wrap up my day" and go through the full flow.
+
+ 
+Your evening sweep now includes an inbox check. You don't have to remember to go through your email looking for things you missed.
+ 
+Part 4: Make drafts sound like you
+ 
+Out of the box, Claude’s drafts will sound generic. A short style guide based on your real sent emails fixes that fast.
+ 
+9. 
+In Claude Code (with the context directory open), paste the prompt below and hit Enter.
+
+ 
+
+Paste this prompt
+ 
+
+Pull the last 30 emails I sent (skip one-liners and forwards). Look for patterns in how I write — greetings, sign-offs, sentence length, tone, words I use a lot, words I avoid, how I push back, how I say no. Write me an email style guide based on what you find and save it as email-style-guide.md in this directory.
+ Copy
+
+ 
+10. 
+Skim the style guide. Edit anything that feels off — Claude will sometimes overfit to a couple of emails.
+
+ 
+11. 
+Paste the prompt below to wire it into your evening sweep.
+
+ 
+
+Paste this prompt
+ 
+
+Update my CLAUDE.md so that whenever you draft an email reply for me, you first read email-style-guide.md and follow it.
+ Copy
+
+ 
+Now when Claude drafts replies during your wrap-up, the voice will land much closer to how you actually write.
+ 
+You're done for the day. Next week: teaching AI who you work with.
+ 
+
+Key Takeaway
+ 
+Your daily and evening routines aren't fixed — keep iterating on them over the next couple weeks until they're in a place that's most helpful for you.
+
+ ✓ Mark Day 14 complete
+
+ 
+![Hilary Gridley](/hilary-bio-photo.webp) 
+
+Hi, I'm Hilary. I teach leaders to use AI thoughtfully. If this has been useful, there's more:
+ 
+[Subscribe to Writerbuilder →](https://hils.substack.com) [Take my Supermanagers course →](https://maven.com/hilary-gridley/ai-powered-people-management)
+
+ 
+
+## FAQ
+ 
+
+### Before you start
+ 
+How is this different from other AI tutorials?
+ 
+Who made this, and why should I trust them?
+ 
+Do I need to know how to code?
+ 
+If I don't code at work, why do I need a coding agent?
+ 
+Do I need a paid Claude subscription?
+ 
+Does this work on Windows?
+ 
+Could I use Cursor or Codex instead?
+
+ 
+
+### Key concepts
+ 
+What is a .md file, and why am I using those?
+ 
+Why does this program use local files on my computer?
+ 
+What is a context directory and why do I need it?
+ 
+What is a CLAUDE.md file?
+
+ 
+
+### Tips & tools
+ 
+Are there other tools you recommend?
+ 
+How do I turn off Claude asking for permissions every time?

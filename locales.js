@@ -18,6 +18,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   en: {
     nav_cta:       "Join a Dinner →",
+    hero_cta:      "Join the Salon →",
     hero_strapline: "Because the only way to know where you and your team really stand on AI is to have built it yourself.",
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon AI exists",
@@ -58,7 +59,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Event Series",
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
-    hero_h1:       'A hands-on evening: build your own AI assistant, <em style=\"color:var(--sky-deep);font-style:italic;\">then use it for Europe.</em>',
+    hero_h1:       'A hands-on evening: build your own AI assistant, <em>then use it for Europe.</em>',
     events_h2:     "Events",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU event series:</span> Build your own agent and deploy it to create your personal pro-EU action plan <span style="color:var(--muted-blue);font-weight:400;">(examples below)</span>.',
     upcoming:      "Upcoming",
@@ -172,6 +173,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   de: {
     nav_cta:       "An einem Dinner teilnehmen →",
+    hero_cta:      "Zum Salon anmelden →",
     hero_strapline: "Denn wer wirklich wissen will, wo er und sein Team bei KI gerade stehen, muss es einmal selbst gebaut haben.",
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon AI gibt",
@@ -212,7 +214,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Eventreihe",
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
-    hero_h1:       'Ein Abend mit Praxis: Baue deinen KI-Assistenten — <em style=\"color:var(--sky-deep);font-style:italic;\">und nutze ihn für Europa.</em>',
+    hero_h1:       'Ein Abend mit Praxis: Baue deinen KI-Assistenten — <em>und nutze ihn für Europa.</em>',
     events_h2:     "Veranstaltungen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU Eventreihe:</span> Entwickle deinen eigenen Agenten und setze ihn ein, um deinen persönlichen Pro-EU-Aktionsplan zu erstellen <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.',
     upcoming:      "Bevorstehend",
@@ -326,6 +328,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   fr: {
     nav_cta:       "Rejoindre un dîner →",
+    hero_cta:      "Rejoindre le Salon →",
     hero_strapline: "Car la seule façon de savoir où vous et votre équipe en êtes vraiment avec l'IA, c'est de l'avoir construite vous-même.",
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon AI existe",
@@ -366,7 +369,7 @@ window.LOCALES = {
     hero_eyebrow:  "Série d'événements Pro-UE",
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
-    hero_h1:       'Une soirée pratique : construisez votre assistant IA, <em style=\"color:var(--sky-deep);font-style:italic;\">puis utilisez-le pour l\'Europe.</em>',
+    hero_h1:       'Une soirée pratique : construisez votre assistant IA, <em>puis utilisez-le pour l\'Europe.</em>',
     events_h2:     "Événements",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-UE :</span> Créez votre propre agent et déployez-le pour élaborer votre plan d\'action Pro-UE personnel <span style="color:var(--muted-blue);font-weight:400;">(exemples ci-dessous)</span>.',
     upcoming:      "À venir",
@@ -480,6 +483,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   es: {
     nav_cta:       "Unirse a una cena →",
+    hero_cta:      "Unirme al Salón →",
     hero_strapline: "Porque la única forma de saber dónde estáis tú y tu equipo realmente con la IA es haberla construido tú mismo.",
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon AI",
@@ -634,6 +638,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   it: {
     nav_cta:       "Partecipa a una cena →",
+    hero_cta:      "Unisciti al Salon →",
     hero_strapline: "Perché l'unico modo di sapere dove tu e il tuo team siete davvero con l'IA è averla costruita tu stesso.",
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon AI",
@@ -674,7 +679,7 @@ window.LOCALES = {
     hero_eyebrow:  "Serie di eventi Pro-UE",
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
-    hero_h1:       'Una serata pratica: costruisci il tuo assistente IA, <em style=\"color:var(--sky-deep);font-style:italic;\">poi usalo per l\'Europa.</em>',
+    hero_h1:       'Una serata pratica: costruisci il tuo assistente IA, <em>poi usalo per l\'Europa.</em>',
     events_h2:     "Eventi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Crea il tuo agente e distribuiscilo per elaborare il tuo piano d\'azione Pro-UE personale <span style="color:var(--muted-blue);font-weight:400;">(esempi di seguito)</span>.',
     upcoming:      "In arrivo",
@@ -788,6 +793,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   pt: {
     nav_cta:       "Participar de um jantar →",
+    hero_cta:      "Aderir ao Salon →",
     hero_strapline: "Porque a única forma de saber onde você e a sua equipa realmente estão com a IA é tê-la construído você mesmo.",
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon AI",
@@ -942,6 +948,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   nl: {
     nav_cta:       "Sluit je aan bij een diner →",
+    hero_cta:      "Schrijf je in voor de Salon →",
     hero_strapline: "Want de enige manier om te weten waar jij en je team echt staan met AI, is het zelf te hebben gebouwd.",
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon AI bestaat",
@@ -982,7 +989,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenementenreeks",
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
-    hero_h1:       'Een praktische avond: bouw je AI-assistent, <em style=\"color:var(--sky-deep);font-style:italic;\">gebruik hem dan voor Europa.</em>',
+    hero_h1:       'Een praktische avond: bouw je AI-assistent, <em>gebruik hem dan voor Europa.</em>',
     events_h2:     "Evenementen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenementenreeks:</span> Bouw je eigen agent en zet hem in om je persoonlijk pro-EU-actieplan te maken <span style="color:var(--muted-blue);font-weight:400;">(voorbeelden hieronder)</span>.',
     upcoming:      "Aankomend",
@@ -1096,6 +1103,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   pl: {
     nav_cta:       "Dołącz do kolacji →",
+    hero_cta:      "Dołącz do Salonu →",
     hero_strapline: "Bo jedyny sposób, by się dowiedzieć, gdzie ty i twój zespół naprawdę jesteście w AI, to samodzielnie coś zbudować.",
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon AI istnieje",
@@ -1136,7 +1144,7 @@ window.LOCALES = {
     hero_eyebrow:  "Seria wydarzeń Pro-UE",
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
-    hero_h1:       'Praktyczny wieczór: zbuduj asystenta AI, <em style=\"color:var(--sky-deep);font-style:italic;\">a potem użyj go dla Europy.</em>',
+    hero_h1:       'Praktyczny wieczór: zbuduj asystenta AI, <em>a potem użyj go dla Europy.</em>',
     events_h2:     "Wydarzenia",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Seria Pro-UE:</span> Zbuduj własnego agenta i wdróż go, aby stworzyć swój osobisty pro-UE plan działania <span style="color:var(--muted-blue);font-weight:400;">(przykłady poniżej)</span>.',
     upcoming:      "Nadchodzące",
@@ -1250,6 +1258,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   ro: {
     nav_cta:       "Alătură-te unei cine →",
+    hero_cta:      "Alătură-te Salonului →",
     hero_strapline: "Pentru că singura modalitate de a ști unde te afli tu și echipa ta cu AI este să o fi construit tu însuți.",
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon AI",
@@ -1290,7 +1299,7 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de evenimente Pro-UE",
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
-    hero_h1:       'O seară practică: construiește-ți asistentul AI, <em style=\"color:var(--sky-deep);font-style:italic;\">apoi folosește-l pentru Europa.</em>',
+    hero_h1:       'O seară practică: construiește-ți asistentul AI, <em>apoi folosește-l pentru Europa.</em>',
     events_h2:     "Evenimente",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Construiește-ți propriul agent și implementează-l pentru a-ți crea planul personal de acțiune Pro-UE <span style="color:var(--muted-blue);font-weight:400;">(exemple mai jos)</span>.',
     upcoming:      "Următor",
@@ -1404,6 +1413,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   sv: {
     nav_cta:       "Gå med på en middag →",
+    hero_cta:      "Anmäl dig till Salongen →",
     hero_strapline: "För det enda sättet att veta var du och ditt team verkligen står med AI är att ha byggt något själv.",
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon AI finns",
@@ -1444,7 +1454,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenemangserie",
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
-    hero_h1:       'En praktisk kväll: bygg din AI-assistent, <em style=\"color:var(--sky-deep);font-style:italic;\">använd den sedan för Europa.</em>',
+    hero_h1:       'En praktisk kväll: bygg din AI-assistent, <em>använd den sedan för Europa.</em>',
     events_h2:     "Evenemang",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenemangserie:</span> Bygg din egen agent och driftsätt den för att skapa din personliga pro-EU-handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(exempel nedan)</span>.',
     upcoming:      "Kommande",
@@ -1558,6 +1568,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   cs: {
     nav_cta:       "Přidej se na večeři →",
+    hero_cta:      "Přihlásit se na Salon →",
     hero_strapline: "Protože jediný způsob, jak zjistit, kde vy a váš tým s AI skutečně stojíte, je něco si sám postavit.",
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon AI",
@@ -1598,7 +1609,7 @@ window.LOCALES = {
     hero_eyebrow:  "Série akcí Pro-EU",
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktický večer: postavte si AI asistenta, <em style=\"color:var(--sky-deep);font-style:italic;\">pak ho použijte pro Evropu.</em>',
+    hero_h1:       'Praktický večer: postavte si AI asistenta, <em>pak ho použijte pro Evropu.</em>',
     events_h2:     "Akce",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-EU:</span> Postav svého vlastního agenta a nasaď ho, aby vytvořil tvůj osobní pro-EU akční plán <span style="color:var(--muted-blue);font-weight:400;">(příklady níže)</span>.',
     upcoming:      "Nadcházející",
@@ -1712,6 +1723,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   hu: {
     nav_cta:       "Csatlakozz egy vacsorához →",
+    hero_cta:      "Csatlakozom a Szalonhoz →",
     hero_strapline: "Mert csak akkor tudod, hol állsz te és a csapatod a mesterséges intelligenciával, ha magad is építettél valamit.",
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon AI",
@@ -1752,7 +1764,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU rendezvénysorozat",
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
-    hero_h1:       'Egy gyakorlati este: építsd meg az AI-asszisztensed, <em style=\"color:var(--sky-deep);font-style:italic;\">majd használd Európáért.</em>',
+    hero_h1:       'Egy gyakorlati este: építsd meg az AI-asszisztensed, <em>majd használd Európáért.</em>',
     events_h2:     "Rendezvények",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sorozat:</span> Építsd meg saját agented és telepítsd, hogy személyes pro-EU cselekvési tervet hozz létre <span style="color:var(--muted-blue);font-weight:400;">(példák alább)</span>.',
     upcoming:      "Közelgő",
@@ -1866,6 +1878,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   sk: {
     nav_cta:       "Pridaj sa na večeru →",
+    hero_cta:      "Prihlásiť sa na Salón →",
     hero_strapline: "Pretože jediný spôsob, ako zistiť, kde vy a váš tím s AI skutočne stojíte, je niečo si sám postaviť.",
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon AI",
@@ -1906,7 +1919,7 @@ window.LOCALES = {
     hero_eyebrow:  "Séria udalostí Pro-EÚ",
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
-    hero_h1:       'Praktický večer: postavte si AI asistenta, <em style=\"color:var(--sky-deep);font-style:italic;\">potom ho použite pre Európu.</em>',
+    hero_h1:       'Praktický večer: postavte si AI asistenta, <em>potom ho použite pre Európu.</em>',
     events_h2:     "Udalosti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Séria Pro-EÚ:</span> Vytvor vlastného agenta a nasaď ho, aby si vytvoril osobný pro-EÚ akčný plán <span style="color:var(--muted-blue);font-weight:400;">(príklady nižšie)</span>.',
     upcoming:      "Nadchádzajúce",
@@ -2020,6 +2033,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   bg: {
     nav_cta:       "Присъедини се към вечеря →",
+    hero_cta:      "Записвам се за Салона →",
     hero_strapline: "Защото единственият начин да разбереш къде наистина стоите ти и екипът ти с ИИ е да го изградиш сам.",
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon AI",
@@ -2060,7 +2074,7 @@ window.LOCALES = {
     hero_eyebrow:  "Серия Pro-EU събития",
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
-    hero_h1:       'Практическа вечер: изградете AI асистент, <em style=\"color:var(--sky-deep);font-style:italic;\">после го използвайте за Европа.</em>',
+    hero_h1:       'Практическа вечер: изградете AI асистент, <em>после го използвайте за Европа.</em>',
     events_h2:     "Събития",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Серия Pro-EU:</span> Създай свой агент и го внедри, за да изградиш личния си Pro-EU план за действие <span style="color:var(--muted-blue);font-weight:400;">(примери по-долу)</span>.',
     upcoming:      "Предстоящо",
@@ -2174,6 +2188,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   da: {
     nav_cta:       "Deltag i en middag →",
+    hero_cta:      "Tilmeld dig Salonen →",
     hero_strapline: "For den eneste måde at finde ud af, hvor du og dit team virkelig står med AI, er at have bygget noget selv.",
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon AI findes",
@@ -2214,7 +2229,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU begivenhedsserie",
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
-    hero_h1:       'En praktisk aften: byg din AI-assistent, <em style=\"color:var(--sky-deep);font-style:italic;\">brug den derefter for Europa.</em>',
+    hero_h1:       'En praktisk aften: byg din AI-assistent, <em>brug den derefter for Europa.</em>',
     events_h2:     "Begivenheder",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serie:</span> Byg din egen agent og implementér den for at skabe din personlige pro-EU handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(eksempler nedenfor)</span>.',
     upcoming:      "Kommende",
@@ -2328,6 +2343,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   fi: {
     nav_cta:       "Liity illalliselle →",
+    hero_cta:      "Liity Saliin →",
     hero_strapline: "Sillä ainoa tapa tietää, missä sinä ja tiimisi todella olette tekoälyssä, on rakentaa jotain itse.",
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon AI on olemassa",
@@ -2368,7 +2384,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU tapahtumasarja",
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
-    hero_h1:       'Käytännöllinen ilta: rakenna tekoälyassistenttisi, <em style=\"color:var(--sky-deep);font-style:italic;\">käytä sitä sitten Euroopan hyväksi.</em>',
+    hero_h1:       'Käytännöllinen ilta: rakenna tekoälyassistenttisi, <em>käytä sitä sitten Euroopan hyväksi.</em>',
     events_h2:     "Tapahtumat",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sarja:</span> Rakenna oma agenttisi ja ota se käyttöön luodaksesi henkilökohtaisen pro-EU-toimintasuunnitelmasi <span style="color:var(--muted-blue);font-weight:400;">(esimerkkejä alla)</span>.',
     upcoming:      "Tulevat",
@@ -2482,6 +2498,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   hr: {
     nav_cta:       "Pridruži se večeri →",
+    hero_cta:      "Prijavi se u Salon →",
     hero_strapline: "Jer jedini način da saznaš gdje vi i vaš tim doista stojite s AI-jem jest da ga sami izgradite.",
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon AI",
@@ -2522,7 +2539,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU serija događanja",
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktična večer: izgradite AI asistenta, <em style=\"color:var(--sky-deep);font-style:italic;\">zatim ga koristite za Europu.</em>',
+    hero_h1:       'Praktična večer: izgradite AI asistenta, <em>zatim ga koristite za Europu.</em>',
     events_h2:     "Događanja",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serija:</span> Izradi svog agenta i postavi ga za izradu osobnog pro-EU akcijskog plana <span style="color:var(--muted-blue);font-weight:400;">(primjeri ispod)</span>.',
     upcoming:      "Predstojeće",
@@ -2636,6 +2653,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   el: {
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
+    hero_cta:      "Εγγραφή στο Salon →",
     hero_strapline: "Γιατί ο μόνος τρόπος για να ξέρεις πού πραγματικά είστε εσύ και η ομάδα σου με την Τ.Ν. είναι να την έχεις φτιάξει ο ίδιος.",
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon AI",
@@ -2676,7 +2694,7 @@ window.LOCALES = {
     hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
-    hero_h1:       'Μια πρακτική βραδιά: φτιάξτε τον βοηθό ΤΝ σας, <em style=\"color:var(--sky-deep);font-style:italic;\">μετά χρησιμοποιήστε τον για την Ευρώπη.</em>',
+    hero_h1:       'Μια πρακτική βραδιά: φτιάξτε τον βοηθό ΤΝ σας, <em>μετά χρησιμοποιήστε τον για την Ευρώπη.</em>',
     events_h2:     "Εκδηλώσεις",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Σειρά Pro-EU:</span> Δημιουργήστε τον δικό σας πράκτορα και αναπτύξτε τον για να φτιάξετε το προσωπικό σας Pro-EU σχέδιο δράσης <span style="color:var(--muted-blue);font-weight:400;">(παραδείγματα παρακάτω)</span>.',
     upcoming:      "Επερχόμενα",
@@ -2790,6 +2808,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   lt: {
     nav_cta:       "Prisijunk prie vakarienės →",
+    hero_cta:      "Prisijunk prie Salono →",
     hero_strapline: "Nes vienintelis būdas sužinoti, kur jūs ir jūsų komanda iš tikrųjų esate su DI, yra patiems ką nors sukurti.",
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon AI",
@@ -2830,7 +2849,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES renginių serija",
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
-    hero_h1:       'Praktiškas vakaras: sukurkite DI asistentą, <em style=\"color:var(--sky-deep);font-style:italic;\">tada naudokite jį Europai.</em>',
+    hero_h1:       'Praktiškas vakaras: sukurkite DI asistentą, <em>tada naudokite jį Europai.</em>',
     events_h2:     "Renginiai",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES serija:</span> Sukurk savo agentą ir jį įdiek, kad sukurtum asmeninį Pro-ES veiksmų planą <span style="color:var(--muted-blue);font-weight:400;">(pavyzdžiai žemiau)</span>.',
     upcoming:      "Artėjantis",
@@ -2944,6 +2963,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   lv: {
     nav_cta:       "Pievienojies vakariņām →",
+    hero_cta:      "Pievienojies Salonam →",
     hero_strapline: "Jo vienīgais veids, kā uzzināt, kur jūs un jūsu komanda patiešām atrodaties ar MI, ir pašiem to izveidot.",
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon AI",
@@ -2984,7 +3004,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES pasākumu sērija",
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
-    hero_h1:       'Praktisks vakars: izveidojiet MI asistentu, <em style=\"color:var(--sky-deep);font-style:italic;\">pēc tam izmantojiet to Eiropai.</em>',
+    hero_h1:       'Praktisks vakars: izveidojiet MI asistentu, <em>pēc tam izmantojiet to Eiropai.</em>',
     events_h2:     "Pasākumi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES sērija:</span> Izveido savu aģentu un izvietojiet to, lai izveidotu personīgo Pro-ES rīcības plānu <span style="color:var(--muted-blue);font-weight:400;">(piemēri zemāk)</span>.',
     upcoming:      "Gaidāmais",
@@ -3098,6 +3118,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   et: {
     nav_cta:       "Liitu õhtusöögiga →",
+    hero_cta:      "Liitu Salongiga →",
     hero_strapline: "Sest ainus viis teada saada, kus sina ja su meeskond TI-ga tegelikult olete, on see ise üles ehitada.",
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon AI eksisteerib",
@@ -3138,7 +3159,7 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EL ürituste sari",
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
-    hero_h1:       'Praktiline õhtu: ehitage TI assistent, <em style=\"color:var(--sky-deep);font-style:italic;\">seejärel kasutage seda Euroopa heaks.</em>',
+    hero_h1:       'Praktiline õhtu: ehitage TI assistent, <em>seejärel kasutage seda Euroopa heaks.</em>',
     events_h2:     "Üritused",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EL sari:</span> Loo oma agent ja juuruta see, et luua isiklik Pro-EL tegevuskava <span style="color:var(--muted-blue);font-weight:400;">(näited allpool)</span>.',
     upcoming:      "Eelseisev",
@@ -3252,6 +3273,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   sl: {
     nav_cta:       "Pridruži se večerji →",
+    hero_cta:      "Prijavi se v Salon →",
     hero_strapline: "Saj je edini način, da ugotoviš, kje sta ti in tvoja ekipa z UI v resnici, da jo zgradiš sam.",
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon AI",
@@ -3292,7 +3314,7 @@ window.LOCALES = {
     hero_eyebrow:  "Serija pro-EU dogodkov",
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktičen večer: zgradite UI asistenta, <em style=\"color:var(--sky-deep);font-style:italic;\">nato ga uporabite za Evropo.</em>',
+    hero_h1:       'Praktičen večer: zgradite UI asistenta, <em>nato ga uporabite za Evropo.</em>',
     events_h2:     "Dogodki",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serija Pro-EU:</span> Razvij svojega agenta in ga uvedi za ustvarjanje osebnega pro-EU akcijskega načrta <span style="color:var(--muted-blue);font-weight:400;">(primeri spodaj)</span>.',
     upcoming:      "Prihajajoče",
@@ -3406,6 +3428,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   mt: {
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
+    hero_cta:      "Issieħeb fis-Salon →",
     hero_strapline: "Għax l-unika triq biex tkun taf fejn int u t-tim tiegħek tassew tinsabu fl-AI hi li tkun bnejtha int stess.",
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon AI",
@@ -3446,7 +3469,7 @@ window.LOCALES = {
     hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
-    hero_h1:       'Serata prattika: ibni l-assistent AI tiegħek, <em style=\"color:var(--sky-deep);font-style:italic;\">imbagħad uża għall-Ewropa.</em>',
+    hero_h1:       'Serata prattika: ibni l-assistent AI tiegħek, <em>imbagħad uża għall-Ewropa.</em>',
     events_h2:     "Avvenimenti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serje Pro-UE:</span> Ibni l-aġent tiegħek u ibda tuża biex toħloq il-pjan ta\' azzjoni Pro-UE personali tiegħek <span style="color:var(--muted-blue);font-weight:400;">(eżempji hawn taħt)</span>.',
     upcoming:      "Li jmiss",
@@ -3560,6 +3583,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   ga: {
     nav_cta:       "Bí páirteach i ndinnéar →",
+    hero_cta:      "Bí páirteach sa Salon →",
     hero_strapline: "Mar is é an t-aon bhealach le fáil amach cá bhfuil tú féin agus d'fhoireann i ndáiríre leis an IS, é a thógáil leat féin.",
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon AI ann",
@@ -3600,7 +3624,7 @@ window.LOCALES = {
     hero_eyebrow:  "Sraith imeachtaí Pro-AE",
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',
-    hero_h1:       'Oíche phraiticiúil: tóg do chúntóir AI, <em style=\"color:var(--sky-deep);font-style:italic;\">ansin úsáid ar son na hEorpa é.</em>',
+    hero_h1:       'Oíche phraiticiúil: tóg do chúntóir AI, <em>ansin úsáid ar son na hEorpa é.</em>',
     events_h2:     "Imeachtaí",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Sraith Pro-AE:</span> Tóg d\'eintiteas féin agus imscar é chun do phlean gníomhaíochta Pro-AE pearsanta a chruthú <span style="color:var(--muted-blue);font-weight:400;">(samplaí thíos)</span>.',
     upcoming:      "Le teacht",
