@@ -107,9 +107,10 @@ describe("index.html — mobile-first responsive patterns", () => {
       "Hero must not default to desktop 88px top padding");
   });
 
-  it("hero CTA tap target is ≥48px tall on mobile", () => {
-    assert.ok(/\.hero-cta\s*\{[^}]*min-height:\s*48px/.test(html),
-      ".hero-cta should have min-height: 48px for mobile tap targets");
+  it("hero CTA tap target is ≥44px tall on mobile (Apple HIG)", () => {
+    const m = html.match(/\.hero-cta\s*\{[^}]*min-height:\s*(\d+)px/);
+    assert.ok(m, ".hero-cta should declare min-height for mobile tap targets");
+    assert.ok(Number(m[1]) >= 44, `min-height ${m[1]}px is below 44px tap-target minimum`);
   });
 
   it("layout containers don't pair with max-width fallback to 1fr", () => {
@@ -159,16 +160,13 @@ describe("index.html — hero", () => {
     assert.ok(/class="hero-strapline"/.test(html), ".hero-strapline element missing");
     assert.ok(/data-i18n="hero_strapline"/.test(html), "hero_strapline must be data-i18n tagged");
   });
-  it("manifesto items use <strong> for scannability (≥1 bold per list item)", () => {
-    // Extract ol block in the manifesto and count <strong> occurrences per <li>
-    const ol = html.match(/<section class="manifesto"[^>]*>[\s\S]*?<\/section>/);
-    assert.ok(ol, "manifesto section not found");
-    const lis = Array.from(ol[0].matchAll(/<li>([\s\S]*?)<\/li>/g));
-    assert.ok(lis.length >= 3, `Expected at least 3 manifesto list items, got ${lis.length}`);
-    for (const [i, li] of lis.entries()) {
-      const strongs = (li[1].match(/<strong>/g) || []).length;
-      assert.ok(strongs >= 1, `Manifesto item ${i + 1} has no <strong> emphasis`);
-    }
+  it("manifesto body paragraphs are calm — no inline <strong> emphasis (typography restraint)", () => {
+    // Calm typography: drop bold-noise inside body paragraphs / list items.
+    // Strong only allowed in semantic places (FAQ bio name, footer role label).
+    const manifesto = html.match(/<section class="manifesto"[^>]*>([\s\S]*?)<\/section>/);
+    assert.ok(manifesto, "manifesto section not found");
+    assert.ok(!/<strong>/.test(manifesto[1]),
+      "Manifesto must not contain <strong> tags — keep typography calm");
   });
 });
 
