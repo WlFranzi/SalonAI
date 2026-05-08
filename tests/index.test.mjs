@@ -134,14 +134,23 @@ describe("index.html — hero", () => {
     assert.ok(m, "hero-cta link not found");
     assert.ok(/href="#events"/.test(m[0]), `Expected hero CTA href="#events", got: ${m[0]}`);
   });
-  it("hero contains alumni signal under CTA", () => {
-    assert.ok(/class="hero-alumni"/.test(html), ".hero-alumni element missing");
-    assert.ok(/Unsere bisherigen Runden vereinten Entscheidungsträger:innen/.test(html),
-      "Hero alumni line text missing or not the new sector framing");
+  it("alumni caption is OUTSIDE the hero (declutter)", () => {
+    const hero = html.match(/<section class="hero">[\s\S]*?<\/section>/);
+    assert.ok(hero, "hero section not found");
+    assert.ok(!/Entscheidungsträger:innen/.test(hero[0]),
+      "Alumni line must NOT live inside the hero anymore");
+    assert.ok(/class="alumni-caption"/.test(html),
+      ".alumni-caption element missing — alumni line should sit above the events tile");
   });
-  it("alumni line uses sector framing (Wirtschaft/Agenturen/Medien/Wissenschaft/Politik)", () => {
-    const m = html.match(/<p class="hero-alumni"[^>]*>([^<]+)<\/p>/);
-    assert.ok(m, "hero-alumni paragraph not found");
+  it("hero is decluttered — no eyebrow-sub line", () => {
+    const hero = html.match(/<section class="hero">[\s\S]*?<\/section>/);
+    assert.ok(hero, "hero section not found");
+    assert.ok(!/class="eyebrow-sub"/.test(hero[0]),
+      "Hero must not contain eyebrow-sub line (declutter)");
+  });
+  it("alumni caption uses sector framing (Wirtschaft/Agenturen/Medien/Wissenschaft/Politik)", () => {
+    const m = html.match(/<p class="alumni-caption"[^>]*>([^<]+)<\/p>/);
+    assert.ok(m, "alumni-caption paragraph not found");
     const sectors = ["Wirtschaft", "Agenturen", "Medien", "Wissenschaft", "Politik"];
     for (const s of sectors) {
       assert.ok(m[1].includes(s), `Alumni line missing sector: ${s}`);
@@ -149,11 +158,11 @@ describe("index.html — hero", () => {
     assert.ok(/Entscheidungsträger:innen/.test(m[1]),
       "Alumni line should frame audience as 'Entscheidungsträger:innen'");
   });
-  it("alumni line is data-i18n tagged (so it switches with locale)", () => {
-    const m = html.match(/<p class="hero-alumni"[^>]*>/);
-    assert.ok(m, "hero-alumni element missing");
+  it("alumni caption is data-i18n tagged (so it switches with locale)", () => {
+    const m = html.match(/<p class="alumni-caption"[^>]*>/);
+    assert.ok(m, "alumni-caption element missing");
     assert.ok(/data-i18n="hero_alumni"/.test(m[0]),
-      "hero-alumni must carry data-i18n=\"hero_alumni\"");
+      "alumni-caption must carry data-i18n=\"hero_alumni\"");
   });
 
   it("hero contains italic strapline below H1 (HNWI signal)", () => {

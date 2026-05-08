@@ -80,7 +80,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .hero-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: rgba(255,255,255,0.95); color: var(--navy); font-weight: 700; font-size: var(--t-base); padding: 16px 32px; min-height: 48px; border-radius: var(--r-pill); text-decoration: none; transition: all 0.2s; font-family: 'DM Sans', sans-serif; margin-top: var(--s3); letter-spacing: 0.1px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
 .hero-cta:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.28); }
 .hero-strapline { font-family: 'DM Sans', sans-serif; font-size: var(--t-base); color: rgba(255,255,255,0.78); line-height: 1.6; max-width: 540px; margin: var(--s2) auto 0; }
-.hero-alumni { font-family: 'DM Sans', sans-serif; font-size: var(--t-xs); color: rgba(255,255,255,0.5); letter-spacing: 0.3px; line-height: 1.65; max-width: 580px; margin: var(--s4) auto 0; }
+/* Alumni caption — sits above the events tile, small editorial credibility line */
+.alumni-caption { font-family: 'DM Sans', sans-serif; font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.65; max-width: 640px; margin: 0 auto var(--s3); text-align: center; padding: 0 var(--s3); }
 @media (min-width: 768px) {
   .hero { min-height: 52vh; padding: 88px var(--s3) var(--s5); }
   .hero-cta { padding: 15px 36px; }
@@ -614,11 +615,9 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="cloud cloud-2"></div>
   <div class="hero-content">
     <p class="eyebrow" data-i18n="hero_eyebrow">Pro-EU Eventreihe</p>
-    <p class="eyebrow-sub" data-i18n="hero_sub">München · bald in der ganzen EU</p>
     <h1 data-i18n-html="hero_h1">Bau deinen KI-Assistenten und setz ihn für Europa ein.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline">Denn wer wirklich wissen will, wo er und sein Team bei KI gerade stehen, muss es einmal selbst gebaut haben.</p>
     <a href="#events" class="hero-cta" data-i18n="hero_cta">Zum Salon anmelden →</a>
-    <p class="hero-alumni" data-i18n="hero_alumni">Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</p>
   </div>
 </section>
 
@@ -658,6 +657,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
+  <p class="alumni-caption" data-i18n="hero_alumni">Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</p>
   <div class="single-col" id="events">
 
     <!-- ── LEFT: Events ──────────────────────────────────────── -->
