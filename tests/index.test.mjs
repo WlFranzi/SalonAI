@@ -147,7 +147,7 @@ describe("index.html — hero", () => {
   it("alumni line is woven into the manifesto coda (no free-floating caption)", () => {
     const manifesto = html.match(/<section class="manifesto"[^>]*>[\s\S]*?<\/section>/);
     assert.ok(manifesto, "manifesto section not found");
-    assert.ok(/Entscheidungsträger:innen/.test(manifesto[0]),
+    assert.ok(/Entscheider(?:ung)?:innen/.test(manifesto[0]),
       "Alumni sentence should live as part of the manifesto-coda");
     assert.ok(!/class="alumni-caption"/.test(html),
       "Standalone .alumni-caption should be removed");
