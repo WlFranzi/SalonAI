@@ -3,3 +3,4 @@ node_modules/
 src/.DS_Store
 SalonAI/.claude/settings.local.json
 SalonAI/.env
+salon_mai/
