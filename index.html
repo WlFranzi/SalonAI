@@ -212,7 +212,28 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .event-date-col .month { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--sky-deep); font-weight: 700; }
 .event-date-col .day { font-size: 15px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--navy); line-height: 1.2; }
 .event-info { flex: 1; padding: 0 12px; }
-.event-info .name { font-size: var(--t-base); font-weight: 600; color: var(--navy); }
+.event-info .name { font-size: var(--t-base); font-weight: 600; color: var(--navy); display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.sticker-share {
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--navy);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: rotate(2deg);
+  transition: all 0.15s;
+  border: 1px solid rgba(27,46,74,0.1);
+  white-space: nowrap;
+}
+.sticker-share:hover {
+  transform: rotate(0deg) scale(1.05);
+  background: var(--gold);
+}
 .event-info .sub { font-size: var(--t-xs); color: var(--muted-blue); margin-top: 2px; line-height: 1.4; }
 .rsvp-btn { font-size: 13px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; }
 .rsvp-btn:hover { background: var(--sky-deep); }
@@ -718,7 +739,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <div class="event-row">
           <div class="event-date-col"><span class="month" data-i18n="event_month">Mai</span><span class="day">28</span></div>
           <div class="event-info">
-            <div class="name" data-i18n="event_name">Salon AI Dinner — München</div>
+            <div class="name">
+              <span data-i18n="event_name">Salon AI Dinner — München</span>
+              <span class="sticker-share" onclick="shareEvent(event, this)">Share event</span>
+            </div>
             <div class="event-last-public" data-i18n="event_last_public">Erstmal letzter öffentlicher Salon-Abend — danach nur noch auf private Einladung.</div>
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
