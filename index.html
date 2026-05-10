@@ -59,15 +59,19 @@ a { text-decoration: none; color: inherit; }
 .card-surface { background: #fff; border-radius: var(--r-lg); border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(27,46,74,0.04), 0 4px 16px rgba(27,46,74,0.04); }
 
 /* Nav */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border); }
+nav { position: fixed; top: 36px; left: 0; right: 0; z-index: 50; background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border); }
 nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56px; display: flex; align-items: center; justify-content: space-between; }
+.announcement-bar { display: block; background: var(--accent); color: #fff; text-align: center; padding: 9px 16px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.01em; line-height: 1.4; text-decoration: none; transition: background 0.18s; position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
+.announcement-bar:hover { background: #002277; }
+.announcement-bar strong { font-weight: 700; }
+@media(max-width:520px) { .announcement-bar { font-size: 12px; padding: 8px 12px; } }
 .nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; }
 .nav-right { display: flex; align-items: center; gap: var(--s2); }
 .nav-cta { background: var(--navy); color: #fff; border-radius: var(--r-pill); padding: 9px 22px; font-size: var(--t-sm); font-weight: 600; font-family: 'DM Sans', sans-serif; transition: background 0.18s; letter-spacing: 0.01em; }
 .nav-cta:hover { background: var(--accent); }
 
 /* Hero — mobile-first: tighter padding, expanded on desktop */
-.hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--navy); padding: 56px var(--s2) var(--s4); }
+.hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--navy); padding: 92px var(--s2) var(--s4); }
 .hero .cloud { display: none; }
 .hero-content { position: relative; z-index: 10; max-width: 760px; margin: 0 auto; text-align: center; }
 .eu-stars { display: flex; align-items: center; gap: 7px; justify-content: center; margin-bottom: 20px; }
@@ -83,7 +87,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 /* Alumni caption — sits above the events tile, small editorial credibility line */
 .alumni-caption { font-family: 'DM Sans', sans-serif; font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.65; max-width: 640px; margin: 0 auto var(--s3); text-align: center; padding: 0 var(--s3); }
 @media (min-width: 768px) {
-  .hero { min-height: 52vh; padding: 88px var(--s3) var(--s5); }
+  .hero { min-height: 52vh; padding: 124px var(--s3) var(--s5); }
   .hero-cta { padding: 13px 30px; font-size: 14px; }
 }
 
@@ -783,12 +787,15 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </head>
 <body>
 
+<!-- ── ANNOUNCEMENT BAR ────────────────────────────────────────── -->
+<a href="#host" class="announcement-bar" data-i18n-html="announcement_html">🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →</a>
+
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
     <a href="/" class="nav-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></a>
     <div class="nav-right">
-      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta">28. Mai · 78€</a>
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Platz reservieren · 28.5</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -906,7 +913,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </div>
 
       <!-- Host your own -->
-      <div class="host-own">
+      <div class="host-own" id="host">
         <div class="host-own-label" data-i18n="host_own_label">Eigener Abend</div>
         <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
         <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
