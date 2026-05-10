@@ -64,7 +64,7 @@
     .step h2 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
 
     /* DATE CARDS */
-    .date-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .date-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
     .date-card { border: 1.5px solid var(--border); border-radius: 10px; padding: 14px 8px; text-align: center; cursor: pointer; transition: all 0.15s; background: var(--white-warm); }
     .date-card:hover { border-color: var(--accent); background: var(--sky-light); }
     .date-card.selected { border-color: var(--accent); background: var(--accent); color: #fff; }
@@ -180,20 +180,25 @@
   <div class="step">
     <h2>Welcher Abend passt dir?</h2>
     <div class="date-grid" id="date-grid">
-      <div class="date-card" data-code="19mai" data-label="Di, 19. Mai 2026" onclick="selectDate(this)">
-        <div class="dc-weekday">Di</div>
-        <div class="dc-day">19</div>
-        <div class="dc-month">Mai 2026</div>
-      </div>
-      <div class="date-card" data-code="21mai" data-label="Do, 21. Mai 2026" onclick="selectDate(this)">
+      <div class="date-card" data-code="4jun" data-label="Do, 4. Juni 2026" onclick="selectDate(this)">
         <div class="dc-weekday">Do</div>
-        <div class="dc-day">21</div>
-        <div class="dc-month">Mai 2026</div>
+        <div class="dc-day">4</div>
+        <div class="dc-month">Juni 2026</div>
       </div>
-      <div class="date-card" data-code="26mai" data-label="Di, 26. Mai 2026" onclick="selectDate(this)">
-        <div class="dc-weekday">Di</div>
-        <div class="dc-day">26</div>
-        <div class="dc-month">Mai 2026</div>
+      <div class="date-card" data-code="11jun" data-label="Do, 11. Juni 2026" onclick="selectDate(this)">
+        <div class="dc-weekday">Do</div>
+        <div class="dc-day">11</div>
+        <div class="dc-month">Juni 2026</div>
+      </div>
+      <div class="date-card" data-code="9jul" data-label="Do, 9. Juli 2026" onclick="selectDate(this)">
+        <div class="dc-weekday">Do</div>
+        <div class="dc-day">9</div>
+        <div class="dc-month">Juli 2026</div>
+      </div>
+      <div class="date-card" data-code="16jul" data-label="Do, 16. Juli 2026" onclick="selectDate(this)">
+        <div class="dc-weekday">Do</div>
+        <div class="dc-day">16</div>
+        <div class="dc-month">Juli 2026</div>
       </div>
     </div>
     <div class="date-error" id="date-error">Bitte wähle einen Abend.</div>
@@ -342,9 +347,10 @@
   }
 
   var DATE_LABELS_LONG = {
-    '19mai': 'Dienstag, 19. Mai 2026',
-    '21mai': 'Donnerstag, 21. Mai 2026',
-    '26mai': 'Dienstag, 26. Mai 2026',
+    '4jun':  'Donnerstag, 4. Juni 2026',
+    '11jun': 'Donnerstag, 11. Juni 2026',
+    '9jul':  'Donnerstag, 9. Juli 2026',
+    '16jul': 'Donnerstag, 16. Juli 2026',
   };
 
   // Message template — [DATUM] and [NAME] are replaced dynamically

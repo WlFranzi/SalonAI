@@ -280,24 +280,6 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .host-own-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--navy); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 13px 28px; min-height: 44px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s; letter-spacing: 0.3px; box-shadow: 0 4px 14px rgba(27,46,74,0.18); }
 .host-own-btn:hover { background: var(--accent); transform: translateY(-1px); }
 .host-own-fine { font-size: 0.85rem; color: var(--muted-blue); margin-top: var(--s2); line-height: 1.5; font-style: italic; }
-.host-dates { margin: var(--s3) 0 var(--s3); }
-.host-dates-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--accent); margin-bottom: var(--s2); }
-.host-date-row { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; padding: 14px 14px; border: 1px solid var(--border); border-radius: 12px; background: #fff; margin-bottom: 8px; transition: border-color 0.15s, transform 0.15s; }
-.host-date-row[data-booked="true"], .host-date-row[hidden] { display: none; }
-.host-date-row:hover { border-color: var(--accent); }
-.host-date-info { display: flex; align-items: baseline; gap: 6px; min-width: 110px; }
-.host-date-day { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); line-height: 1; }
-.host-date-month { font-size: 13px; font-weight: 700; color: var(--sky-deep); text-transform: uppercase; letter-spacing: 1px; }
-.host-date-year { font-size: 12px; color: var(--muted-blue); }
-.host-date-book { flex: 1; min-width: 200px; background: var(--navy); color: #fff; font-weight: 600; font-size: 14px; padding: 10px 18px; border-radius: var(--r-pill); text-decoration: none; text-align: center; transition: background 0.15s; }
-.host-date-book:hover { background: var(--accent); }
-.host-date-ics { font-size: 13px; color: var(--muted-blue); text-decoration: none; border-bottom: 1px solid var(--muted-blue); padding-bottom: 1px; transition: color 0.15s; }
-.host-date-ics:hover { color: var(--navy); border-color: var(--navy); }
-@media(max-width: 520px) {
-  .host-date-row { gap: 10px; padding: 12px; }
-  .host-date-info { min-width: 90px; }
-  .host-date-book { width: 100%; }
-}
 
 /* ── Past Events — photos | unified text column ── */
 .past-events-section { padding: var(--s5) var(--s3) var(--s4); background: transparent; }
@@ -410,7 +392,6 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .rsvp-btn { font-size: 13px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; }
 .rsvp-btn:hover { background: var(--sky-deep); }
 .event-last-public { font-size: 12px; color: var(--accent); font-style: italic; margin: 4px 0 6px; line-height: 1.5; }
-.events-section-intro { font-size: 13px; font-style: normal; padding: 10px 14px; background: rgba(0,51,153,0.06); border-left: 3px solid var(--accent); border-radius: 8px; margin: 10px 0 16px; line-height: 1.5; }
 .event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px; }
 .add-to-cal-link { font-size: 12.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); padding-bottom: 1px; transition: opacity 0.15s; }
 .add-to-cal-link:hover { opacity: 0.65; }
@@ -814,7 +795,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="inner">
     <a href="/" class="nav-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></a>
     <div class="nav-right">
-      <a href="#host" class="nav-cta" data-i18n="nav_book_cta">Platz reservieren →</a>
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Platz reservieren · 28.5</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -888,7 +869,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <h2 data-i18n="manifesto_h2">Warum es Salon AI gibt</h2>
+    <h2 data-i18n-html="manifesto_h2">Warum es Salon <span class='ai-eu-swap'><span class='word-ai'>AI</span><span class='word-eu' aria-hidden='true'>EU</span></span> gibt</h2>
     <p class="manifesto-lede" data-i18n="manifesto_lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
     <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
     <ol>
@@ -909,56 +890,33 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="tile-label" data-i18n-html="tile_label_dinners"><span class="dot"></span>Salon AI Dinners</div>
       <h2 data-i18n="events_h2">Events</h2>
       <!-- Upcoming -->
-      <!-- Upcoming public events: none. Salon AI is host-organized only (see #host below). -->
+      <div class="events-section">
+        <h3><span class="status-dot upcoming"></span><span data-i18n="upcoming">Upcoming</span></h3>
 
+        <div class="event-row">
+          <div class="event-date-col"><span class="month" data-i18n="event_month">Mai</span><span class="day">28</span></div>
+          <div class="event-info">
+            <div class="name">
+              <span data-i18n="event_name">Salon AI Dinner — München</span>
+              <span class="sticker-share" onclick="shareEvent(event, this)">Share event</span>
+            </div>
+            <div class="event-last-public" data-i18n="event_last_public">Erstmal letzter öffentlicher Salon-Abend — danach nur noch auf private Einladung.</div>
+            <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
+            <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
+            <div class="event-actions-row">
+              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] });">Ticket kaufen →</a>
+              <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
+              <button type="button" class="event-share-link" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Host your own -->
       <div class="host-own" id="host">
         <div class="host-own-label" data-i18n="host_own_label">Eigener Abend</div>
         <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
         <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
-
-        <!-- Date picker: hide a row by adding hidden attribute or data-booked when claimed. -->
-        <div class="host-dates">
-          <p class="host-dates-label" data-i18n="host_dates_label">Verfügbare Termine — pick a date, dann sammelst du deine Gruppe.</p>
-          <div class="host-date-row">
-            <div class="host-date-info">
-              <span class="host-date-day">4</span>
-              <span class="host-date-month" data-i18n="event_month_jun">Juni</span>
-              <span class="host-date-year">2026</span>
-            </div>
-            <a href="https://buy.stripe.com/aFaeVd0k42yGgDMbmKfbq05" target="_blank" rel="noopener" class="host-date-book" data-i18n="host_date_book" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner Munich · Jun 4', 'price': 78.00, 'currency': 'EUR' }] });">Diesen Termin sichern →</a>
-            <a href="/salon-ai-june-4-2026.ics" class="host-date-ics" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
-          </div>
-          <div class="host-date-row">
-            <div class="host-date-info">
-              <span class="host-date-day">11</span>
-              <span class="host-date-month" data-i18n="event_month_jun">Juni</span>
-              <span class="host-date-year">2026</span>
-            </div>
-            <a href="https://buy.stripe.com/bJe6oH2sc1uCafoaiGfbq03" target="_blank" rel="noopener" class="host-date-book" data-i18n="host_date_book" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner Munich · Jun 11', 'price': 78.00, 'currency': 'EUR' }] });">Diesen Termin sichern →</a>
-            <a href="/salon-ai-june-11-2026.ics" class="host-date-ics" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
-          </div>
-          <div class="host-date-row">
-            <div class="host-date-info">
-              <span class="host-date-day">9</span>
-              <span class="host-date-month" data-i18n="event_month_jul">Juli</span>
-              <span class="host-date-year">2026</span>
-            </div>
-            <a href="https://buy.stripe.com/bJe6oHd6Qeho4V40I6fbq06" target="_blank" rel="noopener" class="host-date-book" data-i18n="host_date_book" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner Munich · Jul 9', 'price': 78.00, 'currency': 'EUR' }] });">Diesen Termin sichern →</a>
-            <a href="/salon-ai-july-9-2026.ics" class="host-date-ics" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
-          </div>
-          <div class="host-date-row">
-            <div class="host-date-info">
-              <span class="host-date-day">16</span>
-              <span class="host-date-month" data-i18n="event_month_jul">Juli</span>
-              <span class="host-date-year">2026</span>
-            </div>
-            <a href="https://buy.stripe.com/7sY5kD1o8ehofzI76ufbq04" target="_blank" rel="noopener" class="host-date-book" data-i18n="host_date_book" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner Munich · Jul 16', 'price': 78.00, 'currency': 'EUR' }] });">Diesen Termin sichern →</a>
-            <a href="/salon-ai-july-16-2026.ics" class="host-date-ics" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
-          </div>
-        </div>
-
         <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
         <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
         <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
