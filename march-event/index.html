@@ -54,11 +54,39 @@
     nav.top .back { font-size: 13px; color: var(--muted); letter-spacing: 0.2px; }
     nav.top .back:hover { color: var(--ink); }
 
+    /* ── Hero image ── */
+    figure.hero-image {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 28px 0;
+    }
+    figure.hero-image img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center 40%;
+      border-radius: 14px;
+      box-shadow: 0 12px 32px rgba(15,30,51,0.18);
+    }
+    figure.hero-image figcaption {
+      margin-top: 12px;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      color: var(--muted);
+      text-align: center;
+      font-style: italic;
+    }
+    @media (max-width: 720px) {
+      figure.hero-image { padding: 32px 14px 0; }
+      figure.hero-image img { aspect-ratio: 4 / 3; border-radius: 10px; }
+    }
+
     /* ── Masthead ── */
     header.masthead {
       max-width: 720px;
       margin: 0 auto;
-      padding: 96px 28px 56px;
+      padding: 56px 28px 56px;
       text-align: center;
     }
     .dateline {
@@ -374,6 +402,11 @@
 <nav class="top">
   <a class="back" href="/" data-i18n="march_nav_back">← Salon AI</a>
 </nav>
+
+<figure class="hero-image">
+  <img src="europe_2041.png" alt="Europa 2041 — eine grüne, vernetzte, souveräne Stadt mit Solar-Fassaden, Gemeinschaftsgärten, autonomer Mobilität und Menschen aus allen Generationen." />
+  <figcaption data-i18n="march_hero_caption">Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.</figcaption>
+</figure>
 
 <header class="masthead">
   <p class="dateline" data-i18n="march_dateline">Salon AI · München · März 2026</p>

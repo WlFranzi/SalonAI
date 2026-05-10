@@ -17,6 +17,7 @@ window.LOCALES = {
      ENGLISH — ground truth
   ───────────────────────────────────────────────────────────────── */
   en: {
+    march_hero_caption: "How a European city could look in 2041 — if we make the right decisions today.",
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
     faq_q_thread: "What was the March salon's question — and what's different this time?",
     nav_book_cta: "Reserve a seat · 28 May",
@@ -187,6 +188,7 @@ window.LOCALES = {
      GERMAN
   ───────────────────────────────────────────────────────────────── */
   de: {
+    march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
     faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
     nav_book_cta: "Platz reservieren · 28.5",
@@ -357,6 +359,7 @@ window.LOCALES = {
      FRENCH
   ───────────────────────────────────────────────────────────────── */
   fr: {
+    march_hero_caption: "À quoi pourrait ressembler une ville européenne en 2041 — si nous prenons les bonnes décisions aujourd'hui.",
     faq_a_thread: "En mars, la question était : « À quoi ressemble l'Europe en 2041 ? » — c'est devenu le site de vision <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. En mai, la question est plus concrète et orientée action : « Quelle application IA seuls les Européens pourraient-ils construire ? » — et le résultat n'est pas une vision, mais un agent construit. Chaque salon a une question directrice différente. C'est le fil rouge.",
     faq_q_thread: "Quelle était la question du salon de mars — et qu'est-ce qui change cette fois ?",
     nav_book_cta: "Réserver une place · 28 mai",
@@ -521,6 +524,7 @@ window.LOCALES = {
      SPANISH
   ───────────────────────────────────────────────────────────────── */
   es: {
+    march_hero_caption: "Cómo podría ser una ciudad europea en 2041 — si tomamos las decisiones correctas hoy.",
     faq_a_thread: "En marzo la pregunta fue: «¿Cómo es Europa en 2041?» — de ahí nació el sitio de visión <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. En mayo la pregunta es más concreta y orientada a la acción: «¿Qué aplicación de IA solo podrían construir los europeos?» — y el resultado no es una visión, sino un agente construido. Cada salón tiene una pregunta guía distinta. Ese es el hilo conductor.",
     faq_q_thread: "¿Cuál era la pregunta del salón de marzo — y qué es distinto esta vez?",
     nav_book_cta: "Reservar plaza · 28 may",
@@ -685,6 +689,7 @@ window.LOCALES = {
      ITALIAN
   ───────────────────────────────────────────────────────────────── */
   it: {
+    march_hero_caption: "Come potrebbe apparire una città europea nel 2041 — se prendiamo oggi le decisioni giuste.",
     faq_a_thread: "A marzo la domanda era: «Come sarà l'Europa nel 2041?» — ne è nato il sito di visione <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. A maggio la domanda è più concreta e orientata all'azione: «Quale applicazione IA potrebbero costruire solo gli europei?» — e il risultato non è una visione, ma un agente costruito. Ogni salone ha una domanda guida diversa. È il filo conduttore.",
     faq_q_thread: "Qual era la domanda del salone di marzo — e cosa cambia questa volta?",
     nav_book_cta: "Riserva un posto · 28 mag",
@@ -849,6 +854,7 @@ window.LOCALES = {
      PORTUGUESE
   ───────────────────────────────────────────────────────────────── */
   pt: {
+    march_hero_caption: "Como uma cidade europeia poderia ser em 2041 — se tomarmos as decisões certas hoje.",
     faq_a_thread: "Em março a pergunta foi: «Como é a Europa em 2041?» — daí nasceu o site de visão <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Em maio a pergunta é mais concreta e orientada à ação: «Que aplicação de IA só os europeus poderiam construir?» — e o resultado não é uma visão, mas um agente construído. Cada salão tem uma pergunta condutora diferente. É o fio condutor.",
     faq_q_thread: "Qual era a pergunta do salão de março — e o que muda desta vez?",
     nav_book_cta: "Reservar lugar · 28 mai",
@@ -1013,6 +1019,7 @@ window.LOCALES = {
      DUTCH
   ───────────────────────────────────────────────────────────────── */
   nl: {
+    march_hero_caption: "Hoe een Europese stad er in 2041 uit zou kunnen zien — als we vandaag de juiste keuzes maken.",
     faq_a_thread: "In maart was de vraag: „Hoe ziet Europa er in 2041 uit?\" — daaruit ontstond de visie-website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. In mei is de vraag concreter en actiegerichter: „Welke AI-toepassing kunnen alleen Europeanen bouwen?\" — en het resultaat is geen visie, maar een gebouwde agent. Elk salon heeft een andere leidende vraag. Dat is de rode draad.",
     faq_q_thread: "Wat was de vraag van het maart-salon — en wat is deze keer anders?",
     nav_book_cta: "Plaats reserveren · 28 mei",
@@ -1177,6 +1184,7 @@ window.LOCALES = {
      POLISH
   ───────────────────────────────────────────────────────────────── */
   pl: {
+    march_hero_caption: "Jak mogłoby wyglądać europejskie miasto w 2041 — jeśli dziś podejmiemy właściwe decyzje.",
     faq_a_thread: "W marcu pytanie brzmiało: „Jak wygląda Europa w 2041 roku?\" — z tego powstała wizjonerska strona <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. W maju pytanie jest bardziej konkretne i zorientowane na działanie: „Jaką aplikację AI mogliby zbudować tylko Europejczycy?\" — a rezultatem nie jest wizja, lecz zbudowany agent. Każdy salon ma inne pytanie przewodnie. To jest nić przewodnia.",
     faq_q_thread: "Jakie było pytanie salonu marcowego — i co tym razem jest inne?",
     nav_book_cta: "Rezerwacja · 28 maja",

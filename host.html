@@ -88,6 +88,11 @@
     .venue-opt .vo-body { display: flex; flex-direction: column; gap: 3px; }
     .venue-opt .vo-body strong { color: var(--navy); font-size: 13.5px; line-height: 1.45; }
     .venue-opt .vo-body span { color: var(--muted); font-size: 12.5px; line-height: 1.55; }
+    .venue-other-input { display: none; margin-top: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--navy); width: 100%; max-width: 360px; background: #fff; }
+    .venue-other-input:focus { outline: none; border-color: var(--accent); }
+    .venue-other-input::placeholder { color: rgba(0,0,0,0.35); }
+    .venue-opt[data-val="other"].selected .venue-other-input { display: block; }
+    .venue-opt[data-val="other"].selected.has-error .venue-other-input { border-color: #c0392b; }
 
     /* INPUTS */
     input[type="text"], input[type="email"], textarea {
@@ -229,6 +234,14 @@
           <span>Wir prüfen die Verfügbarkeit. Du entscheidest dann. <span style="color:rgba(0,0,0,0.35);">+280€, falls genutzt.</span></span>
         </span>
       </label>
+      <label class="venue-opt" data-val="other">
+        <input type="radio" name="venue" value="other" onchange="setVenue(this)" />
+        <span class="vo-body">
+          <strong>Anderer Ort / andere Stadt.</strong>
+          <span>Sag uns wo. Wir kümmern uns um Raum, Catering und Logistik vor Ort. Dein Link ist erst nach unserer Bestätigung teilbar.</span>
+          <input type="text" id="venue-other-text" class="venue-other-input" placeholder="Stadt und Ort — z.B. Zürich, eigenes Loft" oninput="onVenueOtherInput()" />
+        </span>
+      </label>
     </div>
   </div>
 
@@ -301,16 +314,32 @@
 <script>
   var selectedDate = '';
   var selectedDateLabel = '';
-  var venueType = 'own'; // 'own' | 'luitpoldblock' | 'own_or_luitpold'
+  var venueType = 'own'; // 'own' | 'luitpoldblock' | 'own_or_luitpold' | 'other'
 
   function setVenue(radio) {
     venueType = radio.value;
     document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
     radio.closest('.venue-opt').classList.add('selected');
     var btn = document.getElementById('generate-btn');
-    // 'luitpoldblock' must wait for confirmation before sharing.
+    // 'luitpoldblock' and 'other' must wait for confirmation before sharing.
     // 'own_or_luitpold' can share immediately (host has backup), Luitpoldblock-Anfrage läuft parallel.
-    btn.textContent = (venueType === 'luitpoldblock') ? 'Abend vormerken' : 'Einladungslink erstellen';
+    btn.textContent = (venueType === 'luitpoldblock' || venueType === 'other')
+      ? 'Abend vormerken' : 'Einladungslink erstellen';
+    // Clear the venue-other error highlight when switching away
+    var step = document.getElementById('step-venue-opt');
+    if (step) step.classList.remove('has-error');
+    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('has-error'); });
+    // Auto-focus the city input if 'other' selected
+    if (venueType === 'other') {
+      setTimeout(function(){ var i = document.getElementById('venue-other-text'); if (i) i.focus(); }, 50);
+    }
+  }
+
+  function onVenueOtherInput() {
+    // Clear error highlight as soon as user types
+    document.querySelectorAll('.venue-opt[data-val="other"]').forEach(function(el){ el.classList.remove('has-error'); });
+    var step = document.getElementById('step-venue-opt');
+    if (step) step.classList.remove('has-error');
   }
 
   function onConfirmLuitpold(cb) {
@@ -388,6 +417,17 @@
     // date
     if (!selectedDate) { document.getElementById('date-error').classList.add('show'); ok = false; }
 
+    // venue: if "other" selected, require city/venue text
+    if (venueType === 'other') {
+      var venueOther = (document.getElementById('venue-other-text') || {}).value || '';
+      if (!venueOther.trim()) {
+        var step = document.getElementById('step-venue-opt');
+        if (step) step.classList.add('has-error');
+        document.querySelectorAll('.venue-opt[data-val="other"]').forEach(function(el){ el.classList.add('has-error'); });
+        ok = false;
+      }
+    }
+
     // name
     var nameStep = document.getElementById('step-name');
     if (!document.getElementById('host-name').value.trim()) { nameStep.classList.add('has-error'); ok = false; }
@@ -406,7 +446,9 @@
 
     var name  = document.getElementById('host-name').value.trim();
     var email = document.getElementById('host-email').value.trim();
-    var venueGated = venueType === 'luitpoldblock'; // only this option blocks sharing
+    var venueOtherText = ((document.getElementById('venue-other-text') || {}).value || '').trim();
+    // 'luitpoldblock' and 'other' both block sharing — Franziska confirms first.
+    var venueGated = (venueType === 'luitpoldblock' || venueType === 'other');
 
     if (typeof gtag === 'function') {
       gtag('event', 'generate_invitation', {
@@ -425,11 +467,16 @@
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
 
-    if (venueGated) {
+    if (venueType === 'luitpoldblock') {
       document.getElementById('result-eyebrow').textContent = 'Vorgemerkt. Wir melden uns, sobald der Raum steht.';
       document.getElementById('luitpold-gate').style.display = 'block';
       document.getElementById('copy-btn').disabled = true;
       document.getElementById('confirm-luitpold').checked = false;
+      document.getElementById('share-row').style.display = 'none';
+    } else if (venueType === 'other') {
+      document.getElementById('result-eyebrow').textContent = 'Vorgemerkt für ' + venueOtherText + '. Wir prüfen Raum, Catering und Logistik vor Ort und melden uns.';
+      document.getElementById('luitpold-gate').style.display = 'none';
+      document.getElementById('copy-btn').disabled = true;
       document.getElementById('share-row').style.display = 'none';
     } else if (venueType === 'own_or_luitpold') {
       document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Wir fragen den Luitpoldblock parallel an.';
@@ -450,7 +497,7 @@
     document.getElementById('result').style.display = 'block';
     document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    notifyFranziska(name, email, selectedDate, longLabel, url, venueType);
+    notifyFranziska(name, email, selectedDate, longLabel, url, venueType, venueOtherText);
   }
 
   function copyLink() {
@@ -464,25 +511,44 @@
     });
   }
 
-  function notifyFranziska(name, email, dateCode, dateLabel, url, venue) {
+  // Replace this with your actual Web3Forms access_key (free at https://web3forms.com).
+  // The notification is silently skipped while this is the placeholder.
+  var WEB3FORMS_KEY = 'DEIN_WEB3FORMS_KEY';
+
+  function notifyFranziska(name, email, dateCode, dateLabel, url, venue, venueOtherText) {
     var venueLabel = venue === 'luitpoldblock' ? 'Luitpoldblock anfragen (kein eigener Raum)'
                   : venue === 'own_or_luitpold' ? 'Eigener Raum vorhanden — Luitpoldblock zusätzlich anfragen'
+                  : venue === 'other' ? ('Anderer Ort / andere Stadt: ' + (venueOtherText || '(leer)'))
                   : 'Eigener Raum';
     var subjectTag = venue === 'luitpoldblock' ? ' · Luitpoldblock anfragen'
                   : venue === 'own_or_luitpold' ? ' · Luitpoldblock zusätzlich anfragen'
+                  : venue === 'other' ? (' · ' + (venueOtherText || 'anderer Ort'))
                   : '';
+
+    if (!WEB3FORMS_KEY || WEB3FORMS_KEY === 'DEIN_WEB3FORMS_KEY') {
+      console.warn('[notifyFranziska] WEB3FORMS_KEY is not set — email NOT sent. Set it at the top of the <script> in host.html.');
+      console.warn('[notifyFranziska] Payload would have been:', { name: name, email: email, date: dateLabel, venue: venueLabel, url: url });
+      return;
+    }
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: 'DEIN_WEB3FORMS_KEY',
+        access_key: WEB3FORMS_KEY,
         subject: 'Neues KI Dinner — ' + name + ' · ' + dateLabel + subjectTag,
         from_name: 'Salon AI Host Flow',
         to: 'franziska.wittleder@gmail.com',
-        message: 'Host: ' + name + '\nE-Mail: ' + email + '\nDatum: ' + dateLabel +
-          '\nVenue: ' + venueLabel + '\n\nLink:\n' + url
+        message: 'Host: ' + name + '\nE-Mail: ' + email +
+                 '\nDatum: ' + dateLabel +
+                 '\nVenue: ' + venueLabel +
+                 '\n\nEinladungslink:\n' + url
       })
-    }).catch(function(){});
+    }).then(function(r){
+      if (!r.ok) console.warn('[notifyFranziska] Web3Forms returned', r.status);
+    }).catch(function(err){
+      console.warn('[notifyFranziska] Web3Forms request failed:', err);
+    });
   }
 </script>
 </body>
