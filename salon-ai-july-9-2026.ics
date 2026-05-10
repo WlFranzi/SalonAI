@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Salon AI//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:salon-ai-july-9-2026@salon-ai.eu
+DTSTAMP:20260510T120000Z
+DTSTART:20260709T160000Z
+DTEND:20260709T200000Z
+SUMMARY:Salon AI Dinner — München (July 9)
+LOCATION:Luitpoldblock\, München
+DESCRIPTION:Salon AI Dinner — you bring your group of 12+, we handle the rest (venue, catering, workshop, experts).\n\nDoors 18:00 · Start 18:15 · Modern Middle Eastern Cuisine · Drinks included · €78\n\nhttps://www.salon-ai.eu
+URL:https://www.salon-ai.eu
+END:VEVENT
+END:VCALENDAR
