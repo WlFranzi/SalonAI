@@ -17,6 +17,8 @@ window.LOCALES = {
      ENGLISH — ground truth
   ───────────────────────────────────────────────────────────────── */
   en: {
+    faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
+    faq_q_thread: "What was the March salon's question — and what's different this time?",
     nav_book_cta: "Reserve a seat · 28 May",
     announcement_html: "🔔 <strong>May 28: Last public Salon AI Dinner.</strong> After that: bring your own group →",
     nav_cta:       "Join a Dinner →",
@@ -27,7 +29,7 @@ window.LOCALES = {
     manifesto_lede: "Europe doesn't look especially bold right now. We're falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don't even feel European — they feel like they just happen to be here.",
     manifesto_bridge: "That's exactly why Salon AI exists. Three things happen in one evening:",
     manifesto_item1: "We build AI hands-on — not the simple everyday tricks, but agents, automations and the things with real leverage. Because the only way to know where you and your team really stand on AI is to have built it yourself.",
-    manifesto_item_apply: "Then we point the agents straight at Europe: What's possible? Where can I actually contribute? Let's see what comes out when you genuinely turn AI loose on the question.",
+    manifesto_item_apply: "Then we point the agents straight at the evening's question. What's possible? Where do you start? What would be truly European?",
     manifesto_item2: "We bring the context that's otherwise missing: where Europe stands on AI today, where it's stuck, what's at stake on data — and what you can concretely do to move forward.",
     manifesto_item3: "You leave with a different view: you can build with AI whatever you want — or at least understand precisely what your teams are doing right now. Plus a new perspective on Europe and your own role in it.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -83,7 +85,7 @@ window.LOCALES = {
     ki_guide_sub:  "All key AI tools — rated & explained.",
     skills_h2:     'What you\'ll take home <em style="color:var(--sky-deep);font-style:italic;">from the evening</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Phase 1: Build your own AI assistant — step by step, no coding. Phase 2: Use it to find out exactly what you, as a citizen, can do for Europe today.",
+    skills_desc:   "In the first part of the evening, you build your personal AI agent. In the second part, you point it at the evening's question: which AI application could only Europeans build?",
     footer_tagline:"Bringing AI literacy to Europeans — one dinner at a time.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stats_eyebrow: "The evening at a glance",
@@ -185,6 +187,8 @@ window.LOCALES = {
      GERMAN
   ───────────────────────────────────────────────────────────────── */
   de: {
+    faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
+    faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
     nav_book_cta: "Platz reservieren · 28.5",
     announcement_html: "🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →",
     nav_cta:       "An einem Dinner teilnehmen →",
@@ -195,7 +199,7 @@ window.LOCALES = {
     manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
     manifesto_bridge: "Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:",
     manifesto_item1: "Wir bauen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben.",
-    manifesto_item_apply: "Dann richten wir die Agenten direkt auf Europa: Was geht? Wo kann ich konkret beitragen? Mal sehen, was rauskommt, wenn man KI ehrlich auf die Frage loslässt.",
+    manifesto_item_apply: "Dann richten wir die Agenten direkt auf die Abendfrage. Was geht? Wo fängst du an? Was wäre wirklich europäisch?",
     manifesto_item2: "Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen.",
     manifesto_item3: "Du gehst mit einem anderen Blick nach Hause: du kannst mit KI bauen, was du willst — oder verstehst zumindest genau, was deine Teams gerade tun. Plus eine neue Perspektive auf Europa und die eigene Rolle darin.",
     manifesto_coda: "Das Ganze passiert offline – mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Die Gespräche, die wirklich etwas verändern, entstehen meist dort, wo Menschen zusammenkommen und größer denken. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
@@ -251,7 +255,7 @@ window.LOCALES = {
     ki_guide_sub:  "Alle wichtigen KI-Tools — bewertet & erklärt.",
     skills_h2:     'Was du vom Abend mitnimmst',
     skills_eyebrow: "Vom Salon-Abend",
-    skills_desc:   "Im ersten Teil des Abends baust du deinen persönlichen KI-Agenten für deine eigenen Aufgaben. Im zweiten Teil setzt du ihn ein, um einen konkreten Plan zu entwickeln: was du heute schon tun kannst, ohne in der Politik zu sein, um Europa zu stärken.",
+    skills_desc:   "Im ersten Teil des Abends baust du deinen persönlichen KI-Agenten. Im zweiten Teil setzt du ihn auf die Frage des Abends an: Welche KI-Anwendung könnten nur Europäer bauen?",
     footer_tagline:"KI-Kompetenz für Europäer:innen — ein Dinner nach dem anderen.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stats_eyebrow: "Der Abend in Kürze",
@@ -353,6 +357,8 @@ window.LOCALES = {
      FRENCH
   ───────────────────────────────────────────────────────────────── */
   fr: {
+    faq_a_thread: "En mars, la question était : « À quoi ressemble l'Europe en 2041 ? » — c'est devenu le site de vision <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. En mai, la question est plus concrète et orientée action : « Quelle application IA seuls les Européens pourraient-ils construire ? » — et le résultat n'est pas une vision, mais un agent construit. Chaque salon a une question directrice différente. C'est le fil rouge.",
+    faq_q_thread: "Quelle était la question du salon de mars — et qu'est-ce qui change cette fois ?",
     nav_book_cta: "Réserver une place · 28 mai",
     announcement_html: "🔔 <strong>28 mai : dernier Salon AI Dinner public.</strong> Ensuite : amène ton propre groupe →",
     nav_cta:       "Rejoindre un dîner →",
@@ -363,6 +369,7 @@ window.LOCALES = {
     manifesto_lede: "L'Europe n'a pas l'air particulièrement audacieuse en ce moment. Nous sommes à la traîne sur l'IA, et quand on demande ce que l'on peut soi-même faire pour l'Europe, la réponse la plus fréquente est un haussement d'épaules. La plupart des gens sur ce continent ne se sentent même pas européens — ils ont l'impression d'être ici juste par hasard.",
     manifesto_bridge: "C'est précisément pourquoi Salon AI existe. Trois choses se passent en une soirée :",
     manifesto_item1: "Nous apprenons l'IA en pratique — pas les petits trucs du quotidien, mais les agents, les automatisations et tout ce qui a un vrai effet de levier. Car la seule façon de savoir où vous et votre équipe en êtes vraiment avec l'IA, c'est de l'avoir construite vous-même.",
+    manifesto_item_apply: "Ensuite, on dirige les agents directement sur la question du soir. Qu'est-ce qui est possible ? Par où commences-tu ? Qu'est-ce qui serait vraiment européen ?",
     manifesto_item2: "Nous apportons le contexte qui manque ailleurs : où en est l'Europe aujourd'hui sur l'IA, où ça coince, ce qui se joue sur les données — et ce qu'on peut concrètement faire pour avancer.",
     manifesto_item3: "Vous repartez avec un autre regard : vous pouvez construire avec l'IA ce que vous voulez — ou comprendre au moins précisément ce que font vos équipes en ce moment. Plus une nouvelle perspective sur l'Europe et votre propre rôle.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -418,7 +425,7 @@ window.LOCALES = {
     ki_guide_sub:  "Tous les outils IA clés — notés et expliqués.",
     skills_h2:     'Ce que vous rapporterez <em style="color:var(--sky-deep);font-style:italic;">de la soirée</em>',
     skills_eyebrow: "Atelier IA",
-    skills_desc:   "Phase 1 : Construisez votre propre assistant IA — étape par étape, sans code. Phase 2 : Utilisez-le pour découvrir exactement ce que vous, en tant que citoyen, pouvez faire pour l'Europe aujourd'hui.",
+    skills_desc:   "Dans la première partie de la soirée, tu construis ton agent IA personnel. Dans la seconde, tu le diriges vers la question du soir : quelle application IA seuls les Européens pourraient-ils construire ?",
     footer_tagline:"Développer la culture de l'IA chez les Européens — un dîner à la fois.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Soirée",
@@ -514,6 +521,8 @@ window.LOCALES = {
      SPANISH
   ───────────────────────────────────────────────────────────────── */
   es: {
+    faq_a_thread: "En marzo la pregunta fue: «¿Cómo es Europa en 2041?» — de ahí nació el sitio de visión <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. En mayo la pregunta es más concreta y orientada a la acción: «¿Qué aplicación de IA solo podrían construir los europeos?» — y el resultado no es una visión, sino un agente construido. Cada salón tiene una pregunta guía distinta. Ese es el hilo conductor.",
+    faq_q_thread: "¿Cuál era la pregunta del salón de marzo — y qué es distinto esta vez?",
     nav_book_cta: "Reservar plaza · 28 may",
     announcement_html: "🔔 <strong>28 de mayo: última Salon AI Dinner pública.</strong> Después: trae tu propio grupo →",
     nav_cta:       "Unirse a una cena →",
@@ -524,6 +533,7 @@ window.LOCALES = {
     manifesto_lede: "Europa no parece especialmente audaz en este momento. Vamos a la zaga en IA, y cuando preguntas qué puede uno mismo hacer por Europa, la respuesta más común es un encogimiento de hombros. La mayoría de las personas en este continente ni siquiera se sienten europeas — sienten que están aquí por pura casualidad.",
     manifesto_bridge: "Por eso existe Salon AI. En una sola velada ocurren tres cosas:",
     manifesto_item1: "Aprendemos IA con las manos — no los trucos sencillos del día a día, sino agentes, automatizaciones y todo lo que tiene un efecto real. Porque la única forma de saber dónde estáis tú y tu equipo realmente con la IA es haberla construido tú mismo.",
+    manifesto_item_apply: "Luego dirigimos los agentes directamente a la pregunta de la velada. ¿Qué se puede? ¿Por dónde empiezas? ¿Qué sería verdaderamente europeo?",
     manifesto_item2: "Aportamos el contexto que falta en otra parte: dónde está Europa hoy en IA, dónde se atasca, qué está en juego con los datos — y qué se puede hacer concretamente para avanzar.",
     manifesto_item3: "Te vas con otra mirada: puedes construir con IA lo que quieras — o entender al menos con precisión qué están haciendo tus equipos ahora mismo. Además, una nueva perspectiva sobre Europa y tu propio papel en ella.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -579,7 +589,7 @@ window.LOCALES = {
     ki_guide_sub:  "Todas las herramientas de IA clave — valoradas y explicadas.",
     skills_h2:     'Lo que te llevarás <em style="color:var(--sky-deep);font-style:italic;">de la velada</em>',
     skills_eyebrow: "Taller de IA",
-    skills_desc:   "Fase 1: Construye tu propio asistente de IA — paso a paso, sin código. Fase 2: Úsalo para descubrir exactamente lo que tú, como ciudadano, puedes hacer por Europa hoy.",
+    skills_desc:   "En la primera parte de la velada construyes tu agente de IA personal. En la segunda lo aplicas a la pregunta de la velada: ¿qué aplicación de IA solo podrían construir los europeos?",
     footer_tagline:"Llevando la alfabetización en IA a los europeos — una cena a la vez.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Noche",
@@ -675,6 +685,8 @@ window.LOCALES = {
      ITALIAN
   ───────────────────────────────────────────────────────────────── */
   it: {
+    faq_a_thread: "A marzo la domanda era: «Come sarà l'Europa nel 2041?» — ne è nato il sito di visione <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. A maggio la domanda è più concreta e orientata all'azione: «Quale applicazione IA potrebbero costruire solo gli europei?» — e il risultato non è una visione, ma un agente costruito. Ogni salone ha una domanda guida diversa. È il filo conduttore.",
+    faq_q_thread: "Qual era la domanda del salone di marzo — e cosa cambia questa volta?",
     nav_book_cta: "Riserva un posto · 28 mag",
     announcement_html: "🔔 <strong>28 maggio: ultima Salon AI Dinner pubblica.</strong> Dopo: porta il tuo gruppo →",
     nav_cta:       "Partecipa a una cena →",
@@ -685,6 +697,7 @@ window.LOCALES = {
     manifesto_lede: "L'Europa non sembra particolarmente coraggiosa in questo momento. Siamo in ritardo sull'IA, e quando chiedi cosa si possa fare in prima persona per l'Europa, la risposta più frequente è un'alzata di spalle. La maggior parte delle persone in questo continente non si sente nemmeno europea — si sente come se fosse qui solo per caso.",
     manifesto_bridge: "Proprio per questo esiste Salon AI. In una sola serata succedono tre cose:",
     manifesto_item1: "Impariamo l'IA con le mani — non i piccoli trucchi quotidiani, ma agenti, automazioni e tutto ciò che ha una leva reale. Perché l'unico modo di sapere dove tu e il tuo team siete davvero con l'IA è averla costruita tu stesso.",
+    manifesto_item_apply: "Poi puntiamo gli agenti direttamente sulla domanda della serata. Cosa è possibile? Da dove inizi? Cosa sarebbe davvero europeo?",
     manifesto_item2: "Portiamo il contesto che altrove manca: dove si trova oggi l'Europa sull'IA, dove si blocca, cosa è in gioco sui dati — e cosa si può concretamente fare per andare avanti.",
     manifesto_item3: "Te ne vai con un altro sguardo: puoi costruire con l'IA quello che vuoi — o almeno capire precisamente cosa stanno facendo i tuoi team in questo momento. Più una nuova prospettiva sull'Europa e il tuo ruolo dentro.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -740,7 +753,7 @@ window.LOCALES = {
     ki_guide_sub:  "Tutti i principali strumenti AI — valutati e spiegati.",
     skills_h2:     'Cosa porterai a casa <em style="color:var(--sky-deep);font-style:italic;">dalla serata</em>',
     skills_eyebrow: "Workshop IA",
-    skills_desc:   "Fase 1: Costruisci il tuo assistente IA — passo dopo passo, senza codice. Fase 2: Usalo per scoprire esattamente cosa tu, come cittadino, puoi fare per l'Europa oggi.",
+    skills_desc:   "Nella prima parte della serata costruisci il tuo agente IA personale. Nella seconda lo applichi alla domanda della serata: quale applicazione IA potrebbero costruire solo gli europei?",
     footer_tagline:"Portare la cultura AI agli europei — una cena alla volta.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Serata",
@@ -836,6 +849,8 @@ window.LOCALES = {
      PORTUGUESE
   ───────────────────────────────────────────────────────────────── */
   pt: {
+    faq_a_thread: "Em março a pergunta foi: «Como é a Europa em 2041?» — daí nasceu o site de visão <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Em maio a pergunta é mais concreta e orientada à ação: «Que aplicação de IA só os europeus poderiam construir?» — e o resultado não é uma visão, mas um agente construído. Cada salão tem uma pergunta condutora diferente. É o fio condutor.",
+    faq_q_thread: "Qual era a pergunta do salão de março — e o que muda desta vez?",
     nav_book_cta: "Reservar lugar · 28 mai",
     announcement_html: "🔔 <strong>28 de maio: último Salon AI Dinner público.</strong> Depois: traz o teu próprio grupo →",
     nav_cta:       "Participar de um jantar →",
@@ -846,6 +861,7 @@ window.LOCALES = {
     manifesto_lede: "A Europa não parece particularmente arrojada neste momento. Estamos atrasados na IA, e quando se pergunta o que se pode fazer pessoalmente pela Europa, a resposta mais comum é um encolher de ombros. A maioria das pessoas neste continente nem sequer se sente europeia — sentem que estão aqui apenas por acaso.",
     manifesto_bridge: "É precisamente por isso que existe o Salon AI. Numa só noite acontecem três coisas:",
     manifesto_item1: "Aprendemos IA com as mãos — não os truques simples do dia a dia, mas agentes, automatizações e o que tem alavanca real. Porque a única forma de saber onde você e a sua equipa realmente estão com a IA é tê-la construído você mesmo.",
+    manifesto_item_apply: "Depois apontamos os agentes diretamente para a pergunta da noite. O que é possível? Por onde começas? O que seria verdadeiramente europeu?",
     manifesto_item2: "Trazemos o contexto que falta noutro lado: onde está a Europa hoje na IA, onde encrava, o que está em jogo nos dados — e o que se pode concretamente fazer para avançar.",
     manifesto_item3: "Sai-se com outro olhar: pode-se construir com IA o que se quiser — ou pelo menos compreender exactamente o que as suas equipas estão a fazer agora. E uma nova perspectiva sobre a Europa e o seu próprio papel.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -901,7 +917,7 @@ window.LOCALES = {
     ki_guide_sub:  "Todas as ferramentas de IA importantes — avaliadas e explicadas.",
     skills_h2:     'O que você levará para casa <em style="color:var(--sky-deep);font-style:italic;">da noite</em>',
     skills_eyebrow: "Workshop de IA",
-    skills_desc:   "Fase 1: Constrói o teu próprio assistente de IA — passo a passo, sem código. Fase 2: Usa-o para descobrir exatamente o que tu, enquanto cidadão, podes fazer pela Europa hoje.",
+    skills_desc:   "Na primeira parte da noite constróis o teu agente de IA pessoal. Na segunda, aplica-lo à pergunta da noite: que aplicação de IA só os europeus poderiam construir?",
     footer_tagline:"Levando a alfabetização em IA aos europeus — um jantar de cada vez.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Noite",
@@ -997,6 +1013,8 @@ window.LOCALES = {
      DUTCH
   ───────────────────────────────────────────────────────────────── */
   nl: {
+    faq_a_thread: "In maart was de vraag: „Hoe ziet Europa er in 2041 uit?\" — daaruit ontstond de visie-website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. In mei is de vraag concreter en actiegerichter: „Welke AI-toepassing kunnen alleen Europeanen bouwen?\" — en het resultaat is geen visie, maar een gebouwde agent. Elk salon heeft een andere leidende vraag. Dat is de rode draad.",
+    faq_q_thread: "Wat was de vraag van het maart-salon — en wat is deze keer anders?",
     nav_book_cta: "Plaats reserveren · 28 mei",
     announcement_html: "🔔 <strong>28 mei: laatste openbare Salon AI Dinner.</strong> Daarna: breng je eigen groep mee →",
     nav_cta:       "Sluit je aan bij een diner →",
@@ -1007,6 +1025,7 @@ window.LOCALES = {
     manifesto_lede: "Europa lijkt op dit moment niet bijzonder moedig. Bij AI lopen we achter, en als je vraagt wat je zelf voor Europa kunt doen, krijg je meestal een schouderophalen. De meeste mensen op dit continent voelen zich niet eens Europees — ze voelen zich alsof ze hier toevallig zijn.",
     manifesto_bridge: "Daarom bestaat Salon AI. Op één avond gebeuren drie dingen:",
     manifesto_item1: "We leren AI hands-on — niet de simpele dagelijkse trucs, maar agents, automatisering en het werk dat echt hefboomkracht heeft. Want de enige manier om te weten waar jij en je team echt staan met AI, is het zelf te hebben gebouwd.",
+    manifesto_item_apply: "Daarna richten we de agents direct op de vraag van de avond. Wat kan? Waar begin je? Wat zou écht Europees zijn?",
     manifesto_item2: "We brengen de context die elders ontbreekt: waar Europa nu staat met AI, waar het hapert, wat er op het spel staat met data — en wat je concreet kunt doen om vooruit te komen.",
     manifesto_item3: "Je gaat naar huis met een andere blik: je kunt met AI bouwen wat je wilt — of in elk geval precies begrijpen wat je teams nu doen. Plus een nieuw perspectief op Europa en je eigen rol erin.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1062,7 +1081,7 @@ window.LOCALES = {
     ki_guide_sub:  "Alle belangrijke AI-tools — beoordeeld en uitgelegd.",
     skills_h2:     'Wat je meeneemt <em style="color:var(--sky-deep);font-style:italic;">van de avond</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Fase 1: Bouw je eigen AI-assistent — stap voor stap, zonder code. Fase 2: Gebruik hem om precies te ontdekken wat jij, als burger, vandaag voor Europa kunt doen.",
+    skills_desc:   "In het eerste deel van de avond bouw je je persoonlijke AI-agent. In het tweede deel zet je hem in op de vraag van de avond: welke AI-toepassing kunnen alleen Europeanen bouwen?",
     footer_tagline:"AI-kennis brengen naar Europeanen — één diner per keer.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Avond",
@@ -1158,6 +1177,8 @@ window.LOCALES = {
      POLISH
   ───────────────────────────────────────────────────────────────── */
   pl: {
+    faq_a_thread: "W marcu pytanie brzmiało: „Jak wygląda Europa w 2041 roku?\" — z tego powstała wizjonerska strona <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. W maju pytanie jest bardziej konkretne i zorientowane na działanie: „Jaką aplikację AI mogliby zbudować tylko Europejczycy?\" — a rezultatem nie jest wizja, lecz zbudowany agent. Każdy salon ma inne pytanie przewodnie. To jest nić przewodnia.",
+    faq_q_thread: "Jakie było pytanie salonu marcowego — i co tym razem jest inne?",
     nav_book_cta: "Rezerwacja · 28 maja",
     announcement_html: "🔔 <strong>28 maja: ostatnia otwarta Salon AI Dinner.</strong> Potem: przyprowadź własną grupę →",
     nav_cta:       "Dołącz do kolacji →",
@@ -1168,6 +1189,7 @@ window.LOCALES = {
     manifesto_lede: "Europa nie sprawia teraz wrażenia szczególnie odważnej. W AI jesteśmy w tyle, a kiedy pytasz, co sam możesz zrobić dla Europy, najczęstszą odpowiedzią jest wzruszenie ramionami. Większość ludzi na tym kontynencie nie czuje się nawet po europejsku — czują się tak, jakby znaleźli się tu zupełnie przez przypadek.",
     manifesto_bridge: "Właśnie dlatego istnieje Salon AI. W ciągu jednego wieczoru dzieją się trzy rzeczy:",
     manifesto_item1: "Uczymy się AI z pierwszej ręki — nie proste sztuczki na co dzień, ale agenty, automatyzacje i to, co naprawdę ma efekt dźwigni. Bo jedyny sposób, by wiedzieć, gdzie ty i twój zespół naprawdę jesteście z AI, to samodzielnie coś zbudować.",
+    manifesto_item_apply: "Potem kierujemy agentów bezpośrednio na pytanie wieczoru. Co jest możliwe? Od czego zaczynasz? Co byłoby naprawdę europejskie?",
     manifesto_item2: "Dostarczamy kontekst, którego gdzie indziej brakuje: gdzie jest dziś Europa z AI, gdzie się zacina, co jest na szali w sprawie danych — i co konkretnie można zrobić, żeby pójść do przodu.",
     manifesto_item3: "Wychodzisz z innym spojrzeniem: z AI możesz zbudować, co chcesz — albo przynajmniej dokładnie rozumieć, co teraz robią twoje zespoły. Plus nowa perspektywa na Europę i twoją rolę w niej.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1223,7 +1245,7 @@ window.LOCALES = {
     ki_guide_sub:  "Wszystkie kluczowe narzędzia AI — ocenione i wyjaśnione.",
     skills_h2:     'Co wyniesiesz <em style="color:var(--sky-deep);font-style:italic;">z wieczoru</em>',
     skills_eyebrow: "Warsztaty AI",
-    skills_desc:   "Faza 1: Zbuduj własnego asystenta AI — krok po kroku, bez kodowania. Faza 2: Użyj go, aby odkryć, co ty jako obywatel możesz dziś zrobić dla Europy.",
+    skills_desc:   "W pierwszej części wieczoru budujesz swojego osobistego agenta AI. W drugiej kierujesz go na pytanie wieczoru: jaką aplikację AI mogliby zbudować tylko Europejczycy?",
     footer_tagline:"Rozwijanie wiedzy o AI wśród Europejczyków — kolacja po kolacji.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Wieczór",
@@ -1319,6 +1341,8 @@ window.LOCALES = {
      ROMANIAN
   ───────────────────────────────────────────────────────────────── */
   ro: {
+    faq_a_thread: "În martie întrebarea a fost: „Cum arată Europa în 2041?\" — de acolo a apărut site-ul-viziune <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. În mai întrebarea este mai concretă și orientată spre acțiune: „Ce aplicație AI ar putea construi doar europenii?\" — iar rezultatul nu este o viziune, ci un agent construit. Fiecare salon are o altă întrebare conducătoare. Ăsta este firul roșu.",
+    faq_q_thread: "Care era întrebarea salonului din martie — și ce este diferit de data aceasta?",
     nav_book_cta: "Rezervă un loc · 28 mai",
     announcement_html: "🔔 <strong>28 mai: ultima cină publică Salon AI.</strong> După aceea: adu-ți propriul grup →",
     nav_cta:       "Alătură-te unei cine →",
@@ -1329,6 +1353,7 @@ window.LOCALES = {
     manifesto_lede: "Europa nu pare deosebit de îndrăzneață în acest moment. La AI suntem în urmă, iar când întrebi ce poți face tu însuți pentru Europa, cel mai frecvent răspuns este o ridicare din umeri. Majoritatea oamenilor de pe acest continent nu se simt nici măcar europeni — simt că sunt aici pur și simplu din întâmplare.",
     manifesto_bridge: "Tocmai de aceea există Salon AI. Într-o singură seară se întâmplă trei lucruri:",
     manifesto_item1: "Învățăm AI pe pielea noastră — nu trucurile simple de zi cu zi, ci agenți, automatizări și lucrurile cu pârghie reală. Pentru că singura modalitate de a ști unde te afli tu și echipa ta cu AI este să o fi construit tu însuți.",
+    manifesto_item_apply: "Apoi îndreptăm agenții direct spre întrebarea serii. Ce e posibil? De unde începi? Ce ar fi cu adevărat european?",
     manifesto_item2: "Aducem contextul care lipsește în altă parte: unde se află astăzi Europa în AI, unde se blochează, ce este în joc cu datele — și ce se poate face concret pentru a merge înainte.",
     manifesto_item3: "Pleci acasă cu altă perspectivă: poți construi cu AI ce vrei — sau cel puțin înțelegi exact ce fac echipele tale chiar acum. În plus, o nouă perspectivă asupra Europei și a propriului tău rol în ea.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1384,7 +1409,7 @@ window.LOCALES = {
     ki_guide_sub:  "Toate instrumentele AI cheie — evaluate și explicate.",
     skills_h2:     'Ce vei lua acasă <em style="color:var(--sky-deep);font-style:italic;">de la seară</em>',
     skills_eyebrow: "Atelier AI",
-    skills_desc:   "Faza 1: Construiește-ți propriul asistent AI — pas cu pas, fără cod. Faza 2: Folosește-l pentru a descoperi exact ce poți face tu, ca cetățean, pentru Europa azi.",
+    skills_desc:   "În prima parte a serii îți construiești agentul AI personal. În a doua îl îndrepți spre întrebarea serii: ce aplicație AI ar putea construi doar europenii?",
     footer_tagline:"Educarea europenilor despre AI — o cină pe rând.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Seară",
@@ -1480,6 +1505,8 @@ window.LOCALES = {
      SWEDISH
   ───────────────────────────────────────────────────────────────── */
   sv: {
+    faq_a_thread: "I mars var frågan: \"Hur ser Europa ut 2041?\" — det blev visionswebben <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. I maj är frågan mer konkret och handlingsinriktad: \"Vilken AI-tillämpning skulle bara européer kunna bygga?\" — och resultatet är ingen vision utan en byggd agent. Varje salong har en annan ledande fråga. Det är den röda tråden.",
+    faq_q_thread: "Vad var marssalongens fråga — och vad är annorlunda den här gången?",
     nav_book_cta: "Reservera plats · 28 maj",
     announcement_html: "🔔 <strong>28 maj: sista offentliga Salon AI Dinner.</strong> Sen: ta med din egen grupp →",
     nav_cta:       "Gå med på en middag →",
@@ -1490,6 +1517,7 @@ window.LOCALES = {
     manifesto_lede: "Europa ser inte särskilt djärvt ut just nu. På AI släpar vi efter, och när man frågar vad man själv kan göra för Europa möts man oftast av en axelryckning. De flesta människor på den här kontinenten känner sig inte ens europeiska — de känner att de bara råkar finnas här.",
     manifesto_bridge: "Just därför finns Salon AI. På en kväll händer tre saker:",
     manifesto_item1: "Vi lär oss AI hands-on — inte de enkla vardagstricken, utan agenter, automatisering och det som har riktig hävstångseffekt. För det enda sättet att veta var du och ditt team verkligen står med AI är att ha byggt något själv.",
+    manifesto_item_apply: "Sen riktar vi agenterna direkt mot kvällens fråga. Vad är möjligt? Var börjar du? Vad vore verkligen europeiskt?",
     manifesto_item2: "Vi ger kontexten som saknas på andra håll: var Europa står med AI idag, var det kärvar, vad som står på spel i datafrågan — och vad man konkret kan göra för att komma framåt.",
     manifesto_item3: "Du går hem med en annan blick: du kan bygga vad du vill med AI — eller åtminstone exakt förstå vad dina team gör just nu. Plus ett nytt perspektiv på Europa och din egen roll i det.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1545,7 +1573,7 @@ window.LOCALES = {
     ki_guide_sub:  "Alla viktiga AI-verktyg — betygsatta och förklarade.",
     skills_h2:     'Vad du tar med dig <em style="color:var(--sky-deep);font-style:italic;">från kvällen</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Fas 1: Bygg din egen AI-assistent — steg för steg, utan kod. Fas 2: Använd den för att ta reda på exakt vad du, som medborgare, kan göra för Europa idag.",
+    skills_desc:   "I första delen av kvällen bygger du din personliga AI-agent. I andra delen riktar du den mot kvällens fråga: vilken AI-tillämpning skulle bara européer kunna bygga?",
     footer_tagline:"Att sprida AI-kunskaper till européer — en middag i taget.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Kväll",
@@ -1641,6 +1669,8 @@ window.LOCALES = {
      CZECH
   ───────────────────────────────────────────────────────────────── */
   cs: {
+    faq_a_thread: "V březnu zněla otázka: „Jak vypadá Evropa v roce 2041?\" — z toho vznikl vizionářský web <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. V květnu je otázka konkrétnější a orientovaná na akci: „Jakou AI aplikaci by mohli postavit jen Evropané?\" — a výsledkem není vize, ale postavený agent. Každý salon má jinou hlavní otázku. To je červená nit.",
+    faq_q_thread: "Jaká byla otázka březnového salonu — a co je tentokrát jiné?",
     nav_book_cta: "Rezervovat místo · 28. 5.",
     announcement_html: "🔔 <strong>28. května: poslední veřejný Salon AI Dinner.</strong> Pak: přiveď vlastní skupinu →",
     nav_cta:       "Přidej se na večeři →",
@@ -1651,6 +1681,7 @@ window.LOCALES = {
     manifesto_lede: "Evropa právě teď nepůsobí zvlášť odvážně. V AI zaostáváme, a když se ptáš, co můžeš sám pro Evropu udělat, nejčastější odpovědí bývá pokrčení rameny. Většina lidí na tomto kontinentu se ani necítí jako Evropané — mají pocit, že tu jsou jen náhodou.",
     manifesto_bridge: "Právě proto existuje Salon AI. Během jednoho večera se dějí tři věci:",
     manifesto_item1: "Učíme se AI z první ruky — ne jednoduché každodenní triky, ale agenty, automatizace a věci se skutečnou pákou. Protože jediný způsob, jak zjistit, kde vy a váš tým s AI skutečně stojíte, je něco si sám postavit.",
+    manifesto_item_apply: "Pak nasměrujeme agenty přímo na otázku večera. Co jde? Kde začneš? Co by bylo opravdu evropské?",
     manifesto_item2: "Přinášíme kontext, který jinde chybí: kde dnes Evropa stojí s AI, kde to vázne, co je v sázce u dat — a co se konkrétně dá udělat pro pohyb vpřed.",
     manifesto_item3: "Odcházíte s jiným pohledem: s AI si můžete postavit, co chcete — nebo aspoň přesně rozumět tomu, co vaše týmy právě teď dělají. Plus nový pohled na Evropu a vaši vlastní roli v ní.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1706,7 +1737,7 @@ window.LOCALES = {
     ki_guide_sub:  "Všechny klíčové nástroje AI — hodnocené a vysvětlené.",
     skills_h2:     'Co si odnesete <em style="color:var(--sky-deep);font-style:italic;">z večera</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Fáze 1: Postavte si vlastního AI asistenta — krok za krokem, bez kódování. Fáze 2: Použijte ho k zjištění, co vy jako občan můžete dnes udělat pro Evropu.",
+    skills_desc:   "V první části večera si postavíš svého osobního AI agenta. V druhé ho zaměříš na otázku večera: jakou AI aplikaci by mohli postavit jen Evropané?",
     footer_tagline:"Přinášíme AI gramotnost Evropanům — jedno jídlo po druhém.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Večer",
@@ -1802,6 +1833,8 @@ window.LOCALES = {
      HUNGARIAN
   ───────────────────────────────────────────────────────────────── */
   hu: {
+    faq_a_thread: "Márciusban a kérdés ez volt: „Milyen Európa 2041-ben?\" — ebből született a <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> jövőképi weboldal. Májusban a kérdés konkrétabb és cselekvésorientáltabb: „Melyik AI-alkalmazást csak az európaiak építhetnék meg?\" — és az eredmény nem egy jövőkép, hanem egy felépített ügynök. Minden szalonnak más vezérkérdése van. Ez a vörös fonál.",
+    faq_q_thread: "Mi volt a márciusi szalon kérdése — és mi a különbség ezúttal?",
     nav_book_cta: "Helyfoglalás · május 28",
     announcement_html: "🔔 <strong>Május 28: az utolsó nyilvános Salon AI Dinner.</strong> Utána: hozd a saját csoportodat →",
     nav_cta:       "Csatlakozz egy vacsorához →",
@@ -1812,6 +1845,7 @@ window.LOCALES = {
     manifesto_lede: "Európa most nem tűnik túl bátornak. A mesterséges intelligenciában lemaradunk, és amikor megkérdezed, mit tehetsz te magad Európáért, a leggyakoribb válasz egy vállrándítás. A legtöbben ezen a kontinensen nem is érzik magukat európainak — úgy érzik, csak véletlenül vannak itt.",
     manifesto_bridge: "Pontosan ezért létezik a Salon AI. Egy estén három dolog történik:",
     manifesto_item1: "Hands-on tanuljuk a mesterséges intelligenciát — nem a hétköznapi trükköket, hanem ügynököket, automatizálásokat és a valódi tőkéerőt jelentő dolgokat. Mert csak akkor tudod, hol állsz te és a csapatod az MI-vel, ha magad is építettél valamit.",
+    manifesto_item_apply: "Aztán az ágenseket egyenesen az este kérdésére irányítjuk. Mi lehetséges? Hol kezded? Mi volna igazán európai?",
     manifesto_item2: "Megadjuk a kontextust, ami máshol hiányzik: hol tart ma Európa az MI-ben, hol akad el, mi a tét az adatoknál — és mit lehet konkrétan tenni az előrelépésért.",
     manifesto_item3: "Más nézettel térsz haza: az MI-vel azt építhetsz, amit akarsz — vagy legalább pontosan érted, mit csinálnak most a csapataid. Plusz egy új perspektíva Európáról és a saját szerepedről benne.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -1867,7 +1901,7 @@ window.LOCALES = {
     ki_guide_sub:  "Minden fontos AI-eszköz — értékelve és magyarázva.",
     skills_h2:     'Mit viszel haza <em style="color:var(--sky-deep);font-style:italic;">az estéről</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "1. fázis: Építsd meg a saját AI-asszisztensedet — lépésről lépésre, kódolás nélkül. 2. fázis: Használd azt, hogy kiderítsd, te mint polgár, mit tehetsz ma Európáért.",
+    skills_desc:   "Az este első részében felépíted a saját személyes AI-ügynöködet. A másodikban az este kérdésére irányítod: melyik AI-alkalmazást csak az európaiak építhetnék meg?",
     footer_tagline:"AI-ismeretek terjesztése az európaiak körében — egy vacsora egyszerre.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Este",
@@ -1963,6 +1997,8 @@ window.LOCALES = {
      SLOVAK
   ───────────────────────────────────────────────────────────────── */
   sk: {
+    faq_a_thread: "V marci znela otázka: „Ako vyzerá Európa v roku 2041?\" — z toho vznikol vizionársky web <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. V máji je otázka konkrétnejšia a orientovaná na akciu: „Akú AI aplikáciu by mohli postaviť len Európania?\" — a výsledkom nie je vízia, ale postavený agent. Každý salón má inú hlavnú otázku. To je červená niť.",
+    faq_q_thread: "Aká bola otázka marcového salónu — a čo je tentoraz iné?",
     nav_book_cta: "Rezervovať miesto · 28. 5.",
     announcement_html: "🔔 <strong>28. mája: posledná verejná Salon AI Dinner.</strong> Potom: priveď vlastnú skupinu →",
     nav_cta:       "Pridaj sa na večeru →",
@@ -1973,6 +2009,7 @@ window.LOCALES = {
     manifesto_lede: "Európa práve teraz nepôsobí zvlášť odvážne. V AI zaostávame, a keď sa pýtaš, čo môžeš sám pre Európu urobiť, najčastejšou odpoveďou je pokrčenie ramien. Väčšina ľudí na tomto kontinente sa ani necíti ako Európania — majú pocit, že sú tu iba náhodou.",
     manifesto_bridge: "Práve preto existuje Salon AI. Počas jedného večera sa dejú tri veci:",
     manifesto_item1: "Učíme sa AI z prvej ruky — nie jednoduché každodenné triky, ale agentov, automatizácie a veci so skutočnou pákou. Pretože jediný spôsob, ako zistiť, kde vy a váš tím s AI skutočne stojíte, je niečo si sám postaviť.",
+    manifesto_item_apply: "Potom nasmerujeme agentov priamo na otázku večera. Čo ide? Kde začneš? Čo by bolo skutočne európske?",
     manifesto_item2: "Prinášame kontext, ktorý inde chýba: kde dnes Európa stojí s AI, kde to viazne, čo je v stávke pri dátach — a čo sa konkrétne dá urobiť pre pohyb vpred.",
     manifesto_item3: "Odchádzaš s iným pohľadom: s AI si môžeš postaviť, čo chceš — alebo aspoň presne rozumieť tomu, čo tvoje tímy práve teraz robia. Plus nový pohľad na Európu a tvoju vlastnú rolu v nej.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2028,7 +2065,7 @@ window.LOCALES = {
     ki_guide_sub:  "Všetky kľúčové AI nástroje — hodnotené a vysvetlené.",
     skills_h2:     'Čo si odnesiete <em style="color:var(--sky-deep);font-style:italic;">z večera</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Fáza 1: Postavte si vlastného AI asistenta — krok za krokom, bez kódovania. Fáza 2: Použite ho na zistenie, čo vy ako občan môžete dnes urobiť pre Európu.",
+    skills_desc:   "V prvej časti večera si postavíš svojho osobného AI agenta. V druhej ho zameriaš na otázku večera: akú AI aplikáciu by mohli postaviť len Európania?",
     footer_tagline:"Prinášame AI gramotnosť Európanom — jedno jedlo po druhom.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Večer",
@@ -2124,6 +2161,8 @@ window.LOCALES = {
      BULGARIAN
   ───────────────────────────────────────────────────────────────── */
   bg: {
+    faq_a_thread: "През март въпросът беше: „Как изглежда Европа през 2041 г.?\" — от това възникна визионерският сайт <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. През май въпросът е по-конкретен и ориентиран към действие: „Какво AI приложение биха могли да изградят само европейците?\" — а резултатът не е визия, а построен агент. Всеки салон има друг водещ въпрос. Това е червената нишка.",
+    faq_q_thread: "Какъв беше въпросът на мартенския салон — и какво е различно този път?",
     nav_book_cta: "Резервация · 28 май",
     announcement_html: "🔔 <strong>28 май: последна публична Salon AI вечеря.</strong> След това: доведи своя група →",
     nav_cta:       "Присъедини се към вечеря →",
@@ -2134,6 +2173,7 @@ window.LOCALES = {
     manifesto_lede: "Европа в момента не изглежда особено смела. В областта на ИИ изоставаме, а когато попиташ какво сам можеш да направиш за Европа, най-честият отговор е свиване на рамене. Повечето хора на този континент дори не се чувстват европейци — те се чувстват така, сякаш са тук просто случайно.",
     manifesto_bridge: "Именно затова съществува Salon AI. В една вечер се случват три неща:",
     manifesto_item1: "Учим ИИ с ръцете — не простите ежедневни трикове, а агенти, автоматизации и нещата с истински лост. Защото единственият начин да разбереш къде наистина стоите ти и екипът ти с ИИ е да го изградиш сам.",
+    manifesto_item_apply: "След това насочваме агентите директно към въпроса на вечерта. Какво е възможно? Откъде започваш? Кое би било наистина европейско?",
     manifesto_item2: "Носим контекста, който другаде липсва: къде стои днес Европа с ИИ, къде заяжда, какво е заложено при данните — и какво конкретно може да се направи, за да се върви напред.",
     manifesto_item3: "Тръгваш си с различен поглед: с ИИ можеш да построиш каквото поискаш — или поне да разбираш точно какво правят екипите ти сега. Плюс нова перспектива за Европа и собствената ти роля в нея.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2189,7 +2229,7 @@ window.LOCALES = {
     ki_guide_sub:  "Всички ключови AI инструменти — оценени и обяснени.",
     skills_h2:     'Какво ще вземете <em style="color:var(--sky-deep);font-style:italic;">от вечерта</em>',
     skills_eyebrow: "AI Уъркшоп",
-    skills_desc:   "Фаза 1: Изградете собствен AI асистент — стъпка по стъпка, без кодиране. Фаза 2: Използвайте го, за да разберете точно какво вие, като гражданин, можете да направите за Европа днес.",
+    skills_desc:   "В първата част на вечерта изграждаш своя личен AI агент. Във втората го насочваш към въпроса на вечерта: какво AI приложение биха могли да изградят само европейците?",
     footer_tagline:"Носим AI грамотност на европейците — по едно хапване наведнъж.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Вечер",
@@ -2285,6 +2325,8 @@ window.LOCALES = {
      DANISH
   ───────────────────────────────────────────────────────────────── */
   da: {
+    faq_a_thread: "I marts var spørgsmålet: „Hvordan ser Europa ud i 2041?\" — det blev visions-websitet <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. I maj er spørgsmålet mere konkret og handlingsorienteret: „Hvilken AI-anvendelse kunne kun europæere bygge?\" — og resultatet er ikke en vision, men en bygget agent. Hver salon har et andet styrende spørgsmål. Det er den røde tråd.",
+    faq_q_thread: "Hvad var marts-salonens spørgsmål — og hvad er anderledes denne gang?",
     nav_book_cta: "Reservér plads · 28. maj",
     announcement_html: "🔔 <strong>28. maj: sidste offentlige Salon AI Dinner.</strong> Bagefter: tag din egen gruppe med →",
     nav_cta:       "Deltag i en middag →",
@@ -2295,6 +2337,7 @@ window.LOCALES = {
     manifesto_lede: "Europa ser ikke særligt dristigt ud lige nu. Vi sakker bagud på AI, og når man spørger, hvad man selv kan gøre for Europa, er det almindeligste svar et skuldertræk. De fleste mennesker på dette kontinent føler sig ikke engang europæiske — de føler, at de bare tilfældigvis er her.",
     manifesto_bridge: "Netop derfor findes Salon AI. På én aften sker tre ting:",
     manifesto_item1: "Vi lærer AI hands-on — ikke de enkle dagligdagstricks, men agenter, automatisering og det, der har reel løftestang. For den eneste måde at vide, hvor du og dit team virkelig står med AI, er at have bygget noget selv.",
+    manifesto_item_apply: "Så retter vi agenterne direkte mod aftenens spørgsmål. Hvad er muligt? Hvor begynder du? Hvad ville være rigtigt europæisk?",
     manifesto_item2: "Vi giver konteksten, der ellers mangler: hvor Europa står på AI i dag, hvor det kører fast, hvad der står på spil ved data — og hvad man konkret kan gøre for at komme videre.",
     manifesto_item3: "Du går hjem med et andet blik: du kan bygge med AI, hvad du vil — eller i det mindste præcist forstå, hvad dine teams gør lige nu. Plus et nyt perspektiv på Europa og din egen rolle i den.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2350,7 +2393,7 @@ window.LOCALES = {
     ki_guide_sub:  "Alle vigtige AI-værktøjer — vurderet og forklaret.",
     skills_h2:     'Hvad du tager med dig <em style="color:var(--sky-deep);font-style:italic;">fra aftenen</em>',
     skills_eyebrow: "AI Workshop",
-    skills_desc:   "Fase 1: Byg din egen AI-assistent — trin for trin, uden kode. Fase 2: Brug den til at finde ud af præcis, hvad du som borger kan gøre for Europa i dag.",
+    skills_desc:   "I første del af aftenen bygger du din personlige AI-agent. I anden del retter du den mod aftenens spørgsmål: hvilken AI-anvendelse kunne kun europæere bygge?",
     footer_tagline:"Bringer AI-kendskab til europæerne — ét måltid ad gangen.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Aften",
@@ -2446,6 +2489,8 @@ window.LOCALES = {
      FINNISH
   ───────────────────────────────────────────────────────────────── */
   fi: {
+    faq_a_thread: "Maaliskuussa kysymys oli: \"Miltä Eurooppa näyttää vuonna 2041?\" — siitä syntyi visio-sivusto <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Toukokuussa kysymys on konkreettisempi ja toimintaan suuntautunut: \"Minkä AI-sovelluksen vain eurooppalaiset voisivat rakentaa?\" — ja tulos ei ole visio, vaan rakennettu agentti. Jokaisella salongilla on eri johtava kysymys. Se on punainen lanka.",
+    faq_q_thread: "Mikä oli maaliskuun salongin kysymys — ja mikä on tällä kertaa erilaista?",
     nav_book_cta: "Varaa paikka · 28.5.",
     announcement_html: "🔔 <strong>28. toukokuuta: viimeinen julkinen Salon AI Dinner.</strong> Sen jälkeen: tuo oma ryhmäsi →",
     nav_cta:       "Liity illalliselle →",
@@ -2456,6 +2501,7 @@ window.LOCALES = {
     manifesto_lede: "Eurooppa ei näytä juuri nyt erityisen rohkealta. Tekoälyssä jäämme jälkeen, ja kun kysytään, mitä itse voit tehdä Euroopan hyväksi, yleisin vastaus on olankohautus. Useimmat ihmiset tällä mantereella eivät edes tunne itseään eurooppalaisiksi — he tuntevat olevansa täällä vain sattumalta.",
     manifesto_bridge: "Juuri siksi Salon AI on olemassa. Yhden illan aikana tapahtuu kolme asiaa:",
     manifesto_item1: "Opimme tekoälyä käytännössä — emme arkisia temppuja, vaan agentteja, automaatioita ja sitä, jolla on todellista vipuvoimaa. Sillä ainoa tapa tietää, missä sinä ja tiimisi todella olette tekoälyssä, on rakentaa jotain itse.",
+    manifesto_item_apply: "Sitten suuntaamme agentit suoraan illan kysymykseen. Mikä on mahdollista? Mistä aloitat? Mikä olisi todella eurooppalaista?",
     manifesto_item2: "Tarjoamme kontekstin, joka muualta puuttuu: missä Eurooppa on tekoälyssä tänään, missä se takkuilee, mikä on pelissä datan suhteen — ja mitä voi konkreettisesti tehdä eteenpäin pääsemiseksi.",
     manifesto_item3: "Lähdet kotiin toisenlaisella katseella: voit rakentaa tekoälyllä mitä haluat — tai ymmärtää ainakin tarkasti, mitä tiimisi tekevät juuri nyt. Lisäksi uusi näkökulma Eurooppaan ja omaan rooliisi siinä.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2511,7 +2557,7 @@ window.LOCALES = {
     ki_guide_sub:  "Kaikki tärkeät tekoälytyökalut — arvioitu ja selitetty.",
     skills_h2:     'Mitä viet mukanasi <em style="color:var(--sky-deep);font-style:italic;">illasta</em>',
     skills_eyebrow: "AI-työpaja",
-    skills_desc:   "Vaihe 1: Rakenna oma tekoälyassistenttisi — askel askeleelta, ilman koodausta. Vaihe 2: Käytä sitä selvittääksesi tarkalleen, mitä sinä kansalaisena voit tehdä Euroopan hyväksi tänään.",
+    skills_desc:   "Illan ensimmäisessä osassa rakennat oman henkilökohtaisen AI-agenttisi. Toisessa osassa suuntaat sen illan kysymykseen: minkä AI-sovelluksen vain eurooppalaiset voisivat rakentaa?",
     footer_tagline:"Tuomme tekoälylukutaidon eurooppalaisille — yksi illallinen kerrallaan.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Ilta",
@@ -2607,6 +2653,8 @@ window.LOCALES = {
      CROATIAN
   ───────────────────────────────────────────────────────────────── */
   hr: {
+    faq_a_thread: "U ožujku je pitanje glasilo: „Kako izgleda Europa 2041.?\" — iz toga je nastala vizijska web-stranica <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. U svibnju je pitanje konkretnije i akcijski orijentirano: „Koju bi AI aplikaciju mogli izgraditi samo Europljani?\" — a rezultat nije vizija, nego izgrađeni agent. Svaki salon ima drugo vodeće pitanje. To je crvena nit.",
+    faq_q_thread: "Što je bilo pitanje ožujskog salona — i što je ovaj put drugačije?",
     nav_book_cta: "Rezerviraj mjesto · 28. svibnja",
     announcement_html: "🔔 <strong>28. svibnja: zadnja javna Salon AI večera.</strong> Nakon toga: dovedi vlastitu grupu →",
     nav_cta:       "Pridruži se večeri →",
@@ -2617,6 +2665,7 @@ window.LOCALES = {
     manifesto_lede: "Europa upravo sada ne djeluje osobito odvažno. U AI-ju zaostajemo, a kada netko pita što sami možete učiniti za Europu, najčešći je odgovor slijeganje ramenima. Većina ljudi na ovom kontinentu se ni ne osjeća europski — osjećaju se kao da su ovdje tek slučajno.",
     manifesto_bridge: "Upravo zato postoji Salon AI. U jednoj večeri događaju se tri stvari:",
     manifesto_item1: "Učimo AI iz prve ruke — ne jednostavne svakodnevne trikove, već agente, automatizacije i ono što ima pravu polugu. Jer jedini način da saznaš gdje vi i vaš tim doista stojite s AI-jem jest da ga sami izgradite.",
+    manifesto_item_apply: "Zatim usmjeravamo agente izravno na pitanje večeri. Što je moguće? Gdje počinješ? Što bi bilo zaista europsko?",
     manifesto_item2: "Donosimo kontekst koji drugdje nedostaje: gdje Europa danas stoji s AI-jem, gdje zapinje, što je na kocki kod podataka — i što se konkretno može učiniti da bi se krenulo naprijed.",
     manifesto_item3: "Odlaziš s drugim pogledom: s AI-jem možeš graditi što god želiš — ili barem točno razumjeti što tvoji timovi sada rade. Plus nova perspektiva o Europi i tvojoj ulozi u njoj.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2672,7 +2721,7 @@ window.LOCALES = {
     ki_guide_sub:  "Svi ključni AI alati — ocijenjeni i objašnjeni.",
     skills_h2:     'Što ćete ponijeti <em style="color:var(--sky-deep);font-style:italic;">s večeri</em>',
     skills_eyebrow: "AI Radionica",
-    skills_desc:   "Faza 1: Izgradite vlastitog AI asistenta — korak po korak, bez kodiranja. Faza 2: Koristite ga da otkrijete što vi, kao građanin, možete učiniti za Europu danas.",
+    skills_desc:   "U prvom dijelu večeri gradiš svog osobnog AI agenta. U drugom ga usmjeravaš na pitanje večeri: koju bi AI aplikaciju mogli izgraditi samo Europljani?",
     footer_tagline:"Donošenje AI pismenosti Europljanima — jedno večernje jelo po jednom.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Večer",
@@ -2768,6 +2817,8 @@ window.LOCALES = {
      GREEK
   ───────────────────────────────────────────────────────────────── */
   el: {
+    faq_a_thread: "Τον Μάρτιο η ερώτηση ήταν: «Πώς θα μοιάζει η Ευρώπη το 2041;» — από αυτό προέκυψε ο ιστότοπος-όραμα <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Τον Μάιο η ερώτηση είναι πιο συγκεκριμένη και προσανατολισμένη στη δράση: «Ποια εφαρμογή AI θα μπορούσαν να φτιάξουν μόνο οι Ευρωπαίοι;» — και το αποτέλεσμα δεν είναι ένα όραμα, αλλά ένας χτισμένος agent. Κάθε σαλόνι έχει διαφορετική κατευθυντήρια ερώτηση. Αυτό είναι ο μίτος.",
+    faq_q_thread: "Ποια ήταν η ερώτηση του σαλονιού του Μαρτίου — και τι είναι διαφορετικό αυτή τη φορά;",
     nav_book_cta: "Κράτηση · 28 Μαΐου",
     announcement_html: "🔔 <strong>28 Μαΐου: το τελευταίο δημόσιο Salon AI Dinner.</strong> Μετά: φέρε τη δική σου ομάδα →",
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
@@ -2778,6 +2829,7 @@ window.LOCALES = {
     manifesto_lede: "Η Ευρώπη αυτή τη στιγμή δεν δείχνει ιδιαίτερα τολμηρή. Στην Τεχνητή Νοημοσύνη μένουμε πίσω, και όταν ρωτάς τι μπορείς ο ίδιος να κάνεις για την Ευρώπη, η συνηθέστερη απάντηση είναι ένα ανασήκωμα ώμων. Οι περισσότεροι άνθρωποι σε αυτή την ήπειρο δεν αισθάνονται καν Ευρωπαίοι — αισθάνονται ότι βρίσκονται εδώ απλώς τυχαία.",
     manifesto_bridge: "Ακριβώς γι' αυτό υπάρχει το Salon AI. Σε μια βραδιά συμβαίνουν τρία πράγματα:",
     manifesto_item1: "Μαθαίνουμε ΤΝ από πρώτο χέρι — όχι τα απλά καθημερινά κόλπα, αλλά πράκτορες, αυτοματισμούς και ό,τι έχει πραγματικό μοχλό. Γιατί ο μόνος τρόπος να ξέρεις πού πραγματικά είστε εσύ και η ομάδα σου με την ΤΝ είναι να την έχεις φτιάξει ο ίδιος.",
+    manifesto_item_apply: "Μετά κατευθύνουμε τους agents απευθείας στην ερώτηση της βραδιάς. Τι είναι εφικτό; Από πού αρχίζεις; Τι θα ήταν πραγματικά ευρωπαϊκό;",
     manifesto_item2: "Φέρνουμε το πλαίσιο που αλλού λείπει: πού στέκεται σήμερα η Ευρώπη στην ΤΝ, πού κολλάει, τι διακυβεύεται με τα δεδομένα — και τι μπορεί κανείς συγκεκριμένα να κάνει για να προχωρήσει.",
     manifesto_item3: "Φεύγεις με άλλη ματιά: με την ΤΝ μπορείς να φτιάξεις ό,τι θέλεις — ή τουλάχιστον να καταλαβαίνεις ακριβώς τι κάνουν οι ομάδες σου τώρα. Επιπλέον, μια νέα προοπτική για την Ευρώπη και τον δικό σου ρόλο σ' αυτήν.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2833,7 +2885,7 @@ window.LOCALES = {
     ki_guide_sub:  "Όλα τα βασικά εργαλεία AI — αξιολογημένα και εξηγημένα.",
     skills_h2:     'Τι θα πάρετε μαζί σας <em style="color:var(--sky-deep);font-style:italic;">από τη βραδιά</em>',
     skills_eyebrow: "Εργαστήριο ΑΙ",
-    skills_desc:   "Φάση 1: Φτιάξτε τον δικό σας βοηθό ΤΝ — βήμα βήμα, χωρίς κώδικα. Φάση 2: Χρησιμοποιήστε τον για να ανακαλύψετε ακριβώς τι μπορείτε να κάνετε, ως πολίτης, για την Ευρώπη σήμερα.",
+    skills_desc:   "Στο πρώτο μέρος της βραδιάς φτιάχνεις τον προσωπικό σου AI agent. Στο δεύτερο τον στρέφεις στην ερώτηση της βραδιάς: ποια εφαρμογή AI θα μπορούσαν να φτιάξουν μόνο οι Ευρωπαίοι;",
     footer_tagline:"Φέρνουμε τον ψηφιακό αλφαβητισμό ΤΝ στους Ευρωπαίους — ένα δείπνο τη φορά.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Βραδιά",
@@ -2929,6 +2981,8 @@ window.LOCALES = {
      LITHUANIAN
   ───────────────────────────────────────────────────────────────── */
   lt: {
+    faq_a_thread: "Kovo mėnesį klausimas buvo: „Kaip atrodo Europa 2041 m.?\" — iš to atsirado vizijos svetainė <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Gegužės mėnesį klausimas yra konkretesnis ir orientuotas į veiksmą: „Kokią AI programą galėtų sukurti tik europiečiai?\" — o rezultatas yra ne vizija, o pastatytas agentas. Kiekvienas salonas turi kitokį pagrindinį klausimą. Tai yra raudonas siūlas.",
+    faq_q_thread: "Koks buvo kovo mėnesio saliono klausimas — ir kas šįkart kitaip?",
     nav_book_cta: "Rezervuoti vietą · 28 geg.",
     announcement_html: "🔔 <strong>Gegužės 28: paskutinė vieša Salon AI vakarienė.</strong> Po to: atsivesk savo grupę →",
     nav_cta:       "Prisijunk prie vakarienės →",
@@ -2939,6 +2993,7 @@ window.LOCALES = {
     manifesto_lede: "Europa šiuo metu neatrodo ypač drąsi. DI srityje atsiliekame, o kai paklausi, ką pats gali padaryti dėl Europos, dažniausias atsakymas yra pečių gūžtelėjimas. Dauguma žmonių šiame žemyne net nesijaučia europiečiais — jie jaučiasi taip, lyg čia atsidūrę visiškai atsitiktinai.",
     manifesto_bridge: "Būtent todėl egzistuoja Salon AI. Per vieną vakarą nutinka trys dalykai:",
     manifesto_item1: "Mokomės DI praktiškai — ne paprastų kasdienių gudrybių, o agentų, automatizacijų ir to, kas turi tikrą svertą. Nes vienintelis būdas sužinoti, kur jūs ir jūsų komanda iš tikrųjų esate su DI, yra patiems ką nors sukurti.",
+    manifesto_item_apply: "Tada nukreipiame agentus tiesiai į vakaro klausimą. Kas įmanoma? Nuo ko pradedi? Kas būtų tikrai europietiška?",
     manifesto_item2: "Pateikiame kontekstą, kurio kitur trūksta: kur šiandien yra Europa DI srityje, kur stringa, kas pavojuje su duomenimis — ir ką konkrečiai galima padaryti judant į priekį.",
     manifesto_item3: "Išeini su kitu žvilgsniu: su DI gali sukurti ką tik nori — arba bent jau tiksliai suprasti, ką tavo komandos daro dabar. Plius nauja perspektyva į Europą ir tavo vaidmenį joje.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -2994,7 +3049,7 @@ window.LOCALES = {
     ki_guide_sub:  "Visi pagrindiniai AI įrankiai — įvertinti ir paaiškinti.",
     skills_h2:     'Ką pasiimsite <em style="color:var(--sky-deep);font-style:italic;">iš vakaro</em>',
     skills_eyebrow: "DI seminaras",
-    skills_desc:   "1 fazė: Sukurkite savo DI asistentą — žingsnis po žingsnio, be kodavimo. 2 fazė: Naudokite jį sužinoti, ką jūs, kaip pilietis, galite padaryti Europai šiandien.",
+    skills_desc:   "Pirmoje vakaro dalyje sukuriate savo asmeninį AI agentą. Antroje dalyje nukreipi jį į vakaro klausimą: kokią AI programą galėtų sukurti tik europiečiai?",
     footer_tagline:"Skleidžiame AI raštingumą europiečiams — po vieną vakarienę.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Vakaras",
@@ -3090,6 +3145,8 @@ window.LOCALES = {
      LATVIAN
   ───────────────────────────────────────────────────────────────── */
   lv: {
+    faq_a_thread: "Martā jautājums bija: \"Kā izskatās Eiropa 2041. gadā?\" — no tā radās vīzijas vietne <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Maijā jautājums ir konkrētāks un orientēts uz darbību: \"Kādu AI lietojumu varētu uzbūvēt tikai eiropieši?\" — un rezultāts ir nevis vīzija, bet uzbūvēts aģents. Katram salonam ir cits vadošais jautājums. Tas ir sarkanais pavediens.",
+    faq_q_thread: "Kāds bija marta salona jautājums — un kas šoreiz ir savādāk?",
     nav_book_cta: "Rezervēt vietu · 28. maijs",
     announcement_html: "🔔 <strong>28. maijs: pēdējā publiskā Salon AI vakariņas.</strong> Pēc tam: ņem līdzi savu grupu →",
     nav_cta:       "Pievienojies vakariņām →",
@@ -3100,6 +3157,7 @@ window.LOCALES = {
     manifesto_lede: "Eiropa pašlaik neizskatās īpaši drosmīga. MI jomā mēs atpaliekam, un, kad jautā, ko pats vari darīt Eiropas labā, biežākā atbilde ir plecu paraustīšana. Vairākums cilvēku šajā kontinentā pat nejūtas kā eiropieši — viņi jūtas, it kā šeit būtu tikai nejauši.",
     manifesto_bridge: "Tieši tāpēc pastāv Salon AI. Vienā vakarā notiek trīs lietas:",
     manifesto_item1: "Mēs mācāmies MI praktiski — ne ikdienišķos trikus, bet aģentus, automatizāciju un to, kam ir īsts svira. Jo vienīgais veids, kā uzzināt, kur jūs un jūsu komanda patiešām atrodaties ar MI, ir pašiem to izveidot.",
+    manifesto_item_apply: "Pēc tam vēršam aģentus tieši uz vakara jautājumu. Kas ir iespējams? No kā tu sāc? Kas būtu patiesi eiropeisks?",
     manifesto_item2: "Mēs sniedzam kontekstu, kas citur trūkst: kur šodien atrodas Eiropa MI ziņā, kur tas iestrēdz, kas ir uz spēles datu jautājumā — un ko konkrēti var darīt, lai virzītos uz priekšu.",
     manifesto_item3: "Tu dodies mājās ar citādu skatu: ar MI vari izveidot, ko vēlies — vai vismaz precīzi saprast, ko tavas komandas tagad dara. Plus jauna perspektīva par Eiropu un tavu lomu tajā.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -3155,7 +3213,7 @@ window.LOCALES = {
     ki_guide_sub:  "Visi galvenie AI rīki — novērtēti un izskaidroti.",
     skills_h2:     'Ko paņemsi līdzi <em style="color:var(--sky-deep);font-style:italic;">no vakara</em>',
     skills_eyebrow: "AI darbnīca",
-    skills_desc:   "1. fāze: Izveidojiet savu MI asistentu — soli pa solim, bez kodēšanas. 2. fāze: Izmantojiet to, lai uzzinātu, ko jūs kā pilsonis varat darīt Eiropai šodien.",
+    skills_desc:   "Vakara pirmajā daļā tu izveido savu personīgo AI aģentu. Otrajā daļā tu vērs to uz vakara jautājumu: kādu AI lietojumu varētu uzbūvēt tikai eiropieši?",
     footer_tagline:"Nesam AI pratību eiropieiem — pa vienai vakariņai.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Vakars",
@@ -3251,6 +3309,8 @@ window.LOCALES = {
      ESTONIAN
   ───────────────────────────────────────────────────────────────── */
   et: {
+    faq_a_thread: "Märtsis oli küsimus: „Milline näeb Euroopa välja 2041. aastal?\" — sellest sündis visioonisait <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Mais on küsimus konkreetsem ja tegevusele orienteeritud: „Millise AI-rakenduse saaksid ehitada ainult eurooplased?\" — ja tulemus pole visioon, vaid ehitatud agent. Igal salongil on erinev juhtküsimus. See on punane niit.",
+    faq_q_thread: "Mis oli märtsi salongi küsimus — ja mis on seekord teisiti?",
     nav_book_cta: "Reserveeri koht · 28. mai",
     announcement_html: "🔔 <strong>28. mai: viimane avalik Salon AI õhtusöök.</strong> Pärast: too oma grupp →",
     nav_cta:       "Liitu õhtusöögiga →",
@@ -3261,6 +3321,7 @@ window.LOCALES = {
     manifesto_lede: "Euroopa praegu eriti julge ei tundu. TI-s jääme maha, ja kui küsida, mida sa ise saaks Euroopa heaks teha, on kõige sagedasem vastus õlakehitus. Enamik inimesi sellel mandril ei tunne end isegi eurooplastena — nad tunnevad, et nad on lihtsalt juhuslikult siin.",
     manifesto_bridge: "Just seetõttu Salon AI eksisteerib. Ühe õhtu jooksul juhtub kolm asja:",
     manifesto_item1: "Õpime TI-d praktiliselt — mitte lihtsaid igapäevaseid nippe, vaid agente, automatiseerimisi ja seda, millel on tõeline võimendus. Sest ainus viis teada saada, kus sina ja su meeskond TI-ga tegelikult olete, on see ise üles ehitada.",
+    manifesto_item_apply: "Siis suuname agendid otse õhtu küsimusele. Mis on võimalik? Kust sa alustad? Mis oleks tõeliselt euroopalik?",
     manifesto_item2: "Toome konteksti, mis mujal puudub: kus on Euroopa täna TI-s, kus see takerdub, mis on andmete osas mängus — ja mida saab konkreetselt teha edasi liikumiseks.",
     manifesto_item3: "Lähed koju teistsuguse pilguga: TI-ga saad ehitada, mida tahad — või vähemalt täpselt mõista, mida sinu meeskonnad praegu teevad. Pluss uus perspektiiv Euroopa ja sinu enda rolli kohta selles.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -3316,7 +3377,7 @@ window.LOCALES = {
     ki_guide_sub:  "Kõik olulised tehisintellekti tööriistad — hinnatud ja selgitatud.",
     skills_h2:     'Mida võtad kaasa <em style="color:var(--sky-deep);font-style:italic;">õhtust</em>',
     skills_eyebrow: "AI töötuba",
-    skills_desc:   "1. faas: Ehitage oma TI assistent — samm-sammult, ilma koodita. 2. faas: Kasutage seda, et teada saada, mida teie kodanikuna täna Euroopa heaks teha saate.",
+    skills_desc:   "Õhtu esimeses osas ehitad oma isikliku AI-agendi. Teises osas suunad selle õhtu küsimusele: millise AI-rakenduse saaksid ehitada ainult eurooplased?",
     footer_tagline:"Toome tehisintellekti kirjaoskuse eurooplasteni — üks õhtusöök korraga.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Õhtu",
@@ -3412,6 +3473,8 @@ window.LOCALES = {
      SLOVENIAN
   ───────────────────────────────────────────────────────────────── */
   sl: {
+    faq_a_thread: "Marca je bilo vprašanje: „Kako izgleda Evropa leta 2041?\" — iz tega je nastala vizijska spletna stran <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. Maja je vprašanje konkretnejše in akcijsko usmerjeno: „Katero AI aplikacijo bi lahko zgradili le Evropejci?\" — rezultat pa ni vizija, ampak zgrajen agent. Vsak salon ima drugačno vodilno vprašanje. To je rdeča nit.",
+    faq_q_thread: "Kakšno je bilo vprašanje marčevskega salona — in kaj je tokrat drugače?",
     nav_book_cta: "Rezerviraj mesto · 28. maj",
     announcement_html: "🔔 <strong>28. maj: zadnja javna Salon AI večerja.</strong> Po tem: pripelji svojo skupino →",
     nav_cta:       "Pridruži se večerji →",
@@ -3422,6 +3485,7 @@ window.LOCALES = {
     manifesto_lede: "Evropa trenutno ne deluje posebej drzno. Pri umetni inteligenci zaostajamo, in ko vprašaš, kaj lahko sam storiš za Evropo, je najpogostejši odgovor skomig z rameni. Večina ljudi na tej celini se sploh ne počuti Evropejcev — počutijo se, kot da so tu povsem po naključju.",
     manifesto_bridge: "Prav zato obstaja Salon AI. V enem večeru se zgodijo tri stvari:",
     manifesto_item1: "Učimo se UI iz prve roke — ne preprostih vsakodnevnih trikov, ampak agentov, avtomatizacij in stvari z resničnim vzvodom. Saj je edini način, da ugotoviš, kje sta ti in tvoja ekipa z UI v resnici, da jo zgradiš sam.",
+    manifesto_item_apply: "Nato usmerimo agente neposredno na vprašanje večera. Kaj je možno? Kje začneš? Kaj bi bilo res evropsko?",
     manifesto_item2: "Prinesemo kontekst, ki drugje manjka: kje stoji danes Evropa pri UI, kje se zatika, kaj je na kocki pri podatkih — in kaj konkretno lahko storimo za premik naprej.",
     manifesto_item3: "Domov greš z drugačnim pogledom: z UI lahko zgradiš, kar hočeš — ali pa vsaj natančno razumeš, kaj tvoje ekipe trenutno počnejo. Plus nova perspektiva na Evropo in tvojo lastno vlogo v njej.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -3477,7 +3541,7 @@ window.LOCALES = {
     ki_guide_sub:  "Vsa ključna orodja AI — ocenjena in razložena.",
     skills_h2:     'Kaj boste odnesli <em style="color:var(--sky-deep);font-style:italic;">z večera</em>',
     skills_eyebrow: "AI Delavnica",
-    skills_desc:   "Faza 1: Zgradite svojega UI asistenta — korak za korakom, brez kodiranja. Faza 2: Uporabite ga, da ugotovite, kaj vi kot državljan danes lahko naredite za Evropo.",
+    skills_desc:   "V prvem delu večera zgradiš svojega osebnega AI agenta. V drugem ga usmeriš na vprašanje večera: katero AI aplikacijo bi lahko zgradili le Evropejci?",
     footer_tagline:"Prinašamo pismenost AI Evropejcem — eno večerjo naenkrat.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Večer",
@@ -3573,6 +3637,8 @@ window.LOCALES = {
      MALTESE
   ───────────────────────────────────────────────────────────────── */
   mt: {
+    faq_a_thread: "F'Marzu l-mistoqsija kienet: „Kif tidher l-Ewropa fl-2041?\" — minn dan twieldet il-websajt-viżjoni <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a>. F'Mejju l-mistoqsija hija aktar konkreta u orjentata lejn l-azzjoni: „Liema applikazzjoni AI jistgħu jibnu biss l-Ewropej?\" — u r-riżultat mhuwiex viżjoni, iżda aġent mibni. Kull salott għandu mistoqsija gwida differenti. Dak huwa l-fil aħmar.",
+    faq_q_thread: "X'kienet il-mistoqsija tas-salott ta' Marzu — u x'inhu differenti din id-darba?",
     nav_book_cta: "Irriserva post · 28 Mejju",
     announcement_html: "🔔 <strong>28 ta' Mejju: l-aħħar Salon AI Dinner pubbliku.</strong> Wara: ġib il-grupp tiegħek →",
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
@@ -3583,6 +3649,7 @@ window.LOCALES = {
     manifesto_lede: "L-Ewropa bħalissa ma tidhirx partikolarment kuraġġjuża. Fl-AI qed naqgħu lura, u meta titlob lil xi ħadd x'jista' jagħmel hu nnifsu għall-Ewropa, l-aktar tweġiba komuni hija tqanqilet spallejn. Il-biċċa l-kbira tan-nies f'dan il-kontinent lanqas iħossuhom Ewropej — iħossuhom bħallikieku qegħdin hawn b'kumbinazzjoni biss.",
     manifesto_bridge: "Eżattament għalhekk jeżisti s-Salon AI. F'lejla waħda jiġru tliet affarijiet:",
     manifesto_item1: "Nitgħallmu l-AI b'idejna stess — mhux it-tricks sempliċi tal-ġurnata, imma aġenti, awtomatizzazzjonijiet u dawk l-affarijiet li għandhom influwenza vera. Għax l-unika triq biex tkun taf fejn int u t-tim tiegħek tassew tinsabu fl-AI hi li tkun bnejtha int stess.",
+    manifesto_item_apply: "Imbagħad nidirieġu l-aġenti dirett lejn il-mistoqsija tas-serata. X'inhu possibbli? Minn fejn tibda? X'jkun verament Ewropew?",
     manifesto_item2: "Inġibu l-kuntest li f'postijiet oħra hu nieqes: fejn tinsab l-Ewropa llum fl-AI, fejn qed twaqqaf, x'hemm fil-logħob fid-data — u x'jista' jsir konkretament biex nimxu 'l quddiem.",
     manifesto_item3: "Tmur id-dar b'ħarsa differenti: bl-AI tista' tibni dak li trid — jew għallinqas tifhem eżattament x'qed jagħmlu t-timijiet tiegħek bħalissa. Barra minn hekk, perspettiva ġdida dwar l-Ewropa u r-rwol tiegħek fiha.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -3638,7 +3705,7 @@ window.LOCALES = {
     ki_guide_sub:  "L-għodod AI kollha ewlenin — evalwati u spjegati.",
     skills_h2:     'X\'ser tieħu miegħek <em style="color:var(--sky-deep);font-style:italic;">mill-serata</em>',
     skills_eyebrow: "Seminar AI",
-    skills_desc:   "Fażi 1: Ibni l-assistent AI tiegħek — pass pass, mingħajr kodifikar. Fażi 2: Uża biex issib eżattament x'tista' tagħmel int, bħala ċittadin, għall-Ewropa llum.",
+    skills_desc:   "Fl-ewwel parti tas-serata tibni l-aġent AI personali tiegħek. Fit-tieni tidirieġih lejn il-mistoqsija tas-serata: liema applikazzjoni AI jistgħu jibnu biss l-Ewropej?",
     footer_tagline:"Inġibu l-litteriżmu tal-AI lill-Ewropej — ikla waħda fl-darba.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Filgħaxija",
@@ -3734,6 +3801,8 @@ window.LOCALES = {
      IRISH (GAEILGE)
   ───────────────────────────────────────────────────────────────── */
   ga: {
+    faq_a_thread: "I Márta ba í an cheist: „Cad é an chuma a bheidh ar an Eoraip in 2041?\" — tháinig an suíomh fís <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> as sin. I mí na Bealtaine, tá an cheist níos cinnte agus dírithe ar ghníomh: „Cén feidhmchlár AI nach bhféadfadh ach Eorpaigh a thógáil?\" — agus ní fís é an toradh, ach gníomhaire tógtha. Tá ceist eile á treorú gach salon. Sin an snáithe dearg.",
+    faq_q_thread: "Cad a bhí mar cheist ag salon Márta — agus cad atá difriúil an uair seo?",
     nav_book_cta: "Cuir áit in áirithe · 28 Bealtaine",
     announcement_html: "🔔 <strong>28 Bealtaine: an Salon AI Dinner poiblí deireanach.</strong> Ina dhiaidh sin: tabhair do ghrúpa féin →",
     nav_cta:       "Bí páirteach i ndinnéar →",
@@ -3744,6 +3813,7 @@ window.LOCALES = {
     manifesto_lede: "Ní fheiceann an Eoraip an-dána i láthair na huaire. Táimid ag titim chun deiridh ar an IS, agus nuair a iarrtar cad is féidir leat féin a dhéanamh ar son na hEorpa, is é croitheadh guaillí an freagra is coitianta. Ní bhraitheann an chuid is mó de na daoine ar an mór-roinn seo fiú gur Eorpaigh iad — mothaíonn siad amhail is nach bhfuil siad anseo ach de thaisme.",
     manifesto_bridge: "Sin go díreach an fáth go bhfuil Salon AI ann. Tarlaíonn trí rud in aon oíche amháin:",
     manifesto_item1: "Foghlaimímid IS go praiticiúil — ní hé na cleasanna laethúla simplí, ach gníomhairí, uathoibrithe agus rudaí a bhfuil fíor-ghríosú acu. Mar is é an t-aon bhealach le fáil amach cá bhfuil tú féin agus d'fhoireann i ndáiríre leis an IS, é a thógáil leat féin.",
+    manifesto_item_apply: "Ansin díríonn muid na hagents díreach ar cheist na hoíche. Cad is féidir? Cá dtosaíonn tú? Cad a bheadh fíor-Eorpach?",
     manifesto_item2: "Cuirimid an comhthéacs ar fáil atá in easnamh in áiteanna eile: cá bhfuil an Eoraip inniu leis an IS, cá bhfuil sé sáinnithe, cad atá ar an gclár leis na sonraí — agus cad is féidir a dhéanamh go nithiúil chun bogadh ar aghaidh.",
     manifesto_item3: "Imíonn tú abhaile le radharc difriúil: is féidir leis an IS a thógáil cibé rud is mian leat — nó ar a laghad tuiscint go beacht cad atá do fhoirne ag déanamh anois. Anuas air sin, peirspictíocht nua ar an Eoraip agus do ról féin inti.",
     manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
@@ -3799,7 +3869,7 @@ window.LOCALES = {
     ki_guide_sub:  "Gach uirlis AI tábhachtach — rátáilte agus mínithe.",
     skills_h2:     'Cad a bheidh agat <em style="color:var(--sky-deep);font-style:italic;">ón oíche</em>',
     skills_eyebrow: "Ceardlann AI",
-    skills_desc:   "Céim 1: Tóg do chúntóir AI féin — céim ar chéim, gan cód. Céim 2: Úsáid é chun a fháil amach go díreach cad is féidir leat a dhéanamh, mar shaoránach, ar son na hEorpa inniu.",
+    skills_desc:   "Sa chéad chuid den oíche tógann tú do agent AI pearsanta féin. Sa dara cuid díríonn tú é ar cheist na hoíche: cén feidhmchlár AI nach bhféadfadh ach Eorpaigh a thógáil?",
     footer_tagline:"Ag tabhairt litearthachta AI do Eorpaigh — dinnéar amháin ag an am.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num:    "1 Oíche",
