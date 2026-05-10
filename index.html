@@ -99,14 +99,48 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s2); }
 .manifesto p { font-size: 15px; color: var(--navy); line-height: 1.55; margin-bottom: 12px; }
 .manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.55; margin-bottom: var(--s2); color: var(--navy); }
-.manifesto ol { list-style: none; counter-reset: manifesto-c; padding: 0; margin: var(--s2) 0; }
-.manifesto ol li { counter-increment: manifesto-c; display: grid; grid-template-columns: 48px 1fr; gap: var(--s2); padding: var(--s2) 0; border-top: 1px solid var(--border); font-size: 15px; color: var(--navy); line-height: 1.55; align-items: baseline; }
+.manifesto ol { list-style: none; padding: 0; margin: var(--s2) 0; }
+.manifesto ol li { display: grid; grid-template-columns: 72px 1fr; gap: var(--s2); padding: var(--s2) 0; border-top: 1px solid var(--border); font-size: 15px; color: var(--navy); line-height: 1.55; align-items: baseline; }
 .manifesto ol li:last-child { border-bottom: 1px solid var(--border); }
-.manifesto ol li::before { content: counter(manifesto-c, decimal-leading-zero); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
+.manifesto ol li::before { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
+.manifesto ol li:nth-child(1)::before { content: "80%"; }
+.manifesto ol li:nth-child(2)::before { content: "10%"; }
+.manifesto ol li:nth-child(3)::before { content: "10%"; }
 @media (min-width: 768px) {
   .manifesto h2 { font-size: 1.9rem; margin-bottom: var(--s3); }
-  .manifesto ol li { grid-template-columns: 64px 1fr; padding: var(--s3) 0; }
+  .manifesto ol li { grid-template-columns: 100px 1fr; padding: var(--s3) 0; }
   .manifesto ol li::before { font-size: 1.75rem; }
+}
+.ai-eu-swap { display: inline-grid; grid-template-areas: "swap"; vertical-align: baseline; perspective: 600px; }
+.ai-eu-swap .word-ai,
+.ai-eu-swap .word-eu { grid-area: swap; transform-origin: 50% 60%; backface-visibility: hidden; will-change: transform, opacity; text-align: center; }
+.ai-eu-swap .word-eu { color: var(--accent); }
+.ai-eu-swap .word-ai { animation: aiSwap 30s infinite; }
+.ai-eu-swap .word-eu { animation: euSwap 30s infinite; }
+@keyframes aiSwap {
+  0%, 80%   { opacity: 1; transform: rotateX(0) scale(1); }
+  82%       { transform: rotateX(0) scale(1.12) translateY(-2px); }
+  84%       { transform: rotateX(0) scale(0.92) translateY(3px); }
+  86%       { opacity: 0; transform: rotateX(90deg) scale(0.8); }
+  93%       { opacity: 0; transform: rotateX(-90deg) scale(0.8); }
+  95%       { opacity: 1; transform: rotateX(0) scale(1.18); }
+  97%       { transform: rotateX(0) scale(0.96); }
+  98%, 100% { opacity: 1; transform: rotateX(0) scale(1); }
+}
+@keyframes euSwap {
+  0%, 85%   { opacity: 0; transform: rotateX(-90deg) scale(0.8); }
+  87%       { opacity: 1; transform: rotateX(0) scale(1.22); }
+  89%       { transform: rotateX(0) scale(0.94); }
+  90%       { transform: rotateX(0) scale(1.06) rotate(-4deg); }
+  91%       { transform: rotateX(0) scale(1) rotate(4deg); }
+  92%       { transform: rotateX(0) scale(1) rotate(0); }
+  94%       { opacity: 0; transform: rotateX(90deg) scale(0.8); }
+  100%      { opacity: 0; transform: rotateX(90deg) scale(0.8); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ai-eu-swap .word-ai,
+  .ai-eu-swap .word-eu { animation: none; }
+  .ai-eu-swap .word-eu { display: none; }
 }
 
 /* ── Event requirement note ── */
@@ -712,7 +746,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <h2 data-i18n="manifesto_h2">Warum es Salon AI gibt</h2>
+    <h2 data-i18n-html="manifesto_h2">Warum es Salon <span class='ai-eu-swap'><span class='word-ai'>AI</span><span class='word-eu' aria-hidden='true'>EU</span></span> gibt</h2>
     <p class="manifesto-lede" data-i18n="manifesto_lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
     <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
     <ol>
