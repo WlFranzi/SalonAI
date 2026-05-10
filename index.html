@@ -688,6 +688,28 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .skill-cols { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 620px) { .skill-cols { grid-template-columns: 1fr 1fr; } }
 .s-col-eu { display: none; }
+/* ── Skills Slider ─────────────────────────────────────────────── */
+.skills-slider { position: relative; margin-top: 8px; }
+.skills-slider-viewport { overflow: hidden; border-radius: 18px; }
+.skills-slider-track { display: flex; transition: transform 0.45s cubic-bezier(0.4, 0.0, 0.2, 1); will-change: transform; }
+.skill-slide { flex: 0 0 100%; min-width: 0; padding: 4px; }
+.skill-slide-inner { border: 1px solid var(--border); border-radius: 16px; background: #fff; padding: 22px 24px 26px; box-shadow: 0 1px 4px rgba(27,46,74,0.05); }
+.skill-slide .slide-header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.skill-slide .skill-cat { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--sky-deep); padding: 4px 10px; background: var(--sky-light); border-radius: 999px; }
+.skill-slide .slide-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--navy); line-height: 1.25; letter-spacing: -0.005em; margin: 0; flex: 1; min-width: 0; }
+.slider-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 22px; }
+.slider-btn { background: none; border: 1px solid var(--border); width: 38px; height: 38px; border-radius: 50%; cursor: pointer; font-size: 20px; line-height: 1; color: var(--navy); display: inline-flex; align-items: center; justify-content: center; transition: background 0.15s, border-color 0.15s, transform 0.15s; padding: 0; font-family: 'DM Sans', sans-serif; }
+.slider-btn:hover { background: var(--sky-light); border-color: var(--accent); transform: translateY(-1px); }
+.slider-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(0,51,153,0.22); }
+.slider-dots { display: flex; gap: 7px; align-items: center; }
+.slider-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); border: none; cursor: pointer; padding: 0; transition: background 0.18s, width 0.18s, border-radius 0.18s; }
+.slider-dot.active { background: var(--accent); width: 24px; border-radius: 4px; }
+.slider-dot:hover { background: var(--sky-deep); }
+.slider-counter { text-align: center; margin-top: 10px; font-size: 11px; color: var(--muted-blue); letter-spacing: 1.2px; font-weight: 500; }
+@media (max-width: 520px) {
+  .skill-slide-inner { padding: 18px 18px 22px; }
+  .skill-slide .slide-name { font-size: 1.1rem; }
+}
 
 .s-col { border-radius: 14px; padding: 20px; }
 .s-col-old { background: var(--sky-light); border: 1px solid var(--border); }
@@ -846,25 +868,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </section>
 
-<!-- ── STATS BAR ─────────────────────────────────────────────────── -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <p class="stats-eyebrow" data-i18n="stats_eyebrow">The evening at a glance</p>
-    <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_1_num">1 Evening</div>
-      <div class="stat-label" data-i18n="stat_1_lbl">From zero to a working AI assistant — in one evening</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_3_num">Experts</div>
-      <div class="stat-label" data-i18n="stat_3_lbl">Hands-on help while building — no going it alone</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number" data-i18n="stat_4_num">All Levels</div>
-      <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed. Zero.</div>
-    </div>
-  </div>
-</div>
-
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
 <main class="main-content">
@@ -897,19 +900,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         </div>
       </div>
     </div>
-
-    <!-- ── TILE 2: Host your own evening ─────────────────────── -->
-    <div class="card-surface tile">
-      <div class="host-own" id="host">
-        <div class="host-own-label" data-i18n="host_own_label">Eigener Abend</div>
-        <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
-        <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
-        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
-        <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
-        <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
-      </div>
-    </div>
-
     <!-- ── RIGHT: Resources (hidden — link later) ────────────
     <div class="card-surface tile monster-tile" id="guide">
       <div class="tile-label"><span class="dot"></span>Resources</div>
@@ -948,6 +938,25 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </main>
 
+<!-- ── STATS BAR ─────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <p class="stats-eyebrow" data-i18n="stats_eyebrow">The evening at a glance</p>
+    <div class="stat-item">
+      <div class="stat-number" data-i18n="stat_1_num">1 Evening</div>
+      <div class="stat-label" data-i18n="stat_1_lbl">From zero to a working AI assistant — in one evening</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-i18n="stat_3_num">Experts</div>
+      <div class="stat-label" data-i18n="stat_3_lbl">Hands-on help while building — no going it alone</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-i18n="stat_4_num">All Levels</div>
+      <div class="stat-label" data-i18n="stat_4_lbl">No prior knowledge needed. Zero.</div>
+    </div>
+  </div>
+</div>
+
 <!-- ── PAST EVENTS · photos | unified text column ─────────────────── -->
 <section class="past-events-section" id="past">
   <div class="past-events-inner">
@@ -981,6 +990,23 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </section>
 
 
+<!-- ── HOST YOUR OWN ──────────────────────────────────────────── -->
+<div class="main-content">
+  <div class="single-col">
+    <div class="card-surface tile">
+      <div class="host-own" id="host">
+        <div class="host-own-label" data-i18n="host_own_label">Eigener Abend</div>
+        <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
+        <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
+        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
+        <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
+        <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
@@ -1008,7 +1034,17 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <p class="skills-desc" data-i18n="skills_desc">Im ersten Teil des Abends baust du deinen persönlichen KI-Agenten für deine eigenen Aufgaben. Im zweiten Teil setzt du ihn ein, um einen konkreten Plan zu entwickeln: was du heute schon tun kannst, ohne in der Politik zu sein, um Europa zu stärken.</p>
     </div>
     <div class="skills-beispiele">Beispiele:</div>
-    <div id="skills-list"></div>
+    <div class="skills-slider">
+      <div class="skills-slider-viewport">
+        <div class="skills-slider-track" id="skills-list"></div>
+      </div>
+      <div class="slider-controls">
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorheriges Beispiel">‹</button>
+        <div class="slider-dots" id="skills-slider-dots"></div>
+        <button type="button" class="slider-btn slider-next" aria-label="Nächstes Beispiel">›</button>
+      </div>
+      <div class="slider-counter" id="skills-slider-counter">1 / 1</div>
+    </div>
   </div>
 </section>
 
@@ -1225,10 +1261,7 @@ const KI_SKILLS = [  {
   }
 ];
 
-function toggleSkill(index) {
-  var item = document.getElementById('skill-' + index);
-  if (item) item.classList.toggle('open');
-}
+// (Legacy toggleSkill removed — slider replaces accordion. See bottom of file for compat shim.)
 
 // ── Inline fallback: DE + EN steps (if skills-steps.js fails to load) ──
 if (!window.SKILLS_STEPS) {
@@ -1305,36 +1338,195 @@ window.buildSkills = function(lang) {
     var euCol  = { time: euColRaw.time, steps: euColRaw.steps.slice(0, 3) };
 
     container.innerHTML += '\
-      <div class="skill-item" id="skill-' + i + '">\
-        <button class="skill-toggle" onclick="toggleSkill(' + i + ')">\
-          <span class="skill-cat">' + cat + '</span>\
-          <span class="skill-name-text">' + name + '</span>\
-          <span class="skill-chevron">+</span>\
-        </button>\
-        <div class="skill-body">\
-          ' + noteHtml + '\
-          <p class="skill-scenario">' + banner + '</p>\
-          <div class="skill-cols">\
-            <div class="s-col s-col-old">\
-              <div class="s-col-label">' + colOld + '</div>\
-              <span class="s-time">' + oldCol.time + '</span>\
-              ' + steps(oldCol) + '\
-            </div>\
-            <div class="s-col s-col-now">\
-              <div class="s-col-label">' + colNow + '</div>\
-              <span class="s-time">' + nowCol.time + '</span>\
-              ' + steps(nowCol) + '\
-            </div>\
-            <div class="s-col s-col-eu">\
-              <div class="s-col-label">' + colEu + '</div>\
-              <span class="s-time">' + euCol.time + '</span>\
-              ' + steps(euCol) + '\
+      <div class="skill-slide" id="skill-' + i + '" data-skill-index="' + i + '">\
+        <div class="skill-slide-inner">\
+          <header class="slide-header">\
+            <span class="skill-cat">' + cat + '</span>\
+            <h3 class="slide-name">' + name + '</h3>\
+          </header>\
+          <div class="skill-body" style="display:block;">\
+            ' + noteHtml + '\
+            <p class="skill-scenario">' + banner + '</p>\
+            <div class="skill-cols">\
+              <div class="s-col s-col-old">\
+                <div class="s-col-label">' + colOld + '</div>\
+                <span class="s-time">' + oldCol.time + '</span>\
+                ' + steps(oldCol) + '\
+              </div>\
+              <div class="s-col s-col-now">\
+                <div class="s-col-label">' + colNow + '</div>\
+                <span class="s-time">' + nowCol.time + '</span>\
+                ' + steps(nowCol) + '\
+              </div>\
+              <div class="s-col s-col-eu">\
+                <div class="s-col-label">' + colEu + '</div>\
+                <span class="s-time">' + euCol.time + '</span>\
+                ' + steps(euCol) + '\
+              </div>\
             </div>\
           </div>\
         </div>\
       </div>';
   });
+
+  // Build dots + (re-)init slider after the slides are rendered
+  initSkillsSlider();
 };
+
+// ── Skills slider state ─────────────────────────────────────────────
+window.SkillSlider = window.SkillSlider || {
+  current: 0,
+  total: 0,
+  autoplayMs: 7000,
+  autoplayId: null,
+  userInteracted: false,
+};
+
+function initSkillsSlider() {
+  var track = document.getElementById('skills-list');
+  var dotsContainer = document.getElementById('skills-slider-dots');
+  var counter = document.getElementById('skills-slider-counter');
+  if (!track || !dotsContainer) return;
+
+  var slides = track.querySelectorAll('.skill-slide');
+  window.SkillSlider.total = slides.length;
+  if (window.SkillSlider.current >= slides.length) window.SkillSlider.current = 0;
+
+  // Rebuild dots
+  dotsContainer.innerHTML = '';
+  for (var i = 0; i < slides.length; i++) {
+    (function(idx){
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'slider-dot' + (idx === window.SkillSlider.current ? ' active' : '');
+      dot.setAttribute('aria-label', 'Beispiel ' + (idx + 1));
+      dot.addEventListener('click', function() {
+        onUserInteract('dot');
+        if (typeof gtag === 'function') {
+          gtag('event', 'skill_slider_dot', { index: idx });
+        }
+        goToSlide(idx);
+      });
+      dotsContainer.appendChild(dot);
+    })(i);
+  }
+
+  function updateUI() {
+    var i = window.SkillSlider.current;
+    track.style.transform = 'translateX(-' + (i * 100) + '%)';
+    var dotEls = dotsContainer.querySelectorAll('.slider-dot');
+    dotEls.forEach(function(d, idx) {
+      d.classList.toggle('active', idx === i);
+    });
+    if (counter) counter.textContent = (i + 1) + ' / ' + window.SkillSlider.total;
+  }
+
+  function goToSlide(i) {
+    window.SkillSlider.current = ((i % window.SkillSlider.total) + window.SkillSlider.total) % window.SkillSlider.total;
+    updateUI();
+  }
+
+  function next() { goToSlide(window.SkillSlider.current + 1); }
+  function prev() { goToSlide(window.SkillSlider.current - 1); }
+
+  function stopAutoplay() {
+    if (window.SkillSlider.autoplayId) {
+      clearInterval(window.SkillSlider.autoplayId);
+      window.SkillSlider.autoplayId = null;
+    }
+  }
+  function startAutoplay() {
+    stopAutoplay();
+    window.SkillSlider.autoplayId = setInterval(function() {
+      // auto-advance only when section is in viewport (perf + UX)
+      var slider = document.querySelector('.skills-slider');
+      if (slider) {
+        var r = slider.getBoundingClientRect();
+        var inView = r.bottom > 0 && r.top < (window.innerHeight || 800);
+        if (inView) next();
+      }
+    }, window.SkillSlider.autoplayMs);
+  }
+
+  function onUserInteract(source) {
+    if (!window.SkillSlider.userInteracted) {
+      window.SkillSlider.userInteracted = true;
+      if (typeof gtag === 'function') {
+        gtag('event', 'skill_slider_first_use', { source: source });
+      }
+    }
+    stopAutoplay();
+  }
+
+  // Bind prev/next (idempotent: replace previous listeners by cloning)
+  var prevBtn = document.querySelector('.slider-prev');
+  var nextBtn = document.querySelector('.slider-next');
+  if (prevBtn) {
+    var newPrev = prevBtn.cloneNode(true);
+    prevBtn.parentNode.replaceChild(newPrev, prevBtn);
+    newPrev.addEventListener('click', function() {
+      onUserInteract('prev');
+      if (typeof gtag === 'function') {
+        gtag('event', 'skill_slider_prev', { index: window.SkillSlider.current });
+      }
+      prev();
+    });
+  }
+  if (nextBtn) {
+    var newNext = nextBtn.cloneNode(true);
+    nextBtn.parentNode.replaceChild(newNext, nextBtn);
+    newNext.addEventListener('click', function() {
+      onUserInteract('next');
+      if (typeof gtag === 'function') {
+        gtag('event', 'skill_slider_next', { index: window.SkillSlider.current });
+      }
+      next();
+    });
+  }
+
+  // Pause on hover; resume on leave (only if user hasn't interacted yet)
+  var slider = document.querySelector('.skills-slider');
+  if (slider && !slider._hoverWired) {
+    slider.addEventListener('mouseenter', stopAutoplay);
+    slider.addEventListener('mouseleave', function() {
+      if (!window.SkillSlider.userInteracted) startAutoplay();
+    });
+    slider._hoverWired = true;
+  }
+
+  // Touch-swipe support
+  if (slider && !slider._touchWired) {
+    var startX = 0, deltaX = 0, touching = false;
+    slider.addEventListener('touchstart', function(e){
+      touching = true;
+      startX = e.touches[0].clientX;
+      deltaX = 0;
+      stopAutoplay();
+    }, { passive: true });
+    slider.addEventListener('touchmove', function(e){
+      if (!touching) return;
+      deltaX = e.touches[0].clientX - startX;
+    }, { passive: true });
+    slider.addEventListener('touchend', function(){
+      if (!touching) return;
+      touching = false;
+      if (Math.abs(deltaX) > 50) {
+        onUserInteract('swipe');
+        if (typeof gtag === 'function') {
+          gtag('event', 'skill_slider_swipe', { direction: deltaX > 0 ? 'prev' : 'next' });
+        }
+        if (deltaX > 0) prev(); else next();
+      }
+    });
+    slider._touchWired = true;
+  }
+
+  updateUI();
+  startAutoplay();
+}
+
+// Legacy toggle no-op (kept in case anything still calls it)
+function toggleSkill(_index) { /* slider mode — no-op */ }
 
 // buildSkills is now defined above — nothing else needed here
 
