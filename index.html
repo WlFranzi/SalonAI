@@ -117,6 +117,11 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto h2 .ai-eu-swap .word-eu { color: var(--accent); }
 .ai-eu-swap .word-ai { animation: aiSwap 30s infinite; }
 .ai-eu-swap .word-eu { animation: euSwap 30s infinite; }
+/* Stagger the three brand marks so they're never doing the same transition. */
+.manifesto h2 .ai-eu-swap .word-ai,
+.manifesto h2 .ai-eu-swap .word-eu { animation-delay: -1.5s; }
+.footer-logo .ai-eu-swap .word-ai,
+.footer-logo .ai-eu-swap .word-eu { animation-delay: -3s; }
 /* aiSwap & euSwap: 30s loop, 5 AI windows alternating with 5 EU windows,
    each handed off via a different whimsical transition (10 in total).
    T1 happy hop · T2 manic spin · T3 cartwheel · T4 squish-pop ·
