@@ -513,7 +513,7 @@
 
   // Replace this with your actual Web3Forms access_key (free at https://web3forms.com).
   // The notification is silently skipped while this is the placeholder.
-  var WEB3FORMS_KEY = 'DEIN_WEB3FORMS_KEY';
+  var WEB3FORMS_KEY = '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548';
 
   function notifyFranziska(name, email, dateCode, dateLabel, url, venue, venueOtherText) {
     var venueLabel = venue === 'luitpoldblock' ? 'Luitpoldblock anfragen (kein eigener Raum)'
@@ -525,7 +525,7 @@
                   : venue === 'other' ? (' · ' + (venueOtherText || 'anderer Ort'))
                   : '';
 
-    if (!WEB3FORMS_KEY || WEB3FORMS_KEY === 'DEIN_WEB3FORMS_KEY') {
+    if (!WEB3FORMS_KEY || WEB3FORMS_KEY === '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548') {
       console.warn('[notifyFranziska] WEB3FORMS_KEY is not set — email NOT sent. Set it at the top of the <script> in host.html.');
       console.warn('[notifyFranziska] Payload would have been:', { name: name, email: email, date: dateLabel, venue: venueLabel, url: url });
       return;
