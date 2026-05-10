@@ -544,6 +544,28 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 /* Footer */
 footer { background: var(--navy); color: var(--white-warm); padding: 52px 24px 44px; text-align: center; }
+/* ── Newsletter ────────────────────────────────────────────────── */
+.newsletter-section { background: var(--sky-light); padding: 56px 24px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.newsletter-inner { max-width: 520px; margin: 0 auto; text-align: center; }
+.newsletter-h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; letter-spacing: -0.01em; }
+.newsletter-desc { font-size: 14px; color: var(--navy); line-height: 1.55; margin-bottom: 18px; opacity: 0.78; }
+.newsletter-form { display: flex; gap: 8px; max-width: 440px; margin: 0 auto; }
+.newsletter-form input[type="email"] { flex: 1; min-width: 0; padding: 12px 16px; border: 1px solid var(--border); border-radius: 999px; background: #fff; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--navy); transition: border-color 0.15s; }
+.newsletter-form input[type="email"]:focus { outline: none; border-color: var(--accent); }
+.newsletter-form input[type="email"]::placeholder { color: rgba(0,0,0,0.32); }
+.newsletter-btn { background: var(--navy); color: #fff; border: none; border-radius: 999px; padding: 12px 22px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s, transform 0.15s; letter-spacing: 0.2px; }
+.newsletter-btn:hover { background: var(--accent); transform: translateY(-1px); }
+.newsletter-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.newsletter-msg { font-size: 13px; margin-top: 14px; line-height: 1.5; }
+.newsletter-msg.ok { color: var(--accent); }
+.newsletter-msg.err { color: #c0392b; }
+@media (max-width: 520px) {
+  .newsletter-section { padding: 40px 18px; }
+  .newsletter-h3 { font-size: 1.3rem; }
+  .newsletter-form { flex-direction: column; gap: 10px; }
+  .newsletter-btn { width: 100%; }
+}
+
 .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.01em; }
 .footer-logo span { color: var(--gold); }
 .footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 auto 24px; line-height: 1.65; }
@@ -681,21 +703,21 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
 .skill-scenario {
   font-size: 13.5px; color: var(--navy); background: var(--sky-light);
-  border-left: 3px solid var(--accent); padding: 12px 16px;
-  border-radius: 0 10px 10px 0; margin-bottom: 18px; line-height: 1.6;
+  border-left: 3px solid var(--accent); padding: 10px 14px;
+  border-radius: 0 10px 10px 0; margin-bottom: 12px; line-height: 1.55;
   font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400;
 }
 
-.skill-cols { display: grid; grid-template-columns: 1fr; gap: 14px; position: relative; }
-@media (min-width: 720px) { .skill-cols { grid-template-columns: 1fr 1fr; gap: 18px; } }
+.skill-cols { display: grid; grid-template-columns: 1fr; gap: 10px; position: relative; }
+@media (min-width: 720px) { .skill-cols { grid-template-columns: 1fr 1fr; gap: 12px; } }
 .s-col-eu { display: none; }
 /* ── Skills Slider ─────────────────────────────────────────────── */
 .skills-slider { position: relative; margin-top: 8px; }
 .skills-slider-viewport { overflow: hidden; border-radius: 18px; }
 .skills-slider-track { display: flex; transition: transform 0.45s cubic-bezier(0.4, 0.0, 0.2, 1); will-change: transform; }
 .skill-slide { flex: 0 0 100%; min-width: 0; padding: 2px; }
-.skill-slide-inner { border: 1px solid var(--border); border-radius: 18px; background: #fff; padding: 24px 26px 26px; box-shadow: 0 1px 6px rgba(27,46,74,0.06); }
-.skill-slide .slide-header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+.skill-slide-inner { border: 1px solid var(--border); border-radius: 18px; background: #fff; padding: 18px 20px 18px; box-shadow: 0 1px 6px rgba(27,46,74,0.06); }
+.skill-slide .slide-header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .skill-slide .skill-cat { font-size: 10.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); padding: 4px 11px; background: rgba(0,51,153,0.07); border-radius: 999px; }
 .skill-slide .slide-name { font-family: 'Playfair Display', serif; font-size: 1.32rem; font-weight: 700; color: var(--navy); line-height: 1.22; letter-spacing: -0.008em; margin: 0; flex: 1; min-width: 0; }
 .slider-controls { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 12px; }
@@ -708,22 +730,22 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 .slider-dot:hover { background: var(--sky-deep); }
 .slider-counter { text-align: center; margin-top: 6px; font-size: 11px; color: var(--muted-blue); letter-spacing: 1.2px; font-weight: 500; }
 
-.s-col { border-radius: 14px; padding: 18px 20px 20px; position: relative; }
+.s-col { border-radius: 14px; padding: 14px 16px 14px; position: relative; }
 .s-col-old { background: #FAFAFA; border: 1px solid #EAEAEA; }
 .s-col-now { background: linear-gradient(180deg, rgba(0,51,153,0.04) 0%, rgba(0,51,153,0.06) 100%); border: 1px solid rgba(0,51,153,0.14); }
 .s-col-eu  { background: var(--navy); }
 
-.s-col-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.4px; font-weight: 700; margin-bottom: 10px; display: inline-block; }
+.s-col-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.4px; font-weight: 700; margin-bottom: 6px; display: inline-block; }
 .s-col-old .s-col-label { color: #A0A4AB; }
 .s-col-now .s-col-label { color: var(--accent); }
 .s-col-eu  .s-col-label { color: var(--gold); }
 
-.s-time { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; font-family: 'DM Sans', sans-serif; letter-spacing: 0.2px; }
+.s-time { display: inline-block; font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 10px; font-family: 'DM Sans', sans-serif; letter-spacing: 0.2px; }
 .s-col-old .s-time { background: #E8E8E8; color: #707479; }
 .s-col-now .s-time { background: var(--accent); color: #fff; }
 .s-col-eu  .s-time { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.75); }
 
-.s-step { display: flex; gap: 10px; margin-bottom: 11px; align-items: flex-start; }
+.s-step { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
 .s-step:last-child { margin-bottom: 0; }
 .s-num { font-family: 'Playfair Display', serif; font-size: 12px; font-weight: 700; flex-shrink: 0; min-width: 14px; line-height: 1.5; padding-top: 1px; opacity: 0.7; }
 .s-col-old .s-num { color: #A0A4AB; }
@@ -1007,7 +1029,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="host-own" id="host">
         <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
         <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
-        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:franziska.wittleder@gmail.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
+        <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:luckysprouts@duck.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
         <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
         <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 78€ inkl. Catering</p>
       </div>
@@ -1102,12 +1124,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
       <details class="faq-item">
         <summary data-i18n="faq_q9">Kann ich den Abend mit meiner Gruppe organisieren?</summary>
-        <p data-i18n-html="faq_a9">Ja — das ist sogar erwünscht. Ab 12 bis 20 Personen kommen wir zu euch. Gleiches Format, eigenes EU-Gruppenthema. <a href="/host.html" style="color:var(--sky-deep);font-weight:600;">Hier deinen Abend erstellen →</a> oder: franziska.wittleder@gmail.com</p>
+        <p data-i18n-html="faq_a9">Ja — das ist sogar erwünscht. Ab 12 bis 20 Personen kommen wir zu euch. Gleiches Format, eigenes EU-Gruppenthema. <a href="/host.html" style="color:var(--sky-deep);font-weight:600;">Hier deinen Abend erstellen →</a> oder: luckysprouts@duck.com</p>
       </details>
 
       <details class="faq-item">
         <summary data-i18n="faq_q10">Was bei Absage?</summary>
-        <p data-i18n="faq_a10">Bei Absage bis 3 Tage vor dem Dinner behalten wir 50% des Ticketpreises ein, danach den vollen Betrag. Du kannst das Ticket aber jederzeit an eine andere Person weitergeben — einfach Name und Kontakt durchreichen, kein Problem. Fragen: franziska.wittleder@gmail.com</p>
+        <p data-i18n="faq_a10">Bei Absage bis 3 Tage vor dem Dinner behalten wir 50% des Ticketpreises ein, danach den vollen Betrag. Du kannst das Ticket aber jederzeit an eine andere Person weitergeben — einfach Name und Kontakt durchreichen, kein Problem. Fragen: luckysprouts@duck.com</p>
       </details>
 
     </div>
@@ -1116,11 +1138,24 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </section>
 
+<!-- ── NEWSLETTER ──────────────────────────────────────────────── -->
+<section class="newsletter-section" id="newsletter">
+  <div class="newsletter-inner">
+    <h3 class="newsletter-h3" data-i18n="newsletter_h3">Bleib am Tisch.</h3>
+    <p class="newsletter-desc" data-i18n="newsletter_desc">Eine kurze Mail, wenn ein neuer Salon stattfindet oder ein Abend ein Ergebnis hervorgebracht hat. Sonst keine.</p>
+    <form class="newsletter-form" onsubmit="return submitNewsletter(event);" novalidate>
+      <input type="email" id="newsletter-email" required placeholder="deine@email.com" autocomplete="email" />
+      <button type="submit" class="newsletter-btn" data-i18n="newsletter_btn">Anmelden →</button>
+    </form>
+    <p class="newsletter-msg" id="newsletter-msg" style="display:none;"></p>
+  </div>
+</section>
+
 <!-- ── FOOTER ────────────────────────────────────────────────────── -->
 <footer id="contact">
   <div class="footer-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></div>
   <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
-  <a href="mailto:franziska.wittleder@gmail.com" class="footer-email">hello@salon-ai.eu</a>
+  <a href="mailto:luckysprouts@duck.com" class="footer-email">luckysprouts@duck.com</a>
 
   <div class="footer-meta">
     <div class="footer-credits">
@@ -1149,6 +1184,73 @@ document.addEventListener('click', function() {
   var dd = document.getElementById('lang-menu-dd');
   if (dd) dd.classList.remove('open');
 });
+
+// ── Newsletter signup ─────────────────────────────────────────────
+// Replace WEB3FORMS_KEY with your actual key (free at https://web3forms.com).
+window.NEWSLETTER_WEB3FORMS_KEY = 'DEIN_WEB3FORMS_KEY';
+
+window.submitNewsletter = function(ev) {
+  ev.preventDefault();
+  var input = document.getElementById('newsletter-email');
+  var btn = document.querySelector('.newsletter-btn');
+  var msg = document.getElementById('newsletter-msg');
+  var email = (input.value || '').trim();
+  var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  if (!emailValid) {
+    msg.textContent = 'Bitte gib eine gültige E-Mail-Adresse ein.';
+    msg.className = 'newsletter-msg err';
+    msg.style.display = 'block';
+    return false;
+  }
+
+  btn.disabled = true;
+  msg.style.display = 'none';
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'newsletter_signup', { method: 'web3forms' });
+  }
+
+  var key = window.NEWSLETTER_WEB3FORMS_KEY;
+  if (!key || key === 'DEIN_WEB3FORMS_KEY') {
+    console.warn('[newsletter] WEB3FORMS_KEY not set — payload would have been:', { email: email });
+    msg.textContent = 'Danke! Wir melden uns, wenn etwas Neues passiert.';
+    msg.className = 'newsletter-msg ok';
+    msg.style.display = 'block';
+    input.value = '';
+    btn.disabled = false;
+    return false;
+  }
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      access_key: key,
+      subject: 'Newsletter signup — Salon AI',
+      from_name: 'Salon AI Newsletter',
+      to: 'luckysprouts@duck.com',
+      message: 'New newsletter signup:\nEmail: ' + email
+    })
+  }).then(function(r){
+    btn.disabled = false;
+    input.value = '';
+    if (r.ok) {
+      msg.textContent = 'Danke! Wir melden uns, wenn etwas Neues passiert.';
+      msg.className = 'newsletter-msg ok';
+    } else {
+      msg.textContent = 'Hat nicht geklappt. Versuch es nochmal oder schreib an luckysprouts@duck.com.';
+      msg.className = 'newsletter-msg err';
+    }
+    msg.style.display = 'block';
+  }).catch(function(){
+    btn.disabled = false;
+    msg.textContent = 'Hat nicht geklappt. Versuch es nochmal oder schreib an luckysprouts@duck.com.';
+    msg.className = 'newsletter-msg err';
+    msg.style.display = 'block';
+  });
+  return false;
+};
 
 // ── Event share — Web Share API on mobile, clipboard fallback on desktop
 window.shareEvent = function(ev, btn) {
