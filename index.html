@@ -114,7 +114,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .ai-eu-swap { display: inline-grid; grid-template-areas: "swap"; vertical-align: baseline; perspective: 600px; }
 .ai-eu-swap .word-ai,
 .ai-eu-swap .word-eu { grid-area: swap; transform-origin: 50% 60%; backface-visibility: hidden; will-change: transform, opacity; text-align: center; }
-.ai-eu-swap .word-eu { color: var(--accent); }
+.manifesto h2 .ai-eu-swap .word-eu { color: var(--accent); }
 .ai-eu-swap .word-ai { animation: aiSwap 30s infinite; }
 .ai-eu-swap .word-eu { animation: euSwap 30s infinite; }
 @keyframes aiSwap {
@@ -670,7 +670,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
-    <a href="/" class="nav-logo">Salon <span style="color:var(--accent);">AI</span></a>
+    <a href="/" class="nav-logo">Salon <span class="ai-eu-swap" style="color:var(--accent);"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></a>
     <div class="nav-right">
       <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta">28. Mai · 78€</a>
       <!-- 24 EU language switcher -->
@@ -953,7 +953,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
 <!-- ── FOOTER ────────────────────────────────────────────────────── -->
 <footer id="contact">
-  <div class="footer-logo">Salon <span>AI</span></div>
+  <div class="footer-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></div>
   <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
   <a href="mailto:franziska.wittleder@gmail.com" class="footer-email">hello@salon-ai.eu</a>
 
