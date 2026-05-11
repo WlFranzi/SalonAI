@@ -71,15 +71,12 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .nav-cta:hover { background: var(--accent); }
 
 /* Hero — mobile-first: tighter padding, expanded on desktop */
-.hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--navy); padding: 92px var(--s2) calc(var(--s4) + 6px); }
-/* Soft drifting clouds — moodboard reference: open sky */
+.hero { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--navy); padding: 92px var(--s2) var(--s4); }
+/* Soft drifting clouds — open sky feel */
 .hero .cloud { display: block; position: absolute; background: radial-gradient(closest-side, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0) 75%); border-radius: 50%; pointer-events: none; }
 .hero .cloud-1 { width: 380px; height: 380px; top: 6%; left: -4%; }
 .hero .cloud-2 { width: 320px; height: 320px; bottom: 4%; right: -4%; }
 @media (max-width: 720px) { .hero .cloud-1 { width: 240px; height: 240px; } .hero .cloud-2 { width: 200px; height: 200px; } }
-/* Awning ribbon at bottom of hero — Dallmayr-style brand grace note */
-.hero::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; pointer-events: none;
-  background: repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 14px, #ffffff 14px, #ffffff 28px); }
 .hero-content { position: relative; z-index: 10; max-width: 760px; margin: 0 auto; text-align: center; }
 .eu-stars { display: flex; align-items: center; gap: 7px; justify-content: center; margin-bottom: 20px; }
 .eu-star { width: 6px; height: 6px; background: var(--gold); opacity: 0.32; }

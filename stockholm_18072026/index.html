@@ -5,17 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Private page — only accessible via direct link -->
 <meta name="robots" content="noindex, nofollow" />
-<title>Salon AI Stockholm · 18 July 2026 · By invitation</title>
-<meta name="description" content="Salon AI Stockholm — a hands-on AI evening for invited guests. 18 July 2026." />
+<title>Salon AI · Stockholm · 18 June 2026 · By invitation</title>
+<meta name="description" content="Salon AI Stockholm — a midsummer dinner salon on Europe, competitiveness, and the circular economy in the age of AI. 18 June 2026, by invitation." />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-L2RZV4QPFD', {
-    page_path: '/stockholm_18072026/'
-  });
+  gtag('config', 'G-L2RZV4QPFD', { page_path: '/stockholm_18072026/' });
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,143 +23,187 @@
     --navy:        #1B2E4A;
     --navy-deep:   #0F1E33;
     --sky-light:   #EDF4FA;
-    --gold:        #7EC8E0;
+    --sky:         #7EC8E0;
     --accent:      #003399;
-    --paper:       #F8F5EE;
+    --paper:       #FAFAF8;
     --muted:       #6B7280;
-    --rule:        rgba(27,46,74,0.18);
+    --rule:        rgba(27,46,74,0.16);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); color: var(--navy); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--paper); color: var(--navy); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: inherit; }
 
-  nav.top { position: sticky; top: 0; z-index: 50; background: rgba(248,245,238,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); height: 52px; display: flex; align-items: center; padding: 0 24px; font-size: 13px; }
+  nav.top { position: sticky; top: 0; z-index: 50; background: rgba(250,250,248,0.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); height: 52px; display: flex; align-items: center; padding: 0 24px; font-size: 13px; }
   nav.top .back { color: var(--muted); letter-spacing: 0.3px; text-decoration: none; }
   nav.top .back:hover { color: var(--navy); }
 
-  .hero { background: var(--navy); color: #fff; padding: 80px 24px 70px; text-align: center; }
-  .hero-inner { max-width: 760px; margin: 0 auto; }
-  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 26px; }
-  .question { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 5.4vw, 3.3rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.012em; margin-bottom: 30px; text-wrap: balance; }
-  .question em { font-style: italic; color: var(--gold); }
-  .dateline { font-size: 14px; color: rgba(255,255,255,0.85); letter-spacing: 0.5px; }
-  .dateline strong { font-weight: 700; color: #fff; }
-  .scarcity { display: inline-block; margin-top: 22px; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: rgba(255,255,255,0.92); }
+  /* Hero image */
+  figure.hero-image { max-width: 1200px; margin: 0 auto; padding: 40px 24px 0; }
+  figure.hero-image img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 12px 32px rgba(15,30,51,0.18); }
+  @media (max-width: 720px) {
+    figure.hero-image { padding: 24px 16px 0; }
+    figure.hero-image img { border-radius: 10px; }
+  }
 
+  /* Masthead */
+  header.masthead { max-width: 760px; margin: 0 auto; padding: 56px 24px 16px; text-align: center; }
+  .dateline { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; }
+  h1.title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5.4vw, 3.2rem); font-weight: 700; line-height: 1.12; color: var(--navy-deep); margin-bottom: 18px; letter-spacing: -0.012em; text-wrap: balance; }
+  h1.title em { font-style: italic; color: var(--sky); font-weight: 400; }
+  p.lede { font-size: 17px; color: var(--navy); line-height: 1.65; max-width: 640px; margin: 0 auto; }
+  .scarcity { display: inline-block; margin-top: 28px; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); background: #fff; }
+
+  /* Hosts row */
+  .hosts { max-width: 760px; margin: 36px auto 0; padding: 0 24px; text-align: center; }
+  .hosts-label { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .hosts-names { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); letter-spacing: 0.02em; }
+  .hosts-names .sep { color: var(--rule); margin: 0 12px; font-weight: 400; }
+
+  /* Section */
   .section { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
-  .section h2 { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--navy-deep); line-height: 1.2; margin-bottom: 18px; letter-spacing: -0.008em; }
-  .section p { font-size: 16px; line-height: 1.65; color: var(--navy); margin-bottom: 14px; }
-  .section p.lede { font-size: 17px; color: var(--navy); }
+  .section h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy-deep); line-height: 1.22; margin-bottom: 18px; letter-spacing: -0.008em; }
+  .section h2.center { text-align: center; }
+  .section .eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .section .eyebrow.center { text-align: center; }
+  .section p { font-size: 16px; line-height: 1.7; color: var(--navy); margin-bottom: 14px; }
+  .section p:last-child { margin-bottom: 0; }
   .section p strong { font-weight: 700; }
+  .section p em { font-style: italic; color: var(--muted); }
 
-  .format-grid { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 28px; }
-  @media (min-width: 700px) { .format-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
-  .format-card { background: #fff; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 12px; padding: 22px 22px; }
-  .format-card .step-num { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--accent); display: block; margin-bottom: 8px; }
-  .format-card h3 { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy-deep); margin-bottom: 6px; }
-  .format-card p { font-size: 14px; line-height: 1.55; color: var(--muted); margin: 0; }
+  .pull-question { background: var(--sky-light); border-left: 3px solid var(--accent); padding: 22px 26px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+  .pull-question p { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; line-height: 1.45; color: var(--navy-deep); margin: 0; }
 
-  .details-box { background: var(--sky-light); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 26px; margin-top: 32px; }
-  .details-box dl { display: grid; grid-template-columns: 110px 1fr; gap: 8px 16px; font-size: 14.5px; }
+  ul.clean { list-style: none; padding: 0; margin: 14px 0 0; }
+  ul.clean li { padding: 8px 0 8px 22px; font-size: 16px; line-height: 1.65; color: var(--navy); position: relative; border-top: 1px solid var(--rule); }
+  ul.clean li:first-child { border-top: none; }
+  ul.clean li::before { content: ''; position: absolute; left: 0; top: 18px; width: 10px; height: 1.5px; background: var(--accent); }
+
+  .details-box { background: #fff; border: 1px solid var(--rule); border-radius: 14px; padding: 22px 26px; margin-top: 32px; }
+  .details-box dl { display: grid; grid-template-columns: 130px 1fr; gap: 10px 18px; font-size: 14.5px; }
   .details-box dt { font-weight: 700; color: var(--navy); letter-spacing: 0.2px; }
   .details-box dd { color: var(--navy); }
   .details-box dd em { color: var(--muted); font-style: italic; }
+  @media (max-width: 520px) {
+    .details-box dl { grid-template-columns: 100px 1fr; }
+  }
 
+  /* RSVP */
   .rsvp { text-align: center; padding: 56px 24px 72px; background: var(--navy); color: #fff; }
-  .rsvp h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 700; margin-bottom: 16px; line-height: 1.2; color: #fff; }
-  .rsvp p { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 26px; line-height: 1.6; }
+  .rsvp h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 700; margin-bottom: 16px; line-height: 1.25; color: #fff; }
+  .rsvp p { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 540px; margin: 0 auto 26px; line-height: 1.65; }
   .rsvp-btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--navy); font-weight: 700; font-size: 15px; padding: 14px 32px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; letter-spacing: 0.3px; }
   .rsvp-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
 
   footer { padding: 36px 24px; text-align: center; font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); }
   footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
   footer a:hover { color: var(--navy); }
-
-  @media (max-width: 520px) {
-    .hero { padding: 60px 20px 50px; }
-    .details-box dl { grid-template-columns: 96px 1fr; }
-  }
 </style>
 </head>
 <body>
 
 <nav class="top">
-  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'stockholm_18072026' });">← Salon AI</a>
+  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'stockholm_18062026' });">← Salon AI</a>
 </nav>
 
-<section class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Salon AI · Stockholm · By invitation</p>
-    <h1 class="question">
-      Stockholm gave us Spotify, Klarna, Skype.<br>
-      <em>What's the next Swedish export — built with AI?</em>
-    </h1>
-    <p class="dateline"><strong>18 July 2026</strong> · Stockholm · Venue confirmed with invited guests</p>
-    <span class="scarcity">Private salon · 12–20 guests</span>
-  </div>
-</section>
+<figure class="hero-image">
+  <img src="midsummer.png" alt="Midsummer in Sweden — a circle of dancers around a leafy maypole, framed by birch trees, with small AI-builder cameos at the edges. A visual reminder that this salon meets at the longest day of the year." />
+</figure>
 
-<div class="section">
-  <h2>One evening, one question, one built thing.</h2>
+<header class="masthead">
+  <p class="dateline">Salon AI · Stockholm · 18 June 2026</p>
+  <h1 class="title">
+    Europe, competitiveness, and the circular economy <em>in the age of artificial intelligence.</em>
+  </h1>
   <p class="lede">
-    Salon AI is a hands-on AI dinner in salon format. No talks, no slide decks — every guest builds
-    their own AI agent and points it at the evening's question. The output by the end of dinner is a
-    working answer, not an opinion.
+    Stockholm, 18 June 2026 — Midsummer. In a city where night barely fully arrives at this time of year, a small group gathers for a dinner salon that deliberately steps outside the format of a conventional event.
   </p>
-  <p>
-    March 2026, Munich: 15 guests built <a href="/march-event/" style="color: var(--accent); font-weight: 600;">europa-2041.eu</a>
-    in one evening — sourced, structured, published. May 2026, Munich: the question becomes
-    <em>"Which AI application could only Europeans build?"</em>. July 2026 in Stockholm,
-    the question becomes Swedish.
-  </p>
+  <span class="scarcity">Private salon · 12–20 guests · By invitation</span>
+</header>
 
-  <div class="format-grid">
-    <div class="format-card">
-      <span class="step-num">1.</span>
-      <h3>You build.</h3>
-      <p>Each guest builds their own AI agent — no coding needed. Experts at the table.</p>
-    </div>
-    <div class="format-card">
-      <span class="step-num">2.</span>
-      <h3>You point it at the question.</h3>
-      <p>The agent gets pointed at the evening's question. We see what comes out when AI is honestly applied.</p>
-    </div>
-  </div>
+<div class="hosts">
+  <p class="hosts-label">Hosted by</p>
+  <p class="hosts-names">Vanessa Rothschild <span class="sep">·</span> Franziska Wittleder</p>
 </div>
 
 <div class="section">
-  <h2>Practical details</h2>
+  <p class="eyebrow">The evening's question</p>
+  <div class="pull-question">
+    <p>Europe must become more competitive. How can the circular economy contribute to this?</p>
+  </div>
+  <p style="margin-top: 28px;">
+    Between 12 and 20 guests from technology, economics, design, and policy are invited. Not a panel. Not a conference. Not a lecture.
+  </p>
+  <p>
+    Instead, an experimental setting: each guest builds an AI agent that directly engages with the shared question. The focus is not discussion, but the creation of functioning systems.
+  </p>
+</div>
+
+<div class="section">
+  <p class="eyebrow">How the evening works</p>
+  <h2>Each participant</h2>
+  <ul class="clean">
+    <li>builds their own AI agent (no coding required)</li>
+    <li>directs it at the shared question</li>
+    <li>iteratively tests, adjusts, and develops it over the course of the evening</li>
+  </ul>
+  <p style="margin-top: 22px;">Outputs are not presented formally, but explored in real time within the room.</p>
+</div>
+
+<div class="section">
+  <p class="eyebrow">What emerges</p>
+  <h2>Different systems take shape</h2>
+  <ul class="clean">
+    <li>interpretative models of European regulation</li>
+    <li>simulations of circular value chains</li>
+    <li>tools for analysing material flows in industry</li>
+    <li>scenarios for competitiveness under circular economy constraints</li>
+  </ul>
+</div>
+
+<div class="section">
+  <p class="eyebrow">The context</p>
+  <h2>Regulation, interpreted as a system.</h2>
+  <p>
+    The European Union is advancing one of the most ambitious circular economy frameworks globally. At the same time, a fundamental question remains unresolved: how regulatory ambition translates into economic strength.
+  </p>
+  <p>
+    This evening shifts the question into an operational space: what happens when regulation is not only implemented, but interpreted as a system by AI?
+  </p>
+</div>
+
+<div class="section">
+  <p class="eyebrow">Practical details</p>
   <div class="details-box">
     <dl>
       <dt>Date</dt>
-      <dd>Saturday, 18 July 2026 · doors 18:00 · start 18:15</dd>
-      <dt>Venue</dt>
-      <dd>Stockholm — <em>confirmed with invited guests</em></dd>
+      <dd>Thursday, 18 June 2026 — Midsummer</dd>
+      <dt>Location</dt>
+      <dd>Stockholm — <em>venue confirmed with invited guests</em></dd>
       <dt>Format</dt>
-      <dd>Workshop · dinner · drinks · 12–20 guests</dd>
+      <dd>Private dinner salon · 12–20 guests</dd>
       <dt>Cuisine</dt>
-      <dd>Modern Middle Eastern · drinks included</dd>
+      <dd>Modern Levantine · drinks included</dd>
       <dt>Bring</dt>
-      <dd>A laptop. Optional: a Pro account on ChatGPT, Claude, Gemini or Mistral (we'll set one up on site if you don't have one).</dd>
-      <dt>Hosted by</dt>
-      <dd>Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud</dd>
+      <dd>Laptop required. Access to common AI tools recommended — support available on site.</dd>
+      <dt>Style</dt>
+      <dd>No presentations, no slides, no stage.</dd>
     </dl>
   </div>
 </div>
 
 <section class="rsvp">
-  <h2>You got the link.<br>Tell us you're in.</h2>
-  <p>This is a private invitation. Reply to confirm — venue and prep details follow by email.</p>
+  <h2>Places are limited.<br>A reply to this invitation is sufficient.</h2>
+  <p>This is a private, curated gathering. Further details will follow upon confirmation.</p>
   <a class="rsvp-btn"
-     href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Stockholm%20%C2%B7%2018%20July%202026&body=Hi%20Franziska%2C%20I%27d%20like%20to%20join%20Salon%20AI%20Stockholm%20on%2018%20July%202026.%0A%0AName%3A%0AEmail%3A%0AAnything%20I%20should%20know%20about%20you%20or%20your%20interest%20in%20AI%3A%0A%0AThanks%2C"
-     onclick="gtag('event', 'rsvp_click', { 'event_name': 'stockholm_18072026' });">
+     href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Stockholm%20%C2%B7%2018%20June%202026&body=Hi%2C%20I%27d%20like%20to%20accept%20the%20invitation%20for%20Salon%20AI%20Stockholm%20on%2018%20June%202026.%0A%0AName%3A%0AEmail%3A%0AField%2Faffiliation%3A%0AAnything%20you%27d%20like%20us%20to%20know%3A%0A%0AThank%20you%2C"
+     onclick="gtag('event', 'rsvp_click', { 'event_name': 'stockholm_18062026' });">
     Reply to confirm →
   </a>
 </section>
 
 <footer>
-  Private invitation · <a href="/">www.salon-ai.eu</a> · Stockholm dinner is unlisted; share the link only with people you want at the table.
+  Private invitation · <a href="/">www.salon-ai.eu</a> · Stockholm salon is unlisted; share the link only with people you want at the table.
 </footer>
 
 </body>
