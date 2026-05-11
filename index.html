@@ -287,34 +287,27 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 /* ── Host your own ── */
 /* Host-Own — heller Pull-Aside, navy ink, klare Hierarchie */
 /* ── Host invitation card — editorial style ────────────────────── */
-.host-own { margin-top: var(--s4); background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 40px 44px 36px; box-shadow: 0 6px 28px rgba(27,46,74,0.07); position: relative; }
-.host-own::before { content: ''; position: absolute; top: 24px; left: 44px; width: 32px; height: 2px; background: var(--accent); border-radius: 2px; }
-.host-own-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--accent); margin-bottom: 0; }
-.host-own-h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; margin: 24px 0 18px; color: var(--navy); line-height: 1.16; letter-spacing: -0.014em; max-width: 540px; }
-.host-own-desc { font-size: 15px; color: var(--navy); line-height: 1.75; margin-bottom: 22px; max-width: 580px; }
-.host-own-geo { font-size: 13px; color: var(--muted-blue); line-height: 1.7; margin: 0 0 26px; padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.10); max-width: 620px; }
-.host-own-geo a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
-.host-own-geo a:hover { color: var(--navy); }
-.host-own-examples { display: flex; flex-wrap: wrap; gap: var(--s1); margin-bottom: var(--s3); }
-.host-chip { font-size: var(--t-xs); background: var(--sky-light); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 4px 12px; color: var(--navy); }
-.host-own-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--navy); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 14px 30px; min-height: 46px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s, box-shadow 0.18s; letter-spacing: 0.4px; box-shadow: 0 6px 18px rgba(27,46,74,0.22); }
-.host-own-btn:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,51,153,0.28); }
-.host-own-fine { font-size: 12px; color: var(--muted-blue); margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.10); line-height: 1.65; letter-spacing: 0.2px; font-style: normal; }
-/* Corporate sibling tile — same shape, deeper navy accent so the two paths feel related but distinct */
-.corporate-tile { margin-top: 22px; background: var(--navy); color: rgba(255,255,255,0.92); border-color: var(--navy); box-shadow: 0 10px 32px rgba(27,46,74,0.18); }
-.corporate-tile::before { background: var(--gold); }
-.corporate-tile .host-own-h3 { color: #fff; }
-.corporate-tile .host-own-desc { color: rgba(255,255,255,0.85); }
-.corporate-tile .host-own-fine { color: rgba(255,255,255,0.55); border-top-color: rgba(255,255,255,0.12); }
-.corporate-tile .host-own-btn { background: var(--gold); color: var(--navy); box-shadow: 0 6px 18px rgba(126,200,224,0.25); }
-.corporate-tile .host-own-btn:hover { background: #fff; color: var(--navy); }
+/* CO-HOST SECTION — private salons + organizations, unified */
+.cohost-section { padding: 96px var(--s3) 72px; }
+.cohost-inner { max-width: 920px; margin: 0 auto; }
+.cohost-hero { text-align: center; margin: 0 auto 64px; max-width: 640px; }
+.cohost-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.4vw, 2.55rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin-bottom: 18px; }
+.cohost-subhead { font-family: 'DM Sans', sans-serif; font-size: clamp(1.05rem, 2.2vw, 1.2rem); font-weight: 500; color: var(--navy); line-height: 1.5; margin-bottom: 26px; }
+.cohost-support { font-size: 15px; color: var(--muted-blue); line-height: 1.75; max-width: 560px; margin: 0 auto 22px; }
+.cohost-location { font-size: 13px; color: var(--muted-blue); line-height: 1.65; letter-spacing: 0.15px; }
+.cohost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cohost-card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 40px 36px 36px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+.cohost-card:hover { border-color: var(--sky-deep); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(27,46,74,0.08); }
+.cohost-card-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.012em; margin-bottom: 16px; }
+.cohost-card-desc { font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 18px; }
+.cohost-card-meta { font-size: 13px; color: var(--muted-blue); line-height: 1.7; padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.08); margin-bottom: 28px; flex-grow: 1; }
+.cohost-cta { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Sans', sans-serif; font-size: 14.5px; font-weight: 600; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; transition: gap 0.2s, color 0.15s; align-self: flex-start; }
+.cohost-cta:hover { color: var(--navy); gap: 10px; }
 @media (max-width: 720px) {
-  .host-own { padding: 28px 22px 26px; border-radius: 16px; }
-  .host-own::before { top: 18px; left: 22px; width: 28px; }
-  .host-own-h3 { font-size: 1.32rem; margin: 18px 0 14px; }
-  .host-own-desc { font-size: 14.5px; line-height: 1.7; margin-bottom: 18px; }
-  .host-own-geo { font-size: 12.5px; margin-bottom: 22px; padding-top: 14px; }
-  .host-own-fine { font-size: 11.5px; margin-top: 20px; padding-top: 14px; }
+  .cohost-section { padding: 60px var(--s3) 52px; }
+  .cohost-hero { margin-bottom: 40px; }
+  .cohost-grid { grid-template-columns: 1fr; gap: 16px; }
+  .cohost-card { padding: 30px 26px 28px; }
 }
 
 /* ── Past Events — photos | unified text column ── */
@@ -1066,26 +1059,33 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 </section>
 
 
-<!-- ── HOST YOUR OWN ──────────────────────────────────────────── -->
-<div class="main-content">
-  <div class="single-col">
-    <div class="host-own" id="host">
-      <h3 class="host-own-h3" data-i18n="host_own_h3">Das Dinner. Mit deinem Netzwerk.</h3>
-      <p class="host-own-desc" data-i18n="host_own_desc">Ab 12 bis 20 Personen kommt das Format direkt zu euch – derselbe Salon-Abend, nur mit euren eigenen Gästen.</p>
-      <p class="host-own-geo" data-i18n-html="host_own_geo">Momentan nur in München und Berlin. Interesse an Stockholm, Mailand, Hamburg, London oder Madrid? <a href="mailto:luckysprouts@duck.com" onclick="gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });">Schreib uns.</a></p>
-      <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
-      <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 149€ inkl. Catering</p>
-    </div>
+<!-- ── CO-HOST — merged private salons + organizations ──────────── -->
+<section class="cohost-section" id="host">
+  <div class="cohost-inner">
+    <header class="cohost-hero">
+      <h2 class="cohost-h2" data-i18n="host_own_h3">Co-host einen kuratierten Salon-Abend.</h2>
+      <p class="cohost-subhead" data-i18n="host_own_sub">Du lädst zwölf Leute ein. Wir kümmern uns um den Rest.</p>
+      <p class="cohost-support" data-i18n="host_own_support">Wir organisieren Ort, Dinner, Moderation und einen kuratierten Experten für den Abend.</p>
+      <p class="cohost-location" data-i18n="host_own_geo">Aktuell in München und Berlin. Andere Städte auf Anfrage.</p>
+    </header>
 
-    <!-- ── CORPORATE / TEAM ─────────────────────────────────────── -->
-    <div class="host-own corporate-tile" id="corporate">
-      <h3 class="host-own-h3" data-i18n="corp_h3">Oder bring dein Team.</h3>
-      <p class="host-own-desc" data-i18n="corp_desc">Für Firmen, Vorstände und geschlossene Gruppen kuratieren wir Salon-Abende nach Maß. Sag uns, wer dabei sein soll und was die Frage des Abends ist — wir melden uns innerhalb von 48h mit einem Vorschlag.</p>
-      <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Anfrage%20f%C3%BCr%20Team-Event&amp;body=Liebe%20Franziska%2C%0D%0A%0D%0Awir%20sind%20%5BFirma%5D%20und%20w%C3%BCrden%20gerne%20einen%20Salon-Abend%20f%C3%BCr%20unser%20Team%20kuratieren%20lassen.%0D%0A%0D%0AAnzahl%20Personen%3A%0D%0AWunschdatum%2Fzeitraum%3A%0D%0AThema%2FFrage%20des%20Abends%3A%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe" class="host-own-btn" data-i18n="corp_btn" onclick="gtag('event', 'click_corporate');">Anfrage senden →</a>
-      <p class="host-own-fine" data-i18n="corp_fine">Privat-Salon · Executive Roundtable · Team-Workshop · Auf Maß kuratiert · Preis nach Anfrage.</p>
+    <div class="cohost-grid">
+      <article class="cohost-card">
+        <h3 class="cohost-card-title" data-i18n="priv_title">Private Salons</h3>
+        <p class="cohost-card-desc" data-i18n="host_own_desc">Für Freunde, Gründer:innen, Communities und private Kreise.</p>
+        <p class="cohost-card-meta" data-i18n="host_own_fine">Ab 149€ pro Gast, inklusive Dinner und Location.</p>
+        <a href="/host.html" class="cohost-cta" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
+      </article>
+
+      <article class="cohost-card" id="corporate">
+        <h3 class="cohost-card-title" data-i18n="corp_h3">Organisationen und Teams</h3>
+        <p class="cohost-card-desc" data-i18n="corp_desc">Für Firmen, Vorstände, Stiftungen und Führungskreise.</p>
+        <p class="cohost-card-meta" data-i18n="corp_fine">Executive Roundtables und private Salon-Abende, auf Maß kuratiert.</p>
+        <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Anfrage%20f%C3%BCr%20Team-Event&amp;body=Liebe%20Franziska%2C%0D%0A%0D%0Awir%20sind%20%5BFirma%5D%20und%20w%C3%BCrden%20gerne%20einen%20Salon-Abend%20f%C3%BCr%20unser%20Team%20kuratieren%20lassen.%0D%0A%0D%0AAnzahl%20Personen%3A%0D%0AWunschdatum%2Fzeitraum%3A%0D%0AThema%2FFrage%20des%20Abends%3A%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe" class="cohost-cta" data-i18n="corp_btn" onclick="gtag('event', 'click_corporate');">Anfrage senden →</a>
+      </article>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
