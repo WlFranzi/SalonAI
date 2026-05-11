@@ -114,18 +114,12 @@
 
     /* RESULT */
     #result { display: none; background: var(--navy); border-radius: var(--radius); padding: 26px 24px; margin-top: 14px; }
-    .result-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-    .result-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 16px; line-height: 1.3; }
-    .link-box { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border-radius: 9px; padding: 10px 13px; margin-bottom: 12px; }
-    .link-url { flex: 1; font-size: 11.5px; color: rgba(255,255,255,0.8); word-break: break-all; font-family: monospace; }
-    .copy-btn { flex-shrink: 0; padding: 6px 13px; background: var(--gold); color: var(--navy); border: none; border-radius: 20px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; cursor: pointer; letter-spacing: 0.1px; }
-    .copy-btn.copied { background: #2a9d5c; color: #fff; }
-    .preview-link { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); text-decoration: none; padding: 8px 14px; border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; transition: all 0.15s; }
-    .preview-link:hover { background: rgba(255,255,255,0.08); color: #fff; }
-    .share-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-    .share-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.85); cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; transition: background 0.15s, border-color 0.15s; }
-    .share-pill:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.32); color: #fff; }
-    .result-note { font-size: 11.5px; color: rgba(255,255,255,0.45); margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.6; }
+    .confirm-banner { background: rgba(74,222,128,0.12); border: 1px solid rgba(74,222,128,0.35); border-radius: 12px; padding: 24px 22px; text-align: center; margin-bottom: 16px; }
+    .confirm-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: #4ade80; color: var(--navy); font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+    .confirm-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 8px; }
+    .confirm-sub { font-size: 13.5px; color: rgba(255,255,255,0.75); line-height: 1.6; }
+    .confirm-sub strong { color: #fff; }
+    .result-note { font-size: 11.5px; color: rgba(255,255,255,0.45); text-align: center; line-height: 1.6; }
     .result-note a { color: rgba(255,255,255,0.65); }
 
     /* FOOTER */
@@ -134,18 +128,8 @@
 
     @media(max-width: 440px) { .step, .quick-email { padding: 18px; } }
 
-    /* (legacy two-column venue grid removed — superseded by .venue-choice / .venue-opt above) */
     .venue-error { font-size: 11.5px; color: #c0392b; margin-top: 7px; display: none; }
     .venue-error.show { display: block; }
-
-    /* LOCKED COPY STATE */
-    .copy-btn:disabled { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.3); cursor: not-allowed; }
-    .luitpold-gate { background: rgba(255,160,0,0.12); border: 1px solid rgba(255,160,0,0.4); border-radius: 9px; padding: 14px 16px; margin-bottom: 12px; }
-    .luitpold-gate-title { font-size: 13px; font-weight: 700; color: #ffc04d; margin-bottom: 5px; }
-    .luitpold-gate-text { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 10px; }
-    .luitpold-confirm { display: flex; align-items: flex-start; gap: 9px; cursor: pointer; }
-    .luitpold-confirm input[type=checkbox] { margin-top: 2px; flex-shrink: 0; accent-color: #4ade80; width: 15px; height: 15px; cursor: pointer; }
-    .luitpold-confirm label { font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.5; cursor: pointer; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -247,59 +231,28 @@
 
   <!-- STEP 3: Name -->
   <div class="step" id="step-name">
-    <h2>Unter welchem Namen läuft der Abend?</h2>
-    <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" oninput="syncMessage()" />
+    <h2>Dein Name</h2>
+    <input type="text" id="host-name" placeholder="z.B. Sarah" maxlength="40" />
     <div class="error-msg">Bitte gib deinen Namen ein.</div>
-    <p class="input-hint">Dein Name steht über der Einladung. Deine Runde sieht sofort, von wem sie kommt.</p>
   </div>
 
-  <!-- STEP 4: Message -->
-  <div class="step" id="step-msg">
-    <h2>Wie deine Einladung aussieht</h2>
-    <textarea id="host-msg"></textarea>
-    <div class="error-msg">Bitte schreib eine kurze Einladung.</div>
-    <p class="input-hint">Vorschlag steht — schreib um, was du anders sagen würdest. Der Text erscheint genau so auf der Event-Seite.</p>
-  </div>
-
-  <!-- EMAIL — last, after investment in form -->
+  <!-- EMAIL -->
   <div class="quick-email" id="step-email">
     <h2>Wo wir dich erreichen</h2>
     <input type="email" id="host-email" placeholder="deine@email.com" />
     <div class="error-msg">Bitte gib eine gültige E-Mail-Adresse ein.</div>
-    <p class="input-hint">Bei jeder Buchung kommt eine kurze Mail — du siehst in Echtzeit, wer dabei ist.</p>
   </div>
 
-  <button class="generate-btn" id="generate-btn" onclick="generate()">Salon-Einladung erstellen →</button>
+  <button class="generate-btn" id="generate-btn" onclick="generate()">Anfrage senden →</button>
 
   <!-- RESULT -->
   <div id="result">
-    <p class="result-eyebrow" id="result-eyebrow"></p>
-    <p class="result-title" id="result-title"></p>
-    <div class="link-box">
-      <span class="link-url" id="result-url"></span>
-      <button class="copy-btn" id="copy-btn" onclick="copyLink()">Kopieren</button>
+    <div class="confirm-banner">
+      <div class="confirm-icon">✓</div>
+      <p class="confirm-title">Wir haben deine Anfrage erhalten.</p>
+      <p class="confirm-sub">Wir melden uns in den nächsten <strong>48 Stunden</strong> per Mail.</p>
     </div>
-    <a href="#" id="preview-link" target="_blank" class="preview-link">Vorschau ansehen</a>
-
-    <div class="share-row" id="share-row" style="display:none;">
-      <a class="share-pill" href="#" onclick="shareLinkedIn(event)">LinkedIn</a>
-      <a class="share-pill" href="#" onclick="shareWhatsApp(event)">WhatsApp</a>
-      <button class="share-pill" id="share-native-btn" onclick="shareNative()" style="display:none;">Mehr (Instagram, …)</button>
-    </div>
-
-    <!-- Shown only when Luitpoldblock selected — blocks sharing until confirmed -->
-    <div id="luitpold-gate" style="display:none;" class="luitpold-gate">
-      <p class="luitpold-gate-title">Noch nicht teilen — der Raum ist nicht bestätigt.</p>
-      <p class="luitpold-gate-text">Wir fragen den Luitpoldblock an und melden uns per E-Mail — meist innerhalb von 24 Stunden. Bis dahin bleibt der Link bei dir.</p>
-      <div class="luitpold-confirm">
-        <input type="checkbox" id="confirm-luitpold" onchange="onConfirmLuitpold(this)" />
-        <label for="confirm-luitpold">Ich habe die Bestätigung von Franziska — Link freigeben.</label>
-      </div>
-    </div>
-
     <p class="result-note">
-      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">teile den Link mit deinem Kreis</strong> — als „Hast du Lust?". Jedes „Ja" landet <strong style="color:rgba(255,255,255,0.75);">bei dir</strong> und parallel bei uns.<br>
-      Sobald <strong style="color:rgba(255,255,255,0.75);">zwölf Yeses</strong> zusammen sind, schicken wir allen den Ticket-Link per Mail. Höchstens zwanzig Gäste, 78€ pro Person, Catering inbegriffen.<span id="result-note-venue"></span><br>
       Fragen? <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a>
     </p>
   </div>
@@ -311,63 +264,12 @@
 </footer>
 
 <script>
-  var selectedDate = '';
-  var selectedDateLabel = '';
-  var venueType = 'own'; // 'own' | 'luitpoldblock' | 'own_or_luitpold' | 'other'
-
-  function setVenue(radio) {
-    venueType = radio.value;
-    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
-    radio.closest('.venue-opt').classList.add('selected');
-    // Clear the venue-other error highlight when switching away
-    var step = document.getElementById('step-venue-opt');
-    if (step) step.classList.remove('has-error');
-    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('has-error'); });
-    // Auto-focus the city input if 'other' selected
-    if (venueType === 'other') {
-      setTimeout(function(){ var i = document.getElementById('venue-other-text'); if (i) i.focus(); }, 50);
-    }
-  }
-
-  function onVenueOtherInput() {
-    // Clear error highlight as soon as user types
-    document.querySelectorAll('.venue-opt[data-val="other"]').forEach(function(el){ el.classList.remove('has-error'); });
-    var step = document.getElementById('step-venue-opt');
-    if (step) step.classList.remove('has-error');
-  }
-
-  function onConfirmLuitpold(cb) {
-    var copyBtn = document.getElementById('copy-btn');
-    copyBtn.disabled = !cb.checked;
-    document.getElementById('share-row').style.display = cb.checked ? 'flex' : 'none';
-    if (cb.checked) {
-      document.getElementById('result-eyebrow').textContent = 'Bestätigt. Der Link ist freigegeben.';
-    }
-  }
-
-  // ── Share helpers ────────────────────────────────────────────────────────────
-  function shareLinkedIn(e) {
-    if (e) e.preventDefault();
-    if (!window._shareUrl) return;
-    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'LinkedIn' });
-    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window._shareUrl), '_blank', 'noopener');
-  }
-  function shareWhatsApp(e) {
-    if (e) e.preventDefault();
-    if (!window._shareUrl) return;
-    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'WhatsApp' });
-    var msg = (window._shareTitle || 'Salon AI') + ' — ' + window._shareUrl;
-    window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
-  }
-  function shareNative() {
-    if (!navigator.share || !window._shareUrl) return;
-    if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Native' });
-    navigator.share({ title: window._shareTitle || 'Salon AI', text: window._shareTitle || 'Salon AI', url: window._shareUrl }).catch(function(){});
-  }
-  if (navigator.share) {
-    var _ns = document.getElementById('share-native-btn');
-    if (_ns) _ns.style.display = '';
-  }
+  // ── Simple inquiry flow ──────────────────────────────────────────────────────
+  // Host fills a short form → email goes to luckysprouts@duck.com → confirmation shown.
+  // (Auto-generated invitation page, share teaser, LinkedIn/WhatsApp buttons,
+  // host-customised invitation text, host-CC on guest RSVPs, Luitpold-gate flow
+  // and the whole event.html landing-page integration are deferred — see git
+  // history pre-2026-05-11 if/when we want them back.)
 
   var DATE_LABELS_LONG = {
     '4jun':  'Donnerstag, 4. Juni 2026',
@@ -376,18 +278,9 @@
     '16jul': 'Donnerstag, 16. Juli 2026',
   };
 
-  // Message template — [DATUM] and [NAME] are replaced dynamically
-  var TPL = 'Ich plane am [DATUM] ein KI-Dinner in kleinem Kreis (12–20 Personen). Geleitet von Franziska Wittleder — 15+ Jahre KI bei Amazon, Writer, SoundCloud.\n\n' +
-    'Wir bauen an diesem Abend unseren eigenen KI-Assistenten und setzen ihn direkt ein. Kein Vortrag, kein Zuschauen — echtes Arbeiten, gutes Essen.\n\n' +
-    '78€ pro Person, Dinner & Drinks inklusive.\n\n' +
-    'Hast du Lust? Sag mir kurz Bescheid — sobald wir zwölf sind, schicke ich dir den Ticket-Link.\n\n' +
-    '[NAME]';
-
-  function syncMessage() {
-    var name = document.getElementById('host-name').value.trim() || '[dein Name]';
-    var date = (selectedDate && DATE_LABELS_LONG[selectedDate]) || '[Datum auswählen]';
-    document.getElementById('host-msg').value = TPL.replace('[DATUM]', date).replace('[NAME]', name);
-  }
+  var selectedDate = '';
+  var selectedDateLabel = '';
+  var venueType = 'own';
 
   function selectDate(el) {
     document.querySelectorAll('.date-card').forEach(function(c){ c.classList.remove('selected'); });
@@ -395,24 +288,36 @@
     selectedDate = el.dataset.code;
     selectedDateLabel = el.dataset.label;
     document.getElementById('date-error').classList.remove('show');
-    syncMessage();
   }
 
-  window.addEventListener('DOMContentLoaded', function() { syncMessage(); });
+  function setVenue(radio) {
+    venueType = radio.value;
+    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
+    radio.closest('.venue-opt').classList.add('selected');
+    var step = document.getElementById('step-venue-opt');
+    if (step) step.classList.remove('has-error');
+    document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('has-error'); });
+    if (venueType === 'other') {
+      setTimeout(function(){ var i = document.getElementById('venue-other-text'); if (i) i.focus(); }, 50);
+    }
+  }
+
+  function onVenueOtherInput() {
+    document.querySelectorAll('.venue-opt[data-val="other"]').forEach(function(el){ el.classList.remove('has-error'); });
+    var step = document.getElementById('step-venue-opt');
+    if (step) step.classList.remove('has-error');
+  }
 
   function validate() {
     var ok = true;
 
-    // email
     var emailStep = document.getElementById('step-email');
     var email = document.getElementById('host-email').value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { emailStep.classList.add('has-error'); ok = false; }
     else { emailStep.classList.remove('has-error'); }
 
-    // date
     if (!selectedDate) { document.getElementById('date-error').classList.add('show'); ok = false; }
 
-    // venue: if "other" selected, require city/venue text
     if (venueType === 'other') {
       var venueOther = (document.getElementById('venue-other-text') || {}).value || '';
       if (!venueOther.trim()) {
@@ -423,15 +328,9 @@
       }
     }
 
-    // name
     var nameStep = document.getElementById('step-name');
     if (!document.getElementById('host-name').value.trim()) { nameStep.classList.add('has-error'); ok = false; }
     else { nameStep.classList.remove('has-error'); }
-
-    // msg
-    var msgStep = document.getElementById('step-msg');
-    if (!document.getElementById('host-msg').value.trim()) { msgStep.classList.add('has-error'); ok = false; }
-    else { msgStep.classList.remove('has-error'); }
 
     return ok;
   }
@@ -442,71 +341,34 @@
     var name  = document.getElementById('host-name').value.trim();
     var email = document.getElementById('host-email').value.trim();
     var venueOtherText = ((document.getElementById('venue-other-text') || {}).value || '').trim();
-    // 'luitpoldblock' and 'other' both block sharing — Franziska confirms first.
-    var venueGated = (venueType === 'luitpoldblock' || venueType === 'other');
+    var longLabel = DATE_LABELS_LONG[selectedDate] || selectedDate;
 
     if (typeof gtag === 'function') {
-      gtag('event', 'generate_invitation', {
+      gtag('event', 'host_inquiry', {
         'venue_type': venueType,
         'date_code': selectedDate
       });
     }
 
-    var base = window.location.origin + '/event.html';
-    // 'e' carries the host's email so event.html can CC them on every Yes.
-    // 'v=p' marks the venue as pending until our manual confirmation.
-    var urlParams = { d: selectedDate, h: name, e: email, v: 'p' };
-    var url = base + '?' + new URLSearchParams(urlParams).toString();
+    // Disable button while sending
+    var btn = document.getElementById('generate-btn');
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet…';
 
-    var longLabel = DATE_LABELS_LONG[selectedDate];
-    document.getElementById('result-title').textContent = 'Vorgemerkt: Salon AI bei ' + name + ' · ' + longLabel;
-    document.getElementById('result-url').textContent   = url;
-    document.getElementById('preview-link').href        = url;
-
-    // Link ist sofort teilbar — als Interessen-Liste. Ticket-Link kommt von uns, sobald
-    // genug Yeses zusammen sind (mind. 12). Email an uns geht parallel.
-    document.getElementById('result-eyebrow').textContent = 'Bereit zum Teilen — als Interessen-Liste.';
-    document.getElementById('luitpold-gate').style.display = 'none';
-    document.getElementById('copy-btn').disabled = false;
-    document.getElementById('share-row').style.display = 'flex';
-
-    // Update result note with the interest-list framing (venue-specific note appended below)
-    var venueNote = '';
-    if (venueType === 'luitpoldblock') {
-      venueNote = '<br>Du hast keinen eigenen Raum — wir fragen den Luitpoldblock an und melden uns per Mail.';
-    } else if (venueType === 'own_or_luitpold') {
-      venueNote = '<br>Wir fragen parallel den Luitpoldblock an, falls dein Raum doch nicht klappt — Antwort per Mail.';
-    } else if (venueType === 'other') {
-      venueNote = '<br>Für ' + venueOtherText + ' organisieren wir Raum, Catering und Logistik — Antwort per Mail.';
-    }
-    document.getElementById('result-note-venue').innerHTML = venueNote;
-
-    // Hold the current share URL for the buttons
-    window._shareUrl = url;
-    window._shareTitle = 'Salon AI bei ' + name + ' · ' + longLabel;
-
-    document.getElementById('result').style.display = 'block';
-    document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-    notifyFranziska(name, email, selectedDate, longLabel, url, venueType, venueOtherText);
-  }
-
-  function copyLink() {
-    var url = document.getElementById('result-url').textContent;
-    navigator.clipboard.writeText(url).then(function() {
-      if (typeof gtag === 'function') gtag('event', 'share', { 'method': 'Copy' });
-      var btn = document.getElementById('copy-btn');
-      btn.textContent = 'Kopiert';
-      btn.classList.add('copied');
-      setTimeout(function(){ btn.textContent = 'Kopieren'; btn.classList.remove('copied'); }, 2000);
+    notifyFranziska(name, email, longLabel, venueType, venueOtherText, function() {
+      document.getElementById('result').style.display = 'block';
+      document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      btn.style.display = 'none';
+    }, function() {
+      btn.disabled = false;
+      btn.textContent = 'Anfrage senden →';
+      alert('Fehler beim Senden — bitte nochmal versuchen.');
     });
   }
 
-  // Replace this with your actual Web3Forms access_key (free at https://web3forms.com).
-  // The notification is silently skipped while this is the placeholder.
   var WEB3FORMS_KEY = '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548';
 
-  function notifyFranziska(name, email, dateCode, dateLabel, url, venue, venueOtherText) {
+  function notifyFranziska(name, email, dateLabel, venue, venueOtherText, onSuccess, onError) {
     var venueLabel = venue === 'luitpoldblock' ? 'Luitpoldblock anfragen (kein eigener Raum)'
                   : venue === 'own_or_luitpold' ? 'Eigener Raum vorhanden — Luitpoldblock zusätzlich anfragen'
                   : venue === 'other' ? ('Anderer Ort / andere Stadt: ' + (venueOtherText || '(leer)'))
@@ -516,29 +378,25 @@
                   : venue === 'other' ? (' · ' + (venueOtherText || 'anderer Ort'))
                   : '';
 
-    if (!WEB3FORMS_KEY || WEB3FORMS_KEY === '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548') {
-      console.warn('[notifyFranziska] WEB3FORMS_KEY is not set — email NOT sent. Set it at the top of the <script> in host.html.');
-      console.warn('[notifyFranziska] Payload would have been:', { name: name, email: email, date: dateLabel, venue: venueLabel, url: url });
-      return;
-    }
-
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         access_key: WEB3FORMS_KEY,
-        subject: 'Neues KI Dinner — ' + name + ' · ' + dateLabel + subjectTag,
+        subject: 'Host-Anfrage: ' + name + ' · ' + dateLabel + subjectTag,
         from_name: 'Salon AI Host Flow',
         to: 'luckysprouts@duck.com',
+        replyto: email,
         message: 'Host: ' + name + '\nE-Mail: ' + email +
                  '\nDatum: ' + dateLabel +
                  '\nVenue: ' + venueLabel +
-                 '\n\nEinladungslink:\n' + url
+                 '\n\nBitte innerhalb von 48h zurückmelden.'
       })
     }).then(function(r){
-      if (!r.ok) console.warn('[notifyFranziska] Web3Forms returned', r.status);
-    }).catch(function(err){
-      console.warn('[notifyFranziska] Web3Forms request failed:', err);
+      if (r.ok) { if (onSuccess) onSuccess(); }
+      else { if (onError) onError(); }
+    }).catch(function(){
+      if (onError) onError();
     });
   }
 </script>
