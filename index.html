@@ -118,6 +118,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto-inner { max-width: 720px; margin: 0 auto; }
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s2); }
 .manifesto h2 .m-h2-ai { color: var(--gold); }
+.skills-h2 .sh-blue { color: var(--gold); font-style: italic; }
 .manifesto p { font-size: 15px; color: var(--navy); line-height: 1.55; margin-bottom: 12px; }
 .manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.55; margin-bottom: var(--s2); color: var(--navy); }
 .manifesto ol { list-style: none; padding: 0; margin: var(--s2) 0; }
@@ -397,23 +398,26 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .event-info .name { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.01em; display: flex; align-items: baseline; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; }
 .sticker-share {
   display: inline-block;
-  background: transparent;
-  color: var(--muted-blue);
+  background: var(--gold);
+  color: var(--navy);
   font-family: 'DM Sans', sans-serif;
-  font-size: 10.5px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
-  padding: 0 0 1px;
-  border-radius: 0;
+  letter-spacing: 1.2px;
+  padding: 5px 12px;
+  border-radius: 6px;
   cursor: pointer;
-  border: none;
-  border-bottom: 1px solid currentColor;
+  transform: rotate(2deg);
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  border: 1.5px solid rgba(27,46,74,0.15);
   white-space: nowrap;
-  transition: color 0.15s;
+  box-shadow: 0 4px 12px rgba(126,200,224,0.45);
 }
 .sticker-share:hover {
-  color: var(--accent);
+  transform: rotate(0deg) scale(1.06);
+  background: var(--gold-light);
+  box-shadow: 0 6px 18px rgba(126,200,224,0.6);
 }
 .event-info .sub { font-size: 13px; color: var(--muted-blue); margin-top: 6px; line-height: 1.6; }
 .event-last-public { font-size: 13px; color: var(--muted-blue); font-style: italic; margin: 0 0 14px; line-height: 1.6; padding: 12px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -596,8 +600,11 @@ footer { background: var(--navy); color: var(--white-warm); padding: 52px 24px 4
 .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.01em; }
 .footer-logo span { color: var(--gold); }
 .footer-tagline { font-size: 13px; color: rgba(250,249,247,0.48); max-width: 340px; margin: 0 auto 24px; line-height: 1.65; }
-.footer-email { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(250,249,247,0.6); transition: all 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
-.footer-email:hover { border-color: rgba(255,255,255,0.38); color: var(--white-warm); }
+.footer-links { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.footer-email,
+.footer-linkedin { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); font-size: 13px; color: rgba(250,249,247,0.6); transition: all 0.2s; font-family: 'DM Sans', sans-serif; text-decoration: none; }
+.footer-email:hover,
+.footer-linkedin:hover { border-color: rgba(255,255,255,0.38); color: var(--white-warm); }
 .footer-meta { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(250,249,247,0.07); }
 .footer-credits { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 14px; }
 .footer-credit { font-size: 11px; color: rgba(250,249,247,0.25); line-height: 1.5; }
@@ -1084,7 +1091,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="skills-intro">
-      <h2 class="skills-h2" data-i18n="skills_h2">The boring stuff your agent could automate for you.</h2>
+      <h2 class="skills-h2" data-i18n-html="skills_h2">The boring stuff your agent could <span class="sh-blue">automate for you (…)</span></h2>
     </div>
     <div class="skills-slider">
       <div class="skills-slider-viewport">
@@ -1176,7 +1183,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <footer id="contact">
   <div class="footer-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></div>
   <p class="footer-tagline" data-i18n="footer_tagline">Bringing AI literacy to Europeans — one dinner at a time.</p>
-  <a href="mailto:luckysprouts@duck.com" class="footer-email">luckysprouts@duck.com</a>
+  <div class="footer-links">
+    <a href="mailto:luckysprouts@duck.com" class="footer-email">luckysprouts@duck.com</a>
+    <a href="https://www.linkedin.com/company/salonai/" class="footer-linkedin" target="_blank" rel="noopener" onclick="gtag('event', 'click_linkedin');">LinkedIn ↗</a>
+  </div>
 
   <div class="footer-meta">
     <div class="footer-credits">
