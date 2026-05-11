@@ -214,9 +214,9 @@
     <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
     <input class="survey-name" id="survey-email" type="email" placeholder="Deine E-Mail" />
     <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Ja, ich bin dabei →</button>
-    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Dein Yes geht an Franziska und deinen Host. Sobald die Runde voll ist, bekommst du den Ticket-Link per Mail.</p>
+    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Dein Yes geht direkt an <span id="host-name-inline"></span> und parallel an Franziska. Sobald die Runde voll ist, bekommst du den Ticket-Link per Mail.</p>
     <div class="survey-success" id="survey-success">
-      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — dein Yes ist bei Franziska und deinem Host. Sobald zwölf Yeses zusammen sind, bekommst du den Ticket-Link per Mail mit Adresse und Zahlungsdetails.</p>
+      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — dein Yes ist bei <span id="host-name-success"></span> und bei Franziska. Sobald zwölf Yeses zusammen sind, bekommst du den Ticket-Link per Mail mit Adresse und Zahlungsdetails.</p>
     </div>
   </div>
 
@@ -274,6 +274,7 @@
   var params      = new URLSearchParams(window.location.search);
   var dateCode    = params.get('d') || '';
   var hostName    = params.get('h') || '';
+  var hostEmail   = params.get('e') || '';  // host's email — CC'd on every Yes so they see who's in
   var venuePending = params.get('v') === 'p';
   var dateLabel   = DATE_LABELS[dateCode] || '';
 
@@ -291,6 +292,12 @@
     document.getElementById('hero-host').textContent     = hostName;
     document.getElementById('chip-date').textContent     = dateLabel;
     document.getElementById('host-msg-display').textContent = TPL.replace('[DATUM]', dateLabel).replace('[NAME]', hostName);
+
+    // Survey inline host-name references
+    var _hni = document.getElementById('host-name-inline');
+    var _hns = document.getElementById('host-name-success');
+    if (_hni) _hni.textContent = hostName;
+    if (_hns) _hns.textContent = hostName;
 
     // Populate ticket card
     document.getElementById('ticket-date').textContent = dateLabel;
@@ -329,21 +336,28 @@
       });
     }
 
+    var payload = {
+      access_key: '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548',
+      subject: 'Yes: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
+      from_name: 'Salon AI Event Page',
+      to: 'luckysprouts@duck.com',
+      replyto: email,  // host (CC) + Franziska can reply directly to the guest
+      message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
+        '\nGast: ' + name +
+        '\nE-Mail: ' + email +
+        '\n\nWo KI den größten Hebel hätte:\n' + answer +
+        '\n\nVenue-Status: ' + (venuePending ? 'pending' : 'bestätigt durch Host') +
+        '\n\n(Interessen-Liste — Ticket-Link erst raus, wenn 12 Yeses zusammen.)'
+    };
+    // CC the host so every Yes lands in their inbox too
+    if (hostEmail && hostEmail.indexOf('@') > -1) {
+      payload.cc = hostEmail;
+    }
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548',
-        subject: 'Yes: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
-        from_name: 'Salon AI Event Page',
-        to: 'luckysprouts@duck.com',
-        message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
-          '\nGast: ' + name +
-          '\nE-Mail: ' + email +
-          '\n\nWo KI den größten Hebel hätte:\n' + answer +
-          '\n\nVenue-Status: ' + (venuePending ? 'pending' : 'bestätigt durch Host') +
-          '\n\n(Interessen-Liste — Ticket-Link erst raus, wenn 12 Yeses zusammen.)'
-      })
+      body: JSON.stringify(payload)
     }).then(function() {
       document.getElementById('survey-success').style.display = 'block';
       btn.style.display = 'none';

@@ -298,7 +298,7 @@
     </div>
 
     <p class="result-note">
-      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">teile den Link mit deinem Kreis</strong> — als „Hast du Lust?". Jedes „Ja" landet bei uns.<br>
+      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">teile den Link mit deinem Kreis</strong> — als „Hast du Lust?". Jedes „Ja" landet <strong style="color:rgba(255,255,255,0.75);">bei dir</strong> und parallel bei uns.<br>
       Sobald <strong style="color:rgba(255,255,255,0.75);">zwölf Yeses</strong> zusammen sind, schicken wir allen den Ticket-Link per Mail. Höchstens zwanzig Gäste, 78€ pro Person, Catering inbegriffen.<span id="result-note-venue"></span><br>
       Fragen? <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a>
     </p>
@@ -453,7 +453,9 @@
     }
 
     var base = window.location.origin + '/event.html';
-    var urlParams = { d: selectedDate, h: name, v: 'p' };  // always pending — host gets link after our confirmation
+    // 'e' carries the host's email so event.html can CC them on every Yes.
+    // 'v=p' marks the venue as pending until our manual confirmation.
+    var urlParams = { d: selectedDate, h: name, e: email, v: 'p' };
     var url = base + '?' + new URLSearchParams(urlParams).toString();
 
     var longLabel = DATE_LABELS_LONG[selectedDate];
