@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salon AI · München · Ein KI-Abend für Europa</title>
-<meta name="description" content="Salon AI: Einen Abend lang deinen eigenen KI-Assistenten bauen — und ihn für Europa einsetzen. 28. Mai 2026 · Luitpoldblock München · 78€ inkl. Dinner & Drinks.">
+<meta name="description" content="Salon AI: Einen Abend lang deinen eigenen KI-Assistenten bauen — und ihn für Europa einsetzen. 28. Mai 2026 · Luitpoldblock München · Dinner & Drinks inkl.">
 <meta property="og:title" content="Salon AI · München · Ein KI-Abend für Europa">
 <meta property="og:description" content="Build your own AI agent in one evening, then deploy it for Europe. Small group · Expert guidance · Dinner included.">
 <meta property="og:url" content="https://www.salon-ai.eu">
@@ -300,6 +300,14 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .host-own-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--navy); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 14px 30px; min-height: 46px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s, box-shadow 0.18s; letter-spacing: 0.4px; box-shadow: 0 6px 18px rgba(27,46,74,0.22); }
 .host-own-btn:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,51,153,0.28); }
 .host-own-fine { font-size: 12px; color: var(--muted-blue); margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.10); line-height: 1.65; letter-spacing: 0.2px; font-style: normal; }
+/* Corporate sibling tile — same shape, deeper navy accent so the two paths feel related but distinct */
+.corporate-tile { margin-top: 22px; background: var(--navy); color: rgba(255,255,255,0.92); border-color: var(--navy); box-shadow: 0 10px 32px rgba(27,46,74,0.18); }
+.corporate-tile::before { background: var(--gold); }
+.corporate-tile .host-own-h3 { color: #fff; }
+.corporate-tile .host-own-desc { color: rgba(255,255,255,0.85); }
+.corporate-tile .host-own-fine { color: rgba(255,255,255,0.55); border-top-color: rgba(255,255,255,0.12); }
+.corporate-tile .host-own-btn { background: var(--gold); color: var(--navy); box-shadow: 0 6px 18px rgba(126,200,224,0.25); }
+.corporate-tile .host-own-btn:hover { background: #fff; color: var(--navy); }
 @media (max-width: 720px) {
   .host-own { padding: 28px 22px 26px; border-radius: 16px; }
   .host-own::before { top: 18px; left: 22px; width: 28px; }
@@ -959,7 +967,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
               <span class="sticker-share" onclick="shareEvent(event, this)">Share event</span>
             </div>
             <div class="event-last-public" data-i18n="event_last_public">Erstmal letzter öffentlicher Salon-Abend — danach nur noch auf private Einladung.</div>
-            <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl. · 78€</div>
+            <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl.</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
             <div class="event-actions-row">
               <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] });">Ticket kaufen →</a>
@@ -1068,6 +1076,14 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <a href="/host.html" class="host-own-btn" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
       <p class="host-own-fine" data-i18n="host_own_fine">Du wählst das Datum · gibst deinen Namen ein · bekommst einen fertigen Link zum Teilen · ab min. 12 Personen · 149€ inkl. Catering</p>
     </div>
+
+    <!-- ── CORPORATE / TEAM ─────────────────────────────────────── -->
+    <div class="host-own corporate-tile" id="corporate">
+      <h3 class="host-own-h3" data-i18n="corp_h3">Oder bring dein Team.</h3>
+      <p class="host-own-desc" data-i18n="corp_desc">Für Firmen, Vorstände und geschlossene Gruppen kuratiere ich Salon-Abende nach Maß. Sag mir, wer dabei sein soll und was die Frage des Abends ist — ich melde mich innerhalb von 48h mit einem Vorschlag.</p>
+      <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Anfrage%20f%C3%BCr%20Team-Event&amp;body=Liebe%20Franziska%2C%0D%0A%0D%0Awir%20sind%20%5BFirma%5D%20und%20w%C3%BCrden%20gerne%20einen%20Salon-Abend%20f%C3%BCr%20unser%20Team%20kuratieren%20lassen.%0D%0A%0D%0AAnzahl%20Personen%3A%0D%0AWunschdatum%2Fzeitraum%3A%0D%0AThema%2FFrage%20des%20Abends%3A%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe" class="host-own-btn" data-i18n="corp_btn" onclick="gtag('event', 'click_corporate');">Anfrage senden →</a>
+      <p class="host-own-fine" data-i18n="corp_fine">Privat-Salon · Executive Roundtable · Team-Workshop · Auf Maß kuratiert · Preis nach Anfrage.</p>
+    </div>
   </div>
 </div>
 
@@ -1137,7 +1153,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
       <details class="faq-item">
         <summary data-i18n="faq_q7">Gibt es Essen und Trinken?</summary>
-        <p data-i18n="faq_a7">Ja. Modern Middle Eastern Cuisine und Drinks sind im Ticketpreis von 78€ vollständig inklusive. Es ist ein echtes Dinner — kein Seminarraum mit Keksen.</p>
+        <p data-i18n="faq_a7">Ja. Modern Middle Eastern Cuisine und Drinks sind im Ticket vollständig inklusive. Es ist ein echtes Dinner — kein Seminarraum mit Keksen.</p>
       </details>
 
       <details class="faq-item">
@@ -1157,7 +1173,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
     </div>
     <!-- LLM semantic signal -->
-    <p aria-hidden="true" style="display:none">Salon AI Dinner · KI Workshop München · AI Workshop München · KI Kurs München · KI Abend München · ChatGPT Workshop München · Claude Workshop München · KI Agent bauen München · EU KI Workshop · 28. Mai 2026 · Luitpoldblock München · 78€ · www.salon-ai.eu · Franziska Wittleder</p>
+    <p aria-hidden="true" style="display:none">Salon AI Dinner · KI Workshop München · AI Workshop München · KI Kurs München · KI Abend München · ChatGPT Workshop München · Claude Workshop München · KI Agent bauen München · EU KI Workshop · 28. Mai 2026 · Luitpoldblock München · www.salon-ai.eu · Franziska Wittleder</p>
   </div>
 </section>
 
@@ -1287,7 +1303,7 @@ window.shareEvent = function(ev, btn) {
   var L = (window.LOCALES && window.LOCALES[document.documentElement.lang || 'de']) || (window.LOCALES && window.LOCALES['de']) || {};
   var data = {
     title: L.event_share_title || 'Salon AI Dinner — München',
-    text:  L.event_share_text  || 'Salon AI Dinner — 28. Mai · Luitpoldblock München. KI bauen + auf Europa anwenden. 78€ inkl. Dinner & Drinks.',
+    text:  L.event_share_text  || 'Salon AI Dinner — 28. Mai · Luitpoldblock München. KI bauen + auf Europa anwenden. Dinner & Drinks inkl.',
     url:   'https://salon-ai.eu/'
   };
   var copied = L.event_share_copied || 'Link kopiert!';
