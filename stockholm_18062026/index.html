@@ -57,9 +57,12 @@
 
   /* Hosts row */
   .hosts { max-width: 760px; margin: 36px auto 0; padding: 0 24px; text-align: center; }
-  .hosts-label { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-  .hosts-names { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); letter-spacing: 0.02em; }
-  .hosts-names .sep { color: var(--rule); margin: 0 12px; font-weight: 400; }
+  .hosts-label { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+  .hosts-row { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; }
+  .host-card { display: flex; flex-direction: column; align-items: center; gap: 4px; max-width: 280px; }
+  .host-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); letter-spacing: 0.02em; line-height: 1.2; }
+  .host-bio { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  @media (max-width: 520px) { .hosts-row { gap: 22px; } }
 
   /* Section */
   .section { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
@@ -135,7 +138,16 @@
 
 <div class="hosts">
   <p class="hosts-label">Hosted by</p>
-  <p class="hosts-names">Vanessa Rothschild <span class="sep">·</span> Franziska Wittleder</p>
+  <div class="hosts-row">
+    <div class="host-card">
+      <p class="host-name">Vanessa Rothschild</p>
+      <p class="host-bio">15+ years in the circular economy</p>
+    </div>
+    <div class="host-card">
+      <p class="host-name">Franziska Wittleder</p>
+      <p class="host-bio">15+ years in AI &amp; research — Amazon, Writer, SoundCloud</p>
+    </div>
+  </div>
 </div>
 
 <div class="section">
@@ -154,7 +166,7 @@
     <span class="time-pct">65%</span> The first part is selfish. You build your own AI agent — think ChatGPT, but trained on your specific work and able to act on it. For your own tasks. No coding. Experts the whole way. You leave knowing what AI can actually do, because you made it do something.
   </p>
   <p>
-    <span class="time-pct">35%</span> Then we point the agents at Europe. Competitiveness and the circular economy. The EU has written the most ambitious circular framework in the world. Whether any of it turns into money is unclear. We spend an evening finding out what AI thinks.
+    <span class="time-pct">35%</span> Then we point the agents at Europe. Competitiveness and the circular economy. The EU has written the most ambitious circular framework in the world. Whether any of it turns into money is unclear. We spend an evening finding out what AI exposes.
   </p>
 </div>
 
