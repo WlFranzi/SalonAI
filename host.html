@@ -306,6 +306,9 @@
     selectedDate = el.dataset.code;
     selectedDateLabel = el.dataset.label;
     document.getElementById('date-error').classList.remove('show');
+    if (typeof gtag === 'function') {
+      gtag('event', 'select_date', { 'date_code': selectedDate });
+    }
   }
 
   function setVenue(radio) {
@@ -317,6 +320,9 @@
     document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('has-error'); });
     if (venueType === 'other') {
       setTimeout(function(){ var i = document.getElementById('venue-other-text'); if (i) i.focus(); }, 50);
+    }
+    if (typeof gtag === 'function') {
+      gtag('event', 'select_venue', { 'venue_type': venueType });
     }
   }
 

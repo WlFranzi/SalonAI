@@ -970,7 +970,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl.</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.</div>
             <div class="event-actions-row">
-              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] });">Ticket kaufen →</a>
+              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] }); gtag('event', 'click_ticket_stripe', { 'event_name': 'mai_28_muenchen', 'destination': 'stripe_checkout' });">Ticket kaufen →</a>
               <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
               <button type="button" class="event-share-link" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
             </div>
@@ -1058,7 +1058,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         </blockquote>
         <p class="past-events-desc" data-i18n-html="feature_desc">15 Menschen haben in einem Abend gemeinsam die Website „Europa 2041" entwickelt — KI-Assistenten gebaut, EU-Ideen gesammelt, veröffentlicht. Das Ergebnis: <a href="/march-event/" style="color:var(--sky-deep)">www.salon-ai.eu/march-event</a></p>
         <div class="past-events-actions">
-          <a href="/march-event/" data-i18n="what_we_built">Ergebnis aus dem März-Salon ansehen ↗</a>
+          <a href="/march-event/" data-i18n="what_we_built" onclick="gtag('event', 'click_past_event', { 'past_event': 'march_2026' });">Ergebnis aus dem März-Salon ansehen ↗</a>
         </div>
       </div>
     </div>
@@ -1974,10 +1974,24 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
 
   // IDs of the major sections to track
-  var sectionsToTrack = ['warum', 'events', 'past', 'skills', 'faq', 'contact'];
+  var sectionsToTrack = ['warum', 'events', 'past', 'skills', 'faq', 'contact', 'host', 'corporate'];
   sectionsToTrack.forEach(function(id) {
     var el = document.getElementById(id);
     if (el) observer.observe(el);
+  });
+
+  // FAQ open tracking — fires once per question, captures which Qs people actually open
+  document.querySelectorAll('details.faq-item').forEach(function(d) {
+    var fired = false;
+    d.addEventListener('toggle', function() {
+      if (d.open && !fired) {
+        fired = true;
+        var sum = d.querySelector('summary');
+        var qText = sum ? (sum.innerText || sum.textContent || '').trim().slice(0, 80) : 'unknown';
+        var key   = (sum && sum.getAttribute('data-i18n')) || qText;
+        gtag('event', 'faq_open', { 'question_key': key, 'question_text': qText });
+      }
+    });
   });
 });
 </script>
