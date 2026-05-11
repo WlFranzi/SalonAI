@@ -231,14 +231,14 @@
         <input type="radio" name="venue" value="luitpoldblock" onchange="setVenue(this)" />
         <span class="vo-body">
           <strong>Ich habe keinen Raum — bitte den Luitpoldblock anfragen.</strong>
-          <span>Dein Link ist erst nach unserer Bestätigung teilbar. <span style="color:rgba(0,0,0,0.35);">Pauschale +280€ einmalig.</span></span>
+          <span>Wir fragen die Verfügbarkeit an und melden uns per Mail. <span style="color:rgba(0,0,0,0.35);">Pauschale +280€ einmalig.</span></span>
         </span>
       </label>
       <label class="venue-opt" data-val="other">
         <input type="radio" name="venue" value="other" onchange="setVenue(this)" />
         <span class="vo-body">
           <strong>Anderer Ort / andere Stadt.</strong>
-          <span>Sag uns wo. Wir kümmern uns um Raum, Catering und Logistik vor Ort. Dein Link ist erst nach unserer Bestätigung teilbar.</span>
+          <span>Sag uns wo. Wir kümmern uns um Raum, Catering und Logistik vor Ort und melden uns per Mail.</span>
           <input type="text" id="venue-other-text" class="venue-other-input" placeholder="Stadt und Ort — z.B. Zürich, eigenes Loft" oninput="onVenueOtherInput()" />
         </span>
       </label>
@@ -298,8 +298,8 @@
     </div>
 
     <p class="result-note">
-      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">wir bestätigen deine Anfrage innerhalb von 24–48h per Mail</strong> und schicken dir den fertigen Einladungslink. Den teilst du dann mit deinem Kreis.<br>
-      Der Abend kommt ab <strong style="color:rgba(255,255,255,0.75);">zwölf Buchungen</strong>, höchstens zwanzig — 78€ pro Person, Catering inbegriffen.<br>
+      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">teile den Link mit deinem Kreis</strong> — als „Hast du Lust?". Jedes „Ja" landet bei uns.<br>
+      Sobald <strong style="color:rgba(255,255,255,0.75);">zwölf Yeses</strong> zusammen sind, schicken wir allen den Ticket-Link per Mail. Höchstens zwanzig Gäste, 78€ pro Person, Catering inbegriffen.<span id="result-note-venue"></span><br>
       Fragen? <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a>
     </p>
   </div>
@@ -319,9 +319,6 @@
     venueType = radio.value;
     document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
     radio.closest('.venue-opt').classList.add('selected');
-    // All paths go to manual confirmation now — button label is the same regardless of venue.
-    var btn = document.getElementById('generate-btn');
-    btn.textContent = 'Anfrage senden';
     // Clear the venue-other error highlight when switching away
     var step = document.getElementById('step-venue-opt');
     if (step) step.classList.remove('has-error');
@@ -380,9 +377,10 @@
   };
 
   // Message template — [DATUM] and [NAME] are replaced dynamically
-  var TPL = 'Ich organisiere am [DATUM] ein KI-Dinner in kleinem Kreis (12–20 Personen). Geleitet von Franziska Wittleder — 15+ Jahre KI bei Amazon, Writer, SoundCloud.\n\n' +
+  var TPL = 'Ich plane am [DATUM] ein KI-Dinner in kleinem Kreis (12–20 Personen). Geleitet von Franziska Wittleder — 15+ Jahre KI bei Amazon, Writer, SoundCloud.\n\n' +
     'Wir bauen an diesem Abend unseren eigenen KI-Assistenten und setzen ihn direkt ein. Kein Vortrag, kein Zuschauen — echtes Arbeiten, gutes Essen.\n\n' +
-    '78€ pro Person, Dinner & Drinks inklusive. Würde mich freuen, wenn du dabei bist.\n\n' +
+    '78€ pro Person, Dinner & Drinks inklusive.\n\n' +
+    'Hast du Lust? Sag mir kurz Bescheid — sobald wir zwölf sind, schicke ich dir den Ticket-Link.\n\n' +
     '[NAME]';
 
   function syncMessage() {
@@ -463,24 +461,25 @@
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
 
-    // ALL paths now wait for our manual confirmation before sharing.
-    // The host gets the shareable link from us by email within 24-48h.
-    var eyebrow;
-    if (venueType === 'luitpoldblock') {
-      eyebrow = 'Wir haben deine Anfrage. Sobald der Luitpoldblock bestätigt ist, schicken wir dir den fertigen Einladungslink per Mail.';
-    } else if (venueType === 'other') {
-      eyebrow = 'Wir haben deine Anfrage für ' + venueOtherText + '. Wir prüfen Raum, Catering und Logistik vor Ort und melden uns mit dem fertigen Einladungslink per Mail.';
-    } else if (venueType === 'own_or_luitpold') {
-      eyebrow = 'Wir haben deine Anfrage. Wir fragen parallel den Luitpoldblock an und melden uns mit dem fertigen Einladungslink per Mail.';
-    } else {
-      eyebrow = 'Wir haben deine Anfrage. Du bekommst innerhalb von 24–48h den fertigen Einladungslink per Mail.';
-    }
-    document.getElementById('result-eyebrow').textContent = eyebrow;
+    // Link ist sofort teilbar — als Interessen-Liste. Ticket-Link kommt von uns, sobald
+    // genug Yeses zusammen sind (mind. 12). Email an uns geht parallel.
+    document.getElementById('result-eyebrow').textContent = 'Bereit zum Teilen — als Interessen-Liste.';
     document.getElementById('luitpold-gate').style.display = 'none';
-    document.getElementById('copy-btn').disabled = true;
-    document.getElementById('share-row').style.display = 'none';
+    document.getElementById('copy-btn').disabled = false;
+    document.getElementById('share-row').style.display = 'flex';
 
-    // Hold the current share URL for the buttons (will be enabled after manual confirmation)
+    // Update result note with the interest-list framing (venue-specific note appended below)
+    var venueNote = '';
+    if (venueType === 'luitpoldblock') {
+      venueNote = '<br>Du hast keinen eigenen Raum — wir fragen den Luitpoldblock an und melden uns per Mail.';
+    } else if (venueType === 'own_or_luitpold') {
+      venueNote = '<br>Wir fragen parallel den Luitpoldblock an, falls dein Raum doch nicht klappt — Antwort per Mail.';
+    } else if (venueType === 'other') {
+      venueNote = '<br>Für ' + venueOtherText + ' organisieren wir Raum, Catering und Logistik — Antwort per Mail.';
+    }
+    document.getElementById('result-note-venue').innerHTML = venueNote;
+
+    // Hold the current share URL for the buttons
     window._shareUrl = url;
     window._shareTitle = 'Salon AI bei ' + name + ' · ' + longLabel;
 

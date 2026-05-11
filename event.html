@@ -197,7 +197,7 @@
       <strong>Veranstaltungsort wird noch bestätigt.</strong><br>
       Der Host klärt gerade die Raumverfügbarkeit. Sobald der Raum steht, bekommst du Bestätigung per Mail.
     </div>
-    <p class="ticket-note">Anmeldungen werden manuell bestätigt · höchstens 20 Gäste · Zahlung per Überweisung nach Bestätigung.</p>
+    <p class="ticket-note">Der Abend startet ab zwölf Yeses, höchstens zwanzig · Ticket-Link kommt per Mail, sobald die Runde voll ist.</p>
   </div>
 
   <!-- REQUIREMENT -->
@@ -205,18 +205,18 @@
     Bring deinen Laptop mit. Ein laufendes KI-Abo (ChatGPT, Claude, Gemini oder Mistral) ist hilfreich — falls noch nicht vorhanden, richten wir es vor Ort ein. Details kommen mit der Reservierungsbestätigung.
   </div>
 
-  <!-- SURVEY + TICKET -->
+  <!-- SURVEY + INTEREST -->
   <div class="survey-card" id="survey-card">
-    <div class="card-label">Vor dem Abend</div>
-    <h2>Wo könnte KI bei dir den größten Hebel haben?</h2>
-    <p class="survey-intro">Eine Zeile reicht. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
-    <textarea class="survey-text" id="survey-text" rows="3" placeholder="Welche Aufgabe würdest du am liebsten heute loswerden?"></textarea>
+    <div class="card-label">Hast du Lust?</div>
+    <h2>Sag deinem Host Bescheid.</h2>
+    <p class="survey-intro">Damit reservierst du noch nichts verbindlich — der Ticket-Link kommt erst, wenn zwölf Yeses zusammen sind. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
+    <textarea class="survey-text" id="survey-text" rows="3" placeholder="Wo könnte KI bei dir den größten Hebel haben? (eine Zeile reicht)"></textarea>
     <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
     <input class="survey-name" id="survey-email" type="email" placeholder="Deine E-Mail" />
-    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Anfrage senden</button>
-    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Franziska bestätigt deine Anmeldung innerhalb von 24–48h per Mail.</p>
+    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Ja, ich bin dabei →</button>
+    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Dein Yes geht an Franziska und deinen Host. Sobald die Runde voll ist, bekommst du den Ticket-Link per Mail.</p>
     <div class="survey-success" id="survey-success">
-      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — deine Anfrage ist bei Franziska. Du bekommst innerhalb von 24–48h eine Bestätigung mit Adresse und Zahlungsdetails per Mail.</p>
+      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — dein Yes ist bei Franziska und deinem Host. Sobald zwölf Yeses zusammen sind, bekommst du den Ticket-Link per Mail mit Adresse und Zahlungsdetails.</p>
     </div>
   </div>
 
@@ -238,7 +238,7 @@
   <!-- SHARE -->
   <div class="share-card">
     <h2>Teilen</h2>
-    <p>Teile den Link mit deinem Kreis. Wer ihn nutzt, sichert seinen Platz — Reihenfolge nach Buchung.</p>
+    <p>Frag jemanden mit. Je mehr Yeses, desto schneller startet der Abend.</p>
     <div class="share-actions">
       <a class="share-btn share-li" href="#" onclick="shareLinkedIn(event)">LinkedIn</a>
       <a class="share-btn share-wa" href="#" onclick="shareWhatsApp(event)">WhatsApp</a>
@@ -334,7 +334,7 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         access_key: '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548',
-        subject: 'RSVP: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
+        subject: 'Yes: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
         from_name: 'Salon AI Event Page',
         to: 'luckysprouts@duck.com',
         message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
@@ -342,7 +342,7 @@
           '\nE-Mail: ' + email +
           '\n\nWo KI den größten Hebel hätte:\n' + answer +
           '\n\nVenue-Status: ' + (venuePending ? 'pending' : 'bestätigt durch Host') +
-          '\n\nBitte manuell bestätigen und Adresse + Zahlungsdetails per Mail schicken.'
+          '\n\n(Interessen-Liste — Ticket-Link erst raus, wenn 12 Yeses zusammen.)'
       })
     }).then(function() {
       document.getElementById('survey-success').style.display = 'block';
@@ -353,7 +353,7 @@
       document.getElementById('survey-name').style.display = 'none';
       document.getElementById('survey-email').style.display = 'none';
     }).catch(function() {
-      btn.textContent = 'Anfrage senden';
+      btn.textContent = 'Ja, ich bin dabei →';
       btn.disabled = false;
       alert('Fehler beim Senden — bitte nochmal versuchen.');
     });
