@@ -785,9 +785,11 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 }
 
 @media(max-width: 640px) {
-  /* Hero — tighter on mobile so it doesn't dominate the viewport.
-     padding-top ≈ banner (50) + nav (57) + breathing room */
-  .hero { padding: 124px 16px 36px; min-height: auto; }
+  /* Banner wraps to 2 lines on mobile (~50px). Push nav down with a real
+     gap so the two don't look glued together. */
+  nav { top: 58px !important; }
+  /* Hero padding-top must clear banner (~50) + gap (8) + nav (57) + air */
+  .hero { padding: 132px 16px 36px; min-height: auto; }
   .hero h1 { font-size: 1.45rem; line-height: 1.2; letter-spacing: -0.008em; margin-bottom: 12px; }
   .hero-strapline { font-size: 13.5px; line-height: 1.55; margin-top: 12px; max-width: 320px; }
   .hero-cta { padding: 11px 22px; font-size: 13px; margin-top: 20px; }
