@@ -41,12 +41,22 @@
     .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 4.5vw, 2.2rem); font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 10px; }
     .hero p { font-size: 13.5px; color: rgba(255,255,255,0.6); max-width: 480px; margin: 0 auto; line-height: 1.6; }
 
-    /* FREE TICKET BANNER */
-    .free-banner { background: rgba(126,200,224,0.1); border: 1px solid rgba(126,200,224,0.35); border-radius: 10px; padding: 12px 16px; margin: 28px 0 8px; font-size: 13px; line-height: 1.55; color: var(--navy); }
-    .free-banner strong { color: var(--navy); }
-    /* MIN PERSONS CALLOUT */
-    .min-callout { display: flex; align-items: center; gap: 10px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 10px; padding: 11px 16px; margin-bottom: 8px; font-size: 12.5px; color: var(--navy); line-height: 1.55; flex-wrap: wrap; }
-    .min-callout .mc-badge { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--navy); color: #fff; border-radius: 999px; padding: 3px 10px; flex-shrink: 0; }
+    /* SOCIAL PROOF */
+    .social-proof { text-align: center; font-size: 12px; color: var(--muted); margin: 28px auto 20px; letter-spacing: 0.1px; max-width: 500px; line-height: 1.55; }
+
+    /* VALUE CARD — Kleiner Kreis · price · was-wir / was-bei-dir */
+    .value-card { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 26px 28px; margin-bottom: 18px; box-shadow: 0 4px 20px rgba(126,200,224,0.10); }
+    .value-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .value-eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
+    .value-stats { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--navy); line-height: 1.5; font-weight: 400; }
+    .value-stats strong { font-weight: 700; }
+    .value-stats .vs-sep { color: var(--border); margin: 0 4px; font-weight: 400; }
+    .value-divider { height: 1px; background: var(--border); margin: 20px 0; }
+    .value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .value-col-title { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--navy); margin-bottom: 7px; }
+    .value-col-body { font-size: 13px; color: var(--muted); line-height: 1.65; }
+    .value-col-body em { font-style: normal; color: var(--navy); font-weight: 600; }
+    @media(max-width: 480px) { .value-grid { grid-template-columns: 1fr; gap: 18px; } .value-card { padding: 22px 20px; } }
 
     /* MAIN */
     main { max-width: 600px; margin: 0 auto; padding: 28px 20px 80px; }
@@ -148,21 +158,29 @@
 <main>
 
   <!-- SOCIAL PROOF -->
-  <div style="text-align:center; font-size:11.5px; color:var(--muted); margin:20px 0 6px; letter-spacing:0.3px;">
+  <p class="social-proof">
     Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.
-  </div>
+  </p>
 
-  <!-- MIN PERSONS CALLOUT -->
-  <div class="min-callout">
-    <span class="mc-badge">Kleiner Kreis</span>
-    Der Abend findet ab zwölf Buchungen statt, höchstens zwanzig Gäste.
-    <span style="display:block;margin-top:4px;font-size:11.5px;color:var(--muted);">78€ pro Person, Catering inbegriffen.</span>
-  </div>
+  <!-- VALUE CARD -->
+  <div class="value-card">
+    <div class="value-eyebrow">Kleiner Kreis</div>
+    <p class="value-stats">
+      <strong>12–20 Gäste</strong><span class="vs-sep">·</span><strong>78€ pro Person</strong><span class="vs-sep">·</span>Catering inbegriffen
+    </p>
 
-  <!-- WHAT WE PROVIDE BANNER -->
-  <div class="free-banner">
-    <strong>Was wir mitbringen.</strong> Den KI-Salon, Moderation und Catering — für jeden Gast im Ticket enthalten.
-    <span style="display:block;margin-top:6px;"><strong>Was bei dir liegt.</strong> Der Raum und die Frage, wen du an diesem Abend sehen willst. <u>Dein Platz als Gastgeber:in ist inklusive.</u></span>
+    <div class="value-divider"></div>
+
+    <div class="value-grid">
+      <div class="value-col">
+        <p class="value-col-title">Was wir mitbringen</p>
+        <p class="value-col-body">Den KI-Salon, Moderation und Catering — für jeden Gast im Ticket enthalten.</p>
+      </div>
+      <div class="value-col">
+        <p class="value-col-title">Was bei dir liegt</p>
+        <p class="value-col-body">Der Raum und die Frage, wen du an diesem Abend sehen willst. <em>Dein Platz als Gastgeber:in ist inklusive.</em></p>
+      </div>
+    </div>
   </div>
 
   <!-- STEP 2: Date -->
