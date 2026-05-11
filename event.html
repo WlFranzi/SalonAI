@@ -181,13 +181,13 @@
     <div class="detail-row">
       <div class="detail-text">
         <strong id="venue-label">München</strong>
-        <span>Genaue Adresse nach Ticketkauf</span>
+        <span>Genaue Adresse nach Bestätigung per Mail</span>
       </div>
     </div>
     <div class="detail-row">
       <div class="detail-text">
         <strong>78€ pro Person</strong>
-        <span>Dinner &amp; Drinks inklusive · Kleiner Kreis, kein Seminarraum</span>
+        <span>Dinner &amp; Drinks inklusive · Kleiner Kreis, kein Seminarraum · Zahlung per Überweisung nach Bestätigung</span>
       </div>
     </div>
 
@@ -195,9 +195,9 @@
 
     <div id="venue-pending-banner" class="venue-pending-banner" style="display:none;">
       <strong>Veranstaltungsort wird noch bestätigt.</strong><br>
-      Der Host klärt gerade die Raumverfügbarkeit. Tickets sind verfügbar, sobald alles gesichert ist.
+      Der Host klärt gerade die Raumverfügbarkeit. Sobald der Raum steht, bekommst du Bestätigung per Mail.
     </div>
-    <p class="ticket-note">Bezahlung über Stripe · Höchstens 20 Gäste.</p>
+    <p class="ticket-note">Anmeldungen werden manuell bestätigt · höchstens 20 Gäste · Zahlung per Überweisung nach Bestätigung.</p>
   </div>
 
   <!-- REQUIREMENT -->
@@ -212,10 +212,11 @@
     <p class="survey-intro">Eine Zeile reicht. Franziska liest jede Antwort und richtet den Abend danach aus.</p>
     <textarea class="survey-text" id="survey-text" rows="3" placeholder="Welche Aufgabe würdest du am liebsten heute loswerden?"></textarea>
     <input class="survey-name" id="survey-name" type="text" placeholder="Dein Name" />
-    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Antwort senden &amp; weiter zum Ticket →</button>
-    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Klick öffnet Stripe-Checkout. Antwort geht parallel an Franziska.</p>
+    <input class="survey-name" id="survey-email" type="email" placeholder="Deine E-Mail" />
+    <button class="survey-btn" id="survey-btn" onclick="submitSurvey()">Anfrage senden</button>
+    <p class="ticket-note" id="survey-btn-note" style="margin-top:9px;">Franziska bestätigt deine Anmeldung innerhalb von 24–48h per Mail.</p>
     <div class="survey-success" id="survey-success">
-      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — deine Antwort ist bei Franziska. Sobald der Veranstaltungsort bestätigt ist, kannst du dein Ticket sichern.</p>
+      <p style="text-align:center;padding:18px 0 4px;font-size:13px;color:var(--muted);line-height:1.6;">Danke — deine Anfrage ist bei Franziska. Du bekommst innerhalb von 24–48h eine Bestätigung mit Adresse und Zahlungsdetails per Mail.</p>
     </div>
   </div>
 
@@ -256,16 +257,12 @@
 </footer>
 
 <script>
-  // Stripe links per date
-  var STRIPE = {
-    '19mai': 'https://buy.stripe.com/bJe6oH2sc1uCafoaiGfbq03',
-    '21mai': 'https://buy.stripe.com/7sY5kD1o8ehofzI76ufbq04',
-    '26mai': 'https://buy.stripe.com/aFaeVd0k42yGgDMbmKfbq05',
-  };
+  // All RSVPs are manually confirmed by Franziska — no Stripe redirect.
   var DATE_LABELS = {
-    '19mai': 'Dienstag, 19. Mai 2026',
-    '21mai': 'Donnerstag, 21. Mai 2026',
-    '26mai': 'Dienstag, 26. Mai 2026',
+    '4jun':  'Donnerstag, 4. Juni 2026',
+    '11jun': 'Donnerstag, 11. Juni 2026',
+    '9jul':  'Donnerstag, 9. Juli 2026',
+    '16jul': 'Donnerstag, 16. Juli 2026',
   };
 
   // Message template — same as host.html, generated from params
@@ -279,7 +276,6 @@
   var hostName    = params.get('h') || '';
   var venuePending = params.get('v') === 'p';
   var dateLabel   = DATE_LABELS[dateCode] || '';
-  var stripeLink  = STRIPE[dateCode] || '#';
 
   if (!dateCode || !hostName || !dateLabel) {
     document.getElementById('hero').style.display = 'none';
@@ -300,13 +296,11 @@
     document.getElementById('ticket-date').textContent = dateLabel;
 
     // Venue label
-    document.getElementById('venue-label').textContent = venuePending ? 'München — Location wird bestätigt' : 'Luitpoldblock, München';
+    document.getElementById('venue-label').textContent = venuePending ? 'München — Location wird bestätigt' : 'München';
 
-    // Venue pending: show banner; survey button changes copy & skips Stripe
+    // Venue pending: show banner (button copy stays the same — everything is manual confirmation)
     if (venuePending) {
       document.getElementById('venue-pending-banner').style.display = 'block';
-      document.getElementById('survey-btn').textContent = 'Antwort senden — Ticket folgt';
-      document.getElementById('survey-btn-note').textContent = 'Sobald der Raum bestätigt ist, bekommst du den Ticket-Link per E-Mail.';
     }
 
     // Share URL
@@ -316,16 +310,19 @@
   function submitSurvey() {
     var answer = document.getElementById('survey-text').value.trim();
     var name   = document.getElementById('survey-name').value.trim();
+    var email  = document.getElementById('survey-email').value.trim();
     var btn    = document.getElementById('survey-btn');
+    var note   = document.getElementById('survey-btn-note');
 
     if (!answer) { alert('Bitte schreib eine kurze Antwort.'); return; }
     if (!name)   { alert('Bitte trag deinen Namen ein.'); return; }
+    if (!email || email.indexOf('@') < 0) { alert('Bitte trag deine E-Mail ein, damit Franziska dir antworten kann.'); return; }
 
     btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
 
     if (typeof gtag === 'function') {
-      gtag('event', 'submit_survey', {
+      gtag('event', 'submit_rsvp', {
         'event_host': hostName,
         'event_date': dateLabel,
         'venue_status': venuePending ? 'pending' : 'confirmed'
@@ -337,29 +334,26 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         access_key: '44e1f0a6-7b27-4ff3-895b-de1a2a4ed548',
-        subject: 'Anmeldung: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
+        subject: 'RSVP: ' + (name || 'Gast') + ' · ' + hostName + "'s Dinner · " + dateLabel,
         from_name: 'Salon AI Event Page',
         to: 'luckysprouts@duck.com',
         message: 'Event: ' + hostName + "'s KI Dinner · " + dateLabel +
           '\nGast: ' + name +
-          '\n\nWie KI das Leben einfacher machen soll:\n' + answer +
-          '\n\nVenue-Status: ' + (venuePending ? 'pending (Luitpoldblock-Anfrage)' : 'bestätigt')
+          '\nE-Mail: ' + email +
+          '\n\nWo KI den größten Hebel hätte:\n' + answer +
+          '\n\nVenue-Status: ' + (venuePending ? 'pending' : 'bestätigt durch Host') +
+          '\n\nBitte manuell bestätigen und Adresse + Zahlungsdetails per Mail schicken.'
       })
     }).then(function() {
-      if (venuePending) {
-        document.getElementById('survey-success').style.display = 'block';
-        btn.style.display = 'none';
-      } else {
-        // Redirect to Stripe checkout
-        if (typeof gtag === 'function') {
-          gtag('event', 'begin_checkout', {
-            'items': [{ 'item_name': 'Salon AI Ticket: ' + hostName, 'price': 78.00, 'currency': 'EUR' }]
-          });
-        }
-        window.location.assign(stripeLink);
-      }
+      document.getElementById('survey-success').style.display = 'block';
+      btn.style.display = 'none';
+      if (note) note.style.display = 'none';
+      // Hide the textarea/name/email fields too — they've served their purpose
+      document.getElementById('survey-text').style.display = 'none';
+      document.getElementById('survey-name').style.display = 'none';
+      document.getElementById('survey-email').style.display = 'none';
     }).catch(function() {
-      btn.textContent = venuePending ? 'Antwort senden — Ticket folgt' : 'Antwort senden & weiter zum Ticket →';
+      btn.textContent = 'Anfrage senden';
       btn.disabled = false;
       alert('Fehler beim Senden — bitte nochmal versuchen.');
     });
