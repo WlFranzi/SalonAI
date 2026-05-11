@@ -298,9 +298,8 @@
     </div>
 
     <p class="result-note">
-      Teile den Link mit deinem Kreis. Wer bucht, sichert seinen Platz.<br>
+      Wie es weitergeht: <strong style="color:rgba(255,255,255,0.75);">wir bestätigen deine Anfrage innerhalb von 24–48h per Mail</strong> und schicken dir den fertigen Einladungslink. Den teilst du dann mit deinem Kreis.<br>
       Der Abend kommt ab <strong style="color:rgba(255,255,255,0.75);">zwölf Buchungen</strong>, höchstens zwanzig — 78€ pro Person, Catering inbegriffen.<br>
-      Jede Buchung läuft als Mail bei dir auf.<br>
       Fragen? <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a>
     </p>
   </div>
@@ -320,11 +319,9 @@
     venueType = radio.value;
     document.querySelectorAll('.venue-opt').forEach(function(el){ el.classList.remove('selected'); });
     radio.closest('.venue-opt').classList.add('selected');
+    // All paths go to manual confirmation now — button label is the same regardless of venue.
     var btn = document.getElementById('generate-btn');
-    // 'luitpoldblock' and 'other' must wait for confirmation before sharing.
-    // 'own_or_luitpold' can share immediately (host has backup), Luitpoldblock-Anfrage läuft parallel.
-    btn.textContent = (venueType === 'luitpoldblock' || venueType === 'other')
-      ? 'Abend vormerken' : 'Einladungslink erstellen';
+    btn.textContent = 'Anfrage senden';
     // Clear the venue-other error highlight when switching away
     var step = document.getElementById('step-venue-opt');
     if (step) step.classList.remove('has-error');
@@ -458,39 +455,32 @@
     }
 
     var base = window.location.origin + '/event.html';
-    var urlParams = { d: selectedDate, h: name };
-    if (venueGated) urlParams.v = 'p';
+    var urlParams = { d: selectedDate, h: name, v: 'p' };  // always pending — host gets link after our confirmation
     var url = base + '?' + new URLSearchParams(urlParams).toString();
 
     var longLabel = DATE_LABELS_LONG[selectedDate];
-    document.getElementById('result-title').textContent = 'Salon AI bei ' + name + ' · ' + longLabel;
+    document.getElementById('result-title').textContent = 'Vorgemerkt: Salon AI bei ' + name + ' · ' + longLabel;
     document.getElementById('result-url').textContent   = url;
     document.getElementById('preview-link').href        = url;
 
+    // ALL paths now wait for our manual confirmation before sharing.
+    // The host gets the shareable link from us by email within 24-48h.
+    var eyebrow;
     if (venueType === 'luitpoldblock') {
-      document.getElementById('result-eyebrow').textContent = 'Vorgemerkt. Wir melden uns, sobald der Raum steht.';
-      document.getElementById('luitpold-gate').style.display = 'block';
-      document.getElementById('copy-btn').disabled = true;
-      document.getElementById('confirm-luitpold').checked = false;
-      document.getElementById('share-row').style.display = 'none';
+      eyebrow = 'Wir haben deine Anfrage. Sobald der Luitpoldblock bestätigt ist, schicken wir dir den fertigen Einladungslink per Mail.';
     } else if (venueType === 'other') {
-      document.getElementById('result-eyebrow').textContent = 'Vorgemerkt für ' + venueOtherText + '. Wir prüfen Raum, Catering und Logistik vor Ort und melden uns.';
-      document.getElementById('luitpold-gate').style.display = 'none';
-      document.getElementById('copy-btn').disabled = true;
-      document.getElementById('share-row').style.display = 'none';
+      eyebrow = 'Wir haben deine Anfrage für ' + venueOtherText + '. Wir prüfen Raum, Catering und Logistik vor Ort und melden uns mit dem fertigen Einladungslink per Mail.';
     } else if (venueType === 'own_or_luitpold') {
-      document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Wir fragen den Luitpoldblock parallel an.';
-      document.getElementById('luitpold-gate').style.display = 'none';
-      document.getElementById('copy-btn').disabled = false;
-      document.getElementById('share-row').style.display = 'flex';
+      eyebrow = 'Wir haben deine Anfrage. Wir fragen parallel den Luitpoldblock an und melden uns mit dem fertigen Einladungslink per Mail.';
     } else {
-      document.getElementById('result-eyebrow').textContent = 'Dein Link steht. Teilen, wann es dir passt.';
-      document.getElementById('luitpold-gate').style.display = 'none';
-      document.getElementById('copy-btn').disabled = false;
-      document.getElementById('share-row').style.display = 'flex';
+      eyebrow = 'Wir haben deine Anfrage. Du bekommst innerhalb von 24–48h den fertigen Einladungslink per Mail.';
     }
+    document.getElementById('result-eyebrow').textContent = eyebrow;
+    document.getElementById('luitpold-gate').style.display = 'none';
+    document.getElementById('copy-btn').disabled = true;
+    document.getElementById('share-row').style.display = 'none';
 
-    // Hold the current share URL for the buttons
+    // Hold the current share URL for the buttons (will be enabled after manual confirmation)
     window._shareUrl = url;
     window._shareTitle = 'Salon AI bei ' + name + ' · ' + longLabel;
 
