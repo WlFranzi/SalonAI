@@ -117,6 +117,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .manifesto { background: transparent; padding: var(--s4) var(--s3) var(--s3); }
 .manifesto-inner { max-width: 720px; margin: 0 auto; }
 .manifesto h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.012em; margin-bottom: var(--s2); }
+.manifesto h2 .m-h2-ai { color: var(--gold); }
 .manifesto p { font-size: 15px; color: var(--navy); line-height: 1.55; margin-bottom: 12px; }
 .manifesto p.manifesto-lede { font-size: 1.05rem; line-height: 1.55; margin-bottom: var(--s2); color: var(--navy); }
 .manifesto ol { list-style: none; padding: 0; margin: var(--s2) 0; }
@@ -375,7 +376,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .single-col { display: block; max-width: 700px; margin: 0 auto; }
 
 /* Tile shared */
-.tile { padding: var(--s4); }
+/* Tile (event card) — editorial invitation style */
+.tile { padding: 38px 42px 32px; box-shadow: 0 6px 28px rgba(27,46,74,0.07); }
 .tile-label { font-size: var(--t-xs); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s1); display: flex; align-items: center; gap: var(--s1); }
 .tile-label span.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
 .tile h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: var(--s2); color: var(--navy); line-height: 1.2; }
@@ -386,43 +388,42 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 .status-dot.upcoming { background: #4ade80; }
 .status-dot.past { background: var(--border); }
-.event-row { display: flex; align-items: flex-start; justify-content: space-between; padding: 14px 12px; border-radius: 12px; transition: background 0.15s; gap: 12px; }
-.event-row:hover { background: var(--sky-light); }
-.event-date-col { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
-.event-date-col .month { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--sky-deep); font-weight: 700; }
-.event-date-col .day { font-size: 15px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--navy); line-height: 1.2; }
-.event-info { flex: 1; padding: 0 12px; }
-.event-info .name { font-size: var(--t-base); font-weight: 600; color: var(--navy); display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.event-row { display: flex; align-items: flex-start; justify-content: space-between; padding: 6px 0; border-radius: 0; transition: none; gap: 28px; }
+.event-row:hover { background: transparent; }
+.event-date-col { display: flex; flex-direction: column; align-items: flex-start; min-width: 84px; padding-right: 24px; border-right: 1px solid var(--border); }
+.event-date-col .month { font-family: 'DM Sans', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 2.4px; color: var(--muted-blue); font-weight: 600; margin-bottom: 6px; }
+.event-date-col .day { font-size: 2.4rem; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--navy); line-height: 0.95; letter-spacing: -0.02em; }
+.event-info { flex: 1; padding: 0; }
+.event-info .name { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.01em; display: flex; align-items: baseline; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; }
 .sticker-share {
   display: inline-block;
-  background: var(--gold-light);
-  color: var(--navy);
+  background: transparent;
+  color: var(--muted-blue);
   font-family: 'DM Sans', sans-serif;
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 10.5px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 2px 8px;
-  border-radius: 4px;
+  letter-spacing: 1.4px;
+  padding: 0 0 1px;
+  border-radius: 0;
   cursor: pointer;
-  transform: rotate(2deg);
-  transition: all 0.15s;
-  border: 1px solid rgba(27,46,74,0.1);
+  border: none;
+  border-bottom: 1px solid currentColor;
   white-space: nowrap;
+  transition: color 0.15s;
 }
 .sticker-share:hover {
-  transform: rotate(0deg) scale(1.05);
-  background: var(--gold);
+  color: var(--accent);
 }
-.event-info .sub { font-size: var(--t-xs); color: var(--muted-blue); margin-top: 2px; line-height: 1.4; }
-.rsvp-btn { font-size: 13px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: var(--navy); color: var(--white-warm); border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; }
-.rsvp-btn:hover { background: var(--sky-deep); }
-.event-last-public { font-size: 12px; color: var(--accent); font-style: italic; margin: 4px 0 6px; line-height: 1.5; }
-.event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px; }
-.add-to-cal-link { font-size: 12.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); padding-bottom: 1px; transition: opacity 0.15s; }
-.add-to-cal-link:hover { opacity: 0.65; }
-.event-share-link { font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 600; color: var(--navy); background: none; border: none; border-bottom: 1px solid var(--navy); padding: 0 0 1px; cursor: pointer; transition: opacity 0.15s; }
-.event-share-link:hover { opacity: 0.65; }
+.event-info .sub { font-size: 13px; color: var(--muted-blue); margin-top: 6px; line-height: 1.6; }
+.event-last-public { font-size: 13px; color: var(--muted-blue); font-style: italic; margin: 0 0 14px; line-height: 1.6; padding: 12px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 24px; }
+.rsvp-btn { font-size: 14px; font-weight: 600; padding: 13px 28px; border-radius: 999px; background: var(--navy); color: #fff; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.18s, transform 0.18s, box-shadow 0.18s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; letter-spacing: 0.4px; box-shadow: 0 4px 14px rgba(27,46,74,0.16); }
+.rsvp-btn:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,51,153,0.22); }
+.add-to-cal-link { font-size: 12.5px; font-weight: 500; color: var(--muted-blue); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; transition: color 0.15s; }
+.add-to-cal-link:hover { color: var(--navy); }
+.event-share-link { font-family: 'DM Sans', sans-serif; font-size: 12.5px; font-weight: 500; color: var(--muted-blue); background: none; border: none; border-bottom: 1px solid currentColor; padding: 0 0 1px; cursor: pointer; transition: color 0.15s; }
+.event-share-link:hover { color: var(--navy); }
 .rsvp-btn.soon { background: transparent; color: var(--muted-blue); border: 1px solid var(--border); cursor: default; }
 .rsvp-btn.postponed { background: transparent; color: #c2410c; border: 1px solid #c2410c; cursor: default; font-size: 9px; letter-spacing: 0.5px; }
 .event-row.postponed { opacity: 0.8; }
@@ -1067,7 +1068,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <h2 data-i18n="manifesto_h2">Warum es Salon AI gibt</h2>
+    <h2 data-i18n-html="manifesto_h2">Warum es Salon <span class="m-h2-ai">AI</span> gibt</h2>
     <p class="manifesto-lede" data-i18n="manifesto_lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
     <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:</p>
     <ol>
@@ -1083,8 +1084,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="skills-section" id="skills">
   <div class="skills-inner">
     <div class="skills-intro">
-      <h2 class="skills-h2" data-i18n-html="skills_h2">Was du vom Abend mitnimmst</h2>
-      <p class="skills-desc" data-i18n="skills_desc">Im ersten Teil des Abends baust du deinen persönlichen KI-Agenten für deine eigenen Aufgaben. Im zweiten Teil setzt du ihn ein, um einen konkreten Plan zu entwickeln: was du heute schon tun kannst, ohne in der Politik zu sein, um Europa zu stärken.</p>
+      <h2 class="skills-h2" data-i18n="skills_h2">The boring stuff your agent could automate for you.</h2>
     </div>
     <div class="skills-slider">
       <div class="skills-slider-viewport">
