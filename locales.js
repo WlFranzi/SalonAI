@@ -363,7 +363,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -745,7 +745,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Weniger Vortrag. Mehr Bau.",
+    plan_h2: "Weniger Vortrag. Mehr Gespräch.",
 
 
 
@@ -841,7 +841,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -1216,7 +1216,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -1591,7 +1591,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -1966,7 +1966,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -2341,7 +2341,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -2716,7 +2716,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -3087,7 +3087,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -3458,7 +3458,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -3829,7 +3829,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -4200,7 +4200,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -4571,7 +4571,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -4942,7 +4942,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -5313,7 +5313,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -5684,7 +5684,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -6055,7 +6055,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -6426,7 +6426,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -6797,7 +6797,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -7168,7 +7168,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -7539,7 +7539,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -7910,7 +7910,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -8281,7 +8281,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
@@ -8652,7 +8652,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More construction.",
+    plan_h2: "Less lecture. More conversation.",
 
 
 
