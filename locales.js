@@ -28,7 +28,8 @@ window.LOCALES = {
     nav_cta:       "Join a Dinner →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
@@ -109,7 +110,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Event Series",
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Events",
@@ -411,7 +413,8 @@ window.LOCALES = {
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_cta: "Zum Salon →",
 
-    hero_strapline: "Du verstehst KI nicht wirklich, bis du etwas gebaut hast, das sie benutzt.",
+    hero_strapline: "Du verstehst KI nicht wirklich, bis du mit ihr baust.",
+
 
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
@@ -492,7 +495,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Eventreihe",
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
-    hero_h1:     'Ein Arbeits-Abend mit KI.',
+    hero_h1:     'Ein Gespräch mit KI.',
+
 
 
     events_h2:     "Veranstaltungen",
@@ -794,7 +798,8 @@ window.LOCALES = {
     nav_cta:       "Rejoindre un dîner →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
@@ -910,7 +915,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série d'événements Pro-UE",
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Événements",
@@ -1170,7 +1176,8 @@ window.LOCALES = {
     nav_cta:       "Unirse a una cena →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
@@ -1286,7 +1293,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de eventos Pro-UE",
     hero_sub:      "Comenzando en Alemania, próximamente en toda la UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Eventos",
@@ -1546,7 +1554,8 @@ window.LOCALES = {
     nav_cta:       "Partecipa a una cena →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
@@ -1662,7 +1671,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie di eventi Pro-UE",
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Eventi",
@@ -1922,7 +1932,8 @@ window.LOCALES = {
     nav_cta:       "Participar de um jantar →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
@@ -2038,7 +2049,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série de eventos Pró-UE",
     hero_sub:      "Começando na Alemanha, em breve por toda a UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Eventos",
@@ -2298,7 +2310,8 @@ window.LOCALES = {
     nav_cta:       "Sluit je aan bij een diner →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
@@ -2414,7 +2427,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenementenreeks",
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Evenementen",
@@ -2674,7 +2688,8 @@ window.LOCALES = {
     nav_cta:       "Dołącz do kolacji →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
@@ -2790,7 +2805,8 @@ window.LOCALES = {
     hero_eyebrow:  "Seria wydarzeń Pro-UE",
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Wydarzenia",
@@ -3046,7 +3062,8 @@ window.LOCALES = {
     nav_cta:       "Alătură-te unei cine →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
@@ -3162,7 +3179,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de evenimente Pro-UE",
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Evenimente",
@@ -3418,7 +3436,8 @@ window.LOCALES = {
     nav_cta:       "Gå med på en middag →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
@@ -3534,7 +3553,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenemangserie",
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Evenemang",
@@ -3790,7 +3810,8 @@ window.LOCALES = {
     nav_cta:       "Přidej se na večeři →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
@@ -3906,7 +3927,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série akcí Pro-EU",
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Akce",
@@ -4162,7 +4184,8 @@ window.LOCALES = {
     nav_cta:       "Csatlakozz egy vacsorához →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
@@ -4278,7 +4301,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU rendezvénysorozat",
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Rendezvények",
@@ -4534,7 +4558,8 @@ window.LOCALES = {
     nav_cta:       "Pridaj sa na večeru →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
@@ -4650,7 +4675,8 @@ window.LOCALES = {
     hero_eyebrow:  "Séria udalostí Pro-EÚ",
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Udalosti",
@@ -4906,7 +4932,8 @@ window.LOCALES = {
     nav_cta:       "Присъедини се към вечеря →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
@@ -5022,7 +5049,8 @@ window.LOCALES = {
     hero_eyebrow:  "Серия Pro-EU събития",
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Събития",
@@ -5278,7 +5306,8 @@ window.LOCALES = {
     nav_cta:       "Deltag i en middag →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
@@ -5394,7 +5423,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU begivenhedsserie",
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Begivenheder",
@@ -5650,7 +5680,8 @@ window.LOCALES = {
     nav_cta:       "Liity illalliselle →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
@@ -5766,7 +5797,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU tapahtumasarja",
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Tapahtumat",
@@ -6022,7 +6054,8 @@ window.LOCALES = {
     nav_cta:       "Pridruži se večeri →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
@@ -6138,7 +6171,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU serija događanja",
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Događanja",
@@ -6394,7 +6428,8 @@ window.LOCALES = {
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
@@ -6510,7 +6545,8 @@ window.LOCALES = {
     hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Εκδηλώσεις",
@@ -6766,7 +6802,8 @@ window.LOCALES = {
     nav_cta:       "Prisijunk prie vakarienės →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
@@ -6882,7 +6919,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES renginių serija",
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Renginiai",
@@ -7138,7 +7176,8 @@ window.LOCALES = {
     nav_cta:       "Pievienojies vakariņām →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
@@ -7254,7 +7293,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES pasākumu sērija",
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Pasākumi",
@@ -7510,7 +7550,8 @@ window.LOCALES = {
     nav_cta:       "Liitu õhtusöögiga →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
@@ -7626,7 +7667,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EL ürituste sari",
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Üritused",
@@ -7882,7 +7924,8 @@ window.LOCALES = {
     nav_cta:       "Pridruži se večerji →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
@@ -7998,7 +8041,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serija pro-EU dogodkov",
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Dogodki",
@@ -8254,7 +8298,8 @@ window.LOCALES = {
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
@@ -8370,7 +8415,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Avvenimenti",
@@ -8626,7 +8672,8 @@ window.LOCALES = {
     nav_cta:       "Bí páirteach i ndinnéar →",
     hero_cta: "Join the Salon →",
 
-    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+    hero_strapline: "You don\'t really understand AI until you build with it.",
+
 
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
@@ -8742,7 +8789,8 @@ window.LOCALES = {
     hero_eyebrow:  "Sraith imeachtaí Pro-AE",
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',
-    hero_h1:     'A working evening with AI.',
+    hero_h1:     'A conversation with AI.',
+
 
 
     events_h2:     "Imeachtaí",
