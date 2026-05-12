@@ -332,7 +332,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -670,7 +670,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Methode",
 
-    plan_p1_body: "Ein Curriculum, verfeinert über mehrere Abende. Klar, gepacet, mit Expert:innen am Tisch.",
+    plan_p1_body: "Ein Curriculum, über mehrere Salon-Abende verfeinert — angeleitetes Lernen, lebendige Diskussion und geteilte Erfahrung im Gleichgewicht.",
 
     plan_p2_share: "20%",
     plan_p2_label: "Die Frage",
@@ -751,7 +751,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -1083,7 +1083,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -1415,7 +1415,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -1747,7 +1747,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -2079,7 +2079,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -2411,7 +2411,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -2739,7 +2739,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -3067,7 +3067,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -3395,7 +3395,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -3723,7 +3723,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -4051,7 +4051,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -4379,7 +4379,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -4707,7 +4707,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -5035,7 +5035,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -5363,7 +5363,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -5691,7 +5691,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -6019,7 +6019,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -6347,7 +6347,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -6675,7 +6675,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -7003,7 +7003,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -7331,7 +7331,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
@@ -7659,7 +7659,7 @@ window.LOCALES = {
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
 
     plan_p2_share: "20%",
     plan_p2_label: "The question",
