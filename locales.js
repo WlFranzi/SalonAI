@@ -109,7 +109,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Event Series",
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Events",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU event series:</span> Build your own agent and deploy it to create your personal pro-EU action plan <span style="color:var(--muted-blue);font-weight:400;">(examples below)</span>.',
@@ -491,7 +492,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Eventreihe",
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
-    hero_h1:     'Ein Arbeits-Abend. Nicht über KI — sondern mit ihr.',
+    hero_h1:     'Ein Arbeits-Abend mit KI.',
+
 
     events_h2:     "Veranstaltungen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU Eventreihe:</span> Entwickle deinen eigenen Agenten und setze ihn ein, um deinen persönlichen Pro-EU-Aktionsplan zu erstellen <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.',
@@ -908,7 +910,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série d'événements Pro-UE",
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Événements",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-UE :</span> Créez votre propre agent et déployez-le pour élaborer votre plan d\'action Pro-UE personnel <span style="color:var(--muted-blue);font-weight:400;">(exemples ci-dessous)</span>.',
@@ -1283,7 +1286,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de eventos Pro-UE",
     hero_sub:      "Comenzando en Alemania, próximamente en toda la UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Eventos",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Crea tu propio agente y despliégalo para elaborar tu plan de acción Pro-UE personal <span style="color:var(--muted-blue);font-weight:400;">(ejemplos a continuación)</span>.',
@@ -1658,7 +1662,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie di eventi Pro-UE",
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Eventi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Crea il tuo agente e distribuiscilo per elaborare il tuo piano d\'azione Pro-UE personale <span style="color:var(--muted-blue);font-weight:400;">(esempi di seguito)</span>.',
@@ -2033,7 +2038,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série de eventos Pró-UE",
     hero_sub:      "Começando na Alemanha, em breve por toda a UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Eventos",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pró-UE:</span> Construa seu próprio agente e implante-o para criar seu plano de ação Pró-UE pessoal <span style="color:var(--muted-blue);font-weight:400;">(exemplos abaixo)</span>.',
@@ -2408,7 +2414,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenementenreeks",
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Evenementen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenementenreeks:</span> Bouw je eigen agent en zet hem in om je persoonlijk pro-EU-actieplan te maken <span style="color:var(--muted-blue);font-weight:400;">(voorbeelden hieronder)</span>.',
@@ -2783,7 +2790,8 @@ window.LOCALES = {
     hero_eyebrow:  "Seria wydarzeń Pro-UE",
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Wydarzenia",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Seria Pro-UE:</span> Zbuduj własnego agenta i wdróż go, aby stworzyć swój osobisty pro-UE plan działania <span style="color:var(--muted-blue);font-weight:400;">(przykłady poniżej)</span>.',
@@ -3154,7 +3162,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de evenimente Pro-UE",
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Evenimente",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Construiește-ți propriul agent și implementează-l pentru a-ți crea planul personal de acțiune Pro-UE <span style="color:var(--muted-blue);font-weight:400;">(exemple mai jos)</span>.',
@@ -3525,7 +3534,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenemangserie",
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Evenemang",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenemangserie:</span> Bygg din egen agent och driftsätt den för att skapa din personliga pro-EU-handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(exempel nedan)</span>.',
@@ -3896,7 +3906,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série akcí Pro-EU",
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Akce",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-EU:</span> Postav svého vlastního agenta a nasaď ho, aby vytvořil tvůj osobní pro-EU akční plán <span style="color:var(--muted-blue);font-weight:400;">(příklady níže)</span>.',
@@ -4267,7 +4278,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU rendezvénysorozat",
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Rendezvények",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sorozat:</span> Építsd meg saját agented és telepítsd, hogy személyes pro-EU cselekvési tervet hozz létre <span style="color:var(--muted-blue);font-weight:400;">(példák alább)</span>.',
@@ -4638,7 +4650,8 @@ window.LOCALES = {
     hero_eyebrow:  "Séria udalostí Pro-EÚ",
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Udalosti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Séria Pro-EÚ:</span> Vytvor vlastného agenta a nasaď ho, aby si vytvoril osobný pro-EÚ akčný plán <span style="color:var(--muted-blue);font-weight:400;">(príklady nižšie)</span>.',
@@ -5009,7 +5022,8 @@ window.LOCALES = {
     hero_eyebrow:  "Серия Pro-EU събития",
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Събития",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Серия Pro-EU:</span> Създай свой агент и го внедри, за да изградиш личния си Pro-EU план за действие <span style="color:var(--muted-blue);font-weight:400;">(примери по-долу)</span>.',
@@ -5380,7 +5394,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU begivenhedsserie",
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Begivenheder",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serie:</span> Byg din egen agent og implementér den for at skabe din personlige pro-EU handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(eksempler nedenfor)</span>.',
@@ -5751,7 +5766,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU tapahtumasarja",
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Tapahtumat",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sarja:</span> Rakenna oma agenttisi ja ota se käyttöön luodaksesi henkilökohtaisen pro-EU-toimintasuunnitelmasi <span style="color:var(--muted-blue);font-weight:400;">(esimerkkejä alla)</span>.',
@@ -6122,7 +6138,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU serija događanja",
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Događanja",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serija:</span> Izradi svog agenta i postavi ga za izradu osobnog pro-EU akcijskog plana <span style="color:var(--muted-blue);font-weight:400;">(primjeri ispod)</span>.',
@@ -6493,7 +6510,8 @@ window.LOCALES = {
     hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Εκδηλώσεις",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Σειρά Pro-EU:</span> Δημιουργήστε τον δικό σας πράκτορα και αναπτύξτε τον για να φτιάξετε το προσωπικό σας Pro-EU σχέδιο δράσης <span style="color:var(--muted-blue);font-weight:400;">(παραδείγματα παρακάτω)</span>.',
@@ -6864,7 +6882,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES renginių serija",
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Renginiai",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES serija:</span> Sukurk savo agentą ir jį įdiek, kad sukurtum asmeninį Pro-ES veiksmų planą <span style="color:var(--muted-blue);font-weight:400;">(pavyzdžiai žemiau)</span>.',
@@ -7235,7 +7254,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES pasākumu sērija",
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Pasākumi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES sērija:</span> Izveido savu aģentu un izvietojiet to, lai izveidotu personīgo Pro-ES rīcības plānu <span style="color:var(--muted-blue);font-weight:400;">(piemēri zemāk)</span>.',
@@ -7606,7 +7626,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EL ürituste sari",
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Üritused",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EL sari:</span> Loo oma agent ja juuruta see, et luua isiklik Pro-EL tegevuskava <span style="color:var(--muted-blue);font-weight:400;">(näited allpool)</span>.',
@@ -7977,7 +7998,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serija pro-EU dogodkov",
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Dogodki",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serija Pro-EU:</span> Razvij svojega agenta in ga uvedi za ustvarjanje osebnega pro-EU akcijskega načrta <span style="color:var(--muted-blue);font-weight:400;">(primeri spodaj)</span>.',
@@ -8348,7 +8370,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Avvenimenti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serje Pro-UE:</span> Ibni l-aġent tiegħek u ibda tuża biex toħloq il-pjan ta\' azzjoni Pro-UE personali tiegħek <span style="color:var(--muted-blue);font-weight:400;">(eżempji hawn taħt)</span>.',
@@ -8719,7 +8742,8 @@ window.LOCALES = {
     hero_eyebrow:  "Sraith imeachtaí Pro-AE",
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',
-    hero_h1:     'A working evening. Not about AI — but with it.',
+    hero_h1:     'A working evening with AI.',
+
 
     events_h2:     "Imeachtaí",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Sraith Pro-AE:</span> Tóg d\'eintiteas féin agus imscar é chun do phlean gníomhaíochta Pro-AE pearsanta a chruthú <span style="color:var(--muted-blue);font-weight:400;">(samplaí thíos)</span>.',
