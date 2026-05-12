@@ -230,11 +230,23 @@
     .source a { border-bottom: 1px solid transparent; }
     .source a:hover { color: var(--ink); border-bottom-color: var(--rule); }
 
-    /* ── Decision (standardised 5-field card) ── */
-    .decision { margin-bottom: 48px; display: grid; grid-template-columns: 44px 1fr; gap: 16px; }
+    /* ── Decision (collapsible 4-field card) ── */
+    .decision { margin-bottom: 36px; display: grid; grid-template-columns: 44px 1fr; gap: 16px; }
     .decision-num { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--accent); padding-top: 5px; letter-spacing: 0.4px; }
-    .decision-body h3 { font-family: 'Playfair Display', serif; font-size: 1.32rem; font-weight: 700; color: var(--ink-deep); margin-bottom: 18px; line-height: 1.22; letter-spacing: -0.008em; }
-    .decision-grid { display: grid; grid-template-columns: 1fr; gap: 14px; padding-top: 6px; border-top: 1px solid var(--rule-thin); }
+    .decision-body h3 { font-family: 'Playfair Display', serif; font-size: 1.32rem; font-weight: 700; color: var(--ink-deep); margin-bottom: 12px; line-height: 1.22; letter-spacing: -0.008em; }
+    /* Headline — Europe 2041 promise always visible, sits between title and disclosure */
+    .decision-headline { padding: 4px 0 6px; }
+    .decision-headline .decision-field--year { padding: 0; }
+    .decision-headline .field-label { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+    .decision-headline p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.02rem; line-height: 1.45; color: var(--ink-deep); margin: 0; font-weight: 400; }
+    /* Disclosure */
+    .decision-details { margin-top: 2px; }
+    .decision-details summary { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); cursor: pointer; padding: 10px 0; list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+    .decision-details summary::-webkit-details-marker { display: none; }
+    .decision-details summary::after { content: '+'; font-size: 16px; font-weight: 300; color: var(--accent); line-height: 1; }
+    .decision-details[open] summary::after { content: '−'; }
+    .decision-details summary:hover { color: var(--ink-deep); }
+    .decision-grid { display: grid; grid-template-columns: 1fr; gap: 14px; padding-top: 12px; margin-top: 4px; border-top: 1px solid var(--rule-thin); }
     .decision-field { padding: 4px 0; }
     .decision-field .field-label { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
     .decision-field p { font-size: 0.96rem; color: var(--ink); line-height: 1.65; margin: 0; }
@@ -477,12 +489,15 @@
       <span class="decision-num">1.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d1_title">Schatten als Infrastruktur.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d1_2041">Klima-Resilienz wird Pflichtkriterium in Bebauungsplänen jeder Stadt über 100.000 Einwohner.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d1_problem">Mediterrane Städte werden im Sommer teilweise unbenutzbar — Hitzetote nehmen messbar zu.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d1_proof">Sevilla rüstete 2023 zentrale Straßen mit Beschattung und Kühlsprühern aus. Gemessen: bis zu 5 °C Temperaturreduktion, +30 % Fußgängerfrequenz im Sommer.</p><p class="source"><a href="https://www.sevilla.org" target="_blank" rel="noopener">Sevilla · Sombrea Sevilla, 2023</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d1_barrier">Anpassung gilt politisch als zweitrangig zu Klima-Vermeidung — Budgets folgen.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d1_2041">Klima-Resilienz wird Pflichtkriterium in Bebauungsplänen jeder Stadt über 100.000 Einwohner.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -491,12 +506,15 @@
       <span class="decision-num">2.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d2_title">Wege, die sich selbst beleuchten.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d2_2041">Jede neue Straße ist nachtleuchtend by default — Beleuchtungsstrom im Nahverkehr fällt drastisch.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d2_problem">Straßenbeleuchtung verbraucht Strom rund um die Uhr und braucht Anschluss-Infrastruktur.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d2_proof">Studio Roosegaarde baute 2014 den weltweit ersten photolumineszenten Radweg — 500 m in den Niederlanden, kein Stromanschluss, seither in Betrieb.</p><p class="source"><a href="https://www.studioroosegaarde.net/project/van-gogh-path" target="_blank" rel="noopener">Studio Roosegaarde · Van Gogh Path, 2014</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d2_barrier">Wenige Anbieter, kein Standard-Vergabeprofil, lokale Bauämter scheuen unbekannte Materialien.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d2_2041">Jede neue Straße ist nachtleuchtend by default — Beleuchtungsstrom im Nahverkehr fällt drastisch.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -505,12 +523,15 @@
       <span class="decision-num">3.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d3_title">Gebäude, die Nahrung produzieren.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d3_2041">Gemischte Nutzung wird Baunorm — jedes größere Neubauprojekt mit 10 %+ Produktionsfläche.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d3_problem">Urbane Flächen werden ausschließlich für Wohnen oder Gewerbe genutzt — Nahrung kommt von weit her.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d3_proof">Das BIQ-Haus Hamburg betreibt seit 2013 die erste urbane Algenfassade im Maßstab — Biomasse für Heizung, Wärmedämmung, zu vergleichbaren Kosten wie konventionelle Fassaden.</p><p class="source"><a href="https://www.internationale-bauausstellung-hamburg.de/en/projects/the-building-exhibition-within-the-building-exhibition/smart-material-houses/biq/projekt/biq.html" target="_blank" rel="noopener">IBA Hamburg · BIQ Haus, 2013</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d3_barrier">Wenige Bauingenieure mit Erfahrung, kein Standardprodukt, Versicherer zögern bei neuen Fassadensystemen.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d3_2041">Gemischte Nutzung wird Baunorm — jedes größere Neubauprojekt mit 10 %+ Produktionsfläche.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -519,12 +540,15 @@
       <span class="decision-num">4.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d4_title">Boden, der Strom erzeugt.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d4_2041">Verkehrsknoten und stark frequentierte öffentliche Räume werden teilweise selbstversorgend.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d4_problem">Städte verbrauchen Energie passiv aus entfernten Netzen — zentralisiert, verwundbar.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d4_proof">Pavegen erzeugt seit über einem Jahrzehnt Strom aus Schritten in London, Paris und Dubai — aktive Installationen, nicht Prototypen.</p><p class="source"><a href="https://pavegen.com" target="_blank" rel="noopener">Pavegen Systems · London / Paris / Dubai</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d4_barrier">Öffentliche Ausschreibungen optimieren auf niedrigsten Anschaffungspreis, nicht auf Langfrist-Resilienz.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d4_2041">Verkehrsknoten und stark frequentierte öffentliche Räume werden teilweise selbstversorgend.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -533,12 +557,15 @@
       <span class="decision-num">5.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d5_title">Reparieren ist günstiger als kaufen.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d5_2041">0 % MwSt auf Reparaturen EU-weit. Abgabe auf vorzeitige Entsorgung. Werkstätten erleben Renaissance.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d5_problem">Konsumelektronik wird auf Wegwerf optimiert — Ersatzteile werden zurückgehalten oder überteuert angeboten.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d5_proof">Das EU-Recht auf Reparatur (April 2024) verpflichtet Hersteller erstmals zur Ersatzteil-Bereitstellung. Frankreich kombiniert mit 0 % MwSt auf Reparaturleistungen.</p><p class="source"><a href="https://commission.europa.eu/topics/single-market/goods/right-repair_en" target="_blank" rel="noopener">EU-Kommission · Right to Repair, 2024</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d5_barrier">Umsetzung liegt bei Mitgliedstaaten — Aufsicht uneinheitlich. Hersteller verklagen den Begriff „angemessener Preis".</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d5_2041">0 % MwSt auf Reparaturen EU-weit. Abgabe auf vorzeitige Entsorgung. Werkstätten erleben Renaissance.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -547,12 +574,15 @@
       <span class="decision-num">6.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d6_title">Aus Stadtautobahnen werden Nahrungswälder.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d6_2041">Jede europäische Stadt über 200.000 Einwohner hat einen Voedselbos-Korridor.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d6_problem">Innerstädtische Straßen versiegeln 30–40 % der Stadtfläche — Mobilität konkurriert mit Lebensqualität.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d6_proof">Rotterdam wandelte drei Kilometer ehemaliger Innenstadtstraßen in öffentliche Grünflächen um. Der Voedselbos Almere produziert Nahrung auf zuvor versiegelter Fläche.</p><p class="source"><a href="https://www.almere.nl" target="_blank" rel="noopener">Voedselbos Almere · Rotterdam</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d6_barrier">Verkehrsplanung ist auf Auto-Durchsatz kalibriert. Wirtschaftsverbände protestieren bei jedem Pilotprojekt.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d6_2041">Jede europäische Stadt über 200.000 Einwohner hat einen Voedselbos-Korridor.</p></div>
         </div>
+        </details>
       </div>
     </div>
   </section>
@@ -570,12 +600,15 @@
       <span class="decision-num">7.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d7_title">Europa als ein einziger Campus.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d7_2041">Eine Lehre in München gilt sofort in Lissabon. Die European Student Card umfasst alle Qualifikationen.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d7_problem">Bildung endet an nationalen Grenzen — auch wenn das Curriculum identisch ist.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d7_proof">Erasmus+ hat 13 Millionen Menschen grenzüberschreitende Bildungserfahrungen ermöglicht — bisher beschränkt auf akademische Kontexte.</p><p class="source"><a href="https://erasmus-plus.ec.europa.eu/european-student-card-initiative" target="_blank" rel="noopener">Erasmus+ · European Student Card</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d7_barrier">Berufsbildungssysteme sind nationalstaatlich tief verwoben — Anerkennung scheitert an Kammern, nicht an Substanz.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d7_2041">Eine Lehre in München gilt sofort in Lissabon. Die European Student Card umfasst alle Qualifikationen.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -584,12 +617,15 @@
       <span class="decision-num">8.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d8_title">Abschlüsse, die überall gelten — sofort.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d8_2041">KI-gestützte Qualifikationsübersetzung läuft in Echtzeit. Eine portugiesische Krankenschwester arbeitet am nächsten Tag in Polen.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d8_problem">Eine polnische Pflegefachkraft wartet 6–12 Monate auf Anerkennung in Portugal — bei identischer Ausbildung.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d8_proof">Die EU-Richtlinie 2005/36/EG regelt Anerkennung bereits — Implementierung scheitert an Übersetzung, manueller Prüfung, Kammer-Begutachtung.</p><p class="source"><a href="https://europa.eu/youreurope/citizens/work/professional-qualifications/index_en.htm" target="_blank" rel="noopener">EU · Berufsqualifikationen, Richtlinie 2005/36/EG</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d8_barrier">Berufsverbände schützen lokale Mitgliederzahlen. Bürokratie wird als Schutz, nicht als Hindernis verstanden.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d8_2041">KI-gestützte Qualifikationsübersetzung läuft in Echtzeit. Eine portugiesische Krankenschwester arbeitet am nächsten Tag in Polen.</p></div>
         </div>
+        </details>
       </div>
     </div>
   </section>
@@ -607,12 +643,15 @@
       <span class="decision-num">9.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d9_title">Vier Monate statt vier Jahre.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d9_2041">Großprojekte werden in unter sechs Monaten genehmigt. KI prüft Anträge, Beamt:innen treffen Entscheidungen.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d9_problem">Deutschland verlor 2024 über 30 % seiner Solarmodulproduktion an China — wegen vierjähriger Genehmigungsverfahren, nicht wegen schlechterer Technologie.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d9_proof">Estland hat 99 % seiner Behördenleistungen digitalisiert. Firmengründung in 18 Minuten, Steuererklärung in 3 Minuten — seit über einem Jahrzehnt.</p><p class="source"><a href="https://e-estonia.com" target="_blank" rel="noopener">e-Estonia · Digital Society</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d9_barrier">Beamtengewerkschaften, risikoaverse Vergabe, kein politischer Anreiz schnell zu genehmigen, hoher Anreiz Fehler zu vermeiden.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d9_2041">Großprojekte werden in unter sechs Monaten genehmigt. KI prüft Anträge, Beamt:innen treffen Entscheidungen.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -621,12 +660,15 @@
       <span class="decision-num">10.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d10_title">Bürger:innen entscheiden das Budget — per Losverfahren.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d10_2041">Jede EU-Hauptstadt hat ein permanentes Bürgerbudget für Klima- und Wohnpolitik.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d10_problem">Klimapolitik wird in Parlamenten oft so verwässert, dass sie nicht mehr wirkt — aus Angst vor dem nächsten Wahlzyklus.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d10_proof">Paris ließ 2021 150 per Los ausgewählte Bürger:innen über Klimabudgets entscheiden. Ergebnis: ambitioniertere Maßnahmen, 70 % umgesetzt.</p><p class="source"><a href="https://participons.paris.fr" target="_blank" rel="noopener">Participons Paris · Bürgerkonferenz, 2021</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d10_barrier">Politische Parteien sehen Konkurrenz, nicht Komplement. Implementierung bleibt symbolisch.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d10_2041">Jede EU-Hauptstadt hat ein permanentes Bürgerbudget für Klima- und Wohnpolitik.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -635,12 +677,15 @@
       <span class="decision-num">11.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d11_title">Deine Stadt zahlt dir eine Dividende.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d11_2041">Daten-Dividende ist eine reguläre Einnahmelinie für EU-Bürger:innen — wie Mehrwertsteuer-Rückerstattung.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d11_problem">Plattformen monetarisieren Verkehrs-, Mobilitäts- und Nutzungsdaten ihrer Nutzer:innen — die Bürger:innen sehen keinen Anteil.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d11_proof">Amsterdam erprobt Modelle zur Direktausschüttung. Die DSGVO liefert das rechtliche Fundament — Eigentum, nicht nur Schutz.</p><p class="source"><a href="https://data.amsterdam.nl" target="_blank" rel="noopener">Amsterdam Data · Pilot Projects</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d11_barrier">Kein klares Eigentums-Modell, keine technische Standardisierung, Big-Tech-Lobbying gegen Dividenden-Pflicht.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d11_2041">Daten-Dividende ist eine reguläre Einnahmelinie für EU-Bürger:innen — wie Mehrwertsteuer-Rückerstattung.</p></div>
         </div>
+        </details>
       </div>
     </div>
   </section>
@@ -658,12 +703,15 @@
       <span class="decision-num">12.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d12_title">Eine europäische DARPA.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d12_2041">ARIA Europe (oder vergleichbar) finanziert moonshot-Projekte mit 5 Mrd. EUR jährlich — Entscheidungen in Monaten, nicht Jahren.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d12_problem">Frontier-Forschung in KI, Drohnen, Cyber und Weltraum braucht Risikokapital — der EU-Forschungsapparat ist konsens-orientiert.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d12_proof">Die US-DARPA hat seit 1958 das Internet, GPS, autonome Fahrzeuge und mRNA-Impfstoffe mitermöglicht — bei rund 4 Mrd. USD Jahresbudget. Die Munich Declaration 2025 fordert ein europäisches Pendant.</p><p class="source"><a href="https://www.munichdeclaration.org" target="_blank" rel="noopener">Munich Declaration, 2025</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d12_barrier">Mitgliedstaaten blockieren Dual-Use-Forschung wegen Souveränitätsbedenken. Budget muss von 27 Hauptstädten autorisiert werden.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d12_2041">ARIA Europe (oder vergleichbar) finanziert moonshot-Projekte mit 5 Mrd. EUR jährlich — Entscheidungen in Monaten, nicht Jahren.</p></div>
         </div>
+        </details>
       </div>
     </div>
 
@@ -672,12 +720,15 @@
       <span class="decision-num">13.</span>
       <div class="decision-body">
         <h3 data-i18n="march_d13_title">Afrika-Partnerschaft statt Entwicklungshilfe.</h3>
+        <div class="decision-headline"><div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d13_2041">EU-Afrika ist ein Wirtschaftskorridor mit gemeinsamen Standards, Zollabkommen und Energie-Verbindungen.</p></div></div>
+        <details class="decision-details">
+          <summary data-i18n="march_lbl_background">Hintergrund</summary>
         <div class="decision-grid">
           <div class="decision-field decision-field--problem"><span class="field-label" data-i18n="march_lbl_problem">Problem</span><p data-i18n="march_d13_problem">Europa ist von chinesischen Lieferketten für kritische Rohstoffe abhängig — Lithium, Kobalt, seltene Erden.</p></div>
           <div class="decision-field decision-field--proof"><span class="field-label" data-i18n="march_lbl_proof">Beleg</span><p data-i18n="march_d13_proof">Die Global Gateway Initiative bündelt 300 Mrd. EUR für Afrika-Investitionen bis 2027. Marokko exportiert bereits Solarstrom nach Spanien.</p><p class="source"><a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/global-gateway_en" target="_blank" rel="noopener">EU Global Gateway · 2021–2027</a></p></div>
           <div class="decision-field decision-field--barrier"><span class="field-label" data-i18n="march_lbl_barrier">Hürde</span><p data-i18n="march_d13_barrier">Implementierungslag, Mitgliedstaaten konkurrieren miteinander um bilaterale Deals, China bietet schneller und unkomplizierter.</p></div>
-          <div class="decision-field decision-field--year"><span class="field-label" data-i18n="march_lbl_2041">Europa 2041</span><p data-i18n="march_d13_2041">EU-Afrika ist ein Wirtschaftskorridor mit gemeinsamen Standards, Zollabkommen und Energie-Verbindungen.</p></div>
         </div>
+        </details>
       </div>
     </div>
   </section>

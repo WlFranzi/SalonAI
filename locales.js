@@ -170,6 +170,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -314,19 +315,30 @@ window.LOCALES = {
     event_share_copied: "Link copied!",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
 
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -486,6 +498,7 @@ window.LOCALES = {
     march_lbl_why: "Warum jetzt",
     march_lbl_barrier: "Hürde",
     march_lbl_2041: "Europa 2041",
+    march_lbl_background: "Hintergrund",
     march_closing_h2: "Die nächsten fünfzehn Jahre handeln nicht von Erfindung. Sie handeln von Umsetzung.",
     march_closing_p1: "Europa wird nicht zufällig sinken. Es wird prozedural sinken.",
     march_closing_p2: "Nicht weil die Technologien fehlten — sondern weil Umsetzung fragmentiert war, Koordination langsam, politische Ambition national blieb, während der Wettbewerb kontinental wurde.",
@@ -630,19 +643,30 @@ window.LOCALES = {
     event_share_copied: "Link kopiert!",
     past_events_intro: "KI-Kompetenz entsteht schneller an einem Esstisch als in noch einem Online-Kurs. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
 
-    plan_eyebrow: "Wir haben einen Plan.",
-    plan_h2: "Ein erprobtes Programm, das dich schnell vorwärts bringt.",
+    plan_eyebrow: "Erprobtes Format",
+
+    plan_h2: "Struktur, wo sie zählt. Offenheit, wo sie wirkt.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Schritt-für-Schritt Programm",
-    plan_p1_body: "Du baust deinen KI-Assistenten entlang eines getesteten Curriculums — klar geschnitten, ohne Umwege, mit Experten am Tisch.",
+    plan_p1_label: "Methode",
+
+    plan_p1_body: "Ein Curriculum, verfeinert über mehrere Abende. Klar, gepacet, mit Expert:innen am Tisch.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Frage des Abends",
-    plan_p2_body: "Du wendest das Gelernte auf die Frage des Abends an — freier in der Form, mit Begleitung.",
-    scan_1: "Schritt-für-Schritt Programm",
-    scan_2: "Keine Vorkenntnisse",
+    plan_p2_label: "Die Frage",
+
+    plan_p2_body: "Anwendung auf die Frage des Abends. Offen in der Form, mit Begleitung.",
+
+    scan_1: "Erprobtes Curriculum",
+
+    scan_2: "Ohne Vorkenntnisse",
+
     scan_3: "Dinner inklusive",
-    scan_4: "Kleine kuratierte Runde",
-    scan_5: "Workflows zum Mitnehmen",
+
+    scan_4: "Kuratierter Tisch",
+
+    scan_5: "Eigene Systeme zum Mitnehmen",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -690,19 +714,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Actuellement Munich & Berlin. Paris, Bruxelles, Vienne, Londres (?), Stockholm, Milan, Hambourg, Madrid : <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">écris-nous</a> — on planifiera ensemble.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -815,6 +850,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -1000,19 +1036,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Actualmente Múnich y Berlín. París, Bruselas, Viena, Londres (?), Estocolmo, Milán, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escríbenos</a> — lo planeamos juntos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -1125,6 +1172,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -1310,19 +1358,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Attualmente Monaco & Berlino. Parigi, Bruxelles, Vienna, Londra (?), Stoccolma, Milano, Amburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrivici</a> — lo pianifichiamo insieme.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -1435,6 +1494,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -1620,19 +1680,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Atualmente Munique e Berlim. Paris, Bruxelas, Viena, Londres (?), Estocolmo, Milão, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escreve-nos</a> — planeamos juntos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -1745,6 +1816,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -1930,19 +2002,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Op dit moment München & Berlijn. Parijs, Brussel, Wenen, Londen (?), Stockholm, Milaan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">schrijf ons</a> — we plannen het samen.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -2055,6 +2138,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -2240,19 +2324,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktualnie Monachium i Berlin. Paryż, Bruksela, Wiedeń, Londyn (?), Sztokholm, Mediolan, Hamburg, Madryt: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napisz do nas</a> — zaplanujemy razem.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -2365,6 +2460,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -2546,19 +2642,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Momentan München și Berlin. Paris, Bruxelles, Viena, Londra (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrie-ne</a> — planificăm împreună.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -2671,6 +2778,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -2852,19 +2960,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Just nu München & Berlin. Paris, Bryssel, Wien, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv till oss</a> — vi planerar tillsammans.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -2977,6 +3096,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -3158,19 +3278,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktuálně Mnichov a Berlín. Paříž, Brusel, Vídeň, Londýn (?), Stockholm, Milán, Hamburk, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiš nám</a> — naplánujeme to společně.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -3283,6 +3414,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -3464,19 +3596,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Jelenleg München és Berlin. Párizs, Brüsszel, Bécs, London (?), Stockholm, Milánó, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">írj nekünk</a> — együtt megtervezzük.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -3589,6 +3732,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -3770,19 +3914,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktuálne Mníchov a Berlín. Paríž, Brusel, Viedeň, Londýn (?), Štokholm, Miláno, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napíš nám</a> — naplánujeme to spolu.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -3895,6 +4050,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -4076,19 +4232,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "В момента Мюнхен и Берлин. Париж, Брюксел, Виена, Лондон (?), Стокхолм, Милано, Хамбург, Мадрид: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">пиши ни</a> — ще планираме заедно.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -4201,6 +4368,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -4382,19 +4550,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Lige nu München & Berlin. Paris, Bruxelles, Wien, London (?), Stockholm, Milano, Hamborg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv til os</a> — vi planlægger det sammen.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -4507,6 +4686,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -4688,19 +4868,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Tällä hetkellä München & Berliini. Pariisi, Bryssel, Wien, Lontoo (?), Tukholma, Milano, Hampuri, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjoita meille</a> — suunnittelemme yhdessä.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -4813,6 +5004,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -4994,19 +5186,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Trenutno München i Berlin. Pariz, Bruxelles, Beč, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiši nam</a> — planirat ćemo zajedno.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -5119,6 +5322,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -5300,19 +5504,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Αυτή τη στιγμή Μόναχο και Βερολίνο. Παρίσι, Βρυξέλλες, Βιέννη, Λονδίνο (?), Στοκχόλμη, Μιλάνο, Αμβούργο, Μαδρίτη: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">γράψε μας</a> — θα το σχεδιάσουμε μαζί.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -5425,6 +5640,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -5606,19 +5822,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Šiuo metu Miunchenas ir Berlynas. Paryžius, Briuselis, Viena, Londonas (?), Stokholmas, Milanas, Hamburgas, Madridas: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">parašyk mums</a> — suplanuosime kartu.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -5731,6 +5958,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -5912,19 +6140,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Pašlaik Minhene un Berlīne. Parīze, Brisele, Vīne, Londona (?), Stokholma, Milāna, Hamburga, Madride: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">raksti mums</a> — saplānosim kopā.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -6037,6 +6276,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -6218,19 +6458,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Praegu München ja Berliin. Pariis, Brüssel, Viin, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjuta meile</a> — planeerime koos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -6343,6 +6594,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -6524,19 +6776,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Trenutno München in Berlin. Pariz, Bruselj, Dunaj, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">piši nam</a> — načrtovali bomo skupaj.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -6649,6 +6912,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -6830,19 +7094,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Bħalissa München u Berlin. Pariġi, Brussell, Vjenna, Londra (?), Stokkolma, Milan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">iktbilna</a> — nippjanawh flimkien.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -6955,6 +7230,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
@@ -7136,19 +7412,30 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Faoi láthair München & Beirlín. Páras, an Bhruiséil, Vín, Londain (?), Stócólm, Milano, Hamburg, Maidrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scríobh chugainn</a> — déanfaimid pleanáil le chéile.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "We have a plan.",
-    plan_h2: "A tested program that takes you forward fast.",
+    plan_eyebrow: "Considered format",
+
+    plan_h2: "Structure where it counts. Openness where it works.",
+
     plan_p1_share: "80%",
-    plan_p1_label: "Step-by-step program",
-    plan_p1_body: "You build your AI assistant along a tested curriculum — sharply cut, no detours, with experts at the table.",
+    plan_p1_label: "Method",
+
+    plan_p1_body: "A curriculum refined across multiple evenings. Sharp, paced, with experts at the table.",
+
     plan_p2_share: "20%",
-    plan_p2_label: "Question of the evening",
-    plan_p2_body: "You apply what you built to the evening\'s question — freer in form, but guided.",
-    scan_1: "Step-by-step program",
-    scan_2: "No technical background",
+    plan_p2_label: "The question",
+
+    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    scan_1: "Considered curriculum",
+
+    scan_2: "No prior knowledge required",
+
     scan_3: "Dinner included",
-    scan_4: "Small curated group",
-    scan_5: "Practical workflows to take home",
+
+    scan_4: "Curated table",
+
+    scan_5: "Working systems to take home",
+
     host_own_btn: "Host your evening →",
     host_own_fine: "Starting at €149 per guest, including dinner and venue.",
     corp_h3: "Organizations & teams",
@@ -7261,6 +7548,7 @@ window.LOCALES = {
     march_lbl_why: "Why it matters",
     march_lbl_barrier: "Scaling barrier",
     march_lbl_2041: "Europe 2041",
+    march_lbl_background: "Background",
     march_closing_h2: "The next fifteen years are not about invention. They are about execution.",
     march_closing_p1: "Europe will not decline accidentally. It will decline procedurally.",
     march_closing_p2: "Not because the technologies were unavailable — but because deployment was fragmented, coordination was slow, political ambition stayed national while competition became continental.",
