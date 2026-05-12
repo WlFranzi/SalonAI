@@ -30,7 +30,8 @@ window.LOCALES = {
     hero_strapline: "You only really understand AI once you've built it yourself.",
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -322,9 +323,11 @@ window.LOCALES = {
     event_share_copied: "Link copied!",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
 
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -365,7 +368,8 @@ window.LOCALES = {
     hero_strapline: "Du verstehst KI erst wirklich, wenn du sie selbst gebaut hast.",
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
-    manifesto_lede: "Europa zögert bei KI — und die meisten wissen nicht, was sie selbst dagegen tun könnten.",
+    manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
+
 
     manifesto_ai_eu: "KI für Europa heißt: Europäer:innen werden Macher:innen — nicht nur Konsument:innen — von KI.",
     tr_eyebrow: "Was sich verändert",
@@ -657,9 +661,11 @@ window.LOCALES = {
     event_share_copied: "Link kopiert!",
     past_events_intro: "KI-Kompetenz entsteht schneller an einem Esstisch als in noch einem Online-Kurs. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
 
-    plan_eyebrow: "Erprobtes Format",
+    plan_eyebrow: "Wie der Abend abläuft",
 
-    plan_h2: "Struktur, wo sie zählt. Offenheit, wo sie wirkt.",
+
+    plan_h2: "Methode zuerst. Dann die Frage.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Methode",
@@ -700,7 +706,8 @@ window.LOCALES = {
     hero_strapline: "On ne comprend vraiment l'IA qu'après l'avoir construite soi-même.",
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -735,9 +742,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Actuellement Munich & Berlin. Paris, Bruxelles, Vienne, Londres (?), Stockholm, Milan, Hambourg, Madrid : <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">écris-nous</a> — on planifiera ensemble.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -1029,7 +1038,8 @@ window.LOCALES = {
     hero_strapline: "Solo entiendes realmente la IA cuando la has construido tú mismo.",
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -1064,9 +1074,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Actualmente Múnich y Berlín. París, Bruselas, Viena, Londres (?), Estocolmo, Milán, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escríbenos</a> — lo planeamos juntos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -1358,7 +1370,8 @@ window.LOCALES = {
     hero_strapline: "Capisci davvero l'IA solo quando l'hai costruita tu stesso.",
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -1393,9 +1406,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Attualmente Monaco & Berlino. Parigi, Bruxelles, Vienna, Londra (?), Stoccolma, Milano, Amburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrivici</a> — lo pianifichiamo insieme.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -1687,7 +1702,8 @@ window.LOCALES = {
     hero_strapline: "Só entendes a IA quando a construíste tu próprio.",
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -1722,9 +1738,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Atualmente Munique e Berlim. Paris, Bruxelas, Viena, Londres (?), Estocolmo, Milão, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escreve-nos</a> — planeamos juntos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -2016,7 +2034,8 @@ window.LOCALES = {
     hero_strapline: "Je begrijpt AI pas echt als je het zelf hebt gebouwd.",
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -2051,9 +2070,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Op dit moment München & Berlijn. Parijs, Brussel, Wenen, Londen (?), Stockholm, Milaan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">schrijf ons</a> — we plannen het samen.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -2345,7 +2366,8 @@ window.LOCALES = {
     hero_strapline: "Naprawdę rozumiesz AI dopiero, gdy sam ją zbudowałeś.",
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -2380,9 +2402,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktualnie Monachium i Berlin. Paryż, Bruksela, Wiedeń, Londyn (?), Sztokholm, Mediolan, Hamburg, Madryt: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napisz do nas</a> — zaplanujemy razem.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -2670,7 +2694,8 @@ window.LOCALES = {
     hero_strapline: "Înțelegi cu adevărat AI doar după ce o construiești tu însuți.",
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -2705,9 +2730,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Momentan München și Berlin. Paris, Bruxelles, Viena, Londra (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrie-ne</a> — planificăm împreună.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -2995,7 +3022,8 @@ window.LOCALES = {
     hero_strapline: "Du förstår AI på riktigt först när du har byggt det själv.",
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -3030,9 +3058,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Just nu München & Berlin. Paris, Bryssel, Wien, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv till oss</a> — vi planerar tillsammans.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -3320,7 +3350,8 @@ window.LOCALES = {
     hero_strapline: "AI opravdu pochopíš, až když si ji sám postavíš.",
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -3355,9 +3386,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktuálně Mnichov a Berlín. Paříž, Brusel, Vídeň, Londýn (?), Stockholm, Milán, Hamburk, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiš nám</a> — naplánujeme to společně.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -3645,7 +3678,8 @@ window.LOCALES = {
     hero_strapline: "Csak akkor érted meg igazán az AI-t, ha magad építetted.",
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -3680,9 +3714,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Jelenleg München és Berlin. Párizs, Brüsszel, Bécs, London (?), Stockholm, Milánó, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">írj nekünk</a> — együtt megtervezzük.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -3970,7 +4006,8 @@ window.LOCALES = {
     hero_strapline: "AI naozaj pochopíš, až keď si ju sám postavíš.",
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -4005,9 +4042,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Aktuálne Mníchov a Berlín. Paríž, Brusel, Viedeň, Londýn (?), Štokholm, Miláno, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napíš nám</a> — naplánujeme to spolu.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -4295,7 +4334,8 @@ window.LOCALES = {
     hero_strapline: "Истински разбираш ИИ едва когато сам си го изградил.",
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -4330,9 +4370,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "В момента Мюнхен и Берлин. Париж, Брюксел, Виена, Лондон (?), Стокхолм, Милано, Хамбург, Мадрид: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">пиши ни</a> — ще планираме заедно.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -4620,7 +4662,8 @@ window.LOCALES = {
     hero_strapline: "Du forstår først AI rigtigt, når du selv har bygget det.",
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -4655,9 +4698,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Lige nu München & Berlin. Paris, Bruxelles, Wien, London (?), Stockholm, Milano, Hamborg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv til os</a> — vi planlægger det sammen.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -4945,7 +4990,8 @@ window.LOCALES = {
     hero_strapline: "Ymmärrät tekoälyä todella vasta, kun olet rakentanut sen itse.",
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -4980,9 +5026,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Tällä hetkellä München & Berliini. Pariisi, Bryssel, Wien, Lontoo (?), Tukholma, Milano, Hampuri, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjoita meille</a> — suunnittelemme yhdessä.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -5270,7 +5318,8 @@ window.LOCALES = {
     hero_strapline: "AI uistinu razumiješ tek kad si ga sam izgradio.",
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -5305,9 +5354,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Trenutno München i Berlin. Pariz, Bruxelles, Beč, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiši nam</a> — planirat ćemo zajedno.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -5595,7 +5646,8 @@ window.LOCALES = {
     hero_strapline: "Πραγματικά καταλαβαίνεις την AI μόνο όταν την έχεις χτίσει ο ίδιος.",
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -5630,9 +5682,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Αυτή τη στιγμή Μόναχο και Βερολίνο. Παρίσι, Βρυξέλλες, Βιέννη, Λονδίνο (?), Στοκχόλμη, Μιλάνο, Αμβούργο, Μαδρίτη: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">γράψε μας</a> — θα το σχεδιάσουμε μαζί.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -5920,7 +5974,8 @@ window.LOCALES = {
     hero_strapline: "Dirbtinį intelektą iš tikrųjų supranti tik tada, kai jį pats sukūrei.",
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -5955,9 +6010,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Šiuo metu Miunchenas ir Berlynas. Paryžius, Briuselis, Viena, Londonas (?), Stokholmas, Milanas, Hamburgas, Madridas: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">parašyk mums</a> — suplanuosime kartu.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -6245,7 +6302,8 @@ window.LOCALES = {
     hero_strapline: "Tu patiesi saproti MI tikai tad, kad esi to pats uzbūvējis.",
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -6280,9 +6338,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Pašlaik Minhene un Berlīne. Parīze, Brisele, Vīne, Londona (?), Stokholma, Milāna, Hamburga, Madride: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">raksti mums</a> — saplānosim kopā.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -6570,7 +6630,8 @@ window.LOCALES = {
     hero_strapline: "Sa mõistad AI-d tegelikult alles siis, kui oled selle ise ehitanud.",
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -6605,9 +6666,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Praegu München ja Berliin. Pariis, Brüssel, Viin, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjuta meile</a> — planeerime koos.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -6895,7 +6958,8 @@ window.LOCALES = {
     hero_strapline: "UI zares razumeš šele takrat, ko si ga sam zgradil.",
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -6930,9 +6994,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Trenutno München in Berlin. Pariz, Bruselj, Dunaj, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">piši nam</a> — načrtovali bomo skupaj.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -7220,7 +7286,8 @@ window.LOCALES = {
     hero_strapline: "Tifhem l-AI tassew biss meta bnejtha int stess.",
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -7255,9 +7322,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Bħalissa München u Berlin. Pariġi, Brussell, Vjenna, Londra (?), Stokkolma, Milan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">iktbilna</a> — nippjanawh flimkien.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
@@ -7545,7 +7614,8 @@ window.LOCALES = {
     hero_strapline: "Ní thuigeann tú AI go fírinneach go dtí go bhfuil tú féin tar éis é a thógáil.",
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
-    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+
 
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
@@ -7580,9 +7650,11 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Faoi láthair München & Beirlín. Páras, an Bhruiséil, Vín, Londain (?), Stócólm, Milano, Hamburg, Maidrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scríobh chugainn</a> — déanfaimid pleanáil le chéile.",
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
-    plan_eyebrow: "Considered format",
+    plan_eyebrow: "How the evening works",
 
-    plan_h2: "Structure where it counts. Openness where it works.",
+
+    plan_h2: "Method first. Then the question.",
+
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
