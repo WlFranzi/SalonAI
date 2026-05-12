@@ -66,7 +66,7 @@ window.LOCALES = {
     host_own_desc: "For friends, founders, communities, and private circles.",
     host_own_geo: "Currently Munich & Berlin. Paris, Brussels, Vienna, London (?), Stockholm, Milan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">write to us</a> — we'll plan it together.",
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -404,7 +404,7 @@ window.LOCALES = {
     host_own_desc: "Für Freunde, Gründer:innen, Communities und private Kreise.",
     host_own_geo: "Aktuell München & Berlin. Paris, Brüssel, Wien, London (?), Stockholm, Mailand, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">schreibt uns</a>, dann planen wir's gemeinsam.",
     host_own_btn: "Eigenen Abend ausrichten →",
-    host_own_fine: "Ab 149€ pro Gast, inklusive Dinner und Location.",
+    host_own_fine: "Dinner und Location inklusive.",
     corp_h3: "Organisationen und Teams",
     corp_desc: "Für Firmen, Vorstände, Stiftungen und Führungskreise.",
     corp_btn: "Anfrage senden →",
@@ -769,7 +769,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -1101,7 +1101,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -1433,7 +1433,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -1765,7 +1765,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -2097,7 +2097,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -2429,7 +2429,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -2757,7 +2757,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -3085,7 +3085,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -3413,7 +3413,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -3741,7 +3741,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -4069,7 +4069,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -4397,7 +4397,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -4725,7 +4725,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -5053,7 +5053,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -5381,7 +5381,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -5709,7 +5709,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -6037,7 +6037,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -6365,7 +6365,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -6693,7 +6693,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -7021,7 +7021,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -7349,7 +7349,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
@@ -7677,7 +7677,7 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Starting at €149 per guest, including dinner and venue.",
+    host_own_fine: "Dinner and venue included.",
     corp_h3: "Organizations & teams",
     corp_desc: "For companies, boards, foundations, and leadership groups.",
     corp_btn: "Send inquiry →",
