@@ -31,6 +31,7 @@ window.LOCALES = {
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
     manifesto_lede: "Europe doesn't look especially bold right now. We're falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don't even feel European — they feel like they just happen to be here.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "That's exactly why Salon AI exists. Three things happen in one evening:",
     manifesto_item1: "We build AI hands-on — not the simple everyday tricks, but agents, automations and the things with real leverage. Because the only way to know where you and your team really stand on AI is to have built it yourself.",
     manifesto_item_apply: "Then we point the agents straight at the evening's question. What's possible? Where do you start? What would be truly European?",
@@ -185,7 +186,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play. I'm joining the next one.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Last public dinner. From June on, Salon AI only happens when you bring your own group (12+) — team, friends, foundation, politics, your call.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
     event_share: "Share event",
     event_share_title: "Salon AI Dinner — Munich",
@@ -212,6 +214,7 @@ window.LOCALES = {
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
     manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
+    manifesto_ai_eu: "KI für Europa heißt: Europäer:innen werden Macher:innen — nicht nur Konsument:innen — von KI.",
     manifesto_bridge: "Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:",
     manifesto_item1: "Wir bauen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben.",
     manifesto_item_apply: "Dann richten wir die Agenten direkt auf die Abendfrage. Was geht? Wo fängst du an? Was wäre wirklich europäisch?",
@@ -366,7 +369,8 @@ window.LOCALES = {
     march_footer_back: "← Zurück zu Salon AI",
     past_events_quote: "\"Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude. Beim nächsten bin ich wieder dabei.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Letztes öffentliches Dinner. Ab Juni gibt's Salon AI nur noch, wenn du selbst eine Gruppe (12+) mitbringst — Team, Freunde, Stiftung, Politik, egal.",
+    event_last_public: "Öffentliche Salons werden seltener — wir öffnen mehr Plätze für kuratierte Privat-Abende mit Teams und Communities.",
+
     add_to_calendar: "In Kalender speichern",
     event_share: "Event teilen",
     event_share_title: "Salon AI Dinner — München",
@@ -393,6 +397,7 @@ window.LOCALES = {
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
     manifesto_lede: "L'Europe n'a pas l'air particulièrement audacieuse en ce moment. Nous sommes à la traîne sur l'IA, et quand on demande ce que l'on peut soi-même faire pour l'Europe, la réponse la plus fréquente est un haussement d'épaules. La plupart des gens sur ce continent ne se sentent même pas européens — ils ont l'impression d'être ici juste par hasard.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "C'est précisément pourquoi Salon AI existe. Trois choses se passent en une soirée :",
     manifesto_item1: "Nous apprenons l'IA en pratique — pas les petits trucs du quotidien, mais les agents, les automatisations et tout ce qui a un vrai effet de levier. Car la seule façon de savoir où vous et votre équipe en êtes vraiment avec l'IA, c'est de l'avoir construite vous-même.",
     manifesto_item_apply: "Ensuite, on dirige les agents directement sur la question du soir. Qu'est-ce qui est possible ? Par où commences-tu ? Qu'est-ce qui serait vraiment européen ?",
@@ -546,7 +551,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rare de trouver un format avec autant de rigueur intellectuelle et de véritable jeu. Je serai du prochain.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Dernier dîner public. À partir de juin, Salon AI n'a lieu que si tu amènes ton propre groupe (12+) — équipe, amis, fondation, politique, peu importe.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -568,6 +574,7 @@ window.LOCALES = {
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europa no parece especialmente audaz en este momento. Vamos a la zaga en IA, y cuando preguntas qué puede uno mismo hacer por Europa, la respuesta más común es un encogimiento de hombros. La mayoría de las personas en este continente ni siquiera se sienten europeas — sienten que están aquí por pura casualidad.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Por eso existe Salon AI. En una sola velada ocurren tres cosas:",
     manifesto_item1: "Aprendemos IA con las manos — no los trucos sencillos del día a día, sino agentes, automatizaciones y todo lo que tiene un efecto real. Porque la única forma de saber dónde estáis tú y tu equipo realmente con la IA es haberla construido tú mismo.",
     manifesto_item_apply: "Luego dirigimos los agentes directamente a la pregunta de la velada. ¿Qué se puede? ¿Por dónde empiezas? ¿Qué sería verdaderamente europeo?",
@@ -721,7 +728,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro encontrar un formato con tanto rigor intelectual y juego genuino. Estaré en el próximo.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Última cena pública. A partir de junio, Salon AI solo ocurre cuando traes tu propio grupo (12+) — equipo, amigos, fundación, política, lo que sea.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -743,6 +751,7 @@ window.LOCALES = {
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "L'Europa non sembra particolarmente coraggiosa in questo momento. Siamo in ritardo sull'IA, e quando chiedi cosa si possa fare in prima persona per l'Europa, la risposta più frequente è un'alzata di spalle. La maggior parte delle persone in questo continente non si sente nemmeno europea — si sente come se fosse qui solo per caso.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Proprio per questo esiste Salon AI. In una sola serata succedono tre cose:",
     manifesto_item1: "Impariamo l'IA con le mani — non i piccoli trucchi quotidiani, ma agenti, automazioni e tutto ciò che ha una leva reale. Perché l'unico modo di sapere dove tu e il tuo team siete davvero con l'IA è averla costruita tu stesso.",
     manifesto_item_apply: "Poi puntiamo gli agenti direttamente sulla domanda della serata. Cosa è possibile? Da dove inizi? Cosa sarebbe davvero europeo?",
@@ -896,7 +905,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro trovare un formato con tanto rigore intellettuale e gioco autentico. Al prossimo ci sarò di nuovo.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Ultima cena pubblica. Da giugno, Salon AI si svolge solo se porti il tuo gruppo (12+) — team, amici, fondazione, politica, a tua scelta.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -918,6 +928,7 @@ window.LOCALES = {
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "A Europa não parece particularmente arrojada neste momento. Estamos atrasados na IA, e quando se pergunta o que se pode fazer pessoalmente pela Europa, a resposta mais comum é um encolher de ombros. A maioria das pessoas neste continente nem sequer se sente europeia — sentem que estão aqui apenas por acaso.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "É precisamente por isso que existe o Salon AI. Numa só noite acontecem três coisas:",
     manifesto_item1: "Aprendemos IA com as mãos — não os truques simples do dia a dia, mas agentes, automatizações e o que tem alavanca real. Porque a única forma de saber onde você e a sua equipa realmente estão com a IA é tê-la construído você mesmo.",
     manifesto_item_apply: "Depois apontamos os agentes diretamente para a pergunta da noite. O que é possível? Por onde começas? O que seria verdadeiramente europeu?",
@@ -1071,7 +1082,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro encontrar um formato com tanto rigor intelectual e jogo genuíno. Estarei na próxima.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Último jantar público. A partir de junho, o Salon AI só acontece se trouxeres o teu próprio grupo (12+) — equipa, amigos, fundação, política, à tua escolha.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1093,6 +1105,7 @@ window.LOCALES = {
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
     manifesto_lede: "Europa lijkt op dit moment niet bijzonder moedig. Bij AI lopen we achter, en als je vraagt wat je zelf voor Europa kunt doen, krijg je meestal een schouderophalen. De meeste mensen op dit continent voelen zich niet eens Europees — ze voelen zich alsof ze hier toevallig zijn.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Daarom bestaat Salon AI. Op één avond gebeuren drie dingen:",
     manifesto_item1: "We leren AI hands-on — niet de simpele dagelijkse trucs, maar agents, automatisering en het werk dat echt hefboomkracht heeft. Want de enige manier om te weten waar jij en je team echt staan met AI, is het zelf te hebben gebouwd.",
     manifesto_item_apply: "Daarna richten we de agents direct op de vraag van de avond. Wat kan? Waar begin je? Wat zou écht Europees zijn?",
@@ -1246,7 +1259,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Zelden een format met zoveel intellectuele scherpte en echt spel. Bij de volgende ben ik er weer bij.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Laatste openbare diner. Vanaf juni vindt Salon AI alleen plaats als je je eigen groep meebrengt (12+) — team, vrienden, stichting, politiek, jij beslist.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1268,6 +1282,7 @@ window.LOCALES = {
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
     manifesto_lede: "Europa nie sprawia teraz wrażenia szczególnie odważnej. W AI jesteśmy w tyle, a kiedy pytasz, co sam możesz zrobić dla Europy, najczęstszą odpowiedzią jest wzruszenie ramionami. Większość ludzi na tym kontynencie nie czuje się nawet po europejsku — czują się tak, jakby znaleźli się tu zupełnie przez przypadek.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Właśnie dlatego istnieje Salon AI. W ciągu jednego wieczoru dzieją się trzy rzeczy:",
     manifesto_item1: "Uczymy się AI z pierwszej ręki — nie proste sztuczki na co dzień, ale agenty, automatyzacje i to, co naprawdę ma efekt dźwigni. Bo jedyny sposób, by wiedzieć, gdzie ty i twój zespół naprawdę jesteście z AI, to samodzielnie coś zbudować.",
     manifesto_item_apply: "Potem kierujemy agentów bezpośrednio na pytanie wieczoru. Co jest możliwe? Od czego zaczynasz? Co byłoby naprawdę europejskie?",
@@ -1421,7 +1436,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rzadko spotyka się format o takiej intelektualnej głębi i prawdziwej radości tworzenia. Na kolejnym znów będę.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Ostatnia otwarta kolacja. Od czerwca Salon AI odbywa się tylko, gdy przyprowadzisz własną grupę (12+) — zespół, przyjaciele, fundacja, polityka, dowolnie.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1439,6 +1455,7 @@ window.LOCALES = {
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europa nu pare deosebit de îndrăzneață în acest moment. La AI suntem în urmă, iar când întrebi ce poți face tu însuți pentru Europa, cel mai frecvent răspuns este o ridicare din umeri. Majoritatea oamenilor de pe acest continent nu se simt nici măcar europeni — simt că sunt aici pur și simplu din întâmplare.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Tocmai de aceea există Salon AI. Într-o singură seară se întâmplă trei lucruri:",
     manifesto_item1: "Învățăm AI pe pielea noastră — nu trucurile simple de zi cu zi, ci agenți, automatizări și lucrurile cu pârghie reală. Pentru că singura modalitate de a ști unde te afli tu și echipa ta cu AI este să o fi construit tu însuți.",
     manifesto_item_apply: "Apoi îndreptăm agenții direct spre întrebarea serii. Ce e posibil? De unde începi? Ce ar fi cu adevărat european?",
@@ -1592,7 +1609,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rar găsești un format cu atâta rigoare intelectuală și joc autentic. La următorul voi fi din nou.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Ultima cină publică. Din iunie, Salon AI are loc doar dacă îți aduci propriul grup (12+) — echipă, prieteni, fundație, politică, cum vrei tu.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1610,6 +1628,7 @@ window.LOCALES = {
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
     manifesto_lede: "Europa ser inte särskilt djärvt ut just nu. På AI släpar vi efter, och när man frågar vad man själv kan göra för Europa möts man oftast av en axelryckning. De flesta människor på den här kontinenten känner sig inte ens europeiska — de känner att de bara råkar finnas här.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Just därför finns Salon AI. På en kväll händer tre saker:",
     manifesto_item1: "Vi lär oss AI hands-on — inte de enkla vardagstricken, utan agenter, automatisering och det som har riktig hävstångseffekt. För det enda sättet att veta var du och ditt team verkligen står med AI är att ha byggt något själv.",
     manifesto_item_apply: "Sen riktar vi agenterna direkt mot kvällens fråga. Vad är möjligt? Var börjar du? Vad vore verkligen europeiskt?",
@@ -1763,7 +1782,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Sällan ett format med så mycket intellektuell skärpa och äkta lek. Nästa gång är jag med igen.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Sista offentliga middagen. Från juni: Salon AI sker bara när du tar med din egen grupp (12+) — team, vänner, stiftelse, politik, du väljer.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1781,6 +1801,7 @@ window.LOCALES = {
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Evropa právě teď nepůsobí zvlášť odvážně. V AI zaostáváme, a když se ptáš, co můžeš sám pro Evropu udělat, nejčastější odpovědí bývá pokrčení rameny. Většina lidí na tomto kontinentu se ani necítí jako Evropané — mají pocit, že tu jsou jen náhodou.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Právě proto existuje Salon AI. Během jednoho večera se dějí tři věci:",
     manifesto_item1: "Učíme se AI z první ruky — ne jednoduché každodenní triky, ale agenty, automatizace a věci se skutečnou pákou. Protože jediný způsob, jak zjistit, kde vy a váš tým s AI skutečně stojíte, je něco si sám postavit.",
     manifesto_item_apply: "Pak nasměrujeme agenty přímo na otázku večera. Co jde? Kde začneš? Co by bylo opravdu evropské?",
@@ -1934,7 +1955,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Vzácně najdete formát s takovou intelektuální hloubkou a opravdovou hravostí. Příště budu zase u toho.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Poslední veřejná večeře. Od června se Salon AI koná, jen když si přivedeš vlastní skupinu (12+) — tým, přátelé, nadace, politika, jak chceš.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -1952,6 +1974,7 @@ window.LOCALES = {
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Európa most nem tűnik túl bátornak. A mesterséges intelligenciában lemaradunk, és amikor megkérdezed, mit tehetsz te magad Európáért, a leggyakoribb válasz egy vállrándítás. A legtöbben ezen a kontinensen nem is érzik magukat európainak — úgy érzik, csak véletlenül vannak itt.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Pontosan ezért létezik a Salon AI. Egy estén három dolog történik:",
     manifesto_item1: "Hands-on tanuljuk a mesterséges intelligenciát — nem a hétköznapi trükköket, hanem ügynököket, automatizálásokat és a valódi tőkéerőt jelentő dolgokat. Mert csak akkor tudod, hol állsz te és a csapatod az MI-vel, ha magad is építettél valamit.",
     manifesto_item_apply: "Aztán az ágenseket egyenesen az este kérdésére irányítjuk. Mi lehetséges? Hol kezded? Mi volna igazán európai?",
@@ -2105,7 +2128,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Ritka formátum ennyi intellektuális szigorral és valódi játékkal. A következőn újra ott leszek.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Az utolsó nyilvános vacsora. Júniustól a Salon AI csak akkor jön létre, ha hozod a saját csoportodat (12+) — csapat, barátok, alapítvány, politika, ahogy tetszik.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2123,6 +2147,7 @@ window.LOCALES = {
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Európa práve teraz nepôsobí zvlášť odvážne. V AI zaostávame, a keď sa pýtaš, čo môžeš sám pre Európu urobiť, najčastejšou odpoveďou je pokrčenie ramien. Väčšina ľudí na tomto kontinente sa ani necíti ako Európania — majú pocit, že sú tu iba náhodou.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Práve preto existuje Salon AI. Počas jedného večera sa dejú tri veci:",
     manifesto_item1: "Učíme sa AI z prvej ruky — nie jednoduché každodenné triky, ale agentov, automatizácie a veci so skutočnou pákou. Pretože jediný spôsob, ako zistiť, kde vy a váš tím s AI skutočne stojíte, je niečo si sám postaviť.",
     manifesto_item_apply: "Potom nasmerujeme agentov priamo na otázku večera. Čo ide? Kde začneš? Čo by bolo skutočne európske?",
@@ -2276,7 +2301,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Zriedka nájdete formát s takou intelektuálnou hĺbkou a skutočnou hravosťou. Nabudúce budem opäť pri tom.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Posledná verejná večera. Od júna sa Salon AI koná, iba keď si privedieš vlastnú skupinu (12+) — tím, priatelia, nadácia, politika, ako chceš.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2294,6 +2320,7 @@ window.LOCALES = {
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Европа в момента не изглежда особено смела. В областта на ИИ изоставаме, а когато попиташ какво сам можеш да направиш за Европа, най-честият отговор е свиване на рамене. Повечето хора на този континент дори не се чувстват европейци — те се чувстват така, сякаш са тук просто случайно.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Именно затова съществува Salon AI. В една вечер се случват три неща:",
     manifesto_item1: "Учим ИИ с ръцете — не простите ежедневни трикове, а агенти, автоматизации и нещата с истински лост. Защото единственият начин да разбереш къде наистина стоите ти и екипът ти с ИИ е да го изградиш сам.",
     manifesto_item_apply: "След това насочваме агентите директно към въпроса на вечерта. Какво е възможно? Откъде започваш? Кое би било наистина европейско?",
@@ -2447,7 +2474,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Рядко се среща формат с такава интелектуална дълбочина и истинска игра. На следващия пак ще съм там.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Последна публична вечеря. От юни Salon AI се случва само ако доведеш своя група (12+) — екип, приятели, фондация, политика, твой избор.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2465,6 +2493,7 @@ window.LOCALES = {
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
     manifesto_lede: "Europa ser ikke særligt dristigt ud lige nu. Vi sakker bagud på AI, og når man spørger, hvad man selv kan gøre for Europa, er det almindeligste svar et skuldertræk. De fleste mennesker på dette kontinent føler sig ikke engang europæiske — de føler, at de bare tilfældigvis er her.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Netop derfor findes Salon AI. På én aften sker tre ting:",
     manifesto_item1: "Vi lærer AI hands-on — ikke de enkle dagligdagstricks, men agenter, automatisering og det, der har reel løftestang. For den eneste måde at vide, hvor du og dit team virkelig står med AI, er at have bygget noget selv.",
     manifesto_item_apply: "Så retter vi agenterne direkte mod aftenens spørgsmål. Hvad er muligt? Hvor begynder du? Hvad ville være rigtigt europæisk?",
@@ -2618,7 +2647,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Sjældent et format med så meget intellektuel skarphed og ægte leg. Næste gang er jeg med igen.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Sidste offentlige middag. Fra juni: Salon AI sker kun, når du tager din egen gruppe med (12+) — team, venner, fond, politik, du bestemmer.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2636,6 +2666,7 @@ window.LOCALES = {
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
     manifesto_lede: "Eurooppa ei näytä juuri nyt erityisen rohkealta. Tekoälyssä jäämme jälkeen, ja kun kysytään, mitä itse voit tehdä Euroopan hyväksi, yleisin vastaus on olankohautus. Useimmat ihmiset tällä mantereella eivät edes tunne itseään eurooppalaisiksi — he tuntevat olevansa täällä vain sattumalta.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Juuri siksi Salon AI on olemassa. Yhden illan aikana tapahtuu kolme asiaa:",
     manifesto_item1: "Opimme tekoälyä käytännössä — emme arkisia temppuja, vaan agentteja, automaatioita ja sitä, jolla on todellista vipuvoimaa. Sillä ainoa tapa tietää, missä sinä ja tiimisi todella olette tekoälyssä, on rakentaa jotain itse.",
     manifesto_item_apply: "Sitten suuntaamme agentit suoraan illan kysymykseen. Mikä on mahdollista? Mistä aloitat? Mikä olisi todella eurooppalaista?",
@@ -2789,7 +2820,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Harvinaista löytää formaatti, jossa on tällaista älyllistä syvyyttä ja aitoa leikkimielisyyttä. Seuraavalla kerralla olen taas mukana.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Viimeinen julkinen illallinen. Kesäkuusta lähtien Salon AI järjestetään vain, kun tuot oman ryhmäsi (12+) — tiimi, ystävät, säätiö, politiikka, miten haluat.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2807,6 +2839,7 @@ window.LOCALES = {
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europa upravo sada ne djeluje osobito odvažno. U AI-ju zaostajemo, a kada netko pita što sami možete učiniti za Europu, najčešći je odgovor slijeganje ramenima. Većina ljudi na ovom kontinentu se ni ne osjeća europski — osjećaju se kao da su ovdje tek slučajno.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Upravo zato postoji Salon AI. U jednoj večeri događaju se tri stvari:",
     manifesto_item1: "Učimo AI iz prve ruke — ne jednostavne svakodnevne trikove, već agente, automatizacije i ono što ima pravu polugu. Jer jedini način da saznaš gdje vi i vaš tim doista stojite s AI-jem jest da ga sami izgradite.",
     manifesto_item_apply: "Zatim usmjeravamo agente izravno na pitanje večeri. Što je moguće? Gdje počinješ? Što bi bilo zaista europsko?",
@@ -2960,7 +2993,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rijetko ćete pronaći format s ovakvom intelektualnom dubinom i istinskom igrom. Na sljedećem sam opet.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Posljednja javna večera. Od lipnja Salon AI se događa samo ako dovedeš vlastitu grupu (12+) — tim, prijatelji, zaklada, politika, kako želiš.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -2978,6 +3012,7 @@ window.LOCALES = {
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Η Ευρώπη αυτή τη στιγμή δεν δείχνει ιδιαίτερα τολμηρή. Στην Τεχνητή Νοημοσύνη μένουμε πίσω, και όταν ρωτάς τι μπορείς ο ίδιος να κάνεις για την Ευρώπη, η συνηθέστερη απάντηση είναι ένα ανασήκωμα ώμων. Οι περισσότεροι άνθρωποι σε αυτή την ήπειρο δεν αισθάνονται καν Ευρωπαίοι — αισθάνονται ότι βρίσκονται εδώ απλώς τυχαία.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Ακριβώς γι' αυτό υπάρχει το Salon AI. Σε μια βραδιά συμβαίνουν τρία πράγματα:",
     manifesto_item1: "Μαθαίνουμε ΤΝ από πρώτο χέρι — όχι τα απλά καθημερινά κόλπα, αλλά πράκτορες, αυτοματισμούς και ό,τι έχει πραγματικό μοχλό. Γιατί ο μόνος τρόπος να ξέρεις πού πραγματικά είστε εσύ και η ομάδα σου με την ΤΝ είναι να την έχεις φτιάξει ο ίδιος.",
     manifesto_item_apply: "Μετά κατευθύνουμε τους agents απευθείας στην ερώτηση της βραδιάς. Τι είναι εφικτό; Από πού αρχίζεις; Τι θα ήταν πραγματικά ευρωπαϊκό;",
@@ -3131,7 +3166,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Σπάνια βρίσκεις φόρμα με τέτοια διανοητική αυστηρότητα και αληθινό παιχνίδι. Στο επόμενο θα είμαι ξανά.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Τελευταίο δημόσιο δείπνο. Από τον Ιούνιο, το Salon AI γίνεται μόνο όταν φέρεις τη δική σου ομάδα (12+) — ομάδα, φίλοι, ίδρυμα, πολιτική, ό,τι θες.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -3149,6 +3185,7 @@ window.LOCALES = {
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europa šiuo metu neatrodo ypač drąsi. DI srityje atsiliekame, o kai paklausi, ką pats gali padaryti dėl Europos, dažniausias atsakymas yra pečių gūžtelėjimas. Dauguma žmonių šiame žemyne net nesijaučia europiečiais — jie jaučiasi taip, lyg čia atsidūrę visiškai atsitiktinai.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Būtent todėl egzistuoja Salon AI. Per vieną vakarą nutinka trys dalykai:",
     manifesto_item1: "Mokomės DI praktiškai — ne paprastų kasdienių gudrybių, o agentų, automatizacijų ir to, kas turi tikrą svertą. Nes vienintelis būdas sužinoti, kur jūs ir jūsų komanda iš tikrųjų esate su DI, yra patiems ką nors sukurti.",
     manifesto_item_apply: "Tada nukreipiame agentus tiesiai į vakaro klausimą. Kas įmanoma? Nuo ko pradedi? Kas būtų tikrai europietiška?",
@@ -3302,7 +3339,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Retai sutiksi formatą su tokiu intelektualiniu rimtumu ir tikru žaidimu. Kitame vėl būsiu.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Paskutinė vieša vakarienė. Nuo birželio Salon AI vyksta tik tada, kai atsivedi savo grupę (12+) — komanda, draugai, fondas, politika, kaip nori.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -3320,6 +3358,7 @@ window.LOCALES = {
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Eiropa pašlaik neizskatās īpaši drosmīga. MI jomā mēs atpaliekam, un, kad jautā, ko pats vari darīt Eiropas labā, biežākā atbilde ir plecu paraustīšana. Vairākums cilvēku šajā kontinentā pat nejūtas kā eiropieši — viņi jūtas, it kā šeit būtu tikai nejauši.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Tieši tāpēc pastāv Salon AI. Vienā vakarā notiek trīs lietas:",
     manifesto_item1: "Mēs mācāmies MI praktiski — ne ikdienišķos trikus, bet aģentus, automatizāciju un to, kam ir īsts svira. Jo vienīgais veids, kā uzzināt, kur jūs un jūsu komanda patiešām atrodaties ar MI, ir pašiem to izveidot.",
     manifesto_item_apply: "Pēc tam vēršam aģentus tieši uz vakara jautājumu. Kas ir iespējams? No kā tu sāc? Kas būtu patiesi eiropeisks?",
@@ -3473,7 +3512,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Reti sastapsies ar formātu, kurā ir tik daudz intelektuālā dziļuma un patiesas spēles. Nākamajā atkal būšu klāt.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Pēdējās publiskās vakariņas. No jūnija Salon AI notiek tikai tad, ja atved savu grupu (12+) — komanda, draugi, fonds, politika, kā vēlies.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -3491,6 +3531,7 @@ window.LOCALES = {
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
     manifesto_lede: "Euroopa praegu eriti julge ei tundu. TI-s jääme maha, ja kui küsida, mida sa ise saaks Euroopa heaks teha, on kõige sagedasem vastus õlakehitus. Enamik inimesi sellel mandril ei tunne end isegi eurooplastena — nad tunnevad, et nad on lihtsalt juhuslikult siin.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Just seetõttu Salon AI eksisteerib. Ühe õhtu jooksul juhtub kolm asja:",
     manifesto_item1: "Õpime TI-d praktiliselt — mitte lihtsaid igapäevaseid nippe, vaid agente, automatiseerimisi ja seda, millel on tõeline võimendus. Sest ainus viis teada saada, kus sina ja su meeskond TI-ga tegelikult olete, on see ise üles ehitada.",
     manifesto_item_apply: "Siis suuname agendid otse õhtu küsimusele. Mis on võimalik? Kust sa alustad? Mis oleks tõeliselt euroopalik?",
@@ -3644,7 +3685,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Harva näeb formaati, kus on nii palju intellektuaalset sügavust ja tõelist mängu. Järgmisel olen jälle kohal.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Viimane avalik õhtusöök. Juunist alates toimub Salon AI ainult siis, kui tood oma grupi (12+) — meeskond, sõbrad, fond, poliitika, sinu valik.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -3662,6 +3704,7 @@ window.LOCALES = {
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Evropa trenutno ne deluje posebej drzno. Pri umetni inteligenci zaostajamo, in ko vprašaš, kaj lahko sam storiš za Evropo, je najpogostejši odgovor skomig z rameni. Večina ljudi na tej celini se sploh ne počuti Evropejcev — počutijo se, kot da so tu povsem po naključju.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Prav zato obstaja Salon AI. V enem večeru se zgodijo tri stvari:",
     manifesto_item1: "Učimo se UI iz prve roke — ne preprostih vsakodnevnih trikov, ampak agentov, avtomatizacij in stvari z resničnim vzvodom. Saj je edini način, da ugotoviš, kje sta ti in tvoja ekipa z UI v resnici, da jo zgradiš sam.",
     manifesto_item_apply: "Nato usmerimo agente neposredno na vprašanje večera. Kaj je možno? Kje začneš? Kaj bi bilo res evropsko?",
@@ -3815,7 +3858,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Redko najdeš format s tako intelektualno ostrino in pristnim igranjem. Naslednjič sem spet zraven.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 Zadnja javna večerja. Od junija se Salon AI zgodi le, če pripelješ svojo skupino (12+) — ekipa, prijatelji, fundacija, politika, kakor želiš.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -3833,6 +3877,7 @@ window.LOCALES = {
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "L-Ewropa bħalissa ma tidhirx partikolarment kuraġġjuża. Fl-AI qed naqgħu lura, u meta titlob lil xi ħadd x'jista' jagħmel hu nnifsu għall-Ewropa, l-aktar tweġiba komuni hija tqanqilet spallejn. Il-biċċa l-kbira tan-nies f'dan il-kontinent lanqas iħossuhom Ewropej — iħossuhom bħallikieku qegħdin hawn b'kumbinazzjoni biss.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Eżattament għalhekk jeżisti s-Salon AI. F'lejla waħda jiġru tliet affarijiet:",
     manifesto_item1: "Nitgħallmu l-AI b'idejna stess — mhux it-tricks sempliċi tal-ġurnata, imma aġenti, awtomatizzazzjonijiet u dawk l-affarijiet li għandhom influwenza vera. Għax l-unika triq biex tkun taf fejn int u t-tim tiegħek tassew tinsabu fl-AI hi li tkun bnejtha int stess.",
     manifesto_item_apply: "Imbagħad nidirieġu l-aġenti dirett lejn il-mistoqsija tas-serata. X'inhu possibbli? Minn fejn tibda? X'jkun verament Ewropew?",
@@ -3986,7 +4031,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rari ssib format b'din it-tip ta' rigoraġġ intellettwali u logħob ġenwin. Fil-ġejjieni se nkun preżenti mill-ġdid.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 L-aħħar ċena pubblika. Minn Ġunju, Salon AI iseħħ biss meta ġġib il-grupp tiegħek (12+) — team, ħbieb, fondazzjoni, politika, kif trid.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
@@ -4004,6 +4050,7 @@ window.LOCALES = {
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
     manifesto_lede: "Ní fheiceann an Eoraip an-dána i láthair na huaire. Táimid ag titim chun deiridh ar an IS, agus nuair a iarrtar cad is féidir leat féin a dhéanamh ar son na hEorpa, is é croitheadh guaillí an freagra is coitianta. Ní bhraitheann an chuid is mó de na daoine ar an mór-roinn seo fiú gur Eorpaigh iad — mothaíonn siad amhail is nach bhfuil siad anseo ach de thaisme.",
+    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     manifesto_bridge: "Sin go díreach an fáth go bhfuil Salon AI ann. Tarlaíonn trí rud in aon oíche amháin:",
     manifesto_item1: "Foghlaimímid IS go praiticiúil — ní hé na cleasanna laethúla simplí, ach gníomhairí, uathoibrithe agus rudaí a bhfuil fíor-ghríosú acu. Mar is é an t-aon bhealach le fáil amach cá bhfuil tú féin agus d'fhoireann i ndáiríre leis an IS, é a thógáil leat féin.",
     manifesto_item_apply: "Ansin díríonn muid na hagents díreach ar cheist na hoíche. Cad is féidir? Cá dtosaíonn tú? Cad a bheadh fíor-Eorpach?",
@@ -4157,7 +4204,8 @@ window.LOCALES = {
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Is annamh formáid leis an oiread déine intleachtúla agus súgartha dáiríre. Beidh mé ann an chéad uair eile.\"",
     past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "🔔 An dinnéar poiblí deireanach. Ó Mheitheamh ar aghaidh, ní tharlaíonn Salon AI ach amháin nuair a thugann tú do ghrúpa féin (12+) — foireann, cairde, fondúireacht, polaitíocht, do rogha.",
+    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+
     add_to_calendar: "Add to calendar",
   },
 
