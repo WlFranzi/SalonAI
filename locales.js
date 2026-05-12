@@ -151,7 +151,8 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "What we built — one example ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -341,8 +342,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play. I'm joining the next one.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -368,14 +371,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -528,7 +533,8 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc: "Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten eine gemeinsame Position zur Zukunft.",
+    feature_desc: "Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten ihre Position zur Zukunft.",
+
 
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -718,8 +724,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy bei Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ Jahre KI bei Amazon, Writer, SoundCloud",
     march_footer_back: "← Zurück zu Salon AI",
-    past_events_quote: "\"Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude. Beim nächsten bin ich wieder dabei.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, Pionier der Faszienforschung",
+    past_events_quote: "\"Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pionier und führende Autorität in der Faszienforschung",
+
 
     event_last_public: "",
 
@@ -745,14 +753,16 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "Eine Sequenz, über mehrere Salon-Abende verfeinert — teils angeleitetes Bauen, teils gemeinsamer Fokus, teils strukturiertes Gespräch. Designed dafür, dich von null zu funktionierendem System zu bringen.",
+    plan_p1_body: "<span class=\"plan-kicker\">Der Rahmen.</span>Eine verfeinerte Sequenz aus angeleitetem Bauen und gemeinsamem Fokus.<br>Wir gehen von null zu einem funktionierenden System durch strukturiertes Handeln.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Frage",
 
 
-    plan_p2_body: "Eine einzelne rahmende Frage. Offen, ungelöst, durch den Raum getragen, während du baust.",
+    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage, die du beim Bauen mitträgst.<br>Absichtlich ungelöst — gelöst durch Tun.",
+
 
 
     scan_1: "Erprobtes Curriculum",
@@ -839,14 +849,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -937,7 +949,8 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Ce que nous avons construit — un exemple ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -1127,8 +1140,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rare de trouver un format avec autant de rigueur intellectuelle et de véritable jeu. Je serai du prochain.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -1209,14 +1224,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -1307,7 +1324,8 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Lo que construimos — un ejemplo ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -1497,8 +1515,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Raro encontrar un formato con tanto rigor intelectual y juego genuino. Estaré en el próximo.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -1579,14 +1599,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -1677,7 +1699,8 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -1867,8 +1890,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Raro trovare un formato con tanto rigore intellettuale e gioco autentico. Al prossimo ci sarò di nuovo.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -1949,14 +1974,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -2047,7 +2074,8 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "O que construímos — um exemplo ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -2237,8 +2265,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Raro encontrar um formato com tanto rigor intelectual e jogo genuíno. Estarei na próxima.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -2319,14 +2349,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -2417,7 +2449,8 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -2607,8 +2640,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Zelden een format met zoveel intellectuele scherpte en echt spel. Bij de volgende ben ik er weer bij.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -2689,14 +2724,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -2787,7 +2824,8 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -2977,8 +3015,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rzadko spotyka się format o takiej intelektualnej głębi i prawdziwej radości tworzenia. Na kolejnym znów będę.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -3055,14 +3095,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -3153,7 +3195,8 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Ce am construit — un exemplu ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -3343,8 +3386,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rar găsești un format cu atâta rigoare intelectuală și joc autentic. La următorul voi fi din nou.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -3421,14 +3466,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -3519,7 +3566,8 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Vad vi byggde — ett exempel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -3709,8 +3757,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Sällan ett format med så mycket intellektuell skärpa och äkta lek. Nästa gång är jag med igen.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -3787,14 +3837,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -3885,7 +3937,8 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Co jsme postavili — jeden příklad ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -4075,8 +4128,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Vzácně najdete formát s takovou intelektuální hloubkou a opravdovou hravostí. Příště budu zase u toho.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -4153,14 +4208,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -4251,7 +4308,8 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Amit építettünk — egy példa ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -4441,8 +4499,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Ritka formátum ennyi intellektuális szigorral és valódi játékkal. A következőn újra ott leszek.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -4519,14 +4579,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -4617,7 +4679,8 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Čo sme postavili — jeden príklad ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -4807,8 +4870,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Zriedka nájdete formát s takou intelektuálnou hĺbkou a skutočnou hravosťou. Nabudúce budem opäť pri tom.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -4885,14 +4950,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -4983,7 +5050,8 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Какво изградихме — един пример ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -5173,8 +5241,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Рядко се среща формат с такава интелектуална дълбочина и истинска игра. На следващия пак ще съм там.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -5251,14 +5321,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -5349,7 +5421,8 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Hvad vi byggede — et eksempel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -5539,8 +5612,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Sjældent et format med så meget intellektuel skarphed og ægte leg. Næste gang er jeg med igen.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -5617,14 +5692,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -5715,7 +5792,8 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -5905,8 +5983,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Harvinaista löytää formaatti, jossa on tällaista älyllistä syvyyttä ja aitoa leikkimielisyyttä. Seuraavalla kerralla olen taas mukana.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -5983,14 +6063,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -6081,7 +6163,8 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Što smo izgradili — jedan primjer ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -6271,8 +6354,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rijetko ćete pronaći format s ovakvom intelektualnom dubinom i istinskom igrom. Na sljedećem sam opet.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -6349,14 +6434,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -6447,7 +6534,8 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -6637,8 +6725,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Σπάνια βρίσκεις φόρμα με τέτοια διανοητική αυστηρότητα και αληθινό παιχνίδι. Στο επόμενο θα είμαι ξανά.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -6715,14 +6805,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -6813,7 +6905,8 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -7003,8 +7096,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Retai sutiksi formatą su tokiu intelektualiniu rimtumu ir tikru žaidimu. Kitame vėl būsiu.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -7081,14 +7176,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -7179,7 +7276,8 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -7369,8 +7467,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Reti sastapsies ar formātu, kurā ir tik daudz intelektuālā dziļuma un patiesas spēles. Nākamajā atkal būšu klāt.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -7447,14 +7547,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -7545,7 +7647,8 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Mida me ehitasime — üks näide ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -7735,8 +7838,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Harva näeb formaati, kus on nii palju intellektuaalset sügavust ja tõelist mängu. Järgmisel olen jälle kohal.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -7813,14 +7918,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -7911,7 +8018,8 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Kar smo zgradili — en primer ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -8101,8 +8209,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Redko najdeš format s tako intelektualno ostrino in pristnim igranjem. Naslednjič sem spet zraven.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -8179,14 +8289,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -8277,7 +8389,8 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -8467,8 +8580,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Rari ssib format b'din it-tip ta' rigoraġġ intellettwali u logħob ġenwin. Fil-ġejjieni se nkun preżenti mill-ġdid.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
@@ -8545,14 +8660,16 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+
 
 
     plan_p2_share: "20%",
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+
 
 
     scan_1: "Considered curriculum",
@@ -8643,7 +8760,8 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+
 
     feature_cta:       "Cad a thógamar — sampla amháin ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
@@ -8833,8 +8951,10 @@ window.LOCALES = {
     march_footer_creative: "<strong>Creative Direction</strong> Tatjana Mallinckrodt · Head of PR &amp; Brand Strategy at Gestalten / teNeues",
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
-    past_events_quote: "\"Is annamh formáid leis an oiread déine intleachtúla agus súgartha dáiríre. Beidh mé ann an chéad uair eile.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
+    past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play.\"",
+
+    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
+
 
     event_last_public: "",
 
