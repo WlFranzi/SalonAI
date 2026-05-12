@@ -189,13 +189,65 @@
 
     /* ── Chapter ── */
     section.chapter { margin: 56px 0 28px; scroll-margin-top: 80px; }
-    .chapter-meta {
+    .chapter-meta,
+    section.chapter > details > summary.chapter-meta-summary {
       display: flex;
       align-items: baseline;
       gap: 16px;
       padding-bottom: 14px;
       border-bottom: 1px solid var(--rule);
       margin-bottom: 28px;
+    }
+
+    /* Collapsible chapter (II / III / IV) */
+    section.chapter > details { margin: 0; }
+    section.chapter > details > summary.chapter-meta-summary {
+      list-style: none;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: 0;
+      padding-right: 6px;
+    }
+    section.chapter > details > summary.chapter-meta-summary::-webkit-details-marker { display: none; }
+    section.chapter > details > summary.chapter-meta-summary:hover { border-bottom-color: var(--accent); }
+    section.chapter > details > summary.chapter-meta-summary::after {
+      content: '+';
+      margin-left: auto;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--accent);
+      line-height: 1;
+      transition: transform 0.2s;
+    }
+    section.chapter > details[open] > summary.chapter-meta-summary::after { content: '−'; }
+    section.chapter > details[open] > summary.chapter-meta-summary { margin-bottom: 28px; }
+
+    /* Drop cap on the lede (editorial signal at the top of the document) */
+    .lede::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4em;
+      float: left;
+      line-height: 0.95;
+      padding: 4px 12px 0 0;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    /* Decorative dingbat divider — used between major sections */
+    .divider-glyph {
+      text-align: center;
+      margin: 56px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--rule);
+      letter-spacing: 16px;
+      line-height: 1;
+      user-select: none;
+    }
+    .divider-glyph::before { content: '§'; }
+    @media (max-width: 600px) {
+      .divider-glyph { margin: 40px 0; }
     }
     .chapter-num {
       font-family: 'Playfair Display', serif;
@@ -471,6 +523,8 @@
     <p class="why-now-close" data-i18n="march_whynow_close">Eine Redesign-Gelegenheit, wie es sie nur einmal pro Generation gibt.</p>
   </section>
 
+  <div class="divider-glyph" aria-hidden="true"></div>
+
 
   <!-- ── PART I — THE ADAPTABLE CITY ──────────────────────────── -->
   <section class="chapter" id="city">
@@ -585,11 +639,12 @@
 
   <!-- ── PART II — MOBILE EUROPE ─────────────────────────────── -->
   <section class="chapter" id="mobility">
-    <div class="chapter-meta">
-      <span class="chapter-num">II.</span>
-      <span class="chapter-title" data-i18n="march_part2_title">Das mobile Europa.</span>
-      <span class="chapter-count" data-i18n="march_part2_count">Zwei Entscheidungen</span>
-    </div>
+    <details>
+      <summary class="chapter-meta-summary">
+        <span class="chapter-num">II.</span>
+        <span class="chapter-title" data-i18n="march_part2_title">Das mobile Europa.</span>
+        <span class="chapter-count" data-i18n="march_part2_count">Zwei Entscheidungen</span>
+      </summary>
 
     <!-- Decision 7: Europe as one campus -->
     <div class="decision">
@@ -624,15 +679,17 @@
         </details>
       </div>
     </div>
+    </details>
   </section>
 
   <!-- ── PART III — CAPABLE STATE ────────────────────────────── -->
   <section class="chapter" id="state">
-    <div class="chapter-meta">
-      <span class="chapter-num">III.</span>
-      <span class="chapter-title" data-i18n="march_part3_title">Der handlungsfähige Staat.</span>
-      <span class="chapter-count" data-i18n="march_part3_count">Drei Entscheidungen</span>
-    </div>
+    <details>
+      <summary class="chapter-meta-summary">
+        <span class="chapter-num">III.</span>
+        <span class="chapter-title" data-i18n="march_part3_title">Der handlungsfähige Staat.</span>
+        <span class="chapter-count" data-i18n="march_part3_count">Drei Entscheidungen</span>
+      </summary>
 
     <!-- Decision 9: AI-assisted bureaucracy -->
     <div class="decision">
@@ -684,15 +741,17 @@
         </details>
       </div>
     </div>
+    </details>
   </section>
 
   <!-- ── PART IV — SOVEREIGN CONTINENT ────────────────────────── -->
   <section class="chapter" id="sovereignty">
-    <div class="chapter-meta">
-      <span class="chapter-num">IV.</span>
-      <span class="chapter-title" data-i18n="march_part4_title">Der souveräne Kontinent.</span>
-      <span class="chapter-count" data-i18n="march_part4_count">Zwei Entscheidungen</span>
-    </div>
+    <details>
+      <summary class="chapter-meta-summary">
+        <span class="chapter-num">IV.</span>
+        <span class="chapter-title" data-i18n="march_part4_title">Der souveräne Kontinent.</span>
+        <span class="chapter-count" data-i18n="march_part4_count">Zwei Entscheidungen</span>
+      </summary>
 
     <!-- Decision 12: European DARPA -->
     <div class="decision">
@@ -727,7 +786,10 @@
         </details>
       </div>
     </div>
+    </details>
   </section>
+
+  <div class="divider-glyph" aria-hidden="true"></div>
 
   <!-- ── WHAT CITIZENS CAN ALREADY DO (reframed tools section as the operational layer) -->
   <section class="chapter" id="werkzeuge">
