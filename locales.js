@@ -26,8 +26,10 @@ window.LOCALES = {
     nav_book_cta: "Reserve a seat · 28 May",
     announcement_html: "🔔 <strong>May 28: Last public Salon AI Dinner.</strong> After that: bring your own group →",
     nav_cta:       "Join a Dinner →",
-    hero_cta:      "Join the Salon →",
-    hero_strapline: "You only really understand AI once you've built it yourself.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -59,18 +61,29 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Currently Munich & Berlin. Paris, Brussels, Vienna, London (?), Stockholm, Milan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">write to us</a> — we'll plan it together.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -96,7 +109,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Event Series",
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
-    hero_h1:       'A hands-on evening: build your own AI assistant, <em>then use it for Europe.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Events",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU event series:</span> Build your own agent and deploy it to create your personal pro-EU action plan <span style="color:var(--muted-blue);font-weight:400;">(examples below)</span>.',
     upcoming:      "Upcoming",
@@ -121,26 +135,41 @@ window.LOCALES = {
     footer_tagline:"Bringing AI literacy to Europeans — one dinner at a time.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stats_eyebrow: "The evening at a glance",
-    stat_1_num:    "1 Evening",
-    stat_1_lbl:    "From zero to a working AI assistant in a single evening",
-    stat_3_num:    "Experts",
-    stat_3_lbl:    "Hands-on guidance while you build — no going it alone",
-    stat_4_num:    "Start without expertise",
-    stat_4_lbl:    "Designed for non-technical decision-makers.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Before",
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc:      "15 people built the website \"Europa 2041\" together in a single evening — built AI assistants, gathered EU ideas, published them.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "What we built — one example ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
+
     past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -313,11 +342,15 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rare to find a format with this kind of intellectual rigour and genuine play. I'm joining the next one.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
-    event_share: "Share event",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
+    event_share: "Share event →",
+
     event_share_title: "Salon AI Dinner — Munich",
     event_share_text: "Salon AI Dinner — 28 May · Luitpoldblock Munich. Build AI hands-on, then apply it to Europe. Dinner & drinks included.",
     event_share_copied: "Link copied!",
@@ -326,18 +359,24 @@ window.LOCALES = {
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -364,8 +403,10 @@ window.LOCALES = {
     nav_book_cta: "Platz reservieren · 28.5",
     announcement_html: "🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →",
     nav_cta:       "An einem Dinner teilnehmen →",
-    hero_cta:      "Zum Salon anmelden →",
-    hero_strapline: "Du verstehst KI erst wirklich, wenn du sie selbst gebaut hast.",
+    hero_cta: "Zum Salon →",
+
+    hero_strapline: "Du verstehst KI nicht wirklich, bis du etwas gebaut hast, das sie benutzt.",
+
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
     manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
@@ -397,18 +438,29 @@ window.LOCALES = {
     manifesto_coda: "Alles offline. Echte Menschen, echte Tische. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
 
     host_own_label: "Eigener Abend",
-    host_own_h3: "Co-host einen kuratierten Salon-Abend.",
-    host_own_sub: "Du lädst zwölf Leute ein. Wir kümmern uns um den Rest.",
-    host_own_support: "Wir organisieren Ort, Dinner, Experten-Moderation und ein kuratiertes Tisch-Konzept für den Abend.",
+    host_own_h3: "Lade 12 Leute ein. Den Rest übernehmen wir.",
+
+    host_own_sub: "",
+
+    host_own_support: "Wir gestalten den Raum, das Dinner, die Moderation und die Architektur des Abends.",
+
     priv_title: "Private Salons",
-    host_own_desc: "Für Freunde, Gründer:innen, Communities und private Kreise.",
-    host_own_geo: "Aktuell München & Berlin. Paris, Brüssel, Wien, London (?), Stockholm, Mailand, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">schreibt uns</a>, dann planen wir's gemeinsam.",
+    host_own_desc: "Für Gründer:innen, Freunde und enge Kreise.",
+
+    host_own_geo: "Aktuell: München & Berlin. Als Nächstes: Paris, Brüssel, Wien, London (in Diskussion), Stockholm, Mailand, Hamburg, Madrid — schreibt uns.",
+
     host_own_btn: "Eigenen Abend ausrichten →",
-    host_own_fine: "Dinner und Location inklusive.",
+
+    host_own_fine: "Dinner und Location inklusive. Ein strukturierter Abend, im Privaten.",
+
     corp_h3: "Organisationen und Teams",
-    corp_desc: "Für Firmen, Vorstände, Stiftungen und Führungskreise.",
+
+    corp_desc: "Für Vorstände, Firmen und Führungskreise. Executive Salons, gestaltet rund um eure strategischen Fragen.",
+
     corp_btn: "Anfrage senden →",
-    corp_fine: "Executive Roundtables und private Salon-Abende, auf Maß kuratiert.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Häufige Fragen",
     faq_q1: "Wer veranstaltet den Salon?",
@@ -434,7 +486,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU Eventreihe",
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
-    hero_h1:       'Ein Abend mit Praxis: Baue deinen KI-Assistenten — <em>und nutze ihn für Europa.</em>',
+    hero_h1:     'Ein Arbeits-Abend. Nicht über KI — sondern mit ihr.',
+
     events_h2:     "Veranstaltungen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU Eventreihe:</span> Entwickle deinen eigenen Agenten und setze ihn ein, um deinen persönlichen Pro-EU-Aktionsplan zu erstellen <span style="color:var(--muted-blue);font-weight:400;">(Beispiele unten)</span>.',
     upcoming:      "Bevorstehend",
@@ -459,26 +512,41 @@ window.LOCALES = {
     footer_tagline:"KI-Kompetenz für Europäer:innen — ein Dinner nach dem anderen.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stats_eyebrow: "Der Abend in Kürze",
-    stat_1_num:    "1 Abend",
-    stat_1_lbl:    "Von null zu einem funktionierenden KI-Assistenten an einem einzigen Abend",
-    stat_3_num:    "Expert:innen",
-    stat_3_lbl:    "Hands-on Begleitung beim Bauen — keine Solo-Aktion",
-    stat_4_num:    "Ohne Vorwissen anfangen",
-    stat_4_lbl:    "Für Entscheider:innen ohne Technik-Hintergrund.",
+    stat_1_num: "1 Abend",
+
+    stat_1_lbl: "Von null zu einem funktionierenden KI-Assistenten in einer Sitzung.",
+
+    stat_3_num: "Experts im Raum",
+
+    stat_3_lbl: "Nicht um zu präsentieren — um zu entstören, zu verfeinern, umzulenken.",
+
+    stat_4_num: "Keine Vorkenntnisse nötig",
+
+    stat_4_lbl: "Gebaut für Entscheider:innen, nicht für Engineers.",
+
     col_old:       "Früher",
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc:      "15 Menschen haben in einem Abend gemeinsam die Website „Europa 2041\" entwickelt — KI-Assistenten gebaut, EU-Ideen gesammelt, veröffentlicht.",
+    feature_desc: "Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten eine gemeinsame Position zur Zukunft.",
+
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "Mai",
+
     event_name: "Salon AI Dinner — München",
-    event_sub: "Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inkl.",
-    event_laptop: "Laptop genügt — Details zur Vorbereitung kommen mit der Reservierung.",
+
+    event_sub: "Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive",
+
+    event_laptop: "Ein Laptop reicht. Alles andere kommt mit dem Platz.",
+
     ticket_buy_btn: "Ticket kaufen →",
+
     past_event_date: "März 2026",
+
     past_event_city: "München",
+    past_outcome_eyebrow: "Ergebnis aus dem März-Salon",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · München · März 2026",
     march_lede: "Die Technologie existiert bereits. Die eigentliche Frage ist, ob der politische Wille besteht, sie einzusetzen. Und wenn nicht — was kann jede:r Bürger:in selbst tun, jenseits von Institutionen, die bedacht handeln und Stabilität über schnellen Wandel stellen? <strong>Dreizehn konkrete Ideen, gesammelt und diskutiert an einem Abend mit fünfzehn Gästen.</strong>",
@@ -651,11 +719,15 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ Jahre KI bei Amazon, Writer, SoundCloud",
     march_footer_back: "← Zurück zu Salon AI",
     past_events_quote: "\"Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude. Beim nächsten bin ich wieder dabei.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Öffentliche Salons werden seltener — wir öffnen mehr Plätze für kuratierte Privat-Abende mit Teams und Communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, Pionier der Faszienforschung",
 
-    add_to_calendar: "In Kalender speichern",
-    event_share: "Event teilen",
+    event_last_public: "",
+
+
+    add_to_calendar: "In Kalender speichern →",
+
+    event_share: "Event teilen →",
+
     event_share_title: "Salon AI Dinner — München",
     event_share_text: "Salon AI Dinner — 28. Mai · Luitpoldblock München. KI hands-on bauen und auf Europa anwenden. Dinner & Drinks inkl.",
     event_share_copied: "Link kopiert!",
@@ -664,18 +736,24 @@ window.LOCALES = {
     plan_eyebrow: "Wie der Abend abläuft",
 
 
-    plan_h2: "Methode zuerst. Dann die Frage.",
+
+    plan_h2: "Weniger Vortrag. Mehr Bau.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Methode",
 
-    plan_p1_body: "Ein Curriculum, über mehrere Salon-Abende verfeinert — angeleitetes Lernen, lebendige Diskussion und geteilte Erfahrung im Gleichgewicht.",
+
+    plan_p1_body: "Eine Sequenz, über mehrere Salon-Abende verfeinert — teils angeleitetes Bauen, teils gemeinsamer Fokus, teils strukturiertes Gespräch. Designed dafür, dich von null zu funktionierendem System zu bringen.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "Die Frage",
+    plan_p2_label: "Frage",
 
-    plan_p2_body: "Anwendung auf die Frage des Abends. Offen in der Form, mit Begleitung.",
+
+    plan_p2_body: "Eine einzelne rahmende Frage. Offen, ungelöst, durch den Raum getragen, während du baust.",
+
 
     scan_1: "Erprobtes Curriculum",
 
@@ -702,8 +780,10 @@ window.LOCALES = {
     nav_book_cta: "Réserver une place · 28 mai",
     announcement_html: "🔔 <strong>28 mai : dernier Salon AI Dinner public.</strong> Ensuite : amène ton propre groupe →",
     nav_cta:       "Rejoindre un dîner →",
-    hero_cta:      "Rejoindre le Salon →",
-    hero_strapline: "On ne comprend vraiment l'IA qu'après l'avoir construite soi-même.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -735,28 +815,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Actuellement Munich & Berlin. Paris, Bruxelles, Vienne, Londres (?), Stockholm, Milan, Hambourg, Madrid : <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">écris-nous</a> — on planifiera ensemble.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -769,11 +860,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -799,7 +896,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série d'événements Pro-UE",
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
-    hero_h1:       'Une soirée pratique : construisez votre assistant IA, <em>puis utilisez-le pour l\'Europe.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Événements",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-UE :</span> Créez votre propre agent et déployez-le pour élaborer votre plan d\'action Pro-UE personnel <span style="color:var(--muted-blue);font-weight:400;">(exemples ci-dessous)</span>.',
     upcoming:      "À venir",
@@ -823,26 +921,41 @@ window.LOCALES = {
     skills_desc:   "Dans la première partie de la soirée, tu construis ton agent IA personnel. Dans la seconde, tu le diriges vers la question du soir.",
     footer_tagline:"Développer la culture de l'IA chez les Européens — un dîner à la fois.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Soirée",
-    stat_1_lbl:    "De zéro à un assistant IA fonctionnel en une seule soirée",
-    stat_3_num:    "Experts",
-    stat_3_lbl:    "Accompagnement direct pendant que tu construis — jamais seul",
-    stat_4_num:    "Démarrer sans expertise",
-    stat_4_lbl:    "Conçu pour les décideurs sans formation technique.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Avant",
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc:      "15 personnes ont construit ensemble en une soirée le site « Europa 2041 » — assistants IA construits, idées européennes rassemblées, publiées.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Ce que nous avons construit — un exemple ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
-    event_month: "Mai",
+    event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18 h ouverture · 18 h 15 début · cuisine Modern Middle Eastern · boissons incluses",
-    event_laptop: "Un ordinateur portable suffit — les détails de préparation arrivent avec la réservation.",
-    ticket_buy_btn: "Acheter un billet →",
-    past_event_date: "mars 2026",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
+    ticket_buy_btn: "Buy ticket →",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -1015,10 +1128,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rare de trouver un format avec autant de rigueur intellectuelle et de véritable jeu. Je serai du prochain.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1034,8 +1150,10 @@ window.LOCALES = {
     nav_book_cta: "Reservar plaza · 28 may",
     announcement_html: "🔔 <strong>28 de mayo: última Salon AI Dinner pública.</strong> Después: trae tu propio grupo →",
     nav_cta:       "Unirse a una cena →",
-    hero_cta:      "Unirme al Salón →",
-    hero_strapline: "Solo entiendes realmente la IA cuando la has construido tú mismo.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -1067,28 +1185,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Actualmente Múnich y Berlín. París, Bruselas, Viena, Londres (?), Estocolmo, Milán, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escríbenos</a> — lo planeamos juntos.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -1101,11 +1230,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -1131,7 +1266,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de eventos Pro-UE",
     hero_sub:      "Comenzando en Alemania, próximamente en toda la UE.",
     hero_subtitle: '',
-    hero_h1:       'Una velada práctica: construye tu asistente de IA y úsalo para Europa.',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Eventos",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Crea tu propio agente y despliégalo para elaborar tu plan de acción Pro-UE personal <span style="color:var(--muted-blue);font-weight:400;">(ejemplos a continuación)</span>.',
     upcoming:      "Próximos",
@@ -1155,26 +1291,41 @@ window.LOCALES = {
     skills_desc:   "En la primera parte de la velada construyes tu agente de IA personal. En la segunda lo aplicas a la pregunta de la velada.",
     footer_tagline:"Llevando la alfabetización en IA a los europeos — una cena a la vez.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Noche",
-    stat_1_lbl:    "De cero a un asistente de IA en funcionamiento en una sola velada",
-    stat_3_num:    "Expertos",
-    stat_3_lbl:    "Acompañamiento directo mientras construyes — nunca solo",
-    stat_4_num:    "Empieza sin experiencia",
-    stat_4_lbl:    "Diseñado para responsables sin formación técnica.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Antes",
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc:      "15 personas construyeron juntas en una sola velada el sitio «Europa 2041» — asistentes de IA construidos, ideas para la UE recogidas, publicadas.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Lo que construimos — un ejemplo ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
-    event_name: "Salon AI Dinner — Múnich",
-    event_sub: "Luitpoldblock · 18:00 apertura · 18:15 inicio · cocina Modern Middle Eastern · bebidas incluidas",
-    event_laptop: "Un portátil basta — los detalles de preparación llegan con la reserva.",
-    ticket_buy_btn: "Comprar entrada →",
-    past_event_date: "marzo de 2026",
-    past_event_city: "Múnich",
+
+    event_name: "Salon AI Dinner — Munich",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
+    ticket_buy_btn: "Buy ticket →",
+
+    past_event_date: "March 2026",
+
+    past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -1347,10 +1498,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro encontrar un formato con tanto rigor intelectual y juego genuino. Estaré en el próximo.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1366,8 +1520,10 @@ window.LOCALES = {
     nav_book_cta: "Riserva un posto · 28 mag",
     announcement_html: "🔔 <strong>28 maggio: ultima Salon AI Dinner pubblica.</strong> Dopo: porta il tuo gruppo →",
     nav_cta:       "Partecipa a una cena →",
-    hero_cta:      "Unisciti al Salon →",
-    hero_strapline: "Capisci davvero l'IA solo quando l'hai costruita tu stesso.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -1399,28 +1555,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Attualmente Monaco & Berlino. Parigi, Bruxelles, Vienna, Londra (?), Stoccolma, Milano, Amburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrivici</a> — lo pianifichiamo insieme.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -1433,11 +1600,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -1463,7 +1636,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie di eventi Pro-UE",
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
-    hero_h1:       'Una serata pratica: costruisci il tuo assistente IA, <em>poi usalo per l\'Europa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Eventi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Crea il tuo agente e distribuiscilo per elaborare il tuo piano d\'azione Pro-UE personale <span style="color:var(--muted-blue);font-weight:400;">(esempi di seguito)</span>.',
     upcoming:      "In arrivo",
@@ -1487,26 +1661,41 @@ window.LOCALES = {
     skills_desc:   "Nella prima parte della serata costruisci il tuo agente IA personale. Nella seconda lo applichi alla domanda della serata.",
     footer_tagline:"Portare la cultura AI agli europei — una cena alla volta.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Serata",
-    stat_1_lbl:    "Da zero a un assistente IA funzionante in una sola serata",
-    stat_3_num:    "Esperti",
-    stat_3_lbl:    "Guida diretta mentre costruisci — mai da solo",
-    stat_4_num:    "Inizia senza competenza",
-    stat_4_lbl:    "Pensato per chi decide senza background tecnico.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Prima",
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc:      "15 persone hanno costruito insieme in una sola serata il sito \"Europa 2041\" — assistenti IA costruiti, idee UE raccolte, pubblicate.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marzo 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -1679,10 +1868,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro trovare un formato con tanto rigore intellettuale e gioco autentico. Al prossimo ci sarò di nuovo.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1698,8 +1890,10 @@ window.LOCALES = {
     nav_book_cta: "Reservar lugar · 28 mai",
     announcement_html: "🔔 <strong>28 de maio: último Salon AI Dinner público.</strong> Depois: traz o teu próprio grupo →",
     nav_cta:       "Participar de um jantar →",
-    hero_cta:      "Aderir ao Salon →",
-    hero_strapline: "Só entendes a IA quando a construíste tu próprio.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -1731,28 +1925,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Atualmente Munique e Berlim. Paris, Bruxelas, Viena, Londres (?), Estocolmo, Milão, Hamburgo, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">escreve-nos</a> — planeamos juntos.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -1765,11 +1970,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -1795,7 +2006,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série de eventos Pró-UE",
     hero_sub:      "Começando na Alemanha, em breve por toda a UE.",
     hero_subtitle: '',
-    hero_h1:       'Uma noite prática: constrói o teu assistente de IA e usa-o para a Europa.',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Eventos",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pró-UE:</span> Construa seu próprio agente e implante-o para criar seu plano de ação Pró-UE pessoal <span style="color:var(--muted-blue);font-weight:400;">(exemplos abaixo)</span>.',
     upcoming:      "Próximos",
@@ -1819,26 +2031,41 @@ window.LOCALES = {
     skills_desc:   "Na primeira parte da noite constróis o teu agente de IA pessoal. Na segunda, aplica-lo à pergunta da noite.",
     footer_tagline:"Levando a alfabetização em IA aos europeus — um jantar de cada vez.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Noite",
-    stat_1_lbl:    "De zero a um assistente de IA a funcionar numa única noite",
-    stat_3_num:    "Especialistas",
-    stat_3_lbl:    "Acompanhamento direto enquanto constróis — nunca sozinho",
-    stat_4_num:    "Começa sem experiência",
-    stat_4_lbl:    "Pensado para decisores sem formação técnica.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Antes",
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc:      "15 pessoas construíram juntas em uma única noite o site \"Europa 2041\" — assistentes de IA construídos, ideias para a UE recolhidas, publicadas.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "O que construímos — um exemplo ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "março de 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -2011,10 +2238,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Raro encontrar um formato com tanto rigor intelectual e jogo genuíno. Estarei na próxima.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -2030,8 +2260,10 @@ window.LOCALES = {
     nav_book_cta: "Plaats reserveren · 28 mei",
     announcement_html: "🔔 <strong>28 mei: laatste openbare Salon AI Dinner.</strong> Daarna: breng je eigen groep mee →",
     nav_cta:       "Sluit je aan bij een diner →",
-    hero_cta:      "Schrijf je in voor de Salon →",
-    hero_strapline: "Je begrijpt AI pas echt als je het zelf hebt gebouwd.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -2063,28 +2295,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Op dit moment München & Berlijn. Parijs, Brussel, Wenen, Londen (?), Stockholm, Milaan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">schrijf ons</a> — we plannen het samen.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -2097,11 +2340,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -2127,7 +2376,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenementenreeks",
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
-    hero_h1:       'Een praktische avond: bouw je AI-assistent, <em>gebruik hem dan voor Europa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Evenementen",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenementenreeks:</span> Bouw je eigen agent en zet hem in om je persoonlijk pro-EU-actieplan te maken <span style="color:var(--muted-blue);font-weight:400;">(voorbeelden hieronder)</span>.',
     upcoming:      "Aankomend",
@@ -2151,26 +2401,41 @@ window.LOCALES = {
     skills_desc:   "In het eerste deel van de avond bouw je je persoonlijke AI-agent. In het tweede deel zet je hem in op de vraag van de avond.",
     footer_tagline:"AI-kennis brengen naar Europeanen — één diner per keer.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Avond",
-    stat_1_lbl:    "Van nul naar een werkende AI-assistent in één avond",
-    stat_3_num:    "Experts",
-    stat_3_lbl:    "Begeleiding terwijl je bouwt — je staat er nooit alleen voor",
-    stat_4_num:    "Beginnen zonder expertise",
-    stat_4_lbl:    "Gemaakt voor beslissers zonder technische achtergrond.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Vroeger",
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc:      "15 mensen bouwden samen in één avond de website \"Europa 2041\" — AI-assistenten gebouwd, EU-ideeën verzameld, gepubliceerd.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "maart 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -2343,10 +2608,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Zelden een format met zoveel intellectuele scherpte en echt spel. Bij de volgende ben ik er weer bij.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -2362,8 +2630,10 @@ window.LOCALES = {
     nav_book_cta: "Rezerwacja · 28 maja",
     announcement_html: "🔔 <strong>28 maja: ostatnia otwarta Salon AI Dinner.</strong> Potem: przyprowadź własną grupę →",
     nav_cta:       "Dołącz do kolacji →",
-    hero_cta:      "Dołącz do Salonu →",
-    hero_strapline: "Naprawdę rozumiesz AI dopiero, gdy sam ją zbudowałeś.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -2395,28 +2665,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Aktualnie Monachium i Berlin. Paryż, Bruksela, Wiedeń, Londyn (?), Sztokholm, Mediolan, Hamburg, Madryt: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napisz do nas</a> — zaplanujemy razem.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -2429,11 +2710,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -2459,7 +2746,8 @@ window.LOCALES = {
     hero_eyebrow:  "Seria wydarzeń Pro-UE",
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
-    hero_h1:       'Praktyczny wieczór: zbuduj asystenta AI, <em>a potem użyj go dla Europy.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Wydarzenia",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Seria Pro-UE:</span> Zbuduj własnego agenta i wdróż go, aby stworzyć swój osobisty pro-UE plan działania <span style="color:var(--muted-blue);font-weight:400;">(przykłady poniżej)</span>.',
     upcoming:      "Nadchodzące",
@@ -2483,26 +2771,41 @@ window.LOCALES = {
     skills_desc:   "W pierwszej części wieczoru budujesz swojego osobistego agenta AI. W drugiej kierujesz go na pytanie wieczoru.",
     footer_tagline:"Rozwijanie wiedzy o AI wśród Europejczyków — kolacja po kolacji.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Wieczór",
-    stat_1_lbl:    "Od zera do działającego asystenta AI w jeden wieczór",
-    stat_3_num:    "Eksperci",
-    stat_3_lbl:    "Wsparcie podczas budowania — nigdy sam",
-    stat_4_num:    "Zacznij bez wiedzy",
-    stat_4_lbl:    "Dla decydentów bez technicznego zaplecza.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Wcześniej",
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc:      "15 osób w jeden wieczór wspólnie zbudowało stronę „Europa 2041\" — zbudowali asystentów AI, zebrali pomysły dla UE, opublikowali.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marzec 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -2675,10 +2978,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rzadko spotyka się format o takiej intelektualnej głębi i prawdziwej radości tworzenia. Na kolejnym znów będę.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -2690,8 +2996,10 @@ window.LOCALES = {
     nav_book_cta: "Rezervă un loc · 28 mai",
     announcement_html: "🔔 <strong>28 mai: ultima cină publică Salon AI.</strong> După aceea: adu-ți propriul grup →",
     nav_cta:       "Alătură-te unei cine →",
-    hero_cta:      "Alătură-te Salonului →",
-    hero_strapline: "Înțelegi cu adevărat AI doar după ce o construiești tu însuți.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -2723,28 +3031,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Momentan München și Berlin. Paris, Bruxelles, Viena, Londra (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scrie-ne</a> — planificăm împreună.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -2757,11 +3076,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -2787,7 +3112,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serie de evenimente Pro-UE",
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
-    hero_h1:       'O seară practică: construiește-ți asistentul AI, <em>apoi folosește-l pentru Europa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Evenimente",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serie Pro-UE:</span> Construiește-ți propriul agent și implementează-l pentru a-ți crea planul personal de acțiune Pro-UE <span style="color:var(--muted-blue);font-weight:400;">(exemple mai jos)</span>.',
     upcoming:      "Următor",
@@ -2811,26 +3137,41 @@ window.LOCALES = {
     skills_desc:   "În prima parte a serii îți construiești agentul AI personal. În a doua îl îndrepți spre întrebarea serii.",
     footer_tagline:"Educarea europenilor despre AI — o cină pe rând.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Seară",
-    stat_1_lbl:    "De la zero la un asistent AI funcțional într-o singură seară",
-    stat_3_num:    "Experți",
-    stat_3_lbl:    "Ghidare directă în timp ce construiești — nu singur",
-    stat_4_num:    "Începe fără expertiză",
-    stat_4_lbl:    "Conceput pentru decidenți fără pregătire tehnică.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Înainte",
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc:      "15 persoane au construit împreună într-o singură seară site-ul „Europa 2041\" — asistenți AI construiți, idei pentru UE adunate, publicate.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Ce am construit — un exemplu ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "martie 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -3003,10 +3344,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rar găsești un format cu atâta rigoare intelectuală și joc autentic. La următorul voi fi din nou.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -3018,8 +3362,10 @@ window.LOCALES = {
     nav_book_cta: "Reservera plats · 28 maj",
     announcement_html: "🔔 <strong>28 maj: sista offentliga Salon AI Dinner.</strong> Sen: ta med din egen grupp →",
     nav_cta:       "Gå med på en middag →",
-    hero_cta:      "Anmäl dig till Salongen →",
-    hero_strapline: "Du förstår AI på riktigt först när du har byggt det själv.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -3051,28 +3397,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Just nu München & Berlin. Paris, Bryssel, Wien, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv till oss</a> — vi planerar tillsammans.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -3085,11 +3442,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -3115,7 +3478,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU evenemangserie",
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
-    hero_h1:       'En praktisk kväll: bygg din AI-assistent, <em>använd den sedan för Europa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Evenemang",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU evenemangserie:</span> Bygg din egen agent och driftsätt den för att skapa din personliga pro-EU-handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(exempel nedan)</span>.',
     upcoming:      "Kommande",
@@ -3139,26 +3503,41 @@ window.LOCALES = {
     skills_desc:   "I första delen av kvällen bygger du din personliga AI-agent. I andra delen riktar du den mot kvällens fråga.",
     footer_tagline:"Att sprida AI-kunskaper till européer — en middag i taget.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Kväll",
-    stat_1_lbl:    "Från noll till en fungerande AI-assistent på en enda kväll",
-    stat_3_num:    "Experter",
-    stat_3_lbl:    "Direkt vägledning medan du bygger — aldrig ensam",
-    stat_4_num:    "Börja utan expertis",
-    stat_4_lbl:    "Skapad för beslutsfattare utan teknisk bakgrund.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Tidigare",
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc:      "15 personer byggde tillsammans webbplatsen \"Europa 2041\" på en enda kväll — byggde AI-assistenter, samlade EU-idéer, publicerade dem.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Vad vi byggde — ett exempel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "mars 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -3331,10 +3710,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Sällan ett format med så mycket intellektuell skärpa och äkta lek. Nästa gång är jag med igen.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -3346,8 +3728,10 @@ window.LOCALES = {
     nav_book_cta: "Rezervovat místo · 28. 5.",
     announcement_html: "🔔 <strong>28. května: poslední veřejný Salon AI Dinner.</strong> Pak: přiveď vlastní skupinu →",
     nav_cta:       "Přidej se na večeři →",
-    hero_cta:      "Přihlásit se na Salon →",
-    hero_strapline: "AI opravdu pochopíš, až když si ji sám postavíš.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -3379,28 +3763,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Aktuálně Mnichov a Berlín. Paříž, Brusel, Vídeň, Londýn (?), Stockholm, Milán, Hamburk, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiš nám</a> — naplánujeme to společně.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -3413,11 +3808,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -3443,7 +3844,8 @@ window.LOCALES = {
     hero_eyebrow:  "Série akcí Pro-EU",
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktický večer: postavte si AI asistenta, <em>pak ho použijte pro Evropu.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Akce",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Série Pro-EU:</span> Postav svého vlastního agenta a nasaď ho, aby vytvořil tvůj osobní pro-EU akční plán <span style="color:var(--muted-blue);font-weight:400;">(příklady níže)</span>.',
     upcoming:      "Nadcházející",
@@ -3467,26 +3869,41 @@ window.LOCALES = {
     skills_desc:   "V první části večera si postavíš svého osobního AI agenta. V druhé ho zaměříš na otázku večera.",
     footer_tagline:"Přinášíme AI gramotnost Evropanům — jedno jídlo po druhém.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Večer",
-    stat_1_lbl:    "Od nuly k funkčnímu AI asistentovi za jeden večer",
-    stat_3_num:    "Experti",
-    stat_3_lbl:    "Přímá podpora při stavbě — nikdy sám",
-    stat_4_num:    "Začni bez znalostí",
-    stat_4_lbl:    "Pro rozhodující osoby bez technického zázemí.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Dříve",
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc:      "15 lidí během jednoho večera společně postavilo web „Europa 2041\" — postavili AI asistenty, sebrali EU nápady, zveřejnili je.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Co jsme postavili — jeden příklad ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "březen 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -3659,10 +4076,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Vzácně najdete formát s takovou intelektuální hloubkou a opravdovou hravostí. Příště budu zase u toho.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -3674,8 +4094,10 @@ window.LOCALES = {
     nav_book_cta: "Helyfoglalás · május 28",
     announcement_html: "🔔 <strong>Május 28: az utolsó nyilvános Salon AI Dinner.</strong> Utána: hozd a saját csoportodat →",
     nav_cta:       "Csatlakozz egy vacsorához →",
-    hero_cta:      "Csatlakozom a Szalonhoz →",
-    hero_strapline: "Csak akkor érted meg igazán az AI-t, ha magad építetted.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -3707,28 +4129,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Jelenleg München és Berlin. Párizs, Brüsszel, Bécs, London (?), Stockholm, Milánó, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">írj nekünk</a> — együtt megtervezzük.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -3741,11 +4174,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -3771,7 +4210,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU rendezvénysorozat",
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
-    hero_h1:       'Egy gyakorlati este: építsd meg az AI-asszisztensed, <em>majd használd Európáért.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Rendezvények",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sorozat:</span> Építsd meg saját agented és telepítsd, hogy személyes pro-EU cselekvési tervet hozz létre <span style="color:var(--muted-blue);font-weight:400;">(példák alább)</span>.',
     upcoming:      "Közelgő",
@@ -3795,26 +4235,41 @@ window.LOCALES = {
     skills_desc:   "Az este első részében felépíted a saját személyes AI-ügynöködet. A másodikban az este kérdésére irányítod.",
     footer_tagline:"AI-ismeretek terjesztése az európaiak körében — egy vacsora egyszerre.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Este",
-    stat_1_lbl:    "A nullától a működő AI-asszisztensig egyetlen este alatt",
-    stat_3_num:    "Szakértők",
-    stat_3_lbl:    "Közvetlen támogatás építés közben — soha nem egyedül",
-    stat_4_num:    "Kezdj tapasztalat nélkül",
-    stat_4_lbl:    "Döntéshozóknak, technikai háttér nélkül.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Korábban",
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc:      "15 ember egy estén együtt építette fel a „Europa 2041\" weboldalt — AI-asszisztenseket építettek, EU-s ötleteket gyűjtöttek, közzétették.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Amit építettünk — egy példa ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "2026 március",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -3987,10 +4442,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Ritka formátum ennyi intellektuális szigorral és valódi játékkal. A következőn újra ott leszek.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -4002,8 +4460,10 @@ window.LOCALES = {
     nav_book_cta: "Rezervovať miesto · 28. 5.",
     announcement_html: "🔔 <strong>28. mája: posledná verejná Salon AI Dinner.</strong> Potom: priveď vlastnú skupinu →",
     nav_cta:       "Pridaj sa na večeru →",
-    hero_cta:      "Prihlásiť sa na Salón →",
-    hero_strapline: "AI naozaj pochopíš, až keď si ju sám postavíš.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -4035,28 +4495,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Aktuálne Mníchov a Berlín. Paríž, Brusel, Viedeň, Londýn (?), Štokholm, Miláno, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napíš nám</a> — naplánujeme to spolu.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -4069,11 +4540,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -4099,7 +4576,8 @@ window.LOCALES = {
     hero_eyebrow:  "Séria udalostí Pro-EÚ",
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
-    hero_h1:       'Praktický večer: postavte si AI asistenta, <em>potom ho použite pre Európu.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Udalosti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Séria Pro-EÚ:</span> Vytvor vlastného agenta a nasaď ho, aby si vytvoril osobný pro-EÚ akčný plán <span style="color:var(--muted-blue);font-weight:400;">(príklady nižšie)</span>.',
     upcoming:      "Nadchádzajúce",
@@ -4123,26 +4601,41 @@ window.LOCALES = {
     skills_desc:   "V prvej časti večera si postavíš svojho osobného AI agenta. V druhej ho zameriaš na otázku večera.",
     footer_tagline:"Prinášame AI gramotnosť Európanom — jedno jedlo po druhom.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Večer",
-    stat_1_lbl:    "Od nuly k funkčnému AI asistentovi za jeden večer",
-    stat_3_num:    "Experti",
-    stat_3_lbl:    "Priama podpora pri stavbe — nikdy sám",
-    stat_4_num:    "Začni bez znalostí",
-    stat_4_lbl:    "Pre rozhodujúce osoby bez technického zázemia.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Skôr",
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc:      "15 ľudí počas jedného večera spoločne postavilo web „Europa 2041\" — postavili AI asistentov, zhromaždili EÚ nápady, zverejnili ich.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Čo sme postavili — jeden príklad ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marec 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -4315,10 +4808,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Zriedka nájdete formát s takou intelektuálnou hĺbkou a skutočnou hravosťou. Nabudúce budem opäť pri tom.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -4330,8 +4826,10 @@ window.LOCALES = {
     nav_book_cta: "Резервация · 28 май",
     announcement_html: "🔔 <strong>28 май: последна публична Salon AI вечеря.</strong> След това: доведи своя група →",
     nav_cta:       "Присъедини се към вечеря →",
-    hero_cta:      "Записвам се за Салона →",
-    hero_strapline: "Истински разбираш ИИ едва когато сам си го изградил.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -4363,28 +4861,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "В момента Мюнхен и Берлин. Париж, Брюксел, Виена, Лондон (?), Стокхолм, Милано, Хамбург, Мадрид: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">пиши ни</a> — ще планираме заедно.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -4397,11 +4906,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -4427,7 +4942,8 @@ window.LOCALES = {
     hero_eyebrow:  "Серия Pro-EU събития",
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
-    hero_h1:       'Практическа вечер: изградете AI асистент, <em>после го използвайте за Европа.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Събития",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Серия Pro-EU:</span> Създай свой агент и го внедри, за да изградиш личния си Pro-EU план за действие <span style="color:var(--muted-blue);font-weight:400;">(примери по-долу)</span>.',
     upcoming:      "Предстоящо",
@@ -4451,26 +4967,41 @@ window.LOCALES = {
     skills_desc:   "В първата част на вечерта изграждаш своя личен AI агент. Във втората го насочваш към въпроса на вечерта.",
     footer_tagline:"Носим AI грамотност на европейците — по едно хапване наведнъж.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Вечер",
-    stat_1_lbl:    "От нула до работещ AI асистент в една-единствена вечер",
-    stat_3_num:    "Експерти",
-    stat_3_lbl:    "Директна подкрепа докато строиш — никога сам",
-    stat_4_num:    "Започни без опит",
-    stat_4_lbl:    "За хора, които вземат решения без техническа подготовка.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Преди",
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc:      "15 души за една вечер заедно изградиха сайта „Europa 2041\" — изградиха AI асистенти, събраха идеи за ЕС, публикуваха ги.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Какво изградихме — един пример ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "март 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -4643,10 +5174,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Рядко се среща формат с такава интелектуална дълбочина и истинска игра. На следващия пак ще съм там.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -4658,8 +5192,10 @@ window.LOCALES = {
     nav_book_cta: "Reservér plads · 28. maj",
     announcement_html: "🔔 <strong>28. maj: sidste offentlige Salon AI Dinner.</strong> Bagefter: tag din egen gruppe med →",
     nav_cta:       "Deltag i en middag →",
-    hero_cta:      "Tilmeld dig Salonen →",
-    hero_strapline: "Du forstår først AI rigtigt, når du selv har bygget det.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -4691,28 +5227,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Lige nu München & Berlin. Paris, Bruxelles, Wien, London (?), Stockholm, Milano, Hamborg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">skriv til os</a> — vi planlægger det sammen.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -4725,11 +5272,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -4755,7 +5308,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU begivenhedsserie",
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
-    hero_h1:       'En praktisk aften: byg din AI-assistent, <em>brug den derefter for Europa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Begivenheder",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serie:</span> Byg din egen agent og implementér den for at skabe din personlige pro-EU handlingsplan <span style="color:var(--muted-blue);font-weight:400;">(eksempler nedenfor)</span>.',
     upcoming:      "Kommende",
@@ -4779,26 +5333,41 @@ window.LOCALES = {
     skills_desc:   "I første del af aftenen bygger du din personlige AI-agent. I anden del retter du den mod aftenens spørgsmål.",
     footer_tagline:"Bringer AI-kendskab til europæerne — ét måltid ad gangen.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Aften",
-    stat_1_lbl:    "Fra nul til en fungerende AI-assistent på én aften",
-    stat_3_num:    "Eksperter",
-    stat_3_lbl:    "Direkte vejledning mens du bygger — aldrig alene",
-    stat_4_num:    "Start uden ekspertise",
-    stat_4_lbl:    "Til beslutningstagere uden teknisk baggrund.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Tidligere",
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc:      "15 personer byggede sammen webstedet \"Europa 2041\" på én enkelt aften — byggede AI-assistenter, samlede EU-idéer, publicerede dem.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Hvad vi byggede — et eksempel ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marts 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -4971,10 +5540,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Sjældent et format med så meget intellektuel skarphed og ægte leg. Næste gang er jeg med igen.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -4986,8 +5558,10 @@ window.LOCALES = {
     nav_book_cta: "Varaa paikka · 28.5.",
     announcement_html: "🔔 <strong>28. toukokuuta: viimeinen julkinen Salon AI Dinner.</strong> Sen jälkeen: tuo oma ryhmäsi →",
     nav_cta:       "Liity illalliselle →",
-    hero_cta:      "Liity Saliin →",
-    hero_strapline: "Ymmärrät tekoälyä todella vasta, kun olet rakentanut sen itse.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -5019,28 +5593,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Tällä hetkellä München & Berliini. Pariisi, Bryssel, Wien, Lontoo (?), Tukholma, Milano, Hampuri, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjoita meille</a> — suunnittelemme yhdessä.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -5053,11 +5638,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -5083,7 +5674,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU tapahtumasarja",
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
-    hero_h1:       'Käytännöllinen ilta: rakenna tekoälyassistenttisi, <em>käytä sitä sitten Euroopan hyväksi.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Tapahtumat",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU sarja:</span> Rakenna oma agenttisi ja ota se käyttöön luodaksesi henkilökohtaisen pro-EU-toimintasuunnitelmasi <span style="color:var(--muted-blue);font-weight:400;">(esimerkkejä alla)</span>.',
     upcoming:      "Tulevat",
@@ -5107,26 +5699,41 @@ window.LOCALES = {
     skills_desc:   "Illan ensimmäisessä osassa rakennat oman henkilökohtaisen AI-agenttisi. Toisessa osassa suuntaat sen illan kysymykseen.",
     footer_tagline:"Tuomme tekoälylukutaidon eurooppalaisille — yksi illallinen kerrallaan.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Ilta",
-    stat_1_lbl:    "Nollasta toimivaan tekoälyavustajaan yhden illan aikana",
-    stat_3_num:    "Asiantuntijat",
-    stat_3_lbl:    "Suoraa ohjausta rakentaessasi — et koskaan yksin",
-    stat_4_num:    "Aloita ilman asiantuntemusta",
-    stat_4_lbl:    "Suunniteltu päättäjille ilman teknistä taustaa.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Ennen",
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc:      "15 ihmistä rakensi yhden illan aikana yhdessä sivuston \"Europa 2041\" — rakensivat tekoälyavustajia, kokosivat EU-ideoita, julkaisivat ne.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "maaliskuu 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -5299,10 +5906,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Harvinaista löytää formaatti, jossa on tällaista älyllistä syvyyttä ja aitoa leikkimielisyyttä. Seuraavalla kerralla olen taas mukana.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -5314,8 +5924,10 @@ window.LOCALES = {
     nav_book_cta: "Rezerviraj mjesto · 28. svibnja",
     announcement_html: "🔔 <strong>28. svibnja: zadnja javna Salon AI večera.</strong> Nakon toga: dovedi vlastitu grupu →",
     nav_cta:       "Pridruži se večeri →",
-    hero_cta:      "Prijavi se u Salon →",
-    hero_strapline: "AI uistinu razumiješ tek kad si ga sam izgradio.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -5347,28 +5959,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Trenutno München i Berlin. Pariz, Bruxelles, Beč, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">napiši nam</a> — planirat ćemo zajedno.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -5381,11 +6004,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -5411,7 +6040,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EU serija događanja",
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktična večer: izgradite AI asistenta, <em>zatim ga koristite za Europu.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Događanja",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EU serija:</span> Izradi svog agenta i postavi ga za izradu osobnog pro-EU akcijskog plana <span style="color:var(--muted-blue);font-weight:400;">(primjeri ispod)</span>.',
     upcoming:      "Predstojeće",
@@ -5435,26 +6065,41 @@ window.LOCALES = {
     skills_desc:   "U prvom dijelu večeri gradiš svog osobnog AI agenta. U drugom ga usmjeravaš na pitanje večeri.",
     footer_tagline:"Donošenje AI pismenosti Europljanima — jedno večernje jelo po jednom.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Večer",
-    stat_1_lbl:    "Od nule do funkcionalnog AI asistenta u jednoj večeri",
-    stat_3_num:    "Stručnjaci",
-    stat_3_lbl:    "Izravna podrška dok gradiš — nikad sam",
-    stat_4_num:    "Počni bez stručnosti",
-    stat_4_lbl:    "Za donositelje odluka bez tehničke pozadine.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Prije",
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc:      "15 ljudi je tijekom jedne večeri zajedno izgradilo web-stranicu „Europa 2041\" — izgradili AI asistente, prikupili ideje za EU, objavili ih.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Što smo izgradili — jedan primjer ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "ožujak 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -5627,10 +6272,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rijetko ćete pronaći format s ovakvom intelektualnom dubinom i istinskom igrom. Na sljedećem sam opet.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -5642,8 +6290,10 @@ window.LOCALES = {
     nav_book_cta: "Κράτηση · 28 Μαΐου",
     announcement_html: "🔔 <strong>28 Μαΐου: το τελευταίο δημόσιο Salon AI Dinner.</strong> Μετά: φέρε τη δική σου ομάδα →",
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
-    hero_cta:      "Εγγραφή στο Salon →",
-    hero_strapline: "Πραγματικά καταλαβαίνεις την AI μόνο όταν την έχεις χτίσει ο ίδιος.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -5675,28 +6325,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Αυτή τη στιγμή Μόναχο και Βερολίνο. Παρίσι, Βρυξέλλες, Βιέννη, Λονδίνο (?), Στοκχόλμη, Μιλάνο, Αμβούργο, Μαδρίτη: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">γράψε μας</a> — θα το σχεδιάσουμε μαζί.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -5709,11 +6370,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -5739,7 +6406,8 @@ window.LOCALES = {
     hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
-    hero_h1:       'Μια πρακτική βραδιά: φτιάξτε τον βοηθό ΤΝ σας, <em>μετά χρησιμοποιήστε τον για την Ευρώπη.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Εκδηλώσεις",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Σειρά Pro-EU:</span> Δημιουργήστε τον δικό σας πράκτορα και αναπτύξτε τον για να φτιάξετε το προσωπικό σας Pro-EU σχέδιο δράσης <span style="color:var(--muted-blue);font-weight:400;">(παραδείγματα παρακάτω)</span>.',
     upcoming:      "Επερχόμενα",
@@ -5763,26 +6431,41 @@ window.LOCALES = {
     skills_desc:   "Στο πρώτο μέρος της βραδιάς φτιάχνεις τον προσωπικό σου AI agent. Στο δεύτερο τον στρέφεις στην ερώτηση της βραδιάς.",
     footer_tagline:"Φέρνουμε τον ψηφιακό αλφαβητισμό ΤΝ στους Ευρωπαίους — ένα δείπνο τη φορά.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Βραδιά",
-    stat_1_lbl:    "Από το μηδέν σε έναν λειτουργικό AI βοηθό σε μία βραδιά",
-    stat_3_num:    "Ειδικοί",
-    stat_3_lbl:    "Άμεση καθοδήγηση όσο χτίζεις — ποτέ μόνος",
-    stat_4_num:    "Ξεκίνα χωρίς εμπειρία",
-    stat_4_lbl:    "Σχεδιασμένο για όσους αποφασίζουν χωρίς τεχνικό υπόβαθρο.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Πριν",
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc:      "15 άνθρωποι έχτισαν μαζί σε ένα βράδυ τον ιστότοπο «Europa 2041» — έχτισαν AI βοηθούς, μάζεψαν ιδέες για την ΕΕ, τις δημοσίευσαν.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "Μάρτιος 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -5955,10 +6638,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Σπάνια βρίσκεις φόρμα με τέτοια διανοητική αυστηρότητα και αληθινό παιχνίδι. Στο επόμενο θα είμαι ξανά.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -5970,8 +6656,10 @@ window.LOCALES = {
     nav_book_cta: "Rezervuoti vietą · 28 geg.",
     announcement_html: "🔔 <strong>Gegužės 28: paskutinė vieša Salon AI vakarienė.</strong> Po to: atsivesk savo grupę →",
     nav_cta:       "Prisijunk prie vakarienės →",
-    hero_cta:      "Prisijunk prie Salono →",
-    hero_strapline: "Dirbtinį intelektą iš tikrųjų supranti tik tada, kai jį pats sukūrei.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -6003,28 +6691,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Šiuo metu Miunchenas ir Berlynas. Paryžius, Briuselis, Viena, Londonas (?), Stokholmas, Milanas, Hamburgas, Madridas: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">parašyk mums</a> — suplanuosime kartu.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -6037,11 +6736,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -6067,7 +6772,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES renginių serija",
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
-    hero_h1:       'Praktiškas vakaras: sukurkite DI asistentą, <em>tada naudokite jį Europai.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Renginiai",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES serija:</span> Sukurk savo agentą ir jį įdiek, kad sukurtum asmeninį Pro-ES veiksmų planą <span style="color:var(--muted-blue);font-weight:400;">(pavyzdžiai žemiau)</span>.',
     upcoming:      "Artėjantis",
@@ -6091,26 +6797,41 @@ window.LOCALES = {
     skills_desc:   "Pirmoje vakaro dalyje sukuriate savo asmeninį AI agentą. Antroje dalyje nukreipi jį į vakaro klausimą.",
     footer_tagline:"Skleidžiame AI raštingumą europiečiams — po vieną vakarienę.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Vakaras",
-    stat_1_lbl:    "Nuo nulio iki veikiančio DI asistento per vieną vakarą",
-    stat_3_num:    "Ekspertai",
-    stat_3_lbl:    "Tiesioginė pagalba kuriant — niekada vienas",
-    stat_4_num:    "Pradėk be patirties",
-    stat_4_lbl:    "Sprendimų priėmėjams be techninio išsilavinimo.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Anksčiau",
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc:      "15 žmonių per vieną vakarą kartu sukūrė svetainę „Europa 2041\" — sukūrė DI asistentus, surinko ES idėjas, paskelbė.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "kovas 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -6283,10 +7004,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Retai sutiksi formatą su tokiu intelektualiniu rimtumu ir tikru žaidimu. Kitame vėl būsiu.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -6298,8 +7022,10 @@ window.LOCALES = {
     nav_book_cta: "Rezervēt vietu · 28. maijs",
     announcement_html: "🔔 <strong>28. maijs: pēdējā publiskā Salon AI vakariņas.</strong> Pēc tam: ņem līdzi savu grupu →",
     nav_cta:       "Pievienojies vakariņām →",
-    hero_cta:      "Pievienojies Salonam →",
-    hero_strapline: "Tu patiesi saproti MI tikai tad, kad esi to pats uzbūvējis.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -6331,28 +7057,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Pašlaik Minhene un Berlīne. Parīze, Brisele, Vīne, Londona (?), Stokholma, Milāna, Hamburga, Madride: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">raksti mums</a> — saplānosim kopā.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -6365,11 +7102,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -6395,7 +7138,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-ES pasākumu sērija",
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
-    hero_h1:       'Praktisks vakars: izveidojiet MI asistentu, <em>pēc tam izmantojiet to Eiropai.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Pasākumi",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-ES sērija:</span> Izveido savu aģentu un izvietojiet to, lai izveidotu personīgo Pro-ES rīcības plānu <span style="color:var(--muted-blue);font-weight:400;">(piemēri zemāk)</span>.',
     upcoming:      "Gaidāmais",
@@ -6419,26 +7163,41 @@ window.LOCALES = {
     skills_desc:   "Vakara pirmajā daļā tu izveido savu personīgo AI aģentu. Otrajā daļā tu vērs to uz vakara jautājumu.",
     footer_tagline:"Nesam AI pratību eiropieiem — pa vienai vakariņai.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Vakars",
-    stat_1_lbl:    "No nulles līdz funkcionējošam MI asistentam vienā vakarā",
-    stat_3_num:    "Eksperti",
-    stat_3_lbl:    "Tieša palīdzība būvējot — nekad viens",
-    stat_4_num:    "Sākt bez pieredzes",
-    stat_4_lbl:    "Lēmumu pieņēmējiem bez tehniskās izglītības.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Agrāk",
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc:      "15 cilvēki vienā vakarā kopā uzbūvēja vietni „Europa 2041\" — uzbūvēja MI asistentus, savāca ES idejas, publicēja tās.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marts 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -6611,10 +7370,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Reti sastapsies ar formātu, kurā ir tik daudz intelektuālā dziļuma un patiesas spēles. Nākamajā atkal būšu klāt.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -6626,8 +7388,10 @@ window.LOCALES = {
     nav_book_cta: "Reserveeri koht · 28. mai",
     announcement_html: "🔔 <strong>28. mai: viimane avalik Salon AI õhtusöök.</strong> Pärast: too oma grupp →",
     nav_cta:       "Liitu õhtusöögiga →",
-    hero_cta:      "Liitu Salongiga →",
-    hero_strapline: "Sa mõistad AI-d tegelikult alles siis, kui oled selle ise ehitanud.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -6659,28 +7423,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Praegu München ja Berliin. Pariis, Brüssel, Viin, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">kirjuta meile</a> — planeerime koos.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -6693,11 +7468,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -6723,7 +7504,8 @@ window.LOCALES = {
     hero_eyebrow:  "Pro-EL ürituste sari",
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
-    hero_h1:       'Praktiline õhtu: ehitage TI assistent, <em>seejärel kasutage seda Euroopa heaks.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Üritused",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Pro-EL sari:</span> Loo oma agent ja juuruta see, et luua isiklik Pro-EL tegevuskava <span style="color:var(--muted-blue);font-weight:400;">(näited allpool)</span>.',
     upcoming:      "Eelseisev",
@@ -6747,26 +7529,41 @@ window.LOCALES = {
     skills_desc:   "Õhtu esimeses osas ehitad oma isikliku AI-agendi. Teises osas suunad selle õhtu küsimusele.",
     footer_tagline:"Toome tehisintellekti kirjaoskuse eurooplasteni — üks õhtusöök korraga.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Õhtu",
-    stat_1_lbl:    "Nullist toimiva AI-assistendini ühe õhtuga",
-    stat_3_num:    "Eksperdid",
-    stat_3_lbl:    "Otsene juhendamine ehitamise ajal — kunagi üksi",
-    stat_4_num:    "Alusta ilma kogemuseta",
-    stat_4_lbl:    "Otsustajatele ilma tehnilise taustata.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Varem",
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc:      "15 inimest ehitas ühe õhtu jooksul koos veebilehe \"Europa 2041\" — ehitasid AI-assistente, kogusid EL-i ideid, avaldasid need.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Mida me ehitasime — üks näide ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "märts 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -6939,10 +7736,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Harva näeb formaati, kus on nii palju intellektuaalset sügavust ja tõelist mängu. Järgmisel olen jälle kohal.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -6954,8 +7754,10 @@ window.LOCALES = {
     nav_book_cta: "Rezerviraj mesto · 28. maj",
     announcement_html: "🔔 <strong>28. maj: zadnja javna Salon AI večerja.</strong> Po tem: pripelji svojo skupino →",
     nav_cta:       "Pridruži se večerji →",
-    hero_cta:      "Prijavi se v Salon →",
-    hero_strapline: "UI zares razumeš šele takrat, ko si ga sam zgradil.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -6987,28 +7789,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Trenutno München in Berlin. Pariz, Bruselj, Dunaj, London (?), Stockholm, Milano, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">piši nam</a> — načrtovali bomo skupaj.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -7021,11 +7834,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -7051,7 +7870,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serija pro-EU dogodkov",
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
-    hero_h1:       'Praktičen večer: zgradite UI asistenta, <em>nato ga uporabite za Evropo.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Dogodki",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serija Pro-EU:</span> Razvij svojega agenta in ga uvedi za ustvarjanje osebnega pro-EU akcijskega načrta <span style="color:var(--muted-blue);font-weight:400;">(primeri spodaj)</span>.',
     upcoming:      "Prihajajoče",
@@ -7075,26 +7895,41 @@ window.LOCALES = {
     skills_desc:   "V prvem delu večera zgradiš svojega osebnega AI agenta. V drugem ga usmeriš na vprašanje večera.",
     footer_tagline:"Prinašamo pismenost AI Evropejcem — eno večerjo naenkrat.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Večer",
-    stat_1_lbl:    "Od nič do delujočega UI asistenta v enem večeru",
-    stat_3_num:    "Strokovnjaki",
-    stat_3_lbl:    "Neposredna podpora med gradnjo — nikoli sam",
-    stat_4_num:    "Začni brez znanja",
-    stat_4_lbl:    "Za odločevalce brez tehničnega ozadja.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Prej",
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc:      "15 ljudi je v enem večeru skupaj zgradilo spletno stran »Europa 2041« — zgradili UI pomočnike, zbrali ideje za EU, jih objavili.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Kar smo zgradili — en primer ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "marec 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -7267,10 +8102,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Redko najdeš format s tako intelektualno ostrino in pristnim igranjem. Naslednjič sem spet zraven.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -7282,8 +8120,10 @@ window.LOCALES = {
     nav_book_cta: "Irriserva post · 28 Mejju",
     announcement_html: "🔔 <strong>28 ta' Mejju: l-aħħar Salon AI Dinner pubbliku.</strong> Wara: ġib il-grupp tiegħek →",
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
-    hero_cta:      "Issieħeb fis-Salon →",
-    hero_strapline: "Tifhem l-AI tassew biss meta bnejtha int stess.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -7315,28 +8155,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Bħalissa München u Berlin. Pariġi, Brussell, Vjenna, Londra (?), Stokkolma, Milan, Hamburg, Madrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">iktbilna</a> — nippjanawh flimkien.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -7349,11 +8200,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -7379,7 +8236,8 @@ window.LOCALES = {
     hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
-    hero_h1:       'Serata prattika: ibni l-assistent AI tiegħek, <em>imbagħad uża għall-Ewropa.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Avvenimenti",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Serje Pro-UE:</span> Ibni l-aġent tiegħek u ibda tuża biex toħloq il-pjan ta\' azzjoni Pro-UE personali tiegħek <span style="color:var(--muted-blue);font-weight:400;">(eżempji hawn taħt)</span>.',
     upcoming:      "Li jmiss",
@@ -7403,26 +8261,41 @@ window.LOCALES = {
     skills_desc:   "Fl-ewwel parti tas-serata tibni l-aġent AI personali tiegħek. Fit-tieni tidirieġih lejn il-mistoqsija tas-serata.",
     footer_tagline:"Inġibu l-litteriżmu tal-AI lill-Ewropej — ikla waħda fl-darba.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Filgħaxija",
-    stat_1_lbl:    "Minn xejn għal assistent AI li jaħdem f'lejla waħda",
-    stat_3_num:    "Esperti",
-    stat_3_lbl:    "Gwida diretta waqt li tibni — qatt waħdek",
-    stat_4_num:    "Ibda mingħajr esperjenza",
-    stat_4_lbl:    "Maħsub għal min jiddeċiedi mingħajr sfond tekniku.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Qabel",
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc:      "15-il persuna bnew flimkien is-sit \"Europa 2041\" f'lejla waħda — bnew assistenti AI, ġabru ideat għall-UE, ippubblikawhom.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "Marzu 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -7595,10 +8468,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Rari ssib format b'din it-tip ta' rigoraġġ intellettwali u logħob ġenwin. Fil-ġejjieni se nkun preżenti mill-ġdid.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
   /* ─────────────────────────────────────────────────────────────────
@@ -7610,8 +8486,10 @@ window.LOCALES = {
     nav_book_cta: "Cuir áit in áirithe · 28 Bealtaine",
     announcement_html: "🔔 <strong>28 Bealtaine: an Salon AI Dinner poiblí deireanach.</strong> Ina dhiaidh sin: tabhair do ghrúpa féin →",
     nav_cta:       "Bí páirteach i ndinnéar →",
-    hero_cta:      "Bí páirteach sa Salon →",
-    hero_strapline: "Ní thuigeann tú AI go fírinneach go dtí go bhfuil tú féin tar éis é a thógáil.",
+    hero_cta: "Join the Salon →",
+
+    hero_strapline: "You don\'t really understand AI until you\'ve built something that uses it.",
+
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
     manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
@@ -7643,28 +8521,39 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Co-host a curated dinner salon.",
-    host_own_sub: "Invite 12 people. We handle the rest.",
-    host_own_support: "We organize the venue, dinner, expert moderation, and a curated table design concept for the evening.",
+    host_own_h3: "Invite 12 people. We take care of the rest.",
+
+    host_own_sub: "",
+
+    host_own_support: "We design the space, the dinner, the facilitation, and the evening\'s architecture.",
+
     priv_title: "Private salons",
-    host_own_desc: "For friends, founders, communities, and private circles.",
-    host_own_geo: "Faoi láthair München & Beirlín. Páras, an Bhruiséil, Vín, Londain (?), Stócólm, Milano, Hamburg, Maidrid: <a href=\"mailto:luckysprouts@duck.com\" onclick=\"gtag('event', 'contact', { 'method': 'email', 'subject': 'host_own_geo' });\">scríobh chugainn</a> — déanfaimid pleanáil le chéile.",
+    host_own_desc: "For founders, friends, and close circles.",
+
+    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
-    plan_h2: "Method first. Then the question.",
+
+    plan_h2: "Less lecture. More construction.",
+
 
 
     plan_p1_share: "80%",
     plan_p1_label: "Method",
 
-    plan_p1_body: "A curriculum refined across multiple salon evenings, balancing guided learning with live discussion and shared experience.",
+
+    plan_p1_body: "A sequence refined across multiple salon evenings — part guided build, part collective focus, part structured conversation. Designed to get you from zero to working system.",
+
 
     plan_p2_share: "20%",
-    plan_p2_label: "The question",
+    plan_p2_label: "Question",
 
-    plan_p2_body: "Applied to the question of the evening. Open in form, accompanied throughout.",
+
+    plan_p2_body: "A single framing question. Open, unresolved, carried through the room as you build.",
+
 
     scan_1: "Considered curriculum",
 
@@ -7677,11 +8566,17 @@ window.LOCALES = {
     scan_5: "Working systems to take home",
 
     host_own_btn: "Host your evening →",
-    host_own_fine: "Dinner and venue included.",
-    corp_h3: "Organizations & teams",
-    corp_desc: "For companies, boards, foundations, and leadership groups.",
+
+    host_own_fine: "Dinner and venue included. A structured evening, held in private.",
+
+    corp_h3: "Organisations & teams",
+
+    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+
     corp_btn: "Send inquiry →",
-    corp_fine: "Executive roundtables and private salon evenings curated to spec.",
+
+    corp_fine: "",
+
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
@@ -7707,7 +8602,8 @@ window.LOCALES = {
     hero_eyebrow:  "Sraith imeachtaí Pro-AE",
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',
-    hero_h1:       'Oíche phraiticiúil: tóg do chúntóir AI, <em>ansin úsáid ar son na hEorpa é.</em>',
+    hero_h1:     'A working evening. Not about AI — but with it.',
+
     events_h2:     "Imeachtaí",
     pro_eu_html:   '<span style="color:var(--accent);font-weight:700;">Sraith Pro-AE:</span> Tóg d\'eintiteas féin agus imscar é chun do phlean gníomhaíochta Pro-AE pearsanta a chruthú <span style="color:var(--muted-blue);font-weight:400;">(samplaí thíos)</span>.',
     upcoming:      "Le teacht",
@@ -7731,26 +8627,41 @@ window.LOCALES = {
     skills_desc:   "Sa chéad chuid den oíche tógann tú do agent AI pearsanta féin. Sa dara cuid díríonn tú é ar cheist na hoíche.",
     footer_tagline:"Ag tabhairt litearthachta AI do Eorpaigh — dinnéar amháin ag an am.",
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
-    stat_1_num:    "1 Oíche",
-    stat_1_lbl:    "Ó nialas go cúntóir AI ag obair in aon oíche amháin",
-    stat_3_num:    "Saineolaithe",
-    stat_3_lbl:    "Treoir dhíreach agus tú ag tógáil — riamh i d'aonar",
-    stat_4_num:    "Tús gan saineolas",
-    stat_4_lbl:    "Deartha do dhéantóirí cinnteoireachta gan cúlra teicniúil.",
+    stat_1_num: "1 evening",
+
+    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+
+    stat_3_num: "Experts present",
+
+    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+
+    stat_4_num: "No expertise required",
+
+    stat_4_lbl: "Built for decision-makers, not engineers.",
+
     col_old:       "Roimhe seo",
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc:      "Thóg 15 dhuine an suíomh \"Europa 2041\" le chéile in oíche amháin — thóg cúntóirí AI, bhailigh smaointe AE, d'fhoilsigh iad.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published a shared position on the future.",
+
     feature_cta:       "Cad a thógamar — sampla amháin ↗",
     tile_label_dinners: "<span class=\"dot\"></span>Salon AI Dinners",
     event_month: "May",
+
     event_name: "Salon AI Dinner — Munich",
-    event_sub: "Luitpoldblock · 18:00 doors · 18:15 start · Modern Middle Eastern Cuisine · Drinks included",
-    event_laptop: "A laptop is enough — preparation details come with the reservation.",
+
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+
+    event_laptop: "A laptop is enough. Everything else arrives with your seat.",
+
     ticket_buy_btn: "Buy ticket →",
-    past_event_date: "Márta 2026",
+
+    past_event_date: "March 2026",
+
     past_event_city: "Munich",
+    past_outcome_eyebrow: "Outcome from March",
+
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
     march_lede: "The technology already exists. The real question is whether the political will exists to use it. And if it doesn't — what can each citizen actually do, beyond relying on institutions that move deliberately and prioritize stability over rapid change? <strong>Thirteen concrete ideas, collected and discussed over a single evening with fifteen guests.</strong>",
@@ -7923,10 +8834,13 @@ window.LOCALES = {
     march_footer_host: "<strong>Host</strong> Franziska Wittleder · 15+ years AI at Amazon, Writer, SoundCloud",
     march_footer_back: "← Back to Salon AI",
     past_events_quote: "\"Is annamh formáid leis an oiread déine intleachtúla agus súgartha dáiríre. Beidh mé ann an chéad uair eile.\"",
-    past_events_quote_author: "Prof. Dr. Robert Schleip · Pioneer and leading authority in fascia research",
-    event_last_public: "Public salons are becoming limited as we expand into private curated gatherings for teams and communities.",
+    past_events_quote_author: "Prof. Dr. Robert Schleip, pioneer in fascia research",
 
-    add_to_calendar: "Add to calendar",
+    event_last_public: "",
+
+
+    add_to_calendar: "Add to calendar →",
+
   },
 
 };
