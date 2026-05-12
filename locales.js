@@ -30,7 +30,8 @@ window.LOCALES = {
     hero_strapline: "You only really understand AI once you've built it yourself.",
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
-    manifesto_lede: "Europe doesn't look especially bold right now. We're falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don't even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -44,12 +45,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "That's exactly why Salon AI exists. Three things happen in one evening:",
-    manifesto_item1: "We build AI hands-on — not the simple everyday tricks, but agents, automations and the things with real leverage. Because the only way to know where you and your team really stand on AI is to have built it yourself.",
-    manifesto_item_apply: "Then we point the agents straight at the evening's question. What's possible? Where do you start? What would be truly European?",
-    manifesto_item2: "We bring the context that's otherwise missing: where Europe stands on AI today, where it's stuck, what's at stake on data — and what you can concretely do to move forward.",
-    manifesto_item3: "You go home, able to build with AI yourself and to talk about it with your teams — with a few EU impulses to think about, and maybe one idea you can act on as a citizen.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -358,7 +365,8 @@ window.LOCALES = {
     hero_strapline: "Du verstehst KI erst wirklich, wenn du sie selbst gebaut hast.",
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
-    manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
+    manifesto_lede: "Europa zögert bei KI — und die meisten wissen nicht, was sie selbst dagegen tun könnten.",
+
     manifesto_ai_eu: "KI für Europa heißt: Europäer:innen werden Macher:innen — nicht nur Konsument:innen — von KI.",
     tr_eyebrow: "Was sich verändert",
     tr_h2: "Was du nach einem Salon-Abend kannst, was du vorher nicht konntest.",
@@ -372,12 +380,18 @@ window.LOCALES = {
     tr_a2: "Du hast eine Basis, von der du weiter aufbauen kannst.",
     tr_a3: "Du erkennst, wo KI in deinem Arbeitsalltag echten Hebel hat.",
     tr_a4: "Du gestaltest mit — als Macher:in, nicht als Publikum.",
-    manifesto_bridge: "Genau deshalb gibt es Salon AI. An einem Abend passieren drei Dinge:",
-    manifesto_item1: "Wir bauen KI hands-on — nicht die simplen Alltagstricks, sondern Agenten, Automationen und das Zeug mit echtem Hebel. Denn wer wirklich wissen will, wo er und sein Team bei KI stehen, muss es einmal selbst gebaut haben.",
-    manifesto_item_apply: "Dann richten wir die Agenten direkt auf die Abendfrage. Was geht? Wo fängst du an? Was wäre wirklich europäisch?",
-    manifesto_item2: "Wir liefern den Kontext, der sonst fehlt: wo Europa bei KI heute steht, wo es klemmt, was bei Daten auf dem Spiel steht — und was man konkret tun kann, um nach vorne zu kommen.",
-    manifesto_item3: "Du gehst nach Hause, fähig selbst mit KI zu bauen und mit deinen Teams darüber zu sprechen — mit ein paar EU-Impulsen zum Nachdenken, und vielleicht einer Idee, die du als Bürger:in selbst umsetzen kannst.",
-    manifesto_coda: "Das Ganze passiert offline – mit echten Menschen an echten Tischen. Online-Kurse gibt es genug. Die Gespräche, die wirklich etwas verändern, entstehen meist dort, wo Menschen zusammenkommen und größer denken. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
+    manifesto_bridge: "Genau deshalb gibt es Salon AI.",
+
+    manifesto_item1: "Wir bauen mit KI — nicht die Alltagstricks, sondern Agenten und Automationen.",
+
+    manifesto_item_apply: "Dann richten wir die Agenten auf die Frage des Abends.",
+
+    manifesto_item2: "Wir liefern den Kontext: wo Europa bei KI steht, wo es klemmt, was du tun kannst.",
+
+    manifesto_item3: "Du gehst mit einem funktionierenden Tool nach Hause — und einer Idee, die du nicht mehr loswirst.",
+
+    manifesto_coda: "Alles offline. Echte Menschen, echte Tische. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
+
     host_own_label: "Eigener Abend",
     host_own_h3: "Co-host einen kuratierten Salon-Abend.",
     host_own_sub: "Du lädst zwölf Leute ein. Wir kümmern uns um den Rest.",
@@ -686,7 +700,8 @@ window.LOCALES = {
     hero_strapline: "On ne comprend vraiment l'IA qu'après l'avoir construite soi-même.",
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
-    manifesto_lede: "L'Europe n'a pas l'air particulièrement audacieuse en ce moment. Nous sommes à la traîne sur l'IA, et quand on demande ce que l'on peut soi-même faire pour l'Europe, la réponse la plus fréquente est un haussement d'épaules. La plupart des gens sur ce continent ne se sentent même pas européens — ils ont l'impression d'être ici juste par hasard.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -700,12 +715,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "C'est précisément pourquoi Salon AI existe. Trois choses se passent en une soirée :",
-    manifesto_item1: "Nous apprenons l'IA en pratique — pas les petits trucs du quotidien, mais les agents, les automatisations et tout ce qui a un vrai effet de levier. Car la seule façon de savoir où vous et votre équipe en êtes vraiment avec l'IA, c'est de l'avoir construite vous-même.",
-    manifesto_item_apply: "Ensuite, on dirige les agents directement sur la question du soir. Qu'est-ce qui est possible ? Par où commences-tu ? Qu'est-ce qui serait vraiment européen ?",
-    manifesto_item2: "Nous apportons le contexte qui manque ailleurs : où en est l'Europe aujourd'hui sur l'IA, où ça coince, ce qui se joue sur les données — et ce qu'on peut concrètement faire pour avancer.",
-    manifesto_item3: "Tu rentres chez toi, capable de construire toi-même avec l'IA et d'en parler avec tes équipes — avec quelques impulsions européennes à méditer, et peut-être une idée que tu peux mettre en œuvre comme citoyen·ne.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -1008,7 +1029,8 @@ window.LOCALES = {
     hero_strapline: "Solo entiendes realmente la IA cuando la has construido tú mismo.",
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europa no parece especialmente audaz en este momento. Vamos a la zaga en IA, y cuando preguntas qué puede uno mismo hacer por Europa, la respuesta más común es un encogimiento de hombros. La mayoría de las personas en este continente ni siquiera se sienten europeas — sienten que están aquí por pura casualidad.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -1022,12 +1044,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Por eso existe Salon AI. En una sola velada ocurren tres cosas:",
-    manifesto_item1: "Aprendemos IA con las manos — no los trucos sencillos del día a día, sino agentes, automatizaciones y todo lo que tiene un efecto real. Porque la única forma de saber dónde estáis tú y tu equipo realmente con la IA es haberla construido tú mismo.",
-    manifesto_item_apply: "Luego dirigimos los agentes directamente a la pregunta de la velada. ¿Qué se puede? ¿Por dónde empiezas? ¿Qué sería verdaderamente europeo?",
-    manifesto_item2: "Aportamos el contexto que falta en otra parte: dónde está Europa hoy en IA, dónde se atasca, qué está en juego con los datos — y qué se puede hacer concretamente para avanzar.",
-    manifesto_item3: "Vuelves a casa, capaz de construir tú mismo con IA y de hablar de ello con tus equipos — con algunos impulsos europeos para pensar, y quizá una idea que puedes llevar a cabo como ciudadano/a.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -1330,7 +1358,8 @@ window.LOCALES = {
     hero_strapline: "Capisci davvero l'IA solo quando l'hai costruita tu stesso.",
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "L'Europa non sembra particolarmente coraggiosa in questo momento. Siamo in ritardo sull'IA, e quando chiedi cosa si possa fare in prima persona per l'Europa, la risposta più frequente è un'alzata di spalle. La maggior parte delle persone in questo continente non si sente nemmeno europea — si sente come se fosse qui solo per caso.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -1344,12 +1373,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Proprio per questo esiste Salon AI. In una sola serata succedono tre cose:",
-    manifesto_item1: "Impariamo l'IA con le mani — non i piccoli trucchi quotidiani, ma agenti, automazioni e tutto ciò che ha una leva reale. Perché l'unico modo di sapere dove tu e il tuo team siete davvero con l'IA è averla costruita tu stesso.",
-    manifesto_item_apply: "Poi puntiamo gli agenti direttamente sulla domanda della serata. Cosa è possibile? Da dove inizi? Cosa sarebbe davvero europeo?",
-    manifesto_item2: "Portiamo il contesto che altrove manca: dove si trova oggi l'Europa sull'IA, dove si blocca, cosa è in gioco sui dati — e cosa si può concretamente fare per andare avanti.",
-    manifesto_item3: "Torni a casa capace di costruire con l'IA da solo e di parlarne con i tuoi team — con qualche impulso europeo su cui riflettere e magari un'idea che puoi mettere in pratica come cittadino/a.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -1652,7 +1687,8 @@ window.LOCALES = {
     hero_strapline: "Só entendes a IA quando a construíste tu próprio.",
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "A Europa não parece particularmente arrojada neste momento. Estamos atrasados na IA, e quando se pergunta o que se pode fazer pessoalmente pela Europa, a resposta mais comum é um encolher de ombros. A maioria das pessoas neste continente nem sequer se sente europeia — sentem que estão aqui apenas por acaso.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -1666,12 +1702,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "É precisamente por isso que existe o Salon AI. Numa só noite acontecem três coisas:",
-    manifesto_item1: "Aprendemos IA com as mãos — não os truques simples do dia a dia, mas agentes, automatizações e o que tem alavanca real. Porque a única forma de saber onde você e a sua equipa realmente estão com a IA é tê-la construído você mesmo.",
-    manifesto_item_apply: "Depois apontamos os agentes diretamente para a pergunta da noite. O que é possível? Por onde começas? O que seria verdadeiramente europeu?",
-    manifesto_item2: "Trazemos o contexto que falta noutro lado: onde está a Europa hoje na IA, onde encrava, o que está em jogo nos dados — e o que se pode concretamente fazer para avançar.",
-    manifesto_item3: "Vais para casa capaz de construir com IA por ti próprio e de falar sobre isso com as tuas equipas — com alguns impulsos europeus para pensar, e talvez uma ideia que podes pôr em prática como cidadão/cidadã.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -1974,7 +2016,8 @@ window.LOCALES = {
     hero_strapline: "Je begrijpt AI pas echt als je het zelf hebt gebouwd.",
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
-    manifesto_lede: "Europa lijkt op dit moment niet bijzonder moedig. Bij AI lopen we achter, en als je vraagt wat je zelf voor Europa kunt doen, krijg je meestal een schouderophalen. De meeste mensen op dit continent voelen zich niet eens Europees — ze voelen zich alsof ze hier toevallig zijn.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -1988,12 +2031,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Daarom bestaat Salon AI. Op één avond gebeuren drie dingen:",
-    manifesto_item1: "We leren AI hands-on — niet de simpele dagelijkse trucs, maar agents, automatisering en het werk dat echt hefboomkracht heeft. Want de enige manier om te weten waar jij en je team echt staan met AI, is het zelf te hebben gebouwd.",
-    manifesto_item_apply: "Daarna richten we de agents direct op de vraag van de avond. Wat kan? Waar begin je? Wat zou écht Europees zijn?",
-    manifesto_item2: "We brengen de context die elders ontbreekt: waar Europa nu staat met AI, waar het hapert, wat er op het spel staat met data — en wat je concreet kunt doen om vooruit te komen.",
-    manifesto_item3: "Je gaat naar huis, in staat om zelf met AI te bouwen en erover te praten met je teams — met een paar EU-impulsen om over na te denken, en misschien een idee dat je als burger zelf kunt uitvoeren.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -2296,7 +2345,8 @@ window.LOCALES = {
     hero_strapline: "Naprawdę rozumiesz AI dopiero, gdy sam ją zbudowałeś.",
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
-    manifesto_lede: "Europa nie sprawia teraz wrażenia szczególnie odważnej. W AI jesteśmy w tyle, a kiedy pytasz, co sam możesz zrobić dla Europy, najczęstszą odpowiedzią jest wzruszenie ramionami. Większość ludzi na tym kontynencie nie czuje się nawet po europejsku — czują się tak, jakby znaleźli się tu zupełnie przez przypadek.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -2310,12 +2360,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Właśnie dlatego istnieje Salon AI. W ciągu jednego wieczoru dzieją się trzy rzeczy:",
-    manifesto_item1: "Uczymy się AI z pierwszej ręki — nie proste sztuczki na co dzień, ale agenty, automatyzacje i to, co naprawdę ma efekt dźwigni. Bo jedyny sposób, by wiedzieć, gdzie ty i twój zespół naprawdę jesteście z AI, to samodzielnie coś zbudować.",
-    manifesto_item_apply: "Potem kierujemy agentów bezpośrednio na pytanie wieczoru. Co jest możliwe? Od czego zaczynasz? Co byłoby naprawdę europejskie?",
-    manifesto_item2: "Dostarczamy kontekst, którego gdzie indziej brakuje: gdzie jest dziś Europa z AI, gdzie się zacina, co jest na szali w sprawie danych — i co konkretnie można zrobić, żeby pójść do przodu.",
-    manifesto_item3: "Wracasz do domu, potrafiąc sam budować z AI i rozmawiać o tym ze swoimi zespołami — z kilkoma europejskimi impulsami do przemyślenia i może jednym pomysłem, który możesz wcielić w życie jako obywatel(ka).",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -2614,7 +2670,8 @@ window.LOCALES = {
     hero_strapline: "Înțelegi cu adevărat AI doar după ce o construiești tu însuți.",
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europa nu pare deosebit de îndrăzneață în acest moment. La AI suntem în urmă, iar când întrebi ce poți face tu însuți pentru Europa, cel mai frecvent răspuns este o ridicare din umeri. Majoritatea oamenilor de pe acest continent nu se simt nici măcar europeni — simt că sunt aici pur și simplu din întâmplare.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -2628,12 +2685,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Tocmai de aceea există Salon AI. Într-o singură seară se întâmplă trei lucruri:",
-    manifesto_item1: "Învățăm AI pe pielea noastră — nu trucurile simple de zi cu zi, ci agenți, automatizări și lucrurile cu pârghie reală. Pentru că singura modalitate de a ști unde te afli tu și echipa ta cu AI este să o fi construit tu însuți.",
-    manifesto_item_apply: "Apoi îndreptăm agenții direct spre întrebarea serii. Ce e posibil? De unde începi? Ce ar fi cu adevărat european?",
-    manifesto_item2: "Aducem contextul care lipsește în altă parte: unde se află astăzi Europa în AI, unde se blochează, ce este în joc cu datele — și ce se poate face concret pentru a merge înainte.",
-    manifesto_item3: "Pleci acasă, capabil să construiești singur cu AI și să vorbești despre asta cu echipele tale — cu câteva impulsuri europene de gândit și poate o idee pe care o poți pune în practică drept cetățean.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -2932,7 +2995,8 @@ window.LOCALES = {
     hero_strapline: "Du förstår AI på riktigt först när du har byggt det själv.",
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
-    manifesto_lede: "Europa ser inte särskilt djärvt ut just nu. På AI släpar vi efter, och när man frågar vad man själv kan göra för Europa möts man oftast av en axelryckning. De flesta människor på den här kontinenten känner sig inte ens europeiska — de känner att de bara råkar finnas här.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -2946,12 +3010,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Just därför finns Salon AI. På en kväll händer tre saker:",
-    manifesto_item1: "Vi lär oss AI hands-on — inte de enkla vardagstricken, utan agenter, automatisering och det som har riktig hävstångseffekt. För det enda sättet att veta var du och ditt team verkligen står med AI är att ha byggt något själv.",
-    manifesto_item_apply: "Sen riktar vi agenterna direkt mot kvällens fråga. Vad är möjligt? Var börjar du? Vad vore verkligen europeiskt?",
-    manifesto_item2: "Vi ger kontexten som saknas på andra håll: var Europa står med AI idag, var det kärvar, vad som står på spel i datafrågan — och vad man konkret kan göra för att komma framåt.",
-    manifesto_item3: "Du går hem, kapabel att själv bygga med AI och prata om det med dina team — med några EU-impulser att tänka på, och kanske en idé du kan förverkliga som medborgare.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -3250,7 +3320,8 @@ window.LOCALES = {
     hero_strapline: "AI opravdu pochopíš, až když si ji sám postavíš.",
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Evropa právě teď nepůsobí zvlášť odvážně. V AI zaostáváme, a když se ptáš, co můžeš sám pro Evropu udělat, nejčastější odpovědí bývá pokrčení rameny. Většina lidí na tomto kontinentu se ani necítí jako Evropané — mají pocit, že tu jsou jen náhodou.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -3264,12 +3335,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Právě proto existuje Salon AI. Během jednoho večera se dějí tři věci:",
-    manifesto_item1: "Učíme se AI z první ruky — ne jednoduché každodenní triky, ale agenty, automatizace a věci se skutečnou pákou. Protože jediný způsob, jak zjistit, kde vy a váš tým s AI skutečně stojíte, je něco si sám postavit.",
-    manifesto_item_apply: "Pak nasměrujeme agenty přímo na otázku večera. Co jde? Kde začneš? Co by bylo opravdu evropské?",
-    manifesto_item2: "Přinášíme kontext, který jinde chybí: kde dnes Evropa stojí s AI, kde to vázne, co je v sázce u dat — a co se konkrétně dá udělat pro pohyb vpřed.",
-    manifesto_item3: "Vracíš se domů, schopen sám stavět s AI a mluvit o tom se svými týmy — s několika evropskými impulzy k zamyšlení a možná jedním nápadem, který můžeš jako občan(ka) sám uskutečnit.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -3568,7 +3645,8 @@ window.LOCALES = {
     hero_strapline: "Csak akkor érted meg igazán az AI-t, ha magad építetted.",
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Európa most nem tűnik túl bátornak. A mesterséges intelligenciában lemaradunk, és amikor megkérdezed, mit tehetsz te magad Európáért, a leggyakoribb válasz egy vállrándítás. A legtöbben ezen a kontinensen nem is érzik magukat európainak — úgy érzik, csak véletlenül vannak itt.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -3582,12 +3660,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Pontosan ezért létezik a Salon AI. Egy estén három dolog történik:",
-    manifesto_item1: "Hands-on tanuljuk a mesterséges intelligenciát — nem a hétköznapi trükköket, hanem ügynököket, automatizálásokat és a valódi tőkéerőt jelentő dolgokat. Mert csak akkor tudod, hol állsz te és a csapatod az MI-vel, ha magad is építettél valamit.",
-    manifesto_item_apply: "Aztán az ágenseket egyenesen az este kérdésére irányítjuk. Mi lehetséges? Hol kezded? Mi volna igazán európai?",
-    manifesto_item2: "Megadjuk a kontextust, ami máshol hiányzik: hol tart ma Európa az MI-ben, hol akad el, mi a tét az adatoknál — és mit lehet konkrétan tenni az előrelépésért.",
-    manifesto_item3: "Hazaindulsz, képesen arra, hogy magad építs AI-jal és beszélj róla a csapataiddal — néhány európai impulzussal, amin elgondolkodhatsz, és talán egy ötlettel, amit állampolgárként magad valósíthatsz meg.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -3886,7 +3970,8 @@ window.LOCALES = {
     hero_strapline: "AI naozaj pochopíš, až keď si ju sám postavíš.",
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Európa práve teraz nepôsobí zvlášť odvážne. V AI zaostávame, a keď sa pýtaš, čo môžeš sám pre Európu urobiť, najčastejšou odpoveďou je pokrčenie ramien. Väčšina ľudí na tomto kontinente sa ani necíti ako Európania — majú pocit, že sú tu iba náhodou.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -3900,12 +3985,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Práve preto existuje Salon AI. Počas jedného večera sa dejú tri veci:",
-    manifesto_item1: "Učíme sa AI z prvej ruky — nie jednoduché každodenné triky, ale agentov, automatizácie a veci so skutočnou pákou. Pretože jediný spôsob, ako zistiť, kde vy a váš tím s AI skutočne stojíte, je niečo si sám postaviť.",
-    manifesto_item_apply: "Potom nasmerujeme agentov priamo na otázku večera. Čo ide? Kde začneš? Čo by bolo skutočne európske?",
-    manifesto_item2: "Prinášame kontext, ktorý inde chýba: kde dnes Európa stojí s AI, kde to viazne, čo je v stávke pri dátach — a čo sa konkrétne dá urobiť pre pohyb vpred.",
-    manifesto_item3: "Vraciaš sa domov schopný sám stavať s AI a hovoriť o tom so svojimi tímami — s niekoľkými európskymi impulzmi na premýšľanie a možno jedným nápadom, ktorý môžeš ako občan(ka) sám uskutočniť.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -4204,7 +4295,8 @@ window.LOCALES = {
     hero_strapline: "Истински разбираш ИИ едва когато сам си го изградил.",
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Европа в момента не изглежда особено смела. В областта на ИИ изоставаме, а когато попиташ какво сам можеш да направиш за Европа, най-честият отговор е свиване на рамене. Повечето хора на този континент дори не се чувстват европейци — те се чувстват така, сякаш са тук просто случайно.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -4218,12 +4310,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Именно затова съществува Salon AI. В една вечер се случват три неща:",
-    manifesto_item1: "Учим ИИ с ръцете — не простите ежедневни трикове, а агенти, автоматизации и нещата с истински лост. Защото единственият начин да разбереш къде наистина стоите ти и екипът ти с ИИ е да го изградиш сам.",
-    manifesto_item_apply: "След това насочваме агентите директно към въпроса на вечерта. Какво е възможно? Откъде започваш? Кое би било наистина европейско?",
-    manifesto_item2: "Носим контекста, който другаде липсва: къде стои днес Европа с ИИ, къде заяжда, какво е заложено при данните — и какво конкретно може да се направи, за да се върви напред.",
-    manifesto_item3: "Връщаш се у дома, способен сам да строиш с ИИ и да говориш за това с екипите си — с няколко европейски импулса за размисъл и може би една идея, която можеш да осъществиш като гражданин.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -4522,7 +4620,8 @@ window.LOCALES = {
     hero_strapline: "Du forstår først AI rigtigt, når du selv har bygget det.",
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
-    manifesto_lede: "Europa ser ikke særligt dristigt ud lige nu. Vi sakker bagud på AI, og når man spørger, hvad man selv kan gøre for Europa, er det almindeligste svar et skuldertræk. De fleste mennesker på dette kontinent føler sig ikke engang europæiske — de føler, at de bare tilfældigvis er her.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -4536,12 +4635,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Netop derfor findes Salon AI. På én aften sker tre ting:",
-    manifesto_item1: "Vi lærer AI hands-on — ikke de enkle dagligdagstricks, men agenter, automatisering og det, der har reel løftestang. For den eneste måde at vide, hvor du og dit team virkelig står med AI, er at have bygget noget selv.",
-    manifesto_item_apply: "Så retter vi agenterne direkte mod aftenens spørgsmål. Hvad er muligt? Hvor begynder du? Hvad ville være rigtigt europæisk?",
-    manifesto_item2: "Vi giver konteksten, der ellers mangler: hvor Europa står på AI i dag, hvor det kører fast, hvad der står på spil ved data — og hvad man konkret kan gøre for at komme videre.",
-    manifesto_item3: "Du går hjem, i stand til selv at bygge med AI og tale om det med dine teams — med et par EU-impulser at tænke over, og måske én idé du kan føre ud i livet som borger.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -4840,7 +4945,8 @@ window.LOCALES = {
     hero_strapline: "Ymmärrät tekoälyä todella vasta, kun olet rakentanut sen itse.",
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
-    manifesto_lede: "Eurooppa ei näytä juuri nyt erityisen rohkealta. Tekoälyssä jäämme jälkeen, ja kun kysytään, mitä itse voit tehdä Euroopan hyväksi, yleisin vastaus on olankohautus. Useimmat ihmiset tällä mantereella eivät edes tunne itseään eurooppalaisiksi — he tuntevat olevansa täällä vain sattumalta.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -4854,12 +4960,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Juuri siksi Salon AI on olemassa. Yhden illan aikana tapahtuu kolme asiaa:",
-    manifesto_item1: "Opimme tekoälyä käytännössä — emme arkisia temppuja, vaan agentteja, automaatioita ja sitä, jolla on todellista vipuvoimaa. Sillä ainoa tapa tietää, missä sinä ja tiimisi todella olette tekoälyssä, on rakentaa jotain itse.",
-    manifesto_item_apply: "Sitten suuntaamme agentit suoraan illan kysymykseen. Mikä on mahdollista? Mistä aloitat? Mikä olisi todella eurooppalaista?",
-    manifesto_item2: "Tarjoamme kontekstin, joka muualta puuttuu: missä Eurooppa on tekoälyssä tänään, missä se takkuilee, mikä on pelissä datan suhteen — ja mitä voi konkreettisesti tehdä eteenpäin pääsemiseksi.",
-    manifesto_item3: "Lähdet kotiin kykenevänä rakentamaan itse tekoälyllä ja puhumaan siitä tiimiesi kanssa — muutaman eurooppalaisen herätteen kanssa pohdittavaksi ja ehkä yhden idean, jonka voit toteuttaa kansalaisena.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -5158,7 +5270,8 @@ window.LOCALES = {
     hero_strapline: "AI uistinu razumiješ tek kad si ga sam izgradio.",
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europa upravo sada ne djeluje osobito odvažno. U AI-ju zaostajemo, a kada netko pita što sami možete učiniti za Europu, najčešći je odgovor slijeganje ramenima. Većina ljudi na ovom kontinentu se ni ne osjeća europski — osjećaju se kao da su ovdje tek slučajno.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -5172,12 +5285,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Upravo zato postoji Salon AI. U jednoj večeri događaju se tri stvari:",
-    manifesto_item1: "Učimo AI iz prve ruke — ne jednostavne svakodnevne trikove, već agente, automatizacije i ono što ima pravu polugu. Jer jedini način da saznaš gdje vi i vaš tim doista stojite s AI-jem jest da ga sami izgradite.",
-    manifesto_item_apply: "Zatim usmjeravamo agente izravno na pitanje večeri. Što je moguće? Gdje počinješ? Što bi bilo zaista europsko?",
-    manifesto_item2: "Donosimo kontekst koji drugdje nedostaje: gdje Europa danas stoji s AI-jem, gdje zapinje, što je na kocki kod podataka — i što se konkretno može učiniti da bi se krenulo naprijed.",
-    manifesto_item3: "Ideš kući, sposoban sam graditi s AI-jem i razgovarati o tome sa svojim timovima — s nekoliko europskih impulsa za razmišljanje, i možda jednom idejom koju kao građanin/ka možeš sam ostvariti.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -5476,7 +5595,8 @@ window.LOCALES = {
     hero_strapline: "Πραγματικά καταλαβαίνεις την AI μόνο όταν την έχεις χτίσει ο ίδιος.",
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Η Ευρώπη αυτή τη στιγμή δεν δείχνει ιδιαίτερα τολμηρή. Στην Τεχνητή Νοημοσύνη μένουμε πίσω, και όταν ρωτάς τι μπορείς ο ίδιος να κάνεις για την Ευρώπη, η συνηθέστερη απάντηση είναι ένα ανασήκωμα ώμων. Οι περισσότεροι άνθρωποι σε αυτή την ήπειρο δεν αισθάνονται καν Ευρωπαίοι — αισθάνονται ότι βρίσκονται εδώ απλώς τυχαία.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -5490,12 +5610,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Ακριβώς γι' αυτό υπάρχει το Salon AI. Σε μια βραδιά συμβαίνουν τρία πράγματα:",
-    manifesto_item1: "Μαθαίνουμε ΤΝ από πρώτο χέρι — όχι τα απλά καθημερινά κόλπα, αλλά πράκτορες, αυτοματισμούς και ό,τι έχει πραγματικό μοχλό. Γιατί ο μόνος τρόπος να ξέρεις πού πραγματικά είστε εσύ και η ομάδα σου με την ΤΝ είναι να την έχεις φτιάξει ο ίδιος.",
-    manifesto_item_apply: "Μετά κατευθύνουμε τους agents απευθείας στην ερώτηση της βραδιάς. Τι είναι εφικτό; Από πού αρχίζεις; Τι θα ήταν πραγματικά ευρωπαϊκό;",
-    manifesto_item2: "Φέρνουμε το πλαίσιο που αλλού λείπει: πού στέκεται σήμερα η Ευρώπη στην ΤΝ, πού κολλάει, τι διακυβεύεται με τα δεδομένα — και τι μπορεί κανείς συγκεκριμένα να κάνει για να προχωρήσει.",
-    manifesto_item3: "Πηγαίνεις σπίτι, ικανός/ή να φτιάχνεις μόνος/η σου με AI και να το συζητάς με τις ομάδες σου — με μερικά ευρωπαϊκά ερεθίσματα για σκέψη, και ίσως μία ιδέα που μπορείς να υλοποιήσεις ως πολίτης.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -5794,7 +5920,8 @@ window.LOCALES = {
     hero_strapline: "Dirbtinį intelektą iš tikrųjų supranti tik tada, kai jį pats sukūrei.",
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europa šiuo metu neatrodo ypač drąsi. DI srityje atsiliekame, o kai paklausi, ką pats gali padaryti dėl Europos, dažniausias atsakymas yra pečių gūžtelėjimas. Dauguma žmonių šiame žemyne net nesijaučia europiečiais — jie jaučiasi taip, lyg čia atsidūrę visiškai atsitiktinai.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -5808,12 +5935,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Būtent todėl egzistuoja Salon AI. Per vieną vakarą nutinka trys dalykai:",
-    manifesto_item1: "Mokomės DI praktiškai — ne paprastų kasdienių gudrybių, o agentų, automatizacijų ir to, kas turi tikrą svertą. Nes vienintelis būdas sužinoti, kur jūs ir jūsų komanda iš tikrųjų esate su DI, yra patiems ką nors sukurti.",
-    manifesto_item_apply: "Tada nukreipiame agentus tiesiai į vakaro klausimą. Kas įmanoma? Nuo ko pradedi? Kas būtų tikrai europietiška?",
-    manifesto_item2: "Pateikiame kontekstą, kurio kitur trūksta: kur šiandien yra Europa DI srityje, kur stringa, kas pavojuje su duomenimis — ir ką konkrečiai galima padaryti judant į priekį.",
-    manifesto_item3: "Grįžti namo, gebantis pats kurti su DI ir kalbėti apie tai su savo komandomis — su keliais europinių minčių impulsais ir galbūt viena idėja, kurią gali įgyvendinti kaip pilietis.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -6112,7 +6245,8 @@ window.LOCALES = {
     hero_strapline: "Tu patiesi saproti MI tikai tad, kad esi to pats uzbūvējis.",
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Eiropa pašlaik neizskatās īpaši drosmīga. MI jomā mēs atpaliekam, un, kad jautā, ko pats vari darīt Eiropas labā, biežākā atbilde ir plecu paraustīšana. Vairākums cilvēku šajā kontinentā pat nejūtas kā eiropieši — viņi jūtas, it kā šeit būtu tikai nejauši.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -6126,12 +6260,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Tieši tāpēc pastāv Salon AI. Vienā vakarā notiek trīs lietas:",
-    manifesto_item1: "Mēs mācāmies MI praktiski — ne ikdienišķos trikus, bet aģentus, automatizāciju un to, kam ir īsts svira. Jo vienīgais veids, kā uzzināt, kur jūs un jūsu komanda patiešām atrodaties ar MI, ir pašiem to izveidot.",
-    manifesto_item_apply: "Pēc tam vēršam aģentus tieši uz vakara jautājumu. Kas ir iespējams? No kā tu sāc? Kas būtu patiesi eiropeisks?",
-    manifesto_item2: "Mēs sniedzam kontekstu, kas citur trūkst: kur šodien atrodas Eiropa MI ziņā, kur tas iestrēdz, kas ir uz spēles datu jautājumā — un ko konkrēti var darīt, lai virzītos uz priekšu.",
-    manifesto_item3: "Tu ej mājās, spējīgs pats būvēt ar MI un par to runāt ar savām komandām — ar dažiem Eiropas impulsiem pārdomām un, iespējams, vienu ideju, ko vari īstenot kā pilsonis.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -6430,7 +6570,8 @@ window.LOCALES = {
     hero_strapline: "Sa mõistad AI-d tegelikult alles siis, kui oled selle ise ehitanud.",
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
-    manifesto_lede: "Euroopa praegu eriti julge ei tundu. TI-s jääme maha, ja kui küsida, mida sa ise saaks Euroopa heaks teha, on kõige sagedasem vastus õlakehitus. Enamik inimesi sellel mandril ei tunne end isegi eurooplastena — nad tunnevad, et nad on lihtsalt juhuslikult siin.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -6444,12 +6585,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Just seetõttu Salon AI eksisteerib. Ühe õhtu jooksul juhtub kolm asja:",
-    manifesto_item1: "Õpime TI-d praktiliselt — mitte lihtsaid igapäevaseid nippe, vaid agente, automatiseerimisi ja seda, millel on tõeline võimendus. Sest ainus viis teada saada, kus sina ja su meeskond TI-ga tegelikult olete, on see ise üles ehitada.",
-    manifesto_item_apply: "Siis suuname agendid otse õhtu küsimusele. Mis on võimalik? Kust sa alustad? Mis oleks tõeliselt euroopalik?",
-    manifesto_item2: "Toome konteksti, mis mujal puudub: kus on Euroopa täna TI-s, kus see takerdub, mis on andmete osas mängus — ja mida saab konkreetselt teha edasi liikumiseks.",
-    manifesto_item3: "Lähed koju, võimelisena ise AI-ga ehitama ja sellest oma meeskondadega rääkima — paari Euroopa impulsiga mõtlemiseks ja võib-olla ühe ideega, mida saad kodanikuna ise ellu viia.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -6748,7 +6895,8 @@ window.LOCALES = {
     hero_strapline: "UI zares razumeš šele takrat, ko si ga sam zgradil.",
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Evropa trenutno ne deluje posebej drzno. Pri umetni inteligenci zaostajamo, in ko vprašaš, kaj lahko sam storiš za Evropo, je najpogostejši odgovor skomig z rameni. Večina ljudi na tej celini se sploh ne počuti Evropejcev — počutijo se, kot da so tu povsem po naključju.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -6762,12 +6910,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Prav zato obstaja Salon AI. V enem večeru se zgodijo tri stvari:",
-    manifesto_item1: "Učimo se UI iz prve roke — ne preprostih vsakodnevnih trikov, ampak agentov, avtomatizacij in stvari z resničnim vzvodom. Saj je edini način, da ugotoviš, kje sta ti in tvoja ekipa z UI v resnici, da jo zgradiš sam.",
-    manifesto_item_apply: "Nato usmerimo agente neposredno na vprašanje večera. Kaj je možno? Kje začneš? Kaj bi bilo res evropsko?",
-    manifesto_item2: "Prinesemo kontekst, ki drugje manjka: kje stoji danes Evropa pri UI, kje se zatika, kaj je na kocki pri podatkih — in kaj konkretno lahko storimo za premik naprej.",
-    manifesto_item3: "Greš domov, sposoben sam graditi z UI in se o tem pogovarjati s svojimi ekipami — z nekaj evropskimi impulzi za razmislek in morda eno idejo, ki jo lahko kot državljan(ka) sam uresničiš.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -7066,7 +7220,8 @@ window.LOCALES = {
     hero_strapline: "Tifhem l-AI tassew biss meta bnejtha int stess.",
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "L-Ewropa bħalissa ma tidhirx partikolarment kuraġġjuża. Fl-AI qed naqgħu lura, u meta titlob lil xi ħadd x'jista' jagħmel hu nnifsu għall-Ewropa, l-aktar tweġiba komuni hija tqanqilet spallejn. Il-biċċa l-kbira tan-nies f'dan il-kontinent lanqas iħossuhom Ewropej — iħossuhom bħallikieku qegħdin hawn b'kumbinazzjoni biss.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -7080,12 +7235,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Eżattament għalhekk jeżisti s-Salon AI. F'lejla waħda jiġru tliet affarijiet:",
-    manifesto_item1: "Nitgħallmu l-AI b'idejna stess — mhux it-tricks sempliċi tal-ġurnata, imma aġenti, awtomatizzazzjonijiet u dawk l-affarijiet li għandhom influwenza vera. Għax l-unika triq biex tkun taf fejn int u t-tim tiegħek tassew tinsabu fl-AI hi li tkun bnejtha int stess.",
-    manifesto_item_apply: "Imbagħad nidirieġu l-aġenti dirett lejn il-mistoqsija tas-serata. X'inhu possibbli? Minn fejn tibda? X'jkun verament Ewropew?",
-    manifesto_item2: "Inġibu l-kuntest li f'postijiet oħra hu nieqes: fejn tinsab l-Ewropa llum fl-AI, fejn qed twaqqaf, x'hemm fil-logħob fid-data — u x'jista' jsir konkretament biex nimxu 'l quddiem.",
-    manifesto_item3: "Tmur id-dar, kapaċi taħdem int stess bl-AI u tkellem dwarha mat-timijiet tiegħek — b'ftit impulsi Ewropej fuq xiex tirrifletti, u forsi idea waħda li tista' twettaq int stess bħala ċittadin(a).",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
@@ -7384,7 +7545,8 @@ window.LOCALES = {
     hero_strapline: "Ní thuigeann tú AI go fírinneach go dtí go bhfuil tú féin tar éis é a thógáil.",
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
-    manifesto_lede: "Ní fheiceann an Eoraip an-dána i láthair na huaire. Táimid ag titim chun deiridh ar an IS, agus nuair a iarrtar cad is féidir leat féin a dhéanamh ar son na hEorpa, is é croitheadh guaillí an freagra is coitianta. Ní bhraitheann an chuid is mó de na daoine ar an mór-roinn seo fiú gur Eorpaigh iad — mothaíonn siad amhail is nach bhfuil siad anseo ach de thaisme.",
+    manifesto_lede: "Europe hesitates on AI — and most don\'t know what they could do about it themselves.",
+
     manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
@@ -7398,12 +7560,18 @@ window.LOCALES = {
     tr_a2: "You have a base you can keep building on.",
     tr_a3: "You see where AI has real leverage in your day-to-day work.",
     tr_a4: "You participate as a builder, not as an audience.",
-    manifesto_bridge: "Sin go díreach an fáth go bhfuil Salon AI ann. Tarlaíonn trí rud in aon oíche amháin:",
-    manifesto_item1: "Foghlaimímid IS go praiticiúil — ní hé na cleasanna laethúla simplí, ach gníomhairí, uathoibrithe agus rudaí a bhfuil fíor-ghríosú acu. Mar is é an t-aon bhealach le fáil amach cá bhfuil tú féin agus d'fhoireann i ndáiríre leis an IS, é a thógáil leat féin.",
-    manifesto_item_apply: "Ansin díríonn muid na hagents díreach ar cheist na hoíche. Cad is féidir? Cá dtosaíonn tú? Cad a bheadh fíor-Eorpach?",
-    manifesto_item2: "Cuirimid an comhthéacs ar fáil atá in easnamh in áiteanna eile: cá bhfuil an Eoraip inniu leis an IS, cá bhfuil sé sáinnithe, cad atá ar an gclár leis na sonraí — agus cad is féidir a dhéanamh go nithiúil chun bogadh ar aghaidh.",
-    manifesto_item3: "Téann tú abhaile, in ann tógáil le AI tú féin agus labhairt faoi le do fhoirne — le cúpla spreagadh Eorpach le machnamh a dhéanamh orthu, agus b'fhéidir smaoineamh amháin a thig leat a chur i bhfeidhm mar shaoránach.",
-    manifesto_coda: "It all happens offline – real people, real tables. Online courses are abundant. The conversations that actually change something usually emerge where people come together and think bigger. <strong><em>Past rounds have brought together decision-makers from business, agencies, media, academia and politics.</em></strong>",
+    manifesto_bridge: "That is why Salon AI exists.",
+
+    manifesto_item1: "We build with AI — not the everyday tricks, but agents and automations.",
+
+    manifesto_item_apply: "Then we turn the agents on the question of the evening.",
+
+    manifesto_item2: "We bring the context: where Europe stands on AI, where it is stuck, what you can do.",
+
+    manifesto_item3: "You leave with a working tool — and one idea you can\'t let go of.",
+
+    manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
+
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Co-host a curated dinner salon.",
     host_own_sub: "Invite 12 people. We handle the rest.",
