@@ -191,60 +191,25 @@
   }
   section.spread p + p { margin-top: 14px; }
 
-  /* ── II. Editorial (Drop Cap) ─────────────────────────────────── */
-  section.editorial p.with-dropcap::first-letter {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 4.2rem;
-    float: left;
-    line-height: 0.92;
-    color: var(--oxblood);
-    padding: 6px 14px 0 0;
-    margin-top: 4px;
-  }
-  section.editorial p {
+  /* ── I. Der Abend — was tatsächlich passiert ──────────────────── */
+  section.the-evening p {
     font-family: var(--serif);
     font-weight: 400;
     font-size: 17px;
     line-height: 1.75;
     color: var(--ink);
   }
-  section.editorial p + p { margin-top: 18px; }
-
-  /* ── III. Hypothese — Pull-Statement ──────────────────────────── */
-  section.hypothesis p {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.72;
-    color: var(--ink);
-  }
-  .pull-statement {
-    text-align: center;
-    margin: 36px auto 0;
-    max-width: 480px;
-    position: relative;
-  }
-  .pull-statement::before,
-  .pull-statement::after {
-    content: '';
-    display: block;
-    width: 30%;
-    height: 1px;
-    background: var(--rule);
-    margin: 18px auto;
-  }
-  .pull-statement p {
-    font-family: var(--serif);
+  section.the-evening p + p { margin-top: 18px; }
+  section.the-evening p.evening-reassurance {
     font-style: italic;
-    font-size: 1.3rem;
-    line-height: 1.35;
-    color: var(--oxblood);
-    margin: 0;
-    text-wrap: balance;
+    color: var(--ink-55);
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    font-size: 15.5px;
   }
 
-  /* ── Testimonial (Schleip quote, between Hypothese and Programm) ── */
+  /* ── Testimonial (Schleip quote, between Der Abend and Programm) ── */
   section.testimonial-section { padding: 8px 0 4px; }
   .testimonial { text-align: center; margin: 12px auto; max-width: 560px; }
   .testimonial-text {
@@ -491,11 +456,6 @@
     p.hosts-line { font-size: 13px; margin-bottom: 28px; }
     .ornament { margin: 44px auto; }
 
-    section.editorial p.with-dropcap::first-letter {
-      font-size: 3.4rem;
-      padding: 4px 10px 0 0;
-    }
-
     section.movements .movement {
       grid-template-columns: 44px 1fr 44px;
       gap: 10px 16px;
@@ -545,38 +505,22 @@
 
   <div class="ornament" aria-hidden="true">◊</div>
 
-  <!-- II. Editorial (Die Frage) -->
-  <section class="spread editorial">
-    <p class="dept"><span class="dept-num">I</span> &mdash; Editorial</p>
-    <p class="with-dropcap">
-      Es gibt Dinge, die sich nicht reproduzieren lassen. Taste ist eines davon.
+  <!-- I. Der Abend — was tatsächlich passiert -->
+  <section class="spread the-evening">
+    <p class="dept"><span class="dept-num">I</span> &mdash; Der Abend</p>
+    <h2>Was Sie an diesem Abend tun werden.</h2>
+    <p>
+      Sie kommen zum Dinner. Privat, in kleiner Runde von fünfzehn Gästen.
     </p>
     <p>
-      Künstliche Intelligenz kann jedes Bild erzeugen, jeden Satz, jeden Vorschlag. Was sie nicht erzeugen kann, ist die Entscheidung, dass etwas richtig ist — dass etwas seinen Platz verdient — dass etwas bleibt.
+      In zwei Stunden bauen Sie — Schritt für Schritt, gemeinsam mit uns — Ihren eigenen KI-Assistenten. Zugeschnitten auf Ihre Arbeit: für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen.
     </p>
     <p>
-      Wer diese Entscheidung trägt, und wie sie entsteht, ist die offene Frage dieses Jahrzehnts.
+      Anschließend richten wir die Assistenten gemeinsam auf die Frage des Abends: <em>Was bleibt wichtig an Taste — im Zeitalter der KI?</em> Dazu Wein, Essen, Gespräch.
     </p>
-  </section>
-
-  <div class="ornament" aria-hidden="true">◊</div>
-
-  <!-- III. Die Hypothese -->
-  <section class="spread hypothesis">
-    <p class="dept"><span class="dept-num">II</span> &mdash; Hypothese</p>
-    <h2>Taste ist ein System.</h2>
-    <p>
-      Die meisten Gespräche über KI in Marken und Kultur drehen sich ums Produzieren — die Kampagne, das Bild, die Empfehlung. Das ist die einfache Frage.
+    <p class="evening-reassurance">
+      Keine Vorkenntnisse nötig. Sie gehen nach Hause mit einem funktionierenden Werkzeug — und einer Frage, die Ihnen länger nachgeht.
     </p>
-    <p>
-      Die schwere Frage: Wie entsteht Taste überhaupt? Aus Urteil, aus Knappheit, aus einem Netzwerk, das markiert, was zählt. Welche dieser Mechanismen stärkt KI — welche schwächt sie — welche ersetzt sie?
-    </p>
-    <p>
-      Wir stellen die Frage anders. Was ist das System, das Taste erzeugt — und an welcher Stelle verschiebt KI das Gleichgewicht?
-    </p>
-    <div class="pull-statement">
-      <p>Was bleibt wichtig an Taste — im Zeitalter der KI?</p>
-    </div>
   </section>
 
   <div class="ornament" aria-hidden="true">◊</div>
@@ -591,9 +535,9 @@
 
   <div class="ornament" aria-hidden="true">◊</div>
 
-  <!-- IV. Die Zwei Bewegungen (80/20) -->
+  <!-- II. Programm — die zwei Bewegungen (80/20) -->
   <section class="spread movements">
-    <p class="dept"><span class="dept-num">III</span> &mdash; Programm</p>
+    <p class="dept"><span class="dept-num">II</span> &mdash; Programm</p>
     <h2>Zwei Bewegungen. Eine Frage.</h2>
 
     <div class="movement">
@@ -601,7 +545,7 @@
       <p class="movement-pct">80 %</p>
       <h3 class="movement-title">Wir bauen.</h3>
       <p class="movement-body">
-        Jede Gästin und jeder Gast baut einen eigenen KI-Assistenten — zugeschnitten auf die eigene Arbeit. Eine Marke, ein Portfolio, eine Frage des Urteils. Keine Lektion. Ein Werkzeug für den Abend.
+        Schritt für Schritt, gemeinsam mit uns, bauen Sie einen eigenen KI-Assistenten — passgenau auf Ihre Arbeit. Für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen. Keine Lektion. Ein Werkzeug, das nach dem Abend weiterläuft.
       </p>
     </div>
 
@@ -610,20 +554,16 @@
       <p class="movement-pct">20 %</p>
       <h3 class="movement-title">Wir fragen.</h3>
       <p class="movement-body">
-        Im zweiten Teil richten wir die Assistenten auf die Frage des Abends. Wo Urteil auf Generierung trifft. Wo eine Tradition auf unendliches Angebot trifft. Wo das Netzwerk, das Taste trägt, auf den Algorithmus, der sie modelliert. Die Assistenten befragen die Welt. Sie illustrieren sie nicht.
+        Die fünfzehn Assistenten kommen zusammen und untersuchen die Frage des Abends: <em>Was bleibt wichtig an Taste — im Zeitalter der KI?</em> Sie sehen, was die Maschinen einander entgegnen — und wo Ihr eigenes Urteil sie korrigiert.
       </p>
     </div>
-
-    <p class="movements-close">
-      Sie gehen mit einem schärferen Bild davon, wie Taste entsteht — und einem KI-System, das die Frage mit Ihnen weiter untersucht.
-    </p>
   </section>
 
   <div class="ornament" aria-hidden="true">◊</div>
 
-  <!-- V. Gastgeberinnen -->
+  <!-- III. Gastgeberinnen -->
   <section class="spread hosts">
-    <p class="dept"><span class="dept-num">IV</span> &mdash; Gastgeberinnen</p>
+    <p class="dept"><span class="dept-num">III</span> &mdash; Gastgeberinnen</p>
     <h2>Drei Perspektiven, eine Frage.</h2>
 
     <article class="host-essay">
@@ -657,9 +597,9 @@
 
   <div class="ornament" aria-hidden="true">◊</div>
 
-  <!-- VI. Praktisches -->
+  <!-- IV. Praktisches -->
   <section class="spread practical">
-    <p class="dept"><span class="dept-num">V</span> &mdash; Praktisches</p>
+    <p class="dept"><span class="dept-num">IV</span> &mdash; Praktisches</p>
     <h2>Anlass und Form.</h2>
     <dl class="details">
       <dt>Datum</dt>
@@ -679,9 +619,9 @@
 
   <div class="ornament" aria-hidden="true">◊</div>
 
-  <!-- VII. RSVP -->
+  <!-- V. RSVP -->
   <section class="spread rsvp">
-    <p class="dept"><span class="dept-num">VI</span> &mdash; RSVP</p>
+    <p class="dept"><span class="dept-num">V</span> &mdash; RSVP</p>
     <h2>Die Plätze sind begrenzt.<br />Eine Antwort genügt.</h2>
     <a class="rsvp-link"
        href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Berlin%20%C2%B7%2015.%20Juni%202026%20%C2%B7%20RSVP&body=Liebe%20Franziska%2C%0A%0Aich%20nehme%20die%20Einladung%20zu%20Salon%20AI%20Berlin%20am%2015.%20Juni%202026%20gerne%20an.%0A%0AName%3A%0AE-Mail%3A%0AHaus%20%2F%20Zugeh%C3%B6rigkeit%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
