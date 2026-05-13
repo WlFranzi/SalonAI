@@ -500,6 +500,9 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
   box-shadow: 0 6px 18px rgba(126,200,224,0.6);
 }
 .event-info .sub { font-size: 13px; color: var(--muted-blue); margin-top: 6px; line-height: 1.6; }
+.event-info .event-question { margin: 0 0 14px; padding: 12px 14px 13px; background: rgba(126,200,224,0.10); border-left: 3px solid var(--sky-deep); border-radius: 6px; }
+.event-info .event-question-label { display: block; font-size: 10.5px; color: var(--muted-blue); letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.event-info .event-question-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; color: var(--navy); line-height: 1.35; display: block; }
 .event-last-public { font-size: 13px; color: var(--muted-blue); font-style: italic; margin: 0 0 14px; line-height: 1.6; padding: 12px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .event-actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 24px; }
 .rsvp-btn { font-size: 14px; font-weight: 600; padding: 13px 28px; border-radius: 999px; background: var(--navy); color: #fff; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.18s, transform 0.18s, box-shadow 0.18s; white-space: nowrap; text-decoration: none; display: inline-flex; align-items: center; letter-spacing: 0.4px; box-shadow: 0 4px 14px rgba(27,46,74,0.16); }
@@ -1037,6 +1040,10 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
               <span data-i18n="event_name">Salon AI Dinner — München</span>
               <span class="sticker-share" onclick="shareEvent(event, this)">Share event</span>
             </div>
+            <div class="event-question">
+              <span class="event-question-label" data-i18n="event_q_label">Frage des Abends</span>
+              <span class="event-question-text" data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>
+            </div>
             <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</div>
             <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Ein Laptop reicht. Alles andere kommt mit dem Platz.</div>
             <div class="event-actions-row">
@@ -1200,7 +1207,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── MANIFEST ──────────────────────────────────────────────────── -->
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
-    <h2 data-i18n-html="manifesto_h2">Warum es Salon <span class="m-h2-ai">AI</span> gibt</h2>
+    <h2 data-i18n-html="manifesto_h2">Europäer:innen sollten <span class="m-h2-ai">KI</span> bauen — nicht zuschauen.</h2>
     <p class="manifesto-lede" data-i18n="manifesto_lede">Eine Frage pro Abend. Eine Methode dahinter.</p>
     <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI.</p>
     <ol>

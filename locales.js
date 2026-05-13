@@ -33,7 +33,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
-    manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -168,6 +168,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -428,7 +430,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
-    manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
+    manifesto_h2: "Europäer:innen sollten <span class=\"m-h2-ai\">KI</span> bauen — nicht zuschauen.",
     manifesto_lede: "Eine Frage pro Abend. Eine Methode dahinter.",
 
 
@@ -563,6 +565,8 @@ window.LOCALES = {
     event_month: "Mai",
 
     event_name: "Salon AI Dinner — München",
+    event_q_label: "Frage des Abends",
+    event_q_text: "Welche KI kann nur von Europäer:innen gebaut werden?",
 
     event_sub: "Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive",
 
@@ -823,7 +827,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
-    manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -994,6 +998,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -1211,7 +1217,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
-    manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -1382,6 +1388,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -1599,7 +1607,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
-    manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -1770,6 +1778,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -1987,7 +1997,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
-    manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -2158,6 +2168,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -2375,7 +2387,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
-    manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -2546,6 +2558,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -2763,7 +2777,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
-    manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -2934,6 +2948,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -3147,7 +3163,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
-    manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -3318,6 +3334,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -3531,7 +3549,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
-    manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -3702,6 +3720,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -3915,7 +3935,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
-    manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -4086,6 +4106,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -4299,7 +4321,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
-    manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -4470,6 +4492,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -4683,7 +4707,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
-    manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -4854,6 +4878,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -5067,7 +5093,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
-    manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -5238,6 +5264,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -5451,7 +5479,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
-    manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -5622,6 +5650,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -5835,7 +5865,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
-    manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -6006,6 +6036,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -6219,7 +6251,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
-    manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -6390,6 +6422,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -6603,7 +6637,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
-    manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -6774,6 +6808,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -6987,7 +7023,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
-    manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -7158,6 +7194,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -7371,7 +7409,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
-    manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -7542,6 +7580,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -7755,7 +7795,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
-    manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -7926,6 +7966,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -8139,7 +8181,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
-    manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -8310,6 +8352,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -8523,7 +8567,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
-    manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -8694,6 +8738,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
@@ -8907,7 +8953,7 @@ window.LOCALES = {
 
 
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
-    manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
+    manifesto_h2: "Europeans should build <span class=\"m-h2-ai\">AI</span> — not just watch it.",
     manifesto_lede: "One question per evening. One method behind it.",
 
 
@@ -9078,6 +9124,8 @@ window.LOCALES = {
     event_month: "May",
 
     event_name: "Salon AI Dinner — Munich",
+    event_q_label: "The question that evening",
+    event_q_text: "Which AI can only be built by Europeans?",
 
     event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
