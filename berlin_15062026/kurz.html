@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Salon AI · Berlin · 15. Juni 2026 · In Karten</title>
+<link rel="canonical" href="https://www.salon-ai.eu/berlin_15062026/kurz.html" />
+<meta name="description" content="Salon AI Berlin — die Einladung in Karten. Was wir tun, und was es für Sie heißt. 15. Juni 2026, by invitation." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2RZV4QPFD', { page_path: '/berlin_15062026/kurz.html' });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ── Tokens: clean, scannable ────────────────────────────────── */
+  :root {
+    --paper:     #FFFFFF;
+    --ink:       #0F1419;
+    --ink-70:    rgba(15,20,25,0.72);
+    --ink-55:    rgba(15,20,25,0.55);
+    --green:     #1A4D33;
+    --green-bg:  #EAF3EE;
+    --card-bg:   #F7F6F2;
+    --rule:      rgba(15,20,25,0.10);
+    --display:   'Playfair Display', Georgia, serif;
+    --body:      'Inter', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--body);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  ::selection { background: rgba(26,77,51,0.18); }
+
+  /* ── Nav ─────────────────────────────────────────────────────── */
+  nav.top {
+    padding: 20px 24px;
+    font-family: var(--body);
+    font-size: 13px;
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top a.back {
+    color: var(--ink-55);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav.top a.back:hover { color: var(--green); }
+
+  /* ── Container ───────────────────────────────────────────────── */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── Lead block ──────────────────────────────────────────────── */
+  header.lead {
+    padding: 56px 0 32px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+  }
+  .kicker {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 18px;
+  }
+  h1.lead-title {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+    margin-bottom: 14px;
+    text-wrap: balance;
+  }
+  p.lede {
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-70);
+    max-width: 520px;
+  }
+
+  /* ── Card grid ───────────────────────────────────────────────── */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+
+  article.card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 28px 30px 26px;
+    position: relative;
+  }
+  article.card.hero {
+    background: var(--ink);
+    color: #fff;
+  }
+  article.card.hero h2 {
+    color: #fff;
+  }
+  article.card.hero .tldr li {
+    color: rgba(255,255,255,0.92);
+    border-color: rgba(255,255,255,0.15);
+  }
+  article.card.hero .relevance {
+    background: rgba(26,77,51,0.45);
+    color: #fff;
+  }
+  article.card.hero .relevance strong {
+    color: #C9E5D6;
+  }
+
+  /* Card label (tiny) */
+  .card-label {
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 10.5px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 8px;
+  }
+  article.card.hero .card-label { color: #C9E5D6; }
+
+  /* Card headline */
+  article.card h2,
+  article.card h3 {
+    font-family: var(--display);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.012em;
+    color: var(--ink);
+    margin-bottom: 10px;
+    text-wrap: balance;
+  }
+  article.card h2 {
+    font-size: clamp(1.45rem, 3.4vw, 1.85rem);
+  }
+  article.card h3 {
+    font-size: clamp(1.25rem, 2.6vw, 1.4rem);
+  }
+
+  /* Card body */
+  article.card p.card-body {
+    font-family: var(--body);
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: var(--ink-70);
+    margin-bottom: 14px;
+  }
+  article.card p.card-statement {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+    line-height: 1.32;
+    color: var(--ink);
+    margin: 4px 0 16px;
+    text-wrap: balance;
+  }
+
+  /* TL;DR list inside hero */
+  ul.tldr {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 18px;
+  }
+  ul.tldr li {
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 15.5px;
+    line-height: 1.5;
+    color: var(--ink);
+    padding: 12px 0;
+    border-top: 1px solid var(--rule);
+  }
+  ul.tldr li:first-child { border-top: none; padding-top: 6px; }
+  ul.tldr li strong {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 1.4em;
+    color: var(--green);
+    margin-right: 12px;
+    letter-spacing: -0.02em;
+  }
+  article.card.hero ul.tldr li strong { color: #6FD2A1; }
+
+  /* Simple list inside cards */
+  ul.simple {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 16px;
+  }
+  ul.simple li {
+    font-family: var(--body);
+    font-size: 15.5px;
+    line-height: 1.5;
+    color: var(--ink-70);
+    padding: 4px 0;
+    padding-left: 18px;
+    position: relative;
+  }
+  ul.simple li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    color: var(--green);
+    font-weight: 900;
+  }
+
+  /* Practical dl */
+  dl.practical {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 8px 18px;
+    margin: 6px 0 16px;
+  }
+  dl.practical dt {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-55);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  dl.practical dd {
+    font-family: var(--body);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  /* ── Relevance block ─────────────────────────────────────────── */
+  .relevance {
+    background: var(--green-bg);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-family: var(--body);
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-top: 16px;
+  }
+  .relevance strong {
+    color: var(--green);
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  /* ── RSVP closer ─────────────────────────────────────────────── */
+  section.rsvp {
+    text-align: center;
+    padding: 24px 0 56px;
+  }
+  section.rsvp h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3.6vw, 1.9rem);
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 18px;
+    text-wrap: balance;
+  }
+  section.rsvp p.deadline {
+    font-family: var(--body);
+    font-size: 14px;
+    color: var(--ink-55);
+    margin-bottom: 22px;
+  }
+  a.rsvp-btn {
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    background: var(--ink);
+    padding: 16px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  a.rsvp-btn:hover {
+    background: var(--green);
+    transform: translateY(-1px);
+  }
+  p.signed {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--ink-55);
+    margin-top: 24px;
+  }
+
+  /* ── Footer ─────────────────────────────────────────────────── */
+  footer.colophon {
+    text-align: center;
+    padding: 32px 24px 56px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--body);
+    font-size: 11.5px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--ink-55);
+  }
+  footer.colophon a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  footer.colophon a:hover { color: var(--green); }
+
+  /* ── Responsive ─────────────────────────────────────────────── */
+  @media (max-width: 540px) {
+    nav.top { padding: 16px 20px; }
+    .container { padding: 0 20px; }
+    header.lead { padding: 40px 0 28px; margin-bottom: 28px; }
+    h1.lead-title { font-size: 1.85rem; }
+    p.lede { font-size: 16px; }
+
+    article.card { padding: 22px 22px 20px; border-radius: 12px; }
+    article.card h2 { font-size: 1.4rem; }
+    article.card h3 { font-size: 1.18rem; }
+    article.card p.card-statement { font-size: 1.15rem; }
+
+    ul.tldr li { font-size: 14.5px; }
+    ul.tldr li strong { font-size: 1.3em; }
+    ul.simple li { font-size: 14.5px; }
+
+    dl.practical {
+      grid-template-columns: 88px 1fr;
+      gap: 6px 14px;
+    }
+    dl.practical dt { font-size: 12.5px; }
+    dl.practical dd { font-size: 14px; }
+
+    .relevance { font-size: 13.5px; padding: 12px 14px; }
+
+    section.rsvp h2 { font-size: 1.45rem; }
+    a.rsvp-btn { font-size: 15px; padding: 14px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'berlin_15062026_kurz' });">←  Salon AI</a>
+</nav>
+
+<div class="container">
+
+  <header class="lead">
+    <p class="kicker">Salon AI · Berlin · 15. Juni 2026 · By Invitation</p>
+    <h1 class="lead-title">Die Einladung — in 30 Sekunden.</h1>
+    <p class="lede">Sie haben wenig Zeit. Wir auch. Deshalb diese Version: jede Karte ein Punkt, plus, was er für Sie heißt.</p>
+  </header>
+
+  <section class="cards">
+
+    <!-- Hero card: TL;DR -->
+    <article class="card hero">
+      <p class="card-label">In Zahlen</p>
+      <h2>Was an diesem Abend passiert.</h2>
+      <ul class="tldr">
+        <li><strong>15</strong>Gäste, ein Tisch. Privat, kuratiert.</li>
+        <li><strong>2 Std</strong>bauen — Ihren eigenen KI-Assistenten.</li>
+        <li><strong>1 Std</strong>fragen — gemeinsam, mit allen 15 Assistenten.</li>
+        <li><strong>4 Std</strong>Dinner, Wein, Gespräch dazwischen.</li>
+      </ul>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie verlassen den Abend mit einem Werkzeug, das Ihre Arbeit kennt — und mit einer Frage, die hängt. Sie verlieren keinen Tag in einem Workshop, der nichts produziert.
+      </div>
+    </article>
+
+    <!-- The question -->
+    <article class="card">
+      <p class="card-label">Die Frage des Abends</p>
+      <p class="card-statement">Was bleibt wichtig an <em>Taste</em>, wenn KI alles erzeugen kann?</p>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Die Frage, die in jedem Markenmeeting unausgesprochen mitschwingt. An diesem Abend wird sie ausgesprochen — und durchgearbeitet, mit den Menschen, die sie täglich beantworten müssen.
+      </div>
+    </article>
+
+    <!-- Host 1: Alexandra -->
+    <article class="card">
+      <p class="card-label">Gastgeberin</p>
+      <h3>Alexandra Freifrau von Rehlingen</h3>
+      <p class="card-body">Vier Jahrzehnte europäischer Luxus. Armani. Krug. Montblanc. Ferragamo. Vivienne Westwood. Royale Protokolle.</p>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie sitzen am Tisch mit jemandem, die mitentscheidet, was in Deutschland als begehrenswert gilt. Niemand erklärt Ihnen, was Luxus ist — Sie sind unter Gleichen.
+      </div>
+    </article>
+
+    <!-- Host 2: Nicoline -->
+    <article class="card">
+      <p class="card-label">Gastgeberin</p>
+      <h3>Nicoline Wöhrle</h3>
+      <p class="card-body">Global Head of Communications bei WALA und Dr. Hauschka. Hütet eine Marke, deren Werte unverhandelbar sind, deren Ausdruck sich aber weiterentwickeln muss.</p>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie sprechen mit jemandem, die Wertekonflikte täglich praktisch löst — nicht theoretisch diskutiert. Direkt anwendbar auf Ihre eigenen Marken-Spannungsfelder.
+      </div>
+    </article>
+
+    <!-- Host 3: Franziska -->
+    <article class="card">
+      <p class="card-label">Gastgeberin</p>
+      <h3>Franziska Wittleder</h3>
+      <p class="card-body">Programmiert selbst. Hat Engineering-Teams geführt. Hat KI-Systeme bei Amazon, Writer und SoundCloud gebaut.</p>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie bauen mit jemandem, die genau das schon hundertmal gemacht hat — nicht mit jemandem, die nur darüber spricht. Der Abend funktioniert, weil sie funktioniert.
+      </div>
+    </article>
+
+    <!-- What you don't get -->
+    <article class="card">
+      <p class="card-label">Was Sie nicht erwartet</p>
+      <ul class="simple">
+        <li>Keine Präsentation.</li>
+        <li>Keine Folien.</li>
+        <li>Keine Bühne.</li>
+        <li>Keine Vorkenntnisse erforderlich.</li>
+      </ul>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie kommen, wie Sie sind. Sie müssen sich nicht vorbereiten. Sie müssen kein Statement liefern. Niemand stellt Ihnen unangekündigt eine Frage vor der Gruppe.
+      </div>
+    </article>
+
+    <!-- What you take home -->
+    <article class="card">
+      <p class="card-label">Was Sie mitnehmen</p>
+      <ul class="simple">
+        <li>Einen funktionierenden KI-Assistenten, der Ihre Arbeit kennt — und bleibt.</li>
+        <li>Eine Frage, die nicht schnell vergeht.</li>
+        <li>Vierzehn Gespräche, die wirklich tragen.</li>
+      </ul>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Am nächsten Morgen haben Sie ein neues Werkzeug, das Sie sofort einsetzen können — für ein Briefing, für ein Statement, für eine Vorstandsvorlage. Und Gesprächsstoff für die nächste Vorstandsrunde.
+      </div>
+    </article>
+
+    <!-- Schleip / Proof -->
+    <article class="card">
+      <p class="card-label">Stimme aus dem ersten Salon</p>
+      <p class="card-statement">„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</p>
+      <p class="card-body" style="font-size: 13px; color: var(--ink-55); margin-top: -6px; margin-bottom: 12px;">Prof. Dr. Robert Schleip, Pionier der Faszienforschung — Salon Nº1, München</p>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Sie kommen nicht zum ersten Versuch. Das Format ist erprobt — mit einem Publikum, das nicht für PR-Events bekannt ist.
+      </div>
+    </article>
+
+    <!-- Practical -->
+    <article class="card">
+      <p class="card-label">Praktisches</p>
+      <h3>Datum, Ort, Form.</h3>
+      <dl class="practical">
+        <dt>Wann</dt>
+        <dd>Montag, 15. Juni 2026 · Abend</dd>
+        <dt>Wo</dt>
+        <dd>Berlin · Adresse mit Bestätigung</dd>
+        <dt>Form</dt>
+        <dd>Privates Dinner · 15 Gäste · Wein und Speise inklusive</dd>
+        <dt>Mitbringen</dt>
+        <dd>Einen Laptop. Sonst nichts.</dd>
+      </dl>
+      <div class="relevance">
+        <strong>→ Für Sie:</strong> Ein Abend, kein Wochenende. Hotel-Empfehlungen kommen mit der Bestätigung, falls Sie von außerhalb anreisen.
+      </div>
+    </article>
+
+  </section>
+
+  <section class="rsvp">
+    <h2>Eine Antwort genügt.</h2>
+    <p class="deadline">Antwort bitte bis 1. Juni 2026.</p>
+    <a class="rsvp-btn"
+       href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Berlin%20%C2%B7%2015.%20Juni%202026%20%C2%B7%20RSVP&body=Liebe%20Franziska%2C%0A%0Aich%20nehme%20die%20Einladung%20zu%20Salon%20AI%20Berlin%20am%2015.%20Juni%202026%20gerne%20an.%0A%0AName%3A%0AE-Mail%3A%0AHaus%20%2F%20Zugeh%C3%B6rigkeit%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
+       onclick="gtag('event', 'rsvp_click', { 'event_name': 'berlin_15062026_kurz' });">
+      Antworten →
+    </a>
+    <p class="signed">— Alexandra, Nicoline, Franziska</p>
+  </section>
+
+</div>
+
+<footer class="colophon">
+  Salon AI · Berlin · Private Einladung auf <a href="/">salon-ai.eu</a> · By Invitation Only
+</footer>
+
+</body>
+</html>
