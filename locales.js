@@ -384,7 +384,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -392,7 +392,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -781,7 +781,7 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">Der Rahmen.</span>Eine verfeinerte Sequenz aus angeleitetem Bauen und gemeinsamem Fokus.<br>Wir gehen von null zu einem funktionierenden System durch strukturiertes Handeln.",
+    plan_p1_body: "<span class=\"plan-kicker\">Der Rahmen.</span>Wir beginnen mit dem Bauen. Entlang einer erprobten Sequenz baust du einen KI-Assistenten, der zu deiner Arbeit passt. Keine Lektion — dein Werkzeug für den Abend.",
 
 
 
@@ -789,7 +789,7 @@ window.LOCALES = {
     plan_p2_label: "Frage",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span></span>Hier trifft Ambition auf Realität. Wir nutzen KI nicht, um den Traum zu illustrieren — wir nutzen sie, um die Wirklichkeit zu hinterfragen.",
 
 
 
@@ -884,7 +884,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -892,7 +892,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -1274,7 +1274,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -1282,7 +1282,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -1664,7 +1664,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -1672,7 +1672,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -2054,7 +2054,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -2062,7 +2062,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -2444,7 +2444,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -2452,7 +2452,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -2834,7 +2834,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -2842,7 +2842,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -3220,7 +3220,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -3228,7 +3228,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -3606,7 +3606,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -3614,7 +3614,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -3992,7 +3992,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -4000,7 +4000,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -4378,7 +4378,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -4386,7 +4386,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -4764,7 +4764,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -4772,7 +4772,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -5150,7 +5150,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -5158,7 +5158,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -5536,7 +5536,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -5544,7 +5544,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -5922,7 +5922,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -5930,7 +5930,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -6308,7 +6308,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -6316,7 +6316,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -6694,7 +6694,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -6702,7 +6702,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -7080,7 +7080,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -7088,7 +7088,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -7466,7 +7466,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -7474,7 +7474,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -7852,7 +7852,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -7860,7 +7860,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -8238,7 +8238,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -8246,7 +8246,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -8624,7 +8624,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -8632,7 +8632,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 
@@ -9010,7 +9010,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>A refined sequence of guided builds and collective focus.<br>We move from zero to a working system through structured action.",
+    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
@@ -9018,7 +9018,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. We aren’t using AI to illustrate the dream — we’re using it to interrogate the reality.",
 
 
 

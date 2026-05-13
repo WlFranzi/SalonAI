@@ -169,34 +169,13 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .what-short h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: var(--s1); }
 .what-short p { font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.7; max-width: 580px; margin: 0 auto; }
 
-/* ── Manifest: Warum es Salon AI gibt — Editorial single-column ── */
-.manifesto { background: transparent; padding: var(--s4) var(--s3) var(--s3); }
-.manifesto-inner { max-width: 720px; margin: 0 auto; }
-.manifesto h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.2vw, 2.4rem); font-weight: 700; color: var(--navy); line-height: 1.14; letter-spacing: -0.018em; margin-bottom: var(--s3); }
-.manifesto h2 .m-h2-ai { color: var(--sky-deep); }
 .skills-h2 .sh-blue { color: var(--sky-deep); font-style: italic; }
-.manifesto p { font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 14px; }
-.manifesto p.manifesto-lede { font-size: 1.1rem; line-height: 1.6; margin-bottom: var(--s3); color: var(--navy); }
-.manifesto ol { list-style: none; padding: 0; margin: var(--s2) 0; }
-.manifesto ol li { display: grid; grid-template-columns: 72px 1fr; gap: var(--s2); padding: var(--s2) 0; border-top: 1px solid var(--border); font-size: 15px; color: var(--navy); line-height: 1.55; align-items: baseline; }
-.manifesto ol li:last-child { border-bottom: 1px solid var(--border); }
-.manifesto ol li::before { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--sky-deep); line-height: 1; letter-spacing: -0.01em; }
-.manifesto ol li:nth-child(1)::before { content: "80%"; }
-.manifesto ol li:nth-child(2)::before { content: "10%"; }
-.manifesto ol li:nth-child(3)::before { content: "10%"; }
-@media (min-width: 768px) {
-  .manifesto h2 { margin-bottom: var(--s4); }
-  .manifesto ol li { grid-template-columns: 100px 1fr; padding: var(--s3) 0; }
-  .manifesto ol li::before { font-size: 1.75rem; }
-}
 .ai-eu-swap { display: inline-grid; grid-template-areas: "swap"; vertical-align: baseline; perspective: 600px; }
 .ai-eu-swap .word-ai,
 .ai-eu-swap .word-eu { grid-area: swap; transform-origin: 50% 60%; backface-visibility: hidden; will-change: transform, opacity; text-align: center; color: var(--gold); }
 .ai-eu-swap .word-ai { animation: aiSwap 30s infinite; }
 .ai-eu-swap .word-eu { animation: euSwap 30s infinite; }
-/* Stagger the three brand marks so they're never doing the same transition. */
-.manifesto h2 .ai-eu-swap .word-ai,
-.manifesto h2 .ai-eu-swap .word-eu { animation-delay: -1.5s; }
+/* Stagger the brand marks so they're never doing the same transition. */
 .footer-logo .ai-eu-swap .word-ai,
 .footer-logo .ai-eu-swap .word-eu { animation-delay: -3s; }
 /* aiSwap & euSwap: 30s loop, 5 AI windows alternating with 5 EU windows,
@@ -1103,12 +1082,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="plan-card plan-card--program">
         <div class="plan-share" data-i18n="plan_p1_share">80%</div>
         <div class="plan-card-label" data-i18n="plan_p1_label">Methode</div>
-        <p data-i18n-html="plan_p1_body"><span class="plan-kicker">Der Rahmen.</span>Eine verfeinerte Sequenz aus angeleitetem Bauen und gemeinsamem Fokus.<br>Wir gehen von null zu einem funktionierenden System durch strukturiertes Handeln.</p>
+        <p data-i18n-html="plan_p1_body"><span class="plan-kicker">Der Rahmen.</span>Wir beginnen mit dem Bauen. Entlang einer erprobten Sequenz baust du einen KI-Assistenten, der zu deiner Arbeit passt. Keine Lektion — dein Werkzeug für den Abend.</p>
       </div>
       <div class="plan-card plan-card--guided">
         <div class="plan-share" data-i18n="plan_p2_share">20%</div>
         <div class="plan-card-label" data-i18n="plan_p2_label">Frage</div>
-        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<span class="rotating-question-box"><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></span></p>
+        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class="rotating-question-box"><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></span>Hier trifft Ambition auf Realität. Wir nutzen KI nicht, um den Traum zu illustrieren — wir nutzen sie, um die Wirklichkeit zu hinterfragen.</p>
       </div>
     </div>
 
@@ -1203,21 +1182,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </section>
 
-
-<!-- ── MANIFEST ──────────────────────────────────────────────────── -->
-<section class="manifesto" id="warum">
-  <div class="manifesto-inner">
-    <h2 data-i18n-html="manifesto_h2">Europäer:innen sollten <span class="m-h2-ai">KI</span> bauen — nicht zuschauen.</h2>
-    <p class="manifesto-lede" data-i18n="manifesto_lede">Eine Frage pro Abend. Eine Methode dahinter.</p>
-    <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI.</p>
-    <ol>
-      <li data-i18n="manifesto_item1">Wir bauen mit KI — nicht die Alltagstricks, sondern Agenten und Automationen.</li>
-      <li data-i18n="manifesto_item_apply">Dann richten wir die Agenten auf die Frage des Abends.</li>
-      <li data-i18n="manifesto_item2">Wir liefern den Kontext: wo Europa bei KI steht, wo es klemmt, was du tun kannst.</li>
-    </ol>
-    <p data-i18n="manifesto_item3">Du gehst mit einem funktionierenden Tool nach Hause — und einer Idee, die du nicht mehr loswirst.</p>
-  </div>
-</section>
 
 <!-- ── TRANSFORMATION (capability shift) ────────────────────────── -->
 <section class="transformation" id="transformation">
@@ -2184,7 +2148,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
 
   // IDs of the major sections to track
-  var sectionsToTrack = ['warum', 'events', 'past', 'skills', 'faq', 'contact', 'host', 'corporate'];
+  var sectionsToTrack = ['events', 'past', 'skills', 'faq', 'contact', 'host', 'corporate'];
   sectionsToTrack.forEach(function(id) {
     var el = document.getElementById(id);
     if (el) observer.observe(el);
