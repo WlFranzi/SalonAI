@@ -141,9 +141,15 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .plan-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.8px; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
 .plan-card p { font-size: 14.5px; color: var(--navy); line-height: 1.65; margin: 0; }
 .plan-card .plan-kicker { display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.08rem; color: var(--navy); line-height: 1.3; margin-bottom: 10px; }
-#rotating-question { display: inline-block; opacity: 1; transition: opacity 320ms ease; font-family: 'Playfair Display', serif; font-style: italic; color: var(--accent); }
-#rotating-question.is-fading { opacity: 0; }
-@media (prefers-reduced-motion: reduce) { #rotating-question { transition: none; } }
+/* Slot-machine rotating question — fixed-size container, vertical slide on swap */
+.rotating-question-box { display: block; position: relative; height: 3em; overflow: hidden; margin-top: 4px; }
+#rotating-question { display: block; position: absolute; left: 0; right: 0; top: 0; font-family: 'Playfair Display', serif; font-style: italic; color: var(--accent); line-height: 1.3; transform: translateY(0); opacity: 1; transition: transform 480ms cubic-bezier(0.32, 0.72, 0.28, 1), opacity 240ms ease; will-change: transform, opacity; }
+#rotating-question.is-rolling-up { transform: translateY(-110%); opacity: 0; }
+#rotating-question.is-incoming { transform: translateY(110%); opacity: 0; transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  #rotating-question { transition: none; }
+  #rotating-question.is-rolling-up, #rotating-question.is-incoming { transform: none; opacity: 1; }
+}
 .plan-card p br + br { display: none; }
 .plan-card p br { line-height: 2; }
 .plan-card--guided .plan-share { color: var(--sky-deep); }
@@ -382,9 +388,16 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .past-events-quote cite { font-style: normal; font-size: 0.78rem; color: var(--muted-blue); letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; }
 
 /* Hero testimonial — elevated above the photo/text grid */
-.past-events-quote-hero { margin: 0 auto var(--s4); max-width: 820px; padding: 0 var(--s2); text-align: center; }
-.past-events-quote-hero p { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(1.4rem, 3.4vw, 2.05rem); line-height: 1.32; color: var(--navy); margin: 0 0 14px; letter-spacing: -0.008em; text-wrap: balance; }
-.past-events-quote-hero cite { display: inline-block; font-style: normal; font-size: 11px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
+.past-events-quote-hero { margin: var(--s3) auto var(--s5); max-width: 880px; padding: 0 var(--s2); text-align: center; position: relative; }
+.past-events-quote-hero::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: clamp(4rem, 9vw, 6rem); color: var(--sky-deep); opacity: 0.35; line-height: 0.85; display: block; margin-bottom: -0.15em; }
+.past-events-quote-hero p { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(1.7rem, 4.2vw, 2.55rem); line-height: 1.28; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.012em; text-wrap: balance; }
+.past-events-quote-hero cite { display: inline-block; font-style: normal; font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
+
+/* The evening's question — separate visual unit, distinct from the testimonial */
+.past-events-question { margin: 0 auto var(--s5); max-width: 760px; padding: var(--s3) var(--s2) 0; text-align: center; position: relative; }
+.past-events-question::before { content: ''; display: block; width: 48px; height: 1px; background: var(--border); margin: 0 auto var(--s3); }
+.past-events-question-label { font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; margin: 0 0 var(--s1); }
+.past-events-question-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.3rem, 3vw, 1.85rem); line-height: 1.3; color: var(--navy); margin: 0; text-wrap: balance; }
 
 /* Europa 2041 screenshot — concrete proof artefact */
 .past-events-screenshot { display: block; position: relative; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(27,46,74,0.18); transition: transform 0.2s, box-shadow 0.2s; aspect-ratio: 1; background: #fff; border: 1px solid var(--border); }
@@ -1088,7 +1101,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="plan-card plan-card--guided">
         <div class="plan-share" data-i18n="plan_p2_share">20%</div>
         <div class="plan-card-label" data-i18n="plan_p2_label">Frage</div>
-        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<br><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></p>
+        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<span class="rotating-question-box"><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></span></p>
       </div>
     </div>
 
@@ -1128,6 +1141,12 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <p data-i18n="past_events_quote">„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</p>
       <cite data-i18n="past_events_quote_author">Prof. Dr. Robert Schleip · Pionier und führende Autorität in der Faszienforschung</cite>
     </blockquote>
+
+    <!-- The evening's question — explicit, separated from the quote -->
+    <div class="past-events-question">
+      <p class="past-events-question-label" data-i18n="march_q_label">Die Frage des Abends</p>
+      <p class="past-events-question-text" data-i18n="march_q_text">Wie sieht Europa im Jahr 2041 aus?</p>
+    </div>
 
     <div class="past-events-feature">
       <a href="/march-event/" class="past-events-screenshot" onclick="gtag('event', 'click_past_event', { 'past_event': 'march_2026', 'source': 'screenshot' });" aria-label="Europa 2041 — Ergebnis aus dem März-Salon ansehen">
@@ -2179,14 +2198,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Rotating "question of the evening" — flipbook on the 20% / Question card
+// Rotating "question of the evening" — slot-machine on the 20% / Question card
 (function rotateQuestion() {
   var el = document.getElementById('rotating-question');
   if (!el) return;
   var lang = (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e){ return null; } })() || 'de';
   var enPool = [
     'Which AI can only be built by Europeans?',
-    'Can Europe achieve growth, resilience, and competitiveness — or only at the expense of one another?',
+    'Growth, resilience, competitiveness — all three at once?',
     'How does AI redistribute mental load in working families?',
     'Where does AI have real leverage in board work?',
     'What does AI change about cross-border healthcare?'
@@ -2194,28 +2213,36 @@ document.addEventListener("DOMContentLoaded", function() {
   var pools = {
     de: [
       'Welche KI kann nur von Europäern gebaut werden?',
-      'Kann Europa Wachstum, Resilienz und Wettbewerbsfähigkeit erreichen — oder nur eines auf Kosten der anderen?',
-      'Was verändert KI an Mental Load in arbeitenden Familien?',
+      'Wachstum, Resilienz, Wettbewerbsfähigkeit — alle drei zugleich?',
+      'Was verändert KI an Mental Load in Familien?',
       'Wo hat KI in Vorstandsarbeit echten Hebel?',
       'Was kann KI für grenzüberschreitende Gesundheit tun?'
     ]
   };
   var pool = pools[lang] || enPool;
-  // Set initial text from the pool so DE/EN stay in sync regardless of which static string is rendered
   el.textContent = pool[0];
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   var i = 0;
   var paused = false;
-  el.addEventListener('mouseenter', function(){ paused = true; });
-  el.addEventListener('mouseleave', function(){ paused = false; });
+  var parent = el.parentElement;
+  if (parent) {
+    parent.addEventListener('mouseenter', function(){ paused = true; });
+    parent.addEventListener('mouseleave', function(){ paused = false; });
+  }
   setInterval(function(){
     if (paused) return;
-    el.classList.add('is-fading');
+    // Roll current up and out
+    el.classList.add('is-rolling-up');
     setTimeout(function(){
+      // Swap text while element is hidden, position below
       i = (i + 1) % pool.length;
       el.textContent = pool[i];
-      el.classList.remove('is-fading');
-    }, 320);
+      el.classList.remove('is-rolling-up');
+      el.classList.add('is-incoming');
+      // Force reflow so the incoming state actually paints, then animate up
+      void el.offsetHeight;
+      el.classList.remove('is-incoming');
+    }, 480);
   }, 4500);
 })();
 </script>

@@ -179,6 +179,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -388,7 +390,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -571,6 +574,8 @@ window.LOCALES = {
 
     past_event_city: "München",
     past_outcome_eyebrow: "Ergebnis aus dem März-Salon",
+    march_q_label: "Die Frage des Abends",
+    march_q_text: "Wie sieht Europa im Jahr 2041 aus?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · München · März 2026",
@@ -780,7 +785,8 @@ window.LOCALES = {
     plan_p2_label: "Frage",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span></span>",
+
 
 
 
@@ -882,7 +888,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -998,6 +1005,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1267,7 +1276,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -1383,6 +1393,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1652,7 +1664,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -1768,6 +1781,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2037,7 +2052,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -2153,6 +2169,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2422,7 +2440,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -2538,6 +2557,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2807,7 +2828,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -2923,6 +2945,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3188,7 +3212,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -3304,6 +3329,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3569,7 +3596,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -3685,6 +3713,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3950,7 +3980,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -4066,6 +4097,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4331,7 +4364,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -4447,6 +4481,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4712,7 +4748,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -4828,6 +4865,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5093,7 +5132,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -5209,6 +5249,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5474,7 +5516,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -5590,6 +5633,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5855,7 +5900,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -5971,6 +6017,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6236,7 +6284,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -6352,6 +6401,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6617,7 +6668,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -6733,6 +6785,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6998,7 +7052,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -7114,6 +7169,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7379,7 +7436,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -7495,6 +7553,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7760,7 +7820,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -7876,6 +7937,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8141,7 +8204,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -8257,6 +8321,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8522,7 +8588,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -8638,6 +8705,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8903,7 +8972,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>",
+
 
 
 
@@ -9019,6 +9089,8 @@ window.LOCALES = {
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
+    march_q_label: "The question that evening",
+    march_q_text: "What does Europe look like in 2041?",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
