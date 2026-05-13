@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow" />
 <title>Salon AI · Berlin · 15. Juni 2026 · By Invitation</title>
 <link rel="canonical" href="https://www.salon-ai.eu/berlin_15062026/" />
-<meta name="description" content="Salon AI Berlin — ein privater Abend zur Frage, was wichtig bleibt an Taste im Zeitalter der KI. 15. Juni 2026, by invitation." />
+<meta name="description" content="Salon AI Berlin — ein Brief und eine Einladung zur Frage, was wichtig bleibt an Taste im Zeitalter der KI. 15. Juni 2026, by invitation." />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
 <script>
@@ -22,13 +22,13 @@
 <style>
   /* ── Tokens ───────────────────────────────────────────────────── */
   :root {
-    --paper:     #F5F0E8;   /* warmes Cremé */
-    --ink:       #1B2024;   /* Anthrazit */
+    --paper:     #F5F0E8;
+    --ink:       #1B2024;
     --ink-70:    rgba(27,32,36,0.72);
     --ink-55:    rgba(27,32,36,0.55);
     --ink-30:    rgba(27,32,36,0.30);
-    --oxblood:   #7C2F1C;   /* tiefes Bordeaux */
-    --gold:      #9C7833;   /* zurückhaltendes Gold */
+    --oxblood:   #7C2F1C;
+    --gold:      #9C7833;
     --rule:      rgba(27,32,36,0.18);
     --serif:     'Playfair Display', Georgia, 'Times New Roman', serif;
   }
@@ -39,15 +39,15 @@
     font-family: var(--serif);
     background: var(--paper);
     color: var(--ink);
-    line-height: 1.7;
-    font-size: 17px;
+    line-height: 1.75;
+    font-size: 17.5px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
   a { color: inherit; }
   ::selection { background: rgba(124,47,28,0.18); }
 
-  /* ── Nav (zurückhaltend, nicht sticky) ────────────────────────── */
+  /* ── Nav ─────────────────────────────────────────────────────── */
   nav.top {
     padding: 22px 28px 0;
     font-family: var(--serif);
@@ -62,315 +62,163 @@
   }
   nav.top a.back:hover { color: var(--oxblood); }
 
-  /* ── Wrapper ──────────────────────────────────────────────────── */
-  .container {
+  /* ── Letter wrapper ───────────────────────────────────────────── */
+  .letter {
     max-width: 620px;
     margin: 0 auto;
-    padding: 0 28px;
+    padding: 56px 28px 0;
   }
 
-  /* ── I. Masthead (Cover) ──────────────────────────────────────── */
-  header.masthead {
-    text-align: center;
-    padding: 64px 0 24px;
-  }
-  .masthead-topline {
+  /* ── Topline + Salutation ─────────────────────────────────────── */
+  .topline {
     font-family: var(--serif);
     font-weight: 500;
     font-size: 11px;
     letter-spacing: 3.5px;
     text-transform: uppercase;
     color: var(--oxblood);
+    text-align: center;
     margin-bottom: 56px;
     font-feature-settings: "smcp" 1;
   }
-  h1.cover-title {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: clamp(2.8rem, 8vw, 5rem);
-    line-height: 1.05;
-    letter-spacing: -0.015em;
-    color: var(--ink);
-    margin-bottom: 36px;
-    text-wrap: balance;
+  .salutation {
+    text-align: center;
+    margin-bottom: 14px;
   }
-  h1.cover-title em {
+  .salutation-line {
+    font-family: var(--serif);
     font-style: italic;
     font-weight: 400;
-    color: var(--oxblood);
-  }
-  p.standfirst {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--ink-70);
-    max-width: 460px;
-    margin: 0 auto 44px;
+    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+    line-height: 1.35;
+    color: var(--ink);
+    margin: 0;
     text-wrap: balance;
   }
-  p.hosts-line {
+  .salutation-line em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+  .dateline {
     font-family: var(--serif);
     font-style: italic;
-    font-weight: 500;
-    font-size: 13.5px;
-    line-height: 1.55;
-    color: var(--oxblood);
-    letter-spacing: 0.04em;
-    max-width: 480px;
-    margin: 0 auto 36px;
-  }
-  p.cover-tag {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: 10.5px;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
+    font-size: 14px;
     color: var(--ink-55);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-  }
-  p.cover-tag::before,
-  p.cover-tag::after {
-    content: '◊';
-    font-size: 8.5px;
-    color: var(--oxblood);
-    transform: translateY(-1px);
+    text-align: center;
+    margin: 18px 0 56px;
   }
 
-  /* ── Ornament-Trennzeichen zwischen Abschnitten ───────────────── */
-  .ornament {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin: 60px auto 60px;
-    max-width: 380px;
-    color: var(--oxblood);
-    font-size: 11px;
-  }
-  .ornament::before,
-  .ornament::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
-  }
-
-  /* ── Department-Header (Magazin-Stil) ─────────────────────────── */
-  .dept {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 10.5px;
-    letter-spacing: 2.6px;
-    text-transform: uppercase;
-    color: var(--oxblood);
-    margin-bottom: 22px;
-    font-feature-settings: "smcp" 1;
-  }
-  .dept-num {
-    font-style: normal;
-    color: var(--gold);
-  }
-
-  /* ── Section-Wrap ─────────────────────────────────────────────── */
-  section.spread {
-    padding: 12px 0;
-  }
-  section.spread h2 {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 1.22;
-    color: var(--ink);
-    letter-spacing: -0.012em;
-    margin-bottom: 22px;
-    text-wrap: balance;
-  }
-  section.spread p + p { margin-top: 14px; }
-
-  /* ── I. Der Abend — was tatsächlich passiert ──────────────────── */
-  section.the-evening p {
+  /* ── Letter body ─────────────────────────────────────────────── */
+  .letter-body p {
     font-family: var(--serif);
     font-weight: 400;
-    font-size: 17px;
-    line-height: 1.75;
-    color: var(--ink);
-  }
-  section.the-evening p + p { margin-top: 18px; }
-  section.the-evening p.evening-reassurance {
-    font-style: italic;
-    color: var(--ink-55);
-    margin-top: 26px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
-    font-size: 15.5px;
-  }
-
-  /* ── Testimonial (Schleip quote, between Der Abend and Programm) ── */
-  section.testimonial-section { padding: 8px 0 4px; }
-  .testimonial { text-align: center; margin: 12px auto; max-width: 560px; }
-  .testimonial-text {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.3rem, 3vw, 1.6rem);
-    line-height: 1.38;
+    font-size: 17.5px;
+    line-height: 1.78;
     color: var(--ink);
     margin: 0 0 22px;
-    text-wrap: balance;
-    position: relative;
   }
-  .testimonial-text::before {
-    content: '\201C';
-    display: block;
+  .letter-body p em {
+    font-style: italic;
+    color: var(--ink);
+  }
+  .letter-body p.opening::first-letter {
     font-family: var(--serif);
-    font-style: normal;
     font-weight: 700;
-    font-size: 3.4rem;
+    font-size: 4.4rem;
+    float: left;
+    line-height: 0.92;
     color: var(--oxblood);
-    opacity: 0.45;
-    line-height: 0.85;
-    margin-bottom: -0.18em;
+    padding: 4px 14px 0 0;
+    margin-top: 4px;
   }
-  .testimonial-attr {
+
+  /* ── Pull-quote: the evening's question ──────────────────────── */
+  .question-block {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 520px;
+  }
+  .question-block::before,
+  .question-block::after {
+    content: '';
+    display: block;
+    width: 38%;
+    height: 1px;
+    background: var(--rule);
+    margin: 22px auto;
+  }
+  .question-block p {
     font-family: var(--serif);
-    font-weight: 500;
-    font-size: 10.5px;
-    letter-spacing: 2.4px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 3vw, 1.55rem);
+    line-height: 1.35;
+    color: var(--oxblood);
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* ── Host paragraphs (inline within letter flow) ─────────────── */
+  .host-intro {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-55);
+    margin: 8px 0 14px;
+  }
+  .host-para { margin-bottom: 18px !important; }
+  .host-name-lead {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
     color: var(--oxblood);
     font-feature-settings: "smcp" 1;
   }
 
-  /* ── IV. Zwei Bewegungen (80/20) ──────────────────────────────── */
-  section.movements .movement {
-    display: grid;
-    grid-template-columns: 56px 1fr 56px;
-    gap: 12px 24px;
-    margin: 44px 0;
-    align-items: start;
-  }
-  .movement-roman {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 3.4rem;
-    line-height: 0.92;
-    color: var(--oxblood);
-    letter-spacing: -0.02em;
+  /* ── Inline Schleip mention ──────────────────────────────────── */
+  .schleip {
+    margin: 32px auto;
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
     text-align: center;
-    padding-top: 4px;
   }
-  .movement-pct {
-    grid-column: 3;
-    grid-row: 1 / span 2;
+  .schleip-intro {
     font-family: var(--serif);
     font-style: italic;
-    font-weight: 500;
-    font-size: 0.92rem;
-    letter-spacing: 1.4px;
+    font-size: 14.5px;
+    line-height: 1.55;
     color: var(--ink-55);
-    text-align: right;
-    padding-top: 12px;
-    white-space: nowrap;
+    margin: 0 auto 12px;
+    max-width: 460px;
   }
-  .movement-title {
-    grid-column: 2;
-    grid-row: 1;
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.55rem;
-    line-height: 1.18;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-  .movement-body {
-    grid-column: 2;
-    grid-row: 2;
-    font-family: var(--serif);
-    font-size: 17px;
-    line-height: 1.72;
-    color: var(--ink);
-  }
-  .movements-close {
+  .schleip-quote {
     font-family: var(--serif);
     font-style: italic;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--ink-55);
-    text-align: center;
-    margin-top: 32px;
+    font-weight: 400;
+    font-size: clamp(1.15rem, 2.6vw, 1.35rem);
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 0 auto;
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    text-wrap: balance;
   }
 
-  /* ── V. Gastgeberinnen (Mikro-Essays) ─────────────────────────── */
-  section.hosts article.host-essay {
-    margin: 36px 0;
-  }
-  .host-name {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.45rem;
-    line-height: 1.15;
-    color: var(--ink);
-    margin-bottom: 12px;
-    letter-spacing: -0.005em;
-  }
-  .host-initial {
-    color: var(--oxblood);
-    font-size: 1.8em;
-    line-height: 1;
-    margin-right: 1px;
-  }
-  .host-essay p {
-    font-family: var(--serif);
-    font-size: 16.5px;
-    line-height: 1.72;
-    color: var(--ink);
-  }
-  .host-claim {
+  /* ── Practical block ─────────────────────────────────────────── */
+  .practical-intro {
     font-family: var(--serif);
     font-style: italic;
-    font-size: 15px;
-    color: var(--oxblood);
-    margin-top: 12px;
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  .host-claim::before {
-    content: '›';
-    font-style: normal;
-    color: var(--oxblood);
-    font-weight: 700;
-  }
-  .hosts-close {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 16px;
-    line-height: 1.6;
     color: var(--ink-55);
-    text-align: center;
-    margin-top: 36px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 32px 0 14px;
   }
-
-  /* ── VI. Praktisches — typografische Tabelle ──────────────────── */
-  section.practical dl.details {
+  dl.practical {
     display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 14px 28px;
-    margin-top: 18px;
+    grid-template-columns: 110px 1fr;
+    gap: 10px 28px;
+    margin-bottom: 28px;
   }
-  dl.details dt {
+  dl.practical dt {
     font-family: var(--serif);
     font-style: italic;
     font-weight: 500;
@@ -378,33 +226,37 @@
     color: var(--ink-55);
     letter-spacing: 0.3px;
   }
-  dl.details dd {
+  dl.practical dd {
     font-family: var(--serif);
     font-weight: 400;
-    font-size: 15.5px;
+    font-size: 16px;
     color: var(--ink);
-    line-height: 1.5;
+    line-height: 1.55;
   }
 
-  /* ── VII. RSVP (still, kein Block-Button) ─────────────────────── */
-  section.rsvp {
+  /* ── Valediction + Signature + RSVP ──────────────────────────── */
+  .valediction {
+    margin-top: 48px;
     text-align: center;
-    padding: 24px 0 24px;
   }
-  section.rsvp h2 {
+  .valediction-line {
     font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.3;
+    font-size: 17px;
     color: var(--ink);
-    margin-bottom: 24px;
-    text-wrap: balance;
+    margin-bottom: 8px;
+  }
+  .signature {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--oxblood);
+    margin-bottom: 36px;
   }
   a.rsvp-link {
     font-family: var(--serif);
     font-style: italic;
     font-weight: 500;
-    font-size: 1.18rem;
+    font-size: 1.2rem;
     color: var(--oxblood);
     text-decoration: none;
     border-bottom: 1px solid currentColor;
@@ -416,12 +268,12 @@
   p.rsvp-note {
     font-family: var(--serif);
     font-style: italic;
-    font-size: 14px;
+    font-size: 13.5px;
     color: var(--ink-55);
-    margin-top: 24px;
+    margin-top: 18px;
   }
 
-  /* ── Footer (Colophon) ────────────────────────────────────────── */
+  /* ── Footer (Colophon) ───────────────────────────────────────── */
   footer.colophon {
     text-align: center;
     padding: 60px 28px 56px;
@@ -446,37 +298,25 @@
   }
   footer.colophon a:hover { color: var(--ink); }
 
-  /* ── Responsive ───────────────────────────────────────────────── */
+  /* ── Responsive ──────────────────────────────────────────────── */
   @media (max-width: 540px) {
-    .container { padding: 0 22px; }
+    body { font-size: 16.5px; }
+    .letter { padding: 36px 22px 0; }
     nav.top { padding: 18px 22px 0; }
-    header.masthead { padding: 40px 0 16px; }
-    .masthead-topline { margin-bottom: 36px; font-size: 10px; letter-spacing: 2.8px; }
-    p.standfirst { font-size: 17px; margin-bottom: 32px; }
-    p.hosts-line { font-size: 13px; margin-bottom: 28px; }
-    .ornament { margin: 44px auto; }
-
-    section.movements .movement {
-      grid-template-columns: 44px 1fr 44px;
-      gap: 10px 16px;
-      margin: 34px 0;
+    .topline { margin-bottom: 36px; font-size: 10px; letter-spacing: 2.8px; }
+    .salutation-line { font-size: 1.25rem; }
+    .dateline { margin: 14px 0 36px; }
+    .letter-body p { font-size: 16.5px; line-height: 1.75; }
+    .letter-body p.opening::first-letter { font-size: 3.4rem; padding: 4px 10px 0 0; }
+    .question-block p { font-size: 1.2rem; }
+    .schleip-quote { font-size: 1.1rem; }
+    dl.practical {
+      grid-template-columns: 90px 1fr;
+      gap: 8px 18px;
     }
-    .movement-roman { font-size: 2.6rem; }
-    .movement-pct { font-size: 0.82rem; padding-top: 8px; letter-spacing: 1.2px; }
-    .movement-title { font-size: 1.35rem; }
-
-    .host-name { font-size: 1.25rem; }
-    .host-initial { font-size: 1.6em; }
-
-    section.practical dl.details {
-      grid-template-columns: 100px 1fr;
-      gap: 10px 18px;
-    }
-    dl.details dt { font-size: 13.5px; }
-    dl.details dd { font-size: 14.5px; }
-
-    section.rsvp h2 { font-size: 1.4rem; }
-    a.rsvp-link { font-size: 1.08rem; }
+    dl.practical dt { font-size: 13.5px; }
+    dl.practical dd { font-size: 14.5px; }
+    a.rsvp-link { font-size: 1.1rem; }
   }
 </style>
 </head>
@@ -486,156 +326,104 @@
   <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'berlin_15062026' });">←  Salon AI</a>
 </nav>
 
-<div class="container">
+<div class="letter">
 
-  <!-- I. Masthead (Cover) -->
-  <header class="masthead">
-    <p class="masthead-topline">Salon №3 · Berlin · 15. Juni 2026</p>
-    <h1 class="cover-title">On <em>Taste.</em></h1>
-    <p class="standfirst">
-      Was bleibt wichtig — im Zeitalter der KI?<br />
-      Ein privater Abend in kleiner Runde.
+  <p class="topline">Brief · Berlin · 15. Juni 2026</p>
+
+  <div class="salutation">
+    <p class="salutation-line">An den <em>geneigten Gast,</em><br />mit herzlichem Gruß.</p>
+  </div>
+
+  <p class="dateline">Berlin, im Frühjahr 2026 — für den Abend des 15. Juni.</p>
+
+  <div class="letter-body">
+
+    <p class="opening">
+      Es gibt Zeiten — und es scheint, wir leben in einer solchen — in denen das Schreiben, das Bilden, das Empfehlen aus den Händen der Menschen in die der Maschinen gleitet. Was bisher Mühe und Kunst kostete, geschieht heute beiläufig: die Bilder, die Worte, die Vorschläge fließen in einem Strom, der nicht versiegen will.
     </p>
-    <p class="hosts-line">
-      Mit Alexandra Freifrau von Rehlingen<br />
-      Nicoline Wöhrle · Franziska Wittleder
-    </p>
-    <p class="cover-tag">By Invitation</p>
-  </header>
 
-  <div class="ornament" aria-hidden="true">◊</div>
-
-  <!-- I. Der Abend — was tatsächlich passiert -->
-  <section class="spread the-evening">
-    <p class="dept"><span class="dept-num">I</span> &mdash; Der Abend</p>
-    <h2>Was Sie an diesem Abend tun werden.</h2>
     <p>
-      Sie kommen zum Dinner. Privat, in kleiner Runde von fünfzehn Gästen.
+      Was uns aber nicht im Überfluss zuteil wird, ist das Urteil. Jene Entscheidung, die die Alten <em>iudicium</em> nannten — die Wahl, dass etwas gut sei, dass es zu bleiben verdiene, dass es einen Platz unter den Dingen, die wirklich zählen, beanspruchen darf.
     </p>
+
     <p>
-      In zwei Stunden bauen Sie — Schritt für Schritt, gemeinsam mit uns — Ihren eigenen KI-Assistenten. Zugeschnitten auf Ihre Arbeit: für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen.
+      Wer dieses Urteil trägt, und wie es entsteht, ist die wahre Frage unserer Tage.
     </p>
+
     <p>
-      Anschließend richten wir die Assistenten gemeinsam auf die Frage des Abends: <em>Was bleibt wichtig an Taste — im Zeitalter der KI?</em> Dazu Wein, Essen, Gespräch.
+      Aus diesem Grund laden wir Sie zu einem Abend ein.
     </p>
-    <p class="evening-reassurance">
-      Keine Vorkenntnisse nötig. Sie gehen nach Hause mit einem funktionierenden Werkzeug — und einer Frage, die Ihnen länger nachgeht.
+
+    <p>
+      Es soll, in der Art der antiken Gastmähler, ein <em>convivium</em> werden — fünfzehn Gäste an einem Tisch, mit Wein, mit Speise, mit Gespräch. Doch wir werden mehr tun als reden. In zwei Stunden bauen wir gemeinsam, Schritt für Schritt, Ihren eigenen KI-Assistenten. Zugeschnitten auf Ihre Arbeit: für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen. Sie werden nicht zuhören. Sie werden ein Werkzeug in Händen halten, das nach diesem Abend weiter bei Ihnen bleibt.
     </p>
-  </section>
 
-  <div class="ornament" aria-hidden="true">◊</div>
+    <p>
+      Anschließend, wenn jeder sein Werkzeug hat, richten wir die fünfzehn Assistenten zusammen auf eine Frage. Es ist jene Frage, die uns — die wir mit Marken, mit Sprache, mit Kultur befasst sind — in dieser Zeit am dringlichsten erscheint:
+    </p>
 
-  <!-- Testimonial (Schleip quote — Salon Nº1, München) -->
-  <section class="spread testimonial-section">
-    <blockquote class="testimonial">
-      <p class="testimonial-text">Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude.</p>
-      <p class="testimonial-attr">Prof. Dr. Robert Schleip · Salon Nº1, München</p>
-    </blockquote>
-  </section>
-
-  <div class="ornament" aria-hidden="true">◊</div>
-
-  <!-- II. Programm — die zwei Bewegungen (80/20) -->
-  <section class="spread movements">
-    <p class="dept"><span class="dept-num">II</span> &mdash; Programm</p>
-    <h2>Zwei Bewegungen. Eine Frage.</h2>
-
-    <div class="movement">
-      <p class="movement-roman">I</p>
-      <p class="movement-pct">80 %</p>
-      <h3 class="movement-title">Wir bauen.</h3>
-      <p class="movement-body">
-        Schritt für Schritt, gemeinsam mit uns, bauen Sie einen eigenen KI-Assistenten — passgenau auf Ihre Arbeit. Für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen. Keine Lektion. Ein Werkzeug, das nach dem Abend weiterläuft.
-      </p>
+    <div class="question-block">
+      <p>Was bleibt wichtig an Taste —<br />im Zeitalter der KI?</p>
     </div>
 
-    <div class="movement">
-      <p class="movement-roman">II</p>
-      <p class="movement-pct">20 %</p>
-      <h3 class="movement-title">Wir fragen.</h3>
-      <p class="movement-body">
-        Die fünfzehn Assistenten kommen zusammen und untersuchen die Frage des Abends: <em>Was bleibt wichtig an Taste — im Zeitalter der KI?</em> Sie sehen, was die Maschinen einander entgegnen — und wo Ihr eigenes Urteil sie korrigiert.
-      </p>
-    </div>
-  </section>
-
-  <div class="ornament" aria-hidden="true">◊</div>
-
-  <!-- III. Gastgeberinnen -->
-  <section class="spread hosts">
-    <p class="dept"><span class="dept-num">III</span> &mdash; Gastgeberinnen</p>
-    <h2>Drei Perspektiven, eine Frage.</h2>
-
-    <article class="host-essay">
-      <h3 class="host-name"><span class="host-initial">A</span>lexandra Freifrau von Rehlingen</h3>
-      <p>
-        Gründerin von Schoeller &amp; von Rehlingen. Seit vier Jahrzehnten das Haus, das die Sprache und die Räume des europäischen Luxus mitprägt — Armani, Krug, Montblanc, Ferragamo, Vivienne Westwood, royale Protokolle.
-      </p>
-      <p class="host-claim">Erste Perspektive: Taste durch Kuration.</p>
-    </article>
-
-    <article class="host-essay">
-      <h3 class="host-name"><span class="host-initial">N</span>icoline Wöhrle</h3>
-      <p>
-        Global Head of Communications bei WALA / Dr. Hauschka. Hütet eine Marke, deren Werte unverhandelbar sind — deren Ausdruck sich aber weiterentwickeln muss.
-      </p>
-      <p class="host-claim">Zweite Perspektive: Taste durch Werte.</p>
-    </article>
-
-    <article class="host-essay">
-      <h3 class="host-name"><span class="host-initial">F</span>ranziska Wittleder</h3>
-      <p>
-        Hat KI-Systeme im großen Maßstab gebaut — Amazon, Writer, SoundCloud. An diesem Abend bringt sie das Instrument: KI nicht als Vorzeige-Produkt, sondern als analytisches Werkzeug.
-      </p>
-      <p class="host-claim">Dritte Perspektive: Taste, mit KI befragt.</p>
-    </article>
-
-    <p class="hosts-close">
-      Drei Perspektiven. Eine Frage. Eine Runde. By Invitation.
+    <p>
+      Was wir wünschen, ist nicht der Vortrag, nicht die Inszenierung, nicht die Bühne. Was wir wünschen, ist Ihre Gegenwart und Ihr Urteil. Beides ist in unseren Tagen selten geworden. Beides ist deshalb umso kostbarer.
     </p>
-  </section>
 
-  <div class="ornament" aria-hidden="true">◊</div>
+    <p class="host-intro">Es laden Sie ein:</p>
 
-  <!-- IV. Praktisches -->
-  <section class="spread practical">
-    <p class="dept"><span class="dept-num">IV</span> &mdash; Praktisches</p>
-    <h2>Anlass und Form.</h2>
-    <dl class="details">
+    <p class="host-para">
+      <span class="host-name-lead">Alexandra Freifrau von Rehlingen,</span> Gründerin des Hauses Schoeller &amp; von Rehlingen, die seit vier Jahrzehnten die Sprache und die Räume des europäischen Luxus mitprägt — Armani, Krug, Montblanc, Ferragamo, Vivienne Westwood, royale Protokolle.
+    </p>
+
+    <p class="host-para">
+      <span class="host-name-lead">Nicoline Wöhrle,</span> Global Head of Communications bei WALA und Dr. Hauschka, die eine Marke hütet, deren Werte unverhandelbar sind, deren Ausdruck sich aber weiterentwickeln muss.
+    </p>
+
+    <p class="host-para">
+      <span class="host-name-lead">Franziska Wittleder,</span> die KI-Systeme bei Amazon, Writer und SoundCloud gebaut hat. An diesem Abend bringt sie das Werkzeug.
+    </p>
+
+    <div class="schleip">
+      <p class="schleip-intro">Sie sind nicht der erste Salon dieser Art. Ein Gast unseres ersten Abends in München, Prof. Dr. Robert Schleip — Pionier der Faszienforschung —, schrieb uns danach:</p>
+      <p class="schleip-quote">„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</p>
+    </div>
+
+    <p class="practical-intro">Im Praktischen:</p>
+
+    <dl class="practical">
       <dt>Datum</dt>
       <dd>Montag, 15. Juni 2026 · Abend</dd>
       <dt>Ort</dt>
       <dd>Berlin · Adresse mit Bestätigung</dd>
-      <dt>Format</dt>
-      <dd>Privates Dinner · ca. 15 Gäste</dd>
+      <dt>Form</dt>
+      <dd>Privates Dinner · fünfzehn Gäste</dd>
       <dt>Küche</dt>
-      <dd>Modern · Drinks inklusive</dd>
+      <dd>Modern · Wein und Speise inklusive</dd>
       <dt>Mitbringen</dt>
-      <dd>Einen Laptop. KI-Tools vor Ort.</dd>
+      <dd>Einen Laptop. Werkzeuge vor Ort.</dd>
       <dt>Stil</dt>
-      <dd>Keine Präsentationen. Keine Folien. Keine Bühne.</dd>
+      <dd>Keine Präsentationen. Keine Folien. Keine Bühne. Keine Vorkenntnisse erforderlich.</dd>
     </dl>
-  </section>
 
-  <div class="ornament" aria-hidden="true">◊</div>
+  </div>
 
-  <!-- V. RSVP -->
-  <section class="spread rsvp">
-    <p class="dept"><span class="dept-num">V</span> &mdash; RSVP</p>
-    <h2>Die Plätze sind begrenzt.<br />Eine Antwort genügt.</h2>
+  <div class="valediction">
+    <p class="valediction-line">Eine Antwort auf diesen Brief genügt.<br />Wir freuen uns auf Sie.</p>
+    <p class="signature">— Alexandra, Nicoline, Franziska</p>
     <a class="rsvp-link"
        href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Berlin%20%C2%B7%2015.%20Juni%202026%20%C2%B7%20RSVP&body=Liebe%20Franziska%2C%0A%0Aich%20nehme%20die%20Einladung%20zu%20Salon%20AI%20Berlin%20am%2015.%20Juni%202026%20gerne%20an.%0A%0AName%3A%0AE-Mail%3A%0AHaus%20%2F%20Zugeh%C3%B6rigkeit%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
        onclick="gtag('event', 'rsvp_click', { 'event_name': 'berlin_15062026' });">
       Antworten →
     </a>
     <p class="rsvp-note">Weitere Details nach Bestätigung.</p>
-  </section>
+  </div>
 
 </div>
 
 <footer class="colophon">
   <span class="ornament-glyph" aria-hidden="true">◊</span>
-  Salon AI · Berlin · №3 · Privater Brief auf <a href="/">salon-ai.eu</a>.<br />
+  Salon AI · Berlin · Privater Brief auf <a href="/">salon-ai.eu</a>.<br />
   By Invitation Only.
 </footer>
 
