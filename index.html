@@ -338,6 +338,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .cohost-section { padding: 96px var(--s3) 72px; }
 .cohost-inner { max-width: 920px; margin: 0 auto; }
 .cohost-hero { text-align: center; margin: 0 auto 64px; max-width: 640px; }
+.cohost-eyebrow { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 14px; display: inline-flex; align-items: center; gap: 8px; }
+.cohost-eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
 .cohost-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.4vw, 2.55rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin-bottom: 18px; }
 .cohost-subhead { font-family: 'DM Sans', sans-serif; font-size: clamp(1.05rem, 2.2vw, 1.2rem); font-weight: 500; color: var(--navy); line-height: 1.5; margin-bottom: 26px; }
 .cohost-support { font-size: 15px; color: var(--muted-blue); line-height: 1.75; max-width: 560px; margin: 0 auto 22px; }
@@ -1150,6 +1152,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="cohost-section" id="host">
   <div class="cohost-inner">
     <header class="cohost-hero">
+      <p class="cohost-eyebrow" data-i18n="cohost_eyebrow">Co-host einen Salon</p>
       <h2 class="cohost-h2" data-i18n="host_own_h3">Lade 12 Leute ein. Den Rest übernehmen wir.</h2>
       <p class="cohost-location" data-i18n="host_own_geo">Aktuell: München & Berlin. Als Nächstes: Paris, Brüssel, Wien, London (in Diskussion), Stockholm, Mailand, Hamburg, Madrid — schreibt uns.</p>
     </header>

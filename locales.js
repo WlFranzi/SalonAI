@@ -64,6 +64,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -451,6 +452,7 @@ window.LOCALES = {
 
     host_own_label: "Eigener Abend",
     host_own_h3: "Lade 12 Leute ein. Den Rest übernehmen wir.",
+    cohost_eyebrow: "Co-host einen Salon",
 
     host_own_sub: "",
 
@@ -838,6 +840,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -1218,6 +1221,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -1598,6 +1602,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -1978,6 +1983,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -2358,6 +2364,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -2738,6 +2745,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -3114,6 +3122,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -3490,6 +3499,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -3866,6 +3876,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -4242,6 +4253,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -4618,6 +4630,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -4994,6 +5007,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -5370,6 +5384,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -5746,6 +5761,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -6122,6 +6138,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -6498,6 +6515,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -6874,6 +6892,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -7250,6 +7269,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -7626,6 +7646,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -8002,6 +8023,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -8378,6 +8400,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
@@ -8754,6 +8777,7 @@ window.LOCALES = {
 
     host_own_label: "Host Your Own Evening",
     host_own_h3: "Invite 12 people. We take care of the rest.",
+    cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
 
