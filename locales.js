@@ -392,7 +392,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -789,7 +789,7 @@ window.LOCALES = {
     plan_p2_label: "Frage",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span></span>Hier trifft Ambition auf Realität. Vom Host gewählt.",
+    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Was sollten Menschen niemals abgeben?</span></span>Hier trifft Ambition auf Realität. Vom Host gewählt.",
 
 
 
@@ -892,7 +892,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -1282,7 +1282,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -1672,7 +1672,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -2062,7 +2062,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -2452,7 +2452,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -2842,7 +2842,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -3228,7 +3228,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -3614,7 +3614,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -4000,7 +4000,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -4386,7 +4386,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -4772,7 +4772,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -5158,7 +5158,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -5544,7 +5544,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -5930,7 +5930,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -6316,7 +6316,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -6702,7 +6702,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -7088,7 +7088,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -7474,7 +7474,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -7860,7 +7860,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -8246,7 +8246,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -8632,7 +8632,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 
@@ -9018,7 +9018,7 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span></span>This is where ambition meets constraint. Question chosen by the host.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>This is where ambition meets constraint. Question chosen by the host.",
 
 
 

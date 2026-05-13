@@ -1087,7 +1087,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="plan-card plan-card--guided">
         <div class="plan-share" data-i18n="plan_p2_share">20%</div>
         <div class="plan-card-label" data-i18n="plan_p2_label">Frage</div>
-        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class="rotating-question-box"><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></span>Hier trifft Ambition auf Realität. Vom Host gewählt.</p>
+        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class="rotating-question-box"><span class="rotating-question" id="rotating-question" aria-hidden="true">Was sollten Menschen niemals abgeben?</span></span>Hier trifft Ambition auf Realität. Vom Host gewählt.</p>
       </div>
     </div>
 
@@ -2175,19 +2175,27 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!el) return;
   var lang = (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e){ return null; } })() || 'de';
   var enPool = [
-    'Which AI can only be built by Europeans?',
-    'Growth, resilience, competitiveness — all three at once?',
-    'How does AI redistribute mental load in working families?',
-    'Where does AI have real leverage in board work?',
-    'What does AI change about cross-border healthcare?'
+    'What should humans never outsource?',
+    'What becomes more valuable when AI gets cheap?',
+    'What disappears when everyone has an agent?',
+    'What kinds of judgment still matter?',
+    'What should Europe build instead of regulate?',
+    'What does taste mean in the age of AI?',
+    'What happens when expertise becomes ambient?',
+    'Which decisions should remain slow?',
+    'How does AI redistribute mental load in working families?'
   ];
   var pools = {
     de: [
-      'Welche KI kann nur von Europäern gebaut werden?',
-      'Wachstum, Resilienz, Wettbewerbsfähigkeit — alle drei zugleich?',
-      'Was verändert KI an Mental Load in Familien?',
-      'Wo hat KI in Vorstandsarbeit echten Hebel?',
-      'Was kann KI für grenzüberschreitende Gesundheit tun?'
+      'Was sollten Menschen niemals abgeben?',
+      'Was wird wertvoller, wenn KI billig wird?',
+      'Was verschwindet, wenn jeder einen Agenten hat?',
+      'Welche Urteile zählen noch?',
+      'Was sollte Europa bauen statt regulieren?',
+      'Was heißt Geschmack im Zeitalter der KI?',
+      'Was passiert, wenn Expertise allgegenwärtig wird?',
+      'Welche Entscheidungen sollten langsam bleiben?',
+      'Was verändert KI an Mental Load in Familien?'
     ]
   };
   var pool = pools[lang] || enPool;
