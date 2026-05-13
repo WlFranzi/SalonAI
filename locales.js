@@ -34,10 +34,12 @@ window.LOCALES = {
 
     hero_alumni:    "Past rounds have brought together decision-makers from business, agencies, media, academia and politics.",
     manifesto_h2: "Why Salon <span class=\"m-h2-ai\">AI</span> exists",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -109,7 +111,8 @@ window.LOCALES = {
     faq_a9: "Yes — and from June 2026 this is the only way to get a Salon AI Dinner. You gather 12+ people from your circle (any kind), we handle everything else: venue, catering, workshop, experts. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Set up your evening →</a> or: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU Event Series",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Starting in Germany, expanding across the EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -385,7 +388,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -422,10 +426,12 @@ window.LOCALES = {
 
     hero_alumni:    "Unsere bisherigen Runden vereinten Entscheidungsträger:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.",
     manifesto_h2: "Warum es Salon <span class=\"m-h2-ai\">AI</span> gibt",
-    manifesto_lede: "Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.",
+    manifesto_lede: "Eine Frage pro Abend. Eine Methode dahinter.",
 
 
-    manifesto_ai_eu: "KI für Europa heißt: Europäer:innen werden Macher:innen — nicht nur Konsument:innen — von KI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "Was sich verändert",
     tr_h2: "Was du nach einem Salon-Abend kannst, was du vorher nicht konntest.",
     tr_before_label: "Vorher",
@@ -497,7 +503,8 @@ window.LOCALES = {
     faq_a9: "Ja — und ab Juni 2026 ist das der einzige Weg, ein Salon AI Dinner zu kriegen. Du sammelst 12+ Leute aus deinem Umfeld (egal welcher Art), wir übernehmen alles andere: Ort, Catering, Workshop, Experts. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Hier deinen Abend einrichten →</a> oder: luckysprouts@duck.com",
     faq_q10: "Was bei Absage?",
     faq_a10: "Bei Absage bis 3 Tage vor dem Dinner behalten wir 50% des Ticketpreises ein, danach den vollen Betrag. Du kannst das Ticket aber jederzeit an eine andere Person weitergeben — einfach Name und Kontakt durchreichen, kein Problem. Fragen: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU Eventreihe",
+    hero_eyebrow: "Salon AI · München · Berlin",
+
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
     hero_h1:     'Ein Dialog mit KI.',
@@ -773,7 +780,8 @@ window.LOCALES = {
     plan_p2_label: "Frage",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage, die du beim Bauen mitträgst.<br>Absichtlich ungelöst — gelöst durch Tun.",
+    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Welche KI kann nur von Europäern gebaut werden?</span>",
+
 
 
 
@@ -810,10 +818,12 @@ window.LOCALES = {
 
     hero_alumni:    "Nos précédentes rondes ont réuni des décideur·euse·s issus de l'économie, des agences, des médias, de la recherche et de la politique.",
     manifesto_h2: "Pourquoi Salon <span class=\"m-h2-ai\">AI</span> existe",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -872,7 +882,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -920,7 +931,8 @@ window.LOCALES = {
     faq_a9: "Oui — et à partir de juin 2026, c'est le seul moyen d'avoir un Salon AI Dinner. Tu réunis 12+ personnes de ton cercle (peu importe lequel), on s'occupe de tout le reste : lieu, traiteur, atelier, experts. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Organise ta soirée →</a> ou : luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Série d'événements Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Lancé en Allemagne, bientôt dans toute l'UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -1191,10 +1203,12 @@ window.LOCALES = {
 
     hero_alumni:    "Nuestras rondas anteriores reunieron a responsables de decisión de la economía, las agencias, los medios, la investigación y la política.",
     manifesto_h2: "Por qué existe Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -1253,7 +1267,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -1301,7 +1316,8 @@ window.LOCALES = {
     faq_a9: "Sí — y desde junio de 2026, esta es la única forma de tener un Salon AI Dinner. Reúnes 12+ personas de tu círculo (del tipo que sea); nosotros nos ocupamos del resto: lugar, catering, taller, expertos. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Organiza tu velada →</a> o: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Serie de eventos Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Comenzando en Alemania, próximamente en toda la UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -1572,10 +1588,12 @@ window.LOCALES = {
 
     hero_alumni:    "Le nostre passate edizioni hanno riunito decisori dal mondo dell'economia, delle agenzie, dei media, della ricerca e della politica.",
     manifesto_h2: "Perché esiste Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -1634,7 +1652,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -1682,7 +1701,8 @@ window.LOCALES = {
     faq_a9: "Sì — e da giugno 2026 è l'unico modo per avere una Salon AI Dinner. Raduni 12+ persone della tua cerchia (di qualsiasi tipo), pensiamo noi a tutto il resto: location, catering, workshop, esperti. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Organizza la tua serata →</a> oppure: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Serie di eventi Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Partito dalla Germania, presto in tutta l'UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -1953,10 +1973,12 @@ window.LOCALES = {
 
     hero_alumni:    "As nossas rondas anteriores reuniram decisores da economia, das agências, dos meios de comunicação, da investigação e da política.",
     manifesto_h2: "Por que existe o Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -2015,7 +2037,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -2063,7 +2086,8 @@ window.LOCALES = {
     faq_a9: "Sim — e a partir de junho de 2026, esta é a única forma de ter um Salon AI Dinner. Reúnes 12+ pessoas do teu círculo (de qualquer tipo), nós tratamos de tudo o resto: local, catering, workshop, especialistas. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Organiza a tua noite →</a> ou: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Série de eventos Pró-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Começando na Alemanha, em breve por toda a UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -2334,10 +2358,12 @@ window.LOCALES = {
 
     hero_alumni:    "Eerdere edities brachten beslissers samen uit het bedrijfsleven, bureaus, media, wetenschap en politiek.",
     manifesto_h2: "Waarom Salon <span class=\"m-h2-ai\">AI</span> bestaat",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -2396,7 +2422,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -2444,7 +2471,8 @@ window.LOCALES = {
     faq_a9: "Ja — en vanaf juni 2026 is dit de enige manier om een Salon AI Dinner te krijgen. Je verzamelt 12+ mensen uit je kring (van welk type dan ook), wij regelen de rest: locatie, catering, workshop, experts. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Stel hier je avond in →</a> of: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU evenementenreeks",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Gestart in Duitsland, binnenkort door heel de EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -2715,10 +2743,12 @@ window.LOCALES = {
 
     hero_alumni:    "Nasze poprzednie spotkania zgromadziły decydentów z biznesu, agencji, mediów, nauki i polityki.",
     manifesto_h2: "Dlaczego Salon <span class=\"m-h2-ai\">AI</span> istnieje",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -2777,7 +2807,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -2825,7 +2856,8 @@ window.LOCALES = {
     faq_a9: "Tak — i od czerwca 2026 to jedyny sposób, aby zorganizować Salon AI Dinner. Zbierasz 12+ osób ze swojego kręgu (jakiegokolwiek typu), my zajmujemy się resztą: miejsce, catering, warsztat, eksperci. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Zorganizuj tutaj swój wieczór →</a> lub: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Seria wydarzeń Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Zaczęło się w Niemczech, wkrótce w całej UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -3092,10 +3124,12 @@ window.LOCALES = {
 
     hero_alumni:    "Edițiile anterioare au reunit decidenți din mediul economic, agenții, presă, mediul academic și politică.",
     manifesto_h2: "De ce există Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -3154,7 +3188,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -3202,7 +3237,8 @@ window.LOCALES = {
     faq_a9: "Da — și din iunie 2026 este singura modalitate de a avea o Salon AI Dinner. Aduni 12+ persoane din cercul tău (orice tip), noi ne ocupăm de tot restul: locație, catering, atelier, experți. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Configurează-ți seara aici →</a> sau: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Serie de evenimente Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Pornit din Germania, în curând în toată UE.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -3469,10 +3505,12 @@ window.LOCALES = {
 
     hero_alumni:    "Tidigare omgångar har samlat beslutsfattare från näringsliv, byråer, media, forskning och politik.",
     manifesto_h2: "Varför Salon <span class=\"m-h2-ai\">AI</span> finns",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -3531,7 +3569,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -3579,7 +3618,8 @@ window.LOCALES = {
     faq_a9: "Ja — och från juni 2026 är detta det enda sättet att få en Salon AI Dinner. Du samlar 12+ personer från din krets (vilken som helst), vi ordnar resten: lokal, catering, workshop, experter. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Sätt upp din kväll här →</a> eller: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU evenemangserie",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Startat i Tyskland, snart i hela EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -3846,10 +3886,12 @@ window.LOCALES = {
 
     hero_alumni:    "Předchozí setkání spojila rozhodovatele z byznysu, agentur, médií, vědy a politiky.",
     manifesto_h2: "Proč existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -3908,7 +3950,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -3956,7 +3999,8 @@ window.LOCALES = {
     faq_a9: "Ano — a od června 2026 je to jediný způsob, jak získat Salon AI Dinner. Shromáždíš 12+ lidí ze svého okruhu (jakéhokoli druhu), my se postaráme o zbytek: prostory, catering, workshop, experti. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Nastav si svůj večer →</a> nebo: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Série akcí Pro-EU",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Začalo v Německu, brzy po celé EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -4223,10 +4267,12 @@ window.LOCALES = {
 
     hero_alumni:    "Korábbi alkalmaink döntéshozókat hoztak össze a gazdaság, ügynökségek, média, tudomány és politika területéről.",
     manifesto_h2: "Miért létezik a Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -4285,7 +4331,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -4333,7 +4380,8 @@ window.LOCALES = {
     faq_a9: "Igen — és 2026 júniusától ez az egyetlen módja egy Salon AI Dinner megrendezésének. Összegyűjtesz 12+ embert a köröddből (bármilyen), mi intézünk minden mást: helyszín, catering, workshop, szakértők. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Állítsd be itt az estédet →</a> vagy: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU rendezvénysorozat",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Németországban indult, hamarosan az egész EU-ban.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -4600,10 +4648,12 @@ window.LOCALES = {
 
     hero_alumni:    "Naše predchádzajúce stretnutia spojili rozhodovateľov z biznisu, agentúr, médií, vedy a politiky.",
     manifesto_h2: "Prečo existuje Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -4662,7 +4712,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -4710,7 +4761,8 @@ window.LOCALES = {
     faq_a9: "Áno — a od júna 2026 je to jediný spôsob, ako získať Salon AI Dinner. Zhromaždíš 12+ ľudí zo svojho okruhu (akéhokoľvek druhu), my sa postaráme o zvyšok: priestory, catering, workshop, experti. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Nastav si svoj večer →</a> alebo: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Séria udalostí Pro-EÚ",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Začalo v Nemecku, čoskoro po celej EÚ.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -4977,10 +5029,12 @@ window.LOCALES = {
 
     hero_alumni:    "Досегашните ни срещи събраха вземащи решения от бизнеса, агенциите, медиите, науката и политиката.",
     manifesto_h2: "Защо съществува Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -5039,7 +5093,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -5087,7 +5142,8 @@ window.LOCALES = {
     faq_a9: "Да — и от юни 2026 г. това е единственият начин да получиш Salon AI Dinner. Събираш 12+ души от своя кръг (какъвто и да е), ние се грижим за всичко останало: място, кетъринг, уъркшоп, експерти. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Настрой вечерта си тук →</a> или: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Серия Pro-EU събития",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Стартирало в Германия, скоро из цялата ЕС.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -5354,10 +5410,12 @@ window.LOCALES = {
 
     hero_alumni:    "Tidligere runder har samlet beslutningstagere fra erhvervsliv, bureauer, medier, forskning og politik.",
     manifesto_h2: "Hvorfor Salon <span class=\"m-h2-ai\">AI</span> findes",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -5416,7 +5474,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -5464,7 +5523,8 @@ window.LOCALES = {
     faq_a9: "Ja — og fra juni 2026 er dette den eneste måde at få en Salon AI Dinner på. Du samler 12+ personer fra din kreds (uanset type), vi klarer resten: lokale, catering, workshop, eksperter. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Opsæt din aften her →</a> eller: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU begivenhedsserie",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Startet i Tyskland, snart i hele EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -5731,10 +5791,12 @@ window.LOCALES = {
 
     hero_alumni:    "Aiemmissa kerroissamme on ollut päättäjiä liike-elämästä, virastoista, mediasta, tutkimuksesta ja politiikasta.",
     manifesto_h2: "Miksi Salon <span class=\"m-h2-ai\">AI</span> on olemassa",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -5793,7 +5855,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -5841,7 +5904,8 @@ window.LOCALES = {
     faq_a9: "Kyllä — ja kesäkuusta 2026 lähtien tämä on ainoa tapa saada Salon AI Dinner. Kokoat 12+ ihmistä piiristäsi (millainen tahansa), me hoidamme loput: paikka, catering, työpaja, asiantuntijat. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Aseta iltasi tästä →</a> tai: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU tapahtumasarja",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Alkanut Saksasta, pian koko EU:ssa.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -6108,10 +6172,12 @@ window.LOCALES = {
 
     hero_alumni:    "Prethodna izdanja okupila su donositelje odluka iz gospodarstva, agencija, medija, znanosti i politike.",
     manifesto_h2: "Zašto postoji Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -6170,7 +6236,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -6218,7 +6285,8 @@ window.LOCALES = {
     faq_a9: "Da — i od lipnja 2026 ovo je jedini način da dobiješ Salon AI Dinner. Okupiš 12+ ljudi iz svojeg kruga (bilo kakav), mi se brinemo za sve ostalo: prostor, catering, radionica, stručnjaci. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Postavi svoju večer ovdje →</a> ili: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EU serija događanja",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Krenulo iz Njemačke, uskoro diljem EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -6485,10 +6553,12 @@ window.LOCALES = {
 
     hero_alumni:    "Οι προηγούμενες συναντήσεις μας έφεραν κοντά λήπτες αποφάσεων από την οικονομία, τις εταιρείες, τα μέσα, την έρευνα και την πολιτική.",
     manifesto_h2: "Γιατί υπάρχει το Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -6547,7 +6617,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -6595,7 +6666,8 @@ window.LOCALES = {
     faq_a9: "Ναι — και από τον Ιούνιο του 2026, αυτός είναι ο μόνος τρόπος να αποκτήσεις ένα Salon AI Dinner. Μαζεύεις 12+ άτομα από τον κύκλο σου (οποιουδήποτε τύπου), εμείς αναλαμβάνουμε όλα τα υπόλοιπα: χώρος, catering, workshop, ειδικοί. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Ρύθμισε τη βραδιά σου εδώ →</a> ή: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Σειρά εκδηλώσεων Υπέρ-ΕΕ",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Ξεκινώντας από τη Γερμανία, σύντομα σε όλη την ΕΕ.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -6862,10 +6934,12 @@ window.LOCALES = {
 
     hero_alumni:    "Ankstesnėse sesijose dalyvavo sprendimų priėmėjai iš verslo, agentūrų, žiniasklaidos, mokslo ir politikos.",
     manifesto_h2: "Kodėl egzistuoja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -6924,7 +6998,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -6972,7 +7047,8 @@ window.LOCALES = {
     faq_a9: "Taip — ir nuo 2026 m. birželio tai yra vienintelis būdas surengti Salon AI vakarienę. Surenki 12+ žmonių iš savo rato (bet kokio), mes pasirūpiname likusiu: vieta, maitinimas, dirbtuvė, ekspertai. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Suorganizuok savo vakarą čia →</a> arba: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-ES renginių serija",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Pradėta Vokietijoje, netrukus visoje ES.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -7239,10 +7315,12 @@ window.LOCALES = {
 
     hero_alumni:    "Iepriekšējās reizēs piedalījās lēmumu pieņēmēji no biznesa, aģentūrām, medijiem, zinātnes un politikas.",
     manifesto_h2: "Kāpēc pastāv Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -7301,7 +7379,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -7349,7 +7428,8 @@ window.LOCALES = {
     faq_a9: "Jā — un no 2026. gada jūnija tas ir vienīgais veids, kā iegūt Salon AI vakariņas. Tu sapulcē 12+ cilvēkus no sava loka (jebkura veida), mēs darām visu pārējo: vieta, ēdināšana, darbnīca, eksperti. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Sarīko savu vakaru šeit →</a> vai: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-ES pasākumu sērija",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Sākts Vācijā, drīz visā ES.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -7616,10 +7696,12 @@ window.LOCALES = {
 
     hero_alumni:    "Varasematel kohtumistel on osalenud otsustajaid ärimaailmast, agentuuridest, meediast, teadusest ja poliitikast.",
     manifesto_h2: "Miks Salon <span class=\"m-h2-ai\">AI</span> eksisteerib",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -7678,7 +7760,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -7726,7 +7809,8 @@ window.LOCALES = {
     faq_a9: "Jah — ja alates 2026. aasta juunist on see ainus viis Salon AI õhtusööki saada. Kogud 12+ inimest oma ringist (mistahes), me teeme kõik ülejäänu: koht, toitlustus, töötuba, eksperdid. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Sea oma õhtu paika siin →</a> või: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Pro-EL ürituste sari",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Alustatud Saksamaalt, varsti üle kogu EL.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -7993,10 +8077,12 @@ window.LOCALES = {
 
     hero_alumni:    "Pretekla srečanja so povezala odločevalce iz gospodarstva, agencij, medijev, znanosti in politike.",
     manifesto_h2: "Zakaj obstaja Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -8055,7 +8141,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -8103,7 +8190,8 @@ window.LOCALES = {
     faq_a9: "Da — in od junija 2026 je to edini način, da dobiš Salon AI Dinner. Zbereš 12+ ljudi iz svojega kroga (kakršnega koli), mi poskrbimo za ostalo: prostor, catering, delavnica, strokovnjaki. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Nastavi svoj večer tukaj →</a> ali: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Serija pro-EU dogodkov",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Začelo v Nemčiji, kmalu po vsej EU.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -8370,10 +8458,12 @@ window.LOCALES = {
 
     hero_alumni:    "Il-laqgħat tagħna ta' qabel ġabru flimkien dawk li jieħdu d-deċiżjonijiet mill-ekonomija, mill-aġenziji, mill-media, mir-riċerka u mill-politika.",
     manifesto_h2: "Għaliex jeżisti s-Salon <span class=\"m-h2-ai\">AI</span>",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -8432,7 +8522,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -8480,7 +8571,8 @@ window.LOCALES = {
     faq_a9: "Iva — u minn Ġunju 2026, dan huwa l-uniku mod biex tikseb Salon AI Dinner. Tiġbor 12+ persuni miċ-ċirku tiegħek (ta' kwalunkwe tip), aħna nieħdu ħsieb il-bqija kollu: post, catering, workshop, esperti. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Issettja s-serata tiegħek hawn →</a> jew: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Serje ta' avvenimenti Pro-UE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Jibda mill-Ġermanja, malajr madwar l-UE kollha.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',
@@ -8747,10 +8839,12 @@ window.LOCALES = {
 
     hero_alumni:    "Tá lucht cinnteoireachta ó shaol an ghnó, ó ghníomhaireachtaí, ó na meáin, ón saol acadúil agus ón bpolaitíocht tagtha le chéile inár sraitheanna roimhe seo.",
     manifesto_h2: "Cén fáth a bhfuil Salon <span class=\"m-h2-ai\">AI</span> ann",
-    manifesto_lede: "Europe doesn\'t look especially bold right now. We\'re falling behind on AI, and when you ask people what they themselves could actually do for Europe, the most common answer is a shrug. Most people on this continent don\'t even feel European — they feel like they just happen to be here.",
+    manifesto_lede: "One question per evening. One method behind it.",
 
 
-    manifesto_ai_eu: "AI for Europe means helping Europeans become builders — not just consumers — of AI.",
+
+    manifesto_ai_eu: "",
+
     tr_eyebrow: "What shifts",
     tr_h2: "What you can do after a salon evening that you couldn\'t do before.",
     tr_before_label: "Before",
@@ -8809,7 +8903,8 @@ window.LOCALES = {
     plan_p2_label: "Question",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question to carry while you work.<br>Unresolved by design; solved by doing.",
+    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>One open question per evening — chosen by the host.<br><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Which AI can only be built by Europeans?</span>",
+
 
 
 
@@ -8857,7 +8952,8 @@ window.LOCALES = {
     faq_a9: "Tá — agus ó Mheitheamh 2026 ar aghaidh, is é seo an t-aon bhealach chun Salon AI Dinner a fháil. Bailíonn tú 12+ duine ó do chiorcal (cibé saghas), déanaimid gach rud eile: ionad, lónadóireacht, ceardlann, saineolaithe. <a href=\"/host.html\" style=\"color:var(--sky-deep);font-weight:600;\">Socraigh do thráthnóna anseo →</a> nó: luckysprouts@duck.com",
     faq_q10: "What about cancellations?",
     faq_a10: "If you cancel up to 3 days before the dinner we keep 50% of the ticket price, after that the full amount. You can transfer the ticket to another person at any time — just pass on the name and contact, no problem. Questions: luckysprouts@duck.com",
-    hero_eyebrow:  "Sraith imeachtaí Pro-AE",
+    hero_eyebrow: "Salon AI · Munich · Berlin",
+
     hero_sub:      "Ag tosú sa Ghearmáin, ag leathadh ar fud an AE go luath.",
     hero_subtitle: '',
     hero_h1:     'A Dialogue with AI.',

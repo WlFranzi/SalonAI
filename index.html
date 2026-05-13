@@ -141,6 +141,9 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .plan-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.8px; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
 .plan-card p { font-size: 14.5px; color: var(--navy); line-height: 1.65; margin: 0; }
 .plan-card .plan-kicker { display: block; font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.08rem; color: var(--navy); line-height: 1.3; margin-bottom: 10px; }
+#rotating-question { display: inline-block; opacity: 1; transition: opacity 320ms ease; font-family: 'Playfair Display', serif; font-style: italic; color: var(--accent); }
+#rotating-question.is-fading { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { #rotating-question { transition: none; } }
 .plan-card p br + br { display: none; }
 .plan-card p br { line-height: 2; }
 .plan-card--guided .plan-share { color: var(--sky-deep); }
@@ -998,7 +1001,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="cloud cloud-1"></div>
   <div class="cloud cloud-2"></div>
   <div class="hero-content">
-    <p class="eyebrow" data-i18n="hero_eyebrow">Pro-EU Eventreihe</p>
+    <p class="eyebrow" data-i18n="hero_eyebrow">Salon AI · München · Berlin</p>
     <h1 data-i18n-html="hero_h1">Ein Dialog mit KI.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline">Du verstehst KI nicht wirklich, bis du mit ihr gebaut hast.</p>
     <a href="#events" class="hero-cta" data-i18n="hero_cta">Zum Salon →</a>
@@ -1085,7 +1088,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       <div class="plan-card plan-card--guided">
         <div class="plan-share" data-i18n="plan_p2_share">20%</div>
         <div class="plan-card-label" data-i18n="plan_p2_label">Frage</div>
-        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Eine offene Frage, die du beim Bauen mitträgst.<br>Absichtlich ungelöst — gelöst durch Tun.</p>
+        <p data-i18n-html="plan_p2_body"><span class="plan-kicker">Die Linse.</span>Eine offene Frage pro Abend — vom Host gewählt.<br><span class="rotating-question" id="rotating-question" aria-hidden="true">Welche KI kann nur von Europäern gebaut werden?</span></p>
       </div>
     </div>
 
@@ -1179,8 +1182,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="manifesto" id="warum">
   <div class="manifesto-inner">
     <h2 data-i18n-html="manifesto_h2">Warum es Salon <span class="m-h2-ai">AI</span> gibt</h2>
-    <p class="manifesto-lede" data-i18n="manifesto_lede">Europa wirkt gerade nicht besonders mutig. Bei KI hängen wir hinterher, und wenn man fragt, was man selbst eigentlich für Europa tun kann, kommt oft nur ein Schulterzucken. Viele fühlen sich nicht einmal besonders europäisch — eher irgendwie zufällig hier.</p>
-    <p class="manifesto-lede" data-i18n="manifesto_ai_eu" style="margin-top: 14px;">KI für Europa heißt: Europäer:innen werden Macher:innen — nicht nur Konsument:innen — von KI.</p>
+    <p class="manifesto-lede" data-i18n="manifesto_lede">Eine Frage pro Abend. Eine Methode dahinter.</p>
     <p data-i18n="manifesto_bridge">Genau deshalb gibt es Salon AI.</p>
     <ol>
       <li data-i18n="manifesto_item1">Wir bauen mit KI — nicht die Alltagstricks, sondern Agenten und Automationen.</li>
@@ -2176,6 +2178,46 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+// Rotating "question of the evening" — flipbook on the 20% / Question card
+(function rotateQuestion() {
+  var el = document.getElementById('rotating-question');
+  if (!el) return;
+  var lang = (function(){ try { return localStorage.getItem('salonai_lang'); } catch(e){ return null; } })() || 'de';
+  var enPool = [
+    'Which AI can only be built by Europeans?',
+    'Can Europe achieve growth, resilience, and competitiveness — or only at the expense of one another?',
+    'How does AI redistribute mental load in working families?',
+    'Where does AI have real leverage in board work?',
+    'What does AI change about cross-border healthcare?'
+  ];
+  var pools = {
+    de: [
+      'Welche KI kann nur von Europäern gebaut werden?',
+      'Kann Europa Wachstum, Resilienz und Wettbewerbsfähigkeit erreichen — oder nur eines auf Kosten der anderen?',
+      'Was verändert KI an Mental Load in arbeitenden Familien?',
+      'Wo hat KI in Vorstandsarbeit echten Hebel?',
+      'Was kann KI für grenzüberschreitende Gesundheit tun?'
+    ]
+  };
+  var pool = pools[lang] || enPool;
+  // Set initial text from the pool so DE/EN stay in sync regardless of which static string is rendered
+  el.textContent = pool[0];
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var i = 0;
+  var paused = false;
+  el.addEventListener('mouseenter', function(){ paused = true; });
+  el.addEventListener('mouseleave', function(){ paused = false; });
+  setInterval(function(){
+    if (paused) return;
+    el.classList.add('is-fading');
+    setTimeout(function(){
+      i = (i + 1) % pool.length;
+      el.textContent = pool[i];
+      el.classList.remove('is-fading');
+    }, 320);
+  }, 4500);
+})();
 </script>
 </body>
 </html>
