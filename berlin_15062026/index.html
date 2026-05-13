@@ -244,6 +244,42 @@
     text-wrap: balance;
   }
 
+  /* ── Testimonial (Schleip quote, between Hypothese and Programm) ── */
+  section.testimonial-section { padding: 8px 0 4px; }
+  .testimonial { text-align: center; margin: 12px auto; max-width: 560px; }
+  .testimonial-text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    line-height: 1.38;
+    color: var(--ink);
+    margin: 0 0 22px;
+    text-wrap: balance;
+    position: relative;
+  }
+  .testimonial-text::before {
+    content: '\201C';
+    display: block;
+    font-family: var(--serif);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: var(--oxblood);
+    opacity: 0.45;
+    line-height: 0.85;
+    margin-bottom: -0.18em;
+  }
+  .testimonial-attr {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 10.5px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    font-feature-settings: "smcp" 1;
+  }
+
   /* ── IV. Zwei Bewegungen (80/20) ──────────────────────────────── */
   section.movements .movement {
     display: grid;
@@ -541,6 +577,16 @@
     <div class="pull-statement">
       <p>Was bleibt wichtig an Taste — im Zeitalter der KI?</p>
     </div>
+  </section>
+
+  <div class="ornament" aria-hidden="true">◊</div>
+
+  <!-- Testimonial (Schleip quote — Salon Nº1, München) -->
+  <section class="spread testimonial-section">
+    <blockquote class="testimonial">
+      <p class="testimonial-text">Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude.</p>
+      <p class="testimonial-attr">Prof. Dr. Robert Schleip · Salon Nº1, München</p>
+    </blockquote>
   </section>
 
   <div class="ornament" aria-hidden="true">◊</div>
