@@ -443,8 +443,8 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   de: {
     newsletter_btn: "Anmelden →",
-    newsletter_desc: "Eine Mail bei neuen Salons & Salon-Ergebnissen. That's all.",
-    newsletter_h3: "Keep your seat (updates)",
+    newsletter_desc: "Eine Mail bei neuen Salons & Salon-Ergebnissen. Das war's.",
+    newsletter_h3: "Bleib am Tisch (Updates)",
     march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
     faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
