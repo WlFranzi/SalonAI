@@ -376,12 +376,15 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .cohost-question .rotating-question-box { display: block; position: relative; min-height: 4em; overflow: hidden; padding-bottom: 4px; }
 .cohost-question #rotating-question { display: block; position: absolute; left: 0; right: 0; top: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--accent); line-height: 1.35; text-wrap: balance; }
 .cohost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.cohost-card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 40px 36px 36px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+.cohost-card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 36px 32px 32px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
 .cohost-card:hover { border-color: var(--sky-deep); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(27,46,74,0.08); }
-.cohost-card-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.012em; margin-bottom: 16px; }
-.cohost-card-desc { font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 18px; }
-.cohost-card-meta { font-size: 13px; color: var(--muted-blue); line-height: 1.7; padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.08); margin-bottom: 28px; flex-grow: 1; }
-.cohost-cta { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Sans', sans-serif; font-size: 14.5px; font-weight: 600; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; transition: gap 0.2s, color 0.15s; align-self: flex-start; }
+.cohost-card-icon { font-size: 28px; line-height: 1; margin-bottom: 14px; }
+.cohost-card-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.012em; margin: 0 0 22px; }
+.cohost-card-row { margin-bottom: 18px; display: flex; flex-direction: column; gap: 4px; }
+.cohost-card-row + .cohost-card-row { padding-top: 18px; border-top: 1px solid rgba(0,51,153,0.08); }
+.cohost-card-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.8px; font-weight: 700; color: var(--sky-deep); margin: 0; }
+.cohost-card-text { font-size: 14.5px; color: var(--navy); line-height: 1.6; margin: 0; }
+.cohost-cta { display: inline-flex; align-items: center; gap: 6px; font-family: 'DM Sans', sans-serif; font-size: 14.5px; font-weight: 600; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; transition: gap 0.2s, color 0.15s; align-self: flex-start; margin-top: auto; padding-top: 12px; }
 .cohost-cta:hover { color: var(--navy); gap: 10px; }
 @media (max-width: 720px) {
   .cohost-section { padding: 60px var(--s3) 52px; }
@@ -1208,15 +1211,30 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
     <div class="cohost-grid">
       <article class="cohost-card">
+        <div class="cohost-card-icon" aria-hidden="true">👥</div>
         <h3 class="cohost-card-title" data-i18n="priv_title">Private Salons</h3>
-        <p class="cohost-card-desc" data-i18n="host_own_desc">Für Gründer:innen, Freunde und enge Kreise.</p>
-        <p class="cohost-card-meta" data-i18n="host_own_fine">Dinner und Location inklusive. Ein strukturierter Abend, im Privaten.</p>
+        <div class="cohost-card-row">
+          <p class="cohost-card-label" data-i18n="card_for_who">Für wen</p>
+          <p class="cohost-card-text" data-i18n="priv_for_who">Gründer:innen, Freunde und enge Kreise.</p>
+        </div>
+        <div class="cohost-card-row">
+          <p class="cohost-card-label" data-i18n="card_what_you_get">Was du bekommst</p>
+          <p class="cohost-card-text" data-i18n="priv_what_you_get">Dinner und Location inklusive. Ein strukturierter Abend, im Privaten.</p>
+        </div>
         <a href="/host.html" class="cohost-cta" data-i18n="host_own_btn" onclick="gtag('event', 'click_host_own');">Eigenen Abend ausrichten →</a>
       </article>
 
       <article class="cohost-card" id="corporate">
+        <div class="cohost-card-icon" aria-hidden="true">🏢</div>
         <h3 class="cohost-card-title" data-i18n="corp_h3">Salons für Unternehmen</h3>
-        <p class="cohost-card-desc" data-i18n="corp_desc">Für Führungskräfte und Teams. Executive Salons, gestaltet rund um eure strategischen Fragen.</p>
+        <div class="cohost-card-row">
+          <p class="cohost-card-label" data-i18n="card_for_who">Für wen</p>
+          <p class="cohost-card-text" data-i18n="corp_for_who">Führungskräfte und Teams.</p>
+        </div>
+        <div class="cohost-card-row">
+          <p class="cohost-card-label" data-i18n="card_what_you_get">Was du bekommst</p>
+          <p class="cohost-card-text" data-i18n="corp_what_you_get">Executive Salon, gestaltet rund um eure strategischen Fragen.</p>
+        </div>
         <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Anfrage%20f%C3%BCr%20Team-Event&amp;body=Liebe%20Franziska%2C%0D%0A%0D%0Awir%20sind%20%5BFirma%5D%20und%20w%C3%BCrden%20gerne%20einen%20Salon-Abend%20f%C3%BCr%20unser%20Team%20kuratieren%20lassen.%0D%0A%0D%0AAnzahl%20Personen%3A%0D%0AWunschdatum%2Fzeitraum%3A%0D%0AThema%2FFrage%20des%20Abends%3A%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe" class="cohost-cta" data-i18n="corp_btn" onclick="gtag('event', 'click_corporate');">Anfrage senden →</a>
       </article>
     </div>
