@@ -403,7 +403,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -827,7 +827,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI ist <span class=\"plan-h2-faded\">weniger Vortrag,</span> und <em class=\"plan-h2-accent\">mehr Gespräch.</em>",
+    plan_h2: "<strong>Salon AI</strong> ist <em>weniger Vortrag,</em> und <em>mehr Gespräch.</em>",
 
 
 
@@ -933,7 +933,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -1329,7 +1329,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -1725,7 +1725,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -2121,7 +2121,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -2517,7 +2517,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -2913,7 +2913,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -3305,7 +3305,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -3697,7 +3697,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -4089,7 +4089,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -4481,7 +4481,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -4873,7 +4873,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -5265,7 +5265,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -5657,7 +5657,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -6049,7 +6049,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -6441,7 +6441,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -6833,7 +6833,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -7225,7 +7225,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -7617,7 +7617,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -8009,7 +8009,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -8401,7 +8401,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -8793,7 +8793,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
@@ -9185,7 +9185,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Salon AI is <span class=\"plan-h2-faded\">less lecture,</span> <em class=\"plan-h2-accent\">more conversation.</em>",
+    plan_h2: "<strong>Salon AI</strong> is <em>less lecture,</em> <em>more conversation.</em>",
 
 
 
