@@ -142,7 +142,9 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .plan-inner { max-width: 720px; margin: 0 auto; }
 .plan-eyebrow { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 14px; display: inline-flex; align-items: center; gap: 8px; }
 .plan-eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
-.plan-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.2vw, 2.4rem); font-weight: 700; color: var(--navy); line-height: 1.15; letter-spacing: -0.018em; margin-bottom: var(--s4); }
+.plan-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.4vw, 2.5rem); font-weight: 700; color: var(--navy); line-height: 1.18; letter-spacing: -0.018em; margin: 0 auto var(--s4); text-align: center; max-width: 640px; text-wrap: balance; }
+.plan-h2 .plan-h2-faded { color: var(--sky-deep); font-weight: 400; font-style: italic; }
+.plan-h2 .plan-h2-accent { color: var(--accent); font-style: italic; font-weight: 700; }
 .plan-split { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 28px; }
 .plan-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 24px 26px; }
 .plan-share { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 10px; letter-spacing: -0.01em; }
@@ -1025,8 +1027,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="inner">
     <a href="/" class="nav-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></a>
     <div class="nav-right">
-      <a href="#past" class="nav-link" data-i18n="nav_past">Vergangene Events</a>
-      <a href="#host" class="nav-link" data-i18n="nav_host">Co-Host werden</a>
       <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Zum Salon · 28.05</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
@@ -1087,7 +1087,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── PLAN (80/20 split, structured then open) ───────────────── -->
 <section class="plan" id="plan">
   <div class="plan-inner">
-    <h2 class="plan-h2" data-i18n="plan_h2">Salon AI ist weniger Vortrag, und mehr Gespräch.</h2>
+    <h2 class="plan-h2" data-i18n-html="plan_h2">Salon AI ist <span class="plan-h2-faded">weniger Vortrag,</span> und <em class="plan-h2-accent">mehr Gespräch.</em></h2>
 
     <div class="plan-split">
       <div class="plan-card plan-card--program">
