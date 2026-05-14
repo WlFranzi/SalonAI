@@ -412,7 +412,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -837,7 +837,7 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "Wir bauen deinen KI-Assistenten — entlang einer erprobten Sequenz.",
+    plan_p1_body: "Wir bauen deinen KI-Assistenten — für dein Leben und deine Arbeit.",
 
 
 
@@ -943,7 +943,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -1339,7 +1339,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -1735,7 +1735,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2131,7 +2131,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2527,7 +2527,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2923,7 +2923,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -3315,7 +3315,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -3707,7 +3707,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4099,7 +4099,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4491,7 +4491,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4883,7 +4883,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -5275,7 +5275,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -5667,7 +5667,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6059,7 +6059,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6451,7 +6451,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6843,7 +6843,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -7235,7 +7235,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -7627,7 +7627,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8019,7 +8019,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8411,7 +8411,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8803,7 +8803,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -9195,7 +9195,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — along a proven sequence.",
+    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
 
 
 
