@@ -38,14 +38,14 @@ window.LOCALES = {
     nav_back_home: "← Salon AI",
     cohost_q_label: "You pick the evening's question, for example:",
     past_photo_1: "AI-generated Europe 2041",
-    past_photo_2: "Table concept by Tatjana — tech doesn't have to be sterile",
-    past_photo_3: "Nature meets tech — in the detail",
+    past_photo_2: "Table concept by Tatjana",
+    past_photo_3: "Nature meets tech — in the detail, because tech doesn't have to be sterile 🌿",
     usecases_h2: "AI use cases",
-    usecases_desc: "Concrete examples of what your AI assistant can automate — for parents, PR teams, family offices, EU citizens, and more.",
+    usecases_desc: "Concrete examples of what your AI assistant can automate — for board members, PR teams, family offices, EU citizens, from politics to creatives to finance.",
     usecases_link: "See the use cases →",
     usecases_eyebrow: "What your agent could automate",
     usecases_h1: "AI use cases",
-    usecases_intro: "Concrete scenarios from the everyday lives of parents, PR teams, family offices, EU citizens, and more. Swipe through or click a category — see how an AI assistant saves you hours.",
+    usecases_intro: "Concrete scenarios from the everyday lives of board members, parents, PR teams, family offices, EU citizens — from politics to creatives to finance. Swipe through or click a category to see how an AI assistant saves you hours.",
     announcement_html: "🔔 <strong>May 28: Last public Salon AI Dinner.</strong> After that: bring your own group →",
     nav_cta:       "Join a Dinner →",
     hero_cta: "Join the Salon →",
@@ -412,7 +412,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -420,7 +420,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -463,14 +463,14 @@ window.LOCALES = {
     nav_back_home: "← Salon AI",
     cohost_q_label: "Du wählst die Frage des Abends, zum Beispiel:",
     past_photo_1: "KI-generiertes Europa 2041",
-    past_photo_2: "Tischkonzept by Tatjana — denn Tech muss nicht steril sein",
-    past_photo_3: "Natur trifft Tech — im Detail",
+    past_photo_2: "Tischkonzept by Tatjana",
+    past_photo_3: "Natur trifft Tech — im Detail, denn Tech muss nicht steril sein 🌿",
     usecases_h2: "Anwendungsfälle für KI",
-    usecases_desc: "Konkrete Beispiele, was dein KI-Assistent automatisieren kann — für Eltern, PR-Teams, Family Offices, EU-Bürger:innen und mehr.",
+    usecases_desc: "Konkrete Beispiele, was dein KI-Assistent automatisieren kann — für Vorstände, PR-Teams, Family Offices, EU-Bürger:innen, von Politik über Kreative bis Finance.",
     usecases_link: "Anwendungsfälle ansehen →",
     usecases_eyebrow: "Was dein Agent automatisieren kann",
     usecases_h1: "Anwendungsfälle für KI",
-    usecases_intro: "Konkrete Szenarien aus dem Alltag von Eltern, PR-Teams, Family Offices, EU-Bürger:innen und mehr. Wisch durch oder klick auf eine Kategorie — und sieh, wie ein KI-Assistent dir Stunden spart.",
+    usecases_intro: "Konkrete Szenarien aus dem Alltag von Vorständen, Eltern, PR-Teams, Family Offices, EU-Bürger:innen — von Politik über Kreative bis Finance. Wisch durch oder klick auf eine Kategorie und sieh, wie ein KI-Assistent dir Stunden spart.",
     announcement_html: "🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →",
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_cta: "Zum Salon →",
@@ -837,7 +837,7 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "Wir bauen. Entlang einer erprobten Sequenz entsteht dein KI-Assistent — passend zu deiner Arbeit.",
+    plan_p1_body: "Wir bauen deinen KI-Assistenten — entlang einer erprobten Sequenz.",
 
 
 
@@ -845,7 +845,7 @@ window.LOCALES = {
     plan_p2_label: "Anwendung",
 
 
-    plan_p2_body: "Wir wenden an. Gemeinsam richten wir die Werkzeuge auf die Frage des Abends.",
+    plan_p2_body: "Wir wenden ihn an — auf die Frage des Abends.",
 
 
 
@@ -943,7 +943,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -951,7 +951,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -1339,7 +1339,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -1347,7 +1347,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -1735,7 +1735,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -1743,7 +1743,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -2131,7 +2131,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -2139,7 +2139,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -2527,7 +2527,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -2535,7 +2535,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -2923,7 +2923,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -2931,7 +2931,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -3315,7 +3315,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -3323,7 +3323,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -3707,7 +3707,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -3715,7 +3715,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -4099,7 +4099,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -4107,7 +4107,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -4491,7 +4491,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -4499,7 +4499,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -4883,7 +4883,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -4891,7 +4891,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -5275,7 +5275,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -5283,7 +5283,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -5667,7 +5667,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -5675,7 +5675,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -6059,7 +6059,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -6067,7 +6067,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -6451,7 +6451,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -6459,7 +6459,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -6843,7 +6843,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -6851,7 +6851,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -7235,7 +7235,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -7243,7 +7243,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -7627,7 +7627,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -7635,7 +7635,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -8019,7 +8019,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -8027,7 +8027,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -8411,7 +8411,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -8419,7 +8419,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -8803,7 +8803,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -8811,7 +8811,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
@@ -9195,7 +9195,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
+    plan_p1_body: "We build your AI assistant — along a proven sequence.",
 
 
 
@@ -9203,7 +9203,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
+    plan_p2_body: "We apply it — to the question of the evening.",
 
 
 
