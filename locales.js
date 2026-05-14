@@ -18,7 +18,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   en: {
     newsletter_btn: "Subscribe →",
-    newsletter_desc: "One email when a new salon happens + when a salon produces results. Nothing else. :)",
+    newsletter_desc: "One email when a new salon happens + when a salon produces results. That's all.",
     newsletter_h3: "Stay at the table.",
     march_hero_caption: "How a European city could look in 2041 — if we make the right decisions today.",
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
@@ -29,7 +29,7 @@ window.LOCALES = {
     invite_buy: "Buy ticket · €78 →",
     card_for_who: "For whom",
     card_what_you_get: "What you get",
-    priv_for_who: "Friends and tight circles.",
+    priv_for_who: "Friends and private circles.",
     priv_what_you_get: "Dinner and venue included. A structured evening, in private.",
     corp_for_who: "Leaders and teams — from politics & architecture to private equity.",
     corp_what_you_get: "Executive salon, designed around your strategic questions.",
@@ -443,7 +443,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   de: {
     newsletter_btn: "Anmelden →",
-    newsletter_desc: "Eine Mail bei neuen Salons + Salon-Ergebnissen. Sonst keine. :)",
+    newsletter_desc: "Eine Mail bei neuen Salons + bei Salon-Ergebnissen. Das war's.",
     newsletter_h3: "Bleib am Tisch.",
     march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
@@ -454,7 +454,7 @@ window.LOCALES = {
     invite_buy: "Ticket kaufen · 78 € →",
     card_for_who: "Für wen",
     card_what_you_get: "Was du bekommst",
-    priv_for_who: "Freunde und enge Kreise.",
+    priv_for_who: "Freunde und private Kreise.",
     priv_what_you_get: "Dinner und Location inklusive. Ein strukturierter Abend, im Privaten.",
     corp_for_who: "Führungskräfte und Teams — von Politik & Architektur bis Private Equity.",
     corp_what_you_get: "Executive Salon, gestaltet rund um eure strategischen Fragen.",
