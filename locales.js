@@ -171,15 +171,15 @@ window.LOCALES = {
     stats_eyebrow: "The evening at a glance",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Before",
     col_now:       "With AI today",
@@ -196,7 +196,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -596,15 +596,15 @@ window.LOCALES = {
     stats_eyebrow: "Der Abend in Kürze",
     stat_1_num: "1 Abend",
 
-    stat_1_lbl: "Von null zu einem funktionierenden KI-Assistenten in einer Sitzung.",
+    stat_1_lbl: "Funktionierender KI-Assistent in einer Sitzung.",
 
     stat_3_num: "Experts im Raum",
 
-    stat_3_lbl: "Nicht um zu präsentieren — um zu entstören, zu verfeinern, umzulenken.",
+    stat_3_lbl: "Begleiten, entstören, verfeinern.",
 
     stat_4_num: "Keine Vorkenntnisse nötig",
 
-    stat_4_lbl: "Gebaut für Entscheider:innen, nicht für Engineers.",
+    stat_4_lbl: "Für Entscheider:innen, nicht Engineers.",
 
     col_old:       "Früher",
     col_now:       "Heute mit KI",
@@ -621,7 +621,7 @@ window.LOCALES = {
     event_q_label: "Frage des Abends",
     event_q_text: "Welche KI kann nur von Europäer:innen gebaut werden?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks inkl.",
+    event_sub: "Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive",
 
     event_laptop: "Ein Laptop reicht. Alles andere kommt mit dem Platz.",
 
@@ -1035,15 +1035,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Avant",
     col_now:       "Avec l'IA aujourd'hui",
@@ -1060,7 +1060,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -1431,15 +1431,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Antes",
     col_now:       "Con IA hoy",
@@ -1456,7 +1456,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -1827,15 +1827,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Prima",
     col_now:       "Con l'IA oggi",
@@ -1852,7 +1852,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -2223,15 +2223,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Antes",
     col_now:       "Com IA hoje",
@@ -2248,7 +2248,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -2619,15 +2619,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Vroeger",
     col_now:       "Met AI vandaag",
@@ -2644,7 +2644,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3015,15 +3015,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Wcześniej",
     col_now:       "Dziś z AI",
@@ -3040,7 +3040,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3407,15 +3407,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Înainte",
     col_now:       "Cu AI azi",
@@ -3432,7 +3432,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3799,15 +3799,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Tidigare",
     col_now:       "Med AI idag",
@@ -3824,7 +3824,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -4191,15 +4191,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Dříve",
     col_now:       "Dnes s AI",
@@ -4216,7 +4216,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -4583,15 +4583,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Korábban",
     col_now:       "Ma AI-val",
@@ -4608,7 +4608,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -4975,15 +4975,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Skôr",
     col_now:       "Dnes s AI",
@@ -5000,7 +5000,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -5367,15 +5367,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Преди",
     col_now:       "С AI днес",
@@ -5392,7 +5392,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -5759,15 +5759,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Tidligere",
     col_now:       "Med AI i dag",
@@ -5784,7 +5784,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6151,15 +6151,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Ennen",
     col_now:       "AI kanssa tänään",
@@ -6176,7 +6176,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6543,15 +6543,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Prije",
     col_now:       "S AI danas",
@@ -6568,7 +6568,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6935,15 +6935,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Πριν",
     col_now:       "Με AI σήμερα",
@@ -6960,7 +6960,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -7327,15 +7327,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Anksčiau",
     col_now:       "Su AI šiandien",
@@ -7352,7 +7352,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -7719,15 +7719,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Agrāk",
     col_now:       "Ar AI šodien",
@@ -7744,7 +7744,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8111,15 +8111,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Varem",
     col_now:       "Täna AI-ga",
@@ -8136,7 +8136,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8503,15 +8503,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Prej",
     col_now:       "Z AI danes",
@@ -8528,7 +8528,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8895,15 +8895,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Qabel",
     col_now:       "Mal-AI llum",
@@ -8920,7 +8920,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -9287,15 +9287,15 @@ window.LOCALES = {
     footer_copy:   "BUILT IN & FOR EUROPE · © 2026 SALON AI",
     stat_1_num: "1 evening",
 
-    stat_1_lbl: "From zero to a functioning AI assistant in a single sitting.",
+    stat_1_lbl: "Functioning AI assistant in a single sitting.",
 
     stat_3_num: "Experts present",
 
-    stat_3_lbl: "Not to present — but to unstick, refine, and redirect.",
+    stat_3_lbl: "Guide, unblock, refine.",
 
     stat_4_num: "No expertise required",
 
-    stat_4_lbl: "Built for decision-makers, not engineers.",
+    stat_4_lbl: "For decision-makers, not engineers.",
 
     col_old:       "Roimhe seo",
     col_now:       "Le AI inniu",
@@ -9312,7 +9312,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
+    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 

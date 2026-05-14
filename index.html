@@ -180,10 +180,12 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .salon-invite-question { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--accent); line-height: 1.35; margin: 4px 0 8px; text-wrap: balance; }
 .salon-invite-meta { font-size: 13.5px; color: var(--navy); line-height: 1.6; margin: 0; }
 .salon-invite-meta-fine { font-size: 12.5px; color: var(--muted-blue); line-height: 1.5; margin: 0; font-style: italic; }
-.salon-invite-stats { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 18px 28px; margin-top: 12px; border-top: 1px solid var(--border); }
-.salon-invite-stat { display: flex; gap: 8px; align-items: baseline; }
-.salon-invite-stat strong { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 1.4px; flex-shrink: 0; min-width: 130px; }
-.salon-invite-stat span { font-size: 12.5px; color: var(--muted-blue); line-height: 1.5; }
+/* Plan section 3-up proof strip — what to expect from one evening */
+.plan-stats { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+.plan-stat { display: flex; flex-direction: column; gap: 4px; }
+.plan-stat strong { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 1.6px; }
+.plan-stat span { font-size: 13px; color: var(--muted-blue); line-height: 1.55; }
+@media (min-width: 720px) { .plan-stats { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
 .salon-invite-actions { display: flex; flex-direction: column; gap: 14px; padding: 22px 28px 28px; align-items: stretch; }
 .salon-invite-btn-primary { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 16px 24px; border-radius: 999px; text-decoration: none; text-align: center; letter-spacing: 0.2px; transition: background 0.15s, transform 0.15s; }
 .salon-invite-btn-primary:hover { background: var(--navy); transform: translateY(-1px); }
@@ -192,10 +194,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .salon-invite-btn-secondary:hover { color: var(--accent); border-bottom-color: var(--accent); }
 @media (min-width: 720px) {
   .salon-invite-hero { padding: 36px 40px 18px; gap: 20px; }
-  .salon-invite-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 18px 40px; }
-  .salon-invite-stat { flex-direction: column; gap: 4px; }
-  .salon-invite-stat strong { min-width: 0; }
-  .salon-invite-actions { padding: 22px 40px 32px; }
+  .salon-invite-actions { padding: 24px 40px 32px; }
 }
 .scan-anchors { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
 .scan-chip { font-size: 12px; font-weight: 600; padding: 7px 14px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 999px; color: var(--navy); letter-spacing: 0.1px; line-height: 1.3; }
@@ -1107,6 +1106,22 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </div>
     </div>
 
+    <!-- 3-up proof strip — what to expect from one evening -->
+    <div class="plan-stats">
+      <div class="plan-stat">
+        <strong data-i18n="stat_1_num">1 Abend</strong>
+        <span data-i18n="stat_1_lbl">Funktionierender KI-Assistent in einer Sitzung.</span>
+      </div>
+      <div class="plan-stat">
+        <strong data-i18n="stat_3_num">Experts im Raum</strong>
+        <span data-i18n="stat_3_lbl">Begleiten, entstören, verfeinern.</span>
+      </div>
+      <div class="plan-stat">
+        <strong data-i18n="stat_4_num">Keine Vorkenntnisse</strong>
+        <span data-i18n="stat_4_lbl">Für Entscheider:innen, nicht Engineers.</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1125,23 +1140,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <p class="salon-invite-eyebrow" data-i18n="invite_eyebrow">Du bist eingeladen</p>
         <h3 class="salon-invite-title" data-i18n="event_name">Salon AI Dinner — München</h3>
         <p class="salon-invite-question">„<span data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>"</p>
-        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 · Dinner & Drinks inkl.</p>
+        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</p>
         <p class="salon-invite-meta-fine" data-i18n="event_laptop">Ein Laptop reicht. Alles andere kommt mit dem Platz.</p>
-      </div>
-    </div>
-
-    <div class="salon-invite-stats">
-      <div class="salon-invite-stat">
-        <strong data-i18n="stat_1_num">1 Abend</strong>
-        <span data-i18n="stat_1_lbl">Von null zu einem funktionierenden KI-Assistenten in einer Sitzung.</span>
-      </div>
-      <div class="salon-invite-stat">
-        <strong data-i18n="stat_3_num">Experts im Raum</strong>
-        <span data-i18n="stat_3_lbl">Nicht um zu präsentieren — um zu entstören, zu verfeinern, umzulenken.</span>
-      </div>
-      <div class="salon-invite-stat">
-        <strong data-i18n="stat_4_num">Keine Vorkenntnisse</strong>
-        <span data-i18n="stat_4_lbl">Gebaut für Entscheider:innen, nicht für Engineers.</span>
       </div>
     </div>
 
