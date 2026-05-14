@@ -18,12 +18,24 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   en: {
     newsletter_btn: "Subscribe →",
-    newsletter_desc: "A short email when a new salon happens or an evening has produced a result. Nothing else.",
+    newsletter_desc: "Short emails about salon outcomes and upcoming salons. No other emails :)",
     newsletter_h3: "Stay at the table.",
     march_hero_caption: "How a European city could look in 2041 — if we make the right decisions today.",
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
     faq_q_thread: "What was the March salon's question — and what's different this time?",
     nav_book_cta: "Reserve a seat · 28 May",
+    nav_past: "Past events",
+    nav_host: "Become a co-host",
+    nav_back_home: "← Salon AI",
+    cohost_q_label: "You pick the evening's question, for example:",
+    past_photo_1: "AI-generated Europe 2041",
+    past_photo_2: "Table concept by Tatjana — tech doesn't have to be sterile",
+    usecases_h2: "AI use cases",
+    usecases_desc: "Concrete examples of what your AI assistant can automate — for parents, PR teams, family offices, EU citizens, and more.",
+    usecases_link: "See the use cases →",
+    usecases_eyebrow: "What your agent could automate",
+    usecases_h1: "AI use cases",
+    usecases_intro: "Concrete scenarios from the everyday lives of parents, PR teams, family offices, EU citizens, and more. Swipe through or click a category — see how an AI assistant saves you hours.",
     announcement_html: "🔔 <strong>May 28: Last public Salon AI Dinner.</strong> After that: bring your own group →",
     nav_cta:       "Join a Dinner →",
     hero_cta: "Join the Salon →",
@@ -75,15 +87,15 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     host_own_btn: "Host your evening →",
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -379,7 +391,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -387,15 +399,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -418,12 +430,24 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   de: {
     newsletter_btn: "Anmelden →",
-    newsletter_desc: "Eine kurze Mail, wenn ein neuer Salon stattfindet oder ein Abend ein Ergebnis hervorgebracht hat. Sonst keine.",
+    newsletter_desc: "Du bekommst eine kurze Mail über Salon-Ergebnisse und neue Salons. Sonst keine E-Mails :)",
     newsletter_h3: "Bleib am Tisch.",
     march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
     faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
     nav_book_cta: "Platz reservieren · 28.5",
+    nav_past: "Vergangene Events",
+    nav_host: "Co-Host werden",
+    nav_back_home: "← Salon AI",
+    cohost_q_label: "Du wählst die Frage des Abends, zum Beispiel:",
+    past_photo_1: "KI-generiertes Europa 2041",
+    past_photo_2: "Tischkonzept by Tatjana — denn Tech muss nicht steril sein",
+    usecases_h2: "Anwendungsfälle für KI",
+    usecases_desc: "Konkrete Beispiele, was dein KI-Assistent automatisieren kann — für Eltern, PR-Teams, Family Offices, EU-Bürger:innen und mehr.",
+    usecases_link: "Anwendungsfälle ansehen →",
+    usecases_eyebrow: "Was dein Agent automatisieren kann",
+    usecases_h1: "Anwendungsfälle für KI",
+    usecases_intro: "Konkrete Szenarien aus dem Alltag von Eltern, PR-Teams, Family Offices, EU-Bürger:innen und mehr. Wisch durch oder klick auf eine Kategorie — und sieh, wie ein KI-Assistent dir Stunden spart.",
     announcement_html: "🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →",
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_cta: "Zum Salon →",
@@ -475,15 +499,15 @@ window.LOCALES = {
     priv_title: "Private Salons",
     host_own_desc: "Für Gründer:innen, Freunde und enge Kreise.",
 
-    host_own_geo: "Aktuell: München & Berlin. Als Nächstes: Paris, Brüssel, Wien, London (in Diskussion), Stockholm, Mailand, Hamburg, Madrid — schreibt uns.",
+    host_own_geo: "<strong>Jetzt:</strong> München &amp; Berlin. <strong>In Vorbereitung:</strong> Stockholm, Mailand. Wo willst du hosten? Schreib uns.",
 
     host_own_btn: "Eigenen Abend ausrichten →",
 
     host_own_fine: "Dinner und Location inklusive. Ein strukturierter Abend, im Privaten.",
 
-    corp_h3: "Organisationen und Teams",
+    corp_h3: "Salons für Unternehmen",
 
-    corp_desc: "Für Vorstände, Firmen und Führungskreise. Executive Salons, gestaltet rund um eure strategischen Fragen.",
+    corp_desc: "Für Führungskräfte und Teams. Executive Salons, gestaltet rund um eure strategischen Fragen.",
 
     corp_btn: "Anfrage senden →",
 
@@ -779,7 +803,7 @@ window.LOCALES = {
 
 
 
-    plan_h2: "Weniger Vortrag. Mehr Gespräch.",
+    plan_h2: "Salon AI ist weniger Vortrag, und mehr Gespräch.",
 
 
 
@@ -787,15 +811,15 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">Der Rahmen.</span>Wir beginnen mit dem Bauen. Entlang einer erprobten Sequenz baust du einen KI-Assistenten, der zu deiner Arbeit passt. Keine Lektion — dein Werkzeug für den Abend.",
+    plan_p1_body: "Wir beginnen mit dem Bauen. Entlang einer erprobten Sequenz baust du einen KI-Assistenten, der zu deiner Arbeit passt. Keine Lektion — dein Werkzeug für den Abend.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Frage",
+    plan_p2_label: "Anwendung",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">Die Linse.</span>Um den Abend zu schließen, richten wir unsere Werkzeuge auf die Frage des Abends: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">Was sollten Menschen niemals abgeben?</span></span>",
+    plan_p2_body: "Anwendung der Methode auf ein Thema.",
 
 
 
@@ -875,14 +899,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -890,15 +914,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -918,9 +942,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -1268,14 +1292,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -1283,15 +1307,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -1311,9 +1335,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -1661,14 +1685,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -1676,15 +1700,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -1704,9 +1728,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -2054,14 +2078,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -2069,15 +2093,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -2097,9 +2121,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -2447,14 +2471,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -2462,15 +2486,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -2490,9 +2514,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -2840,14 +2864,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -2855,15 +2879,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -2883,9 +2907,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -3229,14 +3253,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -3244,15 +3268,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -3272,9 +3296,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -3618,14 +3642,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -3633,15 +3657,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -3661,9 +3685,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -4007,14 +4031,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -4022,15 +4046,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -4050,9 +4074,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -4396,14 +4420,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -4411,15 +4435,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -4439,9 +4463,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -4785,14 +4809,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -4800,15 +4824,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -4828,9 +4852,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -5174,14 +5198,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -5189,15 +5213,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -5217,9 +5241,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -5563,14 +5587,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -5578,15 +5602,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -5606,9 +5630,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -5952,14 +5976,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -5967,15 +5991,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -5995,9 +6019,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -6341,14 +6365,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -6356,15 +6380,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -6384,9 +6408,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -6730,14 +6754,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -6745,15 +6769,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -6773,9 +6797,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -7119,14 +7143,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -7134,15 +7158,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -7162,9 +7186,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -7508,14 +7532,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -7523,15 +7547,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -7551,9 +7575,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -7897,14 +7921,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -7912,15 +7936,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -7940,9 +7964,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -8286,14 +8310,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -8301,15 +8325,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -8329,9 +8353,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -8675,14 +8699,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -8690,15 +8714,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -8718,9 +8742,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
@@ -9064,14 +9088,14 @@ window.LOCALES = {
     priv_title: "Private salons",
     host_own_desc: "For founders, friends, and close circles.",
 
-    host_own_geo: "Currently: Munich & Berlin. Next: Paris, Brussels, Vienna, London (in discussion), Stockholm, Milan, Hamburg, Madrid — write to us.",
+    host_own_geo: "<strong>Now:</strong> Munich &amp; Berlin. <strong>In planning:</strong> Stockholm, Milan. Where would you host? Write to us.",
 
     past_events_intro: "AI literacy happens faster around a dinner table than in another online course. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia, and politics.</em></strong>",
     plan_eyebrow: "How the evening works",
 
 
 
-    plan_h2: "Less lecture. More conversation.",
+    plan_h2: "Salon AI is less lecture, more conversation.",
 
 
 
@@ -9079,15 +9103,15 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "<span class=\"plan-kicker\">The framework.</span>We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
 
 
 
     plan_p2_share: "20%",
-    plan_p2_label: "Question",
+    plan_p2_label: "Application",
 
 
-    plan_p2_body: "<span class=\"plan-kicker\">The lens.</span>To close the night, we turn our tools toward the question of the evening: <span class=\"rotating-question-box\"><span class=\"rotating-question\" id=\"rotating-question\" aria-hidden=\"true\">What should humans never outsource?</span></span>",
+    plan_p2_body: "Applying the method to one topic.",
 
 
 
@@ -9107,9 +9131,9 @@ window.LOCALES = {
 
     host_own_fine: "Dinner and venue included. A structured evening, held in private.",
 
-    corp_h3: "Organisations & teams",
+    corp_h3: "Salons for companies",
 
-    corp_desc: "For boards, companies, and leadership groups. Executive salons designed around your strategic questions.",
+    corp_desc: "For leaders and teams. Executive salons designed around your strategic questions.",
 
     corp_btn: "Send inquiry →",
 
