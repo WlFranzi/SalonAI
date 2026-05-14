@@ -18,7 +18,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   en: {
     newsletter_btn: "Subscribe →",
-    newsletter_desc: "Short emails about salon outcomes and upcoming salons. No other emails :)",
+    newsletter_desc: "One short email when a new salon happens. Nothing else. :)",
     newsletter_h3: "Stay at the table.",
     march_hero_caption: "How a European city could look in 2041 — if we make the right decisions today.",
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
@@ -196,7 +196,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -443,7 +443,7 @@ window.LOCALES = {
   ───────────────────────────────────────────────────────────────── */
   de: {
     newsletter_btn: "Anmelden →",
-    newsletter_desc: "Du bekommst eine kurze Mail über Salon-Ergebnisse und neue Salons. Sonst keine E-Mails :)",
+    newsletter_desc: "Eine Mail bei neuen Salons. Sonst keine. :)",
     newsletter_h3: "Bleib am Tisch.",
     march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
@@ -621,7 +621,7 @@ window.LOCALES = {
     event_q_label: "Frage des Abends",
     event_q_text: "Welche KI kann nur von Europäer:innen gebaut werden?",
 
-    event_sub: "Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks inkl.",
 
     event_laptop: "Ein Laptop reicht. Alles andere kommt mit dem Platz.",
 
@@ -1060,7 +1060,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -1456,7 +1456,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -1852,7 +1852,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -2248,7 +2248,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -2644,7 +2644,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3040,7 +3040,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3432,7 +3432,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -3824,7 +3824,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -4216,7 +4216,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -4608,7 +4608,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -5000,7 +5000,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -5392,7 +5392,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -5784,7 +5784,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6176,7 +6176,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6568,7 +6568,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -6960,7 +6960,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -7352,7 +7352,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -7744,7 +7744,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8136,7 +8136,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8528,7 +8528,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -8920,7 +8920,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 
@@ -9312,7 +9312,7 @@ window.LOCALES = {
     event_q_label: "The question that evening",
     event_q_text: "Which AI can only be built by Europeans?",
 
-    event_sub: "Luitpoldblock · doors 18:00 · start 18:15 · Modern Middle Eastern cuisine · drinks included",
+    event_sub: "Luitpoldblock · 18:00 · Dinner & Drinks included",
 
     event_laptop: "A laptop is enough. Everything else arrives with your seat.",
 

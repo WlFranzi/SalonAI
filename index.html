@@ -169,12 +169,12 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .salon-invite { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid var(--border); border-radius: 18px; box-shadow: 0 10px 36px rgba(27,46,74,0.10); overflow: hidden; }
 .salon-invite-banner { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 12.5px; padding: 9px 22px; text-align: center; letter-spacing: 0.15px; line-height: 1.45; }
 .salon-invite-banner strong { font-weight: 700; }
-.salon-invite-hero { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 36px 28px 12px; align-items: center; }
-.salon-invite-date { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
-.salon-invite-month { font-family: 'DM Sans', sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); font-weight: 700; margin-bottom: 2px; }
-.salon-invite-day { font-family: 'Playfair Display', serif; font-size: clamp(4.5rem, 14vw, 6.2rem); font-weight: 700; color: var(--navy); line-height: 0.88; letter-spacing: -0.04em; }
-.salon-invite-year { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--muted-blue); letter-spacing: 1.2px; margin-top: 4px; }
-.salon-invite-body { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; border-top: 1px solid var(--border); }
+.salon-invite-hero { display: flex; flex-direction: column; gap: 18px; padding: 28px 28px 14px; }
+.salon-invite-date { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.salon-invite-month { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5.4vw, 2.6rem); font-weight: 700; color: var(--navy); line-height: 1; letter-spacing: -0.015em; }
+.salon-invite-day { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 6.4vw, 3.2rem); font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.025em; }
+.salon-invite-year { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--muted-blue); letter-spacing: 1.2px; align-self: center; }
+.salon-invite-body { display: flex; flex-direction: column; gap: 10px; }
 .salon-invite-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin: 0; }
 .salon-invite-title { font-family: 'Playfair Display', serif; font-size: clamp(1.55rem, 3.6vw, 2.1rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin: 0; }
 .salon-invite-question { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--accent); line-height: 1.35; margin: 4px 0 8px; text-wrap: balance; }
@@ -191,9 +191,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .salon-invite-btn-secondary { background: transparent; color: var(--muted-blue); border: none; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; padding: 4px 0; cursor: pointer; letter-spacing: 0.15px; transition: color 0.15s; text-decoration: none; border-bottom: 1px solid transparent; }
 .salon-invite-btn-secondary:hover { color: var(--accent); border-bottom-color: var(--accent); }
 @media (min-width: 720px) {
-  .salon-invite-hero { grid-template-columns: auto 1fr; gap: 40px; padding: 44px 40px 16px; align-items: center; }
-  .salon-invite-date { padding-right: 32px; border-right: 1px solid var(--border); }
-  .salon-invite-body { padding-top: 0; border-top: none; min-width: 0; }
+  .salon-invite-hero { padding: 36px 40px 18px; gap: 20px; }
   .salon-invite-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 18px 40px; }
   .salon-invite-stat { flex-direction: column; gap: 4px; }
   .salon-invite-stat strong { min-width: 0; }
@@ -1127,7 +1125,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <p class="salon-invite-eyebrow" data-i18n="invite_eyebrow">Du bist eingeladen</p>
         <h3 class="salon-invite-title" data-i18n="event_name">Salon AI Dinner — München</h3>
         <p class="salon-invite-question">„<span data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>"</p>
-        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</p>
+        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 · Dinner & Drinks inkl.</p>
         <p class="salon-invite-meta-fine" data-i18n="event_laptop">Ein Laptop reicht. Alles andere kommt mit dem Platz.</p>
       </div>
     </div>
@@ -1345,7 +1343,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="newsletter-section" id="newsletter">
   <div class="newsletter-inner">
     <h3 class="newsletter-h3" data-i18n="newsletter_h3">Bleib am Tisch.</h3>
-    <p class="newsletter-desc" data-i18n="newsletter_desc">Du bekommst eine kurze Mail über Salon-Ergebnisse und neue Salons. Sonst keine E-Mails :)</p>
+    <p class="newsletter-desc" data-i18n="newsletter_desc">Eine Mail bei neuen Salons. Sonst keine. :)</p>
     <form class="newsletter-form" onsubmit="return submitNewsletter(event);" novalidate>
       <input type="email" id="newsletter-email" required placeholder="deine@email.com" autocomplete="email" />
       <button type="submit" class="newsletter-btn" data-i18n="newsletter_btn">Anmelden →</button>
