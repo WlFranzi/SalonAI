@@ -411,7 +411,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -419,7 +419,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -835,7 +835,7 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "Wir beginnen mit dem Bauen. Entlang einer erprobten Sequenz baust du einen KI-Assistenten, der zu deiner Arbeit passt. Keine Lektion — dein Werkzeug für den Abend.",
+    plan_p1_body: "Wir bauen. Entlang einer erprobten Sequenz entsteht dein KI-Assistent — passend zu deiner Arbeit.",
 
 
 
@@ -843,7 +843,7 @@ window.LOCALES = {
     plan_p2_label: "Anwendung",
 
 
-    plan_p2_body: "Anwendung der Methode auf ein Thema.",
+    plan_p2_body: "Wir wenden an. Gemeinsam richten wir die Werkzeuge auf die Frage des Abends — die du mitbringst.",
 
 
 
@@ -941,7 +941,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -949,7 +949,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -1337,7 +1337,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -1345,7 +1345,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -1733,7 +1733,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -1741,7 +1741,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -2129,7 +2129,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -2137,7 +2137,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -2525,7 +2525,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -2533,7 +2533,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -2921,7 +2921,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -2929,7 +2929,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -3313,7 +3313,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -3321,7 +3321,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -3705,7 +3705,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -3713,7 +3713,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -4097,7 +4097,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -4105,7 +4105,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -4489,7 +4489,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -4497,7 +4497,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -4881,7 +4881,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -4889,7 +4889,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -5273,7 +5273,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -5281,7 +5281,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -5665,7 +5665,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -5673,7 +5673,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -6057,7 +6057,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -6065,7 +6065,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -6449,7 +6449,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -6457,7 +6457,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -6841,7 +6841,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -6849,7 +6849,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -7233,7 +7233,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -7241,7 +7241,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -7625,7 +7625,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -7633,7 +7633,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -8017,7 +8017,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -8025,7 +8025,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -8409,7 +8409,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -8417,7 +8417,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -8801,7 +8801,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -8809,7 +8809,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
@@ -9193,7 +9193,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We begin with the making. Following a tested, step-by-step path, you’ll craft an AI assistant tailored to your own work. It isn’t a lesson — it’s your operating instrument for the night.",
+    plan_p1_body: "We build. Following a tested sequence, your AI assistant takes shape — tailored to your own work.",
 
 
 
@@ -9201,7 +9201,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "Applying the method to one topic.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
 
 
 
