@@ -328,7 +328,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .cohost-hero { text-align: center; margin: 0 auto 64px; max-width: 640px; }
 .cohost-eyebrow { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--sky-deep); margin-bottom: 14px; display: inline-flex; align-items: center; gap: 8px; }
 .cohost-eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
-.cohost-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.4vw, 2.55rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin-bottom: 18px; }
+.cohost-h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.85rem, 4.4vw, 2.55rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin-bottom: 14px; }
+.cohost-subhead { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(1.15rem, 2.6vw, 1.45rem); color: var(--navy); line-height: 1.4; margin: 0 0 18px; text-wrap: balance; opacity: 0.9; }
 .cohost-subhead { font-family: 'DM Sans', sans-serif; font-size: clamp(1.05rem, 2.2vw, 1.2rem); font-weight: 500; color: var(--navy); line-height: 1.5; margin-bottom: 26px; }
 .cohost-support { font-size: 15px; color: var(--muted-blue); line-height: 1.75; max-width: 560px; margin: 0 auto 22px; }
 .cohost-location { font-size: 13px; color: var(--muted-blue); line-height: 1.65; letter-spacing: 0.15px; }
@@ -350,11 +351,14 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 /* ── Past Events — photos | unified text column ── */
 .past-events-section { padding: var(--s5) var(--s3) var(--s4); background: transparent; }
 .past-events-inner { max-width: 920px; margin: 0 auto; }
-.past-events-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin-bottom: var(--s3); padding-bottom: var(--s2); border-bottom: 1px solid var(--border); }
-.past-events-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted-blue); letter-spacing: 0.3px; margin-bottom: var(--s3); }
-.past-events-meta .sep { color: var(--border); }
+.past-events-eyebrow { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--sky-deep); margin: 0 0 10px; padding-bottom: var(--s2); border-bottom: 1px solid var(--border); }
 .past-events-intro { font-size: 15px; color: var(--navy); line-height: 1.6; max-width: 720px; margin: 0 0 var(--s4); }
 .past-events-intro strong { font-weight: 600; }
+
+/* Section opener — dot-prefixed eyebrow matching .tr-eyebrow / .plan-eyebrow / .cohost-eyebrow */
+.past-events-section-head { text-align: center; margin-bottom: var(--s3); }
+.past-events-section-eyebrow { font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.2px; font-weight: 700; color: var(--sky-deep); margin: 0; display: inline-flex; align-items: center; gap: 8px; }
+.past-events-section-eyebrow::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
 
 .past-events-feature { display: grid; grid-template-columns: 1fr; gap: var(--s4); align-items: start; }
 .past-events-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -367,16 +371,23 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .past-events-quote cite { font-style: normal; font-size: 0.78rem; color: var(--muted-blue); letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; }
 
 /* Hero testimonial — elevated above the photo/text grid */
-.past-events-quote-hero { margin: var(--s3) auto var(--s5); max-width: 880px; padding: 0 var(--s2); text-align: center; position: relative; }
+.past-events-quote-hero { margin: 0 auto var(--s5); max-width: 880px; padding: 0 var(--s2); text-align: center; position: relative; }
 .past-events-quote-hero::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: clamp(4rem, 9vw, 6rem); color: var(--sky-deep); opacity: 0.35; line-height: 0.85; display: block; margin-bottom: -0.15em; }
 .past-events-quote-hero p { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(1.7rem, 4.2vw, 2.55rem); line-height: 1.28; color: var(--navy); margin: 0 0 20px; letter-spacing: -0.012em; text-wrap: balance; }
 .past-events-quote-hero cite { display: inline-block; font-style: normal; font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
 
-/* The evening's question — separate visual unit, distinct from the testimonial */
+/* The evening's question — bridges the quote to the artefact; date + city merged into the label */
 .past-events-question { margin: 0 auto var(--s5); max-width: 760px; padding: var(--s3) var(--s2) 0; text-align: center; position: relative; }
 .past-events-question::before { content: ''; display: block; width: 48px; height: 1px; background: var(--border); margin: 0 auto var(--s3); }
-.past-events-question-label { font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; margin: 0 0 var(--s1); }
+.past-events-question-label { font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; margin: 0 0 var(--s2); display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.past-events-question-label .sep { color: var(--border); }
 .past-events-question-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.3rem, 3vw, 1.85rem); line-height: 1.3; color: var(--navy); margin: 0; text-wrap: balance; }
+
+/* Bridge to the next salon — softly anchors the past-events section to the May 28 ticket CTA */
+.past-events-bridge { margin: var(--s5) auto 0; max-width: 640px; padding-top: var(--s4); border-top: 1px solid var(--border); text-align: center; font-size: 13.5px; color: var(--muted-blue); line-height: 1.7; }
+.past-events-bridge a { display: inline-block; color: var(--accent); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 1px; margin-left: 6px; transition: color 0.15s, border-color 0.15s; }
+.past-events-bridge a:hover { color: var(--navy); border-color: var(--navy); }
+@media (max-width: 540px) { .past-events-bridge a { display: block; margin: 6px auto 0; } }
 
 /* Europa 2041 screenshot — concrete proof artefact */
 .past-events-screenshot { display: block; position: relative; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(27,46,74,0.18); transition: transform 0.2s, box-shadow 0.2s; aspect-ratio: 1; background: #fff; border: 1px solid var(--border); }
@@ -1075,7 +1086,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── PLAN (80/20 split, structured then open) ───────────────── -->
 <section class="plan" id="plan">
   <div class="plan-inner">
-    <p class="plan-eyebrow" data-i18n="plan_eyebrow">Wie der Abend abläuft</p>
     <h2 class="plan-h2" data-i18n="plan_h2">Weniger Vortrag. Mehr Gespräch.</h2>
 
     <div class="plan-split">
@@ -1112,35 +1122,35 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   </div>
 </div>
 
-<!-- ── PAST EVENTS · photos | unified text column ─────────────────── -->
+<!-- ── PAST EVENTS · eyebrow → quote → question (with meta merged in) → artefact → bridge ─ -->
 <section class="past-events-section" id="past">
   <div class="past-events-inner">
-    <div class="past-events-meta">
-      <span data-i18n="past_event_date">25. März 2026</span>
-      <span class="sep">·</span>
-      <span data-i18n="past_event_city">München</span>
-    </div>
 
-
-    <!-- Hero testimonial — pulled forward as the dominant proof element -->
+    <!-- Hero testimonial — opening authority signal -->
     <blockquote class="past-events-quote-hero">
       <p data-i18n="past_events_quote">„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</p>
       <cite data-i18n="past_events_quote_author">Prof. Dr. Robert Schleip · Pionier und führende Autorität in der Faszienforschung</cite>
     </blockquote>
 
-    <!-- The evening's question — explicit, separated from the quote -->
+    <!-- The evening's question — bridges quote to artefact; date/city merged into the label -->
     <div class="past-events-question">
-      <p class="past-events-question-label" data-i18n="march_q_label">Die Frage des Abends</p>
+      <p class="past-events-question-label">
+        <span data-i18n="past_event_date">März 2026</span>
+        <span class="sep">·</span>
+        <span data-i18n="past_event_city">München</span>
+        <span class="sep">·</span>
+        <span data-i18n="march_q_label">Die Frage des Abends</span>
+      </p>
       <p class="past-events-question-text" data-i18n="march_q_text">Wie sieht Europa im Jahr 2041 aus?</p>
     </div>
 
+    <!-- Artefact: the website built that evening -->
     <div class="past-events-feature">
       <a href="/march-event/" class="past-events-screenshot" onclick="gtag('event', 'click_past_event', { 'past_event': 'march_2026', 'source': 'screenshot' });" aria-label="Europa 2041 — Ergebnis aus dem März-Salon ansehen">
         <img src="/march-event/europe_2041.png" alt="Europa 2041 — die Website, die 15 Teilnehmende an einem Salon-Abend gemeinsam gebaut haben" loading="lazy" />
         <span class="past-events-screenshot-label">salon-ai.eu/march-event ↗</span>
       </a>
       <div class="past-events-text">
-        <p class="past-events-eyebrow" data-i18n="past_outcome_eyebrow" style="font-size:10.5px;text-transform:uppercase;letter-spacing:2.2px;font-weight:700;color:var(--sky-deep);margin-bottom:10px;">Ergebnis aus dem März-Salon</p>
         <h3 class="past-events-title">Europa 2041</h3>
         <p class="past-events-desc" data-i18n="feature_desc">Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten ihre Position zur Zukunft.</p>
         <div class="past-events-photos past-events-photos--small">
@@ -1152,6 +1162,13 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         </div>
       </div>
     </div>
+
+    <!-- Bridge to the next salon — converts curious readers toward the May 28 ticket -->
+    <p class="past-events-bridge">
+      <span data-i18n="past_to_next_intro">Die nächste Frage wird im Mai gestellt:</span>
+      <a href="#events" onclick="gtag('event', 'click_bridge_to_may');" data-i18n="past_to_next_cta">28. Mai in München — letzter öffentlicher Salon →</a>
+    </p>
+
   </div>
 </section>
 
@@ -1160,8 +1177,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <section class="cohost-section" id="host">
   <div class="cohost-inner">
     <header class="cohost-hero">
-      <p class="cohost-eyebrow" data-i18n="cohost_eyebrow">Co-host einen Salon</p>
-      <h2 class="cohost-h2" data-i18n="host_own_h3">Lade 12 Leute ein. Den Rest übernehmen wir.</h2>
+      <h2 class="cohost-h2" data-i18n="cohost_eyebrow">Co-host einen Salon</h2>
+      <p class="cohost-subhead" data-i18n="host_own_h3">Lade 12 Leute ein. Den Rest übernehmen wir.</p>
       <p class="cohost-location" data-i18n="host_own_geo">Aktuell: München & Berlin. Als Nächstes: Paris, Brüssel, Wien, London (in Diskussion), Stockholm, Mailand, Hamburg, Madrid — schreibt uns.</p>
     </header>
 
@@ -1186,7 +1203,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <!-- ── TRANSFORMATION (capability shift) ────────────────────────── -->
 <section class="transformation" id="transformation">
   <div class="tr-inner">
-    <p class="tr-eyebrow" data-i18n="tr_eyebrow">Was sich verändert</p>
     <h2 class="tr-h2" data-i18n="tr_h2">Was du nach einem Salon-Abend kannst, was du vorher nicht konntest.</h2>
     <div class="tr-grid">
       <div class="tr-col tr-col--before">

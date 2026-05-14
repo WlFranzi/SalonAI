@@ -177,12 +177,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -574,12 +577,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Ticket kaufen →",
 
+    past_section_eyebrow: "Aus einem vergangenen Salon",
     past_event_date: "März 2026",
 
     past_event_city: "München",
     past_outcome_eyebrow: "Ergebnis aus dem März-Salon",
     march_q_label: "Die Frage des Abends",
     march_q_text: "Wie sieht Europa im Jahr 2041 aus?",
+    past_to_next_intro: "Die nächste Frage wird im Mai gestellt:",
+    past_to_next_cta: "28. Mai in München — letzter öffentlicher Salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · München · März 2026",
@@ -1007,12 +1013,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1397,12 +1406,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1787,12 +1799,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2177,12 +2192,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2567,12 +2585,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2957,12 +2978,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3343,12 +3367,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3729,12 +3756,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4115,12 +4145,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4501,12 +4534,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4887,12 +4923,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5273,12 +5312,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5659,12 +5701,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6045,12 +6090,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6431,12 +6479,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6817,12 +6868,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7203,12 +7257,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7589,12 +7646,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7975,12 +8035,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8361,12 +8424,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8747,12 +8813,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -9133,12 +9202,15 @@ window.LOCALES = {
 
     ticket_buy_btn: "Buy ticket →",
 
+    past_section_eyebrow: "From a past salon",
     past_event_date: "March 2026",
 
     past_event_city: "Munich",
     past_outcome_eyebrow: "Outcome from March",
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
+    past_to_next_intro: "The next question gets asked in May:",
+    past_to_next_cta: "May 28 in Munich — the final public salon →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
