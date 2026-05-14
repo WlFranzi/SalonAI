@@ -73,10 +73,10 @@ a { text-decoration: none; color: inherit; }
 /* Nav */
 nav { position: fixed; top: 36px; left: 0; right: 0; z-index: 50; background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border); }
 nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56px; display: flex; align-items: center; justify-content: space-between; }
-.announcement-bar { display: block; background: var(--accent); color: #fff; text-align: center; padding: 9px 16px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.01em; line-height: 1.4; text-decoration: none; transition: background 0.18s; position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
-.announcement-bar:hover { background: #002277; }
-.announcement-bar strong { font-weight: 700; }
-@media(max-width:520px) { .announcement-bar { font-size: 12px; padding: 8px 12px; } }
+.announcement-bar { display: block; background: var(--sky-light); color: var(--navy); border-bottom: 1px solid var(--border); text-align: center; padding: 8px 16px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 12.5px; font-weight: 400; letter-spacing: 0.02em; line-height: 1.4; text-decoration: none; transition: background 0.18s; position: fixed; top: 0; left: 0; right: 0; z-index: 60; }
+.announcement-bar:hover { background: #E0EAF3; }
+.announcement-bar strong { font-weight: 600; color: var(--accent); }
+@media(max-width:520px) { .announcement-bar { font-size: 11.5px; padding: 7px 12px; } }
 .nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; }
 .nav-right { display: flex; align-items: center; gap: var(--s2); }
 .nav-cta { background: var(--navy); color: #fff; border-radius: var(--r-pill); padding: 9px 22px; font-size: var(--t-sm); font-weight: 600; font-family: 'DM Sans', sans-serif; transition: background 0.18s; letter-spacing: 0.01em; }
@@ -1018,7 +1018,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <body>
 
 <!-- ── ANNOUNCEMENT BAR ────────────────────────────────────────── -->
-<a href="#events" class="announcement-bar" data-i18n-html="announcement_html">🔔 <em>1 Abend · Dein KI-Assistent · Keine Vorkenntnisse · <strong>28. Mai · Letzter öffentlicher Salon</strong></em> →</a>
+<a href="#events" class="announcement-bar" data-i18n-html="announcement_html">🔔 <strong>Letzter öffentlicher Salon AI Dinner</strong> — danach: bring deine eigene Gruppe →</a>
 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
