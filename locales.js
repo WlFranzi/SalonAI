@@ -23,7 +23,10 @@ window.LOCALES = {
     march_hero_caption: "How a European city could look in 2041 — if we make the right decisions today.",
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
     faq_q_thread: "What was the March salon's question — and what's different this time?",
-    nav_book_cta: "Reserve a seat · 28 May",
+    nav_book_cta: "To the salon · May 28",
+    invite_banner: "🔔 <strong>Last public Salon AI Dinner</strong> — after that: bring your own group",
+    invite_eyebrow: "You're invited",
+    invite_buy: "Buy ticket · €78 →",
     nav_past: "Past events",
     nav_host: "Become a co-host",
     nav_back_home: "← Salon AI",
@@ -435,7 +438,10 @@ window.LOCALES = {
     march_hero_caption: "Wie eine europäische Stadt 2041 aussehen könnte — wenn wir die richtigen Entscheidungen heute treffen.",
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
     faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
-    nav_book_cta: "Platz reservieren · 28.5",
+    nav_book_cta: "Zum Salon · 28.05",
+    invite_banner: "🔔 <strong>Letzter öffentlicher Salon AI Dinner</strong> — danach: bring deine eigene Gruppe",
+    invite_eyebrow: "Du bist eingeladen",
+    invite_buy: "Ticket kaufen · 78 € →",
     nav_past: "Vergangene Events",
     nav_host: "Co-Host werden",
     nav_back_home: "← Salon AI",
@@ -539,7 +545,7 @@ window.LOCALES = {
 
     hero_sub:      "Gestartet in Deutschland, bald in der ganzen EU.",
     hero_subtitle: '',
-    hero_h1:     'Ein Dialog mit KI.',
+    hero_h1:     'Ein Tischgespräch mit KI.',
 
 
 

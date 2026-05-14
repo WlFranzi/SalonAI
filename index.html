@@ -157,12 +157,38 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .plan-card p br { line-height: 2; }
 .plan-card--guided .plan-share { color: var(--sky-deep); }
 
-/* 3-up info strip inside the plan section — what to expect from one evening */
-.plan-stats { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border); }
-.plan-stat { text-align: center; padding: 0 var(--s2); }
-.plan-stat-num { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 6px; letter-spacing: -0.012em; }
-.plan-stat-label { font-size: 13px; color: var(--muted-blue); line-height: 1.55; max-width: 280px; margin: 0 auto; }
-@media (min-width: 760px) { .plan-stats { grid-template-columns: repeat(3, 1fr); gap: 28px; } .plan-stat-num { font-size: 1.35rem; } }
+/* SALON INVITATION CARD — the dominant ticket-conversion block on the home page */
+.salon-invite-section { padding: 0 var(--s3) var(--s6); }
+.salon-invite { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid var(--border); border-radius: 18px; box-shadow: 0 10px 36px rgba(27,46,74,0.10); overflow: hidden; }
+.salon-invite-banner { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 11px 22px; text-align: center; letter-spacing: 0.1px; line-height: 1.45; }
+.salon-invite-banner strong { font-weight: 700; }
+.salon-invite-hero { display: grid; grid-template-columns: 1fr; gap: 20px; padding: 28px 26px 8px; align-items: flex-start; }
+.salon-invite-date { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; padding-bottom: 14px; border-bottom: 1px solid var(--border); width: max-content; }
+.salon-invite-month { font-family: 'DM Sans', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2.4px; color: var(--muted-blue); font-weight: 700; }
+.salon-invite-day { font-family: 'Playfair Display', serif; font-size: 3.4rem; font-weight: 700; color: var(--navy); line-height: 0.92; letter-spacing: -0.025em; }
+.salon-invite-year { font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--muted-blue); letter-spacing: 0.6px; }
+.salon-invite-body { display: flex; flex-direction: column; gap: 12px; }
+.salon-invite-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 10.5px; text-transform: uppercase; letter-spacing: 2.4px; font-weight: 700; color: var(--sky-deep); margin: 0; }
+.salon-invite-title { font-family: 'Playfair Display', serif; font-size: clamp(1.55rem, 3.6vw, 2.1rem); font-weight: 700; color: var(--navy); line-height: 1.16; letter-spacing: -0.018em; margin: 0; }
+.salon-invite-question { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--accent); line-height: 1.35; margin: 4px 0 6px; text-wrap: balance; }
+.salon-invite-meta { font-size: 13.5px; color: var(--navy); line-height: 1.6; margin: 0; }
+.salon-invite-meta-fine { font-size: 12.5px; color: var(--muted-blue); line-height: 1.5; margin: 0; font-style: italic; }
+.salon-invite-stats { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 22px 26px; margin-top: 8px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--sky-light); }
+.salon-invite-stat { display: flex; flex-direction: column; gap: 3px; }
+.salon-invite-stat strong { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: -0.01em; }
+.salon-invite-stat span { font-size: 12.5px; color: var(--muted-blue); line-height: 1.5; }
+.salon-invite-actions { display: flex; flex-direction: column; gap: 10px; padding: 22px 26px 26px; align-items: stretch; }
+.salon-invite-btn-primary { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; padding: 14px 22px; border-radius: 999px; text-decoration: none; text-align: center; letter-spacing: 0.2px; transition: background 0.15s, transform 0.15s; }
+.salon-invite-btn-primary:hover { background: var(--navy); transform: translateY(-1px); }
+.salon-invite-btn-secondary { background: transparent; color: var(--navy); border: 1px solid var(--border); font-family: 'DM Sans', sans-serif; font-size: 13.5px; font-weight: 600; padding: 11px 18px; border-radius: 999px; text-decoration: none; text-align: center; cursor: pointer; letter-spacing: 0.15px; transition: border-color 0.15s, color 0.15s; }
+.salon-invite-btn-secondary:hover { border-color: var(--navy); color: var(--accent); }
+@media (min-width: 720px) {
+  .salon-invite-hero { grid-template-columns: 120px 1fr; gap: 32px; padding: 36px 36px 8px; align-items: flex-start; }
+  .salon-invite-date { padding-bottom: 0; border-bottom: none; padding-right: 18px; border-right: 1px solid var(--border); }
+  .salon-invite-stats { grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 22px 36px; }
+  .salon-invite-actions { flex-direction: row; flex-wrap: wrap; padding: 22px 36px 30px; align-items: center; }
+  .salon-invite-btn-primary { flex: 1 1 auto; min-width: 220px; }
+}
 .scan-anchors { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
 .scan-chip { font-size: 12px; font-weight: 600; padding: 7px 14px; background: var(--sky-light); border: 1px solid var(--border); border-radius: 999px; color: var(--navy); letter-spacing: 0.1px; line-height: 1.3; }
 @media (min-width: 760px) {
@@ -347,8 +373,8 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 
 .cohost-question { margin: 28px auto 0; max-width: 560px; padding-top: 24px; border-top: 1px solid var(--border); }
 .cohost-question-label { font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; margin: 0 0 12px; }
-.cohost-question .rotating-question-box { display: block; position: relative; height: 2.6em; overflow: hidden; }
-.cohost-question #rotating-question { display: block; position: absolute; left: 0; right: 0; top: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.15rem, 2.6vw, 1.45rem); color: var(--accent); line-height: 1.3; text-wrap: balance; }
+.cohost-question .rotating-question-box { display: block; position: relative; min-height: 4em; overflow: hidden; padding-bottom: 4px; }
+.cohost-question #rotating-question { display: block; position: absolute; left: 0; right: 0; top: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--accent); line-height: 1.35; text-wrap: balance; }
 .cohost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .cohost-card { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 40px 36px 36px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
 .cohost-card:hover { border-color: var(--sky-deep); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(27,46,74,0.08); }
@@ -397,7 +423,7 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .past-events-question::before { content: ''; display: block; width: 48px; height: 1px; background: var(--border); margin: 0 auto var(--s3); }
 .past-events-question-label { font-size: 11.5px; color: var(--muted-blue); letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; margin: 0 0 var(--s2); display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
 .past-events-question-label .sep { color: var(--border); }
-.past-events-question-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.3rem, 3vw, 1.85rem); line-height: 1.3; color: var(--navy); margin: 0; text-wrap: balance; }
+.past-events-question-text { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.6rem, 3.6vw, 2.2rem); font-weight: 600; line-height: 1.25; color: var(--navy); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
 
 /* Bridge to the next salon — softly anchors the past-events section to the May 28 ticket CTA */
 .past-events-bridge { margin: var(--s5) auto 0; max-width: 640px; padding-top: var(--s4); border-top: 1px solid var(--border); text-align: center; font-size: 13.5px; color: var(--muted-blue); line-height: 1.7; }
@@ -992,7 +1018,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <div class="nav-right">
       <a href="#past" class="nav-link" data-i18n="nav_past">Vergangene Events</a>
       <a href="#host" class="nav-link" data-i18n="nav_host">Co-Host werden</a>
-      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Platz reservieren · 28.5</a>
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Zum Salon · 28.05</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -1037,7 +1063,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   <div class="cloud cloud-2"></div>
   <div class="hero-content">
     <p class="eyebrow" data-i18n="hero_eyebrow">Salon AI · München · Berlin</p>
-    <h1 data-i18n-html="hero_h1">Ein Dialog mit KI.</h1>
+    <h1 data-i18n-html="hero_h1">Ein Tischgespräch mit KI.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline">Du verstehst KI nicht wirklich, bis du mit ihr gebaut hast.</p>
     <a href="#events" class="hero-cta" data-i18n="hero_cta">Zum Salon →</a>
   </div>
@@ -1045,73 +1071,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 
 
 <!-- ── MAIN GRID ─────────────────────────────────────────────────── -->
-<main class="main-content">
-  <div class="single-col" id="events">
-
-    <!-- ── TILE 1: Upcoming Events ───────────────────────────── -->
-    <div class="card-surface tile">
-      <div class="events-section">
-
-        <div class="event-row">
-          <div class="event-date-col"><span class="month" data-i18n="event_month">Mai</span><span class="day">28</span></div>
-          <div class="event-info">
-            <div class="name">
-              <span data-i18n="event_name">Salon AI Dinner — München</span>
-              <span class="sticker-share" onclick="shareEvent(event, this)">Share event</span>
-            </div>
-            <div class="event-question">
-              <span class="event-question-label" data-i18n="event_q_label">Frage des Abends</span>
-              <span class="event-question-text" data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>
-            </div>
-            <div class="sub" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</div>
-            <div class="sub" data-i18n="event_laptop" style="margin-top:3px;font-size:12px;">Ein Laptop reicht. Alles andere kommt mit dem Platz.</div>
-            <div class="event-actions-row">
-              <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="rsvp-btn" data-i18n="ticket_buy_btn" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] }); gtag('event', 'click_ticket_stripe', { 'event_name': 'mai_28_muenchen', 'destination': 'stripe_checkout' });">Ticket kaufen →</a>
-              <a href="/salon-ai-may-28-2026.ics" class="add-to-cal-link" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern →</a>
-              <button type="button" class="event-share-link" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen →</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ── RIGHT: Resources (hidden — link later) ────────────
-    <div class="card-surface tile monster-tile" id="guide">
-      <div class="tile-label"><span class="dot"></span>Resources</div>
-      <h2 data-i18n="resources_h2">Resources</h2>
-
-      <a href="/resources/" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'KI Tool Guide' });">
-        <span class="r-icon">🤖</span>
-        <div class="r-info">
-          <div class="r-name">KI Tool Guide</div>
-          <div class="r-sub" data-i18n="ki_guide_sub">All key AI tools — rated &amp; explained.</div>
-        </div>
-        <span class="r-badge badge-live">Live ↗</span>
-      </a>
-
-      <a href="https://www.aipeanuts.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'AI Peanuts' });">
-        <span class="r-icon">📬</span>
-        <div class="r-info">
-          <div class="r-name">AI Peanuts</div>
-          <div class="r-sub">Newsletter — AI news that actually matters.</div>
-        </div>
-        <span class="r-badge badge-live">↗</span>
-      </a>
-
-      <a href="https://scaling-europe.beehiiv.com" target="_blank" rel="noopener" class="resource-item" style="cursor:pointer;" onclick="gtag('event', 'click_resource', { 'resource_name': 'Scaling Europe' });">
-        <span class="r-icon">🎙️</span>
-        <div class="r-info">
-          <div class="r-name">Scaling Europe</div>
-          <div class="r-sub">Podcast — building Europe's tech future.</div>
-        </div>
-        <span class="r-badge badge-live">↗</span>
-      </a>
-
-    </div>
-    ────────────────────────────────────────────────────── -->
-
-  </div>
-</main>
-
 <!-- ── PLAN (80/20 split, structured then open) ───────────────── -->
 <section class="plan" id="plan">
   <div class="plan-inner">
@@ -1130,22 +1089,49 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </div>
     </div>
 
-    <!-- 3-up info strip (formerly the stats-bar) — what to expect from one evening -->
-    <div class="plan-stats">
-      <div class="plan-stat">
-        <div class="plan-stat-num" data-i18n="stat_1_num">1 Abend</div>
-        <div class="plan-stat-label" data-i18n="stat_1_lbl">Von null zu einem funktionierenden KI-Assistenten in einer Sitzung.</div>
+  </div>
+</section>
+
+<!-- ── SALON-EINLADUNG · the May 28 invitation as a rich, ticket-driving card ─ -->
+<section class="salon-invite-section" id="events">
+  <div class="salon-invite">
+    <div class="salon-invite-banner" data-i18n-html="invite_banner">🔔 <strong>Letzter öffentlicher Salon AI Dinner</strong> — danach: bring deine eigene Gruppe</div>
+
+    <div class="salon-invite-hero">
+      <div class="salon-invite-date">
+        <span class="salon-invite-month" data-i18n="event_month">Mai</span>
+        <span class="salon-invite-day">28</span>
+        <span class="salon-invite-year">2026</span>
       </div>
-      <div class="plan-stat">
-        <div class="plan-stat-num" data-i18n="stat_3_num">Experts im Raum</div>
-        <div class="plan-stat-label" data-i18n="stat_3_lbl">Nicht um zu präsentieren — um zu entstören, zu verfeinern, umzulenken.</div>
-      </div>
-      <div class="plan-stat">
-        <div class="plan-stat-num" data-i18n="stat_4_num">Keine Vorkenntnisse</div>
-        <div class="plan-stat-label" data-i18n="stat_4_lbl">Gebaut für Entscheider:innen, nicht für Engineers.</div>
+      <div class="salon-invite-body">
+        <p class="salon-invite-eyebrow" data-i18n="invite_eyebrow">Du bist eingeladen</p>
+        <h3 class="salon-invite-title" data-i18n="event_name">Salon AI Dinner — München</h3>
+        <p class="salon-invite-question">„<span data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>"</p>
+        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</p>
+        <p class="salon-invite-meta-fine" data-i18n="event_laptop">Ein Laptop reicht. Alles andere kommt mit dem Platz.</p>
       </div>
     </div>
 
+    <div class="salon-invite-stats">
+      <div class="salon-invite-stat">
+        <strong data-i18n="stat_1_num">1 Abend</strong>
+        <span data-i18n="stat_1_lbl">Von null zu einem funktionierenden KI-Assistenten in einer Sitzung.</span>
+      </div>
+      <div class="salon-invite-stat">
+        <strong data-i18n="stat_3_num">Experts im Raum</strong>
+        <span data-i18n="stat_3_lbl">Nicht um zu präsentieren — um zu entstören, zu verfeinern, umzulenken.</span>
+      </div>
+      <div class="salon-invite-stat">
+        <strong data-i18n="stat_4_num">Keine Vorkenntnisse</strong>
+        <span data-i18n="stat_4_lbl">Gebaut für Entscheider:innen, nicht für Engineers.</span>
+      </div>
+    </div>
+
+    <div class="salon-invite-actions">
+      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="salon-invite-btn-primary" data-i18n="invite_buy" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] }); gtag('event', 'click_ticket_stripe', { 'event_name': 'mai_28_muenchen', 'destination': 'stripe_checkout' });">Ticket kaufen · 78 € →</a>
+      <a href="/salon-ai-may-28-2026.ics" class="salon-invite-btn-secondary" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
+      <button type="button" class="salon-invite-btn-secondary" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
+    </div>
   </div>
 </section>
 
@@ -1178,7 +1164,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <span class="past-events-screenshot-label">salon-ai.eu/march-event ↗</span>
       </a>
       <div class="past-events-text">
-        <h3 class="past-events-title">Europa 2041</h3>
         <p class="past-events-desc" data-i18n="feature_desc">Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten ihre Position zur Zukunft.</p>
         <div class="past-events-photos past-events-photos--small">
           <figure>
