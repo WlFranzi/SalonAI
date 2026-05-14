@@ -39,6 +39,7 @@ window.LOCALES = {
     cohost_q_label: "You pick the evening's question, for example:",
     past_photo_1: "AI-generated Europe 2041",
     past_photo_2: "Table concept by Tatjana — tech doesn't have to be sterile",
+    past_photo_3: "Nature meets tech — in the detail",
     usecases_h2: "AI use cases",
     usecases_desc: "Concrete examples of what your AI assistant can automate — for parents, PR teams, family offices, EU citizens, and more.",
     usecases_link: "See the use cases →",
@@ -184,7 +185,7 @@ window.LOCALES = {
     col_now:       "With AI today",
     col_eu:        "For a stronger Europe",
     feature_eyebrow:  "Salon AI Dinner · Munich · March 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "What we built — one example ↗",
@@ -463,6 +464,7 @@ window.LOCALES = {
     cohost_q_label: "Du wählst die Frage des Abends, zum Beispiel:",
     past_photo_1: "KI-generiertes Europa 2041",
     past_photo_2: "Tischkonzept by Tatjana — denn Tech muss nicht steril sein",
+    past_photo_3: "Natur trifft Tech — im Detail",
     usecases_h2: "Anwendungsfälle für KI",
     usecases_desc: "Konkrete Beispiele, was dein KI-Assistent automatisieren kann — für Eltern, PR-Teams, Family Offices, EU-Bürger:innen und mehr.",
     usecases_link: "Anwendungsfälle ansehen →",
@@ -608,7 +610,7 @@ window.LOCALES = {
     col_now:       "Heute mit KI",
     col_eu:        "Für ein starkes Europa",
     feature_eyebrow:  "Salon AI Dinner · München · März 2026",
-    feature_desc: "Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten ihre Position zur Zukunft.",
+    feature_desc: "Eine Website, an einem Abend von 15 Teilnehmer:innen erdacht und gebaut. Sie entwarfen KI-Assistenten, sammelten Ideen für Europa und veröffentlichten ihre Position zur Zukunft. <a href=\"/march-event/\">Klick hier, um die gesammelten Ideen aus dem März-Salon zu sehen →</a>",
 
 
     feature_cta:       "Was wir gebaut haben — ein Beispiel ↗",
@@ -1047,7 +1049,7 @@ window.LOCALES = {
     col_now:       "Avec l'IA aujourd'hui",
     col_eu:        "Pour une Europe plus forte",
     feature_eyebrow:  "Salon AI Dinner · Munich · Mars 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Ce que nous avons construit — un exemple ↗",
@@ -1443,7 +1445,7 @@ window.LOCALES = {
     col_now:       "Con IA hoy",
     col_eu:        "Por una Europa más fuerte",
     feature_eyebrow:  "Salon AI Dinner · Múnich · Marzo 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Lo que construimos — un ejemplo ↗",
@@ -1839,7 +1841,7 @@ window.LOCALES = {
     col_now:       "Con l'IA oggi",
     col_eu:        "Per un'Europa più forte",
     feature_eyebrow:  "Salon AI Dinner · Monaco · Marzo 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Quello che abbiamo costruito — un esempio ↗",
@@ -2235,7 +2237,7 @@ window.LOCALES = {
     col_now:       "Com IA hoje",
     col_eu:        "Por uma Europa mais forte",
     feature_eyebrow:  "Salon AI Dinner · Munique · Março 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "O que construímos — um exemplo ↗",
@@ -2631,7 +2633,7 @@ window.LOCALES = {
     col_now:       "Met AI vandaag",
     col_eu:        "Voor een sterker Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Maart 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Wat we hebben gebouwd — één voorbeeld ↗",
@@ -3027,7 +3029,7 @@ window.LOCALES = {
     col_now:       "Dziś z AI",
     col_eu:        "Dla silniejszej Europy",
     feature_eyebrow:  "Salon AI Dinner · Monachium · Marzec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Co zbudowaliśmy — jeden przykład ↗",
@@ -3419,7 +3421,7 @@ window.LOCALES = {
     col_now:       "Cu AI azi",
     col_eu:        "Pentru o Europă mai puternică",
     feature_eyebrow:  "Salon AI Dinner · München · Martie 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Ce am construit — un exemplu ↗",
@@ -3811,7 +3813,7 @@ window.LOCALES = {
     col_now:       "Med AI idag",
     col_eu:        "För ett starkare Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Mars 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Vad vi byggde — ett exempel ↗",
@@ -4203,7 +4205,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pro silnější Evropu",
     feature_eyebrow:  "Salon AI Dinner · Mnichov · Březen 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Co jsme postavili — jeden příklad ↗",
@@ -4595,7 +4597,7 @@ window.LOCALES = {
     col_now:       "Ma AI-val",
     col_eu:        "Egy erősebb Európáért",
     feature_eyebrow:  "Salon AI Dinner · München · 2026. március",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Amit építettünk — egy példa ↗",
@@ -4987,7 +4989,7 @@ window.LOCALES = {
     col_now:       "Dnes s AI",
     col_eu:        "Pre silnejšiu Európu",
     feature_eyebrow:  "Salon AI Dinner · Mníchov · Marec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Čo sme postavili — jeden príklad ↗",
@@ -5379,7 +5381,7 @@ window.LOCALES = {
     col_now:       "С AI днес",
     col_eu:        "За по-силна Европа",
     feature_eyebrow:  "Salon AI Dinner · Мюнхен · Март 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Какво изградихме — един пример ↗",
@@ -5771,7 +5773,7 @@ window.LOCALES = {
     col_now:       "Med AI i dag",
     col_eu:        "For et stærkere Europa",
     feature_eyebrow:  "Salon AI Dinner · München · Marts 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Hvad vi byggede — et eksempel ↗",
@@ -6163,7 +6165,7 @@ window.LOCALES = {
     col_now:       "AI kanssa tänään",
     col_eu:        "Vahvemman Euroopan puolesta",
     feature_eyebrow:  "Salon AI Dinner · München · Maaliskuu 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Mitä rakensimme — yksi esimerkki ↗",
@@ -6555,7 +6557,7 @@ window.LOCALES = {
     col_now:       "S AI danas",
     col_eu:        "Za jaču Europu",
     feature_eyebrow:  "Salon AI Dinner · München · Ožujak 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Što smo izgradili — jedan primjer ↗",
@@ -6947,7 +6949,7 @@ window.LOCALES = {
     col_now:       "Με AI σήμερα",
     col_eu:        "Για μια ισχυρότερη Ευρώπη",
     feature_eyebrow:  "Salon AI Dinner · Μόναχο · Μάρτιος 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Τι φτιάξαμε — ένα παράδειγμα ↗",
@@ -7339,7 +7341,7 @@ window.LOCALES = {
     col_now:       "Su AI šiandien",
     col_eu:        "Stipresnei Europai",
     feature_eyebrow:  "Salon AI Dinner · Miunchenas · 2026 kovas",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Ką sukūrėme — vienas pavyzdys ↗",
@@ -7731,7 +7733,7 @@ window.LOCALES = {
     col_now:       "Ar AI šodien",
     col_eu:        "Spēcīgākai Eiropai",
     feature_eyebrow:  "Salon AI Dinner · Minhene · 2026. marts",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Ko mēs izveidojām — viens piemērs ↗",
@@ -8123,7 +8125,7 @@ window.LOCALES = {
     col_now:       "Täna AI-ga",
     col_eu:        "Tugevama Euroopa jaoks",
     feature_eyebrow:  "Salon AI Dinner · München · Märts 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Mida me ehitasime — üks näide ↗",
@@ -8515,7 +8517,7 @@ window.LOCALES = {
     col_now:       "Z AI danes",
     col_eu:        "Za močnejšo Evropo",
     feature_eyebrow:  "Salon AI Dinner · München · Marec 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Kar smo zgradili — en primer ↗",
@@ -8907,7 +8909,7 @@ window.LOCALES = {
     col_now:       "Mal-AI llum",
     col_eu:        "Għal Ewropa aktar qawwija",
     feature_eyebrow:  "Salon AI Dinner · Munich · Marzu 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Dak li bnejna — eżempju wieħed ↗",
@@ -9299,7 +9301,7 @@ window.LOCALES = {
     col_now:       "Le AI inniu",
     col_eu:        "Ar mhaithe le hEoraip níos láidre",
     feature_eyebrow:  "Salon AI Dinner · Munchen · Márta 2026",
-    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future.",
+    feature_desc: "A site conceived and built by 15 participants in one evening. They designed AI assistants, gathered ideas for Europe, and published their position on the future. <a href=\"/march-event/\">Click here to see the collected ideas from the March salon →</a>",
 
 
     feature_cta:       "Cad a thógamar — sampla amháin ↗",
