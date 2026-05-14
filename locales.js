@@ -38,8 +38,8 @@ window.LOCALES = {
     nav_back_home: "← Salon AI",
     cohost_q_label: "You pick the evening's question, for example:",
     past_photo_1: "AI-generated Europe 2041",
-    past_photo_2: "Table concept by Tatjana",
-    past_photo_3: "Nature meets tech — in the detail, because tech doesn't have to be sterile 🌿",
+    past_photo_2: "Table concept by Tatjana Mallinckrodt",
+    past_photo_3: "Nature meets tech — because tech doesn't have to be sterile 🌿",
     usecases_h2: "AI use cases",
     usecases_desc: "Concrete examples of what your AI assistant can automate — for board members, PR teams, family offices, EU citizens, from politics to creatives to finance.",
     usecases_link: "See the use cases →",
@@ -117,7 +117,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -412,7 +412,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -463,8 +463,8 @@ window.LOCALES = {
     nav_back_home: "← Salon AI",
     cohost_q_label: "Du wählst die Frage des Abends, zum Beispiel:",
     past_photo_1: "KI-generiertes Europa 2041",
-    past_photo_2: "Tischkonzept by Tatjana",
-    past_photo_3: "Natur trifft Tech — im Detail, denn Tech muss nicht steril sein 🌿",
+    past_photo_2: "Tischkonzept by Tatjana Mallinckrodt",
+    past_photo_3: "Natur trifft Tech — denn Tech muss nicht steril sein 🌿",
     usecases_h2: "Anwendungsfälle für KI",
     usecases_desc: "Konkrete Beispiele, was dein KI-Assistent automatisieren kann — für Vorstände, PR-Teams, Family Offices, EU-Bürger:innen, von Politik über Kreative bis Finance.",
     usecases_link: "Anwendungsfälle ansehen →",
@@ -542,7 +542,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Häufige Fragen",
     faq_q1: "Wer veranstaltet den Salon?",
-    faq_a1: "Salon AI wird von <strong>Franziska Wittleder</strong> gegründet und geleitet. 15+ Jahre in KI-Forschung, Engineering und Product Leadership in Scale-ups als auch in Big Tech (Amazon, Writer und SoundCloud) — in den USA und EU.<br><br>Creative Direction von Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy bei Gestalten / teNeues) — denn Tech muss nicht steril sein. Der Abend hat eine leicht immersive Note: wir verweben Natur und Tech, von der Tischdeko bis ins Detail. 🌿",
+    faq_a1: "Salon AI wird von <strong>Franziska Wittleder</strong> gegründet und geleitet. 15+ Jahre in KI-Forschung, Engineering und Product Leadership in Scale-ups als auch in Big Tech (Amazon, Writer und SoundCloud) — in den USA und EU.<br><br>Creative Direction von <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy bei Gestalten / teNeues) — denn Tech muss nicht steril sein. Der Abend hat eine leicht immersive Note: wir verweben Natur und Tech, von der Tischdeko bis ins Detail. 🌿",
     faq_q2: "Wie unterscheidet sich das von anderen KI-Abenden in München?",
     faq_a2: "Du baust selbst, statt zuzuschauen — jede Person baut ihren eigenen KI-Assistenten. Kleiner Kreis im Salon-Format mit Dinner und Drinks, kein Seminarraum-Gefühl. Und der gebaute Agent wird direkt auf eine EU-Aufgabe angewendet: MEPs identifizieren, Konsultationen einreichen, Regulierungen kommentieren.",
     faq_q3: "Was ist beim März-Salon entstanden?",
@@ -837,7 +837,7 @@ window.LOCALES = {
     plan_p1_label: "Methode",
 
 
-    plan_p1_body: "Wir bauen deinen KI-Assistenten — für dein Leben und deine Arbeit.",
+    plan_p1_body: "Mit einer erprobten Sequenz bauen wir deinen KI-Assistenten — für dein Leben und deine Arbeit.",
 
 
 
@@ -943,7 +943,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -982,7 +982,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -1339,7 +1339,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -1378,7 +1378,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -1735,7 +1735,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -1774,7 +1774,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -2131,7 +2131,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2170,7 +2170,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -2527,7 +2527,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2566,7 +2566,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -2923,7 +2923,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -2962,7 +2962,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -3315,7 +3315,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -3354,7 +3354,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -3707,7 +3707,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -3746,7 +3746,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -4099,7 +4099,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4138,7 +4138,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -4491,7 +4491,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4530,7 +4530,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -4883,7 +4883,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -4922,7 +4922,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -5275,7 +5275,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -5314,7 +5314,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -5667,7 +5667,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -5706,7 +5706,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -6059,7 +6059,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6098,7 +6098,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -6451,7 +6451,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6490,7 +6490,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -6843,7 +6843,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -6882,7 +6882,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -7235,7 +7235,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -7274,7 +7274,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -7627,7 +7627,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -7666,7 +7666,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -8019,7 +8019,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8058,7 +8058,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -8411,7 +8411,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8450,7 +8450,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -8803,7 +8803,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -8842,7 +8842,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
@@ -9195,7 +9195,7 @@ window.LOCALES = {
     plan_p1_label: "Method",
 
 
-    plan_p1_body: "We build your AI assistant — tailored to your personal life and work.",
+    plan_p1_body: "With a tested sequence, we build your AI assistant — tailored to your personal life and work.",
 
 
 
@@ -9234,7 +9234,7 @@ window.LOCALES = {
     faq_label: "FAQ",
     faq_h2: "Frequently asked questions",
     faq_q1: "Who hosts the Salon?",
-    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by Tatjana Mallinckrodt (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
+    faq_a1: "Salon AI is founded and led by <strong>Franziska Wittleder</strong>. 15+ years in AI research, engineering and product leadership across scale-ups and big tech (Amazon, Writer and SoundCloud) — across the US and EU.<br><br>Creative direction by <strong>Tatjana Mallinckrodt</strong> (Head of PR &amp; Brand Strategy at Gestalten / teNeues) — because tech doesn't have to be sterile. The evening has a gently immersive note: we weave nature into the tech, from the table dressing on out. 🌿",
     faq_q2: "How does this differ from other AI evenings in Munich?",
     faq_a2: "You build, not just watch — every person builds their own AI assistant. Small circle in salon format with dinner and drinks, no seminar-room feel. And the agent you build is applied directly to a real EU task: identifying MEPs, filing consultation responses, commenting on regulations.",
     faq_q3: "What came out of the March Salon?",
