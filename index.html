@@ -100,8 +100,13 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .hero h1 { font-size: clamp(1.75rem, 4.5vw, 2.6rem); line-height: 1.18; font-weight: 700; color: #fff; margin-bottom: var(--s2); letter-spacing: -0.012em; max-width: 920px; text-wrap: balance; }
 .hero h1 em { color: #A9C5DC; font-style: italic; font-weight: 400; }
 .hero-subtitle { font-size: var(--t-sm); color: rgba(255,255,255,0.6); font-weight: 400; line-height: 1.65; max-width: 460px; margin: 0 auto var(--s3); }
-.hero-cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: #fff; color: var(--navy); font-weight: 600; font-size: var(--t-sm); padding: 12px 26px; min-height: 44px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, transform 0.18s; font-family: 'DM Sans', sans-serif; margin-top: var(--s3); letter-spacing: 0.4px; box-shadow: none; }
-.hero-cta:hover { background: rgba(255,255,255,0.92); transform: translateY(-1px); }
+.hero-ctas { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: var(--s3); }
+.hero-cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-weight: 600; font-size: var(--t-sm); padding: 12px 26px; min-height: 44px; border-radius: var(--r-pill); text-decoration: none; transition: background 0.18s, color 0.18s, border-color 0.18s, transform 0.18s; font-family: 'DM Sans', sans-serif; letter-spacing: 0.4px; box-shadow: none; }
+.hero-cta--primary { background: #fff; color: var(--navy); border: 1px solid #fff; }
+.hero-cta--primary:hover { background: rgba(255,255,255,0.92); transform: translateY(-1px); }
+.hero-cta--ghost { background: transparent; color: rgba(255,255,255,0.92); border: 1px solid rgba(255,255,255,0.32); }
+.hero-cta--ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); color: #fff; transform: translateY(-1px); }
+@media (min-width: 640px) { .hero-ctas { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 12px; } }
 .hero-strapline { font-family: 'DM Sans', sans-serif; font-size: var(--t-base); color: rgba(255,255,255,0.78); line-height: 1.6; max-width: 540px; margin: var(--s2) auto 0; }
 /* Alumni caption — sits above the events tile, small editorial credibility line */
 .alumni-caption { font-family: 'DM Sans', sans-serif; font-size: var(--t-sm); color: var(--muted-blue); line-height: 1.65; max-width: 640px; margin: 0 auto var(--s3); text-align: center; padding: 0 var(--s3); }
@@ -940,7 +945,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
   .hero { padding: 132px 16px 36px; min-height: auto; }
   .hero h1 { font-size: 1.45rem; line-height: 1.2; letter-spacing: -0.008em; margin-bottom: 12px; }
   .hero-strapline { font-size: 13.5px; line-height: 1.55; margin-top: 12px; max-width: 320px; }
-  .hero-cta { padding: 11px 22px; font-size: 13px; margin-top: 20px; }
+  .hero-cta { padding: 11px 20px; font-size: 12.5px; min-height: 42px; }
+  .hero-ctas { margin-top: 20px; gap: 8px; }
   .eyebrow { font-size: 10px; letter-spacing: 1.2px; margin-bottom: 8px; }
 
   /* Nav */
@@ -1068,7 +1074,11 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <p class="eyebrow" data-i18n="hero_eyebrow">Salon AI · München · Berlin</p>
     <h1 data-i18n-html="hero_h1">Ein Tischgespräch mit KI.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline">Du verstehst KI nicht wirklich, bis du mit ihr gebaut hast.</p>
-    <a href="#events" class="hero-cta" data-i18n="hero_cta">Zum Salon →</a>
+    <div class="hero-ctas">
+      <a href="#events" class="hero-cta hero-cta--primary" data-i18n="hero_cta_primary">Zum Salon · 28.05 →</a>
+      <a href="#past" class="hero-cta hero-cta--ghost" data-i18n="hero_cta_past">Vergangene Events</a>
+      <a href="#host" class="hero-cta hero-cta--ghost" data-i18n="hero_cta_host">Co-Host werden</a>
+    </div>
   </div>
 </section>
 

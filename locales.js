@@ -48,6 +48,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>May 28: Last public Salon AI Dinner.</strong> After that: bring your own group →",
     nav_cta:       "Join a Dinner →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -469,6 +472,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →",
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_cta: "Zum Salon →",
+    hero_cta_primary: "Zum Salon · 28.05 →",
+    hero_cta_past: "Vergangene Events",
+    hero_cta_host: "Co-Host werden",
 
     hero_strapline: "Du verstehst KI nicht wirklich, bis du mit ihr gebaut hast.",
 
@@ -869,6 +875,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 mai : dernier Salon AI Dinner public.</strong> Ensuite : amène ton propre groupe →",
     nav_cta:       "Rejoindre un dîner →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -1262,6 +1271,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 de mayo: última Salon AI Dinner pública.</strong> Después: trae tu propio grupo →",
     nav_cta:       "Unirse a una cena →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -1655,6 +1667,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 maggio: ultima Salon AI Dinner pubblica.</strong> Dopo: porta il tuo gruppo →",
     nav_cta:       "Partecipa a una cena →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -2048,6 +2063,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 de maio: último Salon AI Dinner público.</strong> Depois: traz o teu próprio grupo →",
     nav_cta:       "Participar de um jantar →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -2441,6 +2459,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 mei: laatste openbare Salon AI Dinner.</strong> Daarna: breng je eigen groep mee →",
     nav_cta:       "Sluit je aan bij een diner →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -2834,6 +2855,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 maja: ostatnia otwarta Salon AI Dinner.</strong> Potem: przyprowadź własną grupę →",
     nav_cta:       "Dołącz do kolacji →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -3223,6 +3247,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 mai: ultima cină publică Salon AI.</strong> După aceea: adu-ți propriul grup →",
     nav_cta:       "Alătură-te unei cine →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -3612,6 +3639,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 maj: sista offentliga Salon AI Dinner.</strong> Sen: ta med din egen grupp →",
     nav_cta:       "Gå med på en middag →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -4001,6 +4031,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. května: poslední veřejný Salon AI Dinner.</strong> Pak: přiveď vlastní skupinu →",
     nav_cta:       "Přidej se na večeři →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -4390,6 +4423,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>Május 28: az utolsó nyilvános Salon AI Dinner.</strong> Utána: hozd a saját csoportodat →",
     nav_cta:       "Csatlakozz egy vacsorához →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -4779,6 +4815,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. mája: posledná verejná Salon AI Dinner.</strong> Potom: priveď vlastnú skupinu →",
     nav_cta:       "Pridaj sa na večeru →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -5168,6 +5207,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 май: последна публична Salon AI вечеря.</strong> След това: доведи своя група →",
     nav_cta:       "Присъедини се към вечеря →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -5557,6 +5599,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. maj: sidste offentlige Salon AI Dinner.</strong> Bagefter: tag din egen gruppe med →",
     nav_cta:       "Deltag i en middag →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -5946,6 +5991,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. toukokuuta: viimeinen julkinen Salon AI Dinner.</strong> Sen jälkeen: tuo oma ryhmäsi →",
     nav_cta:       "Liity illalliselle →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -6335,6 +6383,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. svibnja: zadnja javna Salon AI večera.</strong> Nakon toga: dovedi vlastitu grupu →",
     nav_cta:       "Pridruži se večeri →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -6724,6 +6775,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 Μαΐου: το τελευταίο δημόσιο Salon AI Dinner.</strong> Μετά: φέρε τη δική σου ομάδα →",
     nav_cta:       "Συμμετέχετε σε ένα δείπνο →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -7113,6 +7167,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>Gegužės 28: paskutinė vieša Salon AI vakarienė.</strong> Po to: atsivesk savo grupę →",
     nav_cta:       "Prisijunk prie vakarienės →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -7502,6 +7559,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. maijs: pēdējā publiskā Salon AI vakariņas.</strong> Pēc tam: ņem līdzi savu grupu →",
     nav_cta:       "Pievienojies vakariņām →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -7891,6 +7951,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. mai: viimane avalik Salon AI õhtusöök.</strong> Pärast: too oma grupp →",
     nav_cta:       "Liitu õhtusöögiga →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -8280,6 +8343,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28. maj: zadnja javna Salon AI večerja.</strong> Po tem: pripelji svojo skupino →",
     nav_cta:       "Pridruži se večerji →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -8669,6 +8735,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 ta' Mejju: l-aħħar Salon AI Dinner pubbliku.</strong> Wara: ġib il-grupp tiegħek →",
     nav_cta:       "Ingħaqad ma' ikla ta' filgħaxija →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
@@ -9058,6 +9127,9 @@ window.LOCALES = {
     announcement_html: "🔔 <strong>28 Bealtaine: an Salon AI Dinner poiblí deireanach.</strong> Ina dhiaidh sin: tabhair do ghrúpa féin →",
     nav_cta:       "Bí páirteach i ndinnéar →",
     hero_cta: "Join the Salon →",
+    hero_cta_primary: "To the salon · May 28 →",
+    hero_cta_past: "Past events",
+    hero_cta_host: "Become a co-host",
 
     hero_strapline: "You don\'t really understand AI until you\'ve built with it.",
 
