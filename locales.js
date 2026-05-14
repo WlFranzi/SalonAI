@@ -419,7 +419,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -843,7 +843,7 @@ window.LOCALES = {
     plan_p2_label: "Anwendung",
 
 
-    plan_p2_body: "Wir wenden an. Gemeinsam richten wir die Werkzeuge auf die Frage des Abends — die du mitbringst.",
+    plan_p2_body: "Wir wenden an. Gemeinsam richten wir die Werkzeuge auf die Frage des Abends.",
 
 
 
@@ -949,7 +949,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -1345,7 +1345,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -1741,7 +1741,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -2137,7 +2137,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -2533,7 +2533,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -2929,7 +2929,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -3321,7 +3321,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -3713,7 +3713,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -4105,7 +4105,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -4497,7 +4497,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -4889,7 +4889,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -5281,7 +5281,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -5673,7 +5673,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -6065,7 +6065,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -6457,7 +6457,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -6849,7 +6849,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -7241,7 +7241,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -7633,7 +7633,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -8025,7 +8025,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -8417,7 +8417,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -8809,7 +8809,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
@@ -9201,7 +9201,7 @@ window.LOCALES = {
     plan_p2_label: "Application",
 
 
-    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening — the one you bring.",
+    plan_p2_body: "We apply. Together we turn the tools toward the question of the evening.",
 
 
 
