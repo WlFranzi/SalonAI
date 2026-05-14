@@ -180,12 +180,6 @@ nav .inner { max-width: 900px; margin: 0 auto; padding: 0 var(--s3); height: 56p
 .salon-invite-question { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--accent); line-height: 1.35; margin: 4px 0 8px; text-wrap: balance; }
 .salon-invite-meta { font-size: 13.5px; color: var(--navy); line-height: 1.6; margin: 0; }
 .salon-invite-meta-fine { font-size: 12.5px; color: var(--muted-blue); line-height: 1.5; margin: 0; font-style: italic; }
-/* Plan section 3-up proof strip — what to expect from one evening */
-.plan-stats { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
-.plan-stat { display: flex; flex-direction: column; gap: 4px; }
-.plan-stat strong { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 1.6px; }
-.plan-stat span { font-size: 13px; color: var(--muted-blue); line-height: 1.55; }
-@media (min-width: 720px) { .plan-stats { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
 .salon-invite-actions { display: flex; flex-direction: column; gap: 14px; padding: 22px 28px 28px; align-items: stretch; }
 .salon-invite-btn-primary { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 700; padding: 16px 24px; border-radius: 999px; text-decoration: none; text-align: center; letter-spacing: 0.2px; transition: background 0.15s, transform 0.15s; }
 .salon-invite-btn-primary:hover { background: var(--navy); transform: translateY(-1px); }
@@ -1024,7 +1018,7 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <body>
 
 <!-- ── ANNOUNCEMENT BAR ────────────────────────────────────────── -->
-<a href="#events" class="announcement-bar" data-i18n-html="announcement_html">🔔 <strong>28. Mai: Letztes öffentliches Salon AI Dinner.</strong> Danach: bring deine eigene Gruppe →</a>
+<a href="#events" class="announcement-bar" data-i18n-html="announcement_html">🔔 <em>1 Abend · Dein KI-Assistent · Keine Vorkenntnisse · <strong>28. Mai · Letzter öffentlicher Salon</strong></em> →</a>
 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
@@ -1103,22 +1097,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
         <div class="plan-share" data-i18n="plan_p2_share">20%</div>
         <div class="plan-card-label" data-i18n="plan_p2_label">Anwendung</div>
         <p data-i18n="plan_p2_body">Wir wenden ihn an — auf die Frage des Abends.</p>
-      </div>
-    </div>
-
-    <!-- 3-up proof strip — what to expect from one evening -->
-    <div class="plan-stats">
-      <div class="plan-stat">
-        <strong data-i18n="stat_1_num">1 Abend</strong>
-        <span data-i18n="stat_1_lbl">Funktionierender KI-Assistent in einer Sitzung.</span>
-      </div>
-      <div class="plan-stat">
-        <strong data-i18n="stat_3_num">Experts im Raum</strong>
-        <span data-i18n="stat_3_lbl">Begleiten, entstören, verfeinern.</span>
-      </div>
-      <div class="plan-stat">
-        <strong data-i18n="stat_4_num">Keine Vorkenntnisse</strong>
-        <span data-i18n="stat_4_lbl">Für Entscheider:innen, nicht Engineers.</span>
       </div>
     </div>
 
