@@ -47,6 +47,14 @@
     figure.hero-image img { border-radius: 8px; }
   }
 
+  /* Interstitial image — between sections, smaller and quieter than the hero */
+  figure.interstitial-image { max-width: 220px; margin: 8px auto 12px; padding: 0 24px; }
+  figure.interstitial-image img { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 14px rgba(15,30,51,0.10); }
+  @media (max-width: 720px) {
+    figure.interstitial-image { max-width: 170px; padding: 0 16px; }
+    figure.interstitial-image img { border-radius: 8px; }
+  }
+
   /* Masthead */
   header.masthead { max-width: 760px; margin: 0 auto; padding: 56px 24px 16px; text-align: center; }
   .dateline { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; }
@@ -153,6 +161,10 @@
     Europe lacks the scale advantages of the United States, the energy economics of China, the frontier-tech velocity of either. What it may dominate is industrial circularity — translated into systems regulation. The open question is whether AI built on top of that system makes it work, or just makes it legible.
   </p>
 </div>
+
+<figure class="interstitial-image">
+  <img src="floral-still-life.png" alt="A small floral still life — a delicate metal stand cradling an antique porcelain dish, draped in wildflowers and dried blooms with a single yellow anemone in soft focus. A quiet object lesson in arranged systems." loading="lazy" />
+</figure>
 
 <div class="section">
   <p class="eyebrow">The premise</p>
