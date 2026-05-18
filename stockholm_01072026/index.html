@@ -93,12 +93,16 @@
   .host-bio { font-size: 13px; color: var(--muted); line-height: 1.5; }
   @media (max-width: 520px) { .hosts-row { gap: 22px; } }
 
-  /* Section */
-  .section { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
-  .section h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy-deep); line-height: 1.22; margin-bottom: 18px; letter-spacing: -0.008em; }
+  /* Section — chapter-numbered editorial structure */
+  body { counter-reset: chapter; }
+  .section { max-width: 720px; margin: 0 auto; padding: 56px 24px; counter-increment: chapter; position: relative; }
+  .section + .section { padding-top: 8px; }
+  .section + .section::before { content: ''; display: block; width: 64px; height: 1px; background: var(--rule); margin: 0 0 48px; }
+  .section h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy-deep); line-height: 1.22; margin-bottom: 22px; letter-spacing: -0.008em; }
   .section h2.center { text-align: center; }
-  .section .eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-  .section .eyebrow.center { text-align: center; }
+  .section .eyebrow { display: flex; align-items: baseline; gap: 12px; font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  .section .eyebrow::before { content: counter(chapter, decimal-leading-zero); font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 13px; letter-spacing: 1px; color: var(--sky-deep); text-transform: none; flex-shrink: 0; }
+  .section .eyebrow.center { text-align: center; justify-content: center; }
   .section p { font-size: 16px; line-height: 1.7; color: var(--navy); margin-bottom: 14px; }
   .section p:last-child { margin-bottom: 0; }
   .section p strong { font-weight: 700; }
