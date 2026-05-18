@@ -86,6 +86,18 @@
   .pull-question { background: var(--sky-light); border-left: 3px solid var(--accent); padding: 22px 26px; border-radius: 0 12px 12px 0; margin: 32px 0; }
   .pull-question p { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; line-height: 1.45; color: var(--navy-deep); margin: 0; }
 
+  /* Phase timeline — visual aid for the two-part structure */
+  ol.phase-timeline { list-style: none; padding: 0; margin: 26px 0 32px; display: grid; grid-template-columns: 1fr; gap: 14px; position: relative; }
+  ol.phase-timeline .phase-step { display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; row-gap: 2px; align-items: baseline; padding: 14px 16px; background: #fff; border: 1px solid var(--rule); border-radius: 10px; position: relative; }
+  ol.phase-timeline .phase-marker { grid-row: 1 / span 2; align-self: center; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 999px; background: var(--accent); color: #fff; font-family: 'Playfair Display', serif; font-size: 13.5px; font-weight: 700; letter-spacing: 0.5px; line-height: 1; }
+  ol.phase-timeline .phase-label { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.2px; text-transform: uppercase; color: var(--accent); }
+  ol.phase-timeline .phase-meta { font-size: 13.5px; color: var(--navy); line-height: 1.5; }
+  @media (min-width: 640px) {
+    ol.phase-timeline { grid-template-columns: 1fr 1fr; gap: 16px; }
+    ol.phase-timeline .phase-step { padding: 16px 18px; }
+    ol.phase-timeline::before { content: ''; position: absolute; left: calc(50% - 6px); top: 50%; width: 12px; height: 1px; background: var(--rule); pointer-events: none; }
+  }
+
   ul.clean { list-style: none; padding: 0; margin: 14px 0 0; }
   ul.clean li { padding: 8px 0 8px 22px; font-size: 16px; line-height: 1.65; color: var(--navy); position: relative; border-top: 1px solid var(--rule); }
   ul.clean li:first-child { border-top: none; }
@@ -119,10 +131,6 @@
 <nav class="top">
   <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'stockholm_13082026' });">← Salon AI</a>
 </nav>
-
-<figure class="hero-image">
-  <img src="/STOCKHOLM_EVENT.png" alt="A late-summer tablescape — a delicate floral arch with wildflowers, a single white anemone, and small bowls of summer blooms on a garden table at golden hour. The aesthetic of an unhurried Stockholm evening at the end of summer." />
-</figure>
 
 <header class="masthead">
   <p class="dateline">Salon AI · Stockholm · 13 August 2026</p>
@@ -163,7 +171,7 @@
 </div>
 
 <figure class="interstitial-image">
-  <img src="floral-still-life.png" alt="A small floral still life — a delicate metal stand cradling an antique porcelain dish, draped in wildflowers and dried blooms with a single yellow anemone in soft focus. A quiet object lesson in arranged systems." loading="lazy" />
+  <img src="stockholm_flower_midsummer.png" alt="A delicate flower arrangement — a wrought metal frame draped in wildflowers and dried summer blooms, cradling a porcelain dish, with a single yellow anemone catching the light. A still life of arranged systems." loading="lazy" />
 </figure>
 
 <div class="section">
@@ -183,6 +191,20 @@
 <div class="section">
   <p class="eyebrow">How the evening operates</p>
   <h2>Two movements, one question.</h2>
+
+  <ol class="phase-timeline" aria-label="Evening structure in two phases">
+    <li class="phase-step">
+      <span class="phase-marker">01</span>
+      <span class="phase-label">Build</span>
+      <span class="phase-meta">Each guest builds their own AI assistant.</span>
+    </li>
+    <li class="phase-step">
+      <span class="phase-marker">02</span>
+      <span class="phase-label">Apply</span>
+      <span class="phase-meta">Turn the assistants onto the circular framework — starting with fashion.</span>
+    </li>
+  </ol>
+
   <p>
     The first part of the evening is hands-on. Each guest builds an analytical AI assistant fitted to their own work — not as an AI lesson, but as the operating instrument for the rest of the evening.
   </p>
