@@ -47,12 +47,33 @@
     figure.hero-image img { border-radius: 8px; }
   }
 
-  /* Interstitial image — between sections, smaller and quieter than the hero */
-  figure.interstitial-image { max-width: 220px; margin: 8px auto 12px; padding: 0 24px; }
-  figure.interstitial-image img { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 14px rgba(15,30,51,0.10); }
+  /* Floral overlay — flower image floats into the premise section, text wraps around it */
+  .premise-section { position: relative; }
+  .floral-overlap {
+    float: right;
+    width: 220px;
+    height: auto;
+    margin: -36px -52px 8px 24px;
+    shape-outside: url('stockholm_flower_midsummer.png');
+    shape-margin: 14px;
+    shape-image-threshold: 0.2;
+    -webkit-shape-outside: url('stockholm_flower_midsummer.png');
+    z-index: 2;
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+  }
   @media (max-width: 720px) {
-    figure.interstitial-image { max-width: 170px; padding: 0 16px; }
-    figure.interstitial-image img { border-radius: 8px; }
+    .floral-overlap {
+      width: 150px;
+      margin: -12px -22px 0 12px;
+    }
+  }
+  @media (max-width: 460px) {
+    .floral-overlap {
+      width: 130px;
+      margin: -8px -14px -4px 10px;
+    }
   }
 
   /* Masthead */
@@ -170,11 +191,8 @@
   </p>
 </div>
 
-<figure class="interstitial-image">
-  <img src="stockholm_flower_midsummer.png" alt="A delicate flower arrangement — a wrought metal frame draped in wildflowers and dried summer blooms, cradling a porcelain dish, with a single yellow anemone catching the light. A still life of arranged systems." loading="lazy" />
-</figure>
-
-<div class="section">
+<div class="section premise-section">
+  <img class="floral-overlap" src="stockholm_flower_midsummer.png" alt="A delicate flower arrangement — a wrought metal frame draped in wildflowers and dried summer blooms, cradling a porcelain dish, with a single yellow anemone catching the light." loading="lazy" />
   <p class="eyebrow">The premise</p>
   <h2>Regulation, interpreted as a system.</h2>
   <p>
