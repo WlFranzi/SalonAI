@@ -91,6 +91,20 @@
     margin-top: 14px;
     font-size: 15.5px;
   }
+  p.tagline {
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.35;
+    margin: 18px auto 0;
+    text-wrap: balance;
+  }
+  p.tagline em {
+    font-style: italic;
+    color: var(--oxblood);
+    font-weight: 500;
+  }
   .scarcity-pill {
     display: inline-block;
     margin: 32px auto 0;
@@ -393,17 +407,12 @@
 <header class="masthead">
   <p class="dateline">Salon AI · Berlin · 15. Juni 2026</p>
   <h1 class="title">Wie sieht <em>PR für Marken in 2030</em> aus?</h1>
-  <p class="lede">
-    Eine kleine Runde aus Agentur, Brand-Side und VIP-Welt. Du baust deinen eigenen KI-Assistenten. Und wir entwerfen gemeinsam, wie die Beziehung Marke ↔ Agentur in vier Jahren aussehen wird — welche Rollen verschwinden, welche neu entstehen, welche plötzlich teuer werden.
-  </p>
-  <p class="lede muted">
-    Ehrlich? Wir sind müde von Folien-KI-Events. Hier nicht. Vier Stunden, ein Tisch, ein Werkzeug, das du mit nach Hause nimmst.
-  </p>
-  <span class="scarcity-pill">Privater Salon · Kleine Runde · Nur auf Einladung</span>
+  <p class="tagline">Weniger Vortrag, <em>mehr Erlebnis.</em></p>
+  <span class="scarcity-pill">Privater Salon · Kuratierte Runde · Nur auf Einladung</span>
 </header>
 
 <section class="hosts">
-  <p class="h-label">Mit dir am Tisch</p>
+  <p class="h-label">Wir laden ein</p>
   <ul>
     <li>
       <p class="h-name">Alexandra Freifrau von Rehlingen</p>
@@ -434,18 +443,18 @@
 </div>
 
 <div class="section">
-  <p class="eyebrow">Wie der Abend funktioniert</p>
-  <h2>Zwei Bewegungen, ein Tisch.</h2>
+  <p class="eyebrow">Zwei Phasen des Abends</p>
+  <h2>80 / 20 — selber bauen, dann gemeinsam anwenden.</h2>
   <ol class="phase-timeline" aria-label="Ablauf in zwei Phasen">
     <li class="phase-step">
-      <span class="phase-marker">01</span>
-      <span class="phase-label">Bauen</span>
-      <span class="phase-meta">Du baust deinen KI-Assistenten — passgenau für dein Haus, deine Marke, deine Klient:innen.</span>
+      <span class="phase-marker">80%</span>
+      <span class="phase-label">Selber bauen</span>
+      <span class="phase-meta">Ganz selfish: du baust dir deinen eigenen KI-Assistenten — für dich, deine Arbeit, dein Tagesgeschäft. Geht mit nach Hause.</span>
     </li>
     <li class="phase-step">
-      <span class="phase-marker">02</span>
+      <span class="phase-marker">20%</span>
       <span class="phase-label">Anwenden</span>
-      <span class="phase-meta">Wir richten die Assistenten am Tisch auf die 2030-Frage — und sehen, was sie ausspucken.</span>
+      <span class="phase-meta">Wir richten unsere Assistenten gemeinsam auf die Frage des Abends — und sehen, was die Runde dazu liefert.</span>
     </li>
   </ol>
 </div>
