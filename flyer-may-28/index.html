@@ -67,11 +67,11 @@
   .spiky p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 17pt;
+    font-size: 15pt;
     line-height: 1.28;
     color: var(--navy-deep);
     letter-spacing: -0.008em;
-    margin-bottom: 3.5mm;
+    margin-bottom: 3mm;
     text-wrap: balance;
   }
   .spiky p:last-child {
@@ -103,15 +103,39 @@
 
   /* Detail grid — when, where, who */
   .details {
-    margin-top: 9mm;
-    padding-top: 6mm;
+    margin-top: 7mm;
+    padding-top: 5mm;
     border-top: 1px solid var(--rule);
     display: grid;
     grid-template-columns: 18mm 1fr;
-    row-gap: 2.5mm;
+    row-gap: 2mm;
     column-gap: 4mm;
     font-size: 9pt;
-    line-height: 1.45;
+    line-height: 1.4;
+  }
+
+  /* Testimonial — small social-proof block before the conversion footer */
+  .testimonial {
+    margin-top: 6mm;
+    padding-top: 5mm;
+    border-top: 1px solid var(--rule);
+  }
+  .testimonial blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: var(--navy);
+    text-wrap: balance;
+    margin-bottom: 2mm;
+  }
+  .testimonial cite {
+    font-style: normal;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    color: var(--sky-deep);
   }
   .details dt {
     font-size: 8pt;
@@ -214,7 +238,7 @@
   <div class="spiky">
     <p>Ein Tischgespräch mit KI.</p>
     <p>Du baust deinen eigenen Assistenten.</p>
-    <p>Weniger Vortrag, mehr Gespräch.</p>
+    <p>Weniger Vortrag, mehr Erlebnis.</p>
   </div>
 
   <dl class="details">
@@ -230,6 +254,11 @@
     <dt>Hosts</dt>
     <dd>Franziska Wittleder <span class="fine">(Amazon, Writer, SoundCloud)</span><br>Creative Direction: Tatjana Mallinckrodt <span class="fine">(Gestalten / teNeues)</span></dd>
   </dl>
+
+  <div class="testimonial">
+    <blockquote>„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</blockquote>
+    <cite>Prof. Dr. Robert Schleip</cite>
+  </div>
 
   <div class="footer-block">
     <div class="footer-info">
