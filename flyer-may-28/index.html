@@ -22,7 +22,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: #E5E7EB; font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); }
 
-  /* A5 portrait — 148mm × 210mm — sized for print */
+  /* A5 portrait — 148mm × 210mm */
   .flyer {
     width: 148mm;
     height: 210mm;
@@ -30,21 +30,21 @@
     background: var(--paper);
     color: var(--navy);
     box-shadow: 0 10px 36px rgba(15,30,51,0.18);
-    position: relative;
     overflow: hidden;
-    padding: 18mm 16mm;
+    padding: 24mm 18mm 18mm;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
-  /* Brand mark */
+  /* Brand */
   .brand {
     font-family: 'Playfair Display', serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--navy);
     letter-spacing: 0.4px;
-    margin-bottom: 10mm;
+    margin-bottom: 24mm;
   }
   .brand .eu {
     color: var(--sky-deep);
@@ -52,97 +52,43 @@
     font-style: italic;
   }
 
-  /* Eyebrow */
-  .eyebrow {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2.6px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 4mm;
-  }
-
-  /* Title — single H1 carrying everything */
-  .title {
-    font-family: 'Playfair Display', serif;
-    font-size: 26pt;
-    font-weight: 700;
-    line-height: 1.08;
-    color: var(--navy-deep);
-    letter-spacing: -0.018em;
-    margin-bottom: 4mm;
-  }
-
-  /* Date + place line */
-  .when-where {
-    font-size: 11pt;
-    color: var(--navy);
-    line-height: 1.5;
-    margin-bottom: 10mm;
-  }
-  .when-where strong {
-    font-weight: 700;
-    color: var(--accent);
-  }
-
-  /* Three spiky lines — the conceptual hook */
-  .spiky {
-    margin-bottom: auto;
-  }
+  /* The 3 spiky lines carry the whole flyer */
   .spiky p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 16pt;
-    line-height: 1.35;
+    font-size: 19pt;
+    line-height: 1.32;
     color: var(--navy-deep);
     letter-spacing: -0.008em;
-    margin-bottom: 4mm;
+    margin-bottom: 6mm;
+    text-wrap: balance;
   }
   .spiky p:last-child {
     color: var(--accent);
     margin-bottom: 0;
   }
 
-  /* Footer — practical + CTA */
-  .footer-block {
-    padding-top: 6mm;
+  /* Footer — date, place, QR, price */
+  .footer {
+    margin-top: auto;
+    padding-top: 8mm;
     border-top: 1px solid var(--rule);
-    display: grid;
-    grid-template-columns: 1fr 26mm;
-    gap: 6mm;
-    align-items: end;
-  }
-  .footer-info {
     display: flex;
     flex-direction: column;
-    gap: 2mm;
+    align-items: center;
+    gap: 4mm;
   }
-  .footer-info .meta {
-    font-size: 10pt;
-    color: var(--navy);
-    line-height: 1.5;
-  }
-  .footer-info .price {
+  .footer .when {
     font-family: 'Playfair Display', serif;
-    font-size: 13pt;
+    font-size: 15pt;
     font-weight: 700;
     color: var(--navy-deep);
-    letter-spacing: -0.008em;
-    margin-top: 1mm;
+    letter-spacing: -0.01em;
   }
-  .footer-info .price em {
-    font-style: normal;
-    font-weight: 400;
+  .footer .where {
     font-size: 10pt;
     color: var(--muted);
-    margin-left: 3mm;
-  }
-  .footer-info .url {
-    font-size: 9pt;
-    color: var(--accent);
-    font-weight: 600;
     letter-spacing: 0.3px;
-    margin-top: 3mm;
   }
   .qr {
     width: 26mm;
@@ -151,10 +97,18 @@
     border-radius: 1mm;
     background: #fff;
     padding: 1mm;
+    margin-top: 2mm;
   }
   .qr img { display: block; width: 100%; height: 100%; }
+  .footer .price {
+    font-size: 9pt;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 1mm;
+  }
 
-  /* Print — A5 portrait, no margins */
+  /* Print */
   @page { size: A5 portrait; margin: 0; }
   @media print {
     html, body { background: #fff; }
@@ -185,27 +139,19 @@
 <div class="flyer">
   <p class="brand">Salon <span class="eu">AI</span></p>
 
-  <p class="eyebrow">Du bist eingeladen</p>
-
-  <h1 class="title">Salon AI Dinner — München</h1>
-
-  <p class="when-where"><strong>28. Mai 2026</strong> · Donnerstag, 18:00 · Luitpoldblock</p>
-
   <div class="spiky">
     <p>Ein Tischgespräch mit KI.</p>
     <p>Du baust deinen eigenen Assistenten.</p>
     <p>KI muss nicht steril sein.</p>
   </div>
 
-  <div class="footer-block">
-    <div class="footer-info">
-      <span class="meta">Dinner &amp; Drinks inklusive · keine Vorkenntnisse nötig</span>
-      <span class="price">78 € <em>· 12 Plätze · letzter öffentlicher Salon</em></span>
-      <span class="url">salon-ai.eu/#events</span>
-    </div>
+  <div class="footer">
+    <span class="when">28. Mai 2026 · 18:00</span>
+    <span class="where">Luitpoldblock, München · Dinner inklusive</span>
     <div class="qr">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fsalon-ai.eu%2F%23events&color=1B2E4A&margin=4" alt="QR → salon-ai.eu/#events" />
     </div>
+    <span class="price">78 € · salon-ai.eu</span>
   </div>
 </div>
 
