@@ -3,12 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- Private Seite — nur über direkten Link erreichbar -->
 <meta name="robots" content="noindex, nofollow" />
 <title>Salon AI · Berlin · 15. Juni 2026 · By Invitation</title>
 <link rel="canonical" href="https://www.salon-ai.eu/berlin_15062026/" />
-<meta name="description" content="Salon AI Berlin — ein Brief und eine Einladung zur Frage, was wichtig bleibt an Taste im Zeitalter der KI. 15. Juni 2026, by invitation." />
-<!-- Google tag (gtag.js) -->
+<meta name="description" content="Salon AI Berlin — eine kleine Runde am Tisch. Du baust deinen eigenen KI-Assistenten. Dann fragen wir, was du nicht delegieren kannst. 15. Juni 2026, by invitation." />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,19 +16,20 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
-  /* ── Tokens ───────────────────────────────────────────────────── */
   :root {
-    --paper:     #F5F0E8;
-    --ink:       #1B2024;
-    --ink-70:    rgba(27,32,36,0.72);
-    --ink-55:    rgba(27,32,36,0.55);
-    --ink-30:    rgba(27,32,36,0.30);
-    --oxblood:   #7C2F1C;
-    --gold:      #9C7833;
-    --rule:      rgba(27,32,36,0.18);
-    --serif:     'Playfair Display', Georgia, 'Times New Roman', serif;
+    --paper:    #F5F0E8;
+    --ink:      #1B2024;
+    --ink-deep: #0F1316;
+    --ink-70:   rgba(27,32,36,0.72);
+    --ink-55:   rgba(27,32,36,0.55);
+    --ink-30:   rgba(27,32,36,0.30);
+    --oxblood:  #7C2F1C;
+    --gold:     #9C7833;
+    --rule:     rgba(27,32,36,0.18);
+    --serif:    'Playfair Display', Georgia, 'Times New Roman', serif;
+    --sans:     'DM Sans', system-ui, sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,392 +38,450 @@
     font-family: var(--serif);
     background: var(--paper);
     color: var(--ink);
-    line-height: 1.75;
-    font-size: 17.5px;
+    line-height: 1.65;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
   a { color: inherit; }
   ::selection { background: rgba(124,47,28,0.18); }
 
-  /* ── Nav ─────────────────────────────────────────────────────── */
-  nav.top {
-    padding: 22px 28px 0;
-    font-family: var(--serif);
-    font-size: 13px;
-    font-style: italic;
-    letter-spacing: 0.2px;
-  }
-  nav.top a.back {
-    color: var(--ink-55);
-    text-decoration: none;
-    transition: color 0.18s ease;
-  }
+  /* Nav */
+  nav.top { padding: 20px 24px 0; font-family: var(--sans); font-size: 13px; }
+  nav.top a.back { color: var(--ink-55); text-decoration: none; transition: color 0.18s ease; letter-spacing: 0.2px; }
   nav.top a.back:hover { color: var(--oxblood); }
 
-  /* ── Letter wrapper ───────────────────────────────────────────── */
-  .letter {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 56px 28px 0;
-  }
-
-  /* ── Topline + Salutation ─────────────────────────────────────── */
-  .topline {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: 11px;
-    letter-spacing: 3.5px;
+  /* Masthead */
+  header.masthead { max-width: 720px; margin: 0 auto; padding: 40px 24px 16px; text-align: center; }
+  p.dateline {
+    font-family: var(--sans);
+    font-size: 10.5px;
     text-transform: uppercase;
-    color: var(--oxblood);
-    text-align: center;
-    margin-bottom: 56px;
-    font-feature-settings: "smcp" 1;
-  }
-  .salutation {
-    text-align: center;
-    margin-bottom: 14px;
-  }
-  .salutation-line {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.3rem, 3.2vw, 1.7rem);
-    line-height: 1.35;
-    color: var(--ink);
-    margin: 0;
-    text-wrap: balance;
-  }
-  .salutation-line em {
-    font-style: italic;
-    color: var(--oxblood);
-  }
-  .dateline {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 14px;
-    color: var(--ink-55);
-    text-align: center;
-    margin: 18px 0 56px;
-  }
-
-  /* ── Letter body ─────────────────────────────────────────────── */
-  .letter-body p {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: 17.5px;
-    line-height: 1.78;
-    color: var(--ink);
-    margin: 0 0 22px;
-  }
-  .letter-body p em {
-    font-style: italic;
-    color: var(--ink);
-  }
-  .letter-body p.opening::first-letter {
-    font-family: var(--serif);
+    letter-spacing: 3.2px;
     font-weight: 700;
-    font-size: 4.4rem;
-    float: left;
-    line-height: 0.92;
     color: var(--oxblood);
-    padding: 4px 14px 0 0;
-    margin-top: 4px;
+    margin-bottom: 22px;
   }
-
-  /* ── Pull-quote: the evening's question ──────────────────────── */
-  .question-block {
-    text-align: center;
-    margin: 40px auto;
-    max-width: 520px;
-  }
-  .question-block::before,
-  .question-block::after {
-    content: '';
-    display: block;
-    width: 38%;
-    height: 1px;
-    background: var(--rule);
-    margin: 22px auto;
-  }
-  .question-block p {
+  h1.title {
     font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.3rem, 3vw, 1.55rem);
-    line-height: 1.35;
-    color: var(--oxblood);
-    margin: 0;
-    text-wrap: balance;
-  }
-
-  /* ── Host paragraphs (inline within letter flow) ─────────────── */
-  .host-intro {
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--ink-55);
-    margin: 8px 0 14px;
-  }
-  .host-para { margin-bottom: 18px !important; }
-  .host-name-lead {
-    font-family: var(--serif);
+    font-size: clamp(2.1rem, 5.4vw, 3.2rem);
     font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    color: var(--oxblood);
-    font-feature-settings: "smcp" 1;
-  }
-
-  /* ── Inline Schleip mention ──────────────────────────────────── */
-  .schleip {
-    margin: 32px auto;
-    padding: 22px 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    text-align: center;
-  }
-  .schleip-intro {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 14.5px;
-    line-height: 1.55;
-    color: var(--ink-55);
-    margin: 0 auto 12px;
-    max-width: 460px;
-  }
-  .schleip-quote {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.15rem, 2.6vw, 1.35rem);
-    line-height: 1.4;
-    color: var(--ink);
-    margin: 0 auto;
-    max-width: 480px;
+    line-height: 1.06;
+    color: var(--ink-deep);
+    margin-bottom: 20px;
+    letter-spacing: -0.018em;
     text-wrap: balance;
   }
-
-  /* ── Practical block ─────────────────────────────────────────── */
-  .practical-intro {
-    font-family: var(--serif);
+  h1.title em {
     font-style: italic;
-    color: var(--ink-55);
-    margin: 32px 0 14px;
-  }
-  dl.practical {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 10px 28px;
-    margin-bottom: 28px;
-  }
-  dl.practical dt {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14.5px;
-    color: var(--ink-55);
-    letter-spacing: 0.3px;
-  }
-  dl.practical dd {
-    font-family: var(--serif);
+    color: var(--oxblood);
     font-weight: 400;
-    font-size: 16px;
-    color: var(--ink);
-    line-height: 1.55;
   }
-
-  /* ── Valediction + Signature + RSVP ──────────────────────────── */
-  .valediction {
-    margin-top: 48px;
-    text-align: center;
-  }
-  .valediction-line {
-    font-family: var(--serif);
+  p.lede {
     font-size: 17px;
     color: var(--ink);
-    margin-bottom: 8px;
+    line-height: 1.65;
+    max-width: 560px;
+    margin: 0 auto;
+    text-wrap: balance;
   }
-  .signature {
-    font-family: var(--serif);
+  p.lede.muted {
+    color: var(--ink-55);
     font-style: italic;
-    font-size: 16px;
-    color: var(--oxblood);
-    margin-bottom: 36px;
+    margin-top: 14px;
+    font-size: 15.5px;
   }
-  a.rsvp-link {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: var(--oxblood);
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    transition: color 0.18s ease, transform 0.2s ease;
+  .scarcity-pill {
     display: inline-block;
+    margin: 32px auto 0;
+    padding: 9px 22px;
+    border: 1px solid var(--oxblood);
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: var(--oxblood);
   }
-  a.rsvp-link:hover { color: var(--ink); transform: translateY(-1px); }
-  p.rsvp-note {
+
+  /* Hosts */
+  .hosts { max-width: 720px; margin: 0 auto; padding: 40px 24px 8px; }
+  .hosts .h-label {
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: var(--ink-55);
+    margin-bottom: 18px;
+  }
+  .hosts ul { list-style: none; display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 560px; margin: 0 auto; }
+  .hosts li {
+    text-align: center;
+  }
+  .hosts .h-name {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink-deep);
+    margin-bottom: 2px;
+    letter-spacing: -0.005em;
+  }
+  .hosts .h-meta {
     font-family: var(--serif);
     font-style: italic;
     font-size: 13.5px;
     color: var(--ink-55);
-    margin-top: 18px;
+    line-height: 1.4;
   }
 
-  /* ── Footer (Colophon) ───────────────────────────────────────── */
+  /* Sections — chapter-numbered */
+  body { counter-reset: chapter; }
+  .section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    counter-increment: chapter;
+    position: relative;
+  }
+  .section + .section { padding-top: 8px; }
+  .section + .section::before {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--rule);
+    margin: 0 auto 40px;
+  }
+  .section h2 {
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--ink-deep);
+    line-height: 1.22;
+    margin-bottom: 16px;
+    letter-spacing: -0.008em;
+  }
+  .section .eyebrow {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 14px;
+  }
+  .section .eyebrow::before {
+    content: counter(chapter, decimal-leading-zero);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--ink-55);
+    text-transform: none;
+  }
+  .section p {
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 14px;
+    text-wrap: balance;
+  }
+  .section p:last-child { margin-bottom: 0; }
+
+  /* Pull-question */
+  .pull-question {
+    border-left: 2px solid var(--oxblood);
+    background: rgba(124,47,28,0.05);
+    padding: 22px 26px;
+    border-radius: 0 8px 8px 0;
+    margin: 8px 0 18px;
+  }
+  .pull-question p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: var(--ink-deep);
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* Phase timeline */
+  ol.phase-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  ol.phase-timeline .phase-step {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    column-gap: 16px;
+    row-gap: 2px;
+    align-items: baseline;
+    padding: 14px 16px;
+    background: rgba(245,240,232,0.6);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+  }
+  ol.phase-timeline .phase-marker {
+    grid-row: 1 / span 2;
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: var(--oxblood);
+    color: var(--paper);
+    font-family: var(--serif);
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  ol.phase-timeline .phase-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: var(--oxblood);
+  }
+  ol.phase-timeline .phase-meta {
+    font-family: var(--serif);
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  @media (min-width: 640px) {
+    ol.phase-timeline { grid-template-columns: 1fr 1fr; gap: 14px; }
+  }
+
+  /* Practical */
+  dl.practical {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 10px 24px;
+    margin: 14px 0 4px;
+    font-size: 15px;
+  }
+  dl.practical dt {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--ink-55);
+    padding-top: 2px;
+  }
+  dl.practical dd {
+    font-family: var(--serif);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  /* Schleip testimonial */
+  .testimonial {
+    max-width: 720px;
+    margin: 16px auto 0;
+    padding: 32px 24px 8px;
+    text-align: center;
+  }
+  .testimonial blockquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.45;
+    color: var(--ink);
+    max-width: 520px;
+    margin: 0 auto 8px;
+    text-wrap: balance;
+  }
+  .testimonial cite {
+    font-style: normal;
+    font-family: var(--sans);
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    color: var(--ink-55);
+  }
+
+  /* RSVP */
+  .rsvp {
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: 40px 24px 56px;
+    text-align: center;
+  }
+  .rsvp p.rsvp-intro {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink);
+    margin-bottom: 18px;
+    text-wrap: balance;
+  }
+  .rsvp .signature {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15.5px;
+    color: var(--oxblood);
+    margin-bottom: 28px;
+  }
+  a.rsvp-btn {
+    display: inline-block;
+    background: var(--oxblood);
+    color: var(--paper);
+    font-family: var(--sans);
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  a.rsvp-btn:hover { background: var(--ink-deep); transform: translateY(-1px); }
+  .rsvp-note {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-55);
+    margin-top: 16px;
+  }
+
+  /* Footer */
   footer.colophon {
     text-align: center;
-    padding: 60px 28px 56px;
+    padding: 32px 24px 48px;
     font-family: var(--serif);
     font-style: italic;
     font-size: 12.5px;
-    line-height: 1.7;
     color: var(--ink-55);
+    border-top: 1px solid var(--rule);
+    margin-top: 16px;
   }
-  footer.colophon .ornament-glyph {
-    display: block;
-    color: var(--oxblood);
-    font-size: 13px;
-    font-style: normal;
-    margin-bottom: 18px;
-  }
-  footer.colophon a {
-    color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 0.5px;
-  }
-  footer.colophon a:hover { color: var(--ink); }
+  footer.colophon a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 0.5px; }
 
-  /* ── Responsive ──────────────────────────────────────────────── */
+  /* Responsive */
   @media (max-width: 540px) {
-    body { font-size: 16.5px; }
-    .letter { padding: 36px 22px 0; }
-    nav.top { padding: 18px 22px 0; }
-    .topline { margin-bottom: 36px; font-size: 10px; letter-spacing: 2.8px; }
-    .salutation-line { font-size: 1.25rem; }
-    .dateline { margin: 14px 0 36px; }
-    .letter-body p { font-size: 16.5px; line-height: 1.75; }
-    .letter-body p.opening::first-letter { font-size: 3.4rem; padding: 4px 10px 0 0; }
-    .question-block p { font-size: 1.2rem; }
-    .schleip-quote { font-size: 1.1rem; }
-    dl.practical {
-      grid-template-columns: 90px 1fr;
-      gap: 8px 18px;
-    }
-    dl.practical dt { font-size: 13.5px; }
-    dl.practical dd { font-size: 14.5px; }
-    a.rsvp-link { font-size: 1.1rem; }
+    body { font-size: 16px; }
+    header.masthead { padding: 32px 22px 12px; }
+    .section { padding: 36px 22px; }
+    .section + .section::before { margin-bottom: 28px; }
+    dl.practical { grid-template-columns: 80px 1fr; gap: 8px 18px; }
   }
 </style>
 </head>
 <body>
 
 <nav class="top">
-  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'berlin_15062026' });">←  Salon AI</a>
+  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'berlin_15062026' });">← Salon AI</a>
 </nav>
 
-<div class="letter">
+<header class="masthead">
+  <p class="dateline">Salon AI · Berlin · 15. Juni 2026</p>
+  <h1 class="title">Was kannst du <em>nicht delegieren?</em></h1>
+  <p class="lede">
+    Eine kleine Runde am Tisch. Du baust deinen eigenen KI-Assistenten. Dann fragen wir, was an deinem Urteil unverhandelbar ist.
+  </p>
+  <p class="lede muted">
+    Für Markenmenschen, die wissen, dass KI alles kann — und trotzdem entscheiden müssen, was bleibt.
+  </p>
+  <span class="scarcity-pill">Privater Salon · Kleine Runde · Nur auf Einladung</span>
+</header>
 
-  <p class="topline">Brief · Berlin · 15. Juni 2026</p>
+<section class="hosts">
+  <p class="h-label">Es laden ein</p>
+  <ul>
+    <li>
+      <p class="h-name">Alexandra Freifrau von Rehlingen</p>
+      <p class="h-meta">Vier Jahrzehnte Sprache des europäischen Luxus — Armani, Krug, Montblanc, Ferragamo, royale Protokolle.</p>
+    </li>
+    <li>
+      <p class="h-name">H. Placeholder</p>
+      <p class="h-meta">[Position und Haus folgen mit Bestätigung]</p>
+    </li>
+    <li>
+      <p class="h-name">Franziska Wittleder</p>
+      <p class="h-meta">Hat KI-Systeme bei Amazon, Writer und SoundCloud gebaut. Bringt das Werkzeug.</p>
+    </li>
+  </ul>
+</section>
 
-  <div class="salutation">
-    <p class="salutation-line">An den <em>geneigten Gast,</em><br />mit herzlichem Gruß.</p>
+<div class="section">
+  <p class="eyebrow">Die Frage des Abends</p>
+  <div class="pull-question">
+    <p>Wie bringst du deiner KI Geschmack bei — und was bleibt allein bei dir?</p>
   </div>
-
-  <p class="dateline">Berlin, im Frühjahr 2026 — für den Abend des 15. Juni.</p>
-
-  <div class="letter-body">
-
-    <p class="opening">
-      Es gibt Zeiten — und es scheint, wir leben in einer solchen — in denen das Schreiben, das Bilden, das Empfehlen aus den Händen der Menschen in die der Maschinen gleitet. Was bisher Mühe und Kunst kostete, geschieht heute beiläufig: die Bilder, die Worte, die Vorschläge fließen in einem Strom, der nicht versiegen will.
-    </p>
-
-    <p>
-      Was uns aber nicht im Überfluss zuteil wird, ist das Urteil. Jene Entscheidung, die die Alten <em>iudicium</em> nannten — die Wahl, dass etwas gut sei, dass es zu bleiben verdiene, dass es einen Platz unter den Dingen, die wirklich zählen, beanspruchen darf.
-    </p>
-
-    <p>
-      Wer dieses Urteil trägt, und wie es entsteht, ist die wahre Frage unserer Tage.
-    </p>
-
-    <p>
-      Aus diesem Grund laden wir Sie zu einem Abend ein.
-    </p>
-
-    <p>
-      Es soll, in der Art der antiken Gastmähler, ein <em>convivium</em> werden — eine kleine Runde an einem Tisch, mit Wein, mit Speise, mit Gespräch. Doch wir werden mehr tun als reden. In zwei Stunden bauen wir gemeinsam, Schritt für Schritt, Ihren eigenen KI-Assistenten. Zugeschnitten auf Ihre Arbeit: für Ihre Marke, Ihre Kommunikation, Ihre Entscheidungen. Sie werden nicht zuhören. Sie werden ein Werkzeug in Händen halten, das nach diesem Abend weiter bei Ihnen bleibt.
-    </p>
-
-    <p>
-      Anschließend, wenn jeder sein Werkzeug hat, richten wir die Assistenten am Tisch zusammen auf eine Frage. Es ist jene Frage, die uns — die wir mit Marken, mit Sprache, mit Kultur befasst sind — in dieser Zeit am dringlichsten erscheint:
-    </p>
-
-    <div class="question-block">
-      <p>Was bleibt wichtig an Taste —<br />im Zeitalter der KI?</p>
-    </div>
-
-    <p>
-      Was wir wünschen, ist nicht der Vortrag, nicht die Inszenierung, nicht die Bühne. Was wir wünschen, ist Ihre Gegenwart und Ihr Urteil. Beides ist in unseren Tagen selten geworden. Beides ist deshalb umso kostbarer.
-    </p>
-
-    <p class="host-intro">Es laden Sie ein:</p>
-
-    <p class="host-para">
-      <span class="host-name-lead">Alexandra Freifrau von Rehlingen,</span> Gründerin des Hauses Schoeller &amp; von Rehlingen, die seit vier Jahrzehnten die Sprache und die Räume des europäischen Luxus mitprägt — Armani, Krug, Montblanc, Ferragamo, Vivienne Westwood, royale Protokolle.
-    </p>
-
-    <p class="host-para">
-      <span class="host-name-lead">H. Placeholder,</span> [Position und Haus folgen mit Bestätigung].
-    </p>
-
-    <p class="host-para">
-      <span class="host-name-lead">Franziska Wittleder,</span> die selbst programmiert, Engineering-Teams geführt und KI-Systeme bei Amazon, Writer und SoundCloud gebaut hat. An diesem Abend bringt sie das Werkzeug.
-    </p>
-
-    <div class="schleip">
-      <p class="schleip-intro">Sie sind nicht der erste Salon dieser Art. Ein Gast unseres ersten Abends in München, Prof. Dr. Robert Schleip — Pionier der Faszienforschung —, schrieb uns danach:</p>
-      <p class="schleip-quote">„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</p>
-    </div>
-
-    <p class="practical-intro">Im Praktischen:</p>
-
-    <dl class="practical">
-      <dt>Datum</dt>
-      <dd>Montag, 15. Juni 2026 · Abend</dd>
-      <dt>Ort</dt>
-      <dd>Berlin · Adresse mit Bestätigung</dd>
-      <dt>Form</dt>
-      <dd>Privates Dinner · kleine Runde</dd>
-      <dt>Küche</dt>
-      <dd>Modern · Wein und Speise inklusive</dd>
-      <dt>Mitbringen</dt>
-      <dd>Einen Laptop. Werkzeuge vor Ort.</dd>
-      <dt>Stil</dt>
-      <dd>Keine Präsentationen. Keine Folien. Keine Bühne. Keine Vorkenntnisse erforderlich.</dd>
-    </dl>
-
-  </div>
-
-  <div class="valediction">
-    <p class="valediction-line">Eine Antwort auf diesen Brief genügt.<br />Wir freuen uns auf Sie.</p>
-    <p class="signature">— Alexandra, H. Placeholder, Franziska</p>
-    <a class="rsvp-link"
-       href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Berlin%20%C2%B7%2015.%20Juni%202026%20%C2%B7%20RSVP&body=Liebe%20Franziska%2C%0A%0Aich%20nehme%20die%20Einladung%20zu%20Salon%20AI%20Berlin%20am%2015.%20Juni%202026%20gerne%20an.%0A%0AName%3A%0AE-Mail%3A%0AHaus%20%2F%20Zugeh%C3%B6rigkeit%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
-       onclick="gtag('event', 'rsvp_click', { 'event_name': 'berlin_15062026' });">
-      Antworten →
-    </a>
-    <p class="rsvp-note">Weitere Details nach Bestätigung.</p>
-  </div>
-
+  <p>
+    Die Sprache, die Bilder, die Vorschläge — alles fließt heute beiläufig aus den Maschinen. Was nicht fließt: das Urteil, dass etwas <em>gut</em> ist. Dass es zu bleiben verdient. Diese Wahl ist die wahre Knappheit unserer Zeit.
+  </p>
 </div>
 
+<div class="section">
+  <p class="eyebrow">Wie der Abend funktioniert</p>
+  <h2>Zwei Bewegungen, ein Tisch.</h2>
+  <ol class="phase-timeline" aria-label="Ablauf in zwei Phasen">
+    <li class="phase-step">
+      <span class="phase-marker">01</span>
+      <span class="phase-label">Bauen</span>
+      <span class="phase-meta">Jeder Gast baut den eigenen KI-Assistenten — passgenau zur eigenen Arbeit.</span>
+    </li>
+    <li class="phase-step">
+      <span class="phase-marker">02</span>
+      <span class="phase-label">Anwenden</span>
+      <span class="phase-meta">Wir richten die Assistenten am Tisch auf die Frage des Abends.</span>
+    </li>
+  </ol>
+</div>
+
+<div class="section">
+  <p class="eyebrow">Im Praktischen</p>
+  <dl class="practical">
+    <dt>Datum</dt>
+    <dd>Montag, 15. Juni 2026 · Abend</dd>
+    <dt>Ort</dt>
+    <dd>Berlin · Adresse mit Bestätigung</dd>
+    <dt>Form</dt>
+    <dd>Privates Dinner · kleine Runde · Wein und Speise inklusive</dd>
+    <dt>Bring</dt>
+    <dd>Einen Laptop. Mehr nicht — keine Vorkenntnisse nötig.</dd>
+    <dt>Stil</dt>
+    <dd>Keine Bühne, keine Folien, kein Vortrag.</dd>
+  </dl>
+</div>
+
+<div class="testimonial">
+  <blockquote>„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</blockquote>
+  <cite>Prof. Dr. Robert Schleip · Gast des ersten Salons in München</cite>
+</div>
+
+<section class="rsvp">
+  <p class="rsvp-intro">Eine Antwort auf diese Einladung genügt.<br>Wir freuen uns auf Sie.</p>
+  <p class="signature">— Alexandra, H. Placeholder, Franziska</p>
+  <a class="rsvp-btn"
+     href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20Berlin%20%C2%B7%2015.%20Juni%202026%20%C2%B7%20RSVP&body=Liebe%20Franziska%2C%0A%0Aich%20nehme%20die%20Einladung%20zu%20Salon%20AI%20Berlin%20am%2015.%20Juni%202026%20gerne%20an.%0A%0AName%3A%0AE-Mail%3A%0AHaus%20%2F%20Zugeh%C3%B6rigkeit%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
+     onclick="gtag('event', 'rsvp_click', { 'event_name': 'berlin_15062026' });">
+    Antworten →
+  </a>
+  <p class="rsvp-note">Weitere Details mit der Bestätigung.</p>
+</section>
+
 <footer class="colophon">
-  <span class="ornament-glyph" aria-hidden="true">◊</span>
-  Salon AI · Berlin · Privater Brief auf <a href="/">salon-ai.eu</a>.<br />
-  By Invitation Only.
+  Salon AI · Berlin · Privater Brief auf <a href="/">salon-ai.eu</a><br>
+  By Invitation Only
 </footer>
 
 </body>
