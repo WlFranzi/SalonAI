@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Salon AI Dinner · 28. Mai 2026 · München (Flyer)</title>
+<title>Salon AI Dinner · 28. Mai 2026 · München (Flyer · Print 150×212mm)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,27 +22,30 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: #E5E7EB; font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); }
 
-  /* A5 portrait */
+  /* PRINT SPEC: Datenformat 150 × 212 mm (mit 1mm Bleed pro Seite)
+     Endformat:    148 × 210 mm (nach Beschnitt = A5)
+     Sicherheitsabstand: ca. 5mm vom Endformat-Rand */
   .flyer {
-    width: 148mm;
-    height: 210mm;
+    width: 150mm;
+    height: 212mm;
     margin: 24px auto;
     background: var(--paper);
     color: var(--navy);
     box-shadow: 0 10px 36px rgba(15,30,51,0.18);
     overflow: hidden;
-    padding: 12mm 12mm;
+    /* 1mm bleed + 5mm safe area = 6mm padding minimum */
+    padding: 13mm 13mm;
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
-  /* Top tag — brand + date+place chip */
+  /* Top tag */
   .top-tag {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 14mm;
+    margin-bottom: 12mm;
   }
   .brand {
     font-family: 'Playfair Display', serif;
@@ -64,17 +67,17 @@
     color: var(--accent);
   }
 
-  /* HERO — the scan-stopper */
+  /* HERO — scan-stopper */
   .hero {
     display: flex;
     flex-direction: column;
-    gap: 6mm;
+    gap: 5mm;
   }
   .hero-line {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 38pt;
+    font-size: 36pt;
     line-height: 0.96;
     color: var(--navy-deep);
     letter-spacing: -0.02em;
@@ -85,18 +88,41 @@
   }
   .hero-sub {
     font-family: 'Playfair Display', serif;
-    font-size: 13.5pt;
+    font-size: 12.5pt;
     line-height: 1.32;
     color: var(--navy);
     font-style: italic;
-    margin-top: 2mm;
     text-wrap: balance;
   }
 
-  /* Big date — readable from a few meters */
+  /* Schleip quote — small social-proof block */
+  .testimonial {
+    margin-top: 7mm;
+    padding-top: 5mm;
+    border-top: 1px solid var(--rule);
+  }
+  .testimonial blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: var(--navy);
+    text-wrap: balance;
+    margin-bottom: 2mm;
+  }
+  .testimonial cite {
+    font-style: normal;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    color: var(--sky-deep);
+  }
+
+  /* Big date */
   .big-date {
     margin-top: auto;
-    padding-top: 10mm;
+    padding-top: 8mm;
     border-top: 1px solid var(--rule);
     display: flex;
     align-items: baseline;
@@ -110,7 +136,7 @@
   }
   .big-date .day {
     font-family: 'Playfair Display', serif;
-    font-size: 48pt;
+    font-size: 44pt;
     font-weight: 900;
     line-height: 1;
     color: var(--accent);
@@ -123,7 +149,7 @@
   }
   .big-date .month {
     font-family: 'Playfair Display', serif;
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: 700;
     line-height: 1;
     color: var(--navy-deep);
@@ -145,11 +171,11 @@
     align-self: flex-end;
   }
 
-  /* Footer — QR + scan prompt + price */
+  /* Footer */
   .footer-row {
-    margin-top: 8mm;
+    margin-top: 7mm;
     display: grid;
-    grid-template-columns: 1fr 32mm;
+    grid-template-columns: 1fr 30mm;
     gap: 6mm;
     align-items: end;
   }
@@ -183,8 +209,8 @@
     margin-top: 1.5mm;
   }
   .qr {
-    width: 32mm;
-    height: 32mm;
+    width: 30mm;
+    height: 30mm;
     border: 1px solid var(--rule);
     border-radius: 1.5mm;
     background: #fff;
@@ -192,8 +218,8 @@
   }
   .qr img { display: block; width: 100%; height: 100%; }
 
-  /* Print — A5, color-faithful */
-  @page { size: A5 portrait; margin: 0; }
+  /* Print — Datenformat 150×212 mm mit 1mm Bleed */
+  @page { size: 150mm 212mm; margin: 0; }
   @media print {
     html, body {
       background: #fff;
@@ -204,8 +230,8 @@
       color-adjust: exact;
     }
     .flyer {
-      width: 148mm;
-      height: 210mm;
+      width: 150mm;
+      height: 212mm;
       margin: 0;
       box-shadow: none;
       page-break-after: avoid;
@@ -243,11 +269,12 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 11.5px;
     line-height: 1.5;
-    max-width: 240px;
+    max-width: 260px;
     box-shadow: 0 6px 18px rgba(15,30,51,0.12);
     letter-spacing: 0.1px;
   }
   .print-hint strong { color: var(--accent); }
+  .print-hint .small { font-size: 10.5px; color: var(--muted); display: block; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -260,7 +287,12 @@
 
   <div class="hero">
     <p class="hero-line">Tischgespräch <span class="accent">mit KI.</span></p>
-    <p class="hero-sub">Bau deinen eigenen KI-Assistenten. Bei Dinner &amp; Drinks.<br>Mehr Erlebnis als Vortrag. Keine Vorkenntnisse nötig.</p>
+    <p class="hero-sub">Bau deinen eigenen KI-Assistenten. Bei Dinner &amp; Drinks. Mehr Erlebnis als Vortrag — keine Vorkenntnisse nötig.</p>
+  </div>
+
+  <div class="testimonial">
+    <blockquote>„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</blockquote>
+    <cite>Prof. Dr. Robert Schleip</cite>
   </div>
 
   <div class="big-date">
@@ -286,7 +318,10 @@
   </div>
 </div>
 
-<div class="print-hint">Druck-Tipp: <strong>A5 Hochformat</strong> · Ränder „Keine" oder „Minimum" · Hintergrundgrafiken aktivieren</div>
+<div class="print-hint">
+  Druck-Tipp: <strong>Datenformat 150×212 mm</strong> · 300g · 4/0
+  <span class="small">Beim Browser-Druck als PDF: „Papierformat: Benutzerdefiniert 150×212 mm", Ränder „Keine", Hintergrundgrafiken AN.</span>
+</div>
 <button class="print-controls" onclick="window.print()">Drucken / Print →</button>
 
 </body>
