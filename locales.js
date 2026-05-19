@@ -24,7 +24,7 @@ window.LOCALES = {
     faq_a_thread: "In March the question was: \"What does Europe look like in 2041?\" — that became the <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> vision website. In May the question is more concrete and action-oriented: \"Which AI application could only Europeans build?\" — and the result isn't a vision, it's a built agent. Each salon has a different guiding question. That's the through-line.",
     faq_q_thread: "What was the March salon's question — and what's different this time?",
     nav_book_cta: "To the salon · May 28",
-    invite_banner: "🔔 <strong>Last public Salon AI Dinner</strong> — after that: bring your own group",
+    invite_banner: "🔔 <strong>Salon AI Dinner</strong> — after that: bring your own group",
     invite_eyebrow: "You're invited",
     invite_buy: "Buy ticket · €78 →",
     card_for_who: "For whom",
@@ -46,7 +46,7 @@ window.LOCALES = {
     usecases_eyebrow: "What your agent could automate",
     usecases_h1: "AI use cases",
     usecases_intro: "Concrete scenarios from the everyday lives of board members, parents, PR teams, family offices, EU citizens — from politics to creatives to finance. Swipe through or click a category to see how an AI assistant saves you hours.",
-    announcement_html: "🔔 <em>1 evening · Your AI assistant · No expertise needed · <strong>May 28 · Final public salon</strong></em> →",
+    announcement_html: "🔔 <em>1 evening · Your AI assistant · No expertise needed · <strong>May 28 · Munich</strong></em> →",
     nav_cta:       "Join a Dinner →",
     hero_cta: "Join the Salon →",
     hero_cta_primary: "To the salon · May 28 →",
@@ -210,7 +210,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -449,7 +449,7 @@ window.LOCALES = {
     faq_a_thread: "Im März war die Frage: „Wie sieht Europa 2041 aus?\" — daraus ist die Vision-Website <a href=\"/march-event/\" style=\"color:var(--sky-deep)\">Europa 2041</a> entstanden. Im Mai ist die Frage konkreter und action-orientierter: „Welche KI-Anwendung könnten nur Europäer bauen?\" — und das Ergebnis ist nicht eine Vision, sondern ein gebauter Agent. Jeder Salon hat eine andere Leitfrage. Das ist der rote Faden.",
     faq_q_thread: "Was war beim März-Salon die Frage — und was ist diesmal anders?",
     nav_book_cta: "Zum Salon · 28.05",
-    invite_banner: "🔔 <strong>Letzter öffentlicher Salon AI Dinner</strong> — danach: bring deine eigene Gruppe",
+    invite_banner: "🔔 <strong>Salon AI Dinner</strong> — danach: bring deine eigene Gruppe",
     invite_eyebrow: "Du bist eingeladen",
     invite_buy: "Ticket kaufen · 78 € →",
     card_for_who: "Für wen",
@@ -471,7 +471,7 @@ window.LOCALES = {
     usecases_eyebrow: "Was dein Agent automatisieren kann",
     usecases_h1: "Anwendungsfälle für KI",
     usecases_intro: "Konkrete Szenarien aus dem Alltag von Vorständen, Eltern, PR-Teams, Family Offices, EU-Bürger:innen — von Politik über Kreative bis Finance. Wisch durch oder klick auf eine Kategorie und sieh, wie ein KI-Assistent dir Stunden spart.",
-    announcement_html: "🔔 <em>1 Abend · Dein KI-Assistent · Keine Vorkenntnisse · <strong>28. Mai · Letzter öffentlicher Salon</strong></em> →",
+    announcement_html: "🔔 <em>1 Abend · Dein KI-Assistent · Keine Vorkenntnisse · <strong>28. Mai · München</strong></em> →",
     nav_cta:       "An einem Dinner teilnehmen →",
     hero_cta: "Zum Salon →",
     hero_cta_primary: "Zum Salon · 28.05 →",
@@ -635,7 +635,7 @@ window.LOCALES = {
     march_q_label: "Die Frage des Abends",
     march_q_text: "Wie sieht Europa im Jahr 2041 aus?",
     past_to_next_intro: "Die nächste Frage wird im Mai gestellt:",
-    past_to_next_cta: "28. Mai in München — letzter öffentlicher Salon →",
+    past_to_next_cta: "28. Mai in München →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · München · März 2026",
@@ -1074,7 +1074,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1470,7 +1470,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -1866,7 +1866,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2262,7 +2262,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -2658,7 +2658,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3054,7 +3054,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3446,7 +3446,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -3838,7 +3838,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4230,7 +4230,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -4622,7 +4622,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5014,7 +5014,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5406,7 +5406,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -5798,7 +5798,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6190,7 +6190,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6582,7 +6582,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -6974,7 +6974,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7366,7 +7366,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -7758,7 +7758,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8150,7 +8150,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8542,7 +8542,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -8934,7 +8934,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
@@ -9326,7 +9326,7 @@ window.LOCALES = {
     march_q_label: "The question that evening",
     march_q_text: "What does Europe look like in 2041?",
     past_to_next_intro: "The next question gets asked in May:",
-    past_to_next_cta: "May 28 in Munich — the final public salon →",
+    past_to_next_cta: "May 28 in Munich →",
 
     march_nav_back: "← Salon AI",
     march_dateline: "Salon AI · Munich · March 2026",
