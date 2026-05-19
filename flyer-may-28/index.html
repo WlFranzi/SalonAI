@@ -14,7 +14,6 @@
     --navy-deep: #0F1E33;
     --accent: #003399;
     --sky-deep: #6B90AD;
-    --sky-light: #EDF4FA;
     --muted: #6B7280;
     --paper: #FAFAF8;
     --rule: rgba(27,46,74,0.16);
@@ -33,29 +32,19 @@
     box-shadow: 0 10px 36px rgba(15,30,51,0.18);
     position: relative;
     overflow: hidden;
-    padding: 16mm 14mm 14mm;
+    padding: 18mm 16mm;
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
-  /* Decorative accent strip top */
-  .flyer::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 5mm;
-    background: var(--accent);
-  }
-
-  /* Salon AI brand mark */
+  /* Brand mark */
   .brand {
     font-family: 'Playfair Display', serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--navy);
     letter-spacing: 0.4px;
-    margin-bottom: 6mm;
+    margin-bottom: 10mm;
   }
   .brand .eu {
     color: var(--sky-deep);
@@ -63,7 +52,7 @@
     font-style: italic;
   }
 
-  /* Eyebrow — "Du bist eingeladen" */
+  /* Eyebrow */
   .eyebrow {
     font-size: 10px;
     text-transform: uppercase;
@@ -73,160 +62,91 @@
     margin-bottom: 4mm;
   }
 
-  /* Big date block */
-  .date-block {
-    display: flex;
-    align-items: baseline;
-    gap: 6mm;
+  /* Title — single H1 carrying everything */
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26pt;
+    font-weight: 700;
+    line-height: 1.08;
+    color: var(--navy-deep);
+    letter-spacing: -0.018em;
     margin-bottom: 4mm;
   }
-  .date-day {
-    font-family: 'Playfair Display', serif;
-    font-size: 72pt;
-    font-weight: 700;
-    line-height: 0.85;
-    color: var(--navy-deep);
-    letter-spacing: -0.04em;
+
+  /* Date + place line */
+  .when-where {
+    font-size: 11pt;
+    color: var(--navy);
+    line-height: 1.5;
+    margin-bottom: 10mm;
   }
-  .date-meta {
+  .when-where strong {
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* Three spiky lines — the conceptual hook */
+  .spiky {
+    margin-bottom: auto;
+  }
+  .spiky p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16pt;
+    line-height: 1.35;
+    color: var(--navy-deep);
+    letter-spacing: -0.008em;
+    margin-bottom: 4mm;
+  }
+  .spiky p:last-child {
+    color: var(--accent);
+    margin-bottom: 0;
+  }
+
+  /* Footer — practical + CTA */
+  .footer-block {
+    padding-top: 6mm;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 26mm;
+    gap: 6mm;
+    align-items: end;
+  }
+  .footer-info {
     display: flex;
     flex-direction: column;
     gap: 2mm;
   }
-  .date-month {
-    font-family: 'Playfair Display', serif;
-    font-size: 22pt;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--navy);
-    line-height: 1;
-    letter-spacing: -0.01em;
-  }
-  .date-year {
+  .footer-info .meta {
     font-size: 10pt;
-    color: var(--muted);
-    letter-spacing: 1.4px;
-  }
-  .date-weekday {
-    font-size: 9.5pt;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 2.2px;
-    font-weight: 700;
-  }
-
-  /* Title */
-  .title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22pt;
-    font-weight: 700;
-    line-height: 1.12;
-    color: var(--navy-deep);
-    letter-spacing: -0.014em;
-    margin-bottom: 3mm;
-  }
-
-  /* Subtitle — what you DO + how the evening FEELS */
-  .subtitle {
-    font-size: 10.5pt;
+    color: var(--navy);
     line-height: 1.5;
-    color: var(--navy);
-    margin-bottom: 5mm;
-    text-wrap: balance;
   }
-  .subtitle strong {
-    color: var(--accent);
-    font-weight: 700;
-  }
-
-  /* Pull question — the conceptual hook */
-  .question {
-    border-left: 2px solid var(--accent);
-    padding: 3mm 4mm;
-    background: var(--sky-light);
-    margin-bottom: 6mm;
-    border-radius: 0 2mm 2mm 0;
-  }
-  .question p {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 12pt;
-    line-height: 1.35;
-    color: var(--navy-deep);
-  }
-
-  /* Practical info */
-  .info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5mm;
-    margin-bottom: 6mm;
-  }
-  .info-row {
-    display: grid;
-    grid-template-columns: 22mm 1fr;
-    gap: 4mm;
-    font-size: 10pt;
-    line-height: 1.4;
-  }
-  .info-row dt {
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    font-size: 8.5pt;
-    padding-top: 1mm;
-  }
-  .info-row dd {
-    color: var(--navy);
-  }
-  .info-row dd .price {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 11.5pt;
-    color: var(--navy-deep);
-  }
-
-  /* Conversion CTA + QR */
-  .cta-block {
-    margin-top: auto;
-    padding-top: 5mm;
-    border-top: 1px solid var(--rule);
-    display: grid;
-    grid-template-columns: 1fr 28mm;
-    gap: 6mm;
-    align-items: center;
-  }
-  .cta-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5mm;
-  }
-  .cta-text strong {
+  .footer-info .price {
     font-family: 'Playfair Display', serif;
     font-size: 13pt;
     font-weight: 700;
     color: var(--navy-deep);
     letter-spacing: -0.008em;
-    line-height: 1.2;
+    margin-top: 1mm;
   }
-  .cta-text .scan {
-    font-size: 9pt;
+  .footer-info .price em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10pt;
     color: var(--muted);
-    letter-spacing: 0.3px;
-    line-height: 1.4;
+    margin-left: 3mm;
   }
-  .cta-text .url {
+  .footer-info .url {
     font-size: 9pt;
     color: var(--accent);
     font-weight: 600;
-    letter-spacing: 0.2px;
-    margin-top: 1mm;
+    letter-spacing: 0.3px;
+    margin-top: 3mm;
   }
   .qr {
-    width: 28mm;
-    height: 28mm;
-    display: block;
+    width: 26mm;
+    height: 26mm;
     border: 1px solid var(--rule);
     border-radius: 1mm;
     background: #fff;
@@ -234,26 +154,7 @@
   }
   .qr img { display: block; width: 100%; height: 100%; }
 
-  /* Bottom stats strip */
-  .stats {
-    margin-top: 4mm;
-    padding-top: 3mm;
-    border-top: 1px solid var(--rule);
-    display: flex;
-    justify-content: space-between;
-    gap: 3mm;
-    font-size: 8pt;
-    color: var(--muted);
-    letter-spacing: 0.4px;
-    font-style: italic;
-  }
-  .stats span strong {
-    font-style: normal;
-    font-weight: 700;
-    color: var(--navy);
-  }
-
-  /* Print rules — A5 portrait, no margins, hide screen chrome */
+  /* Print — A5 portrait, no margins */
   @page { size: A5 portrait; margin: 0; }
   @media print {
     html, body { background: #fff; }
@@ -286,53 +187,26 @@
 
   <p class="eyebrow">Du bist eingeladen</p>
 
-  <div class="date-block">
-    <div class="date-day">28</div>
-    <div class="date-meta">
-      <div class="date-month">Mai</div>
-      <div class="date-year">2026</div>
-      <div class="date-weekday">Donnerstag · 18:00</div>
-    </div>
-  </div>
-
   <h1 class="title">Salon AI Dinner — München</h1>
 
-  <p class="subtitle"><strong>Du baust deinen eigenen KI-Assistenten</strong> — in einem Abend, leicht immersiv: Natur verwebt sich mit Tech, von der Tischdeko bis ins Detail.</p>
+  <p class="when-where"><strong>28. Mai 2026</strong> · Donnerstag, 18:00 · Luitpoldblock</p>
 
-  <div class="question">
-    <p>„Welche KI kann nur von Europäer:innen gebaut werden?"</p>
+  <div class="spiky">
+    <p>Ein Tischgespräch mit KI.</p>
+    <p>Du baust deinen eigenen Assistenten.</p>
+    <p>KI muss nicht steril sein.</p>
   </div>
 
-  <dl class="info">
-    <div class="info-row">
-      <dt>Ort</dt>
-      <dd>Luitpoldblock, München · 18:00 Einlass · 18:15 Start</dd>
-    </div>
-    <div class="info-row">
-      <dt>Format</dt>
-      <dd>Modern Middle Eastern Cuisine · Drinks inklusive</dd>
-    </div>
-    <div class="info-row">
-      <dt>Bring</dt>
-      <dd>Laptop. Mehr nicht — keine Vorkenntnisse nötig.</dd>
-    </div>
-    <div class="info-row">
-      <dt>Ticket</dt>
-      <dd><span class="price">78 €</span> · 12 Plätze · letzter öffentlicher Salon</dd>
-    </div>
-  </dl>
-
-  <div class="cta-block">
-    <div class="cta-text">
-      <strong>Sichere deinen Platz.</strong>
-      <span class="scan">QR scannen → direkt zum Ticket</span>
+  <div class="footer-block">
+    <div class="footer-info">
+      <span class="meta">Dinner &amp; Drinks inklusive · keine Vorkenntnisse nötig</span>
+      <span class="price">78 € <em>· 12 Plätze · letzter öffentlicher Salon</em></span>
       <span class="url">salon-ai.eu/#events</span>
     </div>
     <div class="qr">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fsalon-ai.eu%2F%23events&color=1B2E4A&margin=4" alt="QR code to salon-ai.eu/#events" />
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fsalon-ai.eu%2F%23events&color=1B2E4A&margin=4" alt="QR → salon-ai.eu/#events" />
     </div>
   </div>
-
 </div>
 
 <button class="print-controls" onclick="window.print()">Drucken / Print →</button>
