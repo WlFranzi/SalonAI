@@ -78,7 +78,7 @@
     display: flex;
     align-items: baseline;
     gap: 6mm;
-    margin-bottom: 5mm;
+    margin-bottom: 4mm;
   }
   .date-day {
     font-family: 'Playfair Display', serif;
@@ -123,7 +123,20 @@
     line-height: 1.12;
     color: var(--navy-deep);
     letter-spacing: -0.014em;
-    margin-bottom: 6mm;
+    margin-bottom: 3mm;
+  }
+
+  /* Subtitle — what you DO + how the evening FEELS */
+  .subtitle {
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: var(--navy);
+    margin-bottom: 5mm;
+    text-wrap: balance;
+  }
+  .subtitle strong {
+    color: var(--accent);
+    font-weight: 700;
   }
 
   /* Pull question — the conceptual hook */
@@ -284,6 +297,8 @@
 
   <h1 class="title">Salon AI Dinner — München</h1>
 
+  <p class="subtitle"><strong>Du baust deinen eigenen KI-Assistenten</strong> — in einem Abend, leicht immersiv: Natur verwebt sich mit Tech, von der Tischdeko bis ins Detail.</p>
+
   <div class="question">
     <p>„Welche KI kann nur von Europäer:innen gebaut werden?"</p>
   </div>
@@ -318,11 +333,6 @@
     </div>
   </div>
 
-  <div class="stats">
-    <span><strong>1 Abend</strong> · KI-Assistent gebaut</span>
-    <span><strong>0 Vorkenntnisse</strong> nötig</span>
-    <span><strong>Experts</strong> im Raum</span>
-  </div>
 </div>
 
 <button class="print-controls" onclick="window.print()">Drucken / Print →</button>
