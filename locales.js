@@ -90,7 +90,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -515,7 +515,7 @@ window.LOCALES = {
     manifesto_coda: "Alles offline. Echte Menschen, echte Tische. <strong><em>Unsere bisherigen Runden vereinten Entscheider:innen aus Wirtschaft, Agenturen, Medien, Wissenschaft und Politik.</em></strong>",
 
     host_own_label: "Eigener Abend",
-    host_own_h3: "Lade 12 Leute ein. Den Rest übernehmen wir.",
+    host_own_h3: "Lade deine kleine Gruppe ein. Den Rest übernehmen wir.",
     cohost_eyebrow: "Co-host einen Salon",
 
     host_own_sub: "",
@@ -918,7 +918,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -1314,7 +1314,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -1710,7 +1710,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -2106,7 +2106,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -2502,7 +2502,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -2898,7 +2898,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -3290,7 +3290,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -3682,7 +3682,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -4074,7 +4074,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -4466,7 +4466,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -4858,7 +4858,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -5250,7 +5250,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -5642,7 +5642,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -6034,7 +6034,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -6426,7 +6426,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -6818,7 +6818,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -7210,7 +7210,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -7602,7 +7602,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -7994,7 +7994,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -8386,7 +8386,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -8778,7 +8778,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
@@ -9170,7 +9170,7 @@ window.LOCALES = {
     manifesto_coda: "All offline. Real people, real tables. <strong><em>Past rounds have gathered decision-makers from business, agencies, media, academia and politics.</em></strong>",
 
     host_own_label: "Host Your Own Evening",
-    host_own_h3: "Invite 12 people. We take care of the rest.",
+    host_own_h3: "Invite your small group. We take care of the rest.",
     cohost_eyebrow: "Co-host a salon",
 
     host_own_sub: "",
