@@ -22,7 +22,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: #E5E7EB; font-family: 'DM Sans', system-ui, sans-serif; color: var(--navy); }
 
-  /* A5 portrait — 148mm × 210mm */
+  /* A5 portrait */
   .flyer {
     width: 148mm;
     height: 210mm;
@@ -31,36 +31,47 @@
     color: var(--navy);
     box-shadow: 0 10px 36px rgba(15,30,51,0.18);
     overflow: hidden;
-    padding: 24mm 18mm 18mm;
+    padding: 14mm 14mm 12mm;
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
 
-  /* Brand */
+  /* Top row: brand left, eyebrow right */
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8mm;
+  }
   .brand {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     font-weight: 700;
     color: var(--navy);
     letter-spacing: 0.4px;
-    margin-bottom: 24mm;
   }
   .brand .eu {
     color: var(--sky-deep);
     font-weight: 400;
     font-style: italic;
   }
+  .eyebrow {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: var(--accent);
+  }
 
-  /* The 3 spiky lines carry the whole flyer */
+  /* Hero — 3 spiky lines + question */
   .spiky p {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 19pt;
-    line-height: 1.32;
+    font-size: 17pt;
+    line-height: 1.28;
     color: var(--navy-deep);
     letter-spacing: -0.008em;
-    margin-bottom: 6mm;
+    margin-bottom: 3.5mm;
     text-wrap: balance;
   }
   .spiky p:last-child {
@@ -68,45 +79,101 @@
     margin-bottom: 0;
   }
 
-  /* Footer — date, place, QR, price */
-  .footer {
-    margin-top: auto;
-    padding-top: 8mm;
+  .question-block {
+    margin-top: 8mm;
+    padding-top: 5mm;
     border-top: 1px solid var(--rule);
+  }
+  .question-block .q-label {
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--sky-deep);
+    margin-bottom: 2mm;
+  }
+  .question-block .q-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 11.5pt;
+    line-height: 1.35;
+    color: var(--navy);
+    text-wrap: balance;
+  }
+
+  /* Detail grid — when, where, who */
+  .details {
+    margin-top: 7mm;
+    display: grid;
+    grid-template-columns: 18mm 1fr;
+    row-gap: 2.5mm;
+    column-gap: 4mm;
+    font-size: 9pt;
+    line-height: 1.45;
+  }
+  .details dt {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    color: var(--sky-deep);
+    padding-top: 0.5mm;
+  }
+  .details dd {
+    color: var(--navy);
+  }
+  .details dd strong {
+    font-weight: 700;
+  }
+  .details dd .fine {
+    color: var(--muted);
+    font-size: 8.5pt;
+  }
+
+  /* Footer — conversion strip */
+  .footer-block {
+    margin-top: auto;
+    padding-top: 5mm;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 24mm;
+    gap: 5mm;
+    align-items: end;
+  }
+  .footer-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 4mm;
+    gap: 1.5mm;
   }
-  .footer .when {
+  .footer-info .price {
     font-family: 'Playfair Display', serif;
-    font-size: 15pt;
+    font-size: 18pt;
     font-weight: 700;
     color: var(--navy-deep);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.012em;
+    line-height: 1;
   }
-  .footer .where {
-    font-size: 10pt;
+  .footer-info .scarcity {
+    font-size: 9pt;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .footer-info .url {
+    font-size: 9pt;
     color: var(--muted);
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
+    margin-top: 1mm;
   }
   .qr {
-    width: 26mm;
-    height: 26mm;
+    width: 24mm;
+    height: 24mm;
     border: 1px solid var(--rule);
     border-radius: 1mm;
     background: #fff;
     padding: 1mm;
-    margin-top: 2mm;
   }
   .qr img { display: block; width: 100%; height: 100%; }
-  .footer .price {
-    font-size: 9pt;
-    color: var(--accent);
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    margin-top: 1mm;
-  }
 
   /* Print */
   @page { size: A5 portrait; margin: 0; }
@@ -137,7 +204,10 @@
 <body>
 
 <div class="flyer">
-  <p class="brand">Salon <span class="eu">AI</span></p>
+  <div class="top-row">
+    <p class="brand">Salon <span class="eu">AI</span></p>
+    <p class="eyebrow">Du bist eingeladen · 28. Mai 2026</p>
+  </div>
 
   <div class="spiky">
     <p>Ein Tischgespräch mit KI.</p>
@@ -145,13 +215,34 @@
     <p>KI muss nicht steril sein.</p>
   </div>
 
-  <div class="footer">
-    <span class="when">28. Mai 2026 · 18:00</span>
-    <span class="where">Luitpoldblock, München · Dinner inklusive</span>
+  <div class="question-block">
+    <p class="q-label">Die Frage des Abends</p>
+    <p class="q-text">„Welche KI kann nur von Europäer:innen gebaut werden?"</p>
+  </div>
+
+  <dl class="details">
+    <dt>Wann</dt>
+    <dd><strong>Do, 28. Mai · 18:00 – 22:30</strong></dd>
+
+    <dt>Wo</dt>
+    <dd>Luitpoldblock, München</dd>
+
+    <dt>Format</dt>
+    <dd>80% Bauen · 20% Anwenden — <span class="fine">Dinner, Drinks &amp; Setup inklusive</span></dd>
+
+    <dt>Hosts</dt>
+    <dd>Franziska Wittleder <span class="fine">(Amazon, Writer, SoundCloud)</span><br>Creative Direction: Tatjana Mallinckrodt <span class="fine">(Gestalten / teNeues)</span></dd>
+  </dl>
+
+  <div class="footer-block">
+    <div class="footer-info">
+      <span class="price">78 €</span>
+      <span class="scarcity">12 Plätze · letzter öffentlicher Salon</span>
+      <span class="url">salon-ai.eu/#events</span>
+    </div>
     <div class="qr">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fsalon-ai.eu%2F%23events&color=1B2E4A&margin=4" alt="QR → salon-ai.eu/#events" />
     </div>
-    <span class="price">78 € · salon-ai.eu</span>
   </div>
 </div>
 
