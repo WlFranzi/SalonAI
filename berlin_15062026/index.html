@@ -94,6 +94,15 @@
     font-style: italic;
     color: var(--oxblood);
   }
+  p.tagline .tagline-secondary {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.88em;
+    color: var(--ink-55);
+  }
+  p.tagline .tagline-secondary em {
+    color: var(--ink-55);
+  }
   .scarcity-pill {
     display: inline-block;
     margin: 40px auto 0;
@@ -245,6 +254,23 @@
     line-height: 1.7;
     color: var(--ink-70);
   }
+  .phase .variant-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--oxblood);
+    margin-right: 6px;
+  }
+  .phase .phase-open {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-55);
+    margin-top: 14px;
+    line-height: 1.55;
+  }
   @media (min-width: 640px) {
     .phases { grid-template-columns: 1fr 1fr; gap: 40px; }
   }
@@ -364,7 +390,7 @@
 <header class="masthead">
   <p class="dateline">Salon AI · Berlin · 15. Juni 2026</p>
   <h1 class="title">Du hast PR immer neu erfunden. <em>Jetzt mit KI.</em></h1>
-  <p class="tagline">Ein Tischgespräch <em>mit KI.</em></p>
+  <p class="tagline">Ein Tischgespräch <em>mit KI.</em><br><span class="tagline-secondary"><em>Werte bleiben. Werkzeuge ändern sich.</em></span></p>
   <span class="scarcity-pill">Privater Salon · Kuratierte Runde · Nur auf Einladung</span>
 </header>
 
@@ -393,8 +419,9 @@
   <p class="tightlist">Als Earned von Paid abgelöst wurde.</p>
   <p class="tightlist">Als Owned Media zur Disziplin wurde.</p>
   <p class="tightlist">Als Influencer kamen — und gingen.</p>
-  <p class="coda">Jetzt KI. Schneller als jede Welle davor — und mit einem Unterschied: diesmal kannst du das Werkzeug selbst bauen.</p>
-  <p>Die Frage des Abends: <em>Wie wird PR mit KI aussehen — und welchen Agenten brauchst du dafür?</em> Wir diskutieren das nicht abstrakt. Wir bauen ihn.</p>
+  <p class="coda">Und durch jede Welle: dieselbe Frage — was hüten, was loslassen?</p>
+  <p>Jetzt KI. Schneller als jede Welle davor — und mit einem Unterschied: diesmal baust du das Werkzeug selbst.</p>
+  <p>Die Frage des Abends: <em>Wie wird PR mit KI aussehen — und wie hütet KI das, was deine Marke unverwechselbar macht?</em> Wir diskutieren das nicht abstrakt. Wir bauen den Agenten dafür.</p>
   <p class="terms">Private Runde · Kuratierte Gruppe · Keine Bühne</p>
 </div>
 
@@ -410,7 +437,9 @@
     <div class="phase">
       <span class="phase-roman">Phase II</span>
       <p class="phase-title">Anwenden.</p>
-      <p class="phase-body">Wir richten die Agenten gemeinsam auf die Frage, wie PR mit KI aussehen wird — und sehen, was die Runde hervorbringt.</p>
+      <p class="phase-body"><span class="variant-label">Variante a:</span> Wir richten die Agenten gemeinsam auf die Frage, wie PR mit KI aussehen wird — und sehen, was die Runde hervorbringt.</p>
+      <p class="phase-body" style="margin-top: 10px;"><span class="variant-label">Variante b:</span> Wir richten die Agenten auf deine Marke, ihre Stimme, ihre Werte — und sehen, wie KI für sie arbeitet, nicht gegen sie.</p>
+      <p class="phase-open">— mit dir entscheiden wir, welche Richtung der Abend nimmt.</p>
     </div>
   </div>
 </div>
