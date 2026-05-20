@@ -373,19 +373,47 @@
   }
   footer.colophon a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 0.5px; }
 
-  @media (max-width: 540px) {
-    body { font-size: 16px; }
-    header.masthead { padding: 48px 22px 8px; }
+  @media (max-width: 640px) {
+    body { font-size: 16px; line-height: 1.65; }
+    header.masthead { padding: 44px 22px 8px; }
+    p.dateline { font-size: 9.5px; letter-spacing: 2.6px; margin-bottom: 26px; }
+    h1.title { margin-bottom: 22px; line-height: 1.12; }
+    p.tagline { font-size: 1rem; }
+    p.tagline .tagline-secondary { font-size: 0.86em; }
+    .scarcity-pill { font-size: 9.5px; letter-spacing: 2.2px; padding: 7px 16px; margin-top: 32px; }
+    section.hosts { padding: 44px 22px 8px; }
+    .hosts ul { gap: 18px; }
+    .hosts .h-name { font-size: 1.05rem; }
+    .hosts .h-meta { font-size: 13.5px; line-height: 1.5; }
     .section { padding: 40px 22px; }
-    .section + .section::before { margin-bottom: 32px; }
+    .section + .section { padding-top: 8px; }
+    .section + .section::before { margin-bottom: 30px; }
+    .section h2 { font-size: 1.35rem; margin-bottom: 18px; }
+    .section .eyebrow { font-size: 9.5px; letter-spacing: 2.4px; margin-bottom: 14px; }
+    .section p { font-size: 16px; line-height: 1.7; }
+    .section p.terms { font-size: 10px; letter-spacing: 2px; }
+    .phase .phase-roman { font-size: 12px; }
+    .phase .phase-title { font-size: 1.05rem; }
+    .phase .phase-body { font-size: 15px; line-height: 1.65; }
+    .phase .variant-label { font-size: 9.5px; letter-spacing: 1.4px; }
+    .phase .phase-open { font-size: 12.5px; }
+    .testimonial { padding: 32px 22px 6px; }
+    .testimonial blockquote { font-size: 1.05rem; line-height: 1.5; }
+    .testimonial cite { font-size: 9px; letter-spacing: 1.8px; }
+    .rahmen { font-size: 15.5px; line-height: 1.75; }
+    .rsvp { padding: 36px 22px 48px; }
+    .rsvp p.rsvp-intro { font-size: 16px; }
+    .rsvp .signature { font-size: 14.5px; }
+    a.rsvp-btn { padding: 13px 30px; font-size: 13.5px; }
+  }
+  @media (max-width: 380px) {
+    h1.title { letter-spacing: -0.012em; }
+    .scarcity-pill { padding: 6px 14px; font-size: 9px; letter-spacing: 1.8px; }
+    .hosts .h-meta { font-size: 13px; }
   }
 </style>
 </head>
 <body>
-
-<nav class="top">
-  <a class="back" href="/" onclick="gtag('event', 'click_back', { 'origin': 'berlin_15062026' });">← Salon AI</a>
-</nav>
 
 <header class="masthead">
   <p class="dateline">Salon AI · Berlin · 15. Juni 2026</p>
@@ -446,7 +474,7 @@
 
 <div class="testimonial">
   <blockquote>„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</blockquote>
-  <cite>Prof. Dr. Robert Schleip · Gast des ersten Salons in München</cite>
+  <cite>Prof. Dr. Robert Schleip · Pionier der Faszienforschung</cite>
 </div>
 
 <div class="section">
