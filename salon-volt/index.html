@@ -246,6 +246,25 @@
     line-height: 1.7;
     color: var(--ink-70);
   }
+  .phase .variant-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--accent);
+    margin-right: 6px;
+  }
+  .phase .phase-open {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-60, var(--ink-70));
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--rule, rgba(0,0,0,0.12));
+  }
   @media (min-width: 640px) {
     .phases { grid-template-columns: 1fr 1fr; gap: 40px; }
   }
@@ -425,7 +444,10 @@
     <div class="phase">
       <span class="phase-roman">Phase II</span>
       <p class="phase-title">Anwenden.</p>
-      <p class="phase-body">Wir richten die Agenten gemeinsam auf eine echte, laufende EU-Frage — die Damian mitbringt. Was am Ende des Abends auf dem Tisch liegt, geht in die Welt: als Eingabe, als Mail an einen MEP, als geteiltes Toolkit.</p>
+      <p class="phase-body"><span class="variant-label">Variante a:</span> Wir richten die Agenten gemeinsam auf eine echte, laufende EU-Frage, die Damian mitbringt. Was am Ende des Abends auf dem Tisch liegt, geht in die Welt — als Eingabe in eine Konsultation, als Briefing an einen MEP, als geteiltes Toolkit.</p>
+      <p class="phase-body" style="margin-top: 10px;"><span class="variant-label">Variante b:</span> Wir richten die Agenten auf die größere Frage: Wie sieht Demokratie im Zeitalter der KI aus — und was müsste Europa konkret tun, um diese Welt zu bauen, statt sie nur zu kommentieren?</p>
+      <p class="phase-body" style="margin-top: 10px;"><span class="variant-label">Variante c:</span> Wir richten die Agenten auf eine offene Frage: Welche Teile der KI-Infrastruktur muss Europa öffentlich besitzen, um demokratisch handlungsfähig zu bleiben — und welche nicht?</p>
+      <p class="phase-open">— welche Richtung der Abend nimmt, entscheiden wir mit der Runde.</p>
     </div>
   </div>
 </div>
