@@ -2185,19 +2185,51 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
 <!-- ============ II.4 — Drei Bausteine ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">II.4 · Was ein Agent eigentlich ist · 3 Min</p>
-  <h2>Drei Teile,<br><em>mehr nicht.</em></h2>
+  <h2>Drei Teile auf deinem Laptop —<br><em>plus ein Telefonat in die Wolke.</em></h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
-    Ein Agent ist nichts Mystisches. Es ist ein <em>Ordner auf deinem Laptop</em>. Darin liegen drei Sorten Sachen — eine davon (die <em>Anleitung</em>) liest der Agent <em>automatisch</em> bei jedem Start. Die anderen zwei sind Konventionen, die <em>du</em> in der Anleitung festlegst. Alles, was wir noch lernen, dreht sich darum, diese drei Sorten klüger zu nutzen.
+    Ein Agent ist nichts Mystisches. Auf deinem Laptop liegt ein <em>Ordner</em> mit drei Sorten Dateien — eine davon (die <em>Anleitung</em>) liest der Agent <em>automatisch</em> bei jedem Start. Die anderen zwei sind Konventionen, die du in der Anleitung festlegst. Das eigentliche <em>Sprachmodell — Claude —</em> liegt aber gar nicht auf deinem Rechner. Es läuft bei <em>Anthropic in der Cloud</em>. Der Agent ruft an, schickt die drei Sorten mit, bekommt die Antwort zurück. Alles, was wir noch lernen, dreht sich darum, diese drei Sorten klüger zu nutzen — und das Telefonat klar zu führen.
   </p>
 
-  <!-- Master-card visualization: folder with 3 sheets + 2 Beziehungs-Pfeile -->
+  <!-- Master-card visualization: Claude in der Cloud + lokaler Ordner mit 3 Sheets -->
   <div class="master-card" style="margin:2rem auto;max-width:720px">
-    <svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 -130 700 480" xmlns="http://www.w3.org/2000/svg">
+      <!-- CLOUD (oben): Claude bei Anthropic -->
+      <g class="pencil-stroke" stroke-width="1.5" fill="#fcf9f3">
+        <path d="M200,-25 Q160,-30 160,-55 Q155,-90 200,-92 Q210,-115 250,-108 Q275,-125 315,-115 Q345,-130 385,-115 Q425,-130 455,-110 Q495,-118 510,-92 Q555,-92 555,-55 Q558,-30 515,-25 Z"/>
+      </g>
+      <!-- Subtle "neurale" Andeutung im Cloud-Inneren -->
+      <g stroke="#4a3566" stroke-width=".8" fill="none" opacity=".35">
+        <circle cx="245" cy="-78" r="2" fill="#4a3566"/>
+        <circle cx="310" cy="-92" r="2" fill="#4a3566"/>
+        <circle cx="370" cy="-72" r="2" fill="#4a3566"/>
+        <circle cx="430" cy="-90" r="2" fill="#4a3566"/>
+        <circle cx="285" cy="-55" r="2" fill="#4a3566"/>
+        <circle cx="395" cy="-55" r="2" fill="#4a3566"/>
+        <line x1="245" y1="-78" x2="285" y2="-55"/>
+        <line x1="310" y1="-92" x2="285" y2="-55"/>
+        <line x1="310" y1="-92" x2="370" y2="-72"/>
+        <line x1="370" y1="-72" x2="395" y2="-55"/>
+        <line x1="430" y1="-90" x2="395" y2="-55"/>
+        <line x1="285" y1="-55" x2="395" y2="-55"/>
+      </g>
+      <!-- Cloud-Labels -->
+      <text x="357" y="-32" font-family="Cormorant Garamond" font-style="italic" font-size="24" font-weight="600" fill="#1a1410" text-anchor="middle">Claude</text>
+      <text x="357" y="-12" font-family="Caveat" font-size="14" fill="#5c4f43" text-anchor="middle">— Sprachmodell bei Anthropic, läuft in der Cloud —</text>
+
+      <!-- Connection: gestrichelte Linie zwischen Cloud und Ordner — das "Telefonat" -->
+      <g stroke="#a4502e" stroke-width="1.2" fill="none" opacity=".6">
+        <path d="M357,5 L357,55" stroke-dasharray="4,5"/>
+        <!-- Doppelpfeil: Anfrage hoch, Antwort runter -->
+        <path d="M349,18 L357,10 L365,18" stroke-width="1"/>
+        <path d="M349,42 L357,50 L365,42" stroke-width="1"/>
+      </g>
+      <text x="377" y="32" font-family="Caveat" font-size="12" fill="#a4502e" font-style="italic">der Anruf</text>
+
       <!-- Folder outer rectangle -->
       <g class="pencil-stroke" stroke-width="1.5">
         <path d="M30,60 L150,60 L170,80 L670,80 Q672,82 670,84 L670,290 Q672,292 670,294 L30,294 Q28,292 30,290 L30,62 Q28,60 30,60 Z"/>
       </g>
-      <text class="label-hand" x="50" y="78" fill="#3a3633" font-size="16">mein-agent/</text>
+      <text class="label-hand" x="50" y="78" fill="#3a3633" font-size="16">mein-agent/  · auf deinem Laptop</text>
 
       <!-- BEZIEHUNG 1: context → claude.md (großer Bogen über alle Sheets) -->
       <g class="pencil-coral" stroke-width="1.2" opacity=".55" fill="none">
