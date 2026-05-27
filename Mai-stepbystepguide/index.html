@@ -1114,6 +1114,26 @@ strong{font-weight:600}
   </div>
 </section>
 
+<!-- ============ I.1b — Gemeinsam · 2 Min (Maven We-do) ============ -->
+<section class="text-section" style="background:var(--paper-tint);padding:2rem 1.5rem;border-radius:6px;margin:2rem auto;max-width:780px">
+  <p class="eyebrow" style="color:var(--ink-soft)">I.1b · Gemeinsam · 2 Min</p>
+  <h2 style="margin-bottom:1rem">Erst einer von uns —<br><em>dann jeder selbst.</em></h2>
+  <p class="lead" style="border-left:none;padding-left:0;max-width:60ch">
+    Bevor du gleich allein an deinem Laptop tippst, machen wir das Pattern <em>einmal gemeinsam vor allen</em>. Ich tippe hier vorne — ihr ruft rein.
+  </p>
+
+  <div class="prompt-steps" style="margin-top:1.5rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+    <div class="prompt-step">Ruf einen <strong>Beruf</strong> in den Saal, den wir gleich durch den Prompt jagen — am besten einen, der nicht in der Benchmark-Liste steht.</div>
+    <div class="prompt-step">Ich tippe die <strong>drei Kontext-Punkte</strong> (Core Focus · Key Decisions · Bottleneck) live mit eurem Input.</div>
+    <div class="prompt-step">Wir lesen die Antwort <strong>gemeinsam</strong> — wer erkennt, was die KI richtig getroffen hat, wer was nicht?</div>
+  </div>
+
+  <div class="iter-note" style="margin-top:1.5rem">
+    <span class="iter-note__label">★ Warum dieser Zwischenschritt</span>
+    Erst <em>sehen</em>, wie's geht — dann <em>gemeinsam stolpern</em> — dann <em>selbst</em>. Diese Reihenfolge spart 80 % Frust. Dann geht's gleich an deinen Laptop.
+  </div>
+</section>
+
 <!-- ============ I.2 — Copy-Paste-Prompt (mit 4 Role-Examples) ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">I.2 · Übung 1 · 5 Min</p>
@@ -2012,19 +2032,24 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
         <text x="21" y="13" text-anchor="middle" font-size="10" font-weight="700" fill="#a4502e" font-family="ui-sans-serif,system-ui">AUTO</text>
       </g>
 
-      <!-- Notizblock -->
+      <!-- memory/ = folder with multiple notes -->
       <g class="pencil-iris" stroke-width="1.5" transform="translate(270,110)">
-        <path d="M0,0 L150,0 L160,10 L160,160 L0,160 Z"/>
+        <!-- Folder shape with tab -->
+        <path d="M0,12 L52,12 L62,2 L160,2 L160,160 L0,160 Z"/>
       </g>
       <text class="label-serif" x="345" y="135" text-anchor="middle" fill="#4a3566" font-size="13" font-weight="600">memory/</text>
-      <text class="label-hand" x="345" y="155" text-anchor="middle" fill="#4a3566" font-size="15">Notizblock</text>
-      <g class="pencil-iris" stroke-width="1" opacity=".55">
-        <line x1="292" y1="180" x2="408" y2="180" stroke-dasharray="3,3"/>
-        <line x1="292" y1="194" x2="408" y2="194" stroke-dasharray="3,3"/>
-        <line x1="292" y1="208" x2="408" y2="208" stroke-dasharray="3,3"/>
+      <text class="label-hand" x="345" y="155" text-anchor="middle" fill="#4a3566" font-size="15">Notiz-Ordner</text>
+      <!-- Three small file icons inside the folder -->
+      <g class="pencil-iris" stroke-width="1" opacity=".7">
+        <rect x="284" y="172" width="36" height="20" fill="none"/>
+        <rect x="327" y="172" width="36" height="20" fill="none"/>
+        <rect x="370" y="172" width="28" height="20" fill="none"/>
+        <line x1="288" y1="182" x2="316" y2="182" stroke-dasharray="2,2"/>
+        <line x1="331" y1="182" x2="359" y2="182" stroke-dasharray="2,2"/>
+        <line x1="374" y1="182" x2="394" y2="182" stroke-dasharray="2,2"/>
       </g>
-      <text class="label-serif" x="345" y="225" text-anchor="middle" fill="#5c4f43" font-size="11" font-style="italic">was er sich</text>
-      <text class="label-serif" x="345" y="240" text-anchor="middle" fill="#5c4f43" font-size="11" font-style="italic">dauerhaft merken soll</text>
+      <text class="label-serif" x="345" y="218" text-anchor="middle" fill="#5c4f43" font-size="11" font-style="italic">mehrere Dateien — eine pro Sache,</text>
+      <text class="label-serif" x="345" y="232" text-anchor="middle" fill="#5c4f43" font-size="11" font-style="italic">die er sich dauerhaft merkt</text>
 
       <!-- Arbeitstisch -->
       <g class="pencil-coral" stroke-width="1.5" transform="translate(460,110)">
@@ -2163,7 +2188,12 @@ Bau bitte folgendes:
 <section class="atemholen" data-celebrate>
   <canvas class="atemholen__fireworks" aria-hidden="true"></canvas>
   <div class="atemholen__inner">
-    <p class="atemholen__text">Du hast einen Agent.<br><em>Er hat aber keine Ahnung, wer du bist.</em><br>Das müssen wir ändern.</p>
+    <p class="atemholen__text">Du hast einen Agent.<br><em>Er hat aber keine Ahnung, wer du bist.</em></p>
+    <ol style="list-style:none;padding:0;margin:1.5rem auto 0;display:flex;flex-direction:column;gap:.6rem;font-family:var(--serif);font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.45;color:rgba(250,247,241,.85);font-style:italic;text-align:left;max-width:560px">
+      <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:baseline"><span style="font-family:var(--serif);font-style:italic;color:#e89a82;font-weight:600">①</span><span>Er kennt deinen <em style="color:#e89a82;font-weight:500">Schreibstil</em> nicht — jede Mail klingt nach Mittelmaß.</span></li>
+      <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:baseline"><span style="font-family:var(--serif);font-style:italic;color:#e89a82;font-weight:600">②</span><span>Er weiß nicht, welche <em style="color:#e89a82;font-weight:500">Mandanten heikel</em> sind und welche du beim Wort packen kannst.</span></li>
+      <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:baseline"><span style="font-family:var(--serif);font-style:italic;color:#e89a82;font-weight:600">③</span><span>Er kann deine letzten <em style="color:#e89a82;font-weight:500">50 E-Mails</em> nicht lesen — und genau dort liegen seine größten Hebel.</span></li>
+    </ol>
   </div>
 </section>
 
@@ -2291,19 +2321,34 @@ Bau bitte folgendes:
   </div>
 </section>
 
-<!-- ============ III.4 — Übung: Bild-Kontext ============ -->
+<!-- ============ Disclaimer-Box zu III.3 (Karpathy-Korrektiv) ============ -->
+<section class="disclaimer-box">
+  <div class="disclaimer-box__inner">
+    <span class="disclaimer-box__icon">❦</span>
+    <div class="disclaimer-box__text">
+      <p>Schablone und Landkarte sind <em>mentale Bilder</em>. Echte Modelle gewichten Beispiele nach <em>Position im Prompt</em> und <em>Recency</em> — das letzte Beispiel zählt mechanisch oft mehr als das erste. Die Faustregel <em>„wenige präzise Beispiele = enge Treffer"</em> bleibt richtig, ist aber stochastisch, nicht deterministisch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ III.4 — Übung: Bild-Kontext (Pair-Work) ============ -->
 <section class="text-section text-section--wide">
-  <p class="eyebrow">III.4 · Übung · 7 Min</p>
+  <p class="eyebrow">III.4 · Übung zu zweit · 7 Min</p>
   <h2 style="text-align:center">Wirf einen Screenshot<br><em>in deinen Chat.</em></h2>
   <p class="lead" style="text-align:center;border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto">
     Das schnellste Kontext-Manöver der Welt: ein Bildschirmfoto. Mach jetzt ein <em>Screenshot deines Kalenders</em> für die kommende Woche und zieh ihn in dein Browser-Chat-Fenster.
   </p>
 
+  <div class="iter-note" style="background:var(--paper-tint);border-left-color:var(--ink-soft);max-width:680px;margin:1.5rem auto">
+    <span class="iter-note__label" style="color:var(--ink-soft)">→ Diese Übung machst du zu zweit</span>
+    Einer tippt am Laptop, der/die andere liest die KI-Antwort <em>laut vor</em> und sagt nach jedem Punkt: <em>„passt — passt nicht — überraschend"</em>. Nach 4 Min Rollen tauschen, zweiten Kalender durchjagen.
+  </div>
+
   <div class="prompt-steps">
     <div class="prompt-step"><strong>Cmd + Shift + 4</strong> (Mac) bzw. <strong>Win + Shift + S</strong> — Bereich um deinen Kalender ziehen.</div>
     <div class="prompt-step">Screenshot direkt ins <strong>Chat-Fenster</strong> ziehen.</div>
     <div class="prompt-step">Prompt rechts <strong>kopieren</strong> und darunter einfügen.</div>
-    <div class="prompt-step">Enter — schau, wie sie aus einem Bild eine Wochen-Strategie macht.</div>
+    <div class="prompt-step">Enter — <em>einer liest laut</em>, der andere kommentiert.</div>
   </div>
 
   <div class="prompt-card">
@@ -2497,6 +2542,20 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   </div>
 </section>
 
+<!-- ============ IV.1b — Live-Beispiel · 4 Min (Maven We-do) ============ -->
+<section class="text-section text-section--wide" style="background:var(--paper-tint);padding:2.5rem 1.5rem;border-radius:6px;margin:2rem auto;max-width:880px">
+  <p class="eyebrow" style="color:var(--ink-soft)">IV.1b · Live-Beispiel · 4 Min</p>
+  <h2 style="margin-bottom:1rem;text-align:center">Wir machen den Kritiker-Trick einmal —<br><em>vor allen.</em></h2>
+  <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:1.5rem auto;text-align:center">
+    Jemand aus dem Saal gibt mir <em>einen echten Absatz aus seiner Arbeitswoche</em> — eine E-Mail, ein Statement, eine Notiz. Wir jagen ihn live durch den Prompt rechts. Wir lesen die vier Stimmen gemeinsam — wo kollidieren sie, wo heben sie sich auf, wo sagen drei dasselbe?
+  </p>
+
+  <div class="iter-note" style="margin-top:1.5rem">
+    <span class="iter-note__label">★ Worauf wir achten</span>
+    Sind die vier Stimmen wirklich vier? Oder ist es dreimal derselbe Einwand anders verpackt? Daran erkennen wir, ob wir die richtigen Rollen gewählt haben — <em>bevor</em> wir's gleich auf eigene Texte loslassen.
+  </div>
+</section>
+
 <!-- ============ IV.2 — Kritiker-Gremium ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">IV.2 · Übung · 10 Min</p>
@@ -2621,40 +2680,48 @@ Pro Stimme: drei Punkte + ein Satz „Was ich änderen würde". Dann ein gemeins
   <p class="eyebrow">V.2 · Hands-on · 10 Min</p>
   <h2>Den Kritiker-Trick<br><em>fest einbauen.</em></h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
-    Du nimmst den Prompt aus Akt IV und gibst ihm einen <em>Namen</em>. Ab jetzt rufst du den Namen — und er kommt mit allen Regeln drin.
+    Erinnerst du dich an die <em>claude.md</em> aus Akt II — die einzige Datei, die der Agent <em>automatisch</em> bei jedem Start liest? Genau dort schreibst du jetzt deine Regel hin. Das ist ein Skill in seiner einfachsten Form: <em>eine dauerhafte Regel im Anleitungs-Blatt.</em>
   </p>
 
   <div class="prompt-steps" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
     <div class="prompt-step">In Cowork öffne deinen <strong>Workspace</strong> aus Akt II.</div>
-    <div class="prompt-step">Sag dem Agent den Prompt rechts — er legt dir den Skill als Datei an.</div>
-    <div class="prompt-step"><strong>Test:</strong> neuen Chat im selben Workspace öffnen, „run kritiker-gremium" tippen.</div>
-    <div class="prompt-step">Schau zu, wie er auf deinen Auftrag wartet — ohne dass du den Prompt nochmal tippst.</div>
+    <div class="prompt-step">Sag dem Agent den Prompt rechts — er ergänzt deine <em>claude.md</em>.</div>
+    <div class="prompt-step"><strong>Test:</strong> neuen Chat im selben Workspace öffnen, <em>„run kritiker-gremium [dein Text]"</em> tippen.</div>
+    <div class="prompt-step">Die Regel wird automatisch geladen, weil sie in der claude.md steht. Du hast nichts neu erklärt.</div>
   </div>
 
   <div class="prompt-card">
     <p class="prompt-card__label">
-      <span>Prompt — Skill installieren</span>
+      <span>Prompt — Regel in claude.md eintragen</span>
       <button class="copy-btn" type="button">kopieren</button>
     </p>
-    <pre class="prompt-card__body">Leg mir in diesem Workspace einen Skill an mit dem Namen kritiker-gremium.
+    <pre class="prompt-card__body">Öffne meine claude.md (in diesem Workspace) und füg am Ende folgenden Block ein. Wenn der Abschnitt schon existiert, ersetz ihn durch die neue Version.
 
-Der Skill soll Folgendes tun: wenn ich „run kritiker-gremium" sage und einen Text mitgebe, antwortest du mit vier sehr unterschiedlichen Stimmen auf den Text:
+## Kritiker-Gremium
 
-1. Erfahrene CFO — denkt in Risiko, Kapitalkosten, Negativausgang.
+Wenn ich „run kritiker-gremium" sage und einen Text mitgebe (oder den Text direkt darunter einfüge), antwortest du als vier sehr unterschiedliche Stimmen auf den Text:
+
+1. Erfahrene CFO — Risiko, Kapitalkosten, was im Negativausgang passiert.
 2. Aktivistin für die Sache, die der Text betrifft — Verantwortung, Eitelkeit.
 3. Veteran aus der Industrie (30 Jahre) — Floskel vs. neu.
 4. Endempfängerin / Kundin — was kommt an, was geht vorbei.
 
-Format: pro Stimme drei Punkte + ein Satz „Was ich ändern würde". Dann gemeinsames Fazit in drei Optionen A/B/C nach Wirkung, und eine Entscheidungsfrage an mich.
+Format pro Stimme: drei Punkte + ein Satz „Was ich ändern würde". Dann gemeinsames Fazit in drei Optionen A/B/C nach Wirkung. Schließ mit einer einzigen Entscheidungsfrage an mich.
 
-Speicher den Skill so, dass ich ihn in jedem neuen Chat in diesem Workspace mit „run kritiker-gremium" aufrufen kann. Bestätige mir am Ende, wo die Skill-Datei liegt.</pre>
+Wenn du fertig bist, zeig mir den eingefügten Block kurz an und bestätig: ab jetzt funktioniert „run kritiker-gremium" in jedem neuen Chat in diesem Workspace.</pre>
   </div>
 
   <section class="failure-box" style="margin-top:2rem">
     <span class="failure-box__label">Häufiger Fehler</span>
     <p class="failure-box__text">
-      Skill installieren, nie verwenden, vergessen, dass es ihn gibt. Häng dir den Befehl <em>„run kritiker-gremium"</em> an die Wand neben den Monitor. Drei Wochen so. Danach ist's Reflex.
+      Skill in einem <em>anderen Workspace</em> einbauen wollen, in dem die claude.md gar nicht existiert oder anders heißt. Skill = Regel im Anleitungs-Blatt = nur in dem Workspace gültig, in dem die claude.md liegt. Pro Use-Case ein Workspace — wie schon in Akt II.
     </p>
+  </section>
+
+  <section class="deeper-note" aria-label="Vertiefung" style="margin-top:1.5rem">
+    <span class="deeper-note__label">⌖ Wenn du tiefer willst</span>
+    <p class="deeper-note__text">Für Power-User: dieselbe Regel kann auch als separate Datei unter <em>.claude/skills/kritiker-gremium/SKILL.md</em> liegen — dort mit Frontmatter und eigener Aktivierungs-Beschreibung. Funktional fast dasselbe.
+    <span class="konsequenz">Für die nächsten Wochen reicht der claude.md-Weg — er ist nachvollziehbar, debuggable, und du siehst sofort, was geladen wird.</span></p>
   </section>
 </section>
 
@@ -2665,6 +2732,11 @@ Speicher den Skill so, dass ich ihn in jedem neuen Chat in diesem Workspace mit 
   <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
     Du wirst beim dritten Mal merken: eine der vier Stimmen trifft bei <em>deinen</em> Themen oft daneben. Andere Themen brauchen eine fünfte Stimme. Genau hier passiert das Wertvolle: <em>du ziehst den Skill an dich.</em>
   </p>
+
+  <div class="iter-note" style="background:var(--paper-tint);border-left-color:var(--ink-soft);max-width:62ch;margin:0 auto 1.5rem">
+    <span class="iter-note__label" style="color:var(--ink-soft)">→ Bevor du den Skill iterierst</span>
+    Schreib in einem Satz auf: <em>was hat beim letzten Anwenden NICHT funktioniert?</em> Das ist die Datengrundlage für die nächste Version — nicht „mach besser", sondern „die CFO sagte X, dabei hätte sie Y sagen sollen".
+  </div>
 
   <div class="prompt-card">
     <p class="prompt-card__label">
@@ -2720,9 +2792,9 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
 <!-- ============ AKT VI — CHAPTER CARD ============ -->
 <section class="chapter" id="akt6">
   <p class="chapter__num italic">VI</p>
-  <p class="chapter__label">Akt Sechs · 10 Min</p>
+  <p class="chapter__label">Akt Sechs · 20 Min</p>
   <h2 class="chapter__title">Steckdose —<br><em>MCP.</em></h2>
-  <p class="chapter__after">erklären, wie dein Agent ab heute Abend mit Gmail, Calendar oder einer Datenbank reden kann — und warum er dir morgens schon etwas zustellen darf, ohne dass du fragst.</p>
+  <p class="chapter__after">in zwei Sätzen sagen können: <em>„MCP ist die Steckdose. Ich würde Gmail und Calendar einstecken, Drive vorerst nicht — und einen Stecker hab ich heute Abend selber eingesetzt."</em></p>
 </section>
 
 <!-- ============ VI.1 — MCP-Steckdose ============ -->
@@ -2773,6 +2845,44 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
   </section>
 </section>
 
+<!-- ============ Disclaimer-Box zu VI.1 (Karpathy-Korrektiv zu MCP) ============ -->
+<section class="disclaimer-box">
+  <div class="disclaimer-box__inner">
+    <span class="disclaimer-box__icon">❦</span>
+    <div class="disclaimer-box__text">
+      <p>MCP ist kein Magier — es ist ein <em>Protokoll mit Berechtigungen</em>. Jeder eingesteckte Server kann mit seinem Output <em>auf das Verhalten deines Agents zurückwirken</em>, weil seine Antworten als neue Eingabe behandelt werden (Prompt-Injection-Risiko). Faustregel: <strong>Stecker nur einbauen, deren Quelle du kennst</strong> — und im Zweifel zuerst nur Lese-Zugriff.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VI.1b — Live: einen Stecker einbauen · 5 Min (Maven We-do + Mollick) ============ -->
+<section class="text-section text-section--wide">
+  <p class="eyebrow">VI.1b · Live · 5 Min</p>
+  <h2 style="text-align:center">Wir stecken jetzt <em>einen</em> ein —<br>vor allen.</h2>
+  <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
+    Kein Teaser, kein „später mal". Cowork bringt eine kleine Liste fertig mitkonfigurierter MCP-Server mit. Wir wählen <em>einen einzigen, ungefährlichen</em>, stecken ihn live ein und schauen, wie der Agent plötzlich Werkzeuge hat, die er gerade noch nicht hatte. Du folgst auf deinem Laptop.
+  </p>
+
+  <div class="prompt-steps" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+    <div class="prompt-step">In Cowork: <strong>Einstellungen → MCP Servers</strong>.</div>
+    <div class="prompt-step">Wähl einen <em>nur-Lese-Server</em> (z.B. Files, Search, oder den simpelsten in der Liste). Klick <strong>„Aktivieren"</strong>.</div>
+    <div class="prompt-step">Neuen Chat im Workspace öffnen.</div>
+    <div class="prompt-step">Frag: <em>„Welche neuen Werkzeuge hast du jetzt? Zeig mir <strong>eines</strong> davon in Aktion — mit einer kleinen, harmlosen Anfrage."</em></div>
+  </div>
+
+  <div class="iter-note">
+    <span class="iter-note__label">★ Was du gleich siehst</span>
+    Dein Agent antwortet nicht mehr nur mit Text — er <em>greift hinaus</em> zum neuen Server, holt sich Daten zurück, baut sie in die Antwort ein. Das ist der Moment, in dem MCP von Konzept zu Werkzeug wird.
+  </div>
+
+  <section class="failure-box" style="margin-top:2rem">
+    <span class="failure-box__label">Wenn dein Cowork keinen MCP-Server vorinstalliert hat</span>
+    <p class="failure-box__text">
+      Dann ist's heute eine Demo vom Vortrags-Laptop. Notier dir: <em>„MCP auf meinem Cowork checken — Dienstag 30 Min."</em> Und mach mit Akt VI.2 weiter.
+    </p>
+  </section>
+</section>
+
 <!-- ============ VI.2 — Scheduled ============ -->
 <section class="text-section">
   <p class="eyebrow">VI.2 · Scheduled · 3 Min</p>
@@ -2780,8 +2890,21 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
   <p class="lead">Ein Skill plus ein paar Stecker plus einen <em>festen Zeitpunkt</em> — und du hast einen Vorgang, der morgens um 7 abläuft. Beispiel: „Lies alle E-Mails der Nacht, fass mir die drei wichtigsten in zwei Sätzen zusammen, leg's mir auf den Schreibtisch." Du wachst auf, das Briefing liegt da.</p>
 
   <div class="iter-note">
-    <span class="iter-note__label">★ Heute Abend noch nicht</span>
-    Wir bauen das hier nicht live — das ist Akt sieben, an einem anderen Abend. Wichtig fürs heute: <em>du weißt jetzt, dass es existiert.</em> Skills + Stecker + Zeit. Mehr ist es nicht.
+    <span class="iter-note__label">★ Heute Abend bauen wir das nicht</span>
+    Scheduled ist Akt sieben — an einem anderen Abend. Wichtig fürs heute: <em>du weißt jetzt, dass es existiert.</em> Skills + Stecker + Zeit. Mehr ist es nicht.
+  </div>
+</section>
+
+<!-- ============ VI.3 — Mikro-Aktion: zwei Stecker-Namen notieren · 2 Min (Maven You-do) ============ -->
+<section class="text-section">
+  <p class="eyebrow">VI.3 · Mikro-Aktion · 2 Min</p>
+  <h2>Schreib dir <em>zwei Namen</em> auf.</h2>
+  <p class="lead">Nimm den Block neben deinem Glas. Zwei Stecker, die du diese Woche recherchierst — entweder welche, die du heute schon gesehen hast (Gmail, Calendar, Drive, GitHub, Slack, Notion) oder welche, die du dir <em>wünschst</em>. Recherche pro Stecker max. zehn Minuten. Mehr brauchst du fürs Einsteigen nicht.</p>
+
+  <div class="prompt-steps" style="margin-top:1.5rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <div class="prompt-step"><strong>Stecker 1:</strong> &nbsp;<em>…………………………</em></div>
+    <div class="prompt-step"><strong>Stecker 2:</strong> &nbsp;<em>…………………………</em></div>
+    <div class="prompt-step">Setz dir <strong>Mittwoch, 30 Min</strong> in den Kalender — beide einmal einstecken, schauen was passiert.</div>
   </div>
 </section>
 
@@ -2804,9 +2927,9 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
     <div class="prompt-step"><strong>Setz dir eine Erinnerung</strong> auf Montag, 9:00.</div>
   </div>
 
-  <div class="iter-note" style="max-width:600px;margin:2.5rem auto 0;background:var(--paper-tint);border-left-color:var(--ink-soft)">
-    <span class="iter-note__label" style="color:var(--ink-soft)">→ Beispiel-Formulierungen</span>
-    <em>„Am Montag um 9:00 schick ich meinen ersten Mandatsentwurf der Woche durch run kritiker-gremium."</em> · <em>„Am Montag mach ich einen Screenshot meines Wochen-Kalenders und frag meine KI nach den drei Risiken."</em> · <em>„Am Montag bau ich den Skill, der mir aus meinem PR-Ordner die drei wichtigsten Texte der letzten 6 Monate destilliert."</em>
+  <div class="iter-note" style="max-width:680px;margin:2.5rem auto 0;background:var(--paper-tint);border-left-color:var(--ink-soft)">
+    <span class="iter-note__label" style="color:var(--ink-soft)">→ Beispiel-Formulierungen für drei Welten</span>
+    <em><strong>Legal · </strong>„Am Montag um 9:00 schick ich meinen ersten Schriftsatz-Entwurf der Woche durch <code>run kritiker-gremium</code>, bevor er an den Mandanten geht."</em> · <em><strong>Medicine · </strong>„Am Montag öffne ich Cowork, zeig dem Agent meinen Wochen-Kalender und meine letzten zehn Patienten-Notizen — und lass ihn die drei Termine markieren, bei denen ich heute besonders hinhören sollte."</em> · <em><strong>PR & Comms · </strong>„Am Montag bau ich den Skill, der mir aus meinem Pressemitteilungs-Archiv die drei wichtigsten Texte des letzten Quartals destilliert — als Tonalitäts-Vorlage für neue Statements."</em>
   </div>
 </section>
 
@@ -2858,8 +2981,9 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
 <section class="atemholen" data-celebrate id="recap" style="padding:4rem 2rem">
   <canvas class="atemholen__fireworks" aria-hidden="true"></canvas>
   <div class="atemholen__inner">
-    <p class="atemholen__text" style="font-size:clamp(1.15rem,2vw,1.45rem)">Diese Seite bleibt online.<br><em>Komm wieder, wenn du etwas vergessen hast.</em><br>Und schreib uns, was du am Montag tatsächlich gebaut hast.</p>
-    <p style="margin-top:2rem;font-family:var(--serif);font-style:italic;font-size:1rem;color:rgba(250,247,241,.65)">— Salon AI · 28. Mai 2026 · München —</p>
+    <p class="atemholen__text" style="font-size:clamp(.9rem,1.4vw,1rem);opacity:.6;margin-bottom:1.8rem;font-style:normal">— Diese Seite bleibt online, falls du nachschauen willst. —</p>
+    <p class="atemholen__text" style="font-size:clamp(1.35rem,2.2vw,1.65rem);margin:0">KI ist ab heute Abend <em>kein Mysterium mehr.</em><br>Sie ist Mathe. Du weißt jetzt, wo das <em>Steuerrad</em> ist,<br>wo der <em>Bauplan</em> liegt, und wer den <em>Output</em> prüft.<br><em>Der Rest ist Mut.</em></p>
+    <p style="margin-top:2.5rem;font-family:var(--serif);font-style:italic;font-size:1rem;color:rgba(250,247,241,.65)">— Salon AI · 28. Mai 2026 · München —</p>
   </div>
 </section>
 
