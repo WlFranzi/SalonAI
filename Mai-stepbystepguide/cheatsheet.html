@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathe mit Worten — Cheat Sheet</title>
+<meta name="description" content="Die neun Themen, mit denen du mit Worten rechnest. Salon AI Immersive Workshop #1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff;
+  --paper-tint:#fafafa;
+  --ink:#0e0c0a;
+  --ink-soft:#6b6259;
+  --rule:#eae6df;
+  --gold:#5c4f43;
+  --gold-deep:#2c2520;
+  --iris:#6b4e8e;
+  --iris-deep:#3b285a;
+  --coral:#e26a4a;
+  --coral-soft:#fdf0eb;
+  --leaf:#7a8c5c;
+  --watermark:#f0ece4;
+  --serif:'Cormorant Garamond',Didot,Georgia,serif;
+  --hand:'Caveat',cursive;
+  --sans:'Inter',-apple-system,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);font-size:16px;line-height:1.55;
+  color:var(--ink);background:#ffffff;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-0.01em;color:var(--ink)}
+.italic{font-style:italic}
+.hand{font-family:var(--hand);font-weight:700;color:var(--gold-deep)}
+
+/* ==== DISCLAIMER ==== */
+.disclaimer{
+  max-width:1100px;margin:0 auto;padding:0 2.5rem 2rem;
+}
+.disclaimer__box{
+  background:var(--paper-tint);border:1px solid var(--rule);
+  border-left:2px solid var(--iris);
+  padding:1.5rem 1.8rem;
+  display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:start;
+}
+.disclaimer__icon{
+  font-family:var(--serif);font-style:italic;font-size:2.4rem;
+  color:var(--gold-deep);line-height:1;
+}
+.disclaimer__text{
+  font-family:var(--serif);font-size:1.05rem;line-height:1.55;color:var(--ink);
+}
+.disclaimer__text strong{font-weight:600;color:var(--ink);font-style:normal}
+.disclaimer__text em{font-style:italic;color:var(--iris-deep);font-weight:500}
+
+/* ==== FAILURE BOX ==== */
+.failure{
+  grid-area:fail;
+  margin-top:.4rem;
+  background:var(--coral-soft);
+  border-left:2px solid var(--coral);
+  padding:.85rem 1.2rem;
+  display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start;
+}
+.failure__label{
+  font-family:var(--sans);font-size:.64rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--coral);font-weight:600;
+  padding-top:.2rem;white-space:nowrap;
+}
+.failure__text{
+  font-family:var(--serif);font-style:italic;
+  color:var(--ink);font-size:.92rem;line-height:1.45;
+}
+.failure__text em{color:var(--coral);font-style:italic;font-weight:600}
+
+/* ==== HERO ==== */
+.hero{
+  min-height:72vh;display:flex;flex-direction:column;justify-content:center;
+  padding:5rem 2.5rem 4rem;max-width:1240px;margin:0 auto;
+  position:relative;
+}
+.hero::before{
+  content:'';position:absolute;top:5rem;left:2.5rem;
+  width:64px;height:2px;background:var(--coral);
+}
+.hero__eyebrow{
+  font-family:var(--sans);font-size:.74rem;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:600;
+  margin-bottom:2rem;padding-top:1rem;
+}
+.hero__title{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(3rem,9vw,7rem);line-height:.92;color:var(--ink);
+  letter-spacing:-.02em;
+}
+.hero__title em{color:var(--coral);font-style:italic}
+.hero__sub{
+  font-family:var(--hand);font-size:clamp(1.4rem,2.2vw,1.95rem);
+  color:var(--iris-deep);margin-top:1.5rem;line-height:1.2;max-width:36ch;
+}
+.hero__lead{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.1rem,1.5vw,1.3rem);color:var(--ink-soft);
+  margin-top:2.5rem;max-width:54ch;line-height:1.55;
+  border-left:1px solid var(--rule);padding-left:1.25rem;
+}
+
+/* ==== TOC ==== */
+.toc{
+  max-width:1100px;margin:0 auto;padding:2rem 2.5rem 5rem;
+}
+.toc__title{
+  font-family:var(--sans);font-size:.78rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:1.5rem;
+}
+.toc__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
+}
+.toc__item{
+  background:#fff;border:1px solid var(--rule);
+  padding:1rem 1.2rem;
+  font-family:var(--serif);font-size:1.05rem;font-style:italic;
+  color:var(--ink);transition:all .2s;
+  display:flex;align-items:baseline;gap:.7rem;
+}
+.toc__item:hover{border-color:var(--coral);color:var(--coral)}
+.toc__item:hover .toc__num{color:var(--coral)}
+.toc__item--haltung{
+  border-color:var(--iris);
+  background:linear-gradient(to right, rgba(107,78,142,.06), transparent 60%);
+}
+.toc__item--haltung .toc__num{color:var(--iris-deep)}
+.toc__item--haltung::before{
+  content:'★';color:var(--iris);font-size:.8rem;margin-right:.2rem;
+}
+.toc__num{
+  font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.4rem;
+  color:var(--gold-deep);min-width:1.6rem;
+}
+
+/* ==== THEME SECTION (kompakt, 2-Spalten-Layout) ==== */
+.theme{
+  padding:2.6rem 2.5rem;max-width:1240px;margin:0 auto;
+  border-top:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:5fr 7fr;
+  grid-template-areas:
+    "head head"
+    "viz  techs"
+    "fail fail";
+  column-gap:2rem;row-gap:1.4rem;
+  align-items:start;
+}
+.theme__head{
+  grid-area:head;margin-bottom:0;
+}
+.theme__num{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(3rem,6vw,4.6rem);line-height:.9;color:var(--watermark);
+  margin-bottom:-1.6rem;letter-spacing:-.05em;
+  position:relative;z-index:1;
+}
+.theme__eyebrow{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--gold-deep);font-weight:600;
+  margin-bottom:.3rem;position:relative;z-index:2;
+}
+.theme__title{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.05;color:var(--ink);
+  margin-bottom:.6rem;position:relative;z-index:2;
+}
+.theme__geo{
+  font-family:var(--serif);font-size:clamp(.95rem,1.25vw,1.1rem);
+  font-style:italic;color:var(--ink-soft);max-width:none;line-height:1.45;
+}
+.theme__geo em{color:var(--iris-deep);font-weight:600;font-style:italic}
+
+.theme__viz{
+  grid-area:viz;
+  margin:0;background:#fff;
+  border:1px solid var(--rule);padding:1rem 1.1rem;
+  position:sticky;top:1rem;
+}
+.theme__viz svg{display:block;width:100%;height:auto;max-height:180px}
+.theme__viz-cap{
+  font-family:var(--hand);font-size:.95rem;color:var(--ink-soft);
+  text-align:center;margin-top:.4rem;line-height:1.2;
+}
+.theme__viz-cap em{color:var(--coral);font-style:italic;font-weight:600}
+
+/* ==== TECHNIQUES TABLE (kompakt) ==== */
+.techs{
+  grid-area:techs;
+  display:grid;gap:.6rem;margin:0;
+}
+.tech{
+  background:#fff;border:1px solid var(--rule);
+  border-left:2px solid var(--ink);
+  padding:.85rem 1.1rem;
+  transition:border-left-color .2s;
+}
+.tech:hover{border-left-color:var(--coral)}
+.tech__label{
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold-deep);font-weight:600;
+  margin-bottom:.3rem;
+  display:flex;align-items:baseline;gap:.5rem;
+}
+.tech__letter{
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:1rem;color:var(--iris-deep);
+}
+.tech__name{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:1.05rem;color:var(--ink);margin-bottom:.5rem;line-height:1.2;
+}
+.tech__row{
+  display:grid;grid-template-columns:60px 1fr;gap:.7rem;
+  padding:.4rem 0;border-top:1px dashed var(--rule);
+  font-size:.88rem;line-height:1.4;
+}
+.tech__row:first-of-type{border-top:none;padding-top:0}
+.tech__row-label{
+  font-family:var(--sans);font-size:.62rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold-deep);font-weight:600;
+  padding-top:.15rem;
+}
+.tech__prompt{
+  font-family:var(--serif);font-style:italic;font-size:.92rem;
+  color:var(--ink);line-height:1.4;
+}
+.tech__output{
+  font-family:var(--sans);font-size:.82rem;color:var(--ink-soft);line-height:1.45;
+}
+.tech__output em{color:var(--ink);font-style:italic;font-weight:600}
+
+/* ==== CLOSING ==== */
+.closing{
+  max-width:780px;margin:0 auto;padding:6rem 2.5rem 8rem;text-align:center;
+  border-top:1px solid var(--rule);position:relative;
+}
+.closing::before{
+  content:'';position:absolute;top:6rem;left:50%;transform:translateX(-50%);
+  width:48px;height:2px;background:var(--coral);
+}
+.closing__hand{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.8rem,3.2vw,2.6rem);
+  color:var(--ink);line-height:1.25;letter-spacing:-.01em;
+  padding-top:1.5rem;
+}
+.closing__sub{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:600;
+  margin-top:2rem;
+}
+
+/* ==== CAVEAT (small inline warning in theme head) ==== */
+.theme__caveat{
+  margin-top:.7rem;font-family:var(--serif);font-style:italic;
+  font-size:.88rem;line-height:1.4;color:var(--ink-soft);
+  padding:.5rem .7rem;background:var(--paper-tint);
+  border-left:1px solid var(--ink-soft);
+}
+.theme__caveat strong{font-weight:600;color:var(--ink);font-style:normal}
+.theme__caveat em{font-style:italic;color:var(--coral);font-weight:600}
+
+/* ==== USE-WHEN LINE ==== */
+.theme__usewhen{
+  font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;
+  color:var(--accent,var(--coral));font-weight:600;
+  margin-top:.4rem;margin-bottom:.6rem;
+  padding-left:.7rem;border-left:2px solid var(--accent,var(--coral));
+  line-height:1.35;
+}
+.theme__usewhen::before{
+  content:'Use this when — ';
+  font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.7rem;
+  color:var(--ink-soft);
+}
+
+/* ==== THEME COLOR ACCENTS ==== */
+.theme--iris{--accent:#6b4e8e}
+.theme--coral{--accent:#e26a4a}
+.theme--leaf{--accent:#7a8c5c}
+.theme--ink{--accent:#0e0c0a}
+.theme--gold{--accent:#5c4f43}
+.theme--accent .tech{border-left-color:var(--accent)}
+.theme--accent .tech:hover{border-left-color:var(--accent)}
+.theme--accent .theme__viz{border-color:var(--rule)}
+
+/* ==== COPY BUTTON ==== */
+.tech__prompt-wrap{position:relative}
+.copy-btn{
+  position:absolute;top:-.15rem;right:0;
+  font-family:var(--sans);font-size:.62rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  background:transparent;border:1px solid var(--rule);
+  color:var(--ink-soft);padding:.25rem .55rem;
+  cursor:pointer;transition:all .15s;
+}
+.copy-btn:hover{border-color:var(--accent,var(--coral));color:var(--accent,var(--coral))}
+.copy-btn.copied{background:var(--accent,var(--coral));color:#fff;border-color:var(--accent,var(--coral))}
+
+/* ==== SAMPLE OUTPUT ==== */
+.tech__sample{
+  font-family:'SF Mono',Menlo,Consolas,monospace;
+  font-size:.78rem;line-height:1.5;color:var(--ink-soft);
+  background:var(--paper-tint);
+  border-left:2px solid var(--rule);
+  padding:.5rem .7rem;margin:0;
+  white-space:pre-wrap;word-wrap:break-word;
+  border-radius:0;
+}
+
+/* ==== MINI-TOC (sticky right side) ==== */
+.minitoc{
+  position:fixed;right:1.25rem;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:.5rem;
+  z-index:50;
+}
+.minitoc__dot{
+  width:26px;height:26px;border-radius:50%;
+  background:#fff;border:1px solid var(--rule);
+  font-family:var(--serif);font-size:.85rem;font-style:italic;
+  color:var(--ink-soft);font-weight:500;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;transition:all .2s;
+  cursor:pointer;
+}
+.minitoc__dot:hover{border-color:var(--coral);color:var(--coral);transform:scale(1.15)}
+.minitoc__dot.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.minitoc__top{
+  font-family:var(--sans);font-size:.65rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;
+  background:transparent;border:none;color:var(--ink-soft);
+  cursor:pointer;padding:.3rem;margin-top:.3rem;
+  text-align:center;
+}
+.minitoc__top:hover{color:var(--coral)}
+@media(max-width:900px){.minitoc{display:none}}
+
+/* ==== PENCIL STYLE ==== */
+.pencil-stroke{stroke:#2a2520;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.pencil-fill{fill:#2a2520}
+.pencil-coral{stroke:#dc7757;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pencil-iris{stroke:#6b4e8e;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pencil-leaf{stroke:#7a8c5c;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.label-serif{font-family:'Cormorant Garamond';font-style:italic;font-size:14px;fill:#1a1410}
+.label-hand{font-family:'Caveat';font-size:18px;fill:#3a3633}
+.label-sans{font-family:'Inter';font-size:11px;letter-spacing:1.5px;fill:#5c4f43;font-weight:600}
+
+/* ==== RESPONSIVE ==== */
+@media(max-width:900px){
+  .theme{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "head"
+      "viz"
+      "techs"
+      "fail";
+    padding:2.2rem 1.25rem;
+  }
+  .theme__viz{position:static;top:auto}
+  .theme__viz svg{max-height:220px}
+}
+@media(max-width:780px){
+  .toc__grid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .tech{padding:1rem 1.1rem}
+  .tech__row{grid-template-columns:1fr;gap:.2rem}
+  .tech__row-label{font-size:.62rem}
+  .hero{padding:3.5rem 1.5rem}
+  .closing{padding:4rem 1.5rem 5rem}
+}
+
+/* ==== PRINT ==== */
+@media print{
+  body{background:#fff}
+  .toc{page-break-after:always}
+  .theme{page-break-before:always;padding:2rem 1rem}
+  .theme__viz{box-shadow:none;border:1px solid #ddd}
+  .tech{box-shadow:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================== MINI-TOC (sticky right side, hidden on mobile) ================== -->
+<nav class="minitoc" aria-label="Schnell-Navigation">
+  <a class="minitoc__dot" href="#t1" data-target="t1">1</a>
+  <a class="minitoc__dot" href="#t2" data-target="t2">2</a>
+  <a class="minitoc__dot" href="#t3" data-target="t3">3</a>
+  <a class="minitoc__dot" href="#t4" data-target="t4">4</a>
+  <a class="minitoc__dot" href="#t5" data-target="t5">5</a>
+  <a class="minitoc__dot" href="#t6" data-target="t6">6</a>
+  <a class="minitoc__dot" href="#t7" data-target="t7">7</a>
+  <a class="minitoc__dot" href="#t8" data-target="t8">8</a>
+  <a class="minitoc__dot" href="#t9" data-target="t9">9</a>
+  <button class="minitoc__top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</nav>
+
+<!-- ================== HERO ================== -->
+<section class="hero">
+  <p class="hero__eyebrow">Salon AI · Immersive Workshop #1 · Cheat Sheet</p>
+  <h1 class="hero__title">Mathe<br>mit <em>Worten.</em></h1>
+  <p class="hero__sub">Die neun Themen,<br>mit denen du mit Worten rechnest.</p>
+  <p class="hero__lead">Jedes Thema sagt dir: was geometrisch passiert, wie der Prompt aussieht, und welcher Output zurückkommt. Lies es einmal durch — und behalt es als Spickzettel.</p>
+</section>
+
+<!-- ================== DISCLAIMER ================== -->
+<section class="disclaimer">
+  <div class="disclaimer__box">
+    <span class="disclaimer__icon">❦</span>
+    <p class="disclaimer__text">
+      Diese Karten sind <em>Denk-Modelle</em>, keine wörtliche Mechanik-Beschreibung. Was wirklich im Modell passiert, läuft über <em>Attention</em>, nicht über Vektor-Rechnung im Embedding-Raum. <strong>Aber:</strong> Wer in Punkten, Richtungen und Distanzen denkt, schreibt bessere Prompts. Das ist die Wette.
+    </p>
+  </div>
+</section>
+
+<!-- ================== TABLE OF CONTENTS ================== -->
+<section class="toc">
+  <p class="toc__title">Inhalt — eine Haltung, acht Werkzeuge</p>
+  <div class="toc__grid">
+    <a class="toc__item toc__item--haltung" href="#t1"><span class="toc__num">1</span>Iterative Verfeinerung</a>
+    <a class="toc__item" href="#t2"><span class="toc__num">2</span>Verortung im Konzept-Raum</a>
+    <a class="toc__item" href="#t3"><span class="toc__num">3</span>Richtungs-Extraktion</a>
+    <a class="toc__item" href="#t4"><span class="toc__num">4</span>Distanz-Messung</a>
+    <a class="toc__item" href="#t5"><span class="toc__num">5</span>Cluster-Reduktion</a>
+    <a class="toc__item" href="#t6"><span class="toc__num">6</span>Schrittweite</a>
+    <a class="toc__item" href="#t7"><span class="toc__num">7</span>Routenwahl-Strenge</a>
+    <a class="toc__item" href="#t8"><span class="toc__num">8</span>Pfad-Multiplexing</a>
+    <a class="toc__item" href="#t9"><span class="toc__num">9</span>No-Go-Regionen</a>
+  </div>
+</section>
+
+<!-- ================== THEMA 1 (NEU oben: Iterative Verfeinerung — die Haltung) ================== -->
+<section class="theme theme--iris" id="t1">
+  <div class="theme__head">
+    <p class="theme__num italic">1</p>
+    <p class="theme__eyebrow">Thema Eins · Haltung</p>
+    <h2 class="theme__title">Iterative Verfeinerung</h2>
+    <p class="theme__usewhen">Wenn du nicht im ersten Schuss treffen kannst — also fast immer.</p>
+    <p class="theme__geo"><em>Diese Haltung kommt vor allen Werkzeugen.</em> Du schießt selten einen Schuss. Du behältst die Hand am Steuer — über mehrere Runden hinweg, statt einen perfekten Single-Prompt zu hoffen. Erst diese Disziplin, dann die acht Techniken.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+      <circle class="pencil-fill" cx="50" cy="140" r="10"/>
+      <text class="label-serif" x="50" y="170" text-anchor="middle">Start</text>
+      <g class="pencil-stroke" stroke-width="2" fill="none">
+        <path d="M60,140 Q120,100 170,130"/>
+        <path d="M180,135 Q240,170 290,135"/>
+        <path d="M300,130 Q350,90 400,125"/>
+        <path d="M410,130 Q470,165 520,135"/>
+        <path d="M530,135 Q580,115 640,140"/>
+      </g>
+      <g class="pencil-fill">
+        <circle cx="175" cy="130" r="6"/>
+        <circle cx="295" cy="135" r="6"/>
+        <circle cx="405" cy="125" r="6"/>
+        <circle cx="525" cy="135" r="6"/>
+      </g>
+      <g>
+        <text class="label-hand" x="175" y="225" text-anchor="middle">"geh tiefer"</text>
+        <text class="label-hand" x="295" y="225" text-anchor="middle">"zu generisch"</text>
+        <text class="label-hand" x="405" y="225" text-anchor="middle">"eher so wie X"</text>
+        <text class="label-hand" x="525" y="225" text-anchor="middle">"konkreter"</text>
+        <g class="pencil-stroke" stroke-width="1" stroke-dasharray="3,3">
+          <line x1="175" y1="210" x2="175" y2="143"/>
+          <line x1="295" y1="210" x2="295" y2="148"/>
+          <line x1="405" y1="210" x2="405" y2="138"/>
+          <line x1="525" y1="210" x2="525" y2="148"/>
+        </g>
+      </g>
+      <circle cx="650" cy="140" r="10" fill="#7a8c5c"/>
+      <text class="label-serif" x="650" y="170" text-anchor="middle">Final</text>
+      <text class="label-hand" x="350" y="50" text-anchor="middle">Du behältst die Hand am Steuer</text>
+    </svg>
+    <p class="theme__viz-cap">Nicht ein Schuss — <em>fünf Korrekturen</em>, dann ist es brauchbar.</p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Drill-Down</p>
+      <p class="tech__name">"Geh tiefer in Punkt 3."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Punkt 3 war die spannendste Beobachtung — geh da deutlich tiefer. Gib mir konkrete Beispiele aus den Daten, mögliche Ursachen, und wie ich's verifizieren würde. Lass die anderen Punkte aus."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Vertiefte Antwort zu genau diesem Punkt</em> — mehr Detail, mehr Substanz, oft mit Belegen, die im ersten Schuss fehlten.</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Beispiel</span>
+        <pre class="tech__sample">→ Punkt 3 (Onboarding-Drop-off) im Detail: Von 47 Trial-Accounts brachen 12 nach &lt;4 Min ab. Letzter berührter Schritt: Calendar-Sync. Mögliche Ursachen: (a) OAuth-Friktion, (b) erwartete Integration fehlt, (c) Anleitung unklar. Verifikation: Session-Replay der 12 Drops + 3 User-Interviews.</pre>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Reformulieren</p>
+      <p class="tech__name">"Das war zu generisch — schärf den Fokus."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Das war zu allgemein. Schreib's neu — aber speziell für mein Setup: 8-Personen-Team, B2B-SaaS, Series A, Berlin. Lass alles weg, was generisch wäre."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Spezifischere Version</em>, die deinen Kontext eingearbeitet hat. Weniger Floskeln, mehr Sachen, die wirklich für dich gelten.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">c)</span> Beispiel-Korrektur</p>
+      <p class="tech__name">"So nicht — eher so."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Deine Version war zu lang und zu formell. So in etwa, wie ich's meine: '[2 Sätze in deinem echten Stil]'. Schreib jetzt nochmal in genau diesem Ton."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Neue Version, kalibriert an deinem Mini-Beispiel</em> — schneller Ton-Treffer als wenn du nur abstrakt beschrieben hättest.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Bei 10+ Iterationen <em>verliert das Modell den Faden</em> — frühe Anweisungen fallen aus dem Kontextfenster. Anker regelmäßig zurück auf deine Kernanforderung. Und: Iterieren kann zur <em>Verschlimmbesserung</em> führen — manchmal ist Runde 2 schlechter als Runde 1. Dann zurück.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 2 (was Thema 1: Verortung im Konzept-Raum) ================== -->
+<section class="theme theme--coral" id="t2">
+  <div class="theme__head">
+    <p class="theme__num italic">2</p>
+    <p class="theme__eyebrow">Thema Zwei</p>
+    <h2 class="theme__title">Verortung im Konzept-Raum</h2>
+    <p class="theme__usewhen">Wenn die Antwort aus einer bestimmten Welt kommen soll.</p>
+    <p class="theme__geo">Du bewegst dich <em>auf der Karte</em> — wählst aus, wo dein Anliegen landet, von wo aus die KI denkt, welche Konzept-Nachbarn aktiv werden. Persona, Mischung, Spiegelung, Aspekt-Reinigung — alles dasselbe Spiel: <em>wo in der Konzept-Wolke bist du?</em></p>
+    <p class="theme__caveat"><strong>Vorsicht bei Persona:</strong> aktuelle Studien (Zheng et al. 2024) zeigen, dass Persona-Prompts bei messbaren Aufgaben oft <em>nicht helfen</em> — manchmal sogar schaden. Nutz Persona für Tonalität, nicht für Genauigkeit.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+      <!-- Panel 1: Persona -->
+      <g transform="translate(20,40)">
+        <text class="label-sans" x="60" y="-12" text-anchor="middle">a) PERSONA</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L120,0 L120,200 L0,200 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="28" cy="120" r="6"/>
+        <text class="label-serif" x="28" y="145" text-anchor="middle" font-size="11">neutral</text>
+        <line class="pencil-stroke" stroke-width="1.5" x1="34" y1="118" x2="83" y2="65"/>
+        <path class="pencil-stroke" stroke-width="1.5" d="M80,60 L86,65 L82,72"/>
+        <circle cx="90" cy="58" r="6" fill="#6b4e8e"/>
+        <text class="label-serif" x="90" y="45" text-anchor="middle" fill="#4a3566" font-size="11">Fachgebiet</text>
+      </g>
+
+      <!-- Panel 2: Rollen-Schichtung -->
+      <g transform="translate(160,40)">
+        <text class="label-sans" x="60" y="-12" text-anchor="middle">b) ROLLEN-SCHICHTUNG</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L120,0 L120,200 L0,200 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="60" cy="105" r="6"/>
+        <line class="pencil-stroke" stroke-width="1" x1="58" y1="100" x2="30" y2="40"/>
+        <line class="pencil-stroke" stroke-width="1" x1="62" y1="100" x2="100" y2="45"/>
+        <line class="pencil-stroke" stroke-width="1" x1="60" y1="111" x2="50" y2="170"/>
+        <circle cx="28" cy="35" r="5" fill="#dc7757"/>
+        <text class="label-serif" x="28" y="25" text-anchor="middle" fill="#dc7757" font-size="10">CFO</text>
+        <circle cx="103" cy="42" r="5" fill="#6b4e8e"/>
+        <text class="label-serif" x="103" y="32" text-anchor="middle" fill="#4a3566" font-size="10">Marketing</text>
+        <circle cx="48" cy="175" r="5" fill="#7a8c5c"/>
+        <text class="label-serif" x="48" y="190" text-anchor="middle" fill="#4d5a3a" font-size="10">Praktikant</text>
+      </g>
+
+      <!-- Panel 3: Mittelpunkt -->
+      <g transform="translate(300,40)">
+        <text class="label-sans" x="60" y="-12" text-anchor="middle">c) MITTELPUNKT</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L120,0 L120,200 L0,200 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="25" cy="55" r="6"/>
+        <text class="label-serif" x="25" y="42" text-anchor="middle" font-size="10">A</text>
+        <circle class="pencil-fill" cx="100" cy="160" r="6"/>
+        <text class="label-serif" x="100" y="180" text-anchor="middle" font-size="10">B</text>
+        <line class="pencil-stroke" stroke-width="1" stroke-dasharray="3,3" x1="29" y1="60" x2="96" y2="155"/>
+        <circle cx="62" cy="107" r="9" fill="#dc7757"/>
+        <text class="label-serif" x="62" y="111" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">+</text>
+      </g>
+
+      <!-- Panel 4: Inversion -->
+      <g transform="translate(440,40)">
+        <text class="label-sans" x="60" y="-12" text-anchor="middle">d) INVERSION × −1</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L120,0 L120,200 L0,200 Z" stroke-dasharray="2,3"/>
+        <line class="pencil-stroke" stroke-width=".5" x1="60" y1="20" x2="60" y2="180"/>
+        <line class="pencil-stroke" stroke-width=".5" x1="15" y1="100" x2="105" y2="100"/>
+        <circle class="pencil-fill" cx="90" cy="55" r="6"/>
+        <text class="label-serif" x="100" y="50" font-size="10">A</text>
+        <line class="pencil-stroke" stroke-width="1" stroke-dasharray="3,3" x1="88" y1="58" x2="32" y2="142"/>
+        <circle cx="30" cy="145" r="6" fill="#dc7757"/>
+        <text class="label-serif" x="15" y="162" fill="#dc7757" font-size="10">−A</text>
+      </g>
+
+      <!-- Panel 5: Subtraktion -->
+      <g transform="translate(580,40)">
+        <text class="label-sans" x="60" y="-12" text-anchor="middle">e) SUBTRAKTION</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L120,0 L120,200 L0,200 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="28" cy="145" r="6"/>
+        <text class="label-serif" x="28" y="165" text-anchor="middle" font-size="10">A</text>
+        <line class="pencil-stroke" stroke-width="1.5" x1="32" y1="141" x2="83" y2="68"/>
+        <path class="pencil-stroke" stroke-width="1.5" d="M80,63 L86,68 L82,75"/>
+        <text class="label-hand" x="80" y="125" font-size="13">−Hype</text>
+        <circle cx="92" cy="58" r="6" fill="#dc7757"/>
+        <text class="label-serif" x="100" y="52" fill="#dc7757" font-size="10">Kern</text>
+      </g>
+    </svg>
+    <p class="theme__viz-cap">Fünf Spielarten, ein Spielfeld: <em>wo auf der Karte willst du sein?</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Persona</p>
+      <p class="tech__name">"Sei jemand mit Erfahrung in X."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Du bist eine erfahrene Steuerberaterin mit 20 Jahren Erfahrung bei mittelständischen Kanzleien in Bayern. Erklär mir, wie ich Reisekosten für mein Einzelunternehmen absetze."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output">Antwort im <em>Vokabular und mit den Vorsichten dieser Persona</em> — Fachbegriffe, Verweise auf §§, typische Caveats.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Rollen-Schichtung</p>
+      <p class="tech__name">"Antworte aus mehreren Rollen, vergleich."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Antworte erst als CFO, dann als Marketing-Chef, dann als Praktikant im 2. Semester. Vergleich, wo die Antworten auseinandergehen."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output">Drei Antworten nebeneinander mit ihren Unterschieden — meist plus Synthese, <em>wo sie auseinandergehen.</em></p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">c)</span> Mittelpunkt</p>
+      <p class="tech__name">"Was liegt genau zwischen X und Y?"</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Was läge konzeptuell genau zwischen 'TÜV-Prüfung' und 'TikTok-App'? Beschreib das neue Konzept in 3 Sätzen — als ob es ein echtes Produkt wäre."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Beschreibung eines neuen Konzepts</em> (z.B. "ein spielerisch-knapper Prüfreport, der wie ein Social-Feed funktioniert") in 2–3 Sätzen.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">d)</span> Inversion <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— × −1</span></p>
+      <p class="tech__name">"Was ist das konzeptuelle Gegenteil?"</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Beschreib das konzeptuelle Gegenteil von 'Dienst nach Vorschrift im Büro'. Nicht 'Überstunden' — das echte Gegenteil."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Beschreibung des Gegen-Konzepts</em> (z.B. "intrinsisch motivierte Eigeninitiative") mit Begründung, warum das das Gegenteil ist.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">e)</span> Subtraktion <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— Bedeutungs-Vakuum</span></p>
+      <p class="tech__name">"Zieh diese Aspekte komplett ab."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Beschreib KI im Unternehmen — aber zieh die Aspekte 'Marketing-Hype' und 'Jobverlust-Angst' komplett ab. Was bleibt im Kern übrig?"</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Konzept-Beschreibung im Kern</em> — frei von den abgezogenen Aspekten, oft mit "was bleibt, ist…"-Formulierung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Wenn die <em>Persona zu eng</em> ist oder Mittelpunkt/Inversion/Subtraktion zu abstrakt — bekommst du <em>wohlgesetzte Sprache ohne Substanz</em>. Die KI reimt sich was zusammen.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 3 (Richtungs-Extraktion) ================== -->
+<section class="theme theme--leaf" id="t3">
+  <div class="theme__head">
+    <p class="theme__num italic">3</p>
+    <p class="theme__eyebrow">Thema Drei</p>
+    <h2 class="theme__title">Richtungs-Extraktion</h2>
+    <p class="theme__usewhen">Wenn du Stil oder Standard von etwas auf was Neues legen willst.</p>
+    <p class="theme__geo">Die KI mittelt eine <em>Bewegungs-Richtung</em> aus mehreren Vorher/Nachher-Paaren und wendet sie auf einen neuen Input an. Das mächtigste Werkzeug im Alltag.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+      <!-- subtle background grid -->
+      <g stroke="#e8dfc7" stroke-width=".5">
+        <line x1="50" y1="240" x2="650" y2="240"/>
+        <line x1="50" y1="40" x2="50" y2="240"/>
+      </g>
+      <text class="label-sans" x="50" y="260">Vorher</text>
+      <text class="label-sans" x="650" y="260" text-anchor="end">Nachher</text>
+
+      <!-- 3 parallel arrows -->
+      <g>
+        <circle class="pencil-fill" cx="120" cy="200" r="6"/>
+        <text class="label-serif" x="120" y="220" text-anchor="middle">Paar 1</text>
+        <line class="pencil-stroke" stroke-width="2" x1="128" y1="194" x2="280" y2="120"/>
+        <path class="pencil-stroke" stroke-width="2" d="M276,114 L284,120 L278,128"/>
+        <circle cx="290" cy="115" r="6" fill="#dc7757"/>
+      </g>
+      <g>
+        <circle class="pencil-fill" cx="200" cy="220" r="6"/>
+        <text class="label-serif" x="200" y="240" text-anchor="middle">Paar 2</text>
+        <line class="pencil-stroke" stroke-width="2" x1="208" y1="214" x2="360" y2="140"/>
+        <path class="pencil-stroke" stroke-width="2" d="M356,134 L364,140 L358,148"/>
+        <circle cx="370" cy="135" r="6" fill="#dc7757"/>
+      </g>
+      <g>
+        <circle class="pencil-fill" cx="280" cy="230" r="6"/>
+        <text class="label-serif" x="280" y="250" text-anchor="middle">Paar 3</text>
+        <line class="pencil-stroke" stroke-width="2" x1="288" y1="224" x2="440" y2="150"/>
+        <path class="pencil-stroke" stroke-width="2" d="M436,144 L444,150 L438,158"/>
+        <circle cx="450" cy="145" r="6" fill="#dc7757"/>
+      </g>
+
+      <!-- 4th dashed (yours) -->
+      <g>
+        <circle cx="360" cy="240" r="6" fill="#6b4e8e"/>
+        <text class="label-serif" x="360" y="260" text-anchor="middle" fill="#4a3566">deins</text>
+        <line class="pencil-iris" stroke-width="2" stroke-dasharray="5,4" x1="368" y1="234" x2="520" y2="160"/>
+        <path class="pencil-iris" stroke-width="2" d="M516,154 L524,160 L518,168"/>
+        <circle cx="530" cy="155" r="6" fill="none" stroke="#6b4e8e" stroke-width="2" stroke-dasharray="3,3"/>
+        <text class="label-serif" x="558" y="159" fill="#4a3566">?</text>
+      </g>
+
+      <text class="label-hand" x="350" y="60" text-anchor="middle">drei parallele Pfeile = dieselbe Richtung</text>
+    </svg>
+    <p class="theme__viz-cap">3 Beispiele zeigen die Richtung. <em>Die KI kopiert sie für deinen Input.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Few-Shot</p>
+      <p class="tech__name">"Hier sind gute und schlechte Beispiele — schreib das nächste."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Hier sind 5 Briefings, die mein Team gefeiert hat, und 3 die abgelehnt wurden — jeweils mit Begründung. Lerne den Standard. Schreib mir das nächste Briefing zum Thema [X]."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Ein neues Briefing</em> zum Thema X, das den Stil deiner guten Beispiele trägt.</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Beispiel</span>
+        <pre class="tech__sample">BRIEFING — Q3 Pricing-Update
+Kontext: Was zählt, was wir wissen, was offen ist.
+Entscheidung gesucht: Eine. Mit Begründung.
+Optionen: 3 max, jeweils mit Trade-off.
+Empfehlung: Klar, einsortiert.
+
+(Stil deiner Gewinner-Briefings: knapp, entscheidungsfähig, kein Filler.)</pre>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Muster-Schablone <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— file-basiert</span></p>
+      <p class="tech__name">"Hier sind Vorlagen — schreib im Muster."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"In dieser PDF sind unsere 3 erfolgreichsten Förderanträge der letzten Jahre. Analysier den unsichtbaren Aufbau — was alle drei gemeinsam haben, was sie von Standard-Anträgen unterscheidet. Schreib meinen neuen Antrag [Stichworte] nach exakt diesem Muster."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Dein neuer Antrag</em>, strukturell wie die Vorlagen — gleiche Argumentations-Reihenfolge, gleiche Sprachebene.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">c)</span> Richtungs-Vektor <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— ein einzelnes Paar</span></p>
+      <p class="tech__name">"Lerne aus diesem einen Vorher/Nachher."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Hier ist mein Original-Entwurf einer Mail [Anhang Vorher]. Hier die Version, die mein Chef Frank final unterschrieben hat [Anhang Nachher]. Lerne aus dem Unterschied die Tonalität, die er bevorzugt. Wende denselben Stil auf meine neue Mail [Anhang] an."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Deine neue Mail, redigiert</em> — Inhalt unverändert, Ton in Franks Richtung verschoben.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">d)</span> Kultur-Übersetzer</p>
+      <p class="tech__name">"Lerne den Tonalitäts-Sprung — und übertrag ihn."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Hier eine Mail an einen Kollegen [locker, Anhang A]. Hier eine an einen Vorstand [formell, Anhang B]. Lerne die Verschiebung. Übersetz jetzt meine erste Mail in den Vorstands-Ton."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Dieselbe Information</em>, aber in formeller Sprache neu formuliert.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Wenn deine Beispiele <em>uneinheitlich oder zu wenige</em> sind (unter 3) — kopiert die KI <em>Stil-Klischees</em> statt deinen echten Standard. Auch: ein einzelnes Beispiel mit Spezifika überzieht die KI gerne (Frank-Mail wird "Frank-Klon").</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 4 (Distanz-Messung) ================== -->
+<section class="theme theme--gold" id="t4">
+  <div class="theme__head">
+    <p class="theme__num italic">4</p>
+    <p class="theme__eyebrow">Thema Vier</p>
+    <h2 class="theme__title">Distanz-Messung</h2>
+    <p class="theme__usewhen">Wenn du wissen willst, wie weit Anspruch und Realität auseinanderliegen.</p>
+    <p class="theme__geo">Du gibst zwei konkrete Punkte — und lässt die KI den <em>Abstand</em> zwischen ihnen messen und in Worte fassen. Der eingebaute Heuchelei-Detektor.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+      <!-- left dot -->
+      <circle class="pencil-fill" cx="120" cy="120" r="14"/>
+      <text class="label-serif" x="120" y="160" text-anchor="middle">Werte-Charta</text>
+      <text class="label-hand" x="120" y="180" text-anchor="middle">"Wir leben offene Kommunikation"</text>
+
+      <!-- right dot -->
+      <circle cx="580" cy="120" r="14" fill="#dc7757"/>
+      <text class="label-serif" x="580" y="160" text-anchor="middle">10 Reviews</text>
+      <text class="label-hand" x="580" y="180" text-anchor="middle">"3 Freigaben für 50€-Gutschein"</text>
+
+      <!-- ruler between -->
+      <line class="pencil-stroke" stroke-width="2" x1="140" y1="120" x2="560" y2="120" stroke-dasharray="6,4"/>
+      <!-- tick marks -->
+      <g class="pencil-stroke" stroke-width="1">
+        <line x1="180" y1="113" x2="180" y2="127"/>
+        <line x1="240" y1="113" x2="240" y2="127"/>
+        <line x1="300" y1="113" x2="300" y2="127"/>
+        <line x1="360" y1="113" x2="360" y2="127"/>
+        <line x1="420" y1="113" x2="420" y2="127"/>
+        <line x1="480" y1="113" x2="480" y2="127"/>
+        <line x1="520" y1="113" x2="520" y2="127"/>
+      </g>
+      <text class="label-hand" x="350" y="100" text-anchor="middle">Distanz: groß</text>
+      <text class="label-sans" x="350" y="50" text-anchor="middle">LINEAL ZWISCHEN ANSPRUCH UND REALITÄT</text>
+    </svg>
+    <p class="theme__viz-cap">Zwei Punkte. <em>Ein Lineal.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Heuchelei-Test</p>
+      <p class="tech__name">"Wo lügen wir uns selbst an?"</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Vergleich unsere offizielle Werte-Charta [Datei A] mit den Aussagen in unseren letzten 10 Mitarbeiter-Reviews [Datei B]. Wo ist die größte Lücke zwischen Anspruch und Realität?"</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Liste konkreter Diskrepanzen</em> (Anspruch X vs. Realität Y) + qualitative Bewertung ("Lücke groß / mittel / klein") + 2–3 wörtliche Zitate als Beleg.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Versions-Vergleich</p>
+      <p class="tech__name">"Wo sind wir vom Kurs abgekommen?"</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Vergleich die ursprüngliche Strategie 2023 [Datei] mit dem, was wir tatsächlich umgesetzt haben. Wo haben wir abgelenkt — bewusst oder unbewusst?"</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Diff-Liste</em>: Was war geplant, was passierte, vermutete Ursachen — plus Zusammenfassung der Hauptabweichung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Die KI findet <em>Diskrepanzen, wo gar keine sind</em> — sie liest dramatischer als die Quellen sind. Lass dir immer <em>wörtliche Zitate als Beleg</em> geben und prüf sie gegen das Original.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 4 (was Thema 5: Cluster-Reduktion) ================== -->
+<section class="theme theme--iris" id="t5">
+  <div class="theme__head">
+    <p class="theme__num italic">5</p>
+    <p class="theme__eyebrow">Thema Fünf</p>
+    <h2 class="theme__title">Cluster-Reduktion</h2>
+    <p class="theme__usewhen">Wenn du das Muster in vielen Daten siehst, aber nicht greifen kannst.</p>
+    <p class="theme__geo">Viele verstreute Datenpunkte → wenige <em>Hauptachsen</em>. Statt 500 Zeilen zu lesen, kriegst du die zwei oder drei Muster, um die sich alles dreht.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+      <!-- LEFT: chaos -->
+      <g transform="translate(30,40)">
+        <text class="label-sans" x="130" y="-10" text-anchor="middle">VORHER · 200 FEEDBACKS</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L260,0 L260,180 L0,180 Z" stroke-dasharray="2,3"/>
+        <!-- random small dots -->
+        <g class="pencil-fill">
+          <circle cx="30" cy="30" r="3"/><circle cx="50" cy="50" r="3"/><circle cx="80" cy="35" r="3"/>
+          <circle cx="120" cy="25" r="3"/><circle cx="150" cy="45" r="3"/><circle cx="180" cy="30" r="3"/>
+          <circle cx="210" cy="55" r="3"/><circle cx="240" cy="40" r="3"/><circle cx="40" cy="80" r="3"/>
+          <circle cx="65" cy="100" r="3"/><circle cx="100" cy="90" r="3"/><circle cx="135" cy="105" r="3"/>
+          <circle cx="170" cy="85" r="3"/><circle cx="205" cy="95" r="3"/><circle cx="235" cy="115" r="3"/>
+          <circle cx="35" cy="140" r="3"/><circle cx="70" cy="155" r="3"/><circle cx="110" cy="145" r="3"/>
+          <circle cx="145" cy="160" r="3"/><circle cx="180" cy="140" r="3"/><circle cx="215" cy="150" r="3"/>
+          <circle cx="55" cy="115" r="3"/><circle cx="90" cy="70" r="3"/><circle cx="130" cy="75" r="3"/>
+          <circle cx="195" cy="120" r="3"/><circle cx="225" cy="170" r="3"/><circle cx="25" cy="100" r="3"/>
+          <circle cx="160" cy="130" r="3"/><circle cx="100" cy="170" r="3"/>
+        </g>
+      </g>
+
+      <!-- arrow -->
+      <path class="pencil-stroke" stroke-width="2" d="M310,130 L380,130" marker-end="url(#arrow5)"/>
+      <defs>
+        <marker id="arrow5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#2a2520"/>
+        </marker>
+      </defs>
+      <text class="label-hand" x="345" y="115" text-anchor="middle">komprimiert</text>
+
+      <!-- RIGHT: clustered -->
+      <g transform="translate(410,40)">
+        <text class="label-sans" x="130" y="-10" text-anchor="middle">NACHHER · 3 ACHSEN</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L260,0 L260,180 L0,180 Z" stroke-dasharray="2,3"/>
+        <!-- Cluster 1 -->
+        <ellipse cx="70" cy="55" rx="50" ry="30" fill="none" stroke="#dc7757" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <g class="pencil-fill"><circle cx="55" cy="50" r="3"/><circle cx="75" cy="45" r="3"/><circle cx="90" cy="60" r="3"/><circle cx="60" cy="65" r="3"/><circle cx="85" cy="55" r="3"/></g>
+        <text class="label-serif" x="70" y="105" text-anchor="middle" fill="#dc7757" font-weight="600">Erreichbarkeit</text>
+        <!-- Cluster 2 -->
+        <ellipse cx="180" cy="60" rx="50" ry="30" fill="none" stroke="#6b4e8e" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <g class="pencil-fill"><circle cx="165" cy="55" r="3"/><circle cx="185" cy="50" r="3"/><circle cx="200" cy="65" r="3"/><circle cx="170" cy="70" r="3"/><circle cx="195" cy="60" r="3"/></g>
+        <text class="label-serif" x="180" y="110" text-anchor="middle" fill="#4a3566" font-weight="600">Preise</text>
+        <!-- Cluster 3 -->
+        <ellipse cx="125" cy="145" rx="55" ry="30" fill="none" stroke="#7a8c5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <g class="pencil-fill"><circle cx="100" cy="140" r="3"/><circle cx="125" cy="135" r="3"/><circle cx="150" cy="150" r="3"/><circle cx="110" cy="155" r="3"/><circle cx="140" cy="145" r="3"/></g>
+        <text class="label-serif" x="125" y="190" text-anchor="middle" fill="#4d5a3a" font-weight="600">Lieferzeiten</text>
+      </g>
+    </svg>
+    <p class="theme__viz-cap">Chaos rein. <em>Achsen raus.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Themen-Extraktion</p>
+      <p class="tech__name">"Verdichte 500 Stimmen auf 3 Achsen."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Hier 200 Kundenfeedbacks der letzten 3 Monate [Datei]. Verdichte das auf die 3 Hauptachsen unserer Probleme — mit jeweils einem repräsentativen Original-Zitat."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Liste mit 3 Themen-Headlines</em> + je 1–2 Original-Zitaten als Beleg + ungefährer Prozent-Anteil.</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Beispiel</span>
+        <pre class="tech__sample">1. Erreichbarkeit (~42%)
+   "Brauche 4 Tage für eine simple Antwort." — Account #284
+2. Preise unverständlich (~31%)
+   "Bezahle ich jetzt pro User oder pro Workspace?" — Account #117
+3. Onboarding-Friktion (~17%)
+   "Nach Schritt 4 wusste ich nicht weiter." — Account #053
+(Rest: 10% sonstiges)</pre>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Verhaltens-Landschaft</p>
+      <p class="tech__name">"Zieh aus meinem Verhalten das Muster."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Hier mein Kalender und meine Tagesnotizen der letzten 4 Wochen [Datei]. Wann arbeite ich am besten, wann am schlechtesten — welche Muster siehst du?"</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Muster-Beschreibung</em> (z.B. "morgens vor 10 = fokussierte Arbeit, nachmittags = Kontextwechsel-Schaden") + 2–3 konkrete Empfehlungen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Die Cluster klingen plausibel — sind aber oft <em>elegante Vereinfachung</em> statt echter Mustererkennung. Prüf 2–3 Rohbeispiele pro Cluster, ob sie wirklich reinpassen. Skepsis bei runden Prozent-Angaben.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 6 (Schrittweite) ================== -->
+<section class="theme theme--coral" id="t6">
+  <div class="theme__head">
+    <p class="theme__num italic">6</p>
+    <p class="theme__eyebrow">Thema Sechs</p>
+    <h2 class="theme__title">Schrittweite</h2>
+    <p class="theme__usewhen">Wenn die Aufgabe mehrere Denkschritte braucht.</p>
+    <p class="theme__geo">Statt einen langen, riskanten Sprung machst du die KI <em>viele kleine, präzise Schritte</em> gehen. Jeder Zwischenpunkt fängt Fehler ab, bevor sie sich aufaddieren.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+      <!-- TOP: long wobbly arc -->
+      <g transform="translate(0,30)">
+        <text class="label-sans" x="350" y="0" text-anchor="middle">EIN LANGER SPRUNG · RISKANT</text>
+        <circle class="pencil-fill" cx="60" cy="70" r="10"/>
+        <text class="label-serif" x="60" y="100" text-anchor="middle">A</text>
+        <path class="pencil-stroke" stroke-width="2" d="M70,70 Q200,10 350,90 Q500,170 630,70" fill="none" stroke-dasharray="3,3"/>
+        <circle cx="640" cy="70" r="10" fill="#dc7757"/>
+        <text class="label-serif" x="640" y="100" text-anchor="middle">Z</text>
+        <text class="label-hand" x="350" y="65" text-anchor="middle" fill="#dc7757">wackelig, kann jederzeit kippen</text>
+      </g>
+
+      <!-- BOTTOM: many small straight steps -->
+      <g transform="translate(0,170)">
+        <text class="label-sans" x="350" y="0" text-anchor="middle">VIELE KLEINE SCHRITTE · ROBUST</text>
+        <circle class="pencil-fill" cx="60" cy="60" r="10"/>
+        <text class="label-serif" x="60" y="90" text-anchor="middle">A</text>
+        <!-- intermediate stations -->
+        <g class="pencil-fill">
+          <circle cx="160" cy="60" r="5"/>
+          <circle cx="260" cy="60" r="5"/>
+          <circle cx="360" cy="60" r="5"/>
+          <circle cx="460" cy="60" r="5"/>
+          <circle cx="560" cy="60" r="5"/>
+        </g>
+        <!-- step arrows -->
+        <g class="pencil-stroke" stroke-width="1.5" fill="none">
+          <line x1="72" y1="60" x2="150" y2="60"/><path d="M148,55 L155,60 L148,65"/>
+          <line x1="170" y1="60" x2="250" y2="60"/><path d="M248,55 L255,60 L248,65"/>
+          <line x1="270" y1="60" x2="350" y2="60"/><path d="M348,55 L355,60 L348,65"/>
+          <line x1="370" y1="60" x2="450" y2="60"/><path d="M448,55 L455,60 L448,65"/>
+          <line x1="470" y1="60" x2="550" y2="60"/><path d="M548,55 L555,60 L548,65"/>
+          <line x1="570" y1="60" x2="630" y2="60"/><path d="M628,55 L635,60 L628,65"/>
+        </g>
+        <circle cx="640" cy="60" r="10" fill="#7a8c5c"/>
+        <text class="label-serif" x="640" y="90" text-anchor="middle">Z</text>
+      </g>
+    </svg>
+    <p class="theme__viz-cap">Ein Sprung. <em>Sechs Schritte.</em> Wo landet die KI sicher?</p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Chain-of-Thought</p>
+      <p class="tech__name">"Denk Schritt für Schritt."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Soll ich diese Investition tätigen? Denk Schritt für Schritt: ① Annahmen explizit machen, ② Best/Base/Worst-Case rechnen, ③ Risiken einzeln benennen, ④ klare Empfehlung."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Strukturierte Schritt-Antwort</em> — jeder Schritt als eigener Absatz, am Ende klare Empfehlung.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Decomposition</p>
+      <p class="tech__name">"Zerleg die Frage."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Meine Frage hat 4 Teile. Beantworte jeden einzeln, mit Quellen wo verfügbar, und fass am Schluss zusammen. Teile: ① … ② … ③ … ④ …"</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>4 separate Antworten</em> + Zusammenfassung am Schluss, oft mit Querverbindungen zwischen den Teilen.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">c)</span> Step-Back</p>
+      <p class="tech__name">"Erst rauszoomen, dann antworten."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Bevor du antwortest: was ist die übergeordnete, eigentliche Frage hinter dieser Frage? Beantworte zuerst die — und dann meine spezifische."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Meta-Antwort</em> (das Prinzip dahinter) + danach deine konkrete Antwort, abgeleitet aus dem Prinzip.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Wenn der <em>erste Schritt falsch</em> liegt, verstärkt Chain-of-Thought den Fehler statt ihn zu fangen. Bei einfachen Fragen macht "Schritt für Schritt" das Ergebnis sogar schlechter — nur einsetzen, wenn die Aufgabe wirklich mehrstufig ist.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 7 (Routenwahl-Strenge) ================== -->
+<section class="theme theme--leaf" id="t7">
+  <div class="theme__head">
+    <p class="theme__num italic">7</p>
+    <p class="theme__eyebrow">Thema Sieben</p>
+    <h2 class="theme__title">Routenwahl-Strenge</h2>
+    <p class="theme__usewhen">Wenn du zwischen sicher und kreativ wählen musst.</p>
+    <p class="theme__geo">Wie strikt die KI dem <em>wahrscheinlichsten</em> Weg folgt. Niedrig = sichere Hauptstraße, deterministisch. Hoch = kreative Umwege, überraschend.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+      <!-- LEFT: single thick path -->
+      <g transform="translate(40,40)">
+        <text class="label-sans" x="130" y="-10" text-anchor="middle">NIEDRIG · PRÄZISE</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L260,0 L260,180 L0,180 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="40" cy="90" r="8"/>
+        <text class="label-serif" x="40" y="115" text-anchor="middle">Start</text>
+        <line class="pencil-stroke" stroke-width="4" x1="48" y1="90" x2="215" y2="90"/>
+        <path class="pencil-stroke" stroke-width="4" d="M210,82 L222,90 L210,98"/>
+        <circle cx="230" cy="90" r="8" fill="#7a8c5c"/>
+        <text class="label-hand" x="130" y="75" text-anchor="middle" fill="#4d5a3a">eine Route</text>
+      </g>
+
+      <!-- RIGHT: fan -->
+      <g transform="translate(390,40)">
+        <text class="label-sans" x="130" y="-10" text-anchor="middle">HOCH · KREATIV</text>
+        <path class="pencil-stroke" stroke-width=".8" d="M0,0 L260,0 L260,180 L0,180 Z" stroke-dasharray="2,3"/>
+        <circle class="pencil-fill" cx="40" cy="90" r="8"/>
+        <text class="label-serif" x="40" y="115" text-anchor="middle">Start</text>
+        <!-- fan of paths -->
+        <g class="pencil-coral" stroke-width="1.5" fill="none">
+          <path d="M48,90 Q140,40 220,40"/>
+          <path d="M48,90 Q140,65 220,65"/>
+          <path d="M48,90 L220,90"/>
+          <path d="M48,90 Q140,115 220,115"/>
+          <path d="M48,90 Q140,140 220,140"/>
+        </g>
+        <g fill="#dc7757">
+          <circle cx="225" cy="40" r="5"/>
+          <circle cx="225" cy="65" r="5"/>
+          <circle cx="225" cy="90" r="5"/>
+          <circle cx="225" cy="115" r="5"/>
+          <circle cx="225" cy="140" r="5"/>
+        </g>
+        <text class="label-hand" x="130" y="170" text-anchor="middle" fill="#dc7757">fünf Routen</text>
+      </g>
+    </svg>
+    <p class="theme__viz-cap">Eine Route oder ein Fächer. <em>Du wählst die Strenge.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Präzision <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— niedrige Temperatur</span></p>
+      <p class="tech__name">"Eine Antwort, nüchtern."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Antworte so nüchtern und präzise wie möglich. Keine Adjektive. Keine Beispiele. Keine Alternativen."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Eine einzige, knappe Antwort</em> — oft 1–3 Sätze, sehr deterministisch, klingt bei zwei Runs fast identisch.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Kreativität <span style="font-weight:400;text-transform:none;letter-spacing:0;font-style:italic;font-family:var(--serif);color:var(--ink-soft);font-size:.95rem">— hohe Temperatur</span></p>
+      <p class="tech__name">"Gib mir fünf, alle anders."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Gib mir 5 sehr unterschiedliche Titel-Vorschläge für meinen Newsletter über Remote-Arbeit. Keiner darf wie ein anderer klingen — geh in komplett verschiedene Richtungen: nüchtern, provokant, witzig, philosophisch, zahlenbasiert."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>5 Varianten</em>, die sich tatsächlich unterscheiden — verschiedene Stimmungen, Längen, Stilbrüche.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">"Sei kreativ" produziert oft <em>5 verschiedene Floskeln</em> statt 5 echte Alternativen. Erzwing die Diversität explizit (nüchtern · provokant · witzig · philosophisch …) — sonst kriegst du Beliebigkeit, die nach Kreativität klingt.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 8 (Pfad-Multiplexing) ================== -->
+<section class="theme theme--gold" id="t8">
+  <div class="theme__head">
+    <p class="theme__num italic">8</p>
+    <p class="theme__eyebrow">Thema Acht</p>
+    <h2 class="theme__title">Pfad-Multiplexing</h2>
+    <p class="theme__usewhen">Wenn der Output wichtig ist und du blind vertrauen müsstest.</p>
+    <p class="theme__geo">Du lässt die KI <em>mehrere Routen parallel</em> laufen — und pickst dann das Beste. Entweder per Mehrheit, per Selbstkritik oder per Rollen-Gremium.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+      <!-- start -->
+      <circle class="pencil-fill" cx="80" cy="140" r="12"/>
+      <text class="label-serif" x="80" y="170" text-anchor="middle">Vorschlag</text>
+
+      <!-- fan to 4 endpoints -->
+      <g class="pencil-stroke" stroke-width="2" fill="none">
+        <path d="M92,140 Q220,70 360,50"/>
+        <path d="M92,140 Q220,110 360,105"/>
+        <path d="M92,140 Q220,170 360,175"/>
+        <path d="M92,140 Q220,220 360,230"/>
+      </g>
+
+      <!-- 4 critic endpoints -->
+      <g>
+        <circle cx="370" cy="50" r="10" fill="#dc7757"/>
+        <text class="label-serif" x="385" y="55">CFO</text>
+        <circle cx="370" cy="105" r="10" fill="#6b4e8e"/>
+        <text class="label-serif" x="385" y="110">Anwältin</text>
+        <circle cx="370" cy="175" r="10" fill="#7a8c5c"/>
+        <text class="label-serif" x="385" y="180">Veteran</text>
+        <circle cx="370" cy="230" r="10" fill="#3a3025"/>
+        <text class="label-serif" x="385" y="235">Kundin</text>
+      </g>
+
+      <!-- converging lines to synthesis -->
+      <g class="pencil-stroke" stroke-width="1.5" stroke-dasharray="3,3" fill="none">
+        <line x1="380" y1="50" x2="580" y2="140"/>
+        <line x1="380" y1="105" x2="580" y2="140"/>
+        <line x1="380" y1="175" x2="580" y2="140"/>
+        <line x1="380" y1="230" x2="580" y2="140"/>
+      </g>
+
+      <!-- synthesis -->
+      <circle cx="590" cy="140" r="16" fill="#3a3025"/>
+      <text class="label-serif" x="590" y="180" text-anchor="middle" fill="#3a3025" font-weight="600">Synthese</text>
+      <text class="label-hand" x="590" y="105" text-anchor="middle">3 Schwachstellen</text>
+    </svg>
+    <p class="theme__viz-cap">Vier Routen, vier Stimmen. <em>Eine Synthese.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Self-Consistency</p>
+      <p class="tech__name">"Drei Wege, Mehrheit gewinnt."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Schätz die Marktgröße für [Produkt] in Deutschland. Rechne das auf 3 verschiedenen Wegen (Top-Down / Bottom-Up / Vergleichs-Markt). Wenn alle 3 nah beieinander liegen — gib eine Zahl. Wenn nicht — sag mir, wo die größte Unsicherheit liegt."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>3 unabhängige Schätzungen</em> + Konvergenz-Check: bei Nähe eine konsolidierte Zahl, sonst Hinweis auf Unsicherheits-Quellen.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Reflection</p>
+      <p class="tech__name">"Schreib. Kritisier. Überarbeite."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Schreib mir die Rede. Dann schau dir dein Ergebnis an: was sind die 3 schwächsten Stellen? Überarbeite konkret diese 3 Stellen — keine kosmetischen Änderungen, nur Substanz."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Drei Outputs</em>: ① ursprüngliche Version, ② Liste der 3 Schwachstellen, ③ überarbeitete Version.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">c)</span> Vier Kritiker</p>
+      <p class="tech__name">"Sei vier Stimmen — und synthetisier."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Sei nacheinander vier Kritiker und zerleg meinen Vorschlag: ① nüchterner CFO, ② Compliance-Anwältin, ③ erfahrener Branchenveteran, ④ skeptische Kundin. Dann fasse die 3 größten Schwachstellen zusammen."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>4 separate Kritiken</em> (eine pro Persona) + <em>3 konsolidierte Hauptschwachstellen</em> mit Gewichtung.</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Beispiel</span>
+        <pre class="tech__sample">CFO: "Rampe zu optimistisch. Bei 30% Conversion brichst du in Monat 7."
+Anwältin: "DSGVO-Lücke: Daten aus EU-Cookies fließen ungeklärt nach US."
+Veteran: "Die Idee gab's 2018 unter dem Namen 'X'. Warum klappte es nicht?"
+Kundin: "Drei Klicks bis zum Kernnutzen. Ich klick zwei und springe ab."
+
+3 Hauptschwachstellen: ① Unit Economics unklar (CFO+Veteran)
+② Compliance ungelöst (Anwältin) ③ UX-Friktion (Kundin)</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Die vier Kritiker formulieren oft <em>denselben Einwand vier Mal</em>, nur anders verpackt. Wähl Rollen mit echt unterschiedlichen Werten (CFO vs. Aktivist vs. Veteran vs. Kundin) — sonst hast du Pseudo-Diversität und falsches Sicherheitsgefühl.</p>
+  </div>
+</section>
+
+<!-- ================== THEMA 9 (No-Go-Regionen) ================== -->
+<section class="theme theme--ink" id="t9">
+  <div class="theme__head">
+    <p class="theme__num italic">9</p>
+    <p class="theme__eyebrow">Thema Neun</p>
+    <h2 class="theme__title">No-Go-Regionen</h2>
+    <p class="theme__usewhen">Wenn du genau weißt, was du nicht willst.</p>
+    <p class="theme__geo">Du markierst Bereiche auf der Karte, um die die KI <em>navigieren muss</em>. Buzzwords, Klischees, typische Floskeln — alles, was du nicht hören willst.</p>
+  </div>
+
+  <div class="theme__viz">
+    <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+      <!-- start -->
+      <circle class="pencil-fill" cx="60" cy="120" r="10"/>
+      <text class="label-serif" x="60" y="148" text-anchor="middle">Start</text>
+
+      <!-- forbidden zone 1 -->
+      <g>
+        <ellipse cx="230" cy="80" rx="55" ry="35" fill="none" stroke="#dc7757" stroke-width="2"/>
+        <pattern id="hatch1" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="8" stroke="#dc7757" stroke-width="1" opacity=".4"/>
+        </pattern>
+        <ellipse cx="230" cy="80" rx="55" ry="35" fill="url(#hatch1)"/>
+        <text class="label-serif" x="230" y="85" text-anchor="middle" fill="#dc7757" font-weight="600" font-size="13">Buzzwords</text>
+      </g>
+
+      <!-- forbidden zone 2 -->
+      <g>
+        <ellipse cx="380" cy="170" rx="55" ry="32" fill="none" stroke="#dc7757" stroke-width="2"/>
+        <ellipse cx="380" cy="170" rx="55" ry="32" fill="url(#hatch1)"/>
+        <text class="label-serif" x="380" y="175" text-anchor="middle" fill="#dc7757" font-weight="600" font-size="13">Aufzählungen</text>
+      </g>
+
+      <!-- forbidden zone 3 -->
+      <g>
+        <ellipse cx="530" cy="90" rx="50" ry="32" fill="none" stroke="#dc7757" stroke-width="2"/>
+        <ellipse cx="530" cy="90" rx="50" ry="32" fill="url(#hatch1)"/>
+        <text class="label-serif" x="530" y="95" text-anchor="middle" fill="#dc7757" font-weight="600" font-size="13">Anglizismen</text>
+      </g>
+
+      <!-- winding route -->
+      <path class="pencil-stroke" stroke-width="2" fill="none" d="M70,120 Q140,140 175,140 Q210,150 240,130 Q290,120 305,150 Q325,180 350,200 Q400,220 445,180 Q475,150 485,140 Q510,135 580,135 Q620,130 640,130" marker-end="url(#arrow9)"/>
+      <defs>
+        <marker id="arrow9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="#2a2520"/>
+        </marker>
+      </defs>
+
+      <!-- goal -->
+      <circle cx="650" cy="130" r="10" fill="#7a8c5c"/>
+      <text class="label-serif" x="650" y="158" text-anchor="middle">Ziel</text>
+      <text class="label-hand" x="350" y="40" text-anchor="middle">Route schlängelt sich um die Sperrzonen</text>
+    </svg>
+    <p class="theme__viz-cap">Die Karte hat Verbotszonen. <em>Die KI muss drumrum.</em></p>
+  </div>
+
+  <div class="techs">
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">a)</span> Negative Prompting</p>
+      <p class="tech__name">"Vermeide das. Und das. Und das."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Schreib die Pressemitteilung. Vermeide: Buzzwords ('innovativ', 'disruptiv', 'revolutionär'), Marketing-Superlative, Aufzählungen, englische Begriffe wenn es ein deutsches Wort gibt, Sätze mit mehr als 20 Wörtern."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Pressemitteilung, die die Regeln einhält</em> — meist nüchterner und konkreter als Standard-PMs.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="tech__label"><span class="tech__letter">b)</span> Form-Beschränkung</p>
+      <p class="tech__name">"Halte dich an diese Form."</p>
+      <div class="tech__row">
+        <span class="tech__row-label">Prompt</span>
+        <p class="tech__prompt">"Antworte ausschließlich in vollständigen Sätzen, ohne Spiegelstriche, ohne Bullet Points, in maximal 200 Wörtern."</p>
+      </div>
+      <div class="tech__row">
+        <span class="tech__row-label">Output</span>
+        <p class="tech__output"><em>Antwort in dieser Form</em> — Fließtext, keine Listen, exakte Längenbegrenzung.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="failure">
+    <span class="failure__label">Häufiger Fehler</span>
+    <p class="failure__text">Zu viele "vermeide X, Y, Z" machen das Modell <em>ängstlich</em> — Output wird vorsichtig und farblos. Max. 3–4 echte Verbote, kein Generalverdacht. Und: "Denk nicht an einen rosa Elefanten" — Erwähnen aktiviert manchmal.</p>
+  </div>
+</section>
+
+<!-- ================== CLOSING ================== -->
+<section class="closing">
+  <p class="closing__hand">Neun Themen. Eine Mathematik.<br>Hundert Möglichkeiten.</p>
+  <p class="closing__sub">Salon AI · Immersive Workshop #1 · Mathe mit Worten</p>
+</section>
+
+<!-- ================== JS: Copy-Buttons + Mini-TOC active state ================== -->
+<script>
+(function(){
+  // Copy buttons for every prompt
+  document.querySelectorAll('.tech__prompt').forEach((p, i) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'tech__prompt-wrap';
+    p.parentNode.insertBefore(wrap, p);
+    wrap.appendChild(p);
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.type = 'button';
+    btn.textContent = 'kopieren';
+    btn.addEventListener('click', () => {
+      const text = p.textContent.trim().replace(/^"|"$/g, '');
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'kopiert ✓';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'kopieren';
+          btn.classList.remove('copied');
+        }, 1600);
+      });
+    });
+    wrap.appendChild(btn);
+  });
+
+  // Mini-TOC active state
+  const themes = document.querySelectorAll('.theme');
+  const dots = document.querySelectorAll('.minitoc__dot');
+  function updateActive(){
+    let activeIdx = -1;
+    themes.forEach((t, i) => {
+      const r = t.getBoundingClientRect();
+      if(r.top < window.innerHeight * 0.45) activeIdx = i;
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+  }
+  window.addEventListener('scroll', updateActive, {passive:true});
+  window.addEventListener('resize', updateActive);
+  updateActive();
+})();
+</script>
+</body>
+</html>
