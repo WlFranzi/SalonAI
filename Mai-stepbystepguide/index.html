@@ -461,6 +461,55 @@ strong{font-weight:600}
 }
 .master-card__caption em{color:var(--coral);font-style:italic;font-weight:600}
 
+/* ============ SLIDER-DEMO — interaktive Vis (Comeau · Case) ============ */
+.slider-demo{
+  background:#fff;border:1px solid var(--rule);
+  padding:1.5rem 1.2rem;max-width:760px;margin:2rem auto;
+  box-shadow:0 18px 50px rgba(20,15,10,.06);
+}
+.slider-demo__svg{display:block;width:100%;height:auto;max-height:380px}
+.slider-demo__state{opacity:0;transition:opacity .4s ease-out}
+.slider-demo[data-state="0"] .slider-demo__state--0,
+.slider-demo[data-state="1"] .slider-demo__state--1,
+.slider-demo[data-state="2"] .slider-demo__state--2,
+.slider-demo[data-state="3"] .slider-demo__state--3,
+.slider-demo[data-state="4"] .slider-demo__state--4{opacity:1}
+.slider-demo__control{
+  margin:1.4rem auto 0;padding:0 1rem;max-width:560px;
+}
+.slider-demo__input{
+  -webkit-appearance:none;appearance:none;
+  width:100%;height:6px;background:var(--rule);
+  outline:none;border-radius:3px;cursor:pointer;
+}
+.slider-demo__input::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--coral);cursor:grab;
+  border:3px solid #fff;box-shadow:0 2px 10px rgba(226,106,74,.45);
+  transition:transform .15s ease-out;
+}
+.slider-demo__input::-webkit-slider-thumb:hover{transform:scale(1.1)}
+.slider-demo__input::-webkit-slider-thumb:active{cursor:grabbing;transform:scale(.95)}
+.slider-demo__input::-moz-range-thumb{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--coral);cursor:grab;
+  border:3px solid #fff;box-shadow:0 2px 10px rgba(226,106,74,.45);
+}
+.slider-demo__ticks{
+  display:flex;justify-content:space-between;
+  margin-top:.6rem;font-family:var(--sans);font-size:.66rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+  font-weight:600;
+}
+.slider-demo__ticks span{flex:1;text-align:center}
+.slider-demo__ticks span:first-child{text-align:left}
+.slider-demo__ticks span:last-child{text-align:right}
+.slider-demo__hint{
+  text-align:center;font-family:var(--hand);font-size:.95rem;
+  color:var(--ink-soft);margin:.4rem 0 0;font-style:italic;
+}
+
 /* Stage-Visibility für progressiven Aufbau im selben Canvas */
 .master-card .stage{transition:opacity .7s ease,transform .7s ease}
 .master-card .stage--1{opacity:1}
@@ -520,6 +569,39 @@ strong{font-weight:600}
 }
 .hero__trailer-list strong{font-weight:600}
 .hero__trailer-list em{color:var(--coral);font-style:italic}
+
+/* ---- Hero-Trailer Cross-Fade (Comeau): "Before AI" <-> "After AI" ---- */
+.hero__trailer-stage{
+  position:relative;min-height:3.6em;
+  font-family:var(--serif);font-size:1.05rem;line-height:1.6;
+}
+.hero__trailer-line{
+  position:absolute;top:0;left:0;right:0;margin:0;
+}
+.hero__trailer-line strong{font-weight:600;color:var(--ink)}
+.hero__trailer-line--before{
+  color:var(--ink-soft);
+  animation:trailerFadeBefore 7s ease-in-out infinite;
+}
+.hero__trailer-line--after{
+  opacity:0;
+  animation:trailerFadeAfter 7s ease-in-out infinite;
+}
+.hero__trailer-line--after em{color:var(--coral);font-style:italic;font-weight:500}
+@keyframes trailerFadeBefore{
+  0%,32%{opacity:1}
+  50%,82%{opacity:0}
+  100%{opacity:1}
+}
+@keyframes trailerFadeAfter{
+  0%,32%{opacity:0}
+  50%,82%{opacity:1}
+  100%{opacity:0}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero__trailer-line--before,.hero__trailer-line--after{animation:none}
+  .hero__trailer-line--after{opacity:1}
+}
 .hero__framing{
   margin-top:2rem;font-family:var(--serif);font-style:italic;
   font-size:1.15rem;color:var(--ink-soft);max-width:54ch;line-height:1.5;
@@ -624,6 +706,72 @@ strong{font-weight:600}
 @media(max-width:780px){
   .bias-card__pop{width:calc(100vw - 2.5rem);font-size:.9rem}
 }
+
+/* ============ CRITICS-PANEL — Vier Stimmen visualisiert (Appleton) ============ */
+.critics-panel{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:.9rem;max-width:880px;margin:1.5rem auto 2rem;
+}
+.critics-panel__card{
+  background:#fff;border:1px solid var(--rule);
+  padding:1.2rem 1.2rem 1.3rem;border-radius:2px;
+  position:relative;display:flex;flex-direction:column;gap:.5rem;
+}
+.critics-panel__card[data-critic="cfo"]{border-top:3px solid var(--coral)}
+.critics-panel__card[data-critic="activist"]{border-top:3px solid var(--iris)}
+.critics-panel__card[data-critic="veteran"]{border-top:3px solid var(--ink-soft)}
+.critics-panel__card[data-critic="customer"]{border-top:3px solid var(--leaf)}
+.critics-panel__num{
+  width:34px;height:34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:1.15rem;color:#fff;line-height:1;
+}
+.critics-panel__card[data-critic="cfo"] .critics-panel__num{background:var(--coral)}
+.critics-panel__card[data-critic="activist"] .critics-panel__num{background:var(--iris)}
+.critics-panel__card[data-critic="veteran"] .critics-panel__num{background:var(--ink-soft)}
+.critics-panel__card[data-critic="customer"] .critics-panel__num{background:var(--leaf)}
+.critics-panel__name{
+  font-family:var(--serif);font-weight:600;font-size:1.02rem;
+  color:var(--ink);margin:0;line-height:1.25;
+}
+.critics-panel__lens{
+  font-family:var(--serif);font-style:italic;font-size:.95rem;
+  color:var(--ink-soft);margin:0;line-height:1.4;
+}
+.critics-panel__lens em{color:var(--ink);font-style:italic;font-weight:500}
+
+/* ============ BIAS-FLIP — "dreh die Gewichtung um" (Case) ============ */
+.bias-flip{max-width:780px;margin:0 auto 2.5rem;text-align:center}
+.bias-flip > summary{
+  cursor:pointer;font-family:var(--sans);font-size:.78rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--coral);
+  font-weight:600;padding:.55rem 0;display:inline-block;
+  border-bottom:1px solid var(--coral);list-style:none;
+}
+.bias-flip > summary::-webkit-details-marker{display:none}
+.bias-flip > summary::before{content:'→ ';margin-right:.3em}
+.bias-flip[open] > summary{color:var(--ink-soft);border-bottom-color:var(--ink-soft)}
+.bias-flip[open] > summary::before{content:'↑ '}
+.bias-flip__body{
+  margin:1.2rem auto 0;text-align:left;background:var(--paper-tint);
+  border-left:2px solid var(--coral);padding:1.5rem 1.7rem;
+}
+.bias-flip__body-label{
+  display:block;font-family:var(--sans);font-size:.7rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink);
+  margin-bottom:.7rem;font-weight:600;
+}
+.bias-flip__body-text{
+  font-family:'SF Mono',Menlo,monospace;font-size:.88rem;line-height:1.6;
+  color:var(--ink-soft);margin:0;
+}
+.bias-flip__body-text strong{color:var(--ink);font-weight:600}
+.bias-flip__caveat{
+  margin:1.2rem 0 0;font-family:var(--serif);font-style:italic;
+  font-size:1rem;color:var(--ink);line-height:1.5;
+}
+.bias-flip__caveat em{color:var(--coral);font-weight:500}
 
 /* ============ DISCLAIMER-BOX (Karpathy: ehrlich über die Metapher) ============ */
 .disclaimer-box{
@@ -875,6 +1023,24 @@ strong{font-weight:600}
 .prompt-step em{color:var(--coral);font-style:italic;font-weight:600}
 .prompt-step strong{font-weight:600;color:var(--ink)}
 
+/* Stagger-Reveal (Comeau) — Schritte erscheinen einer nach dem anderen beim Scroll-Into-View */
+.prompt-steps[data-staggered] .prompt-step{
+  opacity:0;transform:translateY(8px);
+  transition:opacity .55s ease-out, transform .55s ease-out;
+}
+.prompt-steps[data-staggered].is-revealed .prompt-step{
+  opacity:1;transform:translateY(0);
+}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(1){transition-delay:0ms}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(2){transition-delay:200ms}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(3){transition-delay:400ms}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(4){transition-delay:600ms}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(5){transition-delay:800ms}
+.prompt-steps[data-staggered].is-revealed .prompt-step:nth-child(6){transition-delay:1000ms}
+@media (prefers-reduced-motion: reduce){
+  .prompt-steps[data-staggered] .prompt-step{opacity:1;transform:none;transition:none}
+}
+
 /* ============ ITERATION-LOOP NOTE (after I.2) ============ */
 .iter-note{
   background:var(--coral-soft);border-left:2px solid var(--coral);
@@ -1048,11 +1214,17 @@ strong{font-weight:600}
   <p class="hero__sub">Ein Abend, an dem KI aufhört, Magie zu sein.</p>
 
   <div class="hero__trailer">
-    <p class="hero__trailer-label">— Trailer · Zwei Berufe, vor und nach KI</p>
-    <p class="hero__trailer-list">
-      <strong>Legal</strong> — 12 h Discovery &amp; Brief → <em>45 Min, alle Zitate verifiziert</em><br>
-      <strong>PR &amp; Comms</strong> — 10 h Krisen-Monitoring → <em>15 Min, Krise erkannt + Antworten entworfen</em>
-    </p>
+    <p class="hero__trailer-label">— Trailer · zwei Berufe, vor und nach KI</p>
+    <div class="hero__trailer-stage" aria-label="Vor und nach KI im Wechsel">
+      <p class="hero__trailer-line hero__trailer-line--before">
+        <strong>Legal</strong> — 12 h Discovery &amp; Brief<br>
+        <strong>PR &amp; Comms</strong> — 10 h Krisen-Monitoring
+      </p>
+      <p class="hero__trailer-line hero__trailer-line--after">
+        <strong>Legal</strong> — <em>45 Min, alle Zitate verifiziert</em><br>
+        <strong>PR &amp; Comms</strong> — <em>15 Min, Krise erkannt + Antworten entworfen</em>
+      </p>
+    </div>
   </div>
 
   <p class="hero__framing">
@@ -1559,6 +1731,16 @@ After (~10 min/day): An ambient audio-AI securely listens to your patient conver
     <em>Mark. Er. Garage. San Francisco.</em> Vier Default-Entscheidungen in drei Sätzen. Keine ist falsch — aber alle kommen aus derselben Ecke der Welt.
   </p>
 
+  <!-- Bias-Flip: dreh die Gewichtung um (Case-Linse) -->
+  <details class="bias-flip">
+    <summary>dreh die Gewichtung um</summary>
+    <div class="bias-flip__body">
+      <span class="bias-flip__body-label">→ Antwort, wenn die Defaults anders verteilt wären</span>
+      <p class="bias-flip__body-text">"<strong>Aisha</strong> gründete <strong>ihr</strong> erstes Startup in einer Werkstatt in Lagos. Mit 28 Jahren verkaufte <strong>sie</strong> es für 200 Millionen Dollar. Heute investiert <strong>sie</strong> in junge Tech-Unternehmerinnen im Subsahara-Raum."</p>
+      <p class="bias-flip__caveat">Gleicher Prompt, andere Gewichtung. <em>Beide</em> Antworten sind plausibel — keine ist neutral. Defaults sind nie das „Normale", sie sind statistische Mehrheiten. Wenn du eine Hiring-Story oder Investor-Persona brauchst und nichts sagst, gibt dir die KI Mark. <em>Sag's.</em></p>
+    </div>
+  </details>
+
   <!-- Bias-Plot: Berufe nach he/she-Embedding-Assoziation -->
   <figure style="max-width:780px;margin:2.5rem auto;background:#fff;padding:1.2rem;border:1px solid var(--rule);box-shadow:0 18px 50px rgba(20,15,10,.06)">
     <img src="bias.png" alt="Berufe geplottet nach ihrer Embedding-Assoziation zu 'he' (x-Achse) vs. 'she' (y-Achse). Blaue Punkte = stärker weiblich assoziiert (Nurse, Homemaker, Bookkeeper), rote Punkte = stärker männlich assoziiert (Captain, Boss, Pilot, Warrior)." loading="lazy" style="width:100%;height:auto;display:block">
@@ -2008,14 +2190,28 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
     Ein Agent ist nichts Mystisches. Es ist ein <em>Ordner auf deinem Laptop</em>. Darin liegen drei Sorten Sachen — eine davon (die <em>Anleitung</em>) liest der Agent <em>automatisch</em> bei jedem Start. Die anderen zwei sind Konventionen, die <em>du</em> in der Anleitung festlegst. Alles, was wir noch lernen, dreht sich darum, diese drei Sorten klüger zu nutzen.
   </p>
 
-  <!-- Master-card visualization: folder with 3 sheets -->
+  <!-- Master-card visualization: folder with 3 sheets + 2 Beziehungs-Pfeile -->
   <div class="master-card" style="margin:2rem auto;max-width:720px">
-    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg">
       <!-- Folder outer rectangle -->
       <g class="pencil-stroke" stroke-width="1.5">
         <path d="M30,60 L150,60 L170,80 L670,80 Q672,82 670,84 L670,290 Q672,292 670,294 L30,294 Q28,292 30,290 L30,62 Q28,60 30,60 Z"/>
       </g>
       <text class="label-hand" x="50" y="78" fill="#3a3633" font-size="16">mein-agent/</text>
+
+      <!-- BEZIEHUNG 1: context → claude.md (großer Bogen über alle Sheets) -->
+      <g class="pencil-coral" stroke-width="1.2" opacity=".55" fill="none">
+        <path d="M520,108 Q450,90 350,90 Q250,90 175,108"/>
+        <path d="M180,103 L172,110 L168,102"/>
+      </g>
+      <text x="350" y="82" font-family="Caveat" font-size="12" fill="#a4502e" text-anchor="middle" font-style="italic">was sich wiederholt — wandert in die Regel</text>
+
+      <!-- BEZIEHUNG 2: claude.md → memory (kleinerer Bogen unter Sheet 1 und 2) -->
+      <g class="pencil-iris" stroke-width="1.2" opacity=".6" fill="none">
+        <path d="M155,308 Q225,322 295,308"/>
+        <path d="M289,304 L297,308 L289,312"/>
+      </g>
+      <text x="225" y="338" font-family="Caveat" font-size="12" fill="#4a3566" text-anchor="middle" font-style="italic">heute lernen → morgen merken</text>
 
       <!-- Three sheets inside -->
       <!-- Anleitung -->
@@ -2215,35 +2411,62 @@ Bau bitte folgendes:
   <h2>Drei Stellungen.<br><em>Nur eine ist richtig.</em></h2>
   <p class="lead">Mit jedem Satz, jeder Datei, jedem Bild, das du mitlieferst, drehst du an einem Steuerrad. Zu wenig — sie rät. Zu viel — sie verliert den Faden. <em>Genau richtig</em> heißt: drei klare Anker, kein Rauschen drumherum.</p>
 
-  <div class="master-card" style="margin-top:2rem">
-    <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
-      <g class="pencil-stroke" stroke-width="1.5" fill="none">
-        <!-- Horizontal spectrum line -->
-        <path d="M70,140 Q352,138 632,140"/>
-        <!-- Three steering wheel positions -->
-        <circle cx="120" cy="140" r="42"/>
-        <circle cx="350" cy="140" r="42" stroke="#e26a4a" stroke-width="2"/>
-        <circle cx="582" cy="140" r="42"/>
-        <!-- Crosshairs inside each wheel -->
-        <path d="M120,108 L120,172 M88,140 L152,140"/>
-        <path d="M350,108 L350,172 M318,140 L382,140" stroke="#e26a4a"/>
-        <path d="M582,108 L582,172 M550,140 L614,140"/>
-        <!-- Tilt indicators -->
-        <path d="M88,128 Q120,118 152,128" stroke="#a4502e" stroke-width="1.2"/>
-        <path d="M550,128 Q582,138 614,128" stroke="#a4502e" stroke-width="1.2"/>
+  <!-- Interaktiver Steuerrad-Slider (Comeau): User dreht, Visualisierung morpht -->
+  <div class="slider-demo" data-state="1">
+    <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" class="slider-demo__svg">
+      <text x="350" y="28" font-family="Caveat" font-size="18" fill="#3a3633" text-anchor="middle">zieh den Schieber unten — schau, was passiert.</text>
+
+      <!-- STATE 0: zu wenig — kleines Rad, blasser -->
+      <g class="slider-demo__state slider-demo__state--0">
+        <g class="pencil-stroke" stroke-width="1.5" fill="none">
+          <circle cx="350" cy="160" r="28"/>
+          <line x1="350" y1="135" x2="350" y2="185" stroke-width="1.2"/>
+          <line x1="325" y1="160" x2="375" y2="160" stroke-width="1.2"/>
+        </g>
+        <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#5c4f43" text-anchor="middle">zu wenig</text>
+        <text x="350" y="340" font-family="Caveat" font-size="17" fill="#3a3633" text-anchor="middle">sie rät — du kriegst Mittelmaß</text>
       </g>
-      <g font-family="Cormorant Garamond" font-style="italic" font-size="17" fill="#1a1410" text-anchor="middle">
-        <text x="120" y="220">zu wenig</text>
-        <text x="350" y="220" fill="#e26a4a" font-weight="600">genau richtig</text>
-        <text x="582" y="220">zu viel</text>
+
+      <!-- STATE 1: genau richtig — mittleres Rad, coral, Doppel-Ring -->
+      <g class="slider-demo__state slider-demo__state--1">
+        <g stroke="#e26a4a" stroke-width="2" fill="none">
+          <circle cx="350" cy="160" r="55"/>
+          <circle cx="350" cy="160" r="48" opacity=".4"/>
+          <line x1="350" y1="105" x2="350" y2="215" stroke-width="1.6"/>
+          <line x1="295" y1="160" x2="405" y2="160" stroke-width="1.6"/>
+        </g>
+        <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="24" fill="#e26a4a" text-anchor="middle" font-weight="600">genau richtig</text>
+        <text x="350" y="340" font-family="Caveat" font-size="17" fill="#a4502e" text-anchor="middle">drei Anker — sie trifft</text>
       </g>
-      <g font-family="Caveat" font-size="15" fill="#3a3633" text-anchor="middle">
-        <text x="120" y="244">sie rät</text>
-        <text x="350" y="244" fill="#a4502e">sie trifft</text>
-        <text x="582" y="244">sie verliert den Faden</text>
+
+      <!-- STATE 2: zu viel — großes Rad + Rausch-Ringe -->
+      <g class="slider-demo__state slider-demo__state--2">
+        <g class="pencil-stroke" stroke-width="1.5" fill="none">
+          <circle cx="350" cy="160" r="68"/>
+          <line x1="350" y1="92" x2="350" y2="228" stroke-width="1.2"/>
+          <line x1="282" y1="160" x2="418" y2="160" stroke-width="1.2"/>
+        </g>
+        <!-- Rausch-Ringe (gestrichelte konzentrische Kreise) -->
+        <g stroke="#a4502e" stroke-width=".8" fill="none" opacity=".55">
+          <circle cx="350" cy="160" r="82" stroke-dasharray="3,4"/>
+          <circle cx="350" cy="160" r="98" stroke-dasharray="2,5"/>
+          <circle cx="350" cy="160" r="116" stroke-dasharray="2,7"/>
+          <circle cx="350" cy="160" r="136" stroke-dasharray="1,9"/>
+        </g>
+        <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#5c4f43" text-anchor="middle">zu viel</text>
+        <text x="350" y="340" font-family="Caveat" font-size="17" fill="#3a3633" text-anchor="middle">sie verliert den Faden im Rauschen</text>
       </g>
-      <text x="350" y="50" font-family="Caveat" font-size="20" fill="#3a3633" text-anchor="middle">drei Anker reichen — kein Rauschen drumherum.</text>
     </svg>
+
+    <div class="slider-demo__control">
+      <input type="range" min="0" max="2" value="1" step="1" class="slider-demo__input" aria-label="Kontext-Menge: zu wenig, genau richtig, zu viel">
+      <div class="slider-demo__ticks">
+        <span>zu wenig</span>
+        <span>genau richtig</span>
+        <span>zu viel</span>
+      </div>
+      <p class="slider-demo__hint">← zieh und vergleich →</p>
+    </div>
   </div>
 </section>
 
@@ -2283,41 +2506,71 @@ Bau bitte folgendes:
   <h2>Klein und exakt — oder<br><em>groß und nachbarschaftlich.</em></h2>
   <p class="lead">Wenige präzise Beispiele formen eine enge <em>Schablone</em>: das Modell trifft eng am Vorbild. Viele Dokumente formen eine weite <em>Landkarte</em>: das Modell darf weiterdenken, aber bleibt im Gelände. Du wählst die Form passend zur Aufgabe — nicht umgekehrt.</p>
 
-  <div class="master-card" style="margin-top:2rem">
-    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Interaktiver Schablone-Landkarte-Slider (Case): drag = mehr Beispiele -->
+  <div class="slider-demo" data-state="1">
+    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" class="slider-demo__svg">
+      <!-- Gemeinsamer Container/Rahmen für alle States -->
       <g class="pencil-stroke" stroke-width="1.5" fill="none">
-        <!-- LEFT: Schablone — small precise template -->
-        <rect x="60" y="60" width="240" height="200" rx="6"/>
-        <!-- 3 precise punched holes -->
-        <circle cx="130" cy="130" r="14" stroke="#e26a4a" stroke-width="2"/>
-        <circle cx="180" cy="180" r="14" stroke="#e26a4a" stroke-width="2"/>
-        <circle cx="230" cy="130" r="14" stroke="#e26a4a" stroke-width="2"/>
-        <!-- Guides -->
-        <path d="M85,90 L275,90" stroke-dasharray="3,4"/>
-        <path d="M85,230 L275,230" stroke-dasharray="3,4"/>
+        <rect x="80" y="60" width="540" height="200" rx="6"/>
+      </g>
 
-        <!-- RIGHT: Landkarte — broad map with regions -->
-        <rect x="400" y="60" width="240" height="200" rx="6"/>
-        <!-- Topo curves -->
-        <path d="M420,100 Q470,80 520,98 Q580,115 625,95" stroke="#6b4e8e"/>
-        <path d="M420,140 Q480,125 540,148 Q600,170 625,140" stroke="#6b4e8e"/>
-        <path d="M420,180 Q470,200 525,182 Q585,165 625,190" stroke="#7a8c5c"/>
-        <path d="M420,220 Q480,210 535,225 Q595,235 625,218" stroke="#7a8c5c"/>
-        <!-- A few "city" markers -->
-        <circle cx="465" cy="118" r="3" fill="#1a1410" stroke="none"/>
-        <circle cx="540" cy="160" r="3" fill="#1a1410" stroke="none"/>
-        <circle cx="600" cy="200" r="3" fill="#1a1410" stroke="none"/>
+      <!-- STATE 0: 1 Beispiel — eng -->
+      <g class="slider-demo__state slider-demo__state--0">
+        <circle cx="350" cy="160" r="14" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <text x="350" y="40" font-family="Cormorant Garamond" font-style="italic" font-size="19" fill="#1a1410" text-anchor="middle">SCHABLONE — <tspan fill="#e26a4a">1 Beispiel</tspan></text>
+        <text x="350" y="290" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">zu schmal — kein Spielraum, das Modell rät die Richtung</text>
       </g>
-      <g font-family="Cormorant Garamond" font-style="italic" font-size="19" fill="#1a1410" text-anchor="middle">
-        <text x="180" y="40">SCHABLONE</text>
-        <text x="520" y="40">LANDKARTE</text>
+
+      <!-- STATE 1: 5 Beispiele — die klassische Schablone -->
+      <g class="slider-demo__state slider-demo__state--1">
+        <circle cx="220" cy="115" r="12" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <circle cx="285" cy="195" r="12" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <circle cx="350" cy="135" r="12" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <circle cx="415" cy="195" r="12" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <circle cx="480" cy="115" r="12" stroke="#e26a4a" stroke-width="2" fill="none"/>
+        <path d="M120,90 L580,90" stroke="#5c4f43" stroke-dasharray="3,4" opacity=".4" fill="none"/>
+        <path d="M120,230 L580,230" stroke="#5c4f43" stroke-dasharray="3,4" opacity=".4" fill="none"/>
+        <text x="350" y="40" font-family="Cormorant Garamond" font-style="italic" font-size="19" fill="#1a1410" text-anchor="middle">SCHABLONE — <tspan fill="#e26a4a">5 Beispiele</tspan></text>
+        <text x="350" y="290" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">enge Treffer — die Richtung ist klar erkennbar</text>
       </g>
-      <g font-family="Caveat" font-size="15" fill="#3a3633" text-anchor="middle">
-        <text x="180" y="290">3 Beispiele · enges Treffer-Feld</text>
-        <text x="520" y="290">viele Dokumente · weiter Geländerahmen</text>
+
+      <!-- STATE 2: viele Dokumente — Landkarte -->
+      <g class="slider-demo__state slider-demo__state--2">
+        <g class="pencil-stroke" stroke-width="1.2" fill="none" opacity=".7">
+          <path d="M100,100 Q170,80 240,98 Q330,118 410,95 Q490,75 580,100" stroke="#6b4e8e"/>
+          <path d="M100,140 Q190,125 260,148 Q350,170 430,140 Q510,115 580,140" stroke="#6b4e8e"/>
+          <path d="M100,180 Q170,200 250,182 Q340,165 420,190 Q500,210 580,180" stroke="#7a8c5c"/>
+          <path d="M100,220 Q180,210 260,225 Q360,235 440,215 Q520,200 580,225" stroke="#7a8c5c"/>
+        </g>
+        <g fill="#1a1410">
+          <circle cx="145" cy="115" r="2.5"/>
+          <circle cx="190" cy="155" r="2.5"/>
+          <circle cx="240" cy="105" r="2.5"/>
+          <circle cx="285" cy="170" r="2.5"/>
+          <circle cx="330" cy="135" r="2.5"/>
+          <circle cx="370" cy="200" r="2.5"/>
+          <circle cx="420" cy="120" r="2.5"/>
+          <circle cx="470" cy="180" r="2.5"/>
+          <circle cx="520" cy="100" r="2.5"/>
+          <circle cx="560" cy="195" r="2.5"/>
+          <circle cx="170" cy="220" r="2.5"/>
+          <circle cx="305" cy="225" r="2.5"/>
+          <circle cx="440" cy="220" r="2.5"/>
+        </g>
+        <text x="350" y="40" font-family="Cormorant Garamond" font-style="italic" font-size="19" fill="#1a1410" text-anchor="middle">LANDKARTE — <tspan fill="#7a8c5c">viele Dokumente</tspan></text>
+        <text x="350" y="290" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">weiter Geländerahmen — das Modell findet eigene Wege</text>
       </g>
     </svg>
-    <p class="master-card__caption" style="text-align:center">Treffer-Genauigkeit kommt aus <em>Schablonen</em>. Eigenständigkeit kommt aus <em>Landkarten</em>.</p>
+
+    <div class="slider-demo__control">
+      <input type="range" min="0" max="2" value="1" step="1" class="slider-demo__input" aria-label="Anzahl Beispiele: ein Beispiel, fünf Beispiele, viele Dokumente">
+      <div class="slider-demo__ticks">
+        <span>1 Beispiel</span>
+        <span>5 Beispiele</span>
+        <span>viele Dokumente</span>
+      </div>
+      <p class="slider-demo__hint">← schieb und sieh, wie sich das Treffer-Feld verändert →</p>
+    </div>
   </div>
 </section>
 
@@ -2515,26 +2768,52 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     Du brauchst kein Promptingsystem. Du brauchst <em>vier Fragen</em>, die du dem Output stellst — bevor er deinen Schreibtisch verlässt.
   </p>
 
-  <section class="tisch" style="margin-top:2.5rem">
-    <div class="tisch__cards">
-      <div class="tisch__card">
-        <p class="tisch__card-label">1 · Fakt oder Vibe?</p>
-        <p class="tisch__card-body">Ist das eine <em>überprüfbare Behauptung</em> oder klingt es nur überzeugend?</p>
-      </div>
-      <div class="tisch__card">
-        <p class="tisch__card-label">2 · Wessen Stimme?</p>
-        <p class="tisch__card-body">Klingt das nach <em>mir</em> — oder nach dem Durchschnitt aller Texte im Internet?</p>
-      </div>
-      <div class="tisch__card">
-        <p class="tisch__card-label">3 · Gegen­hypothese?</p>
-        <p class="tisch__card-body">Was wäre, wenn das <em>Gegenteil</em> stimmen würde? Hätte das auch Substanz?</p>
-      </div>
-      <div class="tisch__card">
-        <p class="tisch__card-label">4 · Wer entscheidet?</p>
-        <p class="tisch__card-body">Wer trägt am Ende die Konsequenz dieses Satzes — und ist das <em>ich</em>?</p>
-      </div>
-    </div>
-  </section>
+  <!-- Vier-Fragen-Rad (Butcher): vier Quadranten in einem Kreis, ikonisch -->
+  <div class="master-card" style="margin:2.5rem auto;max-width:620px">
+    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" style="max-height:560px">
+      <g class="pencil-stroke" stroke-width="1.8" fill="none">
+        <circle cx="300" cy="300" r="260"/>
+        <line x1="40" y1="300" x2="560" y2="300"/>
+        <line x1="300" y1="40" x2="300" y2="560"/>
+      </g>
+
+      <!-- Q1: oben links — Fakt oder Vibe? -->
+      <g text-anchor="middle">
+        <text x="170" y="160" font-family="Cormorant Garamond" font-style="italic" font-size="44" fill="#e26a4a">I</text>
+        <text x="170" y="205" font-family="Cormorant Garamond" font-weight="600" font-size="22" fill="#1a1410">Fakt oder Vibe?</text>
+        <text x="170" y="240" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">überprüfbar —</text>
+        <text x="170" y="260" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">oder klingt's nur gut?</text>
+      </g>
+
+      <!-- Q2: oben rechts — Wessen Stimme? -->
+      <g text-anchor="middle">
+        <text x="430" y="160" font-family="Cormorant Garamond" font-style="italic" font-size="44" fill="#e26a4a">II</text>
+        <text x="430" y="205" font-family="Cormorant Garamond" font-weight="600" font-size="22" fill="#1a1410">Wessen Stimme?</text>
+        <text x="430" y="240" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">deine eigene —</text>
+        <text x="430" y="260" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">oder Internet-Durchschnitt?</text>
+      </g>
+
+      <!-- Q3: unten links — Gegenhypothese? -->
+      <g text-anchor="middle">
+        <text x="170" y="365" font-family="Cormorant Garamond" font-style="italic" font-size="40" fill="#e26a4a">III</text>
+        <text x="170" y="410" font-family="Cormorant Garamond" font-weight="600" font-size="22" fill="#1a1410">Gegenhypothese?</text>
+        <text x="170" y="445" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">wäre das Gegenteil</text>
+        <text x="170" y="465" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">auch substanziell?</text>
+      </g>
+
+      <!-- Q4: unten rechts — Wer entscheidet? -->
+      <g text-anchor="middle">
+        <text x="430" y="365" font-family="Cormorant Garamond" font-style="italic" font-size="40" fill="#e26a4a">IV</text>
+        <text x="430" y="410" font-family="Cormorant Garamond" font-weight="600" font-size="22" fill="#1a1410">Wer entscheidet?</text>
+        <text x="430" y="445" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">wer trägt die Konsequenz —</text>
+        <text x="430" y="465" font-family="Cormorant Garamond" font-style="italic" font-size="15" fill="#5c4f43">und ist das ich?</text>
+      </g>
+
+      <!-- Zentrum: Caption -->
+      <text x="300" y="294" font-family="Caveat" font-size="20" fill="#3a3633" text-anchor="middle">vier Sekunden</text>
+      <text x="300" y="318" font-family="Caveat" font-size="20" fill="#3a3633" text-anchor="middle">vor jedem Send</text>
+    </svg>
+  </div>
 
   <div class="iter-note">
     <span class="iter-note__label">★ Wo du das anwendest</span>
@@ -2563,6 +2842,30 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   <p class="lead" style="text-align:center;border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto">
     Bevor du etwas Wichtiges rausschickst, lass es vier sehr unterschiedliche Menschen kritisieren — in einem Rutsch. Nicht „professionelle Berater". <em>Werte-fremde</em> Stimmen, die nicht miteinander reden würden.
   </p>
+
+  <!-- 4-Panel-Visual: die vier Stimmen mit Farbe + Linse (Appleton) -->
+  <div class="critics-panel" aria-label="Vier Kritiker-Stimmen">
+    <div class="critics-panel__card" data-critic="cfo">
+      <div class="critics-panel__num">1</div>
+      <p class="critics-panel__name">erfahrene CFO</p>
+      <p class="critics-panel__lens">Was bricht, <em>wenn's schiefgeht?</em></p>
+    </div>
+    <div class="critics-panel__card" data-critic="activist">
+      <div class="critics-panel__num">2</div>
+      <p class="critics-panel__name">Aktivistin</p>
+      <p class="critics-panel__lens">Wessen Schmerz <em>übersehen wir?</em></p>
+    </div>
+    <div class="critics-panel__card" data-critic="veteran">
+      <div class="critics-panel__num">3</div>
+      <p class="critics-panel__name">Veteran · 30 Jahre</p>
+      <p class="critics-panel__lens">Was ist <em>Floskel,</em> was <em>neu?</em></p>
+    </div>
+    <div class="critics-panel__card" data-critic="customer">
+      <div class="critics-panel__num">4</div>
+      <p class="critics-panel__name">Endempfängerin</p>
+      <p class="critics-panel__lens">Was kommt <em>wirklich an?</em></p>
+    </div>
+  </div>
 
   <div class="prompt-card">
     <p class="prompt-card__label">
@@ -2804,35 +3107,64 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
   <p class="lead">Bis hier war dein Agent eingesperrt in seinem Workspace. <em>MCP</em> ist die Norm-Steckdose — und jedes externe System (Mail, Kalender, Datenbank, CRM, deine Bank-API) baut einen Stecker, der reinpasst. Du steckst rein, was du brauchst. Den Rest steckst du aus.</p>
 
   <div class="master-card" style="margin-top:2rem">
-    <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+      <text x="350" y="28" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">eine <tspan font-style="italic" fill="#a4502e">Mehrfach-Steckdose</tspan> aus dem Baumarkt — du steckst rein, was du brauchst.</text>
+
       <g class="pencil-stroke" stroke-width="1.5" fill="none">
-        <!-- Central agent (square) -->
-        <rect x="290" y="130" width="120" height="60" rx="4"/>
-        <!-- Cables radiating -->
-        <path d="M290,160 Q220,160 160,110"/>
-        <path d="M290,160 Q220,160 160,210"/>
-        <path d="M410,160 Q480,160 540,110"/>
-        <path d="M410,160 Q480,160 540,210"/>
-        <path d="M350,130 Q350,80 350,55"/>
-        <path d="M350,190 Q350,240 350,265"/>
-        <!-- Outer "device" rectangles -->
-        <rect x="100" y="80" width="120" height="60" rx="4"/>
-        <rect x="100" y="180" width="120" height="60" rx="4"/>
-        <rect x="480" y="80" width="120" height="60" rx="4"/>
-        <rect x="480" y="180" width="120" height="60" rx="4"/>
-        <rect x="290" y="20" width="120" height="40" rx="4"/>
-        <rect x="290" y="260" width="120" height="40" rx="4"/>
+        <!-- Mehrfach-Steckdose Body (mit kleinen Unregelmäßigkeiten — pencil-feel) -->
+        <path d="M100,230 Q98,229 102,228 L598,228 Q603,229 602,233 L602,272 Q603,277 598,277 L102,276 Q97,276 98,272 L98,232 Q98,229 100,230 Z"/>
+
+        <!-- 6 Steckdosen-Slots auf dem Strip -->
+        <rect x="125" y="237" width="40" height="32" rx="3"/>
+        <rect x="205" y="237" width="40" height="32" rx="3"/>
+        <rect x="285" y="237" width="40" height="32" rx="3"/>
+        <rect x="365" y="237" width="40" height="32" rx="3"/>
+        <rect x="445" y="237" width="40" height="32" rx="3"/>
+        <rect x="525" y="237" width="40" height="32" rx="3"/>
+
+        <!-- Pin-Löcher in jedem Slot (zwei pro Steckdose) -->
+        <circle cx="138" cy="253" r="2.2"/><circle cx="152" cy="253" r="2.2"/>
+        <circle cx="218" cy="253" r="2.2"/><circle cx="232" cy="253" r="2.2"/>
+        <circle cx="298" cy="253" r="2.2"/><circle cx="312" cy="253" r="2.2"/>
+        <circle cx="378" cy="253" r="2.2"/><circle cx="392" cy="253" r="2.2"/>
+        <circle cx="458" cy="253" r="2.2"/><circle cx="472" cy="253" r="2.2"/>
+        <circle cx="538" cy="253" r="2.2"/><circle cx="552" cy="253" r="2.2"/>
+
+        <!-- Kleine Pluspolen oben (deutet "Stecker drin" an für 3 von 6) -->
+        <line x1="145" y1="237" x2="145" y2="225" stroke-width="1.2" opacity=".55"/>
+        <line x1="305" y1="237" x2="305" y2="225" stroke-width="1.2" opacity=".55"/>
+        <line x1="465" y1="237" x2="465" y2="225" stroke-width="1.2" opacity=".55"/>
+
+        <!-- Kabel von jeder Steckdose nach oben zu Device-Label (mit leichten Bögen, hand-drawn-Gefühl) -->
+        <path d="M145,225 Q145,200 100,178"/>
+        <path d="M225,237 Q225,205 190,178"/>
+        <path d="M305,225 Q305,200 290,178"/>
+        <path d="M385,237 Q385,205 395,178"/>
+        <path d="M465,225 Q465,200 500,178"/>
+        <path d="M545,237 Q545,205 605,178"/>
+
+        <!-- Power-Cord von linkem Strip-Ende nach unten zu Agent-Box -->
+        <path d="M98,260 C70,260 50,275 40,295 C35,312 35,328 52,338"/>
+
+        <!-- Agent-Box (links unten) -->
+        <path d="M30,335 Q28,333 32,333 L168,335 Q172,335 172,339 L172,388 Q172,392 168,392 L32,390 Q28,390 30,386 L30,338 Q28,335 30,335 Z"/>
       </g>
-      <g font-family="Cormorant Garamond" font-style="italic" font-size="17" fill="#1a1410" text-anchor="middle">
-        <text x="350" y="166">dein Agent</text>
-        <text x="160" y="116">Gmail</text>
-        <text x="160" y="216">Calendar</text>
-        <text x="540" y="116">GitHub</text>
-        <text x="540" y="216">Slack</text>
-        <text x="350" y="46">Drive</text>
-        <text x="350" y="286">Notion</text>
+
+      <!-- Device-Labels über den Kabeln -->
+      <g font-family="Cormorant Garamond" font-style="italic" font-size="18" fill="#1a1410" text-anchor="middle">
+        <text x="100" y="170">Gmail</text>
+        <text x="190" y="170">Calendar</text>
+        <text x="290" y="170">Drive</text>
+        <text x="395" y="170">GitHub</text>
+        <text x="500" y="170">Slack</text>
+        <text x="605" y="170">Notion</text>
       </g>
-      <text x="350" y="312" font-family="Caveat" font-size="15" fill="#3a3633" text-anchor="middle">jede Verbindung ist ein <tspan font-style="italic" fill="#a4502e">MCP-Stecker</tspan> — Norm passt überall.</text>
+
+      <!-- Agent-Label im Box -->
+      <g text-anchor="middle">
+        <text x="101" y="362" font-family="Cormorant Garamond" font-style="italic" font-size="18" fill="#1a1410">dein Agent</text>
+        <text x="101" y="380" font-family="Caveat" font-size="13" fill="#5c4f43">(in deinem Workspace)</text>
+      </g>
     </svg>
     <p class="master-card__caption" style="text-align:center">Du steckst rein, was du brauchst. <em>Mehr nicht.</em> Sicherheit kommt aus dem, was du nicht steckst.</p>
   </div>
@@ -3175,6 +3507,31 @@ Aktualisier den Skill entsprechend. Schreib mir die Änderungen einzeln auf, bes
     window.addEventListener('scroll', update, {passive:true});
     update();
   });
+
+  // ===== Slider-Demo (Comeau/Case): user dreht, viz morpht =====
+  document.querySelectorAll('.slider-demo').forEach(demo => {
+    const input = demo.querySelector('.slider-demo__input');
+    if(!input) return;
+    function update(){ demo.dataset.state = String(input.value); }
+    input.addEventListener('input', update, {passive:true});
+    update();
+  });
+
+  // ===== Stagger-Reveal für prompt-steps (Comeau) =====
+  if('IntersectionObserver' in window) {
+    document.querySelectorAll('.prompt-steps').forEach(el => { el.dataset.staggered = 'true'; });
+    const stepsObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          stepsObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
+    document.querySelectorAll('.prompt-steps').forEach(el => stepsObs.observe(el));
+  } else {
+    document.querySelectorAll('.prompt-steps').forEach(el => el.classList.add('is-revealed'));
+  }
 })();
 </script>
 
