@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mathe mit Worten — Vision (POC)</title>
+<meta name="description" content="Salon AI · 28. Mai 2026 — Apple-Vision-Pro-Design-POC.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap">
+
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root{
+  /* Backgrounds — icy light-blue */
+  --vbg-1:#eaeff5;
+  --vbg-2:#dde4ec;
+  --vbg-3:#cfd8e3;
+  --vbg-deep:#8a99ad;
+
+  /* Ink */
+  --vink:#1a2530;
+  --vink-soft:#5a6470;
+  --vink-extra:#8a939e;
+  --vrule:rgba(110,125,140,.18);
+
+  /* Accent gradient — pink → lavender */
+  --vpink:#ffb4a8;
+  --vpink-deep:#f59a8e;
+  --vlavender:#d0c0e8;
+  --vlavender-deep:#b8a5d8;
+  --vgradient:linear-gradient(135deg,#ffb4a8 0%,#d0c0e8 100%);
+  --vgradient-soft:linear-gradient(135deg,rgba(255,180,168,.5) 0%,rgba(208,192,232,.5) 100%);
+
+  /* Glass */
+  --vglass:rgba(255,255,255,.55);
+  --vglass-strong:rgba(255,255,255,.78);
+  --vglass-border:rgba(255,255,255,.4);
+
+  /* Shadows */
+  --vshadow:0 8px 32px rgba(20,40,60,.08), 0 2px 8px rgba(20,40,60,.04);
+  --vshadow-strong:0 18px 56px rgba(20,40,60,.14), 0 4px 14px rgba(20,40,60,.06);
+  --vshadow-inset:inset 0 1px 0 rgba(255,255,255,.65);
+
+  /* Type */
+  --vserif:'Cormorant Garamond', Georgia, serif;
+  --vsans:'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+
+  /* Radii */
+  --vradius-card:28px;
+  --vradius-card-lg:36px;
+  --vradius-pill:100px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{
+  margin:0;
+  font-family:var(--vsans);
+  font-size:17px;
+  line-height:1.55;
+  color:var(--vink);
+  background:linear-gradient(180deg,var(--vbg-1) 0%,var(--vbg-2) 50%,var(--vbg-1) 100%);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* Subtle ambient orbs (vision-style depth) */
+body::before, body::after{
+  content:'';position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0;
+  opacity:.35;
+}
+body::before{
+  width:600px;height:600px;top:-200px;left:-200px;
+  background:radial-gradient(circle, rgba(255,180,168,.6), transparent 70%);
+}
+body::after{
+  width:700px;height:700px;bottom:-300px;right:-200px;
+  background:radial-gradient(circle, rgba(208,192,232,.5), transparent 70%);
+}
+
+main{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 1.5rem}
+
+/* ============ MINI-TOC (rechts, vertikal, Glass-Pills) ============ */
+.vtoc{
+  position:fixed;right:1.8rem;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:.5rem;z-index:50;
+}
+.vtoc__dot{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--vglass);
+  backdrop-filter:blur(14px) saturate(140%);
+  -webkit-backdrop-filter:blur(14px) saturate(140%);
+  border:1px solid var(--vglass-border);
+  box-shadow:var(--vshadow);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--vserif);font-style:italic;font-weight:500;
+  font-size:.85rem;color:var(--vink-soft);
+  text-decoration:none;cursor:pointer;
+  transition:transform .25s ease, background .25s ease, color .25s ease;
+}
+.vtoc__dot:hover{transform:scale(1.1);color:var(--vink)}
+.vtoc__dot.active{
+  background:var(--vgradient);color:#fff;border:none;
+  box-shadow:0 4px 16px rgba(245,154,142,.4);
+}
+
+/* ============ UTILITY COMPONENTS ============ */
+.veyebrow{
+  display:inline-block;font-family:var(--vsans);font-size:.7rem;
+  font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--vink-soft);margin:0 0 1.2rem;
+}
+.vtitle{
+  font-family:var(--vserif);font-weight:500;line-height:1.05;
+  color:var(--vink);letter-spacing:-.015em;margin:0;
+  font-size:clamp(2.5rem,5.5vw,4.4rem);
+}
+.vtitle em{
+  font-style:italic;font-weight:500;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.vlead{
+  font-family:var(--vserif);font-style:italic;
+  font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.5;
+  color:var(--vink-soft);max-width:54ch;margin:1.5rem 0;
+}
+.vlead em{color:var(--vink);font-style:italic;font-weight:500}
+
+/* Card variants */
+.vcard{
+  background:var(--vglass);
+  backdrop-filter:blur(20px) saturate(140%);
+  -webkit-backdrop-filter:blur(20px) saturate(140%);
+  border:1px solid var(--vglass-border);
+  border-radius:var(--vradius-card);
+  box-shadow:var(--vshadow), var(--vshadow-inset);
+  padding:2.4rem 2.2rem;
+}
+.vcard--solid{
+  background:#fff;
+  backdrop-filter:none;-webkit-backdrop-filter:none;
+  border:1px solid var(--vrule);
+}
+.vcard--deep{
+  background:linear-gradient(135deg,#1a2530 0%,#2a3540 100%);
+  color:#f2efe7;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 24px 70px rgba(10,20,30,.4);
+}
+.vcard--deep .veyebrow{color:rgba(255,180,168,.8)}
+.vcard--deep .vtitle{color:#f2efe7}
+.vcard--deep .vlead{color:rgba(242,239,231,.7)}
+.vcard--deep .vlead em{color:#f2efe7}
+
+/* Pill button / segmented */
+.vpill{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:var(--vglass-strong);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--vglass-border);
+  border-radius:var(--vradius-pill);
+  padding:.55rem 1.1rem;
+  font-family:var(--vsans);font-size:.82rem;font-weight:500;
+  color:var(--vink);cursor:pointer;
+  box-shadow:0 2px 8px rgba(20,40,60,.05);
+  transition:all .2s ease;
+  text-decoration:none;
+}
+.vpill:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(20,40,60,.08)}
+.vpill--gradient{
+  background:var(--vgradient);color:#fff;border:none;
+  box-shadow:0 4px 14px rgba(245,154,142,.35);
+}
+.vpill--gradient:hover{box-shadow:0 8px 24px rgba(245,154,142,.45)}
+
+/* Segmented control (Slow/Fast style) */
+.vsegment{
+  display:inline-flex;background:rgba(220,228,236,.55);
+  border-radius:var(--vradius-pill);padding:4px;gap:2px;
+  border:1px solid rgba(180,195,210,.3);
+}
+.vsegment__option{
+  padding:.55rem 1.5rem;border-radius:var(--vradius-pill);
+  font-family:var(--vsans);font-size:.88rem;font-weight:500;
+  color:var(--vink-soft);cursor:pointer;background:transparent;border:none;
+  transition:all .2s ease;
+}
+.vsegment__option.active{
+  background:#fff;color:var(--vink);
+  box-shadow:0 2px 8px rgba(20,40,60,.08);
+}
+
+/* ============ HERO ============ */
+.vhero{
+  min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+  padding:8rem 0 5rem;position:relative;
+}
+.vhero__eyebrow{margin-bottom:2.5rem;color:var(--vink-soft)}
+.vhero__title{
+  font-size:clamp(3.5rem,9vw,7rem);font-weight:500;line-height:.98;
+  letter-spacing:-.02em;margin:0;
+}
+.vhero__title em{
+  font-style:italic;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.vhero__sub{
+  font-family:var(--vserif);font-style:italic;
+  font-size:clamp(1.4rem,2.2vw,1.8rem);
+  color:var(--vink-soft);max-width:36ch;line-height:1.3;
+  margin:2.2rem 0 0;
+}
+.vhero__trailer{
+  margin-top:3rem;max-width:680px;
+  display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:start;
+}
+.vhero__trailer-divider{
+  width:3px;align-self:stretch;border-radius:2px;
+  background:var(--vgradient);min-height:80px;
+}
+.vhero__trailer-stage{position:relative;min-height:3.6em;font-family:var(--vserif);font-size:1.1rem;line-height:1.6}
+.vhero__trailer-line{position:absolute;top:0;left:0;right:0;margin:0}
+.vhero__trailer-line strong{font-weight:600;color:var(--vink)}
+.vhero__trailer-line--before{color:var(--vink-soft);animation:vTrailerBefore 7s ease-in-out infinite}
+.vhero__trailer-line--after{opacity:0;animation:vTrailerAfter 7s ease-in-out infinite}
+.vhero__trailer-line--after em{
+  font-style:italic;font-weight:500;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+@keyframes vTrailerBefore{0%,32%{opacity:1}50%,82%{opacity:0}100%{opacity:1}}
+@keyframes vTrailerAfter{0%,32%{opacity:0}50%,82%{opacity:1}100%{opacity:0}}
+.vhero__trailer-label{
+  display:block;font-family:var(--vsans);font-size:.66rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--vink-soft);
+  font-weight:600;margin-bottom:1rem;
+}
+.vhero__framing{
+  font-family:var(--vserif);font-style:italic;
+  font-size:clamp(1.1rem,1.5vw,1.25rem);line-height:1.55;
+  color:var(--vink-soft);max-width:56ch;margin:3.5rem 0 0;
+}
+.vhero__framing em{
+  color:var(--vink);font-style:italic;font-weight:500;
+}
+.vhero__scroll{
+  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+  font-family:var(--vsans);font-size:.75rem;font-weight:500;
+  color:var(--vink-extra);text-transform:lowercase;letter-spacing:.15em;
+}
+.vhero__scroll::after{content:' ↓';margin-left:.4em}
+
+/* ============ AKT — CHAPTER CARD ============ */
+.vchapter{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:7rem 0 5rem;position:relative;
+}
+.vchapter__numeral{
+  font-family:var(--vserif);font-style:italic;font-weight:400;
+  font-size:clamp(7rem,15vw,11rem);line-height:.9;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  margin:0;opacity:.85;
+}
+.vchapter__label{
+  font-family:var(--vsans);font-size:.78rem;font-weight:600;
+  letter-spacing:.25em;text-transform:uppercase;color:var(--vink-soft);
+  margin:.8rem 0 1.8rem;
+}
+.vchapter__title{
+  font-family:var(--vserif);font-weight:500;
+  font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.05;
+  letter-spacing:-.015em;color:var(--vink);margin:0;max-width:18ch;
+}
+.vchapter__title em{
+  font-style:italic;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.vchapter__after{
+  margin-top:3rem;max-width:540px;
+  padding:1.6rem 1.8rem;border-radius:var(--vradius-card);
+  background:var(--vglass);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--vglass-border);
+  box-shadow:var(--vshadow), var(--vshadow-inset);
+  position:relative;
+}
+.vchapter__after-label{
+  font-family:var(--vsans);font-size:.66rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  display:block;margin-bottom:.6rem;
+}
+.vchapter__after-text{
+  font-family:var(--vserif);font-style:italic;font-size:1.05rem;
+  line-height:1.5;color:var(--vink);margin:0;
+}
+
+/* ============ SECTION ============ */
+.vsection{padding:6rem 0;max-width:920px;margin:0 auto}
+.vsection--wide{max-width:1100px}
+.vsection h2{
+  font-family:var(--vserif);font-weight:500;
+  font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.1;
+  letter-spacing:-.01em;color:var(--vink);margin:0 0 1rem;
+}
+.vsection h2 em{
+  font-style:italic;
+  background:var(--vgradient);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+
+/* ============ SVG CARD (modernized illustrations) ============ */
+.vsvg-card{
+  margin:2.5rem auto;max-width:780px;
+  background:var(--vglass-strong);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid var(--vglass-border);
+  border-radius:var(--vradius-card-lg);
+  box-shadow:var(--vshadow), var(--vshadow-inset);
+  padding:2.5rem 2rem 2.2rem;
+}
+.vsvg-card svg{display:block;width:100%;height:auto;max-height:420px}
+.vsvg-card__caption{
+  font-family:var(--vserif);font-style:italic;font-size:1.02rem;
+  color:var(--vink-soft);text-align:center;margin:1.4rem 0 0;line-height:1.45;
+}
+.vsvg-card__caption em{color:var(--vink);font-style:italic;font-weight:500}
+
+/* ============ PROMPT STEPS — Glass pills grid ============ */
+.vsteps{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:.9rem;max-width:880px;margin:2rem auto;counter-reset:vstep;
+}
+.vstep{
+  background:var(--vglass-strong);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--vglass-border);
+  border-radius:20px;
+  padding:1.3rem 1.4rem;
+  box-shadow:var(--vshadow), var(--vshadow-inset);
+  counter-increment:vstep;position:relative;
+  font-family:var(--vserif);font-size:1rem;line-height:1.45;color:var(--vink);
+}
+.vstep::before{
+  content:counter(vstep);
+  display:flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--vgradient);color:#fff;
+  font-family:var(--vsans);font-weight:600;font-size:.9rem;
+  margin-bottom:.7rem;
+  box-shadow:0 2px 8px rgba(245,154,142,.3);
+}
+.vstep strong{font-weight:600;color:var(--vink)}
+.vstep em{
+  background:var(--vgradient);font-style:italic;font-weight:500;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+
+/* ============ PROMPT CARD — Frosted with copy pill ============ */
+.vprompt{
+  margin:2.5rem auto;max-width:880px;
+  background:var(--vglass-strong);
+  backdrop-filter:blur(20px) saturate(140%);
+  -webkit-backdrop-filter:blur(20px) saturate(140%);
+  border:1px solid var(--vglass-border);
+  border-radius:var(--vradius-card-lg);
+  box-shadow:var(--vshadow-strong), var(--vshadow-inset);
+  overflow:hidden;
+}
+.vprompt__head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.3rem 1.7rem;border-bottom:1px solid var(--vrule);
+  background:linear-gradient(180deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,.1) 100%);
+}
+.vprompt__label{
+  font-family:var(--vsans);font-size:.7rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--vink-soft);
+}
+.vprompt__copy{
+  background:var(--vgradient);
+  color:#fff;border:none;
+  padding:.5rem 1.2rem;border-radius:var(--vradius-pill);
+  font-family:var(--vsans);font-size:.78rem;font-weight:600;
+  letter-spacing:.08em;cursor:pointer;
+  box-shadow:0 4px 14px rgba(245,154,142,.4);
+  transition:all .2s ease;
+}
+.vprompt__copy:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(245,154,142,.5)}
+.vprompt__copy.copied{
+  background:#7a8c5c;box-shadow:0 4px 14px rgba(122,140,92,.4);
+}
+.vprompt__body{
+  margin:0;padding:1.8rem 1.9rem 2rem;
+  font-family:'SF Mono','Monaco','Menlo',monospace;
+  font-size:.88rem;line-height:1.65;color:var(--vink);
+  white-space:pre-wrap;
+  background:rgba(255,255,255,.3);
+}
+
+/* ============ ITERATIONS NOTE ============ */
+.vnote{
+  margin:2rem auto;max-width:780px;
+  padding:1.4rem 1.7rem;border-radius:20px;
+  background:var(--vglass);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-left:3px solid;border-image:var(--vgradient) 1;
+  border-radius:0 20px 20px 0;
+  box-shadow:var(--vshadow);
+}
+.vnote__label{
+  display:block;font-family:var(--vsans);font-size:.7rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--vink);
+  margin-bottom:.5rem;
+}
+.vnote__label::before{content:'✦ ';margin-right:.2em}
+.vnote__text{
+  font-family:var(--vserif);font-style:italic;font-size:1.05rem;
+  line-height:1.55;color:var(--vink-soft);margin:0;
+}
+.vnote__text em{color:var(--vink);font-style:italic;font-weight:500}
+
+/* ============ POC BANNER ============ */
+.vpoc-banner{
+  position:fixed;top:1.2rem;left:1.5rem;z-index:60;
+  padding:.55rem 1.1rem;border-radius:var(--vradius-pill);
+  background:rgba(26,37,48,.8);backdrop-filter:blur(14px);
+  color:#fff;font-family:var(--vsans);font-size:.7rem;
+  letter-spacing:.15em;text-transform:uppercase;font-weight:600;
+  border:1px solid rgba(255,255,255,.15);
+}
+.vpoc-banner__dot{
+  display:inline-block;width:8px;height:8px;border-radius:50%;
+  background:var(--vgradient);margin-right:.5em;vertical-align:middle;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:768px){
+  .vtoc{right:.8rem;gap:.35rem}
+  .vtoc__dot{width:28px;height:28px;font-size:.75rem}
+  main{padding:0 1.2rem}
+  .vhero{padding:7rem 0 4rem}
+  .vsection{padding:4rem 0}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .vhero__trailer-line--before,.vhero__trailer-line--after{animation:none}
+  .vhero__trailer-line--after{opacity:1}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<!-- POC Banner — entfernen wenn live -->
+<div class="vpoc-banner">
+  <span class="vpoc-banner__dot"></span>Vision · POC — 3 Sektionen
+</div>
+
+<!-- Mini-TOC -->
+<nav class="vtoc" aria-label="Akt-Navigation">
+  <a class="vtoc__dot active" href="#hero">·</a>
+  <a class="vtoc__dot" href="#akt1">I</a>
+  <a class="vtoc__dot" href="#akt2">II</a>
+  <a class="vtoc__dot" href="#akt3">III</a>
+  <a class="vtoc__dot" href="#akt4">IV</a>
+  <a class="vtoc__dot" href="#akt5">V</a>
+  <a class="vtoc__dot" href="#akt6">VI</a>
+  <a class="vtoc__dot" href="#recap">★</a>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="vhero" id="hero">
+  <p class="veyebrow vhero__eyebrow">Salon AI · Donnerstag, 28. Mai 2026 · München</p>
+  <h1 class="vhero__title">Mathe<br>mit <em>Worten.</em></h1>
+  <p class="vhero__sub">Ein Abend, an dem KI aufhört, Magie zu sein.</p>
+
+  <div class="vhero__trailer">
+    <div class="vhero__trailer-divider"></div>
+    <div>
+      <span class="vhero__trailer-label">Trailer · zwei Berufe, vor und nach KI</span>
+      <div class="vhero__trailer-stage" aria-label="Vor und nach KI im Wechsel">
+        <p class="vhero__trailer-line vhero__trailer-line--before">
+          <strong>Legal</strong> — 12 h Discovery &amp; Brief<br>
+          <strong>PR &amp; Comms</strong> — 10 h Krisen-Monitoring
+        </p>
+        <p class="vhero__trailer-line vhero__trailer-line--after">
+          <strong>Legal</strong> — <em>45 Min, alle Zitate verifiziert</em><br>
+          <strong>PR &amp; Comms</strong> — <em>15 Min, Krise erkannt + Antworten entworfen</em>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="vhero__framing">
+    Heute Abend wirst du <em>dutzende Prompts schreiben.</em> Keiner wird perfekt sein.
+    Das ist der Punkt. Bessere Prompts entstehen durch <em>Iteration</em>, nicht durch Genie.
+  </p>
+
+  <p class="vhero__scroll">scroll</p>
+</section>
+
+
+<!-- ============ AKT I — CHAPTER CARD ============ -->
+<section class="vchapter" id="akt1">
+  <p class="vchapter__numeral">I</p>
+  <p class="vchapter__label">Akt Eins · 28 Min</p>
+  <h2 class="vchapter__title">Magie sehen,<br><em>dann verstehen warum.</em></h2>
+  <div class="vchapter__after">
+    <span class="vchapter__after-label">Nach diesem Akt kannst du —</span>
+    <p class="vchapter__after-text">deinen eigenen Job vor und nach KI zeichnen lassen — und in einem Satz erklären, warum das funktioniert.</p>
+  </div>
+</section>
+
+
+<!-- ============ I.1 — Anleitung (modernisierte SVG) ============ -->
+<section class="vsection">
+  <p class="veyebrow">I.1 · Anleitung · 2 Min</p>
+  <h2>KI lernt hervorragend<br><em>über Beispiele.</em></h2>
+  <p class="vlead">
+    Du gibst ihr <em>drei Mal</em> "so war's vorher, so ist es nachher". Dann ein viertes Vorher — deins, aus deinem Alltag. Sie zieht die Richtung der Veränderung heraus und liefert dir das passende Nachher.
+  </p>
+
+  <div class="vsvg-card">
+    <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="vgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ffb4a8"/>
+          <stop offset="100%" stop-color="#d0c0e8"/>
+        </linearGradient>
+        <linearGradient id="vgrad-rev" x1="100%" y1="0%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#ffb4a8"/>
+          <stop offset="100%" stop-color="#d0c0e8"/>
+        </linearGradient>
+        <marker id="varrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+          <path d="M0,1 L8,5 L0,9 z" fill="url(#vgrad)"/>
+        </marker>
+      </defs>
+
+      <!-- 3 reference pairs (solid clean stroke) -->
+      <g stroke="#5a6470" stroke-width="1.4" fill="none">
+        <!-- Pair 1 -->
+        <rect x="30" y="30" width="220" height="56" rx="14"/>
+        <rect x="390" y="30" width="220" height="56" rx="14"/>
+        <!-- Pair 2 -->
+        <rect x="30" y="120" width="220" height="56" rx="14"/>
+        <rect x="390" y="120" width="220" height="56" rx="14"/>
+        <!-- Pair 3 -->
+        <rect x="30" y="210" width="220" height="56" rx="14"/>
+        <rect x="390" y="210" width="220" height="56" rx="14"/>
+      </g>
+
+      <!-- Arrows for the 3 reference pairs -->
+      <g stroke="url(#vgrad)" stroke-width="2" fill="none" marker-end="url(#varrow)">
+        <line x1="265" y1="58" x2="380" y2="58"/>
+        <line x1="265" y1="148" x2="380" y2="148"/>
+        <line x1="265" y1="238" x2="380" y2="238"/>
+      </g>
+
+      <!-- 4th: yours (dashed gradient) -->
+      <g stroke="url(#vgrad)" stroke-width="1.8" stroke-dasharray="6,5" fill="none">
+        <rect x="30" y="305" width="220" height="56" rx="14"/>
+        <rect x="390" y="305" width="220" height="56" rx="14"/>
+      </g>
+      <line x1="265" y1="333" x2="380" y2="333" stroke="url(#vgrad)" stroke-width="2" stroke-dasharray="6,5" marker-end="url(#varrow)"/>
+
+      <!-- Labels (Inter italic) -->
+      <g font-family="Inter, sans-serif" font-style="italic" font-size="13" fill="#5a6470" text-anchor="middle">
+        <text x="140" y="63">VORHER · 1</text>
+        <text x="500" y="63">NACHHER · 1</text>
+        <text x="140" y="153">VORHER · 2</text>
+        <text x="500" y="153">NACHHER · 2</text>
+        <text x="140" y="243">VORHER · 3</text>
+        <text x="500" y="243">NACHHER · 3</text>
+      </g>
+      <!-- 4th labels with gradient fill -->
+      <g font-family="Inter, sans-serif" font-style="italic" font-size="13" font-weight="600" fill="url(#vgrad)" text-anchor="middle">
+        <text x="140" y="338">DEIN VORHER</text>
+      </g>
+      <!-- ? mark with gradient -->
+      <text x="500" y="346" font-family="Cormorant Garamond" font-style="italic" font-size="42" font-weight="500" fill="url(#vgrad)" text-anchor="middle">?</text>
+
+      <!-- Subtle caption -->
+      <text x="320" y="378" font-family="Inter, sans-serif" font-size="11" fill="#8a939e" text-anchor="middle" letter-spacing="0.5">drei Paare ⟶ sie erkennt die Richtung der Veränderung</text>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ============ I.2 — Prompt Card mit Copy ============ -->
+<section class="vsection vsection--wide">
+  <p class="veyebrow">I.2 · Übung 1 · 5 Min</p>
+  <h2 style="text-align:center">Kopier das Prompt. Trag <em>deine</em> Beschreibung ein.<br>Schau, was passiert.</h2>
+  <p class="vlead" style="text-align:center;margin-left:auto;margin-right:auto">
+    Fünf Berufe stehen schon drin als Benchmark. Du füllst nur deinen <em>strategischen Kontext</em> in drei Punkten aus — der Rest ist Mathe.
+  </p>
+
+  <!-- 4 prompt-steps as glass pills -->
+  <div class="vsteps">
+    <div class="vstep">Klick <strong>"kopieren"</strong> am Prompt unten.</div>
+    <div class="vstep">Wechsel in deinen <strong>Browser-Chat</strong> — ChatGPT, Claude oder Gemini.</div>
+    <div class="vstep">Füg ein, ersetz die <em>[eckigen Klammern]</em> mit deinen Antworten.</div>
+    <div class="vstep">Drück Enter — und <em>schau, was passiert.</em></div>
+  </div>
+
+  <!-- Prompt-Card -->
+  <div class="vprompt">
+    <div class="vprompt__head">
+      <span class="vprompt__label">Prompt — kopieren &amp; in deinen Chat einfügen</span>
+      <button class="vprompt__copy" type="button">kopieren</button>
+    </div>
+    <pre class="vprompt__body">Look at the benchmark examples below to understand the expected strategic depth, tone, and level of ambition. Using these examples as inspiration and my input (below) — give me my personal AI-integrated and elevated job.
+
+
+### My Strategic Context:
+
+• My Core Focus: [e.g., Corporate Law Partner, General Practitioner, Head of Global PR, M&A-Partner, Professor]
+
+• The Key Decisions that Move the Needle for Me: [e.g., Litigation strategy, patient diagnosis, crisis communication, asset allocation]
+
+• My Current Information Bottleneck / Energy Drain: [e.g., documenting patient encounters, manual media monitoring, administrative bureaucracy]
+
+
+### Benchmark Examples:
+
+**Legal (Anwalt / Corporate Law)** —
+Before (~12 hrs/case): You drag yourself through thousands of discovery documents…
+After (~45 min): Your secure engine ingests the entire case file in seconds…
+
+**PR &amp; Communications (Head of PR)** —
+Before (~10 hrs/crisis): You spend your morning manually skimming media clippings…
+After (~15 min): Your system predicts the narrative shift 4 hours before it trends…
+
+[+ 3 weitere Benchmarks: Medicine · Academia · Deal Sourcing]</pre>
+  </div>
+
+  <div class="vnote">
+    <span class="vnote__label">Iterations-Moment</span>
+    <p class="vnote__text">Du hast die erste Antwort. <em>Jetzt mach sie besser.</em> Antwortet zurück: <em>"Geh tiefer in Punkt 2. Was bedeutet das konkret für meinen Mittwoch-Morgen?"</em> — und dann nochmal. Bessere Prompts entstehen so, nicht durch das perfekte erste Wort.</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+// Copy button
+document.querySelectorAll('.vprompt__copy').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.vprompt');
+    const body = card ? card.querySelector('.vprompt__body') : null;
+    if (!body) return;
+    navigator.clipboard.writeText(body.textContent.trim()).then(() => {
+      btn.textContent = 'kopiert ✓';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'kopieren'; btn.classList.remove('copied'); }, 1600);
+    });
+  });
+});
+
+// Mini-TOC active state
+(function() {
+  const sections = ['hero','akt1','akt2','akt3','akt4','akt5','akt6','recap']
+    .map(id => document.getElementById(id)).filter(Boolean);
+  const dots = document.querySelectorAll('.vtoc__dot');
+  function update() {
+    let activeIdx = 0;
+    sections.forEach((s, i) => {
+      if (s.getBoundingClientRect().top < window.innerHeight * 0.45) activeIdx = i;
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+
+</body>
+</html>
