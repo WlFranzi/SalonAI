@@ -1247,7 +1247,7 @@ strong{font-weight:600}
 
 html { scroll-behavior: smooth; }
 body {
-  background: linear-gradient(180deg, var(--v-bg-1) 0%, var(--v-bg-2) 50%, var(--v-bg-1) 100%) !important;
+  background: none !important;
   background-image: none !important;
   font-family: var(--sans);
   font-size: 19px;
@@ -1256,25 +1256,40 @@ body {
   color: var(--ink);
 }
 
-/* Ambient orbs — depth ohne den Inhalt zu stören */
-body::before, body::after {
-  content: '';
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(90px);
-  pointer-events: none;
-  z-index: 0;
-  opacity: .3;
-}
+/* ===== HIMMEL-EBENE (fix) + LESE-SCHLEIER ===== */
+/* Ebene 0: Cumulus-Himmel, fix hinter allem */
 body::before {
-  width: 640px; height: 640px; top: -220px; left: -220px;
-  background: radial-gradient(circle, rgba(232, 132, 122, .55), transparent 70%);
+  content: '';
+  position: fixed; inset: 0; z-index: -2;
+  background: url('clouds/sky-cumulus.webp') center center / cover no-repeat;
 }
+/* Ebene 1: warmer Schleier — beruhigt den Himmel hinter Lese-Inhalt,
+   sodass Text lesbar bleibt. Wolken schimmern sanft durch. */
 body::after {
-  width: 720px; height: 720px; bottom: -320px; right: -220px;
-  background: radial-gradient(circle, rgba(168, 146, 200, .45), transparent 70%);
+  content: '';
+  position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(244,241,236,.46) 0%, rgba(244,241,236,.60) 55%, rgba(244,241,236,.50) 100%);
+  pointer-events: none;
 }
 body > *, main > * { position: relative; z-index: 1; }
+
+/* Sektionen, die VOLLEN Himmel zeigen (kein Schleier): eigener
+   Himmel-Layer oben drauf, der den globalen Schleier überdeckt. */
+.hero, .vision-model, .chapter {
+  position: relative;
+}
+.hero::before, .vision-model::before {
+  content: '';
+  position: absolute; inset: 0; z-index: -1;
+  background: url('clouds/sky-cumulus.webp') center center / cover no-repeat;
+}
+/* zarter Aufhellungs-Verlauf oben für Lesbarkeit der hellen Schrift-Akzente */
+.hero::after {
+  content: '';
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(255,255,255,.12) 0%, rgba(244,241,236,.18) 100%);
+  pointer-events: none;
+}
 
 /* ============ TYPOGRAFIE ============ */
 h1, h2, h3, .chapter__title, .hero__title {
@@ -1364,16 +1379,25 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 .hero {
   background: transparent !important;
   padding: 8rem 1.5rem 5rem;
+  overflow: hidden;
 }
 .hero__title {
   font-size: clamp(3.5rem, 9vw, 7rem) !important;
   line-height: .98 !important;
   letter-spacing: -.02em;
+  text-shadow: 0 2px 30px rgba(255,255,255,.55), 0 1px 3px rgba(255,255,255,.7);
+}
+.hero__eyebrow, .hero .eyebrow {
+  text-shadow: 0 1px 12px rgba(255,255,255,.7);
 }
 .hero__sub {
   font-family: var(--serif) !important;
   font-style: italic !important;
-  color: var(--ink-soft) !important;
+  color: var(--ink) !important;
+  text-shadow: 0 1px 16px rgba(255,255,255,.7);
+}
+.hero__framing {
+  text-shadow: 0 1px 14px rgba(255,255,255,.65);
 }
 .hero__trailer {
   background: var(--v-glass) !important;
@@ -1936,6 +1960,69 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   box-shadow: 0 4px 14px rgba(232, 132, 122, .4);
 }
 
+/* ============ SKY-STAGE — Embedding IM Himmel gezeichnet ============ */
+.sky-stage {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: clamp(420px, 56vw, 600px);
+  margin: 2.5rem auto;
+  border-radius: var(--v-radius-lg);
+  overflow: hidden;
+  background: url('clouds/sky-cumulus.webp') center center / cover no-repeat;
+  box-shadow: var(--v-shadow-strong), var(--v-shadow-inset);
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid var(--v-glass-border);
+}
+.sky-stage__svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.sky-word {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
+  padding: .45rem .95rem;
+  background: rgba(255, 255, 255, .52);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: var(--v-radius-pill);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(.95rem, 1.4vw, 1.15rem);
+  color: #1f2a33;
+  box-shadow: 0 6px 20px rgba(30, 50, 80, .14);
+  white-space: nowrap;
+}
+.sky-word::before {
+  content: '';
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, .9);
+}
+.sky-word--dim { opacity: .82; font-size: clamp(.85rem, 1.2vw, 1rem); }
+.sky-word--accent {
+  background: var(--v-gradient);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 22px rgba(232, 132, 122, .5);
+}
+.sky-word--accent::before { background: #fff; box-shadow: 0 0 8px 2px rgba(255,255,255,.95); }
+.sky-stage__hint {
+  position: absolute; bottom: 1.2rem; right: 1.2rem;
+  display: inline-flex; align-items: center; gap: .5em;
+  padding: .7rem 1.3rem;
+  background: rgba(26, 37, 48, .68);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff; border-radius: var(--v-radius-pill);
+  font-family: var(--sans); font-size: .76rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, .18);
+}
+
 /* ============ REDUCE MOTION ============ */
 @media (prefers-reduced-motion: reduce) {
   body::before, body::after { display: none; }
@@ -2440,64 +2527,51 @@ After (~10 min/day): An ambient audio-AI securely listens to your patient conver
     Das ist nicht mehr nur Theorie. Tipp auf das Modell unten — auf Apple Vision Pro kannst du es <em>aus dem Fenster ziehen</em> und um es herumlaufen. Auf iPhone/iPad öffnet sich Quick Look AR. Andere Geräte sehen die statische Vorschau.
   </p>
 
-  <div class="vision-model">
-    <!-- visionOS Safari + iOS Safari kennen das <model>-Tag und USDZ-Dateien -->
-    <!-- Fallback-Image für alle anderen Browser -->
-    <model src="embedding-space.usdz" alt="Embedding-Raum mit 50 Wörtern als 3D-Skulptur" style="display:block;width:100%;height:500px;border-radius:var(--v-radius);background:linear-gradient(135deg,#f4f1ec,#ece7dd)">
-      <div class="vision-model__fallback" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;color:var(--ink-soft);font-family:var(--serif);font-style:italic;text-align:center;padding:2rem">
-        <svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="vmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#ffb4a8"/>
-              <stop offset="100%" stop-color="#d0c0e8"/>
-            </linearGradient>
-            <radialGradient id="vmGlow" cx="50%" cy="50%" r="60%">
-              <stop offset="0%" stop-color="rgba(255,180,168,.35)"/>
-              <stop offset="100%" stop-color="transparent"/>
-            </radialGradient>
-          </defs>
-          <!-- Glow -->
-          <circle cx="140" cy="140" r="135" fill="url(#vmGlow)"/>
-          <!-- Word cluster A (König-Königin) -->
-          <g>
-            <circle cx="100" cy="90" r="5" fill="url(#vmGrad)"/>
-            <text x="100" y="76" font-family="Inter,sans-serif" font-style="italic" font-size="11" fill="#2a2520" text-anchor="middle">König</text>
-            <circle cx="130" cy="105" r="5" fill="url(#vmGrad)"/>
-            <text x="156" y="108" font-family="Inter,sans-serif" font-style="italic" font-size="11" fill="#2a2520" text-anchor="middle">Königin</text>
-            <circle cx="80" cy="120" r="4" fill="url(#vmGrad)" opacity=".7"/>
-            <text x="56" y="124" font-family="Inter,sans-serif" font-style="italic" font-size="10" fill="#6a6258" text-anchor="middle">Krone</text>
-          </g>
-          <!-- Word cluster B (Mandant — Anwalt) -->
-          <g>
-            <circle cx="200" cy="160" r="5" fill="url(#vmGrad)"/>
-            <text x="216" y="155" font-family="Inter,sans-serif" font-style="italic" font-size="11" fill="#2a2520">Mandant</text>
-            <circle cx="180" cy="190" r="5" fill="url(#vmGrad)"/>
-            <text x="195" y="208" font-family="Inter,sans-serif" font-style="italic" font-size="11" fill="#2a2520">Anwalt</text>
-            <circle cx="220" cy="195" r="4" fill="url(#vmGrad)" opacity=".7"/>
-            <text x="244" y="200" font-family="Inter,sans-serif" font-style="italic" font-size="10" fill="#6a6258">Vertrag</text>
-          </g>
-          <!-- Word cluster C (Computer — far) -->
-          <g>
-            <circle cx="60" cy="210" r="4" fill="url(#vmGrad)" opacity=".5"/>
-            <text x="58" y="228" font-family="Inter,sans-serif" font-style="italic" font-size="10" fill="#8a8278" text-anchor="middle">Computer</text>
-          </g>
-          <!-- Subtle connecting line König-Königin -->
-          <line x1="100" y1="90" x2="130" y2="105" stroke="#c4625a" stroke-width=".8" stroke-dasharray="2,3" opacity=".6"/>
-          <!-- Axis hint -->
-          <g opacity=".25">
-            <line x1="140" y1="40" x2="140" y2="240" stroke="#6a6258" stroke-width=".5" stroke-dasharray="3,4"/>
-            <line x1="40" y1="140" x2="240" y2="140" stroke="#6a6258" stroke-width=".5" stroke-dasharray="3,4"/>
-          </g>
-        </svg>
-        <p style="margin:0;font-size:1rem">Statische Vorschau — auf <em style="color:var(--coral);font-style:italic;font-weight:500">Apple Vision Pro</em> oder iPhone Safari wird daraus ein begehbares 3D-Modell.</p>
-      </div>
-    </model>
-    <p class="vision-model__caption">
-      50 Wörter aus dem Workshop-Vokabular, im Raum nach Bedeutung sortiert. <em>König</em> liegt nah bei <em>Königin</em>. <em>Mandant</em> nah bei <em>Anwalt</em>. <em>Computer</em> ist weit weg, in einem anderen Cluster.<br>
-      Auf Vision Pro: Pinch — und der Raum löst sich aus dem Browser-Fenster in dein Wohnzimmer.
-    </p>
-    <a href="#" class="vision-model__hint" id="visionModelOpen">↗ in deinem Raum öffnen</a>
-  </div>
+  <!-- Sky-Stage: Embedding direkt in den Himmel gezeichnet.
+       <a rel="ar"> löst auf visionOS/iOS Safari Quick Look AR mit der
+       USDZ-Datei aus; auf allen anderen Browsern ist es die Vorschau. -->
+  <a rel="ar" href="embedding-space.usdz" class="sky-stage" aria-label="Embedding-Raum — auf Vision Pro in deinem Raum öffnen">
+    <svg viewBox="0 0 1000 560" class="sky-stage__svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <filter id="skyGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#fff" flood-opacity="0.95"/>
+        </filter>
+      </defs>
+      <!-- Verbindungslinien innerhalb der Cluster (weiß, leuchtend) -->
+      <g stroke="rgba(255,255,255,.75)" stroke-width="1.3" fill="none" filter="url(#skyGlow)">
+        <line x1="330" y1="190" x2="170" y2="226"/>            <!-- Königin–Krone -->
+        <line x1="640" y1="250" x2="710" y2="320"/>            <!-- Mandant–Anwalt -->
+        <line x1="710" y1="320" x2="800" y2="272"/>            <!-- Anwalt–Vertrag -->
+      </g>
+      <!-- Akzent-Linie König–Königin (das berühmte Paar) -->
+      <line x1="220" y1="157" x2="330" y2="190" stroke="#e8847a" stroke-width="2.4" filter="url(#skyGlow)"/>
+      <!-- Punkte -->
+      <g fill="#fff" filter="url(#skyGlow)">
+        <circle cx="220" cy="157" r="5"/>
+        <circle cx="330" cy="190" r="5"/>
+        <circle cx="170" cy="226" r="4" opacity=".82"/>
+        <circle cx="640" cy="250" r="5"/>
+        <circle cx="710" cy="320" r="5"/>
+        <circle cx="800" cy="272" r="4" opacity=".82"/>
+        <circle cx="280" cy="404" r="4" opacity=".6"/>
+      </g>
+    </svg>
+
+    <!-- Glas-Wort-Pillen, schweben über dem Himmel -->
+    <span class="sky-word sky-word--accent" style="left:22%;top:28%">König</span>
+    <span class="sky-word sky-word--accent" style="left:33%;top:34%">Königin</span>
+    <span class="sky-word sky-word--dim" style="left:17%;top:40.5%">Krone</span>
+    <span class="sky-word" style="left:64%;top:44.5%">Mandant</span>
+    <span class="sky-word" style="left:71%;top:57%">Anwalt</span>
+    <span class="sky-word sky-word--dim" style="left:80%;top:48.5%">Vertrag</span>
+    <span class="sky-word sky-word--dim" style="left:28%;top:72%">Computer</span>
+
+    <span class="sky-stage__hint">↗ auf Vision Pro in deinem Raum öffnen</span>
+  </a>
+
+  <p class="lead" style="text-align:center;max-width:62ch;margin:1.5rem auto 0">
+    50 Wörter aus dem Workshop-Vokabular, nach Bedeutung im Raum verteilt. <em>König</em> liegt nah bei <em>Königin</em> (die rote Linie). <em>Mandant</em> nah bei <em>Anwalt</em>. <em>Computer</em> driftet weit weg, in einem anderen Cluster. Auf Vision Pro löst sich der Raum aus dem Fenster — und du gehst hindurch.
+  </p>
 
   <section class="deeper-note" aria-label="Was das mechanistisch ist">
     <span class="deeper-note__label">⌖ Was du gerade siehst</span>
