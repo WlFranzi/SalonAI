@@ -4263,6 +4263,95 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
 </section>
 
 
+<!-- ============ SYSTEM-MAP — alle Komponenten in einem Bild (Capstone-Recap) ============ -->
+<section class="text-section text-section--wide" style="text-align:center">
+  <p class="eyebrow" style="text-align:center">Das ganze System · ein Bild</p>
+  <h2 style="text-align:center">Wie alles <em>zusammensteckt.</em></h2>
+  <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
+    Alles von heute Abend in einer Skizze. In der Mitte der <em>Agent</em> — der <em>Kontext-Sauger</em>: er zieht Memory, Ablage, Skill und MCP zusammen und reicht das Bündel nach oben ans Sprachmodell.
+  </p>
+
+  <figure style="max-width:880px;margin:2.5rem auto 0;background:rgba(255,255,255,.82);padding:1.4rem 1.1rem 1rem;border:1px solid var(--v-glass-border);border-radius:28px;box-shadow:var(--v-shadow);overflow:hidden">
+    <svg viewBox="0 0 880 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" role="img" aria-label="Architektur-Skizze: Der Agent auf deinem Rechner buendelt Memory, Ablage, Skill und MCP und schickt den Kontext hinauf ans Sprachmodell, das bei Anthropic in der Cloud laeuft.">
+
+      <!-- ===== Zonen-Trenner: Cloud / Maschine ===== -->
+      <line x1="40" y1="180" x2="840" y2="180" class="pencil-stroke" stroke-width="1" stroke-dasharray="2,7" opacity=".45"/>
+
+      <!-- ===== Sprachmodell-Wolke (in der Cloud) ===== -->
+      <path class="pencil-iris" stroke-width="1.8" d="M362,148 Q326,148 324,122 Q318,92 354,90 Q360,62 398,68 Q420,46 456,62 Q494,50 510,80 Q548,78 548,110 Q582,110 578,134 Q576,148 544,148 Z"/>
+
+      <!-- ===== Komponenten-Boxen + Mini-Icons ===== -->
+      <!-- Memory (oben links) -->
+      <rect x="60" y="248" width="170" height="88" rx="11" class="pencil-stroke" stroke-width="1.5"/>
+      <path class="pencil-iris" stroke-width="1.6" fill="none" d="M139,277 A10,10 0 1 1 156,270"/>
+      <path class="pencil-iris" stroke-width="1.6" fill="none" d="M156,270 l-6,0 m6,0 l0,6"/>
+      <!-- Ablage (oben rechts) -->
+      <rect x="650" y="248" width="170" height="88" rx="11" class="pencil-stroke" stroke-width="1.5"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M721,276 v-8 h9 l3,4 h16 v12 h-28 Z"/>
+      <!-- Skill (unten links) -->
+      <rect x="60" y="438" width="170" height="88" rx="11" class="pencil-stroke" stroke-width="1.5"/>
+      <circle cx="135" cy="461" r="7" class="pencil-stroke" stroke-width="1.6" fill="none"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M142,461 h17 m-6,0 v6 m-5,-6 v4"/>
+      <!-- MCP (unten rechts) -->
+      <rect x="650" y="438" width="170" height="88" rx="11" class="pencil-stroke" stroke-width="1.5"/>
+      <circle cx="735" cy="461" r="11" class="pencil-stroke" stroke-width="1.6" fill="none"/>
+      <circle cx="731" cy="461" r="1.8" class="pencil-fill"/>
+      <circle cx="739" cy="461" r="1.8" class="pencil-fill"/>
+      <path class="pencil-stroke" stroke-width="1.4" fill="none" d="M735,526 v16" opacity=".7"/>
+
+      <!-- ===== Agent-Knoten (Mitte) ===== -->
+      <circle cx="440" cy="360" r="64" class="pencil-coral" stroke-width="2.2"/>
+      <circle cx="440" cy="360" r="55" class="pencil-coral" stroke-width=".8" opacity=".35"/>
+
+      <!-- ===== Pipe Agent <-> Sprachmodell ===== -->
+      <line x1="433" y1="292" x2="433" y2="166" class="pencil-iris" stroke-width="1.6"/>
+      <path class="pencil-iris" stroke-width="1.6" fill="none" d="M427,176 l6,-10 l6,10"/>
+      <line x1="461" y1="166" x2="461" y2="292" class="pencil-iris" stroke-width="1.6"/>
+      <path class="pencil-iris" stroke-width="1.6" fill="none" d="M455,282 l6,10 l6,-10"/>
+
+      <!-- ===== Zufluss-Pfeile (Komponenten -> Agent) ===== -->
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M232,300 Q322,320 374,341"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M374,341 l-13,-2 m13,2 l-5,-11"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M648,300 Q558,320 506,341"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M506,341 l13,-2 m-13,2 l5,-11"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M232,452 Q324,420 378,386"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M378,386 l-13,1 m13,-1 l-4,11"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M648,452 Q556,420 502,386"/>
+      <path class="pencil-stroke" stroke-width="1.6" fill="none" d="M502,386 l13,1 m-13,-1 l4,11"/>
+
+      <!-- ===== Beschriftungen (zuletzt, damit lesbar) ===== -->
+      <text x="46" y="172" font-family="Inter" font-size="10" letter-spacing="1.6" fill="#6b6259">&#8212; CLOUD &#8212;</text>
+      <text x="46" y="198" font-family="Inter" font-size="10" letter-spacing="1.6" fill="#6b6259">&#8212; DEINE MASCHINE &#8212;</text>
+
+      <text x="450" y="36" font-family="Caveat" font-size="17" fill="#3a3633" text-anchor="middle">in der Cloud &#8212; nicht auf deinem Rechner</text>
+      <text x="451" y="106" font-family="Cormorant Garamond" font-style="italic" font-size="26" fill="#3b285a" text-anchor="middle">Sprachmodell</text>
+      <text x="451" y="128" font-family="Inter" font-size="10.5" letter-spacing="1.3" fill="#6b4e8e" text-anchor="middle">BEI ANTHROPIC GEHOSTET</text>
+
+      <text x="346" y="214" font-family="Caveat" font-size="16" fill="#a4502e" text-anchor="middle">&#8593; Kontext rauf</text>
+      <text x="346" y="240" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">&#8595; Antwort zur&#252;ck</text>
+
+      <text x="440" y="356" font-family="Cormorant Garamond" font-style="italic" font-size="27" font-weight="600" fill="#a4502e" text-anchor="middle">Agent</text>
+      <text x="440" y="380" font-family="Caveat" font-size="15" fill="#a4502e" text-anchor="middle">der Kontext-Sauger</text>
+
+      <text x="148" y="305" font-family="Cormorant Garamond" font-style="italic" font-size="20" fill="#1a1410" text-anchor="middle">Memory</text>
+      <text x="148" y="325" font-family="Caveat" font-size="14" fill="#5c4f43" text-anchor="middle">merkt sich, wer du bist</text>
+
+      <text x="735" y="305" font-family="Cormorant Garamond" font-style="italic" font-size="20" fill="#1a1410" text-anchor="middle">Ablage</text>
+      <text x="735" y="325" font-family="Caveat" font-size="14" fill="#5c4f43" text-anchor="middle">(manchmal: Context)</text>
+
+      <text x="148" y="495" font-family="Cormorant Garamond" font-style="italic" font-size="20" fill="#1a1410" text-anchor="middle">Skill</text>
+      <text x="148" y="515" font-family="Caveat" font-size="14" fill="#5c4f43" text-anchor="middle">Werkzeug, das bleibt</text>
+
+      <text x="735" y="495" font-family="Cormorant Garamond" font-style="italic" font-size="20" fill="#1a1410" text-anchor="middle">MCP</text>
+      <text x="735" y="515" font-family="Caveat" font-size="14" fill="#5c4f43" text-anchor="middle">Steckdose nach drau&#223;en</text>
+      <text x="735" y="558" font-family="Caveat" font-size="14" fill="#7a8c5c" text-anchor="middle">&#8600; Gmail &#183; Kalender &#183; Slack &#8230;</text>
+    </svg>
+    <figcaption style="font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-soft);text-align:center;margin-top:1rem;line-height:1.5;padding:0 .6rem">
+      Der <em>Agent</em> lebt auf deinem Rechner und b&#252;ndelt vier lokale Quellen &#8212; <strong>Memory</strong> (wer du bist), <strong>Ablage</strong> (deine Dateien), <strong>Skill</strong> (das Werkzeug, das bleibt) und <strong>MCP</strong> (die Steckdose nach drau&#223;en). Das <em>Sprachmodell</em> selbst denkt nicht auf deinem Laptop &#8212; es l&#228;uft bei Anthropic in der Cloud. Der Agent ist die <em>Br&#252;cke</em> dazwischen.
+    </figcaption>
+  </figure>
+</section>
+
 <!-- =========================================================
      COMMITMENT-MOMENT + RECAP 3 + OUTRO
      ========================================================= -->

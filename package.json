@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/locales.test.mjs tests/index.test.mjs tests/event.test.mjs tests/host.test.mjs tests/march-event.test.mjs",
-    "test:watch": "node --test --watch tests/locales.test.mjs tests/index.test.mjs tests/event.test.mjs tests/host.test.mjs tests/march-event.test.mjs",
+    "test": "node --test tests/locales.test.mjs tests/index.test.mjs tests/event.test.mjs tests/host.test.mjs tests/march-event.test.mjs tests/mai-vision-diagram.test.mjs",
+    "test:watch": "node --test --watch tests/locales.test.mjs tests/index.test.mjs tests/event.test.mjs tests/host.test.mjs tests/march-event.test.mjs tests/mai-vision-diagram.test.mjs",
+    "test:mai-vision": "node --test tests/mai-vision-diagram.test.mjs",
     "test:locales": "node --test tests/locales.test.mjs",
     "test:html": "node --test tests/index.test.mjs",
     "test:event": "node --test tests/event.test.mjs",
