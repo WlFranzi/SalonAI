@@ -1203,35 +1203,34 @@ strong{font-weight:600}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap">
 
 <style>
-/* ============ VISION TOKENS (überschreibt :root oben) ============ */
+/* ============ VISION TOKENS — MOODY/TEAL (inspo2) ============ */
 :root {
-  /* Warmes Off-White statt icy-cool — reduziert visionOS-Halation */
-  --paper: #f4f1ec;
-  --paper-tint: #ece7dd;
-  --ink: #2a2520;             /* warmes Charcoal */
-  --ink-soft: #6a6258;
-  --rule: rgba(110, 100, 90, .18);
+  --paper: #1a2a33;
+  --paper-tint: #16242c;
+  --ink: #eef3f5;             /* helles, fast-weißes Lesen */
+  --ink-soft: rgba(238, 243, 245, .72);
+  --rule: rgba(255, 255, 255, .16);
 
-  /* Akzent — pink → lavender; eigener Text-Gradient für Kontrast */
-  --coral: #c4625a;
-  --coral-soft: #ffb4a8;
-  --coral-light: rgba(232, 132, 122, .25);
-  --iris: #8a72b8;
-  --iris-deep: #6a52a0;
-  --leaf: #7a8c5c;
-  --gold-light: rgba(255, 222, 168, .35);
+  /* Akzent — auf dunklem Grund heller/leuchtender */
+  --coral: #ffb4a8;
+  --coral-soft: #ffc8be;
+  --coral-light: rgba(255, 180, 168, .25);
+  --iris: #cdbcec;
+  --iris-deep: #d8c8ee;
+  --leaf: #aac088;
+  --gold-light: rgba(255, 222, 168, .3);
 
-  /* Vision-spezifisch */
-  --v-bg-1: #f4f1ec;
-  --v-bg-2: #e8e4dc;
-  --v-gradient: linear-gradient(135deg, #e8847a 0%, #a892c8 100%);
-  --v-gradient-text: linear-gradient(135deg, #c4625a 0%, #8a72b8 100%);
-  --v-glass: rgba(252, 248, 240, .65);
-  --v-glass-strong: rgba(252, 248, 240, .82);
-  --v-glass-border: rgba(255, 255, 255, .45);
-  --v-shadow: 0 8px 32px rgba(40, 30, 25, .07), 0 2px 8px rgba(40, 30, 25, .04);
-  --v-shadow-strong: 0 18px 56px rgba(40, 30, 25, .12), 0 4px 14px rgba(40, 30, 25, .06);
-  --v-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, .65);
+  /* Vision-spezifisch — dunkles Teal-Glas, leuchtender Gradient */
+  --v-bg-1: #1a2a33;
+  --v-bg-2: #12202a;
+  --v-gradient: linear-gradient(135deg, #ffb4a8 0%, #d0c0e8 100%);
+  --v-gradient-text: linear-gradient(135deg, #ffc2b6 0%, #dcc9f0 100%);
+  --v-glass: rgba(26, 42, 52, .42);
+  --v-glass-strong: rgba(20, 34, 44, .58);
+  --v-glass-border: rgba(255, 255, 255, .20);
+  --v-shadow: 0 8px 32px rgba(8, 18, 26, .28), 0 2px 8px rgba(8, 18, 26, .18);
+  --v-shadow-strong: 0 18px 56px rgba(8, 18, 26, .38), 0 4px 14px rgba(8, 18, 26, .22);
+  --v-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, .22);
   --v-radius: 28px;
   --v-radius-lg: 36px;
   --v-radius-pill: 999px;
@@ -1256,39 +1255,38 @@ body {
   color: var(--ink);
 }
 
-/* ===== HIMMEL-EBENE (fix) + LESE-SCHLEIER ===== */
-/* Ebene 0: Cumulus-Himmel, fix hinter allem */
+/* ===== HIMMEL-EBENE (fix) + LESE-SCHLEIER (moody/teal) ===== */
+/* Ebene 0: tiefes Teal, fix hinter allem */
 body::before {
   content: '';
   position: fixed; inset: 0; z-index: -2;
-  background: url('clouds/sky-cumulus.webp') center center / cover no-repeat;
+  background: url('clouds/sky-teal.jpg') center center / cover no-repeat;
 }
-/* Ebene 1: warmer Schleier — beruhigt den Himmel hinter Lese-Inhalt,
-   sodass Text lesbar bleibt. Wolken schimmern sanft durch. */
+/* Ebene 1: dunkler Schleier — vertieft das Teal hinter Lese-Inhalt,
+   sodass heller Text lesbar bleibt. Wolken schimmern sanft durch. */
 body::after {
   content: '';
   position: fixed; inset: 0; z-index: -1;
-  background: linear-gradient(180deg, rgba(244,241,236,.46) 0%, rgba(244,241,236,.60) 55%, rgba(244,241,236,.50) 100%);
+  background: linear-gradient(180deg, rgba(14,26,34,.42) 0%, rgba(14,26,34,.56) 55%, rgba(14,26,34,.48) 100%);
   pointer-events: none;
 }
 body > *, main > * { position: relative; z-index: 1; }
 
-/* Sektionen, die VOLLEN Himmel zeigen (kein Schleier): eigener
-   Himmel-Layer oben drauf, der den globalen Schleier überdeckt. */
-.hero, .vision-model, .chapter {
-  position: relative;
-}
-.hero::before, .vision-model::before {
+/* Sektionen mit eigenem (vollem) Himmel-Layer */
+.hero, .vision-model, .chapter { position: relative; }
+/* Hero: ikonische Einzelwolke (sky-hero) + dunkler Scrim für hellen Text */
+.hero::before {
   content: '';
   position: absolute; inset: 0; z-index: -1;
-  background: url('clouds/sky-cumulus.webp') center center / cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(12,24,32,.30) 0%, rgba(12,24,32,.20) 40%, rgba(12,24,32,.55) 100%),
+    url('clouds/sky-hero.jpg') center center / cover no-repeat;
 }
-/* zarter Aufhellungs-Verlauf oben für Lesbarkeit der hellen Schrift-Akzente */
-.hero::after {
+/* Embedding-Stage zeigt das tiefe Teal (weiße Punkte poppen darauf) */
+.vision-model::before {
   content: '';
   position: absolute; inset: 0; z-index: -1;
-  background: linear-gradient(180deg, rgba(255,255,255,.12) 0%, rgba(244,241,236,.18) 100%);
-  pointer-events: none;
+  background: url('clouds/sky-teal.jpg') center center / cover no-repeat;
 }
 
 /* ============ TYPOGRAFIE ============ */
@@ -1385,19 +1383,25 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   font-size: clamp(3.5rem, 9vw, 7rem) !important;
   line-height: .98 !important;
   letter-spacing: -.02em;
-  text-shadow: 0 2px 30px rgba(255,255,255,.55), 0 1px 3px rgba(255,255,255,.7);
+  text-shadow: 0 2px 40px rgba(8,18,26,.6), 0 1px 4px rgba(8,18,26,.5);
 }
 .hero__eyebrow, .hero .eyebrow {
-  text-shadow: 0 1px 12px rgba(255,255,255,.7);
+  text-shadow: 0 1px 16px rgba(8,18,26,.7);
 }
 .hero__sub {
   font-family: var(--serif) !important;
   font-style: italic !important;
   color: var(--ink) !important;
-  text-shadow: 0 1px 16px rgba(255,255,255,.7);
+  text-shadow: 0 1px 18px rgba(8,18,26,.65);
 }
 .hero__framing {
-  text-shadow: 0 1px 14px rgba(255,255,255,.65);
+  text-shadow: 0 1px 16px rgba(8,18,26,.6);
+}
+/* Headings + Leads über dem Himmel: dunkler Glow für Lesbarkeit */
+.text-section > h2, .text-section > .lead, .text-section > .eyebrow,
+.chapter__title, .chapter__label, .chapter__num,
+.faktoid__number, .faktoid__body, .faktoid__eyebrow {
+  text-shadow: 0 1px 18px rgba(8,18,26,.45);
 }
 .hero__trailer {
   background: var(--v-glass) !important;
@@ -1490,6 +1494,34 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 .pencil-iris { stroke: var(--iris) !important; }
 .pencil-coral { stroke: var(--coral) !important; }
 
+/* ===== SVG-Text + Strokes auf dem dunklen Teal sichtbar machen =====
+   Präzise nur die DUNKLEN Hex-Fills flippen — Akzentfarben bleiben. */
+.master-card svg text[fill="#1a1410"], .slider-demo svg text[fill="#1a1410"],
+.master-card svg text[fill="#3a3633"], .slider-demo svg text[fill="#3a3633"],
+.master-card svg text[fill="#5c4f43"], .slider-demo svg text[fill="#5c4f43"],
+.master-card svg tspan[fill="#1a1410"], .master-card svg tspan[fill="#3a3633"] {
+  fill: var(--ink) !important;
+}
+.master-card svg text[fill="#4a3566"], .slider-demo svg text[fill="#4a3566"],
+.master-card svg text[fill="#3b285a"], .slider-demo svg text[fill="#3b285a"],
+.master-card svg text[fill="#6b4e8e"] {
+  fill: var(--iris-deep) !important;   /* helles Lavendel */
+}
+.master-card svg text[fill="#a4502e"], .slider-demo svg text[fill="#a4502e"],
+.master-card svg tspan[fill="#a4502e"] {
+  fill: var(--coral) !important;       /* helles Korall */
+}
+/* dunkle Strokes flippen */
+.master-card svg [stroke="#5c4f43"], .master-card svg [stroke="#4a3566"],
+.slider-demo svg [stroke="#5c4f43"] {
+  stroke: var(--ink-soft) !important;
+}
+/* label-Klassen (II.4 etc.) auf hell */
+.master-card svg .label-serif, .master-card svg .label-hand,
+.slider-demo svg .label-serif, .slider-demo svg .label-hand {
+  fill: var(--ink) !important;
+}
+
 /* ============ PROMPT-CARD ============ */
 .prompt-card {
   background: var(--v-glass-strong) !important;
@@ -1502,7 +1534,7 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   padding: 0 !important;
 }
 .prompt-card__label {
-  background: linear-gradient(180deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
   border-bottom: 1px solid var(--rule) !important;
   padding: 1.3rem 1.7rem !important;
   margin: 0 !important;
@@ -1515,11 +1547,11 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 }
 .prompt-card__body {
   padding: 1.8rem 1.9rem 2rem !important;
-  background: rgba(255, 255, 255, .3);
+  background: rgba(8, 16, 22, .38) !important;
   font-family: 'SF Mono', 'Monaco', Menlo, monospace !important;
   font-size: 1rem !important;
   line-height: 1.75 !important;
-  color: var(--ink);
+  color: var(--ink) !important;
   white-space: pre-wrap;
 }
 /* Copy-Button als Gradient-Pill, 60px Tap-Target */
