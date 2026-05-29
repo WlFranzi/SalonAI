@@ -2328,6 +2328,14 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 }
 #akt2.anchor-card .text-section > .eyebrow{ margin-top:1.4rem; }
 
+/* ============ WOLKE-SPLIT — Grafik links, Text rechts ============ */
+.wolke-split{ display:grid; grid-template-columns:1fr; gap:1.4rem; align-items:center; max-width:760px; margin:1.6rem auto 0; }
+.wolke-split__graphic{ margin:0; }
+.wolke-split__graphic svg{ display:block; width:100%; height:auto; max-height:480px; }
+.wolke-split__text .anchor-card__def{ text-align:left; max-width:none; margin:0 0 1rem; }
+.wolke-split__text .anchor-card__def:last-child{ margin-bottom:0; }
+@media (min-width:760px){ .wolke-split{ grid-template-columns:0.82fr 1fr; gap:2.2rem; } }
+
 /* ============ CAROUSEL — eine Slide sichtbar, rechts/links durchklicken ============ */
 .carousel{ max-width:980px; margin:1.8rem auto 0; }
 .carousel__stage{ position:relative; padding:0 3.4rem; }
@@ -2476,6 +2484,42 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
   <a href="https://salon-ai.eu/" aria-label="Zurück zur Salon AI Hauptseite" style="position:fixed;top:1rem;left:1.25rem;z-index:60;display:inline-flex;align-items:center;gap:.4rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;text-decoration:none;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.45rem .85rem;border-radius:999px;border:1px solid var(--rule);box-shadow:0 4px 16px rgba(40,50,70,.08)">&larr; Salon AI</a>
+
+  <!-- ============ MUSIK: Über den Wolken ============ -->
+  <div id="cloudsong" style="position:fixed;top:1rem;right:1.25rem;z-index:60;font-family:var(--sans);text-align:right">
+    <button id="cloudsong-toggle" type="button" aria-expanded="false" aria-label="Musik: Über den Wolken von Reinhard Mey abspielen"
+      style="display:inline-flex;align-items:center;gap:.5rem;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;cursor:pointer;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.45rem .85rem;border-radius:999px;border:1px solid var(--rule);box-shadow:0 4px 16px rgba(40,50,70,.08);transition:color .15s">
+      <span id="cloudsong-icon" aria-hidden="true" style="font-size:.95rem;line-height:1">&#9729;&#65038;</span>
+      <span>Über den Wolken</span>
+    </button>
+    <div id="cloudsong-panel" hidden style="margin-top:.55rem;width:280px;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--rule);border-radius:16px;box-shadow:0 10px 30px rgba(40,50,70,.14);padding:.6rem;text-align:left">
+      <div id="cloudsong-embed" style="position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000"></div>
+      <p style="margin:.5rem .15rem 0;font-family:var(--serif);font-style:italic;font-size:.78rem;color:var(--ink-soft);line-height:1.35">„Über den Wolken" &mdash; Reinhard Mey, 1974</p>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var btn=document.getElementById('cloudsong-toggle');
+    var panel=document.getElementById('cloudsong-panel');
+    var embed=document.getElementById('cloudsong-embed');
+    var icon=document.getElementById('cloudsong-icon');
+    if(!btn) return;
+    var playing=false;
+    btn.addEventListener('click',function(){
+      playing=!playing;
+      btn.setAttribute('aria-expanded',playing?'true':'false');
+      if(playing){
+        embed.innerHTML='<iframe width="100%" height="100%" style="position:absolute;inset:0;border:0" src="https://www.youtube-nocookie.com/embed/fZMFF8QH3ew?autoplay=1&rel=0" title="Über den Wolken — Reinhard Mey" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+        panel.hidden=false;
+        icon.textContent='♪';
+      } else {
+        embed.innerHTML='';
+        panel.hidden=true;
+        icon.textContent='☁︎';
+      }
+    });
+  })();
+  </script>
   <p class="hero__eyebrow eyebrow">Salon AI · Donnerstag, 28. Mai 2026</p>
   <h1 class="hero__title">Mathe<br>mit <em>Worten.</em></h1>
   <p class="hero__sub">Ein Abend, an dem KI aufhört, Magie zu sein.</p>
@@ -3712,59 +3756,60 @@ Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
     <p class="anchor-card__def">Genau das hast du gerade gemacht: dem Agent <em>Kontext</em> über dich gegeben — wie bei einem neuen Mitarbeiter, den du einarbeitest. <em>„Schau in meinen Ordner mein-Profil"</em>, <em>„lies meine Mails"</em>, <em>„hier ist mein CRM — verstehe, wer meine Kunden sind."</em> Je besser er dich und deine Arbeitsweise kennt, desto besser arbeitet er.</p>
     <p class="anchor-card__def">Aber: mit jedem Satz, jeder Datei drehst du an einem <em>Steuerrad</em>. Zu wenig — sie rät. Zu viel — sie verliert den Faden (die <em>Wolke</em> läuft über — gleich mehr dazu). <strong>Genau richtig: klarer Kontext, kein Rauschen.</strong></p>
 
-    <h3 class="anchor-card__subtitle" style="font-size:1.25rem;margin-top:1.8rem">Und die <em>Wolke</em>, die volläuft</h3>
-    <p class="anchor-card__def">Beim <em>Session-Start</em> wacht der Referent auf und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.</p>
+    <div class="wolke-split">
+      <div class="wolke-split__graphic">
+        <svg viewBox="0 0 300 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Context-Window: frischer Start, die Wolke füllt sich, neue Session auf demselben Ordner">
+          <!-- Wolke 1: frischer Start -->
+          <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(91,15)">
+            <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
+          </g>
+          <text class="label-serif" x="150" y="52" text-anchor="middle" font-weight="600" fill="#1a1410">Start</text>
+          <text class="label-hand" x="150" y="100" text-anchor="middle" fill="#5c4f43">saugt claude.md auf</text>
 
-    <div class="master-card" style="max-width:700px;margin:1.6rem auto 0">
-      <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
-        <!-- Wolke 1: frischer Start -->
-        <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(20,58) scale(.82)">
-          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-        </g>
-        <text class="label-serif" x="66" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">Start</text>
-        <text class="label-hand" x="66" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">saugt claude.md auf</text>
+          <!-- Pfeil 1 -> 2 -->
+          <g stroke="#3a3633" stroke-width="1.5" fill="none">
+            <path d="M150,114 L150,144"/>
+            <path d="M144,137 L150,145 L156,137"/>
+          </g>
 
-        <!-- Pfeil 1 -> 2 -->
-        <g stroke="#3a3633" stroke-width="1.5" fill="none">
-          <path d="M150,92 L233,92"/>
-          <path d="M226,86 L235,92 L226,98"/>
-        </g>
+          <!-- Wolke 2: läuft voll (Regen) -->
+          <g stroke="#6b4e8e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(70,160) scale(1.35)">
+            <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
+          </g>
+          <text class="label-serif" x="150" y="152" text-anchor="middle" font-weight="600" fill="#4a3566">füllt sich…</text>
+          <g stroke="#6b4e8e" stroke-width="1.4" opacity=".6" stroke-linecap="round">
+            <line x1="120" y1="244" x2="115" y2="266"/>
+            <line x1="144" y1="246" x2="139" y2="268"/>
+            <line x1="168" y1="244" x2="163" y2="266"/>
+            <line x1="192" y1="246" x2="187" y2="268"/>
+          </g>
+          <text class="label-hand" x="150" y="294" text-anchor="middle" fill="#a4502e">langsam &amp; wirr</text>
 
-        <!-- Wolke 2: läuft voll (Regen) -->
-        <g stroke="#6b4e8e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(248,36) scale(1.25)">
-          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-        </g>
-        <g stroke="#6b4e8e" stroke-width="1.3" opacity=".6" stroke-linecap="round">
-          <line x1="292" y1="120" x2="287" y2="140"/>
-          <line x1="318" y1="122" x2="313" y2="144"/>
-          <line x1="344" y1="120" x2="339" y2="140"/>
-          <line x1="370" y1="122" x2="365" y2="144"/>
-        </g>
-        <text class="label-serif" x="330" y="28" text-anchor="middle" font-size="13" font-weight="600" fill="#4a3566">füllt sich…</text>
-        <text class="label-hand" x="330" y="162" text-anchor="middle" font-size="13" fill="#a4502e">langsam &amp; wirr</text>
+          <!-- Pfeil 2 -> 3: Session neu -->
+          <g stroke="#a4502e" stroke-width="1.5" fill="none">
+            <path d="M150,306 L150,338"/>
+            <path d="M144,331 L150,339 L156,331"/>
+          </g>
+          <text class="label-serif" x="200" y="326" text-anchor="start" font-style="italic" fill="#a4502e">Session neu</text>
 
-        <!-- Pfeil 2 -> 3: Session neu -->
-        <g stroke="#a4502e" stroke-width="1.5" fill="none">
-          <path d="M430,92 L513,92"/>
-          <path d="M506,86 L515,92 L506,98"/>
-        </g>
-        <text class="label-hand" x="471" y="80" text-anchor="middle" font-size="12" fill="#a4502e" font-style="italic">Session neu</text>
+          <!-- Wolke 3: frisch neu -->
+          <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(91,354)">
+            <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
+          </g>
+          <text class="label-serif" x="150" y="391" text-anchor="middle" font-weight="600" fill="#1a1410">frisch</text>
+          <text class="label-hand" x="150" y="439" text-anchor="middle" fill="#5c4f43">selber Ordner</text>
 
-        <!-- Wolke 3: frisch neu -->
-        <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(525,58) scale(.82)">
-          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-        </g>
-        <text class="label-serif" x="571" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">frisch</text>
-        <text class="label-hand" x="571" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">selber Ordner</text>
-
-        <!-- Persist-Strip -->
-        <line x1="40" y1="196" x2="660" y2="196" stroke="#d5cdb8" stroke-width="1"/>
-        <text class="label-serif" x="350" y="217" text-anchor="middle" font-size="12" font-style="italic" fill="#5c4f43">claude.md + memory/ bleiben — sie überstehen jeden Neustart</text>
-      </svg>
-      <p class="master-card__caption">Frischer Start → die Wolke füllt sich → neue Session auf <em>demselben Ordner</em>, frischer Tisch.</p>
+          <!-- Persist-Strip -->
+          <line x1="30" y1="482" x2="270" y2="482" stroke="#d5cdb8" stroke-width="1"/>
+          <text class="label-serif" x="150" y="504" text-anchor="middle" font-style="italic" fill="#5c4f43">claude.md + memory/ bleiben —</text>
+          <text class="label-serif" x="150" y="524" text-anchor="middle" font-style="italic" fill="#5c4f43">sie überstehen jeden Neustart</text>
+        </svg>
+      </div>
+      <div class="wolke-split__text">
+        <p class="anchor-card__def">Beim <em>Session-Start</em> wacht der Referent auf und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.</p>
+        <p class="anchor-card__def">Irgendwann ist die Wolke <em>zu voll</em>: Er wird träge und fängt an, <em>Unsinn zu reden</em> — weil er bei jeder Antwort die ganze überfüllte Wolke neu durchlesen muss. Dann der <em>Profi-Trick</em>: Session schließen, neue öffnen, auf <em>demselben Ordner</em>. Die alte Wolke regnet ab, der Tisch ist sauber. Er liest wieder die <em>claude.md</em>, hat den <em>memory/</em>-Ordner parat — weiß also sofort wieder, wer er ist und wo das Projekt steht. Das ganze Blabla ist weg, er ist wieder messerscharf.</p>
+      </div>
     </div>
-
-    <p class="anchor-card__def" style="margin-top:1.4rem">Irgendwann ist die Wolke <em>zu voll</em>: Er wird träge und fängt an, <em>Unsinn zu reden</em> — weil er bei jeder Antwort die ganze überfüllte Wolke neu durchlesen muss. Dann der <em>Profi-Trick</em>: Session schließen, neue öffnen, auf <em>demselben Ordner</em>. Die alte Wolke regnet ab, der Tisch ist sauber. Er liest wieder die <em>claude.md</em>, hat den <em>memory/</em>-Ordner parat — weiß also sofort wieder, wer er ist und wo das Projekt steht. Das ganze Blabla ist weg, er ist wieder messerscharf.</p>
 
     <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
       <span class="iter-note__label">★ Mehrere Agenten parallel</span>
