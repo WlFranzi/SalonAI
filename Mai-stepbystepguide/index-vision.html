@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2RZV4QPFD');
+</script>
 <title>Mathe mit Worten — Salon AI · Vision-Pro-Edition</title>
 <meta name="description" content="Ein Abend, an dem KI aufhört Magie zu sein. Salon AI Immersive Workshop #1.">
 <meta property="og:title" content="Mathe mit Worten">
@@ -1533,21 +1541,21 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 .prompt-card__label {
   background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
   border-bottom: 1px solid var(--rule) !important;
-  padding: 1.3rem 1.7rem !important;
+  padding: .65rem 1.2rem !important;
   margin: 0 !important;
   font-family: var(--sans);
-  font-size: .72rem;
+  font-size: .56rem;
   font-weight: 600;
-  letter-spacing: .2em;
+  letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
 .prompt-card__body {
-  padding: 1.8rem 1.9rem 2rem !important;
+  padding: 1.2rem 1.4rem 1.3rem !important;
   background: rgba(255, 255, 255, .42) !important;
   font-family: 'SF Mono', 'Monaco', Menlo, monospace !important;
-  font-size: 1rem !important;
-  line-height: 1.75 !important;
+  font-size: .84rem !important;
+  line-height: 1.6 !important;
   color: var(--ink) !important;
   white-space: pre-wrap;
 }
@@ -2470,9 +2478,15 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
+  <a href="https://salon-ai.eu/" aria-label="Zurück zur Salon AI Hauptseite" style="position:fixed;top:1rem;left:1.25rem;z-index:60;display:inline-flex;align-items:center;gap:.4rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;text-decoration:none;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:.45rem .85rem;border-radius:999px;border:1px solid var(--rule);box-shadow:0 4px 16px rgba(40,50,70,.08)">&larr; Salon AI</a>
   <p class="hero__eyebrow eyebrow">Salon AI · Donnerstag, 28. Mai 2026</p>
   <h1 class="hero__title">Mathe<br>mit <em>Worten.</em></h1>
   <p class="hero__sub">Ein Abend, an dem KI aufhört, Magie zu sein.</p>
+
+  <p style="font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-soft);max-width:58ch;margin:1.5rem 0 0;line-height:1.55;border-left:2px solid var(--iris);padding-left:1rem">
+    Kleine Einordnung vorab: Wenn wir über <em>„KI"</em> sprechen, meinen wir meist <em>Sprachmodelle</em> (ChatGPT, Claude &amp; Co). Das ist aber nur <em>ein Ausschnitt</em>: Rund <strong>74 % des Marktes</strong> — und damit der größte Teil der KI im Hintergrund (Empfehlungen, Bilderkennung, Prognosen) — ist klassisches <em>Machine Learning</em>.
+    <span style="display:block;font-style:normal;font-family:var(--sans);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:.6rem;opacity:.8">— vgl. MIT Sloan, 2025</span>
+  </p>
 
   <div class="hero__trailer">
     <p class="hero__trailer-label">— Trailer · zwei Berufe, vor und nach KI</p>
@@ -2541,20 +2555,41 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
     </div>
 
     <div class="anchor-card__sep">Übung 1 · 5 Min</div>
-    <h3 class="anchor-card__subtitle">Kopier das Prompt — trag <em>deine</em> Beschreibung ein.</h3>
+    <h3 class="anchor-card__subtitle">Trag <em>deine</em> Beschreibung ein — das Prompt füllt sich automatisch. Dann kopier's für deinen Chat.</h3>
     <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Fünf Berufe stehen schon drin als Benchmark. Du füllst nur deinen <em>strategischen Kontext</em> in drei Punkten aus — der Rest ist Mathe.</p>
 
-  <div class="prompt-card">
+  <style>
+  .i2-fill{max-width:780px;margin:2rem auto 0;background:var(--v-glass-strong);border:1px solid var(--v-glass-border);border-radius:22px;padding:1.4rem 1.5rem;box-shadow:var(--v-shadow)}
+  .i2-fill__hd{font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:0 0 .3rem}
+  .i2-fill__sub{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-soft);margin:0 0 1.1rem;line-height:1.4}
+  .i2-field{display:block;margin-bottom:.9rem}
+  .i2-field > span{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.04em;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+  .i2-field textarea{width:100%;font-family:var(--sans);font-size:.9rem;line-height:1.45;color:var(--ink);background:rgba(255,255,255,.72);border:1px solid var(--rule);border-radius:12px;padding:.7rem .9rem;resize:vertical;min-height:2.6rem}
+  .i2-field textarea:focus{outline:none;border-color:var(--coral);box-shadow:0 0 0 3px rgba(226,106,74,.12)}
+  .i2-arrow{text-align:center;font-family:var(--hand);font-size:1.1rem;color:var(--ink-soft);margin:.9rem 0 -.4rem}
+  /* a/b/c-Karten: graue Box weg, drei Karten nebeneinander */
+  .tisch--bare{background:transparent !important;box-shadow:none !important;padding:0 !important;max-width:1040px}
+  .tisch--bare .tisch__cards{grid-template-columns:repeat(3,1fr) !important;gap:1rem}
+  @media(max-width:760px){.tisch--bare .tisch__cards{grid-template-columns:1fr !important}}
+  </style>
+  <div class="i2-fill">
+    <p class="i2-fill__hd">① Dein strategischer Kontext</p>
+    <p class="i2-fill__sub">Trag hier kurz ein, wer du bist — der Prompt unten füllt sich <em>automatisch</em>. Dann kopieren.</p>
+    <label class="i2-field"><span>Mein Kernfokus</span><textarea id="i2-fokus" rows="2" placeholder="z.B. Partner für Gesellschaftsrecht · Head of Global PR · CEO · Lehrstuhlinhaberin für Biochemie"></textarea></label>
+    <label class="i2-field"><span>Die Entscheidungen, die für mich den Unterschied machen</span><textarea id="i2-entsch" rows="2" placeholder="z.B. Prozessstrategie · Krisenkommunikation · Asset Allocation · Bewertung von Deal-Flow"></textarea></label>
+    <label class="i2-field"><span>Mein aktueller Engpass / Energiefresser</span><textarea id="i2-engpass" rows="2" placeholder="z.B. stundenlanges Medien-Monitoring · endlose Discovery-Akten · Verwaltungsbürokratie"></textarea></label>
+  </div>
+  <p class="i2-arrow">↓ füllt den Prompt unten aus ↓</p>
+
+  <div class="prompt-card" id="i2-prompt">
     <p class="prompt-card__label">
       <span>Prompt — kopieren & in deinen Chat einfügen</span>
       <button class="copy-btn" type="button">kopieren</button>
     </p>
-    <pre class="prompt-card__body">Schau dir die Benchmark-Beispiele unten an, um die erwartete strategische Tiefe, den Ton und das Ambitionsniveau zu verstehen. Nutze diese Beispiele als Inspiration und meine Eingabe (unten) — und entwirf mir meinen persönlichen, KI-integrierten und gehobenen Job.
+    <pre class="prompt-card__body" style="font-size:.66rem !important;line-height:1.5">Schau dir die Benchmark-Beispiele unten an, um die erwartete strategische Tiefe, den Ton und das Ambitionsniveau zu verstehen. Nutze diese Beispiele als Inspiration und meine Eingabe (unten) — und entwirf mir meinen persönlichen, KI-integrierten und gehobenen Job.
 
 
 ### Mein strategischer Kontext:
-
-[Bitte lösch den erklärenden Text in den Klammern und trag deine Angaben ein. So konkret wie möglich.]
 
 • Mein Kernfokus: [z.B. Partner für Gesellschaftsrecht, niedergelassener Allgemeinmediziner, Head of Global PR & Comms, CEO eines Konzerns, Lehrstuhlinhaberin für Biochemie, Verwaltung eines Private-Equity-Portfolios]
 
@@ -2596,7 +2631,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       Was du gleich siehst, sind <em>mentale Modelle</em>, keine exakte Mechanik. In der Realität rechnen Sprachmodelle mit hochkomplexen Embeddings und <em>„Attention"-Mechanismen</em>. Aber die Kernidee bleibt: <strong style="color:var(--ink);font-style:normal">Wir machen Mathe im Raum.</strong>
     </p>
     <h3 class="anchor-card__subtitle">Wer KI in <em>Punkten, Richtungen und Distanzen</em> versteht …</h3>
-  <section class="tisch" style="margin-top:2.2rem">
+  <section class="tisch tisch--bare" style="margin-top:2.2rem">
     <div class="tisch__cards">
       <div class="tisch__card">
         <p class="tisch__card-label">a · kein Auswendiglernen</p>
@@ -2708,7 +2743,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       <p class="eyebrow">I.3 · die Karte verstehen · 3 Min</p>
       <h3>Erst mal: <em>was ist überhaupt</em><br>ein Punkt im Embedding-Raum?</h3>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
-        Dieser <em>Embedding-Raum</em> <strong>ist</strong> im Grunde das Sprachmodell selbst — nur radikal vereinfacht dargestellt. Jedes Wort wird in Zahlen umgewandelt und kriegt im <em>Training</em> einen festen Platz. <strong>„König"</strong> und <strong>„Königin"</strong> wurden in Milliarden Texten ähnlich verwendet — also liegen sie nebeneinander. Genauso <strong>Hund · Welpe · Katze · Maus</strong>.
+        Dieser <em>Embedding-Raum</em> ist <strong>wie eine riesige Wort-Wolke</strong> — und im Grunde das Sprachmodell selbst, nur radikal vereinfacht dargestellt. Jedes Wort wird in Zahlen umgewandelt und kriegt im <em>Training</em> einen festen Platz. <strong>„König"</strong> und <strong>„Königin"</strong> wurden in Milliarden Texten ähnlich verwendet — also liegen sie nebeneinander. Genauso <strong>Hund · Welpe · Katze · Maus</strong>.
       </p>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:.8rem">
         Sachen, die nichts miteinander zu tun haben, liegen weit weg: <strong>Aktenschrank</strong>.
@@ -2749,7 +2784,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
 <section class="failure-box">
   <span class="failure-box__label">Häufiger Fehler</span>
   <p class="failure-box__text">
-    Wenn deine Beispiele <em>uneinheitlich</em> oder <em>zu wenige</em> sind (unter 3), kopiert die KI Stil-Klischees statt deinen echten Standard. Drei klare Vorher/Nachher-Paare schlagen zehn halbgare jeden Tag.
+    Wenn deine Beispiele <em>uneinheitlich</em> oder <em>zu wenige</em> sind (unter 3), <em>rät die KI einfach</em> — sie kopiert Stil-Klischees, statt deinen echten Standard zu lernen. Drei klare Vorher/Nachher-Paare schlagen zehn halbgare jeden Tag.
   </p>
 </section>
 
@@ -2842,6 +2877,9 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
   <h2 style="text-align:center">Rechnen im Raum —<br><em>mit Worten.</em></h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:66ch;margin:1.5rem auto;text-align:center">
     Du hast es gerade gesehen: Wörter sind <em>Punkte</em>, Ähnliches liegt nah beieinander. Das Geniale daran — du musst der KI nie <em>Regeln</em> erklären. Du zeigst ihr eine <em>Region im Raum</em>, und sie agiert von dort. Drei Wege, dasselbe Prinzip. Und bei jedem kannst du <em>zweierlei</em>: hin-steuern (<em>anwenden</em>) — oder die Koordinaten ablesen (<em>die Prinzipien herausziehen</em>).
+  </p>
+  <p style="text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--coral);margin:.4rem auto 2rem;max-width:42ch;line-height:1.3">
+    Also: KI ist einfach nur <strong style="font-style:normal">SEHR komplexe Mathe.</strong>
   </p>
 
   <!-- Eine Embedding-Karte, die sich mit dem Karussell unten ändert -->
@@ -2962,7 +3000,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
                 <div class="rr-col">
                   <p class="rr-col__head">→ Prinzipien rausziehen</p>
                   <p class="rr-col__desc">Frag, <em>was</em> sie gut macht — die guten <em>Dimensionen</em> werden sichtbar.</p>
-                  <p class="rr-prompt">Was genau macht diese 3 PowerPoints exzellent? Nenn mir die 5 Dimensionen, die sie auszeichnen — als Checkliste.</p>
+                  <p class="rr-prompt">Was genau macht diese 3 PowerPoints exzellent? Nenn mir die Dimensionen/Prinzipien, die sie auszeichnen — als Checkliste.</p>
                 </div>
               </div>
             </div>
@@ -3002,6 +3040,119 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
   <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:58ch;margin:1.8rem auto 0;line-height:1.55">
     Egal ob Paare, Beispiele oder Personas: Du sagst der KI nie <em>„mach es so"</em> in Regeln. Du zeigst ihr eine <em>Region</em> — und ziehst bei Bedarf die <em>Koordinaten</em> heraus.
   </p>
+
+</section>
+
+<!-- ============ I.5b — Wort für Wort (ausklappbar) ============ -->
+<section class="text-section text-section--wide">
+  <details class="exkurs" style="max-width:880px;margin:0 auto">
+    <summary class="exkurs__summary">
+      <span class="exkurs__label">Exkurs</span>
+      <span class="exkurs__title">Und was passiert <em>mathematisch</em>, wenn die KI dir eine Antwort auf dein Prompt gibt?</span>
+      <span class="exkurs__toggle">Ausklappen</span>
+    </summary>
+    <div class="exkurs__body">
+      <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.6;color:var(--ink);margin-bottom:1rem">
+        Sobald du einen Prompt eingibst, tippt das Modell den Text <em>Wort für Wort</em> weiter. Es wählt dabei immer das nächste Wort aus, das am besten zum bisherigen Text passt.
+      </p>
+      <p style="font-family:var(--serif);font-size:1.1rem;line-height:1.6;color:var(--ink);margin-bottom:1rem">
+        Vereinfacht denkt sich das Modell: <em>„Ich habe die ersten acht Wörter. Mit welcher Wahrscheinlichkeit ist Wort 9 jetzt ‚der', oder ‚ein', oder ‚plötzlich'?"</em> Das wahrscheinlichste wird gewählt. Dann ist Wort 9 da — und die Frage startet neu für Wort 10. <em>Und wieder. Und wieder.</em>
+      </p>
+      <p style="font-family:var(--serif);color:var(--ink-soft);font-style:italic;margin-bottom:1.4rem;border-left:1px solid var(--rule);padding-left:1.2rem;font-size:1.02rem">
+        Übrigens: das ist auch der Grund, warum längere Texte oft <em>fehleranfälliger</em> werden. Das Modell muss sich beim Generieren von Wort 500 noch an Wort 1 erinnern — und je länger der Kontext, desto schwerer fällt das.
+      </p>
+
+      <style>
+      .wf{display:grid;grid-template-columns:1.25fr 1fr;gap:1rem;align-items:center;margin-bottom:1.4rem}
+      .wf__media{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:.7rem;box-shadow:var(--v-shadow)}
+      .wf__media svg{display:block;width:100%;height:auto}
+      .wf__stage{transition:opacity .45s ease}
+      .wf[data-stage="1"] .wf__stage--2,.wf[data-stage="1"] .wf__stage--3{opacity:0}
+      .wf[data-stage="2"] .wf__stage--3{opacity:0}
+      .wf__steps{display:flex;flex-direction:column;gap:.5rem}
+      .wf__step{text-align:left;background:rgba(255,255,255,.65);border:1px solid var(--rule);border-left:3px solid var(--rule);border-radius:10px;padding:.55rem .8rem;cursor:pointer;transition:all .15s;width:100%}
+      .wf__step:hover{border-color:var(--coral)}
+      .wf__step.active{border-left-color:var(--coral);background:#fff;box-shadow:var(--v-shadow)}
+      .wf__step-label{display:block;font-family:var(--sans);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);font-weight:700;margin-bottom:.25rem}
+      .wf__step-body{font-family:var(--serif);font-size:.82rem;line-height:1.35;color:var(--ink)}
+      .wf__next{align-self:flex-start;font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);background:none;border:none;cursor:pointer;padding:.2rem 0}
+      @media(max-width:640px){.wf{grid-template-columns:1fr}}
+      </style>
+      <div class="wf" data-stage="1" id="wf-demo">
+        <div class="wf__media">
+          <svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <circle class="pencil-fill" cx="90" cy="150" r="10"/>
+              <text class="label-serif" x="90" y="178" text-anchor="middle">dein Prompt</text>
+              <text class="label-hand" x="90" y="197" text-anchor="middle" font-size="15">„Schreib mir eine…"</text>
+            </g>
+            <g class="wf__stage wf__stage--1">
+              <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M102,150 L210,120"/>
+              <circle cx="220" cy="120" r="9" fill="#e26a4a"/>
+              <text class="label-serif" x="232" y="118">„Mail"</text>
+              <text class="label-hand" x="232" y="135" fill="#e26a4a">0.71</text>
+              <circle cx="200" cy="84" r="6"/>
+              <text class="label-serif" x="212" y="82">„Brief"</text>
+              <text class="label-hand" x="212" y="98">0.18</text>
+              <circle cx="182" cy="186" r="6"/>
+              <text class="label-serif" x="194" y="188">„Nachricht"</text>
+              <text class="label-hand" x="194" y="204">0.08</text>
+            </g>
+            <g class="wf__stage wf__stage--2">
+              <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M229,120 L320,104"/>
+              <circle cx="330" cy="104" r="9" fill="#e26a4a"/>
+              <text class="label-serif" x="342" y="102">„an"</text>
+              <text class="label-hand" x="342" y="119" fill="#e26a4a">0.84</text>
+              <circle cx="316" cy="70" r="5"/>
+              <text class="label-serif" x="328" y="67" font-size="11">„für"</text>
+              <text class="label-hand" x="328" y="82" font-size="13">0.10</text>
+            </g>
+            <g class="wf__stage wf__stage--3">
+              <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M339,104 L430,90"/>
+              <circle cx="440" cy="90" r="9" fill="#e26a4a"/>
+              <text class="label-serif" x="452" y="88">„meinen"</text>
+              <text class="label-hand" x="452" y="105" fill="#e26a4a">0.62</text>
+              <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M449,90 L540,78"/>
+              <circle cx="550" cy="78" r="9" fill="#e26a4a"/>
+              <text class="label-serif" x="562" y="76">„Chef"</text>
+              <text class="label-hand" x="562" y="93" fill="#e26a4a">0.55</text>
+            </g>
+            <text x="320" y="250" font-family="Caveat" font-size="16" fill="#3a3633" text-anchor="middle">Wort für Wort. Jedes ist das nächste auf der Route.</text>
+          </svg>
+        </div>
+        <div class="wf__steps">
+          <button type="button" class="wf__step active" data-stage="1"><span class="wf__step-label">Schritt 1 · drei Kandidaten</span><span class="wf__step-body">Aus dem Prompt schaut die KI in alle Richtungen: <em>Mail</em> (0.71), <em>Brief</em> (0.18), <em>Nachricht</em> (0.08). Das wahrscheinlichste leuchtet auf.</span></button>
+          <button type="button" class="wf__step" data-stage="2"><span class="wf__step-label">Schritt 2 · vom neuen Punkt aus</span><span class="wf__step-body">Sobald <em>„Mail"</em> gewählt ist, wird es der neue Schwerpunkt — die nächsten Kandidaten erscheinen, meist Grammatik wie „an".</span></button>
+          <button type="button" class="wf__step" data-stage="3"><span class="wf__step-label">Schritt 3 · und nochmal</span><span class="wf__step-body">Jedes Wort verschiebt den Schwerpunkt. So entsteht <em>„meinen Chef"</em>, Wort für Wort.</span></button>
+          <button type="button" class="wf__next" id="wf-next">weiter ›</button>
+        </div>
+      </div>
+      <script>
+      (function(){
+        var wf=document.getElementById('wf-demo'); if(!wf) return;
+        var steps=[].slice.call(wf.querySelectorAll('.wf__step'));
+        function set(s){ wf.setAttribute('data-stage',s); steps.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-stage')===String(s)); }); }
+        steps.forEach(function(b){ b.addEventListener('click',function(){ set(b.getAttribute('data-stage')); }); });
+        var n=document.getElementById('wf-next');
+        if(n) n.addEventListener('click',function(){ var c=+wf.getAttribute('data-stage'); set(c>=3?1:c+1); });
+      })();
+      </script>
+
+      <details class="exkurs" style="margin:0 0 1rem">
+        <summary class="exkurs__summary">
+          <span class="exkurs__label">Exkurs</span>
+          <span class="exkurs__title">Stimmt das auch für <em>Reasoning-Modelle?</em></span>
+          <span class="exkurs__toggle">Ausklappen</span>
+        </summary>
+        <div class="exkurs__body">
+          <p style="font-family:var(--serif);font-size:1.08rem;line-height:1.6;color:var(--ink);margin-bottom:1rem">Klassische Modelle sind wie ein Experte, dem du eine Frage stellst und der sofort anfängt zu sprechen, ohne Luft zu holen. Er weiß beim ersten Wort noch nicht, wie der Satz enden wird.</p>
+          <p style="font-family:var(--serif);font-size:1.08rem;line-height:1.6;color:var(--ink)">Reasoning-Modelle sind <em>derselbe</em> Experte — aber wenn du ihm die Frage stellst, hält er erst für 30 Sekunden den Mund, geht im Kopf verschiedene Lösungswege durch, verwirft die schlechten, korrigiert seine eigenen Fehler — und gibt dir <em>dann</em> die durchdachte Antwort.</p>
+        </div>
+      </details>
+
+      <div class="deeper-note"><span class="deeper-note__label">Wenn du tiefer willst</span><p class="deeper-note__text">Die KI tippt eigentlich nicht Wörter, sondern <em>Sub-Word-Tokens</em> aus einem Vokabular von 50.000–100.000 Einheiten. Ein Wort wie „Verspätung" kann aus zwei oder drei Tokens bestehen. <span class="konsequenz">Praktisch ändert sich nichts. Aber genau deshalb werden lange Texte fehleranfälliger — jeder Token-Schritt kann driften.</span></p></div>
+    </div>
+  </details>
 </section>
 
 <!-- ============ I.7 — RevealSection: "Das ist Mathe mit Worten" ============ -->
@@ -3202,6 +3353,9 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
     <em>Bisher: Schreiber.</em>
     Jetzt — <strong>Bauer.</strong>
   </p>
+  <p style="font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.6vw,1.2rem);color:rgba(250,247,241,.72);max-width:56ch;margin:1.8rem auto 0;line-height:1.55">
+    Es gibt heute Menschen, die <em style="color:#e89a82;font-style:italic">nie programmiert</em> haben — und in vier Wochen eine App <em style="color:#e89a82;font-style:italic">geschrieben</em> (ja, wörtlich — in ihrer eigenen Muttersprache, „vibe-coded") und im App Store veröffentlicht haben. <strong style="color:#f5efe4;font-weight:600;font-style:normal">Das ist die Benchmark ;)</strong>
+  </p>
   <p class="portal__hint">↓ scroll weiter</p>
 </section>
 
@@ -3215,19 +3369,13 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
     <p class="anchor-card__num">II</p>
     <p class="anchor-card__kicker">Akt Zwei · 40 Min</p>
     <h2 class="anchor-card__title">Vom Browser <em>auf deinen Rechner.</em></h2>
-    <p class="anchor-card__def">Ab heute Abend lebt auf deinem Laptop ein Kollege, der morgen früh noch weiß, was du gestern gedacht hast.</p>
-    <p class="anchor-card__def" style="font-size:1rem;color:var(--ink-soft);font-style:italic;max-width:64ch;margin:.8rem auto 0">Wir nehmen heute <em>Claude Cowork</em> als konkretes Beispiel — weil wir's gemeinsam live installieren können. ChatGPT und Gemini haben vergleichbare Desktop-Agenten; die Prinzipien dieses Abends gelten überall gleich.</p>
-    <div class="iter-note" style="max-width:620px;margin:1.4rem auto 0">
-      <span class="iter-note__label">★ Nach 40 Minuten kannst du sagen:</span>
-      <em>"Ich habe Cowork laufen."</em> · <em>"Ich kann in einem Satz erklären, warum ein Agent mehr ist als ein Chat."</em> · <em>"Ich habe einen Agent, der mir morgen früh meine Top-3-To-dos zeigt."</em>
-    </div>
 
 <!-- ============ II.1 — Bridge: Frag deinen Chat ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">II.1 · Brücke · 5 Min</p>
   <h2>Wofür brauchst du <em>überhaupt</em> einen Agent?<br>Frag's deinen Chat selbst.</h2>
-  <p class="lead" style="border-left:none;padding-left:0;max-width:60ch;margin:1.5rem auto;text-align:center">
-    Du hast gerade dein persönliches Vorher/Nachher zurückbekommen. Bevor wir <em>irgendetwas</em> installieren — lass die KI selbst entscheiden, wo Chat reicht und wo ein Agent unverzichtbar wird.
+  <p class="lead" style="border-left:none;padding-left:0;max-width:62ch;margin:1.5rem auto;text-align:center">
+    Wir gehen nochmal <em>einen Schritt zurück</em> — zurück in deinen <em>Browser-Chat</em> (claude.com, ChatGPT, Gemini). Du hast gerade dein persönliches Vorher/Nachher zurückbekommen. Bevor wir <em>irgendetwas installieren</em>, lass die KI <strong>dort</strong> selbst entscheiden, wo der Chat reicht und wo ein Agent unverzichtbar wird. <strong>Erst danach laden wir die App herunter.</strong>
   </p>
 
   <div class="prompt-card">
@@ -3253,7 +3401,12 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
 <!-- ============ II.2 — Installation ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">II.2 · Installation · 10 Min</p>
-  <h2><em>Claude Cowork</em> installieren.<br>Vier Doppelklicks.</h2>
+  <h2><em>Deinen Agenten</em> installieren.<br>Vier Doppelklicks.</h2>
+
+  <div class="iter-note" style="max-width:620px;margin:1.4rem auto 0">
+    <span class="iter-note__label">★ Nach 40 Minuten kannst du sagen:</span>
+    <em>"Ich habe Cowork laufen."</em> · <em>"Ich kann in einem Satz erklären, warum ein Agent mehr ist als ein Chat."</em> · <em>"Ich habe einen Agent, der mir morgen früh meine Top-3-To-dos zeigt."</em>
+  </div>
 
   <div class="iter-note" style="background:var(--paper-tint);border-left-color:var(--ink-soft);max-width:680px">
     <span class="iter-note__label" style="color:var(--ink-soft)">→ Kein Terminal · kein Programmieren</span>
@@ -3416,10 +3569,7 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
   <section class="deeper-note" aria-label="Vertiefung" style="grid-template-columns:1fr;gap:.55rem">
     <span class="deeper-note__label">II.4.1 · Wenn du tiefer willst — wo lebt das Modell?</span>
     <p class="deeper-note__text" style="margin-bottom:1rem">
-      Cowork ist auf deinem Rechner — das <em>Modell selbst</em> nicht. Es läuft auf Servern von Anthropic. Wenn der Agent deine Datei liest, fließen die <em>Inhalte</em> kurz dorthin und kommen als Antwort zurück. Egal ob die App lokal ist.
-    </p>
-    <p class="deeper-note__text" style="margin-bottom:1rem">
-      <strong>Welches Modell?</strong> Du siehst es oben links in der Cowork-App. Für simple Reminders ist das egal. Für <em>„schau dir kurz meine Dateien an"</em> macht's einen Unterschied — <em>Opus</em> liest aufmerksamer als <em>Sonnet.</em>
+      Cowork — die App — liegt auf deinem Rechner. Das <em>Modell selbst</em>, also die <em>Sprachwolke</em>, liegt <strong>nicht</strong> dort: sie läuft in der Cloud beim Anbieter (Anthropic, Google, OpenAI …). Wenn der Agent deine Datei liest, schickt er den nötigen Ausschnitt kurz hinauf zur Sprachwolke, bekommt eine Antwort zurück, schickt bei Bedarf die nächste Frage hoch — und so weiter. Die App ist lokal, das <em>Denken</em> passiert in der Cloud.
     </p>
 
     <!-- Visualization: laptop on left, dashed cable, Anthropic cloud on right -->
@@ -3469,7 +3619,7 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
     </div>
 
     <p class="deeper-note__text" style="margin-top:1rem">
-      <strong>Was heißt das für Vertrauliches?</strong> Im <em>Browser-Chat</em> (claude.com, ChatGPT) geht alles, was du hochlädst, durch fremde Server. Im <em>Cowork-Agent</em> bleibt die <em>Datei</em> auf deinem Rechner — aber der <em>Gesprächs-Verlauf</em> (was du tippst, was der Agent als Kontext mitschickt) wird trotzdem auf Servern gespeichert, zu rund 99 %. Liest der Agent eine sensible Akte und redet darüber, steht dieser Auszug im Log.
+      <strong>Was heißt das für Vertrauliches?</strong> Im <em>Browser-Chat</em> (claude.com, ChatGPT) geht alles, was du hochlädst, durch fremde Server. Im <em>Cowork-Agent</em> bleibt die <em>Datei</em> auf deinem Rechner — aber der <em>Gesprächs-Verlauf</em> (was du tippst, was der Agent als Kontext mitschickt) wird trotzdem auf Servern gespeichert. <strong>Und selbst wenn ein Anbieter zusichert, deine Daten nicht fürs Training zu verwenden</strong> — die Gesprächs-Logs liegen weiterhin auf <em>seinen</em> Servern. Liest der Agent eine sensible Akte und redet darüber, steht dieser Auszug im Log.
       <span class="konsequenz">Cowork ist <em>besser</em>, nicht <em>privat</em>. Höchst-vertrauliche Inhalte (Mandanten-Akten, Patientendaten, M&amp;A-Drafts) vor dem Lesen anonymisieren — keine Klarnamen, keine Aktenzeichen. Davon ausgehen, dass das Gespräch im Log landet.</span>
     </p>
   </section>
@@ -3478,9 +3628,9 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
 <!-- ============ II.4 — Drei Bausteine ============ -->
 <section class="text-section text-section--wide">
   <p class="eyebrow">II.4 · Was ein Agent eigentlich ist · 3 Min</p>
-  <h2>Dein Agent ist ein <em>persönlicher Referent</em> —<br>kein Mysterium.</h2>
+  <h2>Dein Agent ist also ein <em>kleines Programm</em> —<br>kein Mysterium.</h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:1.5rem auto;text-align:center">
-    Stell dir einen <em>diskreten Referenten</em> vor, der an deinem Schreibtisch sitzt. Er ist ein kleines Programm (Cowork) — er <em>schaut sich deine Dateien an</em>, führt Buch über das, was zählt, und wenn er wirklich <em>nachdenken</em> muss, ruft er <em>Claude</em> an: das Sprachmodell, das gar nicht auf deinem Rechner liegt, sondern bei <em>Anthropic in der Cloud</em>. Er schickt das Nötige mit, bekommt die Antwort zurück, schreibt sie dir hin.
+    Stell dir einen <em>diskreten Referenten</em> vor, der an deinem Schreibtisch sitzt. Er ist ein kleines Programm (Cowork) — er <em>schaut sich deine Dateien an</em>, führt Buch über das, was zählt, und wenn er wirklich <em>nachdenken</em> muss, ruft er <em>Claude</em> an: das Sprachmodell, das gar nicht auf deinem Rechner liegt, sondern in der Cloud beim Anbieter (<em>Anthropic, Google, OpenAI …</em>). Er schickt das Nötige mit, bekommt die Antwort zurück, schreibt sie dir hin.
   </p>
   <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:0 auto 1rem;text-align:center">
     Damit er gut arbeitet, braucht er <em>drei Sorten Notizen</em> — alle in einem Ordner auf deinem Laptop:
@@ -3496,48 +3646,14 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
       <text x="119" y="98" text-anchor="middle" font-family="Caveat" font-size="14" fill="#5c4f43">— das Sprachmodell in der Cloud —</text>
     </svg>
     <img src="Screenshot%202026-05-28%20at%2013.51.06.png" alt="Cowork-Agent: dein Ordner auf dem Laptop mit claude.md, memory/ und context/" loading="lazy" style="width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--rule)">
-    <p class="master-card__caption">So sieht das echt aus: ein Ordner auf deinem Laptop. Die <em>claude.md</em> liest der Agent bei jedem Start automatisch; im <em>memory/</em> sammelt er, was bleiben soll; <em>context/</em> ist das aktuelle Gespräch.</p>
+    <p class="master-card__caption">So sieht das echt aus: ein Ordner auf deinem Laptop. Die <em>claude.md</em> liest der Agent bei jedem <em>Session-Start</em> automatisch; im <em>memory/</em> sammelt er, was bleiben soll; in die <em>Ablage</em> packst du alles, was für dich wichtig ist und das der Agent wissen soll; <em>context</em> ist das aktuelle Gespräch.</p>
   </div>
 
-  <p style="text-align:center;font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--ink-soft);max-width:62ch;margin:1.4rem auto 0;line-height:1.55">
-    Zwei Wörter, die heute Abend immer wiederkommen: <strong style="color:var(--ink);font-style:normal">Schreibtisch</strong> = deine ganzen Ablagen (Ordner &amp; Dateien). <strong style="color:var(--ink);font-style:normal">Kontext</strong> = das aktuelle Gespräch. Die Grenzen sind fließend — was auf dem Schreibtisch liegt, zieht er bei Bedarf in den Kontext.
-  </p>
-
-  <!-- Three use-case rows -->
-  <div class="grid-section__grid" style="margin-top:2rem">
-    <div class="grid-card">
-      <p class="grid-card__label">Use Case 1 · Task-Tracking</p>
-      <p class="grid-card__title">Reminders, die nicht verloren gehen.</p>
-      <p class="grid-card__body">
-        <strong>Anleitung:</strong> "Wann immer ich was zu tun erwähne, leg's in <em>memory/reminders.md</em> ab."<br>
-        <strong>Gedächtnis:</strong> <em>memory/reminders.md</em>, sortiert nach Kategorien.<br>
-        <strong>Kontext (jetzt):</strong> das heutige Gespräch.
-      </p>
-    </div>
-    <div class="grid-card">
-      <p class="grid-card__label">Use Case 2 · Competitive Analysis</p>
-      <p class="grid-card__title">Wettbewerber-Ordner, der wächst.</p>
-      <p class="grid-card__body">
-        <strong>Anleitung:</strong> "Wenn ich einen Wettbewerber nenne, leg ihm einen Ordner in <em>competitors/</em> an."<br>
-        <strong>Gedächtnis:</strong> ein Ordner pro Wettbewerber mit Datums-Notizen.<br>
-        <strong>Kontext (jetzt):</strong> der Wettbewerber, den du gerade analysierst.
-      </p>
-    </div>
-    <div class="grid-card">
-      <p class="grid-card__label">Use Case 3 · People-Briefings</p>
-      <p class="grid-card__title">Vor jedem Meeting den richtigen Kontext.</p>
-      <p class="grid-card__body">
-        <strong>Anleitung:</strong> "Wenn ich einen Namen erwähne, leg in <em>people/</em> eine Datei an. Vor jedem Meeting fass die letzten Notizen zusammen."<br>
-        <strong>Gedächtnis:</strong> <em>people/anna.md</em>, <em>people/jan.md</em> …<br>
-        <strong>Kontext (jetzt):</strong> das Meeting heute Nachmittag.
-      </p>
-    </div>
-  </div>
 
   <!-- Concept B: das Context-Window als Wolke + Session-Neustart -->
   <h3 style="text-align:center;margin-top:3.5rem">Und die <em>Wolke</em>, die volläuft</h3>
   <p class="lead" style="border-left:none;padding-left:0;max-width:66ch;margin:1.2rem auto;text-align:center">
-    Beim Start <em>wacht der Referent auf</em> und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.
+    Beim <em>Session-Start</em> wacht der Referent auf und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.
   </p>
 
   <div class="master-card" style="max-width:700px;margin:2rem auto 0">
@@ -3594,8 +3710,8 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
   </p>
 
   <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
-    <span class="iter-note__label">★ Merksatz</span>
-    Die <em>claude.md</em> schreibst <em>du</em>. Den <em>memory/</em>-Ordner fasst du nie an — den füttert und liest nur die KI. Genau deshalb übersteht dein Projekt jeden Wolken-Neustart: Identität und Gedächtnis liegen sicher im Ordner, nicht in der flüchtigen Wolke.
+    <span class="iter-note__label">★ Mehrere Agenten parallel</span>
+    Du kannst auf <em>demselben Ordner</em> auch mehrere Sessions gleichzeitig öffnen — quasi <em>mehrere gleiche Agenten parallel</em> laufen lassen. Alle teilen sich dieselbe <em>claude.md</em> und denselben <em>memory/</em>-Ordner, wissen also alle, wer du bist — und arbeiten nur an verschiedenen Dingen zur selben Zeit.
   </div>
 </section>
 
@@ -3603,11 +3719,11 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
 <section class="text-section text-section--wide" style="padding-top:1rem;padding-bottom:1rem">
   <div style="text-align:center;max-width:560px;margin:0 auto">
     <p style="font-family:var(--serif);font-style:italic;font-size:clamp(.8rem,1vw,.95rem);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.8rem">— das Muster —</p>
-    <p style="font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;color:var(--ink);margin:0">
-      Ein Job.<br><em>Ein Ordner.</em>
+    <p style="font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;color:var(--ink);margin:0">
+      Es gibt hier <em>keine festen Regeln</em> — außer einer: der Agent liest <em>jedes Mal</em> die <em>claude.md.</em> Den Rest bestimmst du.
     </p>
-    <p style="font-family:var(--serif);font-style:italic;color:var(--ink-soft);margin-top:1.2rem;max-width:48ch;margin-left:auto;margin-right:auto;line-height:1.5;font-size:.95rem">
-      Reminders → eigener Ordner. Wettbewerber → eigener Ordner. People-Briefings → eigener Ordner. Jeder Agent kennt nur die <em>claude.md</em> in seinem eigenen Ordner — sonst nichts.
+    <p style="font-family:var(--serif);font-style:italic;color:var(--ink-soft);margin-top:1.2rem;max-width:52ch;margin-left:auto;margin-right:auto;line-height:1.5;font-size:.98rem">
+      Ich hab dir heute die <em>momentanen Best Practices</em> gezeigt — so, wie es gerade in der Community besprochen wird. Mehr Konvention als Gesetz.
     </p>
   </div>
 </section>
@@ -3625,7 +3741,7 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
       <span>Prompt — in Cowork eintippen</span>
       <button class="copy-btn" type="button">kopieren</button>
     </p>
-    <pre class="prompt-card__body">Ich will dich nutzen, um meine To-dos zu tracken.
+    <pre class="prompt-card__body" style="font-size:.68rem !important;line-height:1.5">Ich will dich nutzen, um meine To-dos zu tracken.
 
 Bau bitte folgendes:
 
@@ -3676,20 +3792,6 @@ Bau bitte folgendes:
     </p>
   </div>
 
-  <section class="failure-box">
-    <span class="failure-box__label">Häufiger Fehler</span>
-    <p class="failure-box__text">
-      Wenn du den Reminders-Agent in einem <em>anderen Ordner</em> startest, kennt er deine <em>claude.md</em> aus dem alten Ordner nicht mehr. Pro Use-Case ein eigener Ordner — das ist das Muster.
-    </p>
-  </section>
-
-  <section class="deeper-note" aria-label="Vertiefung">
-    <span class="deeper-note__label">Wenn du tiefer willst</span>
-    <p class="deeper-note__text">
-      "Memory" ist hier eigentlich nichts Magisches — die <em>claude.md</em> wird bei jedem Start automatisch in den Kontext des Modells gelegt. Deshalb wirken Regeln dort sofort. Deshalb darf sie nicht zu lang werden — alles drin kostet Token bei jeder Antwort.
-      <span class="konsequenz">Du kannst diese Datei selbst bearbeiten, kommentieren, löschen. Der Agent ist nie eine Blackbox — er <em>erinnert sich nicht, er liest nach</em>.</span>
-    </p>
-  </section>
 </section>
   </div>
 </section>
@@ -3726,8 +3828,37 @@ Bau bitte folgendes:
   <div class="anchor-card__inner">
     <p class="anchor-card__num">III</p>
     <p class="anchor-card__kicker">Akt Drei · 25 Min</p>
-    <h2 class="anchor-card__title">Das Steuerrad heißt — <em>Kontext.</em></h2>
-    <p class="anchor-card__def">Mit jedem Satz, jeder Datei, jedem Bild drehst du an einem Steuerrad. Zu wenig — sie rät. Zu viel — sie verliert den Faden. <strong>Genau richtig: klarer Kontext, kein Rauschen.</strong> Das ist dieselbe <em>Wolke</em> aus Akt II — läuft sie über, hilft kein besserer Prompt: Session neu, selber Ordner.</p>
+    <h2 class="anchor-card__title">Bring ihm bei, <em>wer du bist.</em></h2>
+    <p class="anchor-card__def">Dein Agent läuft — aber er hat <em>keine Ahnung, wer du bist.</em> Fangen wir genau da an: gib ihm in sieben Minuten ein Bild von dir und deiner Arbeitsweise.</p>
+
+    <div class="anchor-card__sep">Übung 1 · zu zweit · 7 Min</div>
+    <h3 class="anchor-card__subtitle">Lade deinen <em>Kalender</em> oder dein <em>LinkedIn-Profil</em> hoch.</h3>
+    <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Der schnellste Weg, dass der Agent dich versteht: zeig ihm, wer du bist. Ein <em>Screenshot deines Kalenders</em> (wie sieht deine Woche aus?) — oder dein <em>LinkedIn-Profil</em> (was machst du, wofür stehst du?). Zieh das Bild in dein Browser-Chat-Fenster.</p>
+    <div class="iter-note"><span class="iter-note__label">→ zu zweit</span> Einer tippt, der/die andere liest die Antwort <em>laut vor</em> und sagt nach jedem Punkt: <em>„passt — passt nicht — überraschend"</em>. Nach 4 Min Rollen tauschen.</div>
+    <div class="prompt-steps">
+      <div class="prompt-step"><strong>Cmd + Shift + 4</strong> (Mac) bzw. <strong>Win + Shift + S</strong> — Kalender oder LinkedIn-Profil abfotografieren.</div>
+      <div class="prompt-step">Screenshot direkt ins <strong>Chat-Fenster</strong> ziehen.</div>
+      <div class="prompt-step">Prompt <strong>kopieren</strong> und darunter einfügen.</div>
+      <div class="prompt-step">Enter — <em>einer liest laut</em>, der andere kommentiert.</div>
+    </div>
+    <div class="prompt-card">
+      <p class="prompt-card__label"><span>Prompt — Kalender oder LinkedIn</span><button class="copy-btn" type="button">kopieren</button></p>
+      <pre class="prompt-card__body" style="font-size:.68rem !important;line-height:1.5">Im Bild siehst du meinen Kalender der kommenden Woche (oder mein LinkedIn-Profil).
+
+Lern daraus, wer ich bin und wie ich arbeite. Sag mir:
+1. Wer bin ich beruflich — und was scheint mir wichtig zu sein?
+2. Wo geht meine Zeit und Energie hin?
+3. Eine Sache, die dir auffällt und die ich vielleicht selbst übersehe?
+
+Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
+    </div>
+    <div class="iter-note"><span class="iter-note__label">★ Iterations-Moment</span> Antwort da? <em>Antworte zurück:</em> „Geh nochmal in Punkt 3 — und sei diesmal ehrlicher." Das Bild bleibt im Kontext — du arbeitest im selben Gespräch weiter.</div>
+    <div class="failure-box" style="margin-top:1.2rem"><span class="failure-box__label">Häufiger Fehler</span><p class="failure-box__text">Bilder mit <em>privaten Klarnamen</em> ungeschwärzt hochladen — das landet bei einem externen Anbieter. Faustregel: alles, was du nicht öffentlich sagen würdest, vorher unkenntlich machen — oder im Agent auf deinem Rechner halten.</p></div>
+
+    <div class="anchor-card__sep">und das Prinzip dahinter</div>
+    <h3 class="anchor-card__subtitle" style="font-size:1.6rem">Das Steuerrad heißt — <em>Kontext.</em></h3>
+    <p class="anchor-card__def">Genau das hast du gerade gemacht: dem Agent <em>Kontext</em> über dich gegeben — wie bei einem neuen Mitarbeiter, den du einarbeitest. <em>„Schau in meinen Ordner mein-Profil"</em>, <em>„lies meine Mails"</em>, <em>„hier ist mein CRM — verstehe, wer meine Kunden sind."</em> Je besser er dich und deine Arbeitsweise kennt, desto besser arbeitet er.</p>
+    <p class="anchor-card__def">Aber: mit jedem Satz, jeder Datei drehst du an einem <em>Steuerrad</em>. Zu wenig — sie rät. Zu viel — sie verliert den Faden (die <em>Wolke</em> aus Akt II läuft über). <strong>Genau richtig: klarer Kontext, kein Rauschen.</strong></p>
 
     <div class="anchor-card__visual">
     <div class="slider-demo" data-state="1">
@@ -3787,41 +3918,7 @@ Bau bitte folgendes:
       </div>
     </section>
 
-    <div class="anchor-card__sep">jetzt üben · zwei Übungen</div>
-    <div class="carousel" data-carousel>
-      <div class="carousel__stage">
-        <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Vorige Übung">‹</button>
-        <div class="carousel__viewport">
-          <div class="carousel__track">
-
-            <div class="carousel__slide">
-              <p class="anchor-card__kicker">Übung 1 · zu zweit · 7 Min</p>
-              <h3 class="anchor-card__subtitle">Wirf einen Screenshot <em>in deinen Chat.</em></h3>
-              <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Das schnellste Kontext-Manöver der Welt: ein Bildschirmfoto. Mach ein <em>Screenshot deines Kalenders</em> für die kommende Woche und zieh ihn in dein Browser-Chat-Fenster.</p>
-              <div class="iter-note"><span class="iter-note__label">→ zu zweit</span> Einer tippt, der/die andere liest die Antwort <em>laut vor</em> und sagt nach jedem Punkt: <em>„passt — passt nicht — überraschend"</em>. Nach 4 Min Rollen tauschen.</div>
-              <div class="prompt-steps">
-                <div class="prompt-step"><strong>Cmd + Shift + 4</strong> (Mac) bzw. <strong>Win + Shift + S</strong> — Bereich um den Kalender ziehen.</div>
-                <div class="prompt-step">Screenshot direkt ins <strong>Chat-Fenster</strong> ziehen.</div>
-                <div class="prompt-step">Prompt <strong>kopieren</strong> und darunter einfügen.</div>
-                <div class="prompt-step">Enter — <em>einer liest laut</em>, der andere kommentiert.</div>
-              </div>
-              <div class="prompt-card">
-                <p class="prompt-card__label"><span>Prompt — zum Kalender-Screenshot</span><button class="copy-btn" type="button">kopieren</button></p>
-                <pre class="prompt-card__body">Im Bild siehst du meinen Kalender für die kommende Woche.
-
-Sag mir:
-1. Wo sind die drei Termine, die meine Woche am meisten prägen? (Begründung in 1 Satz)
-2. Wo erkennst du verstecktes Risiko — zu wenig Pufferzeit, zu spätes Briefing, Konflikt zwischen zwei wichtigen Sachen?
-3. Welchen einen Termin würdest du an meiner Stelle absagen oder delegieren — und warum?
-
-Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
-              </div>
-              <div class="iter-note"><span class="iter-note__label">★ Iterations-Moment</span> Antwort da? <em>Antworte zurück:</em> „Geh nochmal in Punkt 3 — angenommen, das ist ein Kunde, den ich nicht verlieren darf. Was dann?" Das Bild bleibt im Kontext — du arbeitest im selben Gespräch weiter.</div>
-              <div class="failure-box" style="margin-top:1.2rem"><span class="failure-box__label">Häufiger Fehler</span><p class="failure-box__text">Bilder mit <em>privaten Klarnamen</em> ungeschwärzt hochladen — das landet bei einem externen Anbieter. Faustregel: alles, was du nicht öffentlich sagen würdest, vorher unkenntlich machen — oder im Agent auf deinem Rechner halten.</p></div>
-            </div>
-
-            <div class="carousel__slide">
-              <p class="anchor-card__kicker">Übung 2 · im Agent · 8 Min</p>
+    <div class="anchor-card__sep">Übung 2 · im Agent · 8 Min</div>
               <h3 class="anchor-card__subtitle">Ein <em>ganzer Ordner</em> ist auch Kontext — aber nur im Agent.</h3>
               <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Im Browser-Chat lädst du Dateien einzeln hoch. Im Agent zeigst du auf einen <em>Ordner</em> — und alles drin gehört zur Welt deines Gesprächs. Genau dafür haben wir in Akt II Cowork installiert.</p>
               <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">In deinen <em>Schreibtisch</em> kannst du alles Mögliche legen — PDFs, Notizen, Tabellen, Mails, Briefings, ganze Projektordner. Der Agent liest, was draufliegt.</p>
@@ -3833,7 +3930,7 @@ Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
               </div>
               <div class="prompt-card">
                 <p class="prompt-card__label"><span>Prompt — im Cowork-Chat</span><button class="copy-btn" type="button">kopieren</button></p>
-                <pre class="prompt-card__body">Schau in den Ordner Schreibtisch. Lies alle Dateien.
+                <pre class="prompt-card__body" style="font-size:.68rem !important;line-height:1.5">Schau in den Ordner Schreibtisch. Lies alle Dateien.
 
 Dann mach drei Sachen:
 1. Schreib eine 5-Zeilen-Zusammenfassung: was ist das gemeinsame Thema?
@@ -3843,21 +3940,8 @@ Dann mach drei Sachen:
 Zitier mit Dateinamen, wenn du dich beziehst.</pre>
               </div>
               <div class="deeper-note"><span class="deeper-note__label">⌖ Wenn du tiefer willst</span><p class="deeper-note__text">Der Agent baut sich beim Lesen eine winzige <em>Indizierung</em> deines Ordners — keine externe Datenbank, alles bleibt bei dir. <span class="konsequenz">Du kannst sensible Mappen so nutzen, wie du sie im Browser-Chat nie hochladen würdest.</span></p></div>
-              <div class="failure-box" style="margin-top:1.2rem"><span class="failure-box__label">Häufiger Fehler</span><p class="failure-box__text">Den <em>kompletten Dokumente-Ordner</em> draufschalten — 800 Dateien, 6 Jahre Historie. Der Kontext wird so groß, dass das Modell den Faden verliert (die Wolke aus Akt II läuft über). Faustregel: <em>kleinster Ordner, der die Frage beantwortet</em>. Eher 5 Dateien als 500.</p></div>
-            </div>
+              <div class="failure-box" style="margin-top:1.2rem"><span class="failure-box__label">Häufiger Fehler</span><p class="failure-box__text"><em>Eine einzige Riesen-Datei</em> mit allem drin. Besser: <em>viele kleine, fokussierte Dateien</em> statt einer großen — dann zieht der Agent nur, was er für die Frage gerade braucht, und sein <em>Context-Window</em> bleibt schlank und schnell. Faustregel: lieber zehn kurze Notizen als ein 80-Seiten-Dokument.</p></div>
 
-          </div>
-        </div>
-        <button class="carousel__nav carousel__nav--next" type="button" aria-label="Nächste Übung">›</button>
-      </div>
-      <div class="carousel__dots">
-        <button class="carousel__dot" type="button" aria-label="Übung 1: Bild"></button>
-        <button class="carousel__dot" type="button" aria-label="Übung 2: Ordner"></button>
-        <span class="carousel__count">1 / 2</span>
-      </div>
-    </div>
-
-    <div class="deeper-note" style="margin-top:1.8rem"><span class="deeper-note__label">⌖ Übrigens — das hat einen Namen</span><p class="deeper-note__text">Alles in diesem Akt — Beispiele, ein Screenshot, ein ganzer Ordner — heißt in der Fachwelt mit einem Wort: <em>in-context learning</em>. Klingt groß, ist simpel: Du bringst dem Modell nichts bei. Du legst ihm den richtigen Stoff hin, und es bleibt darin, solange das Gespräch läuft. <span class="konsequenz">Genau deshalb das Steuerrad: zu wenig — es rät; zu viel — es verliert den Faden; genau richtig — es trifft. Und genau das ist die <em>Wolke</em> aus Akt II: Sie saugt sich während der Session mit Kontext voll — was du nicht hinzeigst, liegt einfach daneben und bleibt außen vor.</span></p></div>
   </div>
 </section>
 
@@ -3867,7 +3951,7 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   <div class="recap-mini__list">
     <span class="recap-mini__item">Drei Stellungen am Steuerrad benennen — zu wenig, zu viel, genau richtig.</span>
     <span class="recap-mini__item">Mindestens zwei Kontext-Formen (Bild, Ordner) live ausprobiert.</span>
-    <span class="recap-mini__item">Den Begriff dahinter benennen — <em>in-context learning</em>.</span>
+    <span class="recap-mini__item">Dateien klein &amp; fokussiert halten — damit das Context-Window schlank bleibt.</span>
   </div>
 </section>
 
@@ -3889,12 +3973,15 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   <div class="anchor-card__inner">
     <p class="anchor-card__num">IV</p>
     <p class="anchor-card__kicker">Akt Vier · 20 Min</p>
-    <h2 class="anchor-card__title">Vier Fragen, <em>vier Kritiker.</em></h2>
-    <p class="anchor-card__def">Du brauchst kein Prompting-System. Du brauchst <em>vier Fragen</em> an den Output — bevor er rausgeht.</p>
+    <h2 class="anchor-card__title">Vier Fragen — oder sogar <em>vier Kritiker.</em></h2>
+    <p class="anchor-card__def">Wie wir schon gesehen haben, ist KI nicht immer ganz ehrlich — sie <em>konfabuliert</em>. Um möglichst viele Fehler zu fangen, kannst du an jeden Output <em>Follow-up-Fragen</em> dranhängen, bevor er rausgeht.</p>
+
+    <div class="anchor-card__sep">Übung 1 · jetzt du</div>
+    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Kopier die vier Fragen, häng sie an einen echten Output dran — und schau, was passiert.</p>
 
     <div class="prompt-card">
       <p class="prompt-card__label"><span>Prompt — die vier Fragen an die KI selbst</span><button class="copy-btn" type="button">kopieren</button></p>
-      <pre class="prompt-card__body">Prüf deine letzte Empfehlung selbstkritisch — je 1–2 Sätze, sei ehrlich:
+      <pre class="prompt-card__body" style="font-size:.72rem !important;line-height:1.55">Prüf deine letzte Empfehlung selbstkritisch — je 1–2 Sätze, sei ehrlich:
 
 1. Sicherheit (Confidence): Wie wahrscheinlich ist es, dass diese Empfehlung richtig ist? Was würde dich sicherer oder unsicherer machen?
 2. Kontext (Context): Unter welchen Umständen wäre diese Empfehlung falsch?
@@ -3906,6 +3993,8 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
       <div><span>Wo du das anwendest</span> Vor jeder Mandanten-Mail, jedem Statement, jedem Gutachten. Vier Fragen kosten vier Sekunden — ein falsch gesendeter Absatz einen Vormittag.</div>
       <div><span>Wichtiges Wort · konfabulieren</span> Die KI <em>lügt</em> nicht — sie <em>konfabuliert</em>: plausibel klingender Text, ohne zu wissen, was wahr ist. Am Montag also nicht „sie hat gelogen", sondern „sie hat konfabuliert".</div>
     </div>
+
+    <p class="anchor-card__def" style="font-size:1.05rem;margin:1.6rem auto 0">Und du kannst sogar ein ganzes <em>Kritiker-Gremium</em> bauen — das deine Arbeit aus <em>verschiedenen Perspektiven</em> beleuchtet, damit du siehst, wo du <em>blinde Flecken</em> hast.</p>
 
     <div class="anchor-card__sep">live · vor allen</div>
     <h3 class="anchor-card__subtitle">Ich zeig euch den Kritiker, mit dem ich <em>diese Website</em> gebaut habe.</h3>
@@ -3987,6 +4076,26 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     <p class="anchor-card__num">V</p>
     <p class="anchor-card__kicker">Akt Fünf · 25 Min</p>
     <h2 class="anchor-card__title">Skill — der <em>Trick, der bleibt.</em></h2>
+
+    <div class="anchor-card__sep">jetzt du · 10 Min</div>
+    <h3 class="anchor-card__subtitle">Bau dir aus dem Gremium einen <em>Skill.</em></h3>
+    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Das Kritiker-Gremium von eben machst du jetzt <em>dauerhaft</em> — als Skill namens <em>gremium</em>. Du lässt den Agent den Ablauf erst aufschreiben und prüfst ihn.</p>
+    <div class="prompt-card">
+      <p class="prompt-card__label"><span>Prompt — Skill bauen lassen</span><button class="copy-btn" type="button">kopieren</button></p>
+      <pre class="prompt-card__body">Bitte kreiere mir aus dem Kritiker-Gremium einen Skill, der „gremium" heißt — und gib mir dann Schritt für Schritt nochmal, was genau der Skill macht.</pre>
+    </div>
+    <div class="iter-note"><span class="iter-note__label">★ Ein Skill ist nie fertig</span> Du kannst ihn jederzeit nachschärfen — auf zwei Wegen. <strong>a)</strong> Du gibst ein <em>Beispiel</em>, wie es aussehen soll: „So in etwa will ich das künftig — merk dir das im Skill." <strong>b)</strong> Du korrigierst im Vorbeigehen: „Das war nicht gut, das soll schärfer / kürzer / konkreter — merk dir das im Skill." Beim nächsten Aufruf ist er besser. So ziehst du ihn über Wochen <em>an dich.</em></div>
+
+    <p class="anchor-card__def" style="font-size:1.05rem;margin:1.6rem auto .8rem">Und so rufst du ihn künftig auf — einfach beim Namen nennen:</p>
+    <div class="prompt-card">
+      <p class="prompt-card__label"><span>Prompt — den Skill anwenden</span><button class="copy-btn" type="button">kopieren</button></p>
+      <pre class="prompt-card__body">Bitte benutz das „gremium"-Skill für meinen Report an Kunde X.
+
+[Report hier einfügen]</pre>
+    </div>
+
+    <div class="anchor-card__sep">und was ist das eigentlich?</div>
+
     <p class="anchor-card__def">Ein <em>Workflow</em> ist ein Rezept: Schritt 1, 2, 3 — jedes Mal. Ein <em>Skill</em> ist eine Küche: du sagst „benutz den Kritiker-Trick", und sie weiß wie. <strong>Einmal gebaut, beliebig oft aufgerufen.</strong> Und einen Workflow, den du immer wieder abspulst, packst du irgendwann <em>einmal</em> als Skill ein.</p>
 
     <div class="anchor-card__visual">
@@ -4048,19 +4157,6 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
         </div>
       </div>
     </section>
-
-    <div class="anchor-card__sep">jetzt bauen · 10 Min</div>
-    <h3 class="anchor-card__subtitle">Den Kritiker-Trick <em>fest einbauen.</em></h3>
-    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Den Kritiker von gerade machst du <em>dauerhaft</em> — als Skill namens <em>salonai_critics</em>. Du baust ihn nicht selbst zusammen: Du lässt den Agent den Ablauf erst aufzeichnen, prüfst ihn, und gibst <em>dann</em> grünes Licht.</p>
-    <div class="prompt-card">
-      <p class="prompt-card__label"><span>Prompt — Skill bauen lassen (mit Kontroll-Punkt)</span><button class="copy-btn" type="button">kopieren</button></p>
-      <pre class="prompt-card__body">Bevor du meine Kritiker in einen Skill namens salonai_critics verpackst:
-
-Zeichne mir den Workflow erst Schritt für Schritt auf — was der Skill genau tun soll, wann er anspringt, was er ausgibt.
-
-Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill.</pre>
-    </div>
-    <div class="iter-note"><span class="iter-note__label">★ Ein Skill ist nie fertig</span> Du kannst ihn jederzeit nachschärfen — auf zwei Wegen. <strong>a)</strong> Du gibst ein <em>Beispiel</em>, wie es aussehen soll: „So in etwa will ich das künftig — merk dir das im Skill." <strong>b)</strong> Du korrigierst im Vorbeigehen: „Das war nicht gut, das soll schärfer / kürzer / konkreter — merk dir das im Skill." Beim nächsten Aufruf ist er besser. So ziehst du ihn über Wochen <em>an dich.</em></div>
 
     <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:62ch;margin:1.8rem auto 0;line-height:1.5">Ziel: Du installierst einen Skill in deinem Workspace und schärfst ihn nach. Und du weißt schon, welchen <em>zweiten</em> Skill du in den nächsten zwei Wochen baust.</p>
   </div>
@@ -4192,13 +4288,6 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
       Dein Agent antwortet nicht mehr nur mit Text — er <em>greift hinaus</em> zum neuen Server, holt sich Daten zurück, baut sie in die Antwort ein. Das ist der Moment, in dem MCP von Konzept zu Werkzeug wird.
     </div>
 
-    <div class="failure-box" style="margin-top:1.5rem">
-      <span class="failure-box__label">Plan B</span>
-      <p class="failure-box__text">
-        Wenn dein Cowork (noch) keinen MCP-Server vorinstalliert hat, ist's heute eine Demo vom Vortrags-Laptop. Notier dir: <em>„MCP auf meinem Cowork checken — Dienstag 30 Min."</em> Und mach mit dem nächsten Teil weiter.
-      </p>
-    </div>
-
     <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:62ch;margin:1.8rem auto 0;line-height:1.5">Ziel: Du kannst in zwei Sätzen sagen — <em>„MCP ist die Steckdose. Gmail und Calendar würde ich anschließen, Drive vorerst nicht — und einen Anschluss hab ich heute Abend selbst freigeschaltet."</em></p>
 
     <div class="anchor-card__sep">zum Mitnehmen</div>
@@ -4206,6 +4295,8 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
       <p class="prompt-card__label"><span>Prompt — MCP in Aktion (illustrativ)</span><button class="copy-btn" type="button">kopieren</button></p>
       <pre class="prompt-card__body">Schau über meinen Gmail-Anschluss in den Posteingang. Welche 3 Mails der Nacht prägen meinen Tag am meisten? Zwei Sätze pro Mail.</pre>
     </div>
+
+    <div class="iter-note" style="margin-top:1.8rem"><span class="iter-note__label">★ Und jetzt kommt's zusammen</span> Das Schöne: Ein <em>Skill</em> kann solche Anschlüsse (Steckdosen) gleich <em>mit eingebaut</em> haben — und alles andere, was du brauchst: Kontext, die vier Fragen, dein Kritiker-Gremium. <em>Beispiel gleich in der nächsten Sektion.</em></div>
   </div>
 </section>
 
@@ -4214,41 +4305,37 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
   <p class="eyebrow">VI.2 · Wie dein Montag-Morgen aussieht · 4 Min</p>
   <h2 style="text-align:center">Morgens um 7 läuft er <em>schon</em> —<br>ohne dass du etwas tust.</h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:1.5rem auto;text-align:center">
-    Ein Skill plus ein paar Anschlüsse plus einen <em>festen Zeitpunkt</em> — und du hast einen Vorgang, der morgens um 7 von allein abläuft. Beispiel: <em>„Lies alle E-Mails der Nacht, fass mir die drei wichtigsten in zwei Sätzen zusammen, leg's mir auf den Schreibtisch."</em> Du wachst auf, das Briefing liegt da.
+    Stell dir deinen Montagmorgen vor — einmal <em>ohne</em>, einmal <em>mit</em> KI. Rechts läuft alles in <strong>einem einzigen „scheduled" Skill</strong>, der zur festen Zeit von allein startet.
   </p>
 
-  <!-- Capstone: alle vier Konzepte des Abends greifen ineinander -->
-  <div class="montag-pipe">
-    <span class="montag-pipe__pulse" aria-hidden="true"></span>
-
-    <div class="montag-pipe__node">
-      <span class="montag-pipe__tag">Auslöser · fester Zeitpunkt</span>
-      <p><strong>Montag, 7:00 Uhr.</strong> Der Wecker für deinen Agent. Er startet den ganzen Vorgang — ohne dass du wach sein musst (aber dein Laptop muss an sein ;)).</p>
+  <style>
+  .vi2-tag{display:inline-block;font-family:var(--sans);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);font-weight:700;margin-right:.5rem}
+  .vi2-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem;max-width:900px;margin:2.2rem auto 0}
+  .vi2-col{border-radius:22px;padding:1.5rem 1.6rem}
+  .vi2-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8rem;font-family:var(--serif);font-size:1rem;line-height:1.45}
+  </style>
+  <div class="vi2-grid">
+    <div class="vi2-col" style="background:rgba(255,255,255,.5);border:1px solid var(--rule)">
+      <p style="font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin:0 0 1rem">Vor KI · dein Montag</p>
+      <ul style="color:var(--ink-soft)">
+        <li><strong style="color:var(--ink);font-weight:500">7:00</strong> — Wecker. Du, nicht der Agent.</li>
+        <li>60 ungelesene Mails. Du liest dich <em>40 Minuten</em> durch.</li>
+        <li>Branchen-News? Separat googeln.</li>
+        <li>Kalender checken, Prioritäten im Kopf sortieren.</li>
+        <li><strong style="color:var(--ink);font-weight:500">9:30</strong> — endlich bei der eigentlichen Arbeit.</li>
+      </ul>
     </div>
-
-    <div class="montag-pipe__node">
-      <span class="montag-pipe__tag">Akt VI · MCP</span>
-      <p>Er greift über seine Anschlüsse hinaus — <em>Gmail</em>, <em>Calendar</em> — und liest die E-Mails der Nacht.</p>
-    </div>
-
-    <div class="montag-pipe__node">
-      <span class="montag-pipe__tag">Akt III · Kontext</span>
-      <p>Dazu kennt er deinen <em>Ordner</em>: Projekte, Mandanten, was bei dir gerade zählt. Er liest die Mails nicht im Leeren, sondern in deiner Welt.</p>
-    </div>
-
-    <div class="montag-pipe__node">
-      <span class="montag-pipe__tag">Akt IV · Kritiker</span>
-      <p>Er sortiert kritisch: Welche <em>drei</em> Mails prägen deinen Tag wirklich?</p>
-    </div>
-
-    <div class="montag-pipe__node">
-      <span class="montag-pipe__tag">Akt V · Skill</span>
-      <p>Dein Skill <em>„morning briefing"</em> macht aus deinen Mails eine kurze Übersicht, geht online die wichtigsten Nachrichten durch und filtert, was für dich zählt — schreibt alles in eine Datei und legt sie dir auf den Schreibtisch zum Öffnen.</p>
-    </div>
-
-    <div class="montag-pipe__node montag-pipe__node--out">
-      <span class="montag-pipe__tag">Ergebnis</span>
-      <p><strong>Das Briefing liegt auf dem Schreibtisch.</strong> Die drei wichtigsten Mails, je zwei Sätze. Du wachst auf — und bist schon im Bilde.</p>
+    <div class="vi2-col" style="background:rgba(255,255,255,.82);border:1px solid var(--v-glass-border);border-left:3px solid var(--coral);box-shadow:var(--v-shadow)">
+      <p style="font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:0 0 1rem">Mit KI · ein „scheduled" Skill</p>
+      <ul style="color:var(--ink)">
+        <li><span class="vi2-tag">Fester Zeitpunkt</span>Montag früh — der Skill startet von allein, sobald du den Laptop aufmachst. (Agenten sind nur wach, wenn dein Laptop wach ist.)</li>
+        <li><span class="vi2-tag">MCP</span>zieht über Gmail &amp; Calendar die Mails der Nacht.</li>
+        <li><span class="vi2-tag">Ablage / Kontext</span>kennt deine Projekte &amp; Mandanten — liest die Mails in deiner Welt.</li>
+        <li><span class="vi2-tag">Kritiker</span>filtert die drei, die deinen Tag wirklich prägen.</li>
+        <li><span class="vi2-tag">Sprachmodell</span>fasst jede in zwei Sätzen zusammen.</li>
+        <li><span class="vi2-tag" style="color:var(--leaf)">Ergebnis</span>Das Briefing liegt auf dem Schreibtisch, wenn du aufwachst.</li>
+      </ul>
+      <p style="font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-soft);margin:1.1rem 0 0;line-height:1.4;border-top:1px solid var(--rule);padding-top:.9rem">Und das alles steckt in <em>einem</em> Skill namens <em>»morning briefing«</em> — einmal gebaut, läuft er jeden Morgen von selbst.</p>
     </div>
   </div>
 
@@ -4256,9 +4343,10 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
     Bauen wir heute Abend <em>nicht</em>. Wichtig ist nur: Du weißt jetzt, dass es existiert — und aus welchen Bausteinen. <em>Kontext, Kritiker, Skill, MCP</em> — heute Abend einzeln gelernt, hier zusammengesetzt.
   </p>
 
-  <div class="iter-note">
-    <span class="iter-note__label">★ Mikro-Aktion jetzt</span>
-    Nimm den Block neben deinem Glas. Schreib <em>zwei Anschlüsse</em> auf, die du diese Woche recherchierst — entweder welche, die du heute schon gesehen hast (Gmail, Calendar, Drive, GitHub, Slack, Notion) oder welche, die du dir wünschst. Pro Anschluss max. zehn Minuten Recherche.
+  <p style="text-align:center;font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:1.8rem 0 .8rem">Noch ein MCP-Moment</p>
+  <div class="prompt-card">
+    <p class="prompt-card__label"><span>Prompt — zum Mitnehmen (illustrativ)</span><button class="copy-btn" type="button">kopieren</button></p>
+    <pre class="prompt-card__body">Nimm aus Granola (meiner Meeting-Notes-App) alle Meetings von gestern. Gib mir eine kurze Übersicht, zieh alle To-dos heraus und leg sie in meine Aufgaben-App — und visualisier sie in meinem Projekt-Board.</pre>
   </div>
 </section>
 
@@ -4399,20 +4487,75 @@ Warte dann auf mein OK. Sobald ich den Ablauf bestätigt habe, erstell den Skill
 
 <!-- ============ FINALE — die Frage des Abends (Europa-KI) ============ -->
 <section class="text-section text-section--wide" id="europa-frage">
-  <p class="eyebrow" style="text-align:center">Die Frage, mit der alles begann</p>
+  <p class="eyebrow" style="text-align:center">Die Frage des Abends</p>
   <h2 style="text-align:center">Welche KI kann <em>nur von Europäer:innen</em><br>gebaut werden?</h2>
   <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:1.5rem auto;text-align:center">
-    Mit dieser Frage hat der Abend begonnen. Jetzt hast du das Werkzeug, um sie nicht nur zu <em>fühlen</em>, sondern zu <em>bauen</em>. Lass sie uns gemeinsam beantworten — mit allem, was heute Abend dazugekommen ist.
+    Jetzt hast du das Werkzeug, um sie nicht nur zu <em>fühlen</em>, sondern zu <em>bauen</em>. Lass sie uns gemeinsam beantworten — mit allem, was heute Abend dazugekommen ist.
   </p>
 
   <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
     <span class="iter-note__label">★ Erst zusammen: wie gehen wir's an?</span>
-    Sammelt kurz am Tisch: Welche Werkzeuge von heute Abend passen? <em>Few-Shot mit Benchmark-Systemen</em> (drei exzellente Vorher/Nachher-Systeme — die KI zieht die Richtung heraus), <em>die vier Fragen</em> an den Output, ein <em>Kritiker-Gremium</em> werte-fremder Köpfe. Erst die Idee — dann der Prompt.
+    Sammelt kurz am Tisch: Welche Werkzeuge von heute Abend passen hier? Zum Beispiel — der KI <em>drei richtig gute Beispiele</em> zeigen, damit sie die Richtung versteht; die <em>vier Prüf-Fragen</em> an die Antwort hängen; ein <em>Gremium aus sehr unterschiedlichen Köpfen</em> drüberschauen lassen. Erst die Idee — dann der Prompt.
   </div>
 
-  <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:62ch;margin:1.8rem auto 1.1rem;line-height:1.5">
-    Erkennst du es wieder? Der Prompt unten ist <em>Few-Shot aus Akt I</em> — drei Benchmark-Systeme zeigen die Richtung „träges System → exzellenter Hebel", und die KI überträgt sie auf die Europa-Frage.
-  </p>
+  <!-- Drag-&-Drop-Planer: System-Bausteine ziehen + annotieren -->
+  <style>
+  .plan{max-width:780px;margin:1.8rem auto 0;background:var(--v-glass-strong);border:1px solid var(--v-glass-border);border-radius:22px;padding:1.4rem 1.5rem;box-shadow:var(--v-shadow)}
+  .plan__hd{font-family:var(--sans);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:0 0 .9rem;line-height:1.5}
+  .plan__palette{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+  .plan__chip{font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--ink);background:rgba(255,255,255,.72);border:1px solid var(--rule);border-radius:999px;padding:.5rem 1rem;cursor:grab;transition:all .15s}
+  .plan__chip:hover{border-color:var(--coral);color:var(--coral)}
+  .plan__chip:active{cursor:grabbing}
+  .plan__chip[disabled]{opacity:.32;cursor:default;pointer-events:none}
+  .plan__drop{min-height:88px;border:1.5px dashed var(--rule);border-radius:16px;padding:.8rem;transition:all .15s;display:flex;flex-direction:column;gap:.55rem}
+  .plan__drop.drag-over{border-color:var(--coral);background:rgba(226,106,74,.06)}
+  .plan__hint{font-family:var(--hand);font-size:1.05rem;color:var(--ink-soft);text-align:center;margin:1.2rem 0;opacity:.7}
+  .plan__row{display:grid;grid-template-columns:auto 1fr auto;gap:.6rem;align-items:center;background:rgba(255,255,255,.82);border:1px solid var(--rule);border-left:3px solid var(--coral);border-radius:12px;padding:.55rem .7rem}
+  .plan__row-name{font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.04em;color:var(--coral);text-transform:uppercase;white-space:nowrap}
+  .plan__row input{border:none;background:transparent;font-family:var(--sans);font-size:.9rem;color:var(--ink);width:100%;outline:none}
+  .plan__row-rm{border:none;background:transparent;color:var(--ink-soft);font-size:1.15rem;cursor:pointer;line-height:1;padding:0 .2rem}
+  .plan__row-rm:hover{color:var(--coral)}
+  </style>
+  <div class="plan">
+    <p class="plan__hd">★ Erst die Idee: zieh die Bausteine in deinen Plan (oder tipp drauf) — und schreib dazu, was jeweils rein soll</p>
+    <div class="plan__palette" id="plan-palette">
+      <button type="button" class="plan__chip" draggable="true" data-comp="Agent">Agent</button>
+      <button type="button" class="plan__chip" draggable="true" data-comp="Memory">Memory</button>
+      <button type="button" class="plan__chip" draggable="true" data-comp="Ablage">Ablage</button>
+      <button type="button" class="plan__chip" draggable="true" data-comp="MCP">MCP</button>
+      <button type="button" class="plan__chip" draggable="true" data-comp="Skill">Skill</button>
+    </div>
+    <div class="plan__drop" id="plan-drop">
+      <p class="plan__hint" id="plan-hint">↓ Bausteine hierher ziehen ↓</p>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var palette=document.getElementById('plan-palette'),
+        drop=document.getElementById('plan-drop'),
+        hint=document.getElementById('plan-hint');
+    if(!palette||!drop) return;
+    var ph={Agent:'z.B. plant die Recherche & fasst am Ende zusammen',Sprachmodell:'z.B. entwirft die Vorher/Nachher-Analyse',Memory:'z.B. merkt sich meine Kernthese & Quellen',Ablage:'z.B. Alle EU-Parlaments-Dokumente der letzten 12 Monate',MCP:'z.B. zieht Live-Daten aus EUR-Lex / News',Skill:'z.B. „Europa-Hebel-Analyse" als wiederholbarer Skill'};
+    function add(comp){
+      var chip=palette.querySelector('[data-comp="'+comp+'"]');
+      if(chip&&chip.disabled){ var ex=drop.querySelector('[data-row="'+comp+'"] input'); if(ex) ex.focus(); return; }
+      if(hint) hint.style.display='none';
+      var row=document.createElement('div'); row.className='plan__row'; row.setAttribute('data-row',comp);
+      row.innerHTML='<span class="plan__row-name"></span><input type="text"><button type="button" class="plan__row-rm" aria-label="entfernen">×</button>';
+      row.querySelector('.plan__row-name').textContent=comp;
+      var inp=row.querySelector('input'); inp.placeholder=ph[comp]||'';
+      row.querySelector('.plan__row-rm').addEventListener('click',function(){ row.remove(); if(chip) chip.disabled=false; if(!drop.querySelector('.plan__row')&&hint) hint.style.display=''; });
+      drop.appendChild(row); if(chip) chip.disabled=true; inp.focus();
+    }
+    palette.querySelectorAll('.plan__chip').forEach(function(chip){
+      chip.addEventListener('click',function(){ add(chip.dataset.comp); });
+      chip.addEventListener('dragstart',function(e){ e.dataTransfer.setData('text/plain',chip.dataset.comp); e.dataTransfer.effectAllowed='copy'; });
+    });
+    drop.addEventListener('dragover',function(e){ e.preventDefault(); drop.classList.add('drag-over'); });
+    drop.addEventListener('dragleave',function(){ drop.classList.remove('drag-over'); });
+    drop.addEventListener('drop',function(e){ e.preventDefault(); drop.classList.remove('drag-over'); var c=e.dataTransfer.getData('text/plain'); if(c) add(c); });
+  })();
+  </script>
 
   <div class="prompt-card prompt-card--locked" id="europa-prompt" data-unlocked="false">
     <p class="prompt-card__label"><span>Prompt — die Frage des Abends, mit KI beantwortet</span><button class="copy-btn" type="button">kopieren</button></p>
@@ -4458,9 +4601,6 @@ Analysiere nun auf exakt demselben Niveau die Fragestellung meines strategischen
 Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren blinden Flecken) und das „Nachher" (das disruptive Potenzial einer spezifisch europäischen KI-Architektur). Zeige auf, wie europäische Werte, der EU AI Act, Datenschutz (DSGVO) und kontinentale Philosophie nicht als Wachstumsbremse, sondern als der ultimative, globale System-Hebel für eine neue Klasse von KI-Systemen fungieren.</pre>
   </div>
 
-  <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:58ch;margin:1.8rem auto 0;line-height:1.5">
-    Lies die Antwort kritisch. Häng die <em>vier Fragen</em> dran. Schick ein <em>Kritiker-Gremium</em> drauf. Das ist die Frage des Abends — und du kannst sie jetzt selbst weiterdenken.
-  </p>
 </section>
 
 <!-- ============ OUTRO ============ -->
@@ -4492,6 +4632,35 @@ Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren bli
       });
     });
   });
+
+  // ===== I.2 Prompt: Kontext live einfüllen =====
+  (function(){
+    var card = document.getElementById('i2-prompt');
+    if(!card) return;
+    var pre = card.querySelector('.prompt-card__body');
+    if(!pre) return;
+    var tpl = pre.textContent;
+    var fields = [
+      ['i2-fokus',   '• Mein Kernfokus: '],
+      ['i2-entsch',  '• Die Entscheidungen, die für mich den Unterschied machen: '],
+      ['i2-engpass', '• Mein aktueller Informations-Engpass / Energiefresser: ']
+    ];
+    function esc(s){ return (s||'').replace(/\s+/g,' ').trim(); }
+    function rx(label){ return new RegExp('(' + label.replace(/[.*+?^${}()|[\]\\\/]/g,'\\$&') + ').*'); }
+    function render(){
+      var t = tpl;
+      fields.forEach(function(pair){
+        var el = document.getElementById(pair[0]);
+        var v = el ? esc(el.value) : '';
+        if(v) t = t.replace(rx(pair[1]), function(m,p1){ return p1 + v; });
+      });
+      pre.textContent = t;
+    }
+    fields.forEach(function(pair){
+      var el = document.getElementById(pair[0]);
+      if(el) el.addEventListener('input', render);
+    });
+  })();
 
   // ===== Mini-TOC active state =====
   const sections = ['hero','akt1','akt2','akt3','akt4','akt5','akt6','recap']
