@@ -12,7 +12,7 @@
   gtag('config', 'G-L2RZV4QPFD');
 </script>
 <title>Mathe mit Worten — Cheat Sheet</title>
-<meta name="description" content="Die neun Themen, mit denen du mit Worten rechnest. Salon AI Immersive Workshop #1.">
+<meta name="description" content="Die elf Themen, mit denen du mit Worten rechnest. Salon AI Immersive Workshop #1.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -304,9 +304,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
 .theme--accent .theme__viz{border-color:var(--rule)}
 
 /* ==== COPY BUTTON ==== */
-.tech__prompt-wrap{position:relative}
+.tech__prompt-wrap{position:relative;padding-top:1.7rem}
 .copy-btn{
-  position:absolute;top:-.15rem;right:0;
+  position:absolute;top:0;right:0;
   font-family:var(--sans);font-size:.62rem;font-weight:600;
   letter-spacing:.14em;text-transform:uppercase;
   background:transparent;border:1px solid var(--rule);
@@ -443,7 +443,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
     <a class="toc__item" href="#t6"><span class="toc__num">6</span>Distanz-Messung</a>
     <a class="toc__item" href="#t7"><span class="toc__num">7</span>Cluster-Reduktion</a>
     <a class="toc__item" href="#t8"><span class="toc__num">8</span>Schrittweite</a>
-    <a class="toc__item" href="#t9"><span class="toc__num">9</span>Routenwahl-Strenge</a>
+    <a class="toc__item" href="#t9"><span class="toc__num">9</span>Der Überraschungs-Regler</a>
     <a class="toc__item" href="#t10"><span class="toc__num">10</span>Pfad-Multiplexing</a>
     <a class="toc__item" href="#t11"><span class="toc__num">11</span>No-Go-Regionen</a>
   </div>
@@ -756,7 +756,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
     <p class="theme__eyebrow">Thema Fünf</p>
     <h2 class="theme__title">Richtungs-Extraktion</h2>
     <p class="theme__usewhen">Wenn du Stil oder Standard von etwas auf was Neues legen willst.</p>
-    <p class="theme__geo">Die KI mittelt eine <em>Bewegungs-Richtung</em> aus deinen Beispielen &mdash; einzelnen Vorher/Nachher-Paaren oder einem <em>ganzen Set</em> aus guten und schlechten Mustern &mdash; und wendet sie auf einen neuen Input an. Das mächtigste Werkzeug im Alltag.</p>
+    <p class="theme__geo">Die KI mittelt eine <em>Bewegungs-Richtung</em> aus mehreren Vorher/Nachher-Paaren und wendet sie auf einen neuen Input an. Das mächtigste Werkzeug im Alltag.</p>
   </div>
 
   <div class="theme__viz">
@@ -805,38 +805,6 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
       <text class="label-hand" x="350" y="60" text-anchor="middle">drei parallele Pfeile = dieselbe Richtung</text>
     </svg>
     <p class="theme__viz-cap">3 Beispiele zeigen die Richtung. <em>Die KI kopiert sie für deinen Input.</em></p>
-
-    <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="margin-top:1.4rem">
-      <!-- BEISPIEL-SET box -->
-      <rect x="40" y="40" width="240" height="150" rx="10" fill="none" stroke="#6b4e8e" stroke-width="2" stroke-dasharray="6,5"/>
-      <text class="label-sans" x="160" y="30" text-anchor="middle" fill="#4a3566">dein Beispiel-Set</text>
-
-      <!-- gut: leaf dots -->
-      <circle cx="80" cy="80" r="7" fill="#7a8c5c"/>
-      <circle cx="120" cy="105" r="7" fill="#7a8c5c"/>
-      <circle cx="95" cy="135" r="7" fill="#7a8c5c"/>
-      <circle cx="150" cy="75" r="7" fill="#7a8c5c"/>
-      <circle cx="170" cy="120" r="7" fill="#7a8c5c"/>
-      <text class="label-serif" x="80" y="168" fill="#4d5a3a">gut &times;5</text>
-
-      <!-- schlecht: coral dots -->
-      <circle cx="225" cy="90" r="7" fill="#dc7757"/>
-      <circle cx="245" cy="125" r="7" fill="#dc7757"/>
-      <circle cx="215" cy="150" r="7" fill="#dc7757"/>
-      <text class="label-serif" x="208" y="80" fill="#c4502f">schlecht &times;3</text>
-
-      <!-- arrow -->
-      <line class="pencil-iris" stroke-width="2.5" x1="300" y1="115" x2="430" y2="115"/>
-      <path class="pencil-iris" stroke-width="2.5" d="M424,108 L432,115 L424,122"/>
-      <text class="label-hand" x="365" y="100" text-anchor="middle">Standard lernen</text>
-
-      <!-- dein Standard target -->
-      <circle cx="540" cy="115" r="55" fill="none" stroke="#6b4e8e" stroke-width="1.5"/>
-      <circle cx="540" cy="115" r="34" fill="none" stroke="#6b4e8e" stroke-width="1.5"/>
-      <circle cx="540" cy="115" r="13" fill="#6b4e8e"/>
-      <text class="label-sans" x="540" y="195" text-anchor="middle" fill="#4a3566">dein Standard</text>
-    </svg>
-    <p class="theme__viz-cap">Nicht nur Paare &mdash; auch ein <em>ganzes Set</em> aus guten und schlechten Beispielen schärft die Richtung.</p>
   </div>
 
   <div class="techs">
@@ -1456,7 +1424,7 @@ Kundin: "Drei Klicks bis zum Kernnutzen. Ich klick zwei und springe ab."
 
 <!-- ================== CLOSING ================== -->
 <section class="closing">
-  <p class="closing__hand">Neun Themen. Eine Mathematik.<br>Hundert Möglichkeiten.</p>
+  <p class="closing__hand">Elf Themen. Eine Mathematik.<br>Hundert Möglichkeiten.</p>
   <p class="closing__sub">Salon AI · Immersive Workshop #1 · Mathe mit Worten</p>
 </section>
 
