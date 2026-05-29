@@ -227,3 +227,19 @@ describe(`${import.meta.url.split('/').pop()} — Google Analytics`, () => {
     );
   });
 });
+
+describe(`${import.meta.url.split('/').pop()} — Co-host CTAs`, () => {
+  // Isolate the "Private Salons" card so we test the right button.
+  const start = html.indexOf('data-i18n="priv_title"');
+  const card = start === -1 ? "" : html.slice(start, start + 900);
+
+  it("Private Salons CTA is an email link, not /host.html", () => {
+    assert.ok(start !== -1, "Private Salons card not found");
+    const cta = card.match(/<a\b[^>]*class="cohost-cta"[^>]*>/);
+    assert.ok(cta, "Private Salons cohost CTA link not found");
+    assert.ok(/href="mailto:luckysprouts@duck\.com/.test(cta[0]),
+      "Private Salons CTA should be a mailto: link (like the corporate card)");
+    assert.ok(!/href="\/?host\.html/.test(cta[0]),
+      "Private Salons CTA should no longer point to host.html");
+  });
+});
