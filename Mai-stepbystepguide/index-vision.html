@@ -1586,6 +1586,10 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   background: #7a8c5c !important;
   box-shadow: 0 4px 14px rgba(122, 140, 92, .4) !important;
 }
+.copy-btn.copy-failed {
+  background: #b8643f !important;
+  box-shadow: 0 4px 14px rgba(184, 100, 63, .4) !important;
+}
 
 /* ============ PROMPT-STEPS ============ */
 .prompt-steps {
@@ -1821,6 +1825,9 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+}
+.slider-demo__input:focus-visible {
+  box-shadow: 0 0 0 4px rgba(232, 132, 122, .45) !important;
 }
 .slider-demo__input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -2372,10 +2379,14 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 .carousel__nav--prev{ left:0; }
 .carousel__nav--next{ right:0; }
 .carousel__nav[disabled]{ opacity:.28; cursor:default; }
-.carousel__dots{ display:flex; gap:.5rem; justify-content:center; align-items:center; margin-top:1.1rem; }
-.carousel__dot{ width:9px; height:9px; border-radius:50%; border:none; padding:0; cursor:pointer;
+.carousel__dots{ display:flex; gap:.15rem; justify-content:center; align-items:center; margin-top:1.1rem; }
+.carousel__dot{ position:relative; width:9px; height:9px; box-sizing:content-box;
+  border-radius:50%; border:none; padding:0; cursor:pointer;
   background:rgba(196,98,90,.3); transition:transform .15s, background .15s; }
+.carousel__dot::before{ content:''; position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%); width:28px; height:28px; border-radius:50%; }
 .carousel__dot.active{ background:var(--coral); transform:scale(1.3); }
+.carousel__dot:focus-visible{ outline:none; box-shadow:0 0 0 4px rgba(232,132,122,.55); }
 .carousel__count{ font-family:var(--sans); font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); margin-left:.7rem; }
 @media(max-width:720px){ .carousel__stage{ padding:0 2.4rem; } .carousel__nav{ width:40px; height:40px; font-size:1.35rem; } }
 /* Faktoid-Doppelkarte: zwei Stats nebeneinander statt 80vh-Stapel */
@@ -4498,18 +4509,53 @@ Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren bli
 (function(){
   // ===== Copy buttons =====
   document.querySelectorAll('.copy-btn').forEach(btn => {
+    let resetTimer = null;
+    const flash = (label, cls) => {
+      if(resetTimer) clearTimeout(resetTimer);
+      btn.textContent = label;
+      btn.classList.remove('copied', 'copy-failed');
+      if(cls) btn.classList.add(cls);
+      resetTimer = setTimeout(() => {
+        btn.textContent = 'kopieren';
+        btn.classList.remove('copied', 'copy-failed');
+      }, 2200);
+    };
+    const fallbackCopy = (text, body) => {
+      // 1) execCommand über ein temporäres Textarea
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if(ok){ flash('kopiert ✓', 'copied'); return; }
+      } catch(e){ /* weiter zur Markier-Hilfe */ }
+      // 2) Letzter Ausweg: Text markieren, Nutzer kopiert selbst
+      try {
+        const sel = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(body);
+        sel.removeAllRanges();
+        sel.addRange(range);
+      } catch(e){ /* ignore */ }
+      flash('markiert – ⌘/Strg-C', 'copy-failed');
+    };
     btn.addEventListener('click', () => {
       const card = btn.closest('.prompt-card');
       const body = card ? card.querySelector('.prompt-card__body') : null;
       if(!body) return;
-      navigator.clipboard.writeText(body.textContent.trim()).then(() => {
-        btn.textContent = 'kopiert ✓';
-        btn.classList.add('copied');
-        setTimeout(() => {
-          btn.textContent = 'kopieren';
-          btn.classList.remove('copied');
-        }, 1600);
-      });
+      const text = body.textContent.trim();
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text)
+          .then(() => flash('kopiert ✓', 'copied'))
+          .catch(() => fallbackCopy(text, body));
+      } else {
+        fallbackCopy(text, body);
+      }
     });
   });
 
