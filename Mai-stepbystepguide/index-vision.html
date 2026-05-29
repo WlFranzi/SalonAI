@@ -1595,6 +1595,11 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 .prompt-steps {
   gap: 14px !important;
 }
+/* Vier Schritte in einer Reihe (auf Mobil 2×2) */
+.prompt-steps--row4 { grid-template-columns: repeat(2, 1fr) !important; }
+@media (min-width: 620px) {
+  .prompt-steps--row4 { grid-template-columns: repeat(4, 1fr) !important; }
+}
 .prompt-step {
   background: var(--v-glass-strong) !important;
   backdrop-filter: blur(14px);
@@ -3851,7 +3856,7 @@ Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
               <h3 class="anchor-card__subtitle">Ein <em>ganzer Ordner</em> ist auch Kontext — aber nur im Agent.</h3>
               <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Im Browser-Chat lädst du Dateien einzeln hoch. Im Agent zeigst du auf einen <em>Ordner</em> — und alles drin gehört zur Welt deines Gesprächs. Genau dafür haben wir in Akt II Cowork installiert.</p>
               <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">In deinen <em>Schreibtisch</em> kannst du alles Mögliche legen — PDFs, Notizen, Tabellen, Mails, Briefings, ganze Projektordner. Der Agent liest, was draufliegt.</p>
-              <div class="prompt-steps" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+              <div class="prompt-steps prompt-steps--row4">
                 <div class="prompt-step">In <strong>Cowork</strong> deinen Workspace öffnen (aus Akt II).</div>
                 <div class="prompt-step">Leg einen Unterordner an, z.B. <em>Schreibtisch</em>.</div>
                 <div class="prompt-step">Zieh dort <strong>3–5 echte Arbeitsdateien</strong> rein (PDF, DOCX, Notizen).</div>
