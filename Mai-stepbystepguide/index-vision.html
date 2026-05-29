@@ -2335,6 +2335,7 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 /* Akt II: verschachtelte Sektionen verlieren ihr eigenes Panel → eine Glas-Karte */
 #akt2.anchor-card .text-section{
   background:transparent !important; box-shadow:none !important; border:none !important;
+  backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
   border-radius:0 !important; max-width:none !important; margin:.5rem auto !important;
   padding:1.2rem 0 !important; min-height:0 !important;
 }
@@ -2810,7 +2811,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       <p class="eyebrow">I.3 · die Karte verstehen · 3 Min</p>
       <h3>Erst mal: <em>was ist überhaupt</em><br>ein Punkt im Embedding-Raum?</h3>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
-        Dieser <em>Embedding-Raum</em> ist <strong>wie eine riesige Wort-Wolke</strong> — und im Grunde das Sprachmodell selbst, nur radikal vereinfacht dargestellt. Jedes Wort wird in Zahlen umgewandelt und kriegt im <em>Training</em> einen festen Platz. <strong>„König"</strong> und <strong>„Königin"</strong> wurden in Milliarden Texten ähnlich verwendet — also liegen sie nebeneinander. Genauso <strong>Hund · Welpe · Katze · Maus</strong>.
+        Dieser <em>Embedding-Raum</em> ist <strong>wie eine riesige Wort-Wolke</strong> — die <em>Eingangs-Landkarte</em> des Sprachmodells, nur radikal vereinfacht dargestellt (das Modell selbst ist die viele Schichten darüber). Jedes Wort wird in Zahlen umgewandelt und kriegt im <em>Training</em> einen festen Platz. <strong>„König"</strong> und <strong>„Königin"</strong> wurden in Milliarden Texten ähnlich verwendet — also liegen sie nebeneinander. Genauso <strong>Hund · Welpe · Katze · Maus</strong>.
       </p>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:.8rem">
         Sachen, die nichts miteinander zu tun haben, liegen weit weg: <strong>Aktenschrank</strong>.
@@ -2859,7 +2860,7 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
 <section class="deeper-note" aria-label="Vertiefung">
   <span class="deeper-note__label">Wenn du tiefer willst</span>
   <p class="deeper-note__text">
-    Eigentlich macht die KI keine Vektor-Mittelung — sie nutzt <em>Attention zwischen Tokens</em>. Das Bild der parallelen Pfeile ist eine 2D-Idealisierung des Phänomens.
+    Eigentlich macht die KI keine Vektor-Mittelung — sie nutzt <em>Attention zwischen Tokens</em>. Das Bild der parallelen Pfeile ist eine 2D-Idealisierung des Phänomens. Und: die feste <em>Wort-Nähe</em> (König/Königin) und das <em>Lernen aus deinen Beispielen</em> im Gespräch sind verwandt, aber nicht dasselbe Rechnen — das erste sitzt fest im Raum, das zweite passiert frisch im Kontext.
     <span class="konsequenz">Praktisch ändert sich nichts. Drei klare Vorher/Nachher-Paare bleiben das stärkste Werkzeug.</span>
   </p>
 </section>
@@ -3654,7 +3655,7 @@ Bau bitte folgendes:
   </div>
 
   <p style="font-family:var(--serif);font-style:italic;color:var(--ink-soft);margin-top:1.5rem;text-align:center;max-width:50ch;margin-left:auto;margin-right:auto;line-height:1.5">
-    Schau danach in deine <em>memory/reminders.md</em>. Strukturiert? Dann hast du gerade deinen ersten Agent gebaut — der dich morgen früh wieder kennt.
+    Schau danach in deine <em>memory/reminders.md</em>. Strukturiert? Dann hast du gerade deinen ersten Agent gebaut — der dich beim nächsten Öffnen sofort wiedererkennt.
   </p>
 
   <!-- Konkretes Zukunfts-Szenario: die drei Bausteine greifen ineinander -->
@@ -3726,7 +3727,7 @@ Bau bitte folgendes:
   <div class="recap-mini__list">
     <span class="recap-mini__item">Ich habe Cowork laufen.</span>
     <span class="recap-mini__item">Ich kann den Unterschied Chat vs. Agent in einem Satz sagen.</span>
-    <span class="recap-mini__item">Ich habe einen Agent, der mir morgen früh meine Top-3-To-dos zeigt.</span>
+    <span class="recap-mini__item">Ich habe einen Agent, der mir meine Top-3-To-dos zeigt, sobald ich ihn öffne.</span>
   </div>
 </section>
 
@@ -4011,6 +4012,11 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     <p class="anchor-card__kicker">Akt Fünf · 25 Min</p>
     <h2 class="anchor-card__title">Skill — der <em>Trick, der bleibt.</em></h2>
 
+    <div class="anchor-card__sep">live · vor allen</div>
+    <h3 class="anchor-card__subtitle">Erst zeig ich euch, wie so ein Skill <em>von innen</em> aussieht.</h3>
+    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Bevor du selbst einen baust: ein Skill ist <em>keine Blackbox</em>. Es ist eine schlichte <em>Textdatei</em> im Ordner <em>.claude/skills/</em> deines Workspace — eine Überschrift, ein paar Zeilen Anweisung, fertig. Ich öffne meinen <em>gremium</em>-Skill <em>live</em>, damit ihr seht: genau das baust du gleich nach.</p>
+    <div class="iter-note"><span class="iter-note__label">★ Worauf ihr achtet</span> Oben in der Datei steht, <em>wann</em> der Skill anspringt; darunter, <em>was</em> er dann tut. Mehr ist es nicht — und genau das schreibt der Agent dir gleich selbst.</div>
+
     <div class="anchor-card__sep">jetzt du · 10 Min</div>
     <h3 class="anchor-card__subtitle">Bau dir aus dem Gremium einen <em>Skill.</em></h3>
     <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Das Kritiker-Gremium von eben machst du jetzt <em>dauerhaft</em> — als Skill namens <em>gremium</em>. Du lässt den Agent den Ablauf erst aufschreiben und prüfst ihn.</p>
@@ -4210,11 +4216,10 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     <h3 class="anchor-card__subtitle">Wir schließen jetzt <em>einen</em> an — vor allen.</h3>
     <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.4rem">Das machen wir jetzt — <em>live, vor allen.</em> Du folgst auf deinem Laptop mit.</p>
 
-    <div class="prompt-steps" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
-      <div class="prompt-step">In Cowork: <strong>Einstellungen → Connectors → customize → browse connectors</strong> — da sind alle Apps, die du schon einstecken kannst.</div>
-      <div class="prompt-step">Wähl einen <em>nur-Lese-Server</em> (z.B. Files, Search, oder den simpelsten in der Liste). Klick <strong>„Aktivieren"</strong>.</div>
-      <div class="prompt-step">Neuen Chat im Workspace öffnen.</div>
-      <div class="prompt-step">Frag: <em>„Welche neuen Werkzeuge hast du jetzt? Zeig mir <strong>eines</strong> davon in Aktion — mit einer kleinen, harmlosen Anfrage."</em></div>
+    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Den genauen Klickweg musst du dir nicht merken — und er ändert sich ständig. <em>Frag einfach deinen Agenten</em>, wie du gerade einen MCP-Server ansteckst. Er kennt seine eigene Oberfläche.</p>
+    <div class="prompt-card">
+      <p class="prompt-card__label"><span>Prompt — im Cowork-Chat</span><button class="copy-btn" type="button">kopieren</button></p>
+      <pre class="prompt-card__body">Ich will einen MCP-Server anschließen — am liebsten erst mal einen mit nur Lese-Zugriff. Führ mich Schritt für Schritt durch deine aktuelle Oberfläche. Wenn er aktiv ist: zeig mir eines deiner neuen Werkzeuge mit einer kleinen, harmlosen Anfrage.</pre>
     </div>
 
     <div class="iter-note">
@@ -4223,12 +4228,6 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     </div>
 
     <p style="text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-soft);max-width:62ch;margin:1.8rem auto 0;line-height:1.5">Ziel: Du kannst in zwei Sätzen sagen — <em>„MCP ist die Steckdose. Gmail und Calendar würde ich anschließen, Drive vorerst nicht — und einen Anschluss hab ich heute Abend selbst freigeschaltet."</em></p>
-
-    <div class="anchor-card__sep">zum Mitnehmen</div>
-    <div class="prompt-card">
-      <p class="prompt-card__label"><span>Prompt — MCP in Aktion (illustrativ)</span><button class="copy-btn" type="button">kopieren</button></p>
-      <pre class="prompt-card__body">Schau über meinen Gmail-Anschluss in den Posteingang. Welche 3 Mails der Nacht prägen meinen Tag am meisten? Zwei Sätze pro Mail.</pre>
-    </div>
 
     <div class="iter-note" style="margin-top:1.8rem"><span class="iter-note__label">★ Und jetzt kommt's zusammen</span> Das Schöne: Ein <em>Skill</em> kann solche Anschlüsse (Steckdosen) gleich <em>mit eingebaut</em> haben — und alles andere, was du brauchst: Kontext, die vier Fragen, dein Kritiker-Gremium. <em>Beispiel gleich in der nächsten Sektion.</em></div>
   </div>
@@ -4244,33 +4243,53 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
 
   <style>
   .vi2-tag{display:inline-block;font-family:var(--sans);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);font-weight:700;margin-right:.5rem}
+  .who-du{display:inline-block;font-family:var(--sans);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--coral);border:1px solid var(--coral);border-radius:5px;padding:.04rem .34rem;margin-right:.5rem;vertical-align:.1em}
   .vi2-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem;max-width:900px;margin:2.2rem auto 0}
-  .vi2-col{border-radius:22px;padding:1.5rem 1.6rem}
+  .vi2-col{border-radius:22px;padding:1.5rem 1.6rem;display:flex;flex-direction:column}
+  .vi2-col > p:last-child{margin-top:auto !important}
   .vi2-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8rem;font-family:var(--serif);font-size:1rem;line-height:1.45}
+  .ki-box{position:relative;border:1.5px solid var(--coral);border-radius:16px;padding:1.4rem 1.1rem 1.1rem;margin:1rem 0;background:rgba(226,106,74,.05)}
+  .ki-box__label{position:absolute;top:-.65rem;left:1rem;background:var(--coral);color:#fff;font-family:var(--sans);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;padding:.12rem .6rem;border-radius:6px}
   </style>
   <div class="vi2-grid">
     <div class="vi2-col" style="background:rgba(255,255,255,.5);border:1px solid var(--rule)">
       <p style="font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin:0 0 1rem">Vor KI · dein Montag</p>
       <ul style="color:var(--ink-soft)">
-        <li><strong style="color:var(--ink);font-weight:500">7:00</strong> — Wecker. Du, nicht der Agent.</li>
-        <li>60 ungelesene Mails. Du liest dich <em>40 Minuten</em> durch.</li>
-        <li>Branchen-News? Separat googeln.</li>
-        <li>Kalender checken, Prioritäten im Kopf sortieren.</li>
-        <li>Gestrige Meeting-Notizen in <em>Granola</em> selbst durchgehen, To-dos von Hand in deine Aufgaben-App tippen.</li>
-        <li><strong style="color:var(--ink);font-weight:500">9:30</strong> — endlich bei der eigentlichen Arbeit.</li>
+        <li><span class="who-du">Du</span><strong style="color:var(--ink);font-weight:500">7:00</strong> — Wecker. Du, nicht der Agent.</li>
+        <li><span class="who-du">Du</span>60 ungelesene Mails. Du liest dich <em>40 Minuten</em> durch.</li>
+        <li><span class="who-du">Du</span>Branchen-News? Separat googeln.</li>
+        <li><span class="who-du">Du</span>Kalender checken, Prioritäten im Kopf sortieren.</li>
+        <li><span class="who-du">Du</span>Gestrige Meeting-Notizen in <em>Granola</em> selbst durchgehen, To-dos von Hand in deine Aufgaben-App tippen.</li>
+        <li><span class="who-du">Du</span><strong style="color:var(--ink);font-weight:500">9:30</strong> — endlich bei der eigentlichen Arbeit.</li>
       </ul>
+      <p style="font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-soft);margin:1.1rem 0 0;line-height:1.4;border-top:1px solid var(--rule);padding-top:.9rem">Zweieinhalb Stunden vergangen — und die <em>eigentliche</em> Arbeit hat noch nicht angefangen.</p>
     </div>
     <div class="vi2-col" style="background:rgba(255,255,255,.82);border:1px solid var(--v-glass-border);border-left:3px solid var(--coral);box-shadow:var(--v-shadow)">
       <p style="font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:0 0 1rem">Mit KI · ein „scheduled" Skill</p>
       <ul style="color:var(--ink)">
-        <li><span class="vi2-tag">Fester Zeitpunkt</span>Montag früh — der Skill startet von allein, sobald du den Laptop aufmachst. (Agenten sind nur wach, wenn dein Laptop wach ist.)</li>
-        <li><span class="vi2-tag">MCP</span>zieht über Gmail &amp; Calendar die Mails der Nacht.</li>
-        <li><span class="vi2-tag">Ablage / Kontext</span>kennt deine Projekte &amp; Mandanten — liest die Mails in deiner Welt.</li>
-        <li><span class="vi2-tag">Kritiker</span>filtert die drei, die deinen Tag wirklich prägen.</li>
-        <li><span class="vi2-tag">Sprachmodell</span>fasst jede in zwei Sätzen zusammen.</li>
-        <li><span class="vi2-tag">MCP</span>zieht aus <em>Granola</em> die gestrigen Meetings — Übersicht, To-dos in die Aufgaben-App, ab ins Projekt-Board.</li>
+        <li><span class="who-du">Du</span>Dein einziger Handgriff: <em>Laptop aufmachen.</em> Der Skill startet von allein zur festen Zeit. (Agenten sind nur wach, wenn dein Laptop wach ist.)</li>
+      </ul>
+      <div class="ki-box">
+        <span class="ki-box__label">KI</span>
+        <ul style="color:var(--ink)">
+          <li><span class="vi2-tag">MCP</span>zieht über Gmail &amp; Calendar die Mails der Nacht.</li>
+          <li><span class="vi2-tag">Ablage / Kontext</span>kennt deine Projekte &amp; Mandanten — liest die Mails in deiner Welt.</li>
+          <li><span class="vi2-tag">Kritiker</span>filtert die drei, die deinen Tag wirklich prägen.</li>
+          <li><span class="vi2-tag">Sprachmodell</span>fasst jede in zwei Sätzen zusammen.</li>
+          <li><span class="vi2-tag">MCP</span>zieht aus <em>Granola</em> die gestrigen Meetings — Übersicht, To-dos in die Aufgaben-App, ab ins Projekt-Board.</li>
+        </ul>
+      </div>
+      <ul style="color:var(--ink)">
         <li><span class="vi2-tag" style="color:var(--leaf)">Ergebnis</span>Das Briefing liegt auf dem Schreibtisch, wenn du deinen Tag beginnst.</li>
       </ul>
+      <svg viewBox="0 0 80 80" width="58" height="58" style="display:block;margin:1.2rem auto .2rem" aria-hidden="true" fill="none" stroke="var(--coral)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 27 q-5 -5 0 -10 q5 -5 0 -10" opacity=".5"/>
+        <path d="M43 27 q-5 -5 0 -10 q5 -5 0 -10" opacity=".5"/>
+        <path d="M16 32 H53 L50 57 a6 6 0 0 1 -6 5 H25 a6 6 0 0 1 -6 -5 Z"/>
+        <path d="M53 36 h6 a7 7 0 0 1 0 14 h-4"/>
+        <path d="M14 67 H59" opacity=".7"/>
+      </svg>
+      <p style="font-family:var(--hand);text-align:center;font-size:1.05rem;color:var(--ink-soft);margin:.1rem 0 0">… und dein Kaffee zieht noch.</p>
       <p style="font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-soft);margin:1.1rem 0 0;line-height:1.4;border-top:1px solid var(--rule);padding-top:.9rem">Und das alles steckt in <em>einem</em> Skill namens <em>»morning briefing«</em> — einmal gebaut, läuft er jeden Morgen von selbst.</p>
     </div>
   </div>
@@ -4498,7 +4517,7 @@ Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren bli
   <canvas class="atemholen__fireworks" aria-hidden="true"></canvas>
   <div class="atemholen__inner">
     <p class="atemholen__text" style="font-size:clamp(.9rem,1.4vw,1rem);opacity:.6;margin-bottom:1.8rem;font-style:normal">— Diese Seite bleibt online, falls du nachschauen willst. —</p>
-    <p class="atemholen__text" style="font-size:clamp(1.35rem,2.2vw,1.65rem);margin:0">KI ist ab heute Abend <em>kein Mysterium mehr.</em><br>Sie ist Mathe. Du weißt jetzt, wo das <em>Steuerrad</em> ist,<br>wo der <em>Bauplan</em> liegt, und wer den <em>Output</em> prüft.<br><em>Der Rest ist Mut.</em></p>
+    <p class="atemholen__text" style="font-size:clamp(1.35rem,2.2vw,1.65rem);margin:0">KI ist ab heute Abend <em>kein Mysterium mehr.</em><br>Sie ist Mathe. Du hast einen <em>Agenten auf deinem Rechner</em>,<br>weißt, wo das <em>Steuerrad</em> ist, wer den <em>Output</em> prüft,<br>wie du dir einen <em>Bauplan</em> baust — und wie du ihn an die <em>Welt</em> anschließt.<br><em>Der Rest ist Mut.</em></p>
     <p style="margin-top:2.5rem;font-family:var(--serif);font-style:italic;font-size:1rem;color:rgba(250,247,241,.65)">— Salon AI · 28. Mai 2026 · München —</p>
   </div>
 </section>
