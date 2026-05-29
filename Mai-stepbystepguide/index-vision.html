@@ -2427,15 +2427,6 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 /* ============ PROMPT-LOCK (Passwortschutz) ============ */
 .prompt-card--locked[data-unlocked="false"] .prompt-card__body{ display:none; }
 .prompt-card--locked[data-unlocked="false"] .copy-btn{ display:none; }
-.prompt-card--locked[data-unlocked="true"] .prompt-lock{ display:none; }
-.prompt-lock{ padding:.4rem 0 .2rem; }
-.prompt-lock__text{ font-family:var(--serif); font-style:italic; color:var(--ink-soft); margin:0 0 .8rem; }
-.prompt-lock__form{ display:flex; gap:.5rem; flex-wrap:wrap; }
-.prompt-lock__input{ flex:1; min-width:160px; font-family:var(--sans); font-size:.9rem; padding:.6rem .8rem; border:1px solid var(--rule); border-radius:12px; background:#fff; color:var(--ink); }
-.prompt-lock__input:focus{ outline:none; border-color:var(--coral); }
-.prompt-lock__btn{ background:var(--ink); color:#fff; border:none; border-radius:999px; padding:.6rem 1.4rem; font-family:var(--sans); font-size:.85rem; font-weight:600; cursor:pointer; transition:background .15s,transform .15s; }
-.prompt-lock__btn:hover{ background:var(--coral); transform:translateY(-1px); }
-.prompt-lock__msg{ font-family:var(--sans); font-size:.8rem; color:#c0392b; margin:.7rem 0 0; display:none; }
 
 /* ============ AKT-FEEDBACK ============ */
 .akt-feedback{max-width:680px;margin:0 auto;padding:2rem 1.9rem;background:rgba(255,255,255,.80);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--rule);border-radius:22px;box-shadow:0 8px 30px rgba(40,50,70,.08)}
@@ -3145,6 +3136,10 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       </div>
 
       <div class="deeper-note"><span class="deeper-note__label">Wenn du tiefer willst</span><p class="deeper-note__text">Die KI tippt eigentlich nicht Wörter, sondern <em>Sub-Word-Tokens</em> aus einem Vokabular von 50.000–100.000 Einheiten. Ein Wort wie „Verspätung" kann aus zwei oder drei Tokens bestehen. <span class="konsequenz">Praktisch ändert sich nichts. Aber genau deshalb werden lange Texte fehleranfälliger — jeder Token-Schritt kann driften.</span></p></div>
+
+      <p style="font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink-soft);margin:1.6rem 0 0;line-height:1.5">
+        Den Spickzettel mit allen <em>neun Mathe-Themen</em> hängst du dir an die Wand — hier &rarr; <a href="cheatsheet.html" style="color:var(--coral);font-weight:500;border-bottom:1px solid var(--coral)">cheatsheet.html</a>
+      </p>
     </div>
   </details>
 </section>
@@ -3508,7 +3503,7 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
     </div>
 
     <p class="deeper-note__text" style="margin-top:1rem">
-      <strong>Was heißt das für Vertrauliches?</strong> Im <em>Browser-Chat</em> (claude.com, ChatGPT) geht alles, was du hochlädst, durch fremde Server. Im <em>Cowork-Agent</em> bleibt die <em>Datei</em> auf deinem Rechner — aber der <em>Gesprächs-Verlauf</em> (was du tippst, was der Agent als Kontext mitschickt) wird trotzdem auf Servern gespeichert. <strong>Und selbst wenn ein Anbieter zusichert, deine Daten nicht fürs Training zu verwenden</strong> — die Gesprächs-Logs liegen weiterhin auf <em>seinen</em> Servern. Liest der Agent eine sensible Akte und redet darüber, steht dieser Auszug im Log.
+      <strong>Was heißt das für Vertrauliches?</strong> Im <em>Browser-Chat</em> (claude.com, ChatGPT) geht alles, was du hochlädst, durch fremde Server. Im <em>Cowork-Agent</em> bleibt die <em>Datei</em> auf deinem Rechner — aber der <em>Gesprächs-Verlauf</em> (was du tippst, was der Agent als Kontext mitschickt) wird trotzdem auf Servern gespeichert. <strong>Selbst in der bezahlten Pro-Version</strong>, in der dein Verlauf <em>nicht</em> zum Training des nächsten Sprachmodells genutzt wird, liegen die Gesprächs-Logs weiterhin auf <em>seinen</em> Servern. Und nach dem <em>US Cloud Act</em> darf jeder US-Konzern auf alle Daten zugreifen, die er hält — auch wenn sie physisch auf <em>EU-Servern</em> liegen. Liest der Agent eine sensible Akte und redet darüber, steht dieser Auszug im Log.
       <span class="konsequenz">Cowork ist <em>besser</em>, nicht <em>privat</em>. Höchst-vertrauliche Inhalte (Mandanten-Akten, Patientendaten, M&amp;A-Drafts) vor dem Lesen anonymisieren — keine Klarnamen, keine Aktenzeichen. Davon ausgehen, dass das Gespräch im Log landet.</span>
     </p>
   </section>
@@ -3539,69 +3534,6 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
   </div>
 
 
-  <!-- Concept B: das Context-Window als Wolke + Session-Neustart -->
-  <h3 style="text-align:center;margin-top:3.5rem">Und die <em>Wolke</em>, die volläuft</h3>
-  <p class="lead" style="border-left:none;padding-left:0;max-width:66ch;margin:1.2rem auto;text-align:center">
-    Beim <em>Session-Start</em> wacht der Referent auf und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.
-  </p>
-
-  <div class="master-card" style="max-width:700px;margin:2rem auto 0">
-    <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
-      <!-- Wolke 1: frischer Start -->
-      <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(20,58) scale(.82)">
-        <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-      </g>
-      <text class="label-serif" x="66" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">Start</text>
-      <text class="label-hand" x="66" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">saugt claude.md auf</text>
-
-      <!-- Pfeil 1 -> 2 -->
-      <g stroke="#3a3633" stroke-width="1.5" fill="none">
-        <path d="M150,92 L233,92"/>
-        <path d="M226,86 L235,92 L226,98"/>
-      </g>
-
-      <!-- Wolke 2: läuft voll (Regen) -->
-      <g stroke="#6b4e8e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(248,36) scale(1.25)">
-        <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-      </g>
-      <g stroke="#6b4e8e" stroke-width="1.3" opacity=".6" stroke-linecap="round">
-        <line x1="292" y1="120" x2="287" y2="140"/>
-        <line x1="318" y1="122" x2="313" y2="144"/>
-        <line x1="344" y1="120" x2="339" y2="140"/>
-        <line x1="370" y1="122" x2="365" y2="144"/>
-      </g>
-      <text class="label-serif" x="330" y="28" text-anchor="middle" font-size="13" font-weight="600" fill="#4a3566">füllt sich…</text>
-      <text class="label-hand" x="330" y="162" text-anchor="middle" font-size="13" fill="#a4502e">langsam &amp; wirr</text>
-
-      <!-- Pfeil 2 -> 3: Session neu -->
-      <g stroke="#a4502e" stroke-width="1.5" fill="none">
-        <path d="M430,92 L513,92"/>
-        <path d="M506,86 L515,92 L506,98"/>
-      </g>
-      <text class="label-hand" x="471" y="80" text-anchor="middle" font-size="12" fill="#a4502e" font-style="italic">Session neu</text>
-
-      <!-- Wolke 3: frisch neu -->
-      <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(525,58) scale(.82)">
-        <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
-      </g>
-      <text class="label-serif" x="571" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">frisch</text>
-      <text class="label-hand" x="571" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">selber Ordner</text>
-
-      <!-- Persist-Strip -->
-      <line x1="40" y1="196" x2="660" y2="196" stroke="#d5cdb8" stroke-width="1"/>
-      <text class="label-serif" x="350" y="217" text-anchor="middle" font-size="12" font-style="italic" fill="#5c4f43">claude.md + memory/ bleiben — sie überstehen jeden Neustart</text>
-    </svg>
-    <p class="master-card__caption">Läuft die Wolke voll, wird der Agent <em>langsam und wirr</em>. Der Trick: Session schließen, neu öffnen — <em>auf demselben Ordner.</em></p>
-  </div>
-
-  <p class="lead" style="border-left:none;padding-left:0;max-width:66ch;margin:1.6rem auto 0;text-align:center">
-    Irgendwann ist die Wolke <em>zu voll</em>: Er wird träge und fängt an, <em>Unsinn zu reden</em> — weil er bei jeder Antwort die ganze überfüllte Wolke neu durchlesen muss. Dann der <em>Profi-Trick</em>: Session schließen, neue öffnen, auf <em>demselben Ordner</em>. Die alte Wolke regnet ab, der Tisch ist sauber. Er liest wieder die <em>claude.md</em>, hat den <em>memory/</em>-Ordner parat — weiß also sofort wieder, wer er ist und wo das Projekt steht. Das ganze Blabla ist weg, er ist wieder messerscharf.
-  </p>
-
-  <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
-    <span class="iter-note__label">★ Mehrere Agenten parallel</span>
-    Du kannst auf <em>demselben Ordner</em> auch mehrere Sessions gleichzeitig öffnen — quasi <em>mehrere gleiche Agenten parallel</em> laufen lassen. Alle teilen sich dieselbe <em>claude.md</em> und denselben <em>memory/</em>-Ordner, wissen also alle, wer du bist — und arbeiten nur an verschiedenen Dingen zur selben Zeit.
-  </div>
 </section>
 
 <!-- ============ MASTER CARD — Ein Job. Ein Ordner. (Godin-Insight) ============ -->
@@ -3721,15 +3653,8 @@ Bau bitte folgendes:
     <p class="anchor-card__def">Dein Agent läuft — aber er hat <em>keine Ahnung, wer du bist.</em> Fangen wir genau da an: gib ihm in sieben Minuten ein Bild von dir und deiner Arbeitsweise.</p>
 
     <div class="anchor-card__sep">Übung 1 · zu zweit · 7 Min</div>
-    <h3 class="anchor-card__subtitle">Lade deinen <em>Kalender</em> oder dein <em>LinkedIn-Profil</em> hoch.</h3>
-    <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Der schnellste Weg, dass der Agent dich versteht: zeig ihm, wer du bist. Ein <em>Screenshot deines Kalenders</em> (wie sieht deine Woche aus?) — oder dein <em>LinkedIn-Profil</em> (was machst du, wofür stehst du?). Zieh das Bild in dein Browser-Chat-Fenster.</p>
-    <div class="iter-note"><span class="iter-note__label">→ zu zweit</span> Einer tippt, der/die andere liest die Antwort <em>laut vor</em> und sagt nach jedem Punkt: <em>„passt — passt nicht — überraschend"</em>. Nach 4 Min Rollen tauschen.</div>
-    <div class="prompt-steps">
-      <div class="prompt-step"><strong>Cmd + Shift + 4</strong> (Mac) bzw. <strong>Win + Shift + S</strong> — Kalender oder LinkedIn-Profil abfotografieren.</div>
-      <div class="prompt-step">Screenshot direkt ins <strong>Chat-Fenster</strong> ziehen.</div>
-      <div class="prompt-step">Prompt <strong>kopieren</strong> und darunter einfügen.</div>
-      <div class="prompt-step">Enter — <em>einer liest laut</em>, der andere kommentiert.</div>
-    </div>
+    <h3 class="anchor-card__subtitle">Lade deinen <em>Kalender</em>, dein <em>LinkedIn-Profil oder CV</em> hoch.</h3>
+    <p class="anchor-card__def" style="font-size:1.02rem;margin-bottom:1.1rem">Der schnellste Weg, dass der Agent dich versteht: zeig ihm, wer du bist. Ein <em>Screenshot deines Kalenders</em> (wie sieht deine Woche aus?) — oder dein <em>LinkedIn-Profil oder CV</em> (was machst du, wofür stehst du?). Zieh das Bild in dein Browser-Chat-Fenster.</p>
     <div class="prompt-card">
       <p class="prompt-card__label"><span>Prompt — Kalender oder LinkedIn</span><button class="copy-btn" type="button">kopieren</button></p>
       <pre class="prompt-card__body" style="font-size:.68rem !important;line-height:1.5">Im Bild siehst du meinen Kalender der kommenden Woche (oder mein LinkedIn-Profil).
@@ -3742,58 +3667,74 @@ Lern daraus, wer ich bin und wie ich arbeite. Sag mir:
 Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
     </div>
     <div class="iter-note"><span class="iter-note__label">★ Iterations-Moment</span> Antwort da? <em>Antworte zurück:</em> „Geh nochmal in Punkt 3 — und sei diesmal ehrlicher." Das Bild bleibt im Kontext — du arbeitest im selben Gespräch weiter.</div>
-    <div class="failure-box" style="margin-top:1.2rem"><span class="failure-box__label">Häufiger Fehler</span><p class="failure-box__text">Bilder mit <em>privaten Klarnamen</em> ungeschwärzt hochladen — das landet bei einem externen Anbieter. Faustregel: alles, was du nicht öffentlich sagen würdest, vorher unkenntlich machen — oder im Agent auf deinem Rechner halten.</p></div>
+
+    <div class="prompt-card" style="margin-top:1.2rem">
+      <p class="prompt-card__label"><span>Prompt 2 — wenn's stimmt: merken lassen</span><button class="copy-btn" type="button">kopieren</button></p>
+      <pre class="prompt-card__body" style="font-size:.68rem !important;line-height:1.5">Das trifft mich ziemlich gut. Merk dir bitte dauerhaft, wer ich bin und wie ich arbeite — leg es in deinem memory/ ab, damit du es beim nächsten Mal sofort wieder weißt.</pre>
+    </div>
 
     <div class="anchor-card__sep">und das Prinzip dahinter</div>
     <h3 class="anchor-card__subtitle" style="font-size:1.6rem">Das Steuerrad heißt — <em>Kontext.</em></h3>
     <p class="anchor-card__def">Genau das hast du gerade gemacht: dem Agent <em>Kontext</em> über dich gegeben — wie bei einem neuen Mitarbeiter, den du einarbeitest. <em>„Schau in meinen Ordner mein-Profil"</em>, <em>„lies meine Mails"</em>, <em>„hier ist mein CRM — verstehe, wer meine Kunden sind."</em> Je besser er dich und deine Arbeitsweise kennt, desto besser arbeitet er.</p>
-    <p class="anchor-card__def">Aber: mit jedem Satz, jeder Datei drehst du an einem <em>Steuerrad</em>. Zu wenig — sie rät. Zu viel — sie verliert den Faden (die <em>Wolke</em> aus Akt II läuft über). <strong>Genau richtig: klarer Kontext, kein Rauschen.</strong></p>
+    <p class="anchor-card__def">Aber: mit jedem Satz, jeder Datei drehst du an einem <em>Steuerrad</em>. Zu wenig — sie rät. Zu viel — sie verliert den Faden (die <em>Wolke</em> läuft über — gleich mehr dazu). <strong>Genau richtig: klarer Kontext, kein Rauschen.</strong></p>
 
-    <div class="anchor-card__visual">
-    <div class="slider-demo" data-state="1">
-      <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" class="slider-demo__svg">
-        <text x="350" y="28" font-family="Caveat" font-size="18" fill="#3a3633" text-anchor="middle">zieh den Schieber unten — schau, was passiert.</text>
-        <g class="slider-demo__state slider-demo__state--0">
-          <g class="pencil-stroke" stroke-width="1.5" fill="none">
-            <circle cx="350" cy="160" r="28"/>
-            <line x1="350" y1="135" x2="350" y2="185" stroke-width="1.2"/>
-            <line x1="325" y1="160" x2="375" y2="160" stroke-width="1.2"/>
-          </g>
-          <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#5c4f43" text-anchor="middle">zu wenig</text>
-          <text x="350" y="340" font-family="Caveat" font-size="17" fill="#3a3633" text-anchor="middle">sie rät — du kriegst Mittelmaß</text>
+    <h3 class="anchor-card__subtitle" style="font-size:1.25rem;margin-top:1.8rem">Und die <em>Wolke</em>, die volläuft</h3>
+    <p class="anchor-card__def">Beim <em>Session-Start</em> wacht der Referent auf und saugt sich voll mit allem, was in der <em>claude.md</em> steht — wer er ist, das Projekt, deine Regeln. Während ihr arbeitet, zieht er sich weiter voll: die Dateien, auf die du ihn zeigst, euer Hin und Her. Diesen Vorrat nennt man sein <em>Context-Window</em> — stell ihn dir als <em>Wolke</em> über dem Schreibtisch vor.</p>
+
+    <div class="master-card" style="max-width:700px;margin:1.6rem auto 0">
+      <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg">
+        <!-- Wolke 1: frischer Start -->
+        <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(20,58) scale(.82)">
+          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
         </g>
-        <g class="slider-demo__state slider-demo__state--1">
-          <g stroke="#e26a4a" stroke-width="2" fill="none">
-            <circle cx="350" cy="160" r="55"/>
-            <circle cx="350" cy="160" r="48" opacity=".4"/>
-            <line x1="350" y1="105" x2="350" y2="215" stroke-width="1.6"/>
-            <line x1="295" y1="160" x2="405" y2="160" stroke-width="1.6"/>
-          </g>
-          <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="24" fill="#e26a4a" text-anchor="middle" font-weight="600">genau richtig</text>
-          <text x="350" y="340" font-family="Caveat" font-size="17" fill="#a4502e" text-anchor="middle">klarer Kontext — sie trifft</text>
+        <text class="label-serif" x="66" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">Start</text>
+        <text class="label-hand" x="66" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">saugt claude.md auf</text>
+
+        <!-- Pfeil 1 -> 2 -->
+        <g stroke="#3a3633" stroke-width="1.5" fill="none">
+          <path d="M150,92 L233,92"/>
+          <path d="M226,86 L235,92 L226,98"/>
         </g>
-        <g class="slider-demo__state slider-demo__state--2">
-          <g class="pencil-stroke" stroke-width="1.5" fill="none">
-            <circle cx="350" cy="160" r="68"/>
-            <line x1="350" y1="92" x2="350" y2="228" stroke-width="1.2"/>
-            <line x1="282" y1="160" x2="418" y2="160" stroke-width="1.2"/>
-          </g>
-          <g stroke="#a4502e" stroke-width=".8" fill="none" opacity=".55">
-            <circle cx="350" cy="160" r="82" stroke-dasharray="3,4"/>
-            <circle cx="350" cy="160" r="98" stroke-dasharray="2,5"/>
-            <circle cx="350" cy="160" r="116" stroke-dasharray="2,7"/>
-            <circle cx="350" cy="160" r="136" stroke-dasharray="1,9"/>
-          </g>
-          <text x="350" y="310" font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#5c4f43" text-anchor="middle">zu viel</text>
-          <text x="350" y="340" font-family="Caveat" font-size="17" fill="#3a3633" text-anchor="middle">sie verliert den Faden im Rauschen</text>
+
+        <!-- Wolke 2: läuft voll (Regen) -->
+        <g stroke="#6b4e8e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(248,36) scale(1.25)">
+          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
         </g>
+        <g stroke="#6b4e8e" stroke-width="1.3" opacity=".6" stroke-linecap="round">
+          <line x1="292" y1="120" x2="287" y2="140"/>
+          <line x1="318" y1="122" x2="313" y2="144"/>
+          <line x1="344" y1="120" x2="339" y2="140"/>
+          <line x1="370" y1="122" x2="365" y2="144"/>
+        </g>
+        <text class="label-serif" x="330" y="28" text-anchor="middle" font-size="13" font-weight="600" fill="#4a3566">füllt sich…</text>
+        <text class="label-hand" x="330" y="162" text-anchor="middle" font-size="13" fill="#a4502e">langsam &amp; wirr</text>
+
+        <!-- Pfeil 2 -> 3: Session neu -->
+        <g stroke="#a4502e" stroke-width="1.5" fill="none">
+          <path d="M430,92 L513,92"/>
+          <path d="M506,86 L515,92 L506,98"/>
+        </g>
+        <text class="label-hand" x="471" y="80" text-anchor="middle" font-size="12" fill="#a4502e" font-style="italic">Session neu</text>
+
+        <!-- Wolke 3: frisch neu -->
+        <g stroke="#3a3633" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(525,58) scale(.82)">
+          <path d="M30,60 Q10,60 10,45 Q10,30 28,32 Q30,15 50,18 Q60,5 75,15 Q95,12 95,32 Q108,34 104,50 Q102,60 88,60 Z"/>
+        </g>
+        <text class="label-serif" x="571" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1410">frisch</text>
+        <text class="label-hand" x="571" y="132" text-anchor="middle" font-size="13" fill="#5c4f43">selber Ordner</text>
+
+        <!-- Persist-Strip -->
+        <line x1="40" y1="196" x2="660" y2="196" stroke="#d5cdb8" stroke-width="1"/>
+        <text class="label-serif" x="350" y="217" text-anchor="middle" font-size="12" font-style="italic" fill="#5c4f43">claude.md + memory/ bleiben — sie überstehen jeden Neustart</text>
       </svg>
-      <div class="slider-demo__control">
-        <input type="range" min="0" max="2" value="1" step="1" class="slider-demo__input" aria-label="Kontext-Menge: zu wenig, genau richtig, zu viel">
-        <div class="slider-demo__ticks"><span>zu wenig</span><span>genau richtig</span><span>zu viel</span></div>
-        <p class="slider-demo__hint">← zieh und vergleich →</p>
-      </div>
+      <p class="master-card__caption">Frischer Start → die Wolke füllt sich → neue Session auf <em>demselben Ordner</em>, frischer Tisch.</p>
     </div>
+
+    <p class="anchor-card__def" style="margin-top:1.4rem">Irgendwann ist die Wolke <em>zu voll</em>: Er wird träge und fängt an, <em>Unsinn zu reden</em> — weil er bei jeder Antwort die ganze überfüllte Wolke neu durchlesen muss. Dann der <em>Profi-Trick</em>: Session schließen, neue öffnen, auf <em>demselben Ordner</em>. Die alte Wolke regnet ab, der Tisch ist sauber. Er liest wieder die <em>claude.md</em>, hat den <em>memory/</em>-Ordner parat — weiß also sofort wieder, wer er ist und wo das Projekt steht. Das ganze Blabla ist weg, er ist wieder messerscharf.</p>
+
+    <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
+      <span class="iter-note__label">★ Mehrere Agenten parallel</span>
+      Du kannst auf <em>demselben Ordner</em> auch mehrere Sessions gleichzeitig öffnen — quasi <em>mehrere gleiche Agenten parallel</em> laufen lassen. Alle teilen sich dieselbe <em>claude.md</em> und denselben <em>memory/</em>-Ordner, wissen also alle, wer du bist — und arbeiten nur an verschiedenen Dingen zur selben Zeit.
     </div>
 
     <h3 class="anchor-card__subtitle" style="font-size:1.25rem;margin-top:1.8rem">Die vier Formen von Kontext</h3>
@@ -3887,7 +3828,7 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
 
     <div class="anchor-card__sep">live · vor allen</div>
     <h3 class="anchor-card__subtitle">Ich zeig euch den Kritiker, mit dem ich <em>diese Website</em> gebaut habe.</h3>
-    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Bevor ihr ihn auf eigene Texte loslasst: live, welchen Kritiker ich benutzt habe — und welche Einwände er mir um die Ohren gehauen hat.</p>
+    <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.2rem">Bevor ihr ihn auf eigene Texte loslasst: live, welchen Kritiker ich benutzt habe — und welche Einwände er mir um die Ohren gehauen hat. Mein Trick bei der Auswahl: immer <em>echte, namentliche Personen</em> — Köpfe, die schon <em>viel online veröffentlicht</em> haben, wie sie denken. Dann hat das Modell genug Material, um ihre Haltung wirklich zu treffen.</p>
     <div class="iter-note"><span class="iter-note__label">★ Worauf ihr achtet</span> Wo war der Kritiker unbequem — und genau deshalb wertvoll? An den Stellen, an denen er widersprochen hat, ist die Website besser geworden.</div>
 
     <div class="anchor-card__sep">jetzt du · 6 Min</div>
@@ -4166,7 +4107,7 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     <p class="anchor-card__def" style="font-size:1.05rem;margin-bottom:1.4rem">Das machen wir jetzt — <em>live, vor allen.</em> Du folgst auf deinem Laptop mit.</p>
 
     <div class="prompt-steps" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
-      <div class="prompt-step">In Cowork: <strong>Einstellungen → MCP Servers</strong>.</div>
+      <div class="prompt-step">In Cowork: <strong>Einstellungen → Connectors → customize → browse connectors</strong> — da sind alle Apps, die du schon einstecken kannst.</div>
       <div class="prompt-step">Wähl einen <em>nur-Lese-Server</em> (z.B. Files, Search, oder den simpelsten in der Liste). Klick <strong>„Aktivieren"</strong>.</div>
       <div class="prompt-step">Neuen Chat im Workspace öffnen.</div>
       <div class="prompt-step">Frag: <em>„Welche neuen Werkzeuge hast du jetzt? Zeig mir <strong>eines</strong> davon in Aktion — mit einer kleinen, harmlosen Anfrage."</em></div>
@@ -4211,6 +4152,7 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
         <li>60 ungelesene Mails. Du liest dich <em>40 Minuten</em> durch.</li>
         <li>Branchen-News? Separat googeln.</li>
         <li>Kalender checken, Prioritäten im Kopf sortieren.</li>
+        <li>Gestrige Meeting-Notizen in <em>Granola</em> selbst durchgehen, To-dos von Hand in deine Aufgaben-App tippen.</li>
         <li><strong style="color:var(--ink);font-weight:500">9:30</strong> — endlich bei der eigentlichen Arbeit.</li>
       </ul>
     </div>
@@ -4222,7 +4164,8 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
         <li><span class="vi2-tag">Ablage / Kontext</span>kennt deine Projekte &amp; Mandanten — liest die Mails in deiner Welt.</li>
         <li><span class="vi2-tag">Kritiker</span>filtert die drei, die deinen Tag wirklich prägen.</li>
         <li><span class="vi2-tag">Sprachmodell</span>fasst jede in zwei Sätzen zusammen.</li>
-        <li><span class="vi2-tag" style="color:var(--leaf)">Ergebnis</span>Das Briefing liegt auf dem Schreibtisch, wenn du aufwachst.</li>
+        <li><span class="vi2-tag">MCP</span>zieht aus <em>Granola</em> die gestrigen Meetings — Übersicht, To-dos in die Aufgaben-App, ab ins Projekt-Board.</li>
+        <li><span class="vi2-tag" style="color:var(--leaf)">Ergebnis</span>Das Briefing liegt auf dem Schreibtisch, wenn du deinen Tag beginnst.</li>
       </ul>
       <p style="font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-soft);margin:1.1rem 0 0;line-height:1.4;border-top:1px solid var(--rule);padding-top:.9rem">Und das alles steckt in <em>einem</em> Skill namens <em>»morning briefing«</em> — einmal gebaut, läuft er jeden Morgen von selbst.</p>
     </div>
@@ -4232,11 +4175,6 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     Bauen wir heute Abend <em>nicht</em>. Wichtig ist nur: Du weißt jetzt, dass es existiert — und aus welchen Bausteinen. <em>Kontext, Kritiker, Skill, MCP</em> — heute Abend einzeln gelernt, hier zusammengesetzt.
   </p>
 
-  <p style="text-align:center;font-family:var(--sans);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:1.8rem 0 .8rem">Noch ein MCP-Moment</p>
-  <div class="prompt-card">
-    <p class="prompt-card__label"><span>Prompt — zum Mitnehmen (illustrativ)</span><button class="copy-btn" type="button">kopieren</button></p>
-    <pre class="prompt-card__body">Nimm aus Granola (meiner Meeting-Notes-App) alle Meetings von gestern. Gib mir eine kurze Übersicht, zieh alle To-dos heraus und leg sie in meine Aufgaben-App — und visualisier sie in meinem Projekt-Board.</pre>
-  </div>
 </section>
 
 
@@ -4333,13 +4271,6 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
      COMMITMENT-MOMENT + RECAP 3 + OUTRO
      ========================================================= -->
 
-<!-- ============ Spickzettel-Pointer (Commitment + Recap-Wortwolke entfernt) ============ -->
-<section class="text-section" style="text-align:center">
-  <p style="font-family:var(--serif);font-style:italic;font-size:1.18rem;color:var(--ink-soft);margin:0 auto;max-width:60ch;line-height:1.5">
-    Den Spickzettel mit allen <em>neun Mathe-Themen</em> hängst du dir an die Wand — hier &rarr; <a href="cheatsheet.html" style="color:var(--coral);font-weight:500;border-bottom:1px solid var(--coral)">cheatsheet.html</a>
-  </p>
-</section>
-
 <!-- ============ OUTRO-GEDANKE — vom Ausführer zum Manager (Schluss-Karte) ============ -->
 <section class="text-section">
   <p class="eyebrow" style="text-align:center">Gedanke zum Schluss</p>
@@ -4406,10 +4337,11 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   </div>
   <script>
   (function(){
-    var btn=document.getElementById('plan-btn'),
-        card=document.getElementById('europa-prompt');
-    if(!btn||!card) return;
+    var btn=document.getElementById('plan-btn');
+    if(!btn) return;
     btn.addEventListener('click',function(){
+      var card=document.getElementById('europa-prompt');
+      if(!card) return;
       card.setAttribute('data-unlocked','true');
       card.scrollIntoView({behavior:'smooth',block:'start'});
     });
@@ -4418,14 +4350,6 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
 
   <div class="prompt-card prompt-card--locked" id="europa-prompt" data-unlocked="false">
     <p class="prompt-card__label"><span>Prompt — die Frage des Abends, mit KI beantwortet</span><button class="copy-btn" type="button">kopieren</button></p>
-    <div class="prompt-lock">
-      <p class="prompt-lock__text">🔒 Dieser Prompt ist passwortgeschützt — gib das Passwort vom Abend ein.</p>
-      <form class="prompt-lock__form" onsubmit="return unlockEuropaPrompt(event)">
-        <input type="password" class="prompt-lock__input" placeholder="Passwort" aria-label="Passwort" autocomplete="off">
-        <button type="submit" class="prompt-lock__btn">Freischalten</button>
-      </form>
-      <p class="prompt-lock__msg"></p>
-    </div>
     <pre class="prompt-card__body">Du bist ein weltweit führender Stratege für technologische Geopolitik, Systemdesign und vergleichende Regierungslehre. Schau dir die Benchmark-Beispiele unten an, um die erwartete strategische Tiefe, den Ton und das Ambitionsniveau zu verstehen. Nutze diese Beispiele als Inspiration und meine Eingabe (unten) — und entwirf mir eine messerscharfe, visionäre Analyse für ein neues technologisches Ökosystem.
 
 ### Mein strategischer Kontext:
@@ -4757,24 +4681,6 @@ Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren bli
 </script>
 
 <script>
-// ── Europa-Prompt: Passwort-Gate (GOEU) ──
-window.unlockEuropaPrompt = function(ev){
-  ev.preventDefault();
-  var form = ev.target;
-  var card = form.closest('.prompt-card--locked');
-  var input = form.querySelector('.prompt-lock__input');
-  var msg = card.querySelector('.prompt-lock__msg');
-  if((input.value || '').trim().toUpperCase() === 'GOEU'){
-    card.dataset.unlocked = 'true';
-  } else {
-    msg.textContent = 'Falsches Passwort — versuch es nochmal.';
-    msg.style.display = 'block';
-    input.value = '';
-    input.focus();
-  }
-  return false;
-};
-
 // ── Akt-Feedback → Web3Forms (gleicher Mechanismus wie Newsletter auf salon-ai.eu) ──
 window.AKT_FEEDBACK_WEB3FORMS_KEY = '22123534-60a0-47bd-a09e-083f5b1cfb9f';
 window.submitAktFeedback = function(ev){
