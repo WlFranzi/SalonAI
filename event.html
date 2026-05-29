@@ -22,7 +22,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-L2RZV4QPFD');
+    gtag('config', 'G-L2RZV4QPFD', {
+      page_location: location.origin + location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') + location.search
+    });
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
