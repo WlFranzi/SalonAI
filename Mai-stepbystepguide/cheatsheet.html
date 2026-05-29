@@ -1471,5 +1471,49 @@ Kundin: "Drei Klicks bis zum Kernnutzen. Ich klick zwei und springe ab."
   updateActive();
 })();
 </script>
+
+<script>
+// ── GA4: Section-Sicht · Verweildauer · Scroll-Tiefe · Prompt-Kopien ──
+(function(){
+  if (typeof gtag !== 'function') return;
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section'))
+    .filter(function(s){ return !s.parentElement || !s.parentElement.closest('section'); });
+  function nameOf(s){
+    var eb = s.querySelector('.theme__eyebrow');
+    if (eb && eb.textContent.trim()) return eb.textContent.replace(/\s+/g,' ').trim().slice(0,80);
+    var h = s.querySelector('.theme__title, h1, h2, h3');
+    if (h && h.textContent.trim()) return h.textContent.replace(/\s+/g,' ').trim().slice(0,80);
+    return s.id || (s.className && s.className.split(' ')[0]) || null;
+  }
+  var seen = {}, areas = {}, dwell = {}, active = null, activeSince = 0;
+  function addElapsed(){ if (active && activeSince){ dwell[active] = (dwell[active]||0) + (performance.now()-activeSince)/1000; activeSince = performance.now(); } }
+  function sendTime(name){ var s = Math.round(dwell[name]||0); if (s >= 2) gtag('event','section_time',{ section_name:name, seconds:s }); dwell[name] = 0; }
+  function pickActive(){ var best=null, bestA=10000; for (var k in areas){ if (areas[k]>bestA){ bestA=areas[k]; best=k; } } if (best !== active){ addElapsed(); if (active) sendTime(active); active = best; activeSince = performance.now(); } }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var n = e.target.__secName; if (!n) return;
+      var r = e.intersectionRect;
+      areas[n] = e.isIntersecting ? (r.width*r.height) : 0;
+      if (e.isIntersecting && e.intersectionRatio >= 0.3 && !seen[n]){ seen[n] = true; gtag('event','view_section',{ section_name:n }); }
+    });
+    pickActive();
+  }, { threshold:[0,0.15,0.3,0.5,0.75,1] });
+  secs.forEach(function(s){ var n = nameOf(s); if (!n) return; s.__secName = n; io.observe(s); });
+
+  var marks=[25,50,75,90,100], hit={};
+  window.addEventListener('scroll', function(){ var d=document.documentElement; var p=(d.scrollTop+window.innerHeight)/d.scrollHeight*100; marks.forEach(function(m){ if(p>=m && !hit[m]){ hit[m]=true; gtag('event','scroll_depth',{ percent:m }); } }); }, {passive:true});
+
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var theme = btn.closest('section');
+      gtag('event','copy_prompt',{ prompt_name: theme ? nameOf(theme) : 'Prompt' });
+    });
+  });
+
+  function finalFlush(){ addElapsed(); if(active){ sendTime(active); active=null; } }
+  document.addEventListener('visibilitychange', function(){ if(document.hidden) finalFlush(); });
+  window.addEventListener('pagehide', finalFlush);
+})();
+</script>
 </body>
 </html>
