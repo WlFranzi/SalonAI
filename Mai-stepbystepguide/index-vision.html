@@ -2472,7 +2472,7 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   <a class="minitoc__dot" href="#akt4" data-target="akt4">IV</a>
   <a class="minitoc__dot" href="#akt5" data-target="akt5">V</a>
   <a class="minitoc__dot" href="#akt6" data-target="akt6">VI</a>
-  <a class="minitoc__dot" href="#recap" data-target="recap">★</a>
+  <a class="minitoc__dot" href="#europa-frage" data-target="europa-frage">★</a>
   <button class="minitoc__top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Nach oben">↑</button>
 </nav>
 
@@ -2569,6 +2569,7 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
   .i2-arrow{text-align:center;font-family:var(--hand);font-size:1.1rem;color:var(--ink-soft);margin:.9rem 0 -.4rem}
   /* a/b/c-Karten: graue Box weg, drei Karten nebeneinander */
   .tisch--bare{background:transparent !important;box-shadow:none !important;padding:0 !important;max-width:1040px}
+  .tisch--plain{background:transparent !important;box-shadow:none !important;padding:0 !important}
   .tisch--bare .tisch__cards{grid-template-columns:repeat(3,1fr) !important;gap:1rem}
   @media(max-width:760px){.tisch--bare .tisch__cards{grid-template-columns:1fr !important}}
   </style>
@@ -3138,17 +3139,10 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       })();
       </script>
 
-      <details class="exkurs" style="margin:0 0 1rem">
-        <summary class="exkurs__summary">
-          <span class="exkurs__label">Exkurs</span>
-          <span class="exkurs__title">Stimmt das auch für <em>Reasoning-Modelle?</em></span>
-          <span class="exkurs__toggle">Ausklappen</span>
-        </summary>
-        <div class="exkurs__body">
-          <p style="font-family:var(--serif);font-size:1.08rem;line-height:1.6;color:var(--ink);margin-bottom:1rem">Klassische Modelle sind wie ein Experte, dem du eine Frage stellst und der sofort anfängt zu sprechen, ohne Luft zu holen. Er weiß beim ersten Wort noch nicht, wie der Satz enden wird.</p>
-          <p style="font-family:var(--serif);font-size:1.08rem;line-height:1.6;color:var(--ink)">Reasoning-Modelle sind <em>derselbe</em> Experte — aber wenn du ihm die Frage stellst, hält er erst für 30 Sekunden den Mund, geht im Kopf verschiedene Lösungswege durch, verwirft die schlechten, korrigiert seine eigenen Fehler — und gibt dir <em>dann</em> die durchdachte Antwort.</p>
-        </div>
-      </details>
+      <div style="border-left:2px solid var(--iris);padding-left:1.1rem;margin:0 0 1.2rem;max-width:66ch">
+        <p style="font-family:var(--serif);font-style:italic;font-size:.96rem;line-height:1.55;color:var(--ink-soft);margin:0 0 .7rem"><strong style="font-style:normal;color:var(--ink)">Stimmt das auch für Reasoning-Modelle?</strong> Klassische Modelle sind wie ein Experte, dem du eine Frage stellst und der sofort anfängt zu sprechen, ohne Luft zu holen — er weiß beim ersten Wort noch nicht, wie der Satz enden wird.</p>
+        <p style="font-family:var(--serif);font-style:italic;font-size:.96rem;line-height:1.55;color:var(--ink-soft);margin:0">Reasoning-Modelle sind <em>derselbe</em> Experte — aber wenn du ihm die Frage stellst, hält er erst 30 Sekunden inne, geht verschiedene Lösungswege durch, verwirft die schlechten, korrigiert eigene Fehler — und gibt dir <em>dann</em> die durchdachte Antwort.</p>
+      </div>
 
       <div class="deeper-note"><span class="deeper-note__label">Wenn du tiefer willst</span><p class="deeper-note__text">Die KI tippt eigentlich nicht Wörter, sondern <em>Sub-Word-Tokens</em> aus einem Vokabular von 50.000–100.000 Einheiten. Ein Wort wie „Verspätung" kann aus zwei oder drei Tokens bestehen. <span class="konsequenz">Praktisch ändert sich nichts. Aber genau deshalb werden lange Texte fehleranfälliger — jeder Token-Schritt kann driften.</span></p></div>
     </div>
@@ -3427,111 +3421,6 @@ Pro Punkt: 1 Satz Begründung. Nimm kein Blatt vor den Mund.</pre>
     </p>
   </section>
 
-  <!-- ============ HELP-CARD: klein-klein, Schritt für Schritt (couchto5k Day 7 adaption) ============ -->
-  <details class="exkurs exkurs--help" style="margin-top:2rem">
-    <summary class="exkurs__summary">
-      <span class="exkurs__label">Hilfe</span>
-      <span class="exkurs__title">Brauchst du es <em>klein-klein</em>? Schritt-für-Schritt-Anleitung mit allem.</span>
-      <span class="exkurs__toggle">Ausklappen</span>
-    </summary>
-    <div class="exkurs__body">
-      <p style="font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.55;color:var(--ink-soft);margin-bottom:1.4rem">
-        Du installierst gerade Claude. Jetzt zeigst du ihm deinen Desktop und gibst ihm <em>einen einzigen, vagen Satz</em> als Auftrag — und schaust zu, wie er Ordner anlegt, Dateien schreibt und ein Dutzend kleiner Entscheidungen für dich trifft. Das ist der Sprung von <em>"KI, die antwortet"</em> zu <em>"KI, die für dich tut"</em>.
-      </p>
-
-      <div class="help-step">
-        <span class="help-step__num">1</span>
-        <div>
-          <p class="help-step__title">Claude öffnen</p>
-          <p class="help-step__body"><em>Mac:</em> ⌘ + Leertaste, "Claude" tippen, Enter. · <em>Windows:</em> Windows-Taste drücken, "Claude" tippen, Enter.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">2</span>
-        <div>
-          <p class="help-step__title">In den Code-Modus wechseln</p>
-          <p class="help-step__body">Klick den <em>Code-Button</em> oben links in der Seitenleiste (direkt neben Cowork), falls du nicht schon dort bist.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">3</span>
-        <div>
-          <p class="help-step__title">Ordner wählen</p>
-          <p class="help-step__body">Klick <em>"Select folder…"</em> unten und wähl deinen <em>Desktop</em>.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">4</span>
-        <div>
-          <p class="help-step__title">Modell prüfen</p>
-          <p class="help-step__body">Unten rechts steht der Modell-Name. Wenn dort nicht <em>"Opus 4.7"</em> steht (nicht 4.7 1M), klick drauf und wechsel. Effort auf <em>"Medium"</em> reicht.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">5</span>
-        <div>
-          <p class="help-step__title">Ersten Prompt kopieren & einfügen</p>
-          <p class="help-step__body">Kopier den Prompt, füg ihn in Claude ein, Enter:</p>
-          <pre class="help-prompt">Create a folder on my Desktop called context-directory. Inside it, create a file called day-7.md. Write a short summary of what Claude is and why someone would use it instead of just chatting with AI in a browser. Write it like you're explaining it to a smart friend who's skeptical.</pre>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">6</span>
-        <div>
-          <p class="help-step__title">Berechtigung erteilen</p>
-          <p class="help-step__body">Claude fragt nach Erlaubnis, bevor er etwas auf deinem Computer anlegt. Klick <em>"Allow once"</em>. Falls weitere Anfragen kommen — immer <em>"Allow"</em>.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">7</span>
-        <div>
-          <p class="help-step__title">Nachschauen</p>
-          <p class="help-step__body">Claude legt Ordner und Datei an. Geh kurz auf deinen Desktop — der Ordner <em>context-directory</em> ist wirklich da.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">8</span>
-        <div>
-          <p class="help-step__title">Inhalt lesen lassen</p>
-          <p class="help-step__body">Tipp <em>what does it say?</em> und Enter. Claude fasst dir den Inhalt der Datei zusammen.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">9</span>
-        <div>
-          <p class="help-step__title">Datei aufklappen</p>
-          <p class="help-step__body">Klick den Pfeil neben dem Dateinamen, um den vollen Inhalt zu sehen. Du wirst <em>#</em> und <em>*</em> sehen — das ist Markdown, einfach Text mit Formatierungs-Zeichen.</p>
-        </div>
-      </div>
-
-      <div class="help-step">
-        <span class="help-step__num">10</span>
-        <div>
-          <p class="help-step__title">Umschreiben für deinen Job</p>
-          <p class="help-step__body">Jetzt editieren wir die ganze Datei mit <em>einem einzigen Satz</em>. Trag deinen Beruf in die eckigen Klammern ein, dann kopier & einfügen:</p>
-          <pre class="help-prompt">Rewrite that file, but assume the reader isn't a developer. They're a [your job title] who wants to use Claude (which is now available in the desktop app) to manage their work, not write code.</pre>
-          <p class="help-step__body" style="margin-top:.7rem">Klick den Pfeil neben der Datei und schau, wie sie sich verändert hat.</p>
-        </div>
-      </div>
-
-      <p style="font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.55;color:var(--ink);margin-top:1.5rem">
-        → <em>Sie hat sich geändert.</em> Du hast nicht selbst editiert. Du hast einen Satz getippt — und die Datei auf deinem Computer hat sich aktualisiert. Das ist das Fundament für alles, was kommt.
-      </p>
-
-      <div class="help-takeaway">
-        <strong>Kern-Erkenntnis</strong>
-        Der Moment, in dem eine Datei auf deinem Computer sich ändert, weil du etwas getippt hast — da hört <em>"mit KI chatten"</em> auf, und <em>"KI als Werkzeug"</em> fängt an.
-      </div>
-    </div>
-  </details>
 </section>
 
 <!-- ============ II.3 — Chat vs Agent (Self-Explain) ============ -->
@@ -3909,7 +3798,7 @@ Sei direkt. Vermute, wenn du musst — aber sag, dass du vermutest.</pre>
 
     <h3 class="anchor-card__subtitle" style="font-size:1.25rem;margin-top:1.8rem">Die vier Formen von Kontext</h3>
     <p class="anchor-card__def" style="font-size:1.02rem">Woraus besteht dieser Kontext? Vier Arten, dem Modell zu <em>zeigen</em> statt zu <em>erklären</em>. <em>Beispiele</em> kennst du aus Akt I; <em>Bilder</em> und <em>Ordner</em> übst du gleich.</p>
-    <section class="tisch" style="margin-top:1.2rem">
+    <section class="tisch tisch--plain" style="margin-top:1.2rem">
       <div class="tisch__cards">
         <div class="tisch__card"><p class="tisch__card-label">a · Beispiele</p><p class="tisch__card-body">3–5 Vorher/Nachher-Paare. Die <em>Richtung</em> der Veränderung ablesen.</p></div>
         <div class="tisch__card"><p class="tisch__card-label">b · Dokumente</p><p class="tisch__card-body">PDF, DOCX, Tabellen. Eine ganze <em>Wissensbasis</em>, die sonst nirgendwo steht.</p></div>
@@ -4137,7 +4026,7 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     <p class="anchor-card__def" style="font-size:1.05rem">Ganz konkret? Ein Skill ist nichts Geheimnisvolles: eine <em>Textdatei mit Anweisungen</em> im Ordner <em>.claude/skills/</em> deines Workspace. Öffnen, lesen, ändern, löschen — wie jede Datei. <em>Keine Blackbox.</em></p>
 
     <h3 class="anchor-card__subtitle" style="font-size:1.25rem;margin-top:1.8rem">Was so ein Skill alles sein kann</h3>
-    <section class="tisch" style="margin-top:1.2rem">
+    <section class="tisch tisch--plain" style="margin-top:1.2rem">
       <div class="tisch__cards">
         <div class="tisch__card">
           <p class="tisch__card-label">QR-Code-Generator</p>
@@ -4493,67 +4382,37 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     Jetzt hast du das Werkzeug, um sie nicht nur zu <em>fühlen</em>, sondern zu <em>bauen</em>. Lass sie uns gemeinsam beantworten — mit allem, was heute Abend dazugekommen ist.
   </p>
 
-  <div class="iter-note" style="max-width:680px;margin:1.6rem auto 0">
-    <span class="iter-note__label">★ Erst zusammen: wie gehen wir's an?</span>
-    Sammelt kurz am Tisch: Welche Werkzeuge von heute Abend passen hier? Zum Beispiel — der KI <em>drei richtig gute Beispiele</em> zeigen, damit sie die Richtung versteht; die <em>vier Prüf-Fragen</em> an die Antwort hängen; ein <em>Gremium aus sehr unterschiedlichen Köpfen</em> drüberschauen lassen. Erst die Idee — dann der Prompt.
-  </div>
 
   <!-- Drag-&-Drop-Planer: System-Bausteine ziehen + annotieren -->
   <style>
   .plan{max-width:780px;margin:1.8rem auto 0;background:var(--v-glass-strong);border:1px solid var(--v-glass-border);border-radius:22px;padding:1.4rem 1.5rem;box-shadow:var(--v-shadow)}
   .plan__hd{font-family:var(--sans);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:0 0 .9rem;line-height:1.5}
-  .plan__palette{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
-  .plan__chip{font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--ink);background:rgba(255,255,255,.72);border:1px solid var(--rule);border-radius:999px;padding:.5rem 1rem;cursor:grab;transition:all .15s}
-  .plan__chip:hover{border-color:var(--coral);color:var(--coral)}
-  .plan__chip:active{cursor:grabbing}
-  .plan__chip[disabled]{opacity:.32;cursor:default;pointer-events:none}
-  .plan__drop{min-height:88px;border:1.5px dashed var(--rule);border-radius:16px;padding:.8rem;transition:all .15s;display:flex;flex-direction:column;gap:.55rem}
-  .plan__drop.drag-over{border-color:var(--coral);background:rgba(226,106,74,.06)}
-  .plan__hint{font-family:var(--hand);font-size:1.05rem;color:var(--ink-soft);text-align:center;margin:1.2rem 0;opacity:.7}
-  .plan__row{display:grid;grid-template-columns:auto 1fr auto;gap:.6rem;align-items:center;background:rgba(255,255,255,.82);border:1px solid var(--rule);border-left:3px solid var(--coral);border-radius:12px;padding:.55rem .7rem}
-  .plan__row-name{font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.04em;color:var(--coral);text-transform:uppercase;white-space:nowrap}
-  .plan__row input{border:none;background:transparent;font-family:var(--sans);font-size:.9rem;color:var(--ink);width:100%;outline:none}
-  .plan__row-rm{border:none;background:transparent;color:var(--ink-soft);font-size:1.15rem;cursor:pointer;line-height:1;padding:0 .2rem}
-  .plan__row-rm:hover{color:var(--coral)}
+  .plan__field{width:100%;min-height:130px;resize:vertical;font-family:var(--sans);font-size:.95rem;line-height:1.55;color:var(--ink);background:rgba(255,255,255,.82);border:1px solid var(--rule);border-radius:14px;padding:.9rem 1rem;outline:none;transition:border-color .15s}
+  .plan__field::placeholder{color:var(--ink-soft);opacity:.7}
+  .plan__field:focus{border-color:var(--coral)}
+  .plan__btn{margin-top:.95rem;background:var(--ink);color:#fff;border:none;border-radius:999px;padding:.7rem 1.6rem;font-family:var(--sans);font-size:.9rem;font-weight:600;cursor:pointer;transition:background .15s,transform .15s}
+  .plan__btn:hover{background:var(--coral);transform:translateY(-1px)}
   </style>
   <div class="plan">
-    <p class="plan__hd">★ Erst die Idee: zieh die Bausteine in deinen Plan (oder tipp drauf) — und schreib dazu, was jeweils rein soll</p>
-    <div class="plan__palette" id="plan-palette">
-      <button type="button" class="plan__chip" draggable="true" data-comp="Agent">Agent</button>
-      <button type="button" class="plan__chip" draggable="true" data-comp="Memory">Memory</button>
-      <button type="button" class="plan__chip" draggable="true" data-comp="Ablage">Ablage</button>
-      <button type="button" class="plan__chip" draggable="true" data-comp="MCP">MCP</button>
-      <button type="button" class="plan__chip" draggable="true" data-comp="Skill">Skill</button>
-    </div>
-    <div class="plan__drop" id="plan-drop">
-      <p class="plan__hint" id="plan-hint">↓ Bausteine hierher ziehen ↓</p>
-    </div>
+    <p class="plan__hd">Beschreibe deinen Plan — ein paar Denkanstöße:</p>
+    <ul style="margin:0 0 1.1rem;padding-left:1.1rem;font-family:var(--serif);font-size:.92rem;line-height:1.45;color:var(--ink-soft);display:flex;flex-direction:column;gap:.3rem">
+      <li>der KI <em>drei richtig gute Beispiele</em> zeigen</li>
+      <li>ein <em>Gremium</em> erstellen, das jeweils ein eigenes Beispiel erarbeitet</li>
+      <li>die <em>vier Prüf-Fragen</em> an die Antwort hängen</li>
+      <li>erst mit der KI zusammen einen <em>Plan</em> erstellen — dann ausführen, damit die Antwort <em>durchdacht und vielfältig</em> wird</li>
+    </ul>
+    <textarea class="plan__field" id="plan-field" placeholder="Dein Plan in eigenen Worten — was soll die KI tun, mit welchem Material, wer prüft am Ende?"></textarea>
+    <button type="button" class="plan__btn" id="plan-btn">Plan gegenlesen</button>
   </div>
   <script>
   (function(){
-    var palette=document.getElementById('plan-palette'),
-        drop=document.getElementById('plan-drop'),
-        hint=document.getElementById('plan-hint');
-    if(!palette||!drop) return;
-    var ph={Agent:'z.B. plant die Recherche & fasst am Ende zusammen',Sprachmodell:'z.B. entwirft die Vorher/Nachher-Analyse',Memory:'z.B. merkt sich meine Kernthese & Quellen',Ablage:'z.B. Alle EU-Parlaments-Dokumente der letzten 12 Monate',MCP:'z.B. zieht Live-Daten aus EUR-Lex / News',Skill:'z.B. „Europa-Hebel-Analyse" als wiederholbarer Skill'};
-    function add(comp){
-      var chip=palette.querySelector('[data-comp="'+comp+'"]');
-      if(chip&&chip.disabled){ var ex=drop.querySelector('[data-row="'+comp+'"] input'); if(ex) ex.focus(); return; }
-      if(hint) hint.style.display='none';
-      var row=document.createElement('div'); row.className='plan__row'; row.setAttribute('data-row',comp);
-      row.innerHTML='<span class="plan__row-name"></span><input type="text"><button type="button" class="plan__row-rm" aria-label="entfernen">×</button>';
-      row.querySelector('.plan__row-name').textContent=comp;
-      var inp=row.querySelector('input'); inp.placeholder=ph[comp]||'';
-      row.querySelector('.plan__row-rm').addEventListener('click',function(){ row.remove(); if(chip) chip.disabled=false; if(!drop.querySelector('.plan__row')&&hint) hint.style.display=''; });
-      drop.appendChild(row); if(chip) chip.disabled=true; inp.focus();
-    }
-    palette.querySelectorAll('.plan__chip').forEach(function(chip){
-      chip.addEventListener('click',function(){ add(chip.dataset.comp); });
-      chip.addEventListener('dragstart',function(e){ e.dataTransfer.setData('text/plain',chip.dataset.comp); e.dataTransfer.effectAllowed='copy'; });
+    var btn=document.getElementById('plan-btn'),
+        card=document.getElementById('europa-prompt');
+    if(!btn||!card) return;
+    btn.addEventListener('click',function(){
+      card.setAttribute('data-unlocked','true');
+      card.scrollIntoView({behavior:'smooth',block:'start'});
     });
-    drop.addEventListener('dragover',function(e){ e.preventDefault(); drop.classList.add('drag-over'); });
-    drop.addEventListener('dragleave',function(){ drop.classList.remove('drag-over'); });
-    drop.addEventListener('drop',function(e){ e.preventDefault(); drop.classList.remove('drag-over'); var c=e.dataTransfer.getData('text/plain'); if(c) add(c); });
   })();
   </script>
 
@@ -4663,7 +4522,7 @@ Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren bli
   })();
 
   // ===== Mini-TOC active state =====
-  const sections = ['hero','akt1','akt2','akt3','akt4','akt5','akt6','recap']
+  const sections = ['hero','akt1','akt2','akt3','akt4','akt5','akt6','europa-frage']
     .map(id => document.getElementById(id))
     .filter(Boolean);
   const dots = document.querySelectorAll('.minitoc__dot');
