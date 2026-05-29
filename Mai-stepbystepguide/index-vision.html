@@ -2424,9 +2424,15 @@ h1 em, h2 em, h3 em, .chapter__title em, .hero__title em, p em {
 #i6 .rr-prompt{ font-size:.76rem; }
 #i6 > p:last-of-type{ font-size:.92rem; margin:.9rem auto 0 !important; }
 
-/* ============ PROMPT-LOCK (Passwortschutz) ============ */
-.prompt-card--locked[data-unlocked="false"] .prompt-card__body{ display:none; }
-.prompt-card--locked[data-unlocked="false"] .copy-btn{ display:none; }
+/* ============ EUROPA-PROMPT (dezent ausklappbar) ============ */
+.europa-reveal{ max-width:780px; margin:.9rem auto 0; }
+.europa-reveal > summary{ list-style:none; cursor:pointer; font-family:var(--sans); font-size:.78rem; letter-spacing:.04em; color:var(--ink-soft); display:inline-flex; align-items:center; gap:.45rem; padding:.2rem 0; transition:color .15s; }
+.europa-reveal > summary:hover{ color:var(--coral); }
+.europa-reveal > summary::-webkit-details-marker{ display:none; }
+.europa-reveal > summary::before{ content:'▸'; font-size:.7rem; transition:transform .15s; }
+.europa-reveal[open] > summary::before{ transform:rotate(90deg); }
+.europa-reveal[open] > summary{ margin-bottom:.6rem; }
+.europa-reveal .prompt-card{ margin-top:0; }
 
 /* ============ AKT-FEEDBACK ============ */
 .akt-feedback{max-width:680px;margin:0 auto;padding:2rem 1.9rem;background:rgba(255,255,255,.80);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--rule);border-radius:22px;box-shadow:0 8px 30px rgba(40,50,70,.08)}
@@ -3585,28 +3591,56 @@ Bau bitte folgendes:
   <!-- Konkretes Zukunfts-Szenario: die drei Bausteine greifen ineinander -->
   <div style="background:rgba(255,255,255,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:24px;max-width:680px;margin:2.6rem auto 0;padding:2.2rem 1.9rem;box-shadow:0 8px 30px rgba(40,50,70,.10)">
     <p style="font-family:var(--serif);font-style:italic;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:var(--ink-soft);text-align:center;margin:0 0 1.1rem">— und so fühlt sich das nächste Woche an —</p>
-    <p style="font-family:var(--serif);font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.45;color:var(--ink);text-align:center;max-width:52ch;margin:0 auto 1.9rem">
-      Du tippst beiläufig, mitten in einem ganz anderen Gespräch:<br>
-      <em style="color:var(--coral);font-weight:500">„Wir haben im Meeting besprochen, dass Ralf noch seine Orders durchgeht — ich muss dann allen Bescheid sagen und es aufräumen."</em>
-    </p>
-
-    <!-- drei Schritte = die drei Bausteine aus II.4, in Aktion -->
-    <div style="display:flex;flex-direction:column;gap:0;max-width:560px;margin:0 auto">
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:baseline">
-        <span style="font-family:var(--serif);font-style:italic;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);white-space:nowrap">Kontext</span>
-        <p style="margin:0;font-family:var(--serif);font-size:1.02rem;line-height:1.5;color:var(--ink)">Der Satz liegt jetzt vor ihm — im <em>aktuellen Gespräch</em>. Für ihn ist es erst mal nur ein neuer Schnipsel auf dem Tisch.</p>
+    <style>
+    .nextweek{ max-width:520px; margin:0 auto; }
+    .nextweek__bubble{ position:relative; background:#fff; border:1px solid var(--rule); border-radius:18px 18px 18px 5px; padding:1rem 1.2rem; box-shadow:0 6px 20px rgba(40,50,70,.08); }
+    .nextweek__bubble small{ display:block; font-family:var(--sans); font-size:.58rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:.5rem; }
+    .nextweek__bubble em{ font-family:var(--serif); font-style:normal; font-size:clamp(1.02rem,1.7vw,1.18rem); line-height:1.45; color:var(--coral); font-weight:500; }
+    .nextweek__flow{ display:flex; flex-direction:column; align-items:center; gap:.45rem; margin:.8rem 0; }
+    .nextweek__arrow{ font-size:1.35rem; color:var(--ink-soft); line-height:1; }
+    .nextweek__chips{ display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center; }
+    .nextweek__chip{ font-family:var(--sans); font-size:.74rem; background:rgba(226,106,74,.12); color:#a4502e; border:1px solid rgba(226,106,74,.28); border-radius:999px; padding:.28rem .8rem; opacity:0; transform:translateY(-12px); }
+    .nextweek__file{ background:#fbf9f4; border:1px solid var(--rule); border-radius:14px; padding:1rem 1.2rem; box-shadow:var(--v-shadow); }
+    .nextweek__file-name{ font-family:'SF Mono',Menlo,monospace; font-size:.72rem; color:var(--ink-soft); margin:0 0 .55rem; display:flex; align-items:center; gap:.4rem; }
+    .nextweek__file-name::before{ content:'📄'; }
+    .nextweek__cat{ font-family:'SF Mono',Menlo,monospace; font-size:.78rem; color:var(--ink); margin:0 0 .3rem; font-weight:700; }
+    .nextweek__todo{ font-family:'SF Mono',Menlo,monospace; font-size:.82rem; color:var(--ink); margin:.22rem 0; opacity:0; transform:translateX(-10px); }
+    .nextweek__todo b{ color:#7a8c5c; font-weight:700; }
+    .nextweek.is-on .nextweek__chip{ animation:nwChip .5s ease forwards; }
+    .nextweek.is-on .nextweek__todo{ animation:nwTodo .5s ease forwards; }
+    @keyframes nwChip{ to{ opacity:1; transform:translateY(0);} }
+    @keyframes nwTodo{ to{ opacity:1; transform:translateX(0);} }
+    @media(prefers-reduced-motion:reduce){ .nextweek__chip,.nextweek__todo{ opacity:1 !important; transform:none !important; } }
+    </style>
+    <div class="nextweek" id="nextweek">
+      <div class="nextweek__bubble">
+        <small>Du tippst beiläufig — mitten in einem anderen Gespräch</small>
+        <em>„…Ralf geht noch seine Orders durch — ich muss dann allen Bescheid sagen und es aufräumen."</em>
       </div>
-      <div style="font-size:1.3rem;color:var(--ink-soft);text-align:left;padding:.5rem 0 .5rem .2rem;line-height:1">↓</div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:baseline">
-        <span style="font-family:var(--serif);font-style:italic;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#a4502e;white-space:nowrap">Anleitung</span>
-        <p style="margin:0;font-family:var(--serif);font-size:1.02rem;line-height:1.5;color:var(--ink)">Beim Start hat er — wie immer, automatisch — deine <em>claude.md</em> gelesen. Darin steht deine Regel: <em>„Alles, was nach To-do klingt, wandert in memory/reminders.md."</em> Also erkennt er von selbst: das sind zwei Aufgaben, keine Plauderei.</p>
+      <div class="nextweek__flow">
+        <div class="nextweek__arrow">↓</div>
+        <div class="nextweek__chips">
+          <span class="nextweek__chip">erkannt: 2 To-dos</span>
+          <span class="nextweek__chip" style="animation-delay:.15s">Regel aus claude.md</span>
+        </div>
+        <div class="nextweek__arrow">↓</div>
       </div>
-      <div style="font-size:1.3rem;color:var(--ink-soft);text-align:left;padding:.5rem 0 .5rem .2rem;line-height:1">↓</div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:baseline">
-        <span style="font-family:var(--serif);font-style:italic;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--iris);white-space:nowrap">Gedächtnis</span>
-        <p style="margin:0;font-family:var(--serif);font-size:1.02rem;line-height:1.5;color:var(--ink)">Er trägt beide Punkte in <em>memory/reminders.md</em> ein, einsortiert unter <em>Privat</em> — ohne dass du „merk dir das" sagen musstest. Nächsten Morgen liest er die Datei und legt dir die Punkte oben hin.</p>
+      <div class="nextweek__file">
+        <p class="nextweek__file-name">memory/reminders.md</p>
+        <p class="nextweek__cat">## Privat</p>
+        <p class="nextweek__todo" style="animation-delay:.45s"><b>✓</b> Ralf: Orders durchgehen</p>
+        <p class="nextweek__todo" style="animation-delay:.65s"><b>✓</b> alle Bescheid geben &amp; aufräumen</p>
+        <p class="nextweek__todo" style="animation-delay:.95s;color:var(--ink-soft);font-style:italic"><b>↳</b> ganz von allein einsortiert</p>
       </div>
     </div>
+    <script>
+    (function(){
+      var el=document.getElementById('nextweek'); if(!el) return;
+      if(!('IntersectionObserver' in window)){ el.classList.add('is-on'); return; }
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ el.classList.add('is-on'); io.disconnect(); } }); },{threshold:.4});
+      io.observe(el);
+    })();
+    </script>
 
     <p style="font-family:var(--serif);font-style:italic;color:var(--ink-soft);text-align:center;max-width:50ch;margin:1.9rem auto 0;line-height:1.5">
       Das ist der ganze Trick: <em style="color:var(--ink);font-weight:500">einmal die Regel schreiben</em> — und der Agent wendet sie von allein an, jedes Mal, ohne dass du ihn erinnerst.
@@ -4340,15 +4374,17 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
     var btn=document.getElementById('plan-btn');
     if(!btn) return;
     btn.addEventListener('click',function(){
-      var card=document.getElementById('europa-prompt');
-      if(!card) return;
-      card.setAttribute('data-unlocked','true');
-      card.scrollIntoView({behavior:'smooth',block:'start'});
+      var rev=document.getElementById('europa-reveal');
+      if(!rev) return;
+      rev.open=true;
+      rev.scrollIntoView({behavior:'smooth',block:'start'});
     });
   })();
   </script>
 
-  <div class="prompt-card prompt-card--locked" id="europa-prompt" data-unlocked="false">
+  <details class="europa-reveal" id="europa-reveal">
+    <summary>Beispiel-Prompt zum Vergleich ansehen</summary>
+    <div class="prompt-card" id="europa-prompt">
     <p class="prompt-card__label"><span>Prompt — die Frage des Abends, mit KI beantwortet</span><button class="copy-btn" type="button">kopieren</button></p>
     <pre class="prompt-card__body">Du bist ein weltweit führender Stratege für technologische Geopolitik, Systemdesign und vergleichende Regierungslehre. Schau dir die Benchmark-Beispiele unten an, um die erwartete strategische Tiefe, den Ton und das Ambitionsniveau zu verstehen. Nutze diese Beispiele als Inspiration und meine Eingabe (unten) — und entwirf mir eine messerscharfe, visionäre Analyse für ein neues technologisches Ökosystem.
 
@@ -4382,7 +4418,8 @@ Nachher (Benchmark-Hebel): Vertikale Integration (Kaiser Permanente Logik). Vers
 Analysiere nun auf exakt demselben Niveau die Fragestellung meines strategischen Kontexts.
 
 Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren blinden Flecken) und das „Nachher" (das disruptive Potenzial einer spezifisch europäischen KI-Architektur). Zeige auf, wie europäische Werte, der EU AI Act, Datenschutz (DSGVO) und kontinentale Philosophie nicht als Wachstumsbremse, sondern als der ultimative, globale System-Hebel für eine neue Klasse von KI-Systemen fungieren.</pre>
-  </div>
+    </div>
+  </details>
 
 </section>
 

@@ -13,6 +13,12 @@
       "runtimeArgs": ["run", "dev"],
       "cwd": "/Users/franziska/Documents/SalonAI/Website/SalonAI",
       "port": 5173
+    },
+    {
+      "name": "guide",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "Mai-stepbystepguide", "--listen", "8123", "--no-clipboard"],
+      "port": 8123
     }
   ]
 }

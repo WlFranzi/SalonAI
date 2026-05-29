@@ -631,8 +631,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
     <p class="theme__num italic">3</p>
     <p class="theme__eyebrow">Thema Drei</p>
     <h2 class="theme__title">Mischen &amp; Treffen</h2>
-    <p class="theme__usewhen">Wenn du etwas Neues genau zwischen zwei Konzepten suchst.</p>
-    <p class="theme__geo">Du nimmst zwei Punkte auf der Karte und zielst auf <em>die Mitte dazwischen</em>. Was dort liegt, ist oft ein Konzept, für das es noch kein Wort gibt — und genau das macht es brauchbar.</p>
+    <p class="theme__usewhen">Wenn zwei Positionen verhärtet sind und du eine echte dritte Option brauchst — keinen lahmen Kompromiss.</p>
+    <p class="theme__geo">Du nimmst zwei Gegenpole auf der Karte und zielst auf <em>die Mitte dazwischen</em>. Statt dass eine Seite gewinnt oder beide im Kompromiss verlieren, entsteht ein neuer dritter Punkt — eine <em>Synthese</em>, für die es oft noch kein Wort gibt.</p>
   </div>
 
   <div class="theme__viz">
@@ -650,27 +650,27 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
         <text class="label-serif" x="62" y="111" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">+</text>
       </g>
     </svg>
-    <p class="theme__viz-cap">Nicht A, nicht B — <em>der Punkt genau dazwischen.</em></p>
+    <p class="theme__viz-cap">Nicht A, nicht B, kein Kompromiss — <em>ein neuer dritter Punkt.</em></p>
   </div>
 
   <div class="techs">
     <div class="tech">
       <p class="tech__label"><span class="tech__letter">a)</span> Mittelpunkt</p>
-      <p class="tech__name">"Was liegt genau zwischen X und Y?"</p>
+      <p class="tech__name">"Was liegt genau zwischen zwei Fronten?"</p>
       <div class="tech__row">
         <span class="tech__row-label">Prompt</span>
-        <p class="tech__prompt">"Was läge konzeptuell genau zwischen 'TÜV-Prüfung' und 'TikTok-App'? Beschreib das neue Konzept in 3 Sätzen — als ob es ein echtes Produkt wäre."</p>
+        <p class="tech__prompt">"In einer Unternehmenskrise will die PR maximale Transparenz, die Rechtsabteilung absolute Funkstille. Was läge konzeptuell genau zwischen einer 'emotionalen, transparenten PR-Beichte' und einer 'vollständigen, juristischen Nachrichtensperre'? Beschreib den Lösungsansatz in 3 Sätzen."</p>
       </div>
       <div class="tech__row">
         <span class="tech__row-label">Output</span>
-        <p class="tech__output"><em>Beschreibung eines neuen Konzepts</em> (z.B. "ein spielerisch-knapper Prüfreport, der wie ein Social-Feed funktioniert") in 2–3 Sätzen.</p>
+        <p class="tech__output"><em>Eine neue dritte Option</em> — z.B. ein "Fakten-Treuhand-Protokoll": eine rein sachliche Roadmap, die keine Schuld eingesteht, aber den Zeitplan der Aufarbeitung transparent macht. Befriedigt das Informationsbedürfnis der Medien, ohne die Rechtsabteilung angreifbar zu machen.</p>
       </div>
     </div>
   </div>
 
   <div class="failure">
     <span class="failure__label">Häufiger Fehler</span>
-    <p class="failure__text">Wenn die zwei Pole <em>zu weit auseinander</em> liegen, wird die Mitte beliebig — die KI reimt sich was zusammen. Wähl zwei Konzepte, die sich wirklich berühren.</p>
+    <p class="failure__text">Wenn die zwei Pole <em>nichts miteinander zu tun</em> haben, wird die Mitte beliebig — die KI reimt sich was zusammen. Beide Positionen müssen sich am selben Problem reiben.</p>
   </div>
 </section>
 
@@ -756,7 +756,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
     <p class="theme__eyebrow">Thema Fünf</p>
     <h2 class="theme__title">Richtungs-Extraktion</h2>
     <p class="theme__usewhen">Wenn du Stil oder Standard von etwas auf was Neues legen willst.</p>
-    <p class="theme__geo">Die KI mittelt eine <em>Bewegungs-Richtung</em> aus mehreren Vorher/Nachher-Paaren und wendet sie auf einen neuen Input an. Das mächtigste Werkzeug im Alltag.</p>
+    <p class="theme__geo">Die KI mittelt eine <em>Bewegungs-Richtung</em> aus deinen Beispielen &mdash; einzelnen Vorher/Nachher-Paaren oder einem <em>ganzen Set</em> aus guten und schlechten Mustern &mdash; und wendet sie auf einen neuen Input an. Das mächtigste Werkzeug im Alltag.</p>
   </div>
 
   <div class="theme__viz">
@@ -805,6 +805,38 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spac
       <text class="label-hand" x="350" y="60" text-anchor="middle">drei parallele Pfeile = dieselbe Richtung</text>
     </svg>
     <p class="theme__viz-cap">3 Beispiele zeigen die Richtung. <em>Die KI kopiert sie für deinen Input.</em></p>
+
+    <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="margin-top:1.4rem">
+      <!-- BEISPIEL-SET box -->
+      <rect x="40" y="40" width="240" height="150" rx="10" fill="none" stroke="#6b4e8e" stroke-width="2" stroke-dasharray="6,5"/>
+      <text class="label-sans" x="160" y="30" text-anchor="middle" fill="#4a3566">dein Beispiel-Set</text>
+
+      <!-- gut: leaf dots -->
+      <circle cx="80" cy="80" r="7" fill="#7a8c5c"/>
+      <circle cx="120" cy="105" r="7" fill="#7a8c5c"/>
+      <circle cx="95" cy="135" r="7" fill="#7a8c5c"/>
+      <circle cx="150" cy="75" r="7" fill="#7a8c5c"/>
+      <circle cx="170" cy="120" r="7" fill="#7a8c5c"/>
+      <text class="label-serif" x="80" y="168" fill="#4d5a3a">gut &times;5</text>
+
+      <!-- schlecht: coral dots -->
+      <circle cx="225" cy="90" r="7" fill="#dc7757"/>
+      <circle cx="245" cy="125" r="7" fill="#dc7757"/>
+      <circle cx="215" cy="150" r="7" fill="#dc7757"/>
+      <text class="label-serif" x="208" y="80" fill="#c4502f">schlecht &times;3</text>
+
+      <!-- arrow -->
+      <line class="pencil-iris" stroke-width="2.5" x1="300" y1="115" x2="430" y2="115"/>
+      <path class="pencil-iris" stroke-width="2.5" d="M424,108 L432,115 L424,122"/>
+      <text class="label-hand" x="365" y="100" text-anchor="middle">Standard lernen</text>
+
+      <!-- dein Standard target -->
+      <circle cx="540" cy="115" r="55" fill="none" stroke="#6b4e8e" stroke-width="1.5"/>
+      <circle cx="540" cy="115" r="34" fill="none" stroke="#6b4e8e" stroke-width="1.5"/>
+      <circle cx="540" cy="115" r="13" fill="#6b4e8e"/>
+      <text class="label-sans" x="540" y="195" text-anchor="middle" fill="#4a3566">dein Standard</text>
+    </svg>
+    <p class="theme__viz-cap">Nicht nur Paare &mdash; auch ein <em>ganzes Set</em> aus guten und schlechten Beispielen schärft die Richtung.</p>
   </div>
 
   <div class="techs">
