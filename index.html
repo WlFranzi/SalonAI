@@ -1021,14 +1021,14 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
 <body>
 
 <!-- ── ANNOUNCEMENT BAR ────────────────────────────────────────── -->
-<a href="#events" class="announcement-bar" data-i18n-html="announcement_html">🔔 <em>1 Abend · Dein KI-Assistent · Keine Vorkenntnisse · <strong>28. Mai · München</strong></em> →</a>
+<a href="#host" class="announcement-bar" data-i18n-html="announcement_html">🔔 <em>Salon AI jetzt als <strong>privater Abend</strong> — bring deine eigene Gruppe</em> →</a>
 
 <!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
   <div class="inner">
     <a href="/" class="nav-logo">Salon <span class="ai-eu-swap"><span class="word-ai">AI</span><span class="word-eu" aria-hidden="true">EU</span></span></a>
     <div class="nav-right">
-      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav_book_cta">Zum Salon · 28.05</a>
+      <a href="#host" class="nav-cta" data-i18n="nav_book_cta">Co-Host werden</a>
       <!-- 24 EU language switcher -->
       <div id="lang-switcher">
         <button class="lang-btn" id="lang-btn-trigger" onclick="document.getElementById('lang-menu-dd').classList.toggle('open');event.stopPropagation();">
@@ -1076,9 +1076,8 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
     <h1 data-i18n-html="hero_h1">Ein Tischgespräch mit KI.</h1>
     <p class="hero-strapline" data-i18n="hero_strapline">Du verstehst KI nicht wirklich, bis du mit ihr gebaut hast.</p>
     <div class="hero-ctas">
-      <a href="#events" class="hero-cta hero-cta--primary" data-i18n="hero_cta_primary">Zum Salon · 28.05 →</a>
+      <a href="#host" class="hero-cta hero-cta--primary" data-i18n="hero_cta_host">Co-Host werden →</a>
       <a href="#past" class="hero-cta hero-cta--ghost" data-i18n="hero_cta_past">Vergangene Events</a>
-      <a href="#host" class="hero-cta hero-cta--ghost" data-i18n="hero_cta_host">Co-Host werden</a>
     </div>
   </div>
 </section>
@@ -1103,35 +1102,6 @@ footer .copy { font-size: 9.5px; color: rgba(250,249,247,0.13); letter-spacing: 
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- ── SALON-EINLADUNG · the May 28 invitation as a rich, ticket-driving card ─ -->
-<section class="salon-invite-section" id="events">
-  <div class="salon-invite">
-    <div class="salon-invite-banner" data-i18n-html="invite_banner">🔔 <strong>Salon AI Dinner</strong> — danach: bring deine eigene Gruppe</div>
-
-    <div class="salon-invite-hero">
-      <div class="salon-invite-date">
-        <span class="salon-invite-month" data-i18n="event_month">Mai</span>
-        <span class="salon-invite-day">28</span>
-      </div>
-      <div class="salon-invite-body">
-        <p class="salon-invite-eyebrow" data-i18n="invite_eyebrow">Du bist eingeladen</p>
-        <h3 class="salon-invite-title" data-i18n="event_name">Salon AI Dinner — München</h3>
-        <p class="salon-invite-question">„<span data-i18n="event_q_text">Welche KI kann nur von Europäer:innen gebaut werden?</span>"</p>
-        <p class="salon-invite-meta" data-i18n="event_sub">Luitpoldblock · 18:00 Einlass · 18:15 Start · Modern Middle Eastern Cuisine · Drinks inklusive</p>
-        <p class="salon-invite-meta-fine" data-i18n="event_laptop">Ein Laptop reicht. Alles andere kommt mit dem Platz.</p>
-      </div>
-    </div>
-
-    <div class="salon-invite-actions">
-      <a href="https://buy.stripe.com/9B69AT8QAflsdrAcqOfbq02" target="_blank" rel="noopener" class="salon-invite-btn-primary" data-i18n="invite_buy" onclick="gtag('event', 'begin_checkout', { 'items': [{ 'item_name': 'Salon AI Dinner München', 'price': 78.00, 'currency': 'EUR' }] }); gtag('event', 'click_ticket_stripe', { 'event_name': 'mai_28_muenchen', 'destination': 'stripe_checkout' });">Ticket kaufen · 78 € →</a>
-      <div class="salon-invite-secondary-links">
-        <a href="/salon-ai-may-28-2026.ics" class="salon-invite-btn-secondary" download data-i18n="add_to_calendar" onclick="gtag('event', 'add_to_calendar');">In Kalender speichern</a>
-        <button type="button" class="salon-invite-btn-secondary" data-i18n="event_share" onclick="shareEvent(event, this)">Event teilen</button>
-      </div>
-    </div>
   </div>
 </section>
 
