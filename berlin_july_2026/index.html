@@ -525,6 +525,62 @@
       border-radius: 14px;
     }
   }
+
+  /* Testimonial + salon coda */
+  .testimonial {
+    max-width: 680px;
+    margin: 16px auto 0;
+    padding: 40px 24px 8px;
+    text-align: center;
+  }
+  .testimonial blockquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--ink);
+    max-width: 560px;
+    margin: 0 auto 12px;
+    text-wrap: balance;
+  }
+  .testimonial .cite-translation {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink-55);
+    max-width: 560px;
+    margin: 0 auto 18px;
+    text-wrap: balance;
+    line-height: 1.5;
+  }
+  .testimonial cite {
+    font-style: normal;
+    font-family: var(--sans);
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--ink-55);
+  }
+  .salon-coda {
+    text-align: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--ink-70);
+    margin: 36px auto 0;
+    max-width: 560px;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+  @media (max-width: 640px) {
+    .testimonial { padding: 32px 22px 6px; }
+    .testimonial blockquote { font-size: 1.1rem; }
+    .testimonial .cite-translation { font-size: 12.5px; margin-bottom: 14px; }
+    .testimonial cite { font-size: 9px; letter-spacing: 1.8px; }
+    .salon-coda { font-size: 14px; margin-top: 28px; }
+  }
 </style>
 </head>
 <body>
@@ -580,11 +636,8 @@
       <p class="phase-body">Hands-on exploration of AI-powered communication and brand systems. Participants experiment with:</p>
       <ul class="phase-list">
         <li>Brand intelligence agents</li>
-        <li>Media monitoring systems</li>
         <li>Narrative mapping workflows</li>
         <li>Reputation intelligence tools</li>
-        <li>Thought leadership assistants</li>
-        <li>Stakeholder research agents</li>
       </ul>
       <p class="phase-open">The goal is not technical expertise — but first-hand understanding of what modern AI communication infrastructure can and cannot do.</p>
     </div>
@@ -596,6 +649,7 @@
     </div>
   </div>
   <p class="dinner-interlude">Private dinner and networking between the two parts</p>
+  <p class="salon-coda">Not a workshop. Not a panel. A peer salon — hands at the keyboard, voices at the table.</p>
 </div>
 
 <div class="section hosts-section">
@@ -607,20 +661,26 @@
     </div>
     <div class="host-card">
       <p class="h-name">Franziska Wittleder</p>
-      <p class="h-meta">Founder, Biomechanics. Host, Salon AI. Working at the intersection of AI, innovation, and complex systems.</p>
+      <p class="h-meta">Built AI systems at scale at Amazon, Writer, SoundCloud. Host of Salon AI.</p>
     </div>
   </div>
+</div>
+
+<div class="testimonial">
+  <blockquote>„Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude."</blockquote>
+  <span class="cite-translation">„Rarely a format with such intellectual depth and genuine playfulness."</span>
+  <cite>Prof. Dr. Robert Schleip · Pioneer of fascia research · After Salon AI Munich</cite>
 </div>
 
 <div class="section">
   <p class="eyebrow">Practical</p>
   <div class="rahmen rahmen-card">
     <span class="rahmen-line"><strong>July 2026</strong></span>
-    <span class="rahmen-line spacer">Berlin · venue with confirmation</span>
-    <span class="rahmen-line">Private dinner in small company.</span>
-    <span class="rahmen-line spacer">Less presentation, more conversation.</span>
+    <span class="rahmen-line spacer">Berlin · address shared upon confirmation</span>
+    <span class="rahmen-line">Private dinner with a small group.</span>
+    <span class="rahmen-line spacer">Wine, dinner, late conversation.</span>
     <span class="rahmen-line">Laptop recommended.</span>
-    <span class="rahmen-line">No technical background required.</span>
+    <span class="rahmen-line">No prior tooling required — your judgment is the input.</span>
   </div>
 </div>
 
