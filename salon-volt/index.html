@@ -16,553 +16,510 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
-  :root {
-    --paper:    #FAF8F4;
-    --ink:      #1A2238;
-    --ink-deep: #0E1530;
-    --ink-70:   rgba(26,34,56,0.72);
-    --ink-55:   rgba(26,34,56,0.55);
-    --ink-30:   rgba(26,34,56,0.30);
-    --accent:   #4A2C82;   /* Volt-adjacent purple, but slightly more editorial */
-    --eu-blue:  #003399;
-    --rule:     rgba(26,34,56,0.18);
-    --serif:    'Playfair Display', Georgia, 'Times New Roman', serif;
-    --sans:     'DM Sans', system-ui, sans-serif;
-  }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1B2E4A;
+    --navy-deep: #0F1E33;
+    --accent: #003399;
+    --gold: #FFC83D;
+    --ink-white: #fff;
+    --ink-soft: rgba(255,255,255,0.82);
+    --ink-mute: rgba(255,255,255,0.62);
+    --rule: rgba(255,255,255,0.18);
+  }
   html { scroll-behavior: smooth; }
   body {
-    font-family: var(--serif);
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.7;
-    font-size: 17px;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    color: var(--ink-white);
+    background: var(--navy-deep);
+    line-height: 1.65;
+    font-size: 16.5px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-  }
-  a { color: inherit; }
-  ::selection { background: rgba(74,44,130,0.18); }
-
-  header.masthead {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 72px 24px 8px;
-    text-align: center;
-  }
-  p.dateline {
-    font-family: var(--sans);
-    font-size: 10.5px;
-    text-transform: uppercase;
-    letter-spacing: 3.2px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 36px;
-  }
-  p.subtitle-meta {
-    font-family: var(--sans);
-    font-size: 10.5px;
-    text-transform: uppercase;
-    letter-spacing: 3.2px;
-    font-weight: 600;
-    color: var(--ink-55);
-    margin-top: 28px;
-  }
-  h1.title {
-    font-family: var(--serif);
-    font-size: clamp(2.1rem, 5.4vw, 3rem);
-    font-weight: 700;
-    line-height: 1.08;
-    color: var(--ink-deep);
-    margin-bottom: 26px;
-    letter-spacing: -0.018em;
-    text-wrap: balance;
-  }
-  h1.title em {
-    font-style: italic;
-    color: var(--accent);
-    font-weight: 400;
-  }
-  p.tagline {
-    font-family: var(--serif);
-    font-size: clamp(1.05rem, 2.4vw, 1.3rem);
-    font-weight: 400;
-    color: var(--ink-70);
-    line-height: 1.4;
-    margin: 0 auto;
-    text-wrap: balance;
-  }
-  p.tagline em {
-    font-style: italic;
-    color: var(--accent);
-  }
-  p.tagline .tagline-secondary {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 0.88em;
-    color: var(--ink-55);
-  }
-  p.tagline .tagline-secondary em {
-    color: var(--ink-55);
-  }
-  .scarcity-pill {
-    display: inline-block;
-    margin: 40px auto 0;
-    padding: 8px 20px;
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    font-family: var(--sans);
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.6px;
-    color: var(--accent);
+    min-height: 100vh;
   }
 
-  section.hosts {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 56px 24px 8px;
-  }
-  .hosts .h-label {
-    text-align: center;
-    font-family: var(--sans);
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2.6px;
-    font-weight: 700;
-    color: var(--ink-55);
-    margin-bottom: 24px;
-  }
-  .hosts ul { list-style: none; display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 540px; margin: 0 auto; }
-  .hosts li { text-align: center; }
-  .hosts .h-name {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--ink-deep);
-    margin-bottom: 4px;
-    letter-spacing: -0.005em;
-  }
-  .hosts .h-meta {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 14px;
-    color: var(--ink-55);
-    line-height: 1.45;
-  }
-
-  body { counter-reset: chapter; }
-  .section {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 56px 24px;
-    counter-increment: chapter;
+  /* ── STAGE (cloud sky like the homepage) ───────────────── */
+  .stage {
     position: relative;
+    min-height: 100vh;
+    background:
+      url('/Mai-stepbystepguide/clouds/sky-hero.jpg') center top/cover no-repeat fixed,
+      var(--navy-deep);
+    padding: 24px 24px 80px;
   }
-  .section + .section { padding-top: 16px; }
-  .section + .section::before {
+  .stage::before {
     content: '';
-    display: block;
-    width: 48px;
-    height: 1px;
-    background: var(--rule);
-    margin: 0 auto 56px;
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 50% 22%, rgba(15,30,51,0) 30%, rgba(15,30,51,0.35) 100%),
+      linear-gradient(180deg, rgba(15,30,51,0.18) 0%, rgba(15,30,51,0) 24%, rgba(15,30,51,0.12) 62%, rgba(15,30,51,0.55) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .stage > * { position: relative; z-index: 2; }
+
+  /* ── GLASS RECIPE (same DNA as homepage) ──────────────── */
+  .glass {
+    background: rgba(116,112,104,0.26);
+    backdrop-filter: blur(42px) saturate(75%) brightness(1.07);
+    -webkit-backdrop-filter: blur(42px) saturate(75%) brightness(1.07);
+    border: 1px solid rgba(255,250,242,0.22);
+    box-shadow: 0 24px 60px rgba(15,30,51,0.30), inset 0 1px 0 rgba(255,250,242,0.22);
+    border-radius: 32px;
+  }
+  /* Slightly more opaque for long-form readability */
+  .glass--dense {
+    background: rgba(15,30,51,0.55);
+    backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass { background: rgba(54,50,44,0.85); }
+    .glass--dense { background: rgba(15,30,51,0.88); }
+  }
+
+  /* ── SHARED ELEMENTS ──────────────────────────────────── */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.8px; color: rgba(255,255,255,0.92);
+  }
+  .eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* ── HERO ─────────────────────────────────────────────── */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 24px);
+    padding: 48px 0 56px;
+  }
+  .hero__card {
+    width: min(92vw, 620px);
+    padding: clamp(40px, 6vw, 64px) clamp(28px, 5vw, 56px);
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .hero__title {
+    margin-top: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.4vw, 3rem);
+    line-height: 1.08;
+    color: var(--ink-white);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  .hero__title em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .hero__tagline {
+    margin-top: 22px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+    line-height: 1.35;
+    color: var(--ink-soft);
+    max-width: 42ch;
+    text-wrap: balance;
+  }
+  .hero__meta {
+    margin-top: 28px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.7);
+  }
+  .hero__hosts {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  /* ── CONTENT SECTIONS ─────────────────────────────────── */
+  .section {
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 56px);
   }
   .section h2 {
-    font-family: var(--serif);
-    font-size: 1.5rem;
+    margin-top: 16px;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--ink-deep);
-    line-height: 1.22;
-    margin-bottom: 22px;
-    letter-spacing: -0.008em;
-    text-align: center;
-  }
-  .section .eyebrow {
-    display: block;
-    text-align: center;
-    font-family: var(--sans);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 2.6px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-  .section p {
-    font-size: 16.5px;
-    line-height: 1.75;
-    color: var(--ink);
-    margin-bottom: 14px;
+    font-size: clamp(1.6rem, 3.6vw, 2.1rem);
+    line-height: 1.18;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
     text-wrap: balance;
   }
-  .section p:last-child { margin-bottom: 0; }
-  .section p.tightlist {
-    margin-bottom: 4px;
-    line-height: 1.55;
-  }
-  .section p.tightlist:last-of-type {
-    margin-bottom: 18px;
-  }
-  .section p.coda {
-    margin-top: 22px;
-    font-style: italic;
-    color: var(--ink-70);
-  }
-  .section p.terms {
-    margin-top: 28px;
-    text-align: center;
-    font-family: var(--sans);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2.4px;
-    font-weight: 700;
-    color: var(--ink-55);
-  }
-
-  .phases {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 28px;
-    margin: 10px auto 0;
-  }
-  .phase {
-    text-align: left;
-  }
-  .phase .phase-roman {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: var(--accent);
-    margin-bottom: 6px;
-    display: block;
-  }
-  .phase .phase-title {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--ink-deep);
-    margin-bottom: 8px;
-    letter-spacing: -0.005em;
-  }
-  .phase .phase-body {
-    font-family: var(--serif);
-    font-size: 15.5px;
+  .section h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .section p {
+    margin-top: 14px;
+    font-size: 16px;
     line-height: 1.7;
-    color: var(--ink-70);
+    color: var(--ink-soft);
+    text-wrap: balance;
   }
-  .phase .variant-label {
-    font-family: var(--sans);
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
-    color: var(--accent);
-    margin-right: 6px;
-  }
-  .phase .phase-open {
-    font-family: var(--serif);
+  .section p em {
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 13px;
-    line-height: 1.55;
-    color: var(--ink-60, var(--ink-70));
-    margin-top: 16px;
-    padding-top: 14px;
-    border-top: 1px dashed var(--rule, rgba(0,0,0,0.12));
+    color: var(--ink-white);
   }
-  .section p.phase-divider {
-    text-align: center;
-    font-family: var(--sans);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2.6px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 36px 0 22px;
-    padding-top: 26px;
+  .section p strong { color: var(--ink-white); font-weight: 600; }
+  .section .lede { font-size: 17px; color: var(--ink-white); }
+
+  /* ── THEMES (4 sub-blocks inside Discussion Themes) ───── */
+  .theme + .theme {
+    margin-top: 28px;
+    padding-top: 28px;
     border-top: 1px solid var(--rule);
   }
-  @media (min-width: 640px) {
-    .phases { grid-template-columns: 1fr 1fr; gap: 40px; }
-  }
-
-  .rahmen {
-    text-align: center;
-    font-family: var(--serif);
-    font-size: 16px;
-    line-height: 1.8;
-    color: var(--ink-70);
-  }
-  .rahmen .rahmen-line {
-    display: block;
-    margin-bottom: 4px;
-  }
-  .rahmen .rahmen-line.spacer { margin-bottom: 18px; }
-  .rahmen strong { color: var(--ink-deep); font-weight: 700; }
-
-  .testimonial {
-    max-width: 680px;
-    margin: 16px auto 0;
-    padding: 40px 24px 8px;
-    text-align: center;
-  }
-  .testimonial blockquote {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.5;
-    color: var(--ink);
-    max-width: 540px;
-    margin: 0 auto 10px;
-    text-wrap: balance;
-  }
-  .testimonial cite {
-    font-style: normal;
-    font-family: var(--sans);
-    font-size: 9.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  .theme__title {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--ink-55);
+    font-size: 1.2rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .theme__title em { color: var(--gold); font-style: italic; font-weight: 400; }
+  .theme p { margin-top: 10px; }
+  .theme p.q {
+    margin-top: 12px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--ink-white);
+    font-size: 16.5px;
   }
 
-  .rsvp {
-    max-width: 680px;
-    margin: 32px auto 0;
-    padding: 48px 24px 64px;
-    text-align: center;
+  /* ── FORMAT (two-part program) ────────────────────────── */
+  .part { margin-top: 22px; }
+  .part__label {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    color: var(--gold);
   }
-  .rsvp p.rsvp-intro {
-    font-family: var(--serif);
+  .part__title {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .part ul { list-style: none; margin-top: 14px; padding: 0; }
+  .part ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-top: 6px;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+  .part ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .part .questions p {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--ink-white);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .part .europe-flag {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+  .part .europe-flag strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--gold);
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+  }
+  .dinner-break {
+    margin: 36px 0 12px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    padding: 22px 0;
+  }
+  .dinner-break::before,
+  .dinner-break::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--rule);
+    margin: 0 auto 16px;
+  }
+  .dinner-break::after { margin: 16px auto 0; }
+
+  /* ── HOSTS ────────────────────────────────────────────── */
+  .hosts__grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .host { text-align: left; }
+  .host__name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .host__role {
+    margin-top: 4px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+  @media (min-width: 640px) {
+    .hosts__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+  /* ── GUIDING QUESTION ─────────────────────────────────── */
+  .guiding { text-align: center; }
+  .guiding p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+    line-height: 1.4;
+    color: var(--ink-white);
+    text-wrap: balance;
+    max-width: 32ch;
+    margin: 14px auto 0;
+  }
+
+  /* ── RSVP ─────────────────────────────────────────────── */
+  .rsvp { text-align: center; }
+  .rsvp__intro {
+    margin-top: 16px;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 17px;
-    color: var(--ink);
-    margin-bottom: 20px;
-    text-wrap: balance;
+    color: var(--ink-white);
   }
-  .rsvp .signature {
-    font-family: var(--serif);
+  .rsvp__signature {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 15px;
-    color: var(--accent);
-    margin-bottom: 32px;
+    color: var(--gold);
   }
-  a.rsvp-btn {
+  .rsvp__btn {
     display: inline-block;
-    background: var(--accent);
-    color: var(--paper);
-    font-family: var(--sans);
-    font-size: 14px;
+    margin-top: 28px;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
     font-weight: 700;
     padding: 14px 36px;
     border-radius: 999px;
     text-decoration: none;
-    letter-spacing: 0.3px;
-    transition: background 0.18s ease, transform 0.18s ease;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: background 0.18s ease, transform 0.18s ease, color 0.18s ease;
   }
-  a.rsvp-btn:hover { background: var(--ink-deep); transform: translateY(-1px); }
-  .rsvp-note {
-    font-family: var(--serif);
+  .rsvp__btn:hover { background: var(--ink-white); transform: translateY(-1px); }
+  .rsvp__note {
+    margin-top: 18px;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 13px;
-    color: var(--ink-55);
-    margin-top: 18px;
+    color: var(--ink-mute);
   }
 
-  footer.colophon {
+  /* ── COLOPHON ─────────────────────────────────────────── */
+  .colophon {
+    margin: 56px auto 0;
+    max-width: 720px;
+    padding: 28px 24px 24px;
     text-align: center;
-    padding: 36px 24px 56px;
-    font-family: var(--serif);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 12.5px;
-    color: var(--ink-55);
+    color: var(--ink-mute);
     border-top: 1px solid var(--rule);
-    margin-top: 16px;
-  }
-  footer.colophon a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 0.5px; }
-
-  .theme {
-    text-align: left;
-    margin-bottom: 28px;
-  }
-  .theme + .theme {
-    border-top: 1px solid var(--rule);
-    padding-top: 24px;
-    margin-top: 24px;
-  }
-  .theme .theme-title {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--ink-deep);
-    margin-bottom: 12px;
-    letter-spacing: -0.005em;
-  }
-  .theme p { margin-bottom: 10px; }
-  .theme p.theme-q {
-    font-style: italic;
-    color: var(--ink-70);
-    margin-top: 10px;
-  }
-  .guiding-question {
-    text-align: center;
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: var(--ink-deep);
-    text-wrap: balance;
   }
 
+  /* ── MOBILE TWEAKS ────────────────────────────────────── */
   @media (max-width: 640px) {
-    body { font-size: 16px; line-height: 1.65; }
-    header.masthead { padding: 44px 22px 8px; }
-    p.dateline { font-size: 9.5px; letter-spacing: 2.6px; margin-bottom: 26px; }
-    h1.title { margin-bottom: 22px; line-height: 1.12; }
-    p.tagline { font-size: 1rem; }
-    p.tagline .tagline-secondary { font-size: 0.86em; }
-    .scarcity-pill { font-size: 9.5px; letter-spacing: 2.2px; padding: 7px 16px; margin-top: 32px; }
-    section.hosts { padding: 44px 22px 8px; }
-    .hosts ul { gap: 18px; }
-    .hosts .h-name { font-size: 1.05rem; }
-    .hosts .h-meta { font-size: 13.5px; line-height: 1.5; }
-    .section { padding: 40px 22px; }
-    .section + .section { padding-top: 8px; }
-    .section + .section::before { margin-bottom: 30px; }
-    .section h2 { font-size: 1.35rem; margin-bottom: 18px; }
-    .section .eyebrow { font-size: 9.5px; letter-spacing: 2.4px; margin-bottom: 14px; }
-    .section p { font-size: 16px; line-height: 1.7; }
-    .section p.terms { font-size: 10px; letter-spacing: 2px; }
-    .phase .phase-roman { font-size: 12px; }
-    .phase .phase-title { font-size: 1.05rem; }
-    .phase .phase-body { font-size: 15px; line-height: 1.65; }
-    .testimonial { padding: 32px 22px 6px; }
-    .testimonial blockquote { font-size: 1.05rem; line-height: 1.5; }
-    .testimonial cite { font-size: 9px; letter-spacing: 1.8px; }
-    .rahmen { font-size: 15.5px; line-height: 1.75; }
-    .rsvp { padding: 36px 22px 48px; }
-    .rsvp p.rsvp-intro { font-size: 16px; }
-    .rsvp .signature { font-size: 14.5px; }
-    a.rsvp-btn { padding: 13px 30px; font-size: 13.5px; }
+    body { font-size: 15.5px; }
+    .stage { padding: 18px 14px 60px; background-attachment: scroll; }
+    .hero { min-height: calc(100vh - 18px); padding: 32px 0 36px; }
+    .hero__card { padding: 36px 24px; border-radius: 26px; }
+    .section { padding: 32px 24px; border-radius: 26px; margin-top: 22px; }
+    .hero__title { font-size: 2rem; }
+    .section h2 { font-size: 1.5rem; }
+    .part__title { font-size: 1.2rem; }
+    .theme__title { font-size: 1.1rem; }
+    .dinner-break { font-size: 10px; letter-spacing: 2.4px; padding: 18px 0; }
+    .rsvp__btn { padding: 13px 30px; font-size: 12.5px; }
   }
 </style>
 </head>
 <body>
 
-<header class="masthead">
-  <p class="dateline">Salon AI × Volt</p>
-  <h1 class="title">Computational <em>Governance</em></h1>
-  <p class="tagline">A private dinner for Volt members exploring how AI can strengthen democratic decision-making.</p>
-  <p class="subtitle-meta">Hosted by Damian Boeselager &amp; Franziska Wittleder · Berlin · By invitation only</p>
-</header>
+<main class="stage">
 
-<div class="section">
-  <p class="eyebrow">Why this conversation matters</p>
-  <p>Most discussions about AI focus on risks, regulation, and disruption.</p>
-  <p>An equally important question is often overlooked:</p>
-  <p><em>Can AI help societies govern themselves more effectively?</em></p>
-  <p>Advances in machine learning now allow us to simulate complex economic and social systems, test policy interventions before implementation, and explore new models of democratic decision-making.</p>
-  <p class="coda">This emerging field — often called <strong>Computational Governance</strong> — raises profound questions about the future of democracy, public institutions, and collective intelligence.</p>
-</div>
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <section class="hero">
+    <article class="hero__card glass" aria-label="Salon AI × Volt — Computational Governance">
+      <span class="eyebrow">Salon AI × Volt</span>
+      <h1 class="hero__title">Computational <em>Governance</em></h1>
+      <p class="hero__tagline">A private dinner for Volt members exploring how AI can strengthen democratic decision-making.</p>
+      <p class="hero__meta">Date TBA · Berlin · By Invitation Only</p>
+      <p class="hero__hosts">Hosted by Damian Boeselager &amp; Franziska Wittleder</p>
+    </article>
+  </section>
 
-<div class="section">
-  <p class="eyebrow">Discussion Themes</p>
+  <!-- ── Why this conversation matters ──────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Why this conversation matters</span>
+    <h2>Can AI help societies <em>govern themselves</em> more effectively?</h2>
+    <p class="lede">Most discussions about AI focus on risks, regulation, and disruption. An equally important question is often overlooked.</p>
+    <p>Advances in machine learning now allow us to simulate complex economic and social systems, test policy interventions before implementation, and explore new models of democratic decision-making.</p>
+    <p>This emerging field — often called <strong>Computational Governance</strong> — raises profound questions about the future of democracy, public institutions, and collective intelligence.</p>
+  </section>
 
-  <div class="theme">
-    <p class="theme-title">AI as a Policy Laboratory</p>
-    <p>What if governments could test policies in realistic simulations before deploying them in society?</p>
-    <p>Recent research has demonstrated how AI systems can model economic behavior and design policy interventions that improve outcomes across competing objectives such as prosperity and equality.</p>
-    <p class="theme-q">Could governments eventually use AI to stress-test public policy before it affects citizens?</p>
-  </div>
+  <!-- ── Discussion Themes ──────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Discussion Themes</span>
+    <h2>Four questions <em>at the threshold</em> of AI and democracy.</h2>
 
-  <div class="theme">
-    <p class="theme-title">The Challenge of Reward Engineering</p>
-    <p>AI can optimize almost anything. The real question is: <em>what should it optimize for?</em></p>
-    <p>Before AI can help solve societal challenges, humans must first define what success means.</p>
-    <p class="theme-q">How should democratic societies translate values such as freedom, equality, sustainability, and prosperity into systems that can guide AI-driven decision-making? And who gets to decide?</p>
-  </div>
+    <div class="theme" style="margin-top: 28px;">
+      <p class="theme__title">AI as a <em>Policy Laboratory</em></p>
+      <p>What if governments could test policies in realistic simulations before deploying them in society?</p>
+      <p>Recent research has demonstrated how AI systems can model economic behavior and design policy interventions that improve outcomes across competing objectives such as prosperity and equality.</p>
+      <p class="q"><em>Could governments eventually use AI to stress-test public policy before it affects citizens?</em></p>
+    </div>
 
-  <div class="theme">
-    <p class="theme-title">Beyond Human Bias</p>
-    <p>AI often reflects historical biases found in data. But what if AI could also help identify and correct those biases?</p>
-    <p class="theme-q">Can computational systems help create fairer institutions than the ones humans have historically built? What role should regulation play?</p>
-  </div>
+    <div class="theme">
+      <p class="theme__title">The Challenge of <em>Reward Engineering</em></p>
+      <p>AI can optimize almost anything. The real question is: <em>what should it optimize for?</em></p>
+      <p>Before AI can help solve societal challenges, humans must first define what success means.</p>
+      <p class="q"><em>How should democratic societies translate values such as freedom, equality, sustainability, and prosperity into systems that can guide AI-driven decision-making? Who gets to decide?</em></p>
+    </div>
 
-  <div class="theme">
-    <p class="theme-title">Europe's Opportunity</p>
-    <p>Europe has a unique opportunity to shape democratic approaches to AI governance.</p>
-    <p class="theme-q">Can Europe become a global leader in combining technological innovation with democratic legitimacy?</p>
-  </div>
-</div>
+    <div class="theme">
+      <p class="theme__title">Beyond <em>Human Bias</em></p>
+      <p>AI often reflects historical biases found in data. But what if AI could also help identify and correct those biases?</p>
+      <p class="q"><em>Can computational systems help create fairer institutions than the ones humans have historically built? What role should regulation play?</em></p>
+    </div>
 
-<section class="hosts">
-  <p class="h-label">Hosts</p>
-  <ul>
-    <li>
-      <p class="h-name">Damian Boeselager</p>
-      <p class="h-meta">Entrepreneur, policymaker, and advocate for a more democratic and effective Europe.</p>
-    </li>
-    <li>
-      <p class="h-name">Franziska Wittleder</p>
-      <p class="h-meta">Founder, Biomechanics · Host, Salon AI<br>Working at the intersection of AI, complex systems, and innovation.</p>
-    </li>
-  </ul>
-</section>
+    <div class="theme">
+      <p class="theme__title">Europe's <em>Opportunity</em></p>
+      <p>Europe has a unique opportunity to shape democratic approaches to AI governance.</p>
+      <p class="q"><em>Can Europe become a global leader in combining technological innovation with democratic legitimacy?</em></p>
+    </div>
+  </section>
 
-<div class="section">
-  <p class="eyebrow">Format</p>
+  <!-- ── Format ─────────────────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Format</span>
+    <h2>Build, dine, <em>debate.</em></h2>
 
-  <div class="phase">
-    <span class="phase-roman">Part I · 2 Hours</span>
-    <p class="phase-title">Build</p>
-    <p class="phase-body">Hands-on exploration of AI agents and governance infrastructure.</p>
-    <p class="phase-body" style="margin-top: 12px;">Participants work in small groups to prototype systems such as:</p>
-    <p class="phase-body" style="margin-top: 8px;">— Policy research agents<br>— Legislative analysis agents<br>— Citizen feedback systems<br>— Deliberation support tools<br>— Public consultation infrastructure<br>— Collective intelligence workflows</p>
-    <p class="phase-body" style="margin-top: 14px;"><em>No prior AI expertise required.</em></p>
-    <p class="phase-body" style="margin-top: 10px;">The objective is not technical perfection — but first-hand experience with the capabilities and limitations of modern AI systems.</p>
-  </div>
+    <div class="part">
+      <p class="part__label">Part I · 2 Hours</p>
+      <p class="part__title">Build</p>
+      <p>Hands-on exploration of AI agents and governance infrastructure. Participants work in small groups to prototype systems such as:</p>
+      <ul>
+        <li>Policy research agents</li>
+        <li>Legislative analysis agents</li>
+        <li>Citizen feedback systems</li>
+        <li>Deliberation support tools</li>
+        <li>Public consultation infrastructure</li>
+        <li>Collective intelligence workflows</li>
+      </ul>
+      <p><em>No prior AI expertise required.</em> The objective is not technical perfection — but first-hand experience with the capabilities and limitations of modern AI systems.</p>
+    </div>
 
-  <p class="phase-divider">Dinner Break · Informal conversation</p>
+    <div class="dinner-break">Dinner Break · Informal Conversation</div>
 
-  <div class="phase">
-    <span class="phase-roman">Part II · 2 Hours</span>
-    <p class="phase-title">Debate</p>
-    <p class="phase-body">An intensive salon discussion exploring questions such as:</p>
-    <p class="phase-body" style="margin-top: 12px;"><em>Can AI improve democracy?</em></p>
-    <p class="phase-body" style="margin-top: 6px;"><em>Can computational systems help societies make better collective decisions?</em></p>
-    <p class="phase-body" style="margin-top: 6px;"><em>What should AI optimize for — and who defines societal objectives?</em></p>
-    <p class="phase-body" style="margin-top: 6px;"><em>How do we encode democratic values into intelligent systems?</em></p>
-    <p class="phase-body" style="margin-top: 6px;"><em>Can governance become computational? Could future governments simulate policies before implementing them?</em></p>
-    <p class="phase-body" style="margin-top: 6px;"><em>Could AI become a policy-testing environment?</em></p>
-    <p class="phase-body" style="margin-top: 14px;"><strong>Europe's Opportunity</strong></p>
-    <p class="phase-body" style="margin-top: 4px;"><em>Can Europe lead the development of democratic AI infrastructure?</em></p>
-  </div>
-</div>
+    <div class="part">
+      <p class="part__label">Part II · 2 Hours</p>
+      <p class="part__title">Debate</p>
+      <p>An intensive salon discussion exploring questions such as:</p>
+      <div class="questions">
+        <p><em>Can AI improve democracy?</em></p>
+        <p><em>Can computational systems help societies make better collective decisions?</em></p>
+        <p><em>What should AI optimize for — and who defines societal objectives?</em></p>
+        <p><em>How do we encode democratic values into intelligent systems?</em></p>
+        <p><em>Can governance become computational? Could future governments simulate policies before implementing them?</em></p>
+        <p><em>Could AI become a policy-testing environment?</em></p>
+      </div>
+      <div class="europe-flag">
+        <strong>Europe's Opportunity</strong>
+        <p><em>Can Europe lead the development of democratic AI infrastructure?</em></p>
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-  <p class="eyebrow">Guiding Question</p>
-  <p class="guiding-question">If democracy was invented today — in a world of AI, data, and networked societies — what would it look like?</p>
-</div>
+  <!-- ── Hosts ──────────────────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Hosts</span>
+    <h2>Two perspectives, <em>one table.</em></h2>
+    <div class="hosts__grid">
+      <div class="host">
+        <p class="host__name">Damian Boeselager</p>
+        <p class="host__role">Entrepreneur, policymaker, and advocate for a more democratic and effective Europe.</p>
+      </div>
+      <div class="host">
+        <p class="host__name">Franziska Wittleder</p>
+        <p class="host__role">Founder, Biomechanics · Host, Salon AI. Working at the intersection of AI, complex systems, and innovation.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="rsvp">
-  <p class="rsvp-intro">A reply is enough.</p>
-  <p class="signature">— Damian &amp; Franziska</p>
-  <a class="rsvp-btn"
-     href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%C3%97%20Volt%20%C2%B7%20Computational%20Governance%20%C2%B7%20RSVP&body=Dear%20Franziska%20and%20Damian%2C%0A%0AI%20accept%20the%20invitation%20to%20the%20Salon%20AI%20%C3%97%20Volt%20dinner%20on%20Computational%20Governance.%0A%0AName%3A%0AEmail%3A%0AOrganization%20%2F%20Affiliation%3A%0ANote%3A%0A%0ABest%2C"
-     onclick="gtag('event', 'rsvp_click', { 'event_name': 'salon_volt' });">
-    Reply →
-  </a>
-  <p class="rsvp-note">Date and venue will follow with the confirmation.</p>
-</section>
+  <!-- ── Guiding Question ───────────────────────────────── -->
+  <section class="section glass glass--dense guiding">
+    <span class="eyebrow">The Guiding Question</span>
+    <p>If democracy were invented today — in a world of AI, data, and networked societies — <em>what would it look like?</em></p>
+  </section>
 
-<footer class="colophon">
-  Salon AI × Volt<br>
-  By invitation only
-</footer>
+  <!-- ── RSVP ───────────────────────────────────────────── -->
+  <section class="section glass rsvp">
+    <span class="eyebrow">By Invitation Only</span>
+    <p class="rsvp__intro">A reply is enough.</p>
+    <p class="rsvp__signature">— Damian &amp; Franziska</p>
+    <a class="rsvp__btn"
+       href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%C3%97%20Volt%20%C2%B7%20Computational%20Governance%20%C2%B7%20RSVP&body=Dear%20Franziska%20and%20Damian%2C%0A%0AI%20accept%20the%20invitation%20to%20the%20Salon%20AI%20%C3%97%20Volt%20dinner%20on%20Computational%20Governance.%0A%0AName%3A%0AEmail%3A%0AOrganization%20%2F%20Affiliation%3A%0ANote%3A%0A%0ABest%2C"
+       onclick="gtag('event', 'rsvp_click', { 'event_name': 'salon_volt' });">
+      Reply →
+    </a>
+    <p class="rsvp__note">Date and venue follow with the confirmation.</p>
+  </section>
+
+  <footer class="colophon">
+    Salon AI × Volt — By invitation only
+  </footer>
+
+</main>
 
 </body>
 </html>
