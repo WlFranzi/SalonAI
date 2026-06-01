@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Evening Salon · Toni Garrn Foundation × Executive AI Lab · By Invitation</title>
+<link rel="canonical" href="https://www.salon-ai.eu/toni-garrn-foundation/" />
+<meta name="description" content="Evening Salon — Education, Impact & Intelligence in the Age of AI. A private gathering hosted by the Toni Garrn Foundation and Executive AI Lab. By invitation." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2RZV4QPFD', { page_path: '/toni-garrn-foundation/' });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1B2E4A;
+    --navy-deep: #0F1E33;
+    --accent: #003399;
+    --gold: #FFC83D;
+    --ink-white: #fff;
+    --ink-soft: rgba(255,255,255,0.82);
+    --ink-mute: rgba(255,255,255,0.62);
+    --rule: rgba(255,255,255,0.18);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    color: var(--ink-white);
+    background: var(--navy-deep);
+    line-height: 1.65;
+    font-size: 16.5px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+  }
+
+  /* ── STAGE (cloud sky like the homepage) ───────────────── */
+  .stage {
+    position: relative;
+    min-height: 100vh;
+    background:
+      url('/Mai-stepbystepguide/clouds/sky-hero.jpg') center top/cover no-repeat fixed,
+      var(--navy-deep);
+    padding: 24px 24px 80px;
+  }
+  .stage::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 50% 22%, rgba(15,30,51,0) 30%, rgba(15,30,51,0.35) 100%),
+      linear-gradient(180deg, rgba(15,30,51,0.18) 0%, rgba(15,30,51,0) 24%, rgba(15,30,51,0.12) 62%, rgba(15,30,51,0.55) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .stage > * { position: relative; z-index: 2; }
+
+  /* ── GLASS RECIPE (same DNA as homepage) ──────────────── */
+  .glass {
+    background: rgba(116,112,104,0.26);
+    backdrop-filter: blur(42px) saturate(75%) brightness(1.07);
+    -webkit-backdrop-filter: blur(42px) saturate(75%) brightness(1.07);
+    border: 1px solid rgba(255,250,242,0.22);
+    box-shadow: 0 24px 60px rgba(15,30,51,0.30), inset 0 1px 0 rgba(255,250,242,0.22);
+    border-radius: 32px;
+  }
+  /* Slightly more opaque for long-form readability */
+  .glass--dense {
+    background: rgba(15,30,51,0.55);
+    backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass { background: rgba(54,50,44,0.85); }
+    .glass--dense { background: rgba(15,30,51,0.88); }
+  }
+
+  /* ── SHARED ELEMENTS ──────────────────────────────────── */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.8px; color: rgba(255,255,255,0.92);
+  }
+  .eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* ── HERO ─────────────────────────────────────────────── */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 24px);
+    padding: 48px 0 56px;
+  }
+  .hero__card {
+    width: min(92vw, 620px);
+    padding: clamp(40px, 6vw, 64px) clamp(28px, 5vw, 56px);
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .hero__title {
+    margin-top: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.4vw, 3rem);
+    line-height: 1.08;
+    color: var(--ink-white);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  .hero__title em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .hero__tagline {
+    margin-top: 22px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+    line-height: 1.35;
+    color: var(--ink-soft);
+    max-width: 42ch;
+    text-wrap: balance;
+  }
+  .hero__meta {
+    margin-top: 28px;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.7);
+  }
+  .hero__hosts {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  /* ── CONTENT SECTIONS ─────────────────────────────────── */
+  .section {
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 56px);
+  }
+  .section h2 {
+    margin-top: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3.6vw, 2.1rem);
+    line-height: 1.18;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  .section h2 em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .section p {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    text-wrap: balance;
+  }
+  .section p em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--ink-white);
+  }
+  .section p strong { color: var(--ink-white); font-weight: 600; }
+  .section .lede { font-size: 17px; color: var(--ink-white); }
+
+  /* ── THEMES (sub-blocks inside Discussion Themes) ─────── */
+  .theme + .theme {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+  .theme__title {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .theme__title em { color: var(--gold); font-style: italic; font-weight: 400; }
+  .theme p { margin-top: 10px; }
+  .theme p.q {
+    margin-top: 12px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--ink-white);
+    font-size: 16.5px;
+  }
+
+  /* ── FORMAT (two-part program) ────────────────────────── */
+  .part { margin-top: 22px; }
+  .part__label {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    color: var(--gold);
+  }
+  .part__title {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .part ul { list-style: none; margin-top: 14px; padding: 0; }
+  .part ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-top: 6px;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+  .part ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .part .questions p {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--ink-white);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .part .no-list {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+  }
+  .part .no-list span {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 7px 16px;
+  }
+  .dinner-break {
+    margin: 36px 0 12px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    padding: 22px 0;
+  }
+  .dinner-break::before,
+  .dinner-break::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--rule);
+    margin: 0 auto 16px;
+  }
+  .dinner-break::after { margin: 16px auto 0; }
+
+  /* ── HOSTS ────────────────────────────────────────────── */
+  .hosts__grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .host { text-align: left; }
+  .host__name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .host__role {
+    margin-top: 4px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+  @media (min-width: 640px) {
+    .hosts__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+
+  /* ── GUIDING QUESTION ─────────────────────────────────── */
+  .guiding { text-align: center; }
+  .guiding p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+    line-height: 1.4;
+    color: var(--ink-white);
+    text-wrap: balance;
+    max-width: 34ch;
+    margin: 14px auto 0;
+  }
+
+  /* ── RSVP ─────────────────────────────────────────────── */
+  .rsvp { text-align: center; }
+  .rsvp__intro {
+    margin-top: 16px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-white);
+  }
+  .rsvp__signature {
+    margin-top: 8px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--gold);
+  }
+  .rsvp__btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 14px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: background 0.18s ease, transform 0.18s ease, color 0.18s ease;
+  }
+  .rsvp__btn:hover { background: var(--ink-white); transform: translateY(-1px); }
+  .rsvp__note {
+    margin-top: 18px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-mute);
+  }
+
+  /* ── COLOPHON ─────────────────────────────────────────── */
+  .colophon {
+    margin: 56px auto 0;
+    max-width: 720px;
+    padding: 28px 24px 24px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 12.5px;
+    color: var(--ink-mute);
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ── MOBILE TWEAKS ────────────────────────────────────── */
+  @media (max-width: 640px) {
+    body { font-size: 15.5px; }
+    .stage { padding: 18px 14px 60px; background-attachment: scroll; }
+    .hero { min-height: calc(100vh - 18px); padding: 32px 0 36px; }
+    .hero__card { padding: 36px 24px; border-radius: 26px; }
+    .section { padding: 32px 24px; border-radius: 26px; margin-top: 22px; }
+    .hero__title { font-size: 2rem; }
+    .section h2 { font-size: 1.5rem; }
+    .part__title { font-size: 1.2rem; }
+    .theme__title { font-size: 1.1rem; }
+    .dinner-break { font-size: 10px; letter-spacing: 2.4px; padding: 18px 0; }
+    .rsvp__btn { padding: 13px 30px; font-size: 12.5px; }
+  }
+</style>
+</head>
+<body>
+
+<main class="stage">
+
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <section class="hero">
+    <article class="hero__card glass" aria-label="Evening Salon — Toni Garrn Foundation × Executive AI Lab">
+      <span class="eyebrow">Evening Salon</span>
+      <h1 class="hero__title">Education, Impact &amp; <em>Intelligence</em> in the Age of AI</h1>
+      <p class="hero__tagline">A private gathering on how technology can expand access to education — without losing its human core.</p>
+      <p class="hero__meta">Private Gathering · By Invitation</p>
+      <p class="hero__hosts">Hosted by the Toni Garrn Foundation &amp; Executive AI Lab</p>
+    </article>
+  </section>
+
+  <!-- ── About ──────────────────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">About</span>
+    <h2>Can technology expand meaningful <em>access to education?</em></h2>
+    <p class="lede">Artificial intelligence is rapidly reshaping how societies create opportunity — and how access to education can be scaled.</p>
+    <p>For decades, educational impact has depended on institutions, funding structures, and physical infrastructure. Today, AI introduces a new layer: intelligence systems that can support learning, coordination, and decision-making at scale.</p>
+    <p>This private Evening Salon brings together founders, executives, and partners of the Toni Garrn Foundation to explore one central question — <strong>how can technology expand meaningful access to education without losing its human core?</strong></p>
+    <p>This is not about tools. It is about <em>systems, responsibility, and long-term impact.</em></p>
+  </section>
+
+  <!-- ── Discussion Themes ──────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Discussion Themes</span>
+    <h2>Five questions <em>at the threshold</em> of AI and education.</h2>
+
+    <div class="theme" style="margin-top: 28px;">
+      <p class="theme__title">Education <em>at Scale</em></p>
+      <p>How can AI meaningfully support access to education in underserved regions?</p>
+      <p class="q"><em>What role can technology play without replacing human structures?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">The Future of <em>Learning Systems</em></p>
+      <p>What does education look like when knowledge, tutoring, and guidance become available on-demand?</p>
+      <p class="q"><em>What remains uniquely human in learning?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Infrastructure <em>for Impact</em></p>
+      <p>Which parts of educational systems can be strengthened through AI-driven coordination, planning, and intelligence systems?</p>
+      <p class="q"><em>Where are the limits?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Opportunity &amp; <em>Inequality</em> in the AI Era</p>
+      <p>Does AI reduce or increase global inequality in access to knowledge?</p>
+      <p class="q"><em>What determines the direction?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Leadership <em>Responsibility</em></p>
+      <p class="q"><em>What decisions must foundations, founders, and operators make today to ensure technology amplifies — not distorts — educational missions?</em></p>
+    </div>
+  </section>
+
+  <!-- ── Format ─────────────────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Format</span>
+    <h2>Explore, dine, <em>discuss.</em></h2>
+
+    <div class="part">
+      <p class="part__label">Part I · 2 Hours</p>
+      <p class="part__title">Systems &amp; Intelligence</p>
+      <p>A focused, hands-on exploration of how AI systems can support organizational and educational impact. Participants will engage with:</p>
+      <ul>
+        <li>AI-supported learning and tutoring systems</li>
+        <li>Coordination and planning agents for educational initiatives</li>
+        <li>Impact mapping and resource allocation models</li>
+        <li>Intelligence workflows for scaling outreach</li>
+      </ul>
+      <p>The goal is not technical depth, but <em>strategic understanding of what becomes possible.</em></p>
+    </div>
+
+    <div class="dinner-break">Dinner · Private Seated Table</div>
+
+    <div class="part">
+      <p class="part__label">Part II · 2 Hours</p>
+      <p class="part__title">Salon Discussion</p>
+      <p>A high-trust, guided conversation on the future of education, intelligence, and global opportunity systems.</p>
+      <div class="no-list" aria-label="What this is not">
+        <span>No presentations</span>
+        <span>No panels</span>
+        <span>No recordings</span>
+      </div>
+      <p>Just focused dialogue among a small group of decision-makers.</p>
+    </div>
+  </section>
+
+  <!-- ── Hosts ──────────────────────────────────────────── -->
+  <section class="section glass glass--dense">
+    <span class="eyebrow">Hosts</span>
+    <h2>Two missions, <em>one table.</em></h2>
+    <div class="hosts__grid">
+      <div class="host">
+        <p class="host__name">Toni Garrn Foundation</p>
+        <p class="host__role">A foundation dedicated to expanding access to education and opportunity for girls in underserved regions.</p>
+      </div>
+      <div class="host">
+        <p class="host__name">Executive AI Lab</p>
+        <p class="host__role">A research and dialogue format exploring how AI transforms organizations, systems, and decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Guiding Question ───────────────────────────────── -->
+  <section class="section glass glass--dense guiding">
+    <span class="eyebrow">The Guiding Question</span>
+    <p>How can intelligence — human and artificial — expand access to education at global scale <em>without losing its human essence?</em></p>
+  </section>
+
+  <!-- ── RSVP ───────────────────────────────────────────── -->
+  <section class="section glass rsvp">
+    <span class="eyebrow">By Invitation Only</span>
+    <p class="rsvp__intro">A reply is enough.</p>
+    <p class="rsvp__signature">— Toni Garrn Foundation &amp; Executive AI Lab</p>
+    <a class="rsvp__btn"
+       href="mailto:luckysprouts@duck.com?subject=Evening%20Salon%20%C2%B7%20Toni%20Garrn%20Foundation%20%C3%97%20Executive%20AI%20Lab%20%C2%B7%20RSVP&body=Dear%20hosts%2C%0A%0AI%20accept%20the%20invitation%20to%20the%20Evening%20Salon%20on%20Education%2C%20Impact%20%26%20Intelligence%20in%20the%20Age%20of%20AI.%0A%0AName%3A%0AEmail%3A%0AOrganization%20%2F%20Affiliation%3A%0ANote%3A%0A%0ABest%2C"
+       onclick="gtag('event', 'rsvp_click', { 'event_name': 'toni_garrn' });">
+      Reply →
+    </a>
+    <p class="rsvp__note">Date and venue follow with the confirmation.</p>
+  </section>
+
+  <footer class="colophon">
+    Evening Salon — Private conversations. Systemic impact.
+  </footer>
+
+</main>
+
+</body>
+</html>
