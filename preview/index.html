@@ -546,6 +546,251 @@
   .inquiry__btn--send:hover { background: #ffd55a; }
   .inquiry__btn svg { width: 16px; height: 16px; }
 
+  /* ── HOSTS 2-UP (Franziska + Tatiana) ─────────────────── */
+  .hosts-grid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .host-mini {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .host-mini__avatar {
+    width: 36px; height: 36px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: var(--navy-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .host-mini__avatar--tatiana { background: linear-gradient(135deg, var(--iris), var(--coral)); }
+  .host-mini__name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .host-mini__role {
+    margin-top: 3px;
+    font-size: 11.5px;
+    line-height: 1.45;
+    color: var(--ink-mute);
+  }
+  .host-mini__role strong { color: var(--ink-soft); font-weight: 600; }
+  .hosts-synth {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--gold);
+    text-align: center;
+  }
+  @media (max-width: 720px) {
+    .hosts-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── CONVICTION (Warum ihr es selbst macht) ───────────── */
+  .conviction-list {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .conviction-item {
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .conviction-item__num {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: rgba(255,200,61,0.14);
+    color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+    line-height: 1;
+  }
+  .conviction-item__text {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .conviction-item__text strong { color: var(--ink-white); font-weight: 600; }
+  @media (max-width: 720px) {
+    .conviction-list { grid-template-columns: 1fr; }
+  }
+
+  /* ── PACKAGES 3-UP (Pricing) ──────────────────────────── */
+  .packages-grid {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .package {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .package--featured {
+    background: rgba(255,200,61,0.08);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(255,200,61,0.15);
+  }
+  .package__pill {
+    position: absolute;
+    top: -9px;
+    left: 14px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--navy-deep);
+    background: var(--gold);
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .package__name {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .package__desc {
+    margin-top: 4px;
+    font-size: 11.5px;
+    color: var(--ink-mute);
+    line-height: 1.45;
+  }
+  .package__price {
+    margin-top: 12px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--gold);
+    line-height: 1;
+    letter-spacing: -0.018em;
+  }
+  .package__price small {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0;
+  }
+  .package__price--inquiry {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft);
+  }
+  .package__meta {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+  }
+  .package__cta {
+    margin-top: auto;
+    padding-top: 14px;
+  }
+  .package__cta a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--ink-white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--rule);
+    transition: all 0.18s ease;
+  }
+  .package__cta a:hover { background: rgba(255,255,255,0.14); }
+  .package--featured .package__cta a {
+    background: var(--gold);
+    color: var(--navy-deep);
+    border-color: transparent;
+  }
+  .package--featured .package__cta a:hover { background: #ffd55a; }
+  @media (max-width: 820px) {
+    .packages-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── TAX ROW (Gut zu wissen) ──────────────────────────── */
+  .tax-row {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .tax-item {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--rule);
+    font-size: 11.5px;
+    color: var(--ink-mute);
+    line-height: 1.5;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .tax-item__dot {
+    flex-shrink: 0;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 6px;
+  }
+  .tax-item--coral .tax-item__dot { background: var(--coral); }
+  .tax-item strong { color: var(--ink-soft); font-weight: 600; }
+  .tax-item a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255,200,61,0.45);
+  }
+  @media (max-width: 720px) {
+    .tax-row { grid-template-columns: 1fr; }
+  }
+
+  /* ── FLOATING P.S. ─────────────────────────────────────── */
+  .ps {
+    margin-top: 6px;
+    padding: 16px 22px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--gold);
+    border-top: 1px solid var(--rule);
+  }
+
   /* ── INLINE HOST CREDENTIAL (compact line in hero) ────── */
   .credential {
     margin-top: 18px;
@@ -621,8 +866,14 @@
     line-height: 1.4;
     color: var(--ink-mute);
   }
-  @media (max-width: 720px) {
-    .concierge-steps { grid-template-columns: 1fr; }
+  .concierge-steps--4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 900px) {
+    .concierge-steps,
+    .concierge-steps--4 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .concierge-steps,
+    .concierge-steps--4 { grid-template-columns: 1fr; }
   }
 
   /* ── INLINE TAX-NOTE under host options ───────────────── */
@@ -805,79 +1056,129 @@
       <!-- DASHBOARD: one big container holding all sub-zones -->
       <main class="dashboard">
 
-      <!-- HERO -->
+      <!-- 1 · HERO -->
       <section class="card row-hero" id="home">
         <span class="card__eyebrow">Executive AI Labs</span>
-        <h1 class="hero__title">KI ist eine <em>Führungsfrage.</em><br>Bringt sie an euren Tisch.</h1>
-        <p class="hero__strapline">Privat-Labs und Boardroom-Labs in kleiner Runde — Executives bauen ihren eigenen KI-Agenten an einem Abend. Du lädst ein. Wir bringen das Format.</p>
+        <h1 class="hero__title">Sie können mit KI nichts anfangen?<br><em>Wir wetten drei Stunden dagegen.</em></h1>
+        <p class="hero__strapline">Ein kuratierter Abend für Entscheidungsträger:innen. Kein Vortrag — Sie bauen Ihren eigenen KI-Agenten und gehen mit einem konkreten Plan nach Hause.</p>
         <div class="hero__ctas">
-          <a href="#host" class="btn btn--primary">Lab anfragen →</a>
-        </div>
-        <div class="credential">
-          <div class="credential__avatar">F</div>
-          <p class="credential__text">Geleitet von <strong>Franziska Wittleder</strong> · <em>Founder</em> · 15+ Jahre KI bei <strong>Amazon (Ring), Writer, SoundCloud</strong> — Produkte für Millionen Nutzer:innen.</p>
+          <a href="#pakete" class="btn btn--primary">Lab anfragen →</a>
         </div>
       </section>
 
-      <!-- HOST OPTIONS -->
-      <section class="row-host">
-        <article class="card host-card" id="host">
-          <span class="card__eyebrow">Privat-Lab</span>
-          <h2 class="host-card__title">Dein <em>Tisch.</em> Deine Runde.</h2>
-          <p class="host-card__meta">10–15 Executives · ein Abend · bei dir oder kuratiert</p>
-          <ul class="host-card__bullets">
-            <li>Eigene „Frage des Abends" wählbar</li>
-            <li>Diskret, kuratiert, intim</li>
-            <li>Catering inklusive</li>
-          </ul>
-          <div class="host-card__cta">
-            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Privat-Lab" class="btn btn--primary">Privat-Lab anfragen →</a>
+      <!-- 2 · GELEITET VON (Hosts) -->
+      <section class="card" id="hosts">
+        <span class="card__eyebrow">Geleitet von</span>
+        <div class="hosts-grid">
+          <div class="host-mini">
+            <div class="host-mini__avatar">F</div>
+            <div>
+              <div class="host-mini__name">Franziska Wittleder</div>
+              <p class="host-mini__role"><strong>Founder</strong> · 10+ Jahre Amazon (Ring), Writer &amp; SoundCloud · KI-Produkte für Millionen Nutzer:innen. Bringt die KI- und Produkt-Substanz.</p>
+            </div>
           </div>
-          <p class="host-card__tax"><strong>Selbst zahlen?</strong> Werbungskosten — ~30–42% effektiv günstiger. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
-        </article>
-        <article class="card host-card host-card--corporate" id="corporate">
-          <span class="card__eyebrow card__eyebrow--coral">Boardroom Lab</span>
-          <h2 class="host-card__title">Für euer <em>Leadership-Team.</em></h2>
-          <p class="host-card__meta">8–15 Führungskräfte · ½ Tag oder Abend · bei euch</p>
-          <ul class="host-card__bullets">
-            <li>Anwendungsfälle für eure Branche &amp; Rollen</li>
-            <li>Jede:r baut den eigenen Agenten</li>
-            <li>Inklusive Briefing-Vorgespräch</li>
-          </ul>
-          <div class="host-card__cta">
-            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Boardroom%20Lab" class="btn btn--coral">Briefing anfragen →</a>
+          <div class="host-mini">
+            <div class="host-mini__avatar host-mini__avatar--tatiana">T</div>
+            <div>
+              <div class="host-mini__name">Tatiana von Mallinckrodt</div>
+              <p class="host-mini__role"><strong>Head of PR</strong> bei gestalten (Berliner Verlag für Design &amp; visuelle Kultur). Bringt Inszenierung, Erzählung und das kuratierte Erlebnis.</p>
+            </div>
           </div>
-          <p class="host-card__tax"><strong>Firma zahlt?</strong> Steuerfrei nach § 3 Nr. 19 EStG. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
-        </article>
+        </div>
+        <p class="hosts-synth">Substanz trifft Erlebnis.</p>
       </section>
 
-      <!-- CONCIERGE 3-STEP -->
+      <!-- 3 · WARUM IHR ES SELBST MACHT (Conviction) -->
+      <section class="card" id="warum">
+        <span class="card__eyebrow">Warum Sie es selbst machen</span>
+        <p style="margin-top:10px;font-size:13.5px;line-height:1.55;color:var(--ink-mute);">Viele Entscheidungsträger:innen denken, KI sei etwas zum Delegieren. Das Gegenteil ist der Fall.</p>
+        <div class="conviction-list">
+          <div class="conviction-item">
+            <div class="conviction-item__num">1</div>
+            <p class="conviction-item__text"><strong>Nur wer KI selbst angefasst hat, versteht sie</strong> — und kann Entscheidungen fundiert darauf aufbauen, statt blind zu delegieren.</p>
+          </div>
+          <div class="conviction-item">
+            <div class="conviction-item__num">2</div>
+            <p class="conviction-item__text"><strong>Jede:r kann KI direkt im Day-to-Day nutzen</strong> — die konkreten Ideen liefern wir, Sie wenden sie auf Ihren Kontext an.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 · SO LÄUFT'S (4-Step Concierge) -->
       <section class="card" id="ablauf">
         <span class="card__eyebrow">So läuft's · Concierge, kein Shop</span>
-        <div class="concierge-steps">
+        <div class="concierge-steps concierge-steps--4">
           <div class="concierge-step">
             <div class="concierge-step__num">01</div>
             <div>
-              <div class="concierge-step__title">Termin vormerken</div>
-              <p class="concierge-step__body">Unverbindlich · 48h Antwort</p>
+              <div class="concierge-step__title">Runde zusammenstellen</div>
+              <p class="concierge-step__body">Team oder kuratiert</p>
             </div>
           </div>
           <div class="concierge-step">
             <div class="concierge-step__num">02</div>
             <div>
-              <div class="concierge-step__title">Abstimmung · 15 Min</div>
-              <p class="concierge-step__body">Ziel, Runde, Datum klären</p>
+              <div class="concierge-step__title">Termin anfragen</div>
+              <p class="concierge-step__body">Kein offenes Ticket</p>
             </div>
           </div>
           <div class="concierge-step">
             <div class="concierge-step__num">03</div>
             <div>
               <div class="concierge-step__title">Anzahlung 30%</div>
-              <p class="concierge-step__body">Sichert Termin · Rest nach Lab</p>
+              <p class="concierge-step__body">Sichert Termin</p>
+            </div>
+          </div>
+          <div class="concierge-step">
+            <div class="concierge-step__num">04</div>
+            <div>
+              <div class="concierge-step__title">Der Lab-Abend</div>
+              <p class="concierge-step__body">Immersiv · Essen &amp; Drinks</p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- 5 · PAKETE (3 packages) -->
+      <section class="card" id="pakete">
+        <span class="card__eyebrow">Pakete</span>
+        <div class="packages-grid">
+          <article class="package">
+            <div class="package__name">Leaders &amp; Founders</div>
+            <p class="package__desc">Einzelne Entscheidungsträger:innen, gemischte Peer-Runde</p>
+            <div class="package__price">150 € <small>/ Person</small></div>
+            <div class="package__meta">ab 10–12 Personen</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Leaders%20%26%20Founders">Platz vormerken →</a></div>
+          </article>
+          <article class="package package--featured">
+            <span class="package__pill">Beliebteste Wahl</span>
+            <div class="package__name">Firmen-Leadership-Team</div>
+            <p class="package__desc">Führungsteam einer Firma, privat. In-House, auf euren Kontext.</p>
+            <div class="package__price package__price--inquiry">auf Anfrage</div>
+            <div class="package__meta">Pauschale · ½ Tag oder Abend</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Firmen-Leadership-Team">Briefing anfragen →</a></div>
+          </article>
+          <article class="package">
+            <div class="package__name">Follow-up Deep Dive</div>
+            <p class="package__desc">Vertiefung nach einem ersten Lab. Maßgeschneidert, optional 2-teilig.</p>
+            <div class="package__price package__price--inquiry">auf Anfrage</div>
+            <div class="package__meta">Pauschale · individuell</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Deep%20Dive">Deep-Dive anfragen →</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6 · GUT ZU WISSEN (Steuer) -->
+      <section class="card" id="steuer">
+        <span class="card__eyebrow">Gut zu wissen</span>
+        <div class="tax-row">
+          <div class="tax-item"><span class="tax-item__dot"></span><span><strong>Firma zahlt?</strong> Weiterbildung, steuerfrei nach § 3 Nr. 19 EStG · Rechnung läuft an die Firma. <a href="/preview/erstattung/">Details →</a></span></div>
+          <div class="tax-item tax-item--coral"><span class="tax-item__dot"></span><span><strong>Selbst zahlen?</strong> Werbungskosten — effektiv ~30–42% günstiger über die Steuer. <a href="/preview/erstattung/">Details →</a></span></div>
+        </div>
+      </section>
+
+      <!-- 7 · P.S. (Floating Brennan-Aphorismus) -->
+      <p class="ps">„Es ist noch legal, KI nicht zu verstehen. <br>Wir sagen nur: <em>zunehmend seltsam.</em>"</p>
 
       </main>
       <!-- /DASHBOARD -->
@@ -887,22 +1188,6 @@
     </div>
   </div>
 </div>
-
-<script>
-  // Active nav highlight via scroll observation
-  const navLinks = document.querySelectorAll('.nav-btn[href^="#"]');
-  const sections = Array.from(navLinks).map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
-  function syncNav() {
-    const y = window.scrollY + 140;
-    let activeId = sections[0]?.id;
-    for (const sec of sections) {
-      if (sec.offsetTop <= y) activeId = sec.id;
-    }
-    navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId));
-  }
-  window.addEventListener('scroll', syncNav, { passive: true });
-  syncNav();
-</script>
 
 </body>
 </html>
