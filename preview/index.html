@@ -4,399 +4,1239 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
-<title>Salon AI · Executive AI Labs</title>
+<title>Salon AI · Preview</title>
 <link rel="canonical" href="https://www.salon-ai.eu/preview/" />
-<meta name="description" content="Salon AI · Executive AI Labs — ein kuratierter Abend für Entscheidungsträger:innen. Sie bauen Ihren eigenen KI-Agenten." />
+<meta name="description" content="Salon AI — Preview: Tischgespräche mit KI als privater oder Corporate-Salon. Du lädst ein, wir bringen das Format." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
-/* ============================================================
-   THEME — ATO Lab Moodboard (übernommen aus index-vision):
-   weißes Paper, Iris-Dot-Atmosphäre, coral/iris/leaf, italic Cormorant
-   ============================================================ */
-:root{
-  --paper:#ffffff;
-  --paper-tint:#fafafa;
-  --paper-warm:#f5f1ea;
-  --ink:#0e0c0a;
-  --ink-soft:#6b6259;
-  --rule:#eae6df;
-  --gold:#5c4f43;
-  --gold-deep:#2c2520;
-  --iris:#6b4e8e;
-  --iris-deep:#3b285a;
-  --coral:#e26a4a;
-  --coral-soft:#fdf0eb;
-  --leaf:#7a8c5c;
-  --watermark:#f0ece4;
-  --serif:'Cormorant Garamond',Didot,Georgia,serif;
-  --hand:'Caveat',cursive;
-  --sans:'Inter',-apple-system,sans-serif;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;min-width:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
-body{
-  font-family:var(--sans);font-size:16px;line-height:1.6;
-  color:var(--ink);background:var(--paper);
-  -webkit-font-smoothing:antialiased;overflow-x:clip;
-  width:100%;max-width:100vw;
-  /* Iris-Dot-Atmosphäre — fixed */
-  background-image:
-    radial-gradient(circle, rgba(107,78,142,.09) 1px, transparent 1.4px);
-  background-size:48px 48px;
-  background-attachment:fixed;
-}
-img,svg,video{max-width:100%;height:auto;display:block}
-a{color:inherit;text-decoration:none}
-section{padding-left:max(1.5rem,env(safe-area-inset-left,1.5rem)); padding-right:max(1.5rem,env(safe-area-inset-right,1.5rem));}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    /* Warm-paper palette adopted from Mai-stepbystepguide */
+    --paper:       #ffffff;
+    --paper-tint:  #fafafa;
+    --paper-warm:  #f5f1ea;
+    --ink:         #0e0c0a;
+    --ink-soft:    #6b6259;
+    --ink-mute:    rgba(14,12,10,0.55);
+    --ink-faint:   rgba(14,12,10,0.32);
+    --rule:        #eae6df;
+    --rule-strong: rgba(14,12,10,0.18);
+    --gold:        #5c4f43;
+    --gold-deep:   #2c2520;
+    --iris:        #6b4e8e;
+    --iris-deep:   #3b285a;
+    --coral:       #e26a4a;
+    --coral-soft:  #fdf0eb;
+    --leaf:        #7a8c5c;
+    --watermark:   #f0ece4;
+    /* Glass tints — warm cream over cloud sky */
+    --card-bg:     rgba(245,241,234,0.80);
+    --card-bg-hi:  rgba(255,253,247,0.92);
+    /* Legacy aliases used in pre-existing rules — point them to the new tokens */
+    --ink-white:   var(--ink);
+    --navy-deep:   var(--paper-warm);
+    --navy:        var(--paper-warm);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--paper-warm);
+    line-height: 1.55;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    letter-spacing: -0.005em;
+  }
+  /* index-vision pattern: italic em is always coral */
+  em { font-style: italic; color: var(--coral); }
+  strong { font-weight: 600; color: var(--ink); }
 
-/* ============ TYPOGRAPHY ============ */
-h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em;color:var(--ink)}
-h1{font-size:clamp(2.6rem,7.5vw,5.5rem);font-weight:400;font-style:italic;line-height:.95}
-h2{font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:400;font-style:italic}
-h3{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:500;font-style:italic}
-em{font-style:italic;color:var(--coral)}
-strong{font-weight:600;color:var(--ink)}
-p{margin:0}
-.eyebrow{
-  font-family:var(--sans);font-size:.74rem;letter-spacing:.32em;
-  text-transform:uppercase;color:var(--ink-soft);font-weight:600;
-  display:inline-block;
-}
+  /* ── STAGE (warm paper · dotted embedding atmosphere) ─── */
+  .stage {
+    position: relative;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle, rgba(107,78,142,0.09) 1px, transparent 1.4px) 0 0 / 48px 48px fixed,
+      var(--paper-warm);
+  }
+  .stage::before { display: none; }
 
-/* ============ HERO ============ */
-.hero{
-  min-height:88vh;padding:5rem 2.5rem 4rem;
-  display:flex;flex-direction:column;justify-content:center;
-  max-width:1100px;margin:0 auto;
-}
-.hero__eyebrow{margin-bottom:2rem}
-.hero__title{margin-bottom:1.5rem;text-wrap:balance;max-width:14ch}
-.hero__sub{
-  font-family:var(--serif);font-style:italic;font-weight:400;
-  font-size:clamp(1.4rem,2.6vw,2rem);
-  color:var(--ink-soft);margin-bottom:2rem;max-width:40ch;line-height:1.25;
-}
-.hero__sub em{color:var(--coral)}
-.hero__framing{
-  font-family:var(--serif);font-size:1.1rem;line-height:1.55;
-  color:var(--ink);max-width:52ch;margin-bottom:2.4rem;
-}
-.hero__cta{
-  display:inline-block;font-family:var(--sans);font-size:.78rem;
-  font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--paper);background:var(--ink);padding:1rem 2rem;
-  border-radius:999px;transition:background .18s, transform .18s;
-  align-self:flex-start;
-}
-.hero__cta:hover{background:var(--coral);transform:translateY(-1px)}
+  /* ── LAYOUT (single column, one viewport) ────────────── */
+  .app {
+    position: relative;
+    z-index: 2;
+    max-width: 1480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+  }
 
-/* ============ SECTIONS — editorial flow ============ */
-.section{
-  max-width:880px;margin:0 auto;
-  padding:4.5rem 2.5rem;
-}
-.section--wide{max-width:1100px}
-.section__eyebrow{margin-bottom:1.2rem;display:block}
-.section h2{margin-bottom:1.4rem;max-width:22ch;text-wrap:balance}
-.section__lede{
-  font-family:var(--serif);font-size:1.15rem;line-height:1.55;
-  color:var(--ink-soft);max-width:56ch;margin-bottom:1.6rem;
-}
+  /* ── SIDEBAR ──────────────────────────────────────────── */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 0;
+    border-radius: 28px;
+    background: rgba(15,30,51,0.45);
+    backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    border: 1px solid var(--rule);
+    box-shadow: 0 20px 50px rgba(15,30,51,0.30), inset 0 1px 0 rgba(255,255,255,0.10);
+  }
+  .sidebar__brand {
+    width: 44px; height: 44px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    color: var(--navy-deep);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 8px;
+    box-shadow: 0 6px 18px rgba(255,200,61,0.30);
+  }
+  .sidebar__sep {
+    width: 24px; height: 1px;
+    background: var(--rule-strong);
+    margin: 2px 0;
+  }
+  .nav-btn {
+    width: 44px; height: 44px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(98,87,73,0.06);
+    border: 1px solid var(--rule);
+    color: var(--ink-mute);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.18s ease;
+    font-size: 18px;
+  }
+  .nav-btn:hover { background: rgba(98,87,73,0.10); color: var(--ink-white); transform: translateY(-1px); }
+  .nav-btn.is-active {
+    background: linear-gradient(135deg, var(--gold), #f59e0b);
+    color: var(--navy-deep);
+    border-color: transparent;
+    box-shadow: 0 6px 18px rgba(255,200,61,0.30);
+  }
+  .nav-btn svg { width: 20px; height: 20px; }
 
-/* ============ HOSTS ============ */
-.hosts{
-  display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem;
-}
-.host{display:flex;gap:1rem;align-items:flex-start}
-.host__avatar{
-  width:54px;height:54px;flex-shrink:0;border-radius:50%;
-  background:linear-gradient(135deg,var(--coral),var(--gold));
-  color:var(--paper-warm);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.4rem;
-}
-.host__avatar--tatiana{background:linear-gradient(135deg,var(--iris),var(--coral))}
-.host__name{
-  font-family:var(--serif);font-size:1.2rem;font-weight:600;
-  color:var(--ink);margin-bottom:.3rem;line-height:1.2;
-}
-.host__name em{font-style:italic;color:var(--coral);font-weight:500}
-.host__role{font-size:.92rem;line-height:1.5;color:var(--ink-soft);}
-.hosts__synth{
-  text-align:center;margin-top:2rem;
-  font-family:var(--serif);font-style:italic;font-size:1.15rem;
-  color:var(--ink-soft);
-}
-@media(max-width:680px){.hosts{grid-template-columns:1fr;gap:1.5rem}}
+  /* ── MAIN ─────────────────────────────────────────────── */
+  .main {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
 
-/* ============ CONVICTION (Warum) ============ */
-.conviction{
-  list-style:none;padding:0;margin:1.5rem 0 0;
-  display:grid;gap:1.5rem;
-}
-.conviction li{
-  display:flex;gap:1.2rem;align-items:flex-start;
-  font-family:var(--serif);font-size:1.15rem;line-height:1.5;color:var(--ink);
-}
-.conviction li::before{
-  counter-increment:conv;
-  content:counter(conv);
-  flex-shrink:0;width:32px;height:32px;border-radius:50%;
-  background:transparent;border:1px solid var(--coral);
-  color:var(--coral);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.1rem;
-  line-height:1;
-}
-.conviction{counter-reset:conv}
+  /* ── DASHBOARD: ONE big paper card holding all sub-zones in a 2D grid ─ */
+  .dashboard {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    box-shadow: 0 24px 60px rgba(46,37,32,0.10), 0 2px 6px rgba(46,37,32,0.04);
+    border-radius: 24px;
+    padding: 22px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas:
+      "hero    hero"
+      "hosts   pakete"
+      "warum   pakete"
+      "ablauf  pakete"
+      "steuer  steuer";
+    gap: 12px;
+  }
+  /* Sub-zone slot assignments */
+  .dashboard #home   { grid-area: hero; }
+  .dashboard #hosts  { grid-area: hosts; }
+  .dashboard #warum  { grid-area: warum; }
+  .dashboard #ablauf { grid-area: ablauf; }
+  .dashboard #pakete { grid-area: pakete; }
+  .dashboard #steuer { grid-area: steuer; }
 
-/* ============ ABLAUF (Concierge 4-step) ============ */
-.steps{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;
-  margin-top:1.5rem;
-}
-.step__num{
-  font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:1.6rem;color:var(--coral);display:block;line-height:1;margin-bottom:.5rem;
-}
-.step__title{
-  font-family:var(--serif);font-size:1.1rem;font-weight:600;
-  color:var(--ink);margin-bottom:.3rem;line-height:1.2;
-}
-.step__sub{font-size:.86rem;color:var(--ink-soft);line-height:1.4}
-@media(max-width:780px){.steps{grid-template-columns:1fr 1fr;gap:1.5rem}}
-@media(max-width:480px){.steps{grid-template-columns:1fr}}
+  /* Inner cards: warm-paper sub-rubrics, subtle border, no heavy shadow */
+  .dashboard .card {
+    background: var(--paper-tint);
+    border: 1px solid var(--rule);
+    box-shadow: none;
+    border-radius: 16px;
+    padding: 16px 18px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .dashboard .card.row-hero {
+    background: var(--paper-warm);
+    padding: 22px 24px;
+  }
+  /* Tight gaps inside multi-card rows */
+  .dashboard .row-host,
+  .dashboard .row-stats,
+  .dashboard .row-flex { gap: 10px; }
+  .zone-divider { height: 1px; background: var(--rule); border: none; margin: 2px 0; }
+  .zone-label {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.6px; color: var(--ink-mute); padding: 4px 4px 0;
+  }
+  @media (max-width: 900px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "hero" "hosts" "warum" "ablauf" "pakete" "steuer";
+    }
+  }
 
-/* ============ PAKETE ============ */
-.packages{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;
-  margin-top:1.5rem;
-}
-.package{
-  padding:1.6rem 1.4rem;background:var(--paper-tint);
-  border:1px solid var(--rule);border-radius:14px;
-  display:flex;flex-direction:column;position:relative;
-}
-.package--featured{
-  background:var(--coral-soft);border-color:var(--coral);
-}
-.package__pill{
-  position:absolute;top:-12px;left:18px;
-  font-family:var(--sans);font-size:.62rem;font-weight:700;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--paper);
-  background:var(--coral);padding:.35rem .8rem;border-radius:999px;
-}
-.package__name{
-  font-family:var(--serif);font-size:1.35rem;font-weight:600;
-  color:var(--ink);line-height:1.15;margin-bottom:.4rem;
-}
-.package__desc{font-size:.88rem;color:var(--ink-soft);line-height:1.5;margin-bottom:1rem}
-.package__price{
-  font-family:var(--serif);font-weight:600;font-size:2rem;color:var(--ink);
-  line-height:1;letter-spacing:-.02em;
-}
-.package__price small{font-family:var(--sans);font-weight:500;font-size:.78rem;color:var(--ink-soft);letter-spacing:0}
-.package__price--inquiry{font-style:italic;font-size:1.4rem;color:var(--coral);font-weight:500}
-.package__meta{
-  margin-top:.5rem;font-family:var(--sans);font-size:.7rem;font-weight:600;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
-}
-.package__cta{margin-top:auto;padding-top:1.2rem}
-.package__cta a{
-  display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:700;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--ink);
-  border-bottom:1px solid var(--ink);padding-bottom:.25rem;
-  transition:color .18s, border-color .18s;
-}
-.package__cta a:hover{color:var(--coral);border-bottom-color:var(--coral)}
-.package--featured .package__cta a{color:var(--coral);border-bottom-color:var(--coral)}
-@media(max-width:820px){.packages{grid-template-columns:1fr;gap:1.4rem}}
+  /* ── TOPBAR ───────────────────────────────────────────── */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+  }
+  .topbar__eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.4px; color: var(--ink-soft);
+  }
+  .topbar__eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+  }
+  .topbar__actions {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .icon-btn {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(15,30,51,0.50);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+  .icon-btn:hover { background: rgba(98,87,73,0.10); color: var(--ink-white); }
+  .icon-btn svg { width: 16px; height: 16px; }
+  .profile-chip {
+    display: flex; align-items: center; gap: 10px;
+    padding: 5px 14px 5px 6px;
+    border-radius: 999px;
+    background: rgba(15,30,51,0.50);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--rule);
+    color: var(--ink-white);
+    text-decoration: none;
+    transition: all 0.18s ease;
+  }
+  .profile-chip:hover { background: rgba(98,87,73,0.10); }
+  .profile-chip__avatar {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: var(--navy-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 12px;
+  }
+  .profile-chip__name { font-size: 12.5px; font-weight: 600; letter-spacing: 0; }
 
-/* ============ ESCALATION (Faktoid-style) ============ */
-.escalation{
-  padding:5rem 2.5rem;text-align:center;
-  background:var(--paper-tint);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
-  margin:3rem 0;
-}
-.escalation__q{
-  font-family:var(--serif);font-style:italic;font-weight:400;
-  font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;color:var(--ink);
-  max-width:24ch;margin:0 auto 1.2rem;text-wrap:balance;letter-spacing:-.015em;
-}
-.escalation__q em{color:var(--coral);font-weight:500}
-.escalation__a{
-  font-family:var(--serif);font-style:italic;font-size:1.15rem;
-  color:var(--ink-soft);max-width:48ch;margin:0 auto;
-}
+  /* ── CARD ─────────────────────────────────────────────── */
+  .card {
+    background: var(--card-bg);
+    backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    border: 1px solid var(--rule);
+    box-shadow: 0 20px 50px rgba(15,30,51,0.30), inset 0 1px 0 rgba(255,255,255,0.10);
+    border-radius: 24px;
+    padding: 22px;
+  }
+  .card--light {
+    background: rgba(116,112,104,0.22);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .card { background: rgba(15,30,51,0.88); }
+  }
+  .card__eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.4px; color: var(--ink-soft);
+  }
+  .card__eyebrow::before {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold);
+  }
+  .card__eyebrow--coral::before { background: var(--coral); }
+  .card__eyebrow--leaf::before { background: var(--leaf); }
+  .card__eyebrow--iris::before { background: var(--iris); }
 
-/* ============ STEUER (small kv-row) ============ */
-.steuer{
-  display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.2rem;
-}
-.steuer__item{
-  font-family:var(--serif);font-size:1rem;line-height:1.55;color:var(--ink-soft);
-  padding-left:1rem;border-left:2px solid var(--rule);
-}
-.steuer__item--coral{border-left-color:var(--coral)}
-.steuer__item strong{color:var(--ink);font-weight:600}
-.steuer__item a{color:var(--coral);border-bottom:1px solid rgba(226,106,74,.4)}
-.steuer__item a:hover{border-bottom-color:var(--coral)}
-@media(max-width:680px){.steuer{grid-template-columns:1fr}}
+  /* ── ROW 1: HERO ───────────────────────────────────────── */
+  .row-hero { padding: 26px 28px 22px; }
+  .hero__title {
+    margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: clamp(1.7rem, 3.6vw, 2.3rem);
+    line-height: 1.1;
+    color: var(--ink-white);
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+  .hero__title em { font-style: italic; color: var(--coral); font-weight: 500; }
+  .hero__strapline {
+    margin-top: 10px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    font-weight: 400;
+  }
+  .hero__ctas {
+    margin-top: 16px;
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
 
-/* ============ P.S. (closing italic) ============ */
-.ps{
-  max-width:880px;margin:0 auto;padding:3.5rem 2.5rem 5rem;text-align:center;
-  font-family:var(--serif);font-style:italic;font-size:1.25rem;
-  line-height:1.4;color:var(--ink-soft);
-}
-.ps em{color:var(--coral)}
+  /* ── BUTTONS ──────────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    border: 1px solid transparent;
+    transition: all 0.18s ease;
+    cursor: pointer;
+  }
+  .btn--primary { background: var(--gold); color: var(--navy-deep); }
+  .btn--primary:hover { background: var(--gold-deep); transform: translateY(-1px); }
+  .btn--coral { background: var(--coral); color: #fff; }
+  .btn--coral:hover { background: var(--gold-deep); transform: translateY(-1px); }
+  .btn--ghost {
+    background: transparent;
+    color: var(--ink-white);
+    border-color: var(--rule-strong);
+  }
+  .btn--ghost:hover { background: rgba(98,87,73,0.06); border-color: var(--ink-faint); }
+  .btn svg { width: 14px; height: 14px; }
 
-/* ============ FOOTER ============ */
-.footer{
-  text-align:center;padding:2rem 2.5rem 3rem;
-  font-family:var(--sans);font-size:.74rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--ink-soft);font-weight:600;
-  border-top:1px solid var(--rule);max-width:1100px;margin:0 auto;
-}
-.footer a{color:var(--ink-soft);border-bottom:1px solid var(--rule)}
-.footer a:hover{color:var(--coral);border-bottom-color:var(--coral)}
+  /* ── ROW 2: HOST OPTIONS ──────────────────────────────── */
+  .row-host {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .host-card { padding: 18px 20px; }
+  .host-card__title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
+    line-height: 1.18;
+  }
+  .host-card__title em { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold); font-weight: 400; }
+  .host-card__meta {
+    margin-top: 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+  .host-card__body {
+    margin-top: 12px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .host-card__bullets {
+    margin-top: 12px;
+    list-style: none;
+    padding: 0;
+  }
+  .host-card__bullets li {
+    position: relative;
+    padding-left: 16px;
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+  .host-card__bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 7px;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+  .host-card--corporate .host-card__bullets li::before { background: var(--coral); }
+  .host-card__cta { margin-top: 14px; }
 
-/* ============ Small-screen tweaks ============ */
-@media(max-width:680px){
-  .hero{padding:4rem 1.5rem 3rem;min-height:80vh}
-  .section{padding:3.5rem 1.5rem}
-  .escalation{padding:4rem 1.5rem;margin:2rem 0}
-  .ps{padding:3rem 1.5rem 4rem}
-}
+  /* ── ROW 3: STATS (mini ring cards) ───────────────────── */
+  .row-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .stat-card {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .stat-ring {
+    width: 48px; height: 48px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .stat-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .stat-ring__track { fill: none; stroke: var(--rule); stroke-width: 4; }
+  .stat-ring__fill { fill: none; stroke-width: 4; stroke-linecap: round; }
+  .stat-ring--gold .stat-ring__fill { stroke: var(--gold); }
+  .stat-ring--coral .stat-ring__fill { stroke: var(--coral); }
+  .stat-ring--leaf .stat-ring__fill { stroke: var(--leaf); }
+  .stat-ring--iris .stat-ring__fill { stroke: var(--iris); }
+  .stat-ring__icon {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-white);
+    font-size: 15px;
+  }
+  .stat-card__data { min-width: 0; }
+  .stat-card__value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink-white);
+    line-height: 1;
+    letter-spacing: -0.018em;
+  }
+  .stat-card__label {
+    margin-top: 4px;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--ink-mute);
+    font-weight: 600;
+  }
+  .stat-card__sub {
+    margin-top: 2px;
+    font-size: 11px;
+    color: var(--ink-faint);
+    font-weight: 500;
+  }
+
+  /* ── ROW 4: USECASES + QUOTE ──────────────────────────── */
+  .row-flex {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+  }
+  .usecases-grid {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .uc {
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: rgba(98,87,73,0.06);
+    border: 1px solid var(--rule);
+    transition: all 0.18s ease;
+  }
+  .uc:hover { background: rgba(98,87,73,0.10); transform: translateY(-1px); }
+  .uc__icon {
+    width: 28px; height: 28px;
+    border-radius: 9px;
+    background: rgba(255,255,255,0.10);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .uc__cat {
+    font-size: 9.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--gold);
+  }
+  .uc__line {
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  .quote-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px;
+  }
+  .quote__mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    color: var(--gold);
+    opacity: 0.7;
+    line-height: 0.7;
+    margin-bottom: -4px;
+  }
+  .quote__text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--ink-white);
+    text-wrap: balance;
+  }
+  .quote__cite {
+    margin-top: 14px;
+    font-style: normal;
+    font-size: 10.5px;
+    color: var(--ink-mute);
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ── ROW 5: INQUIRY BAR ───────────────────────────────── */
+  .row-inquiry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px 10px 22px;
+  }
+  .inquiry__input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--ink-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    outline: none;
+    padding: 10px 0;
+  }
+  .inquiry__input::placeholder { color: var(--ink-faint); }
+  .inquiry__btn {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: rgba(98,87,73,0.06);
+    color: var(--ink-soft);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+  .inquiry__btn:hover { background: rgba(98,87,73,0.10); color: var(--ink-white); }
+  .inquiry__btn--send {
+    background: var(--gold);
+    color: var(--navy-deep);
+    border-color: transparent;
+  }
+  .inquiry__btn--send:hover { background: var(--gold-deep); }
+  .inquiry__btn svg { width: 16px; height: 16px; }
+
+  /* ── HOSTS 2-UP (Franziska + Tatiana) ─────────────────── */
+  .hosts-grid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .host-mini {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(98,87,73,0.05);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .host-mini__avatar {
+    width: 36px; height: 36px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: var(--navy-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .host-mini__avatar--tatiana { background: linear-gradient(135deg, var(--iris), var(--coral)); }
+  .host-mini__name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .host-mini__role {
+    margin-top: 3px;
+    font-size: 11.5px;
+    line-height: 1.45;
+    color: var(--ink-mute);
+  }
+  .host-mini__role strong { color: var(--ink-soft); font-weight: 600; }
+  .hosts-synth {
+    margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--gold);
+    text-align: center;
+  }
+  @media (max-width: 720px) {
+    .hosts-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── CONVICTION (Warum ihr es selbst macht) ───────────── */
+  .conviction-list {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .conviction-item {
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(98,87,73,0.05);
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .conviction-item__num {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: rgba(226,106,74,0.10);
+    color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+    line-height: 1;
+  }
+  .conviction-item__text {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .conviction-item__text strong { color: var(--ink-white); font-weight: 600; }
+  @media (max-width: 720px) {
+    .conviction-list { grid-template-columns: 1fr; }
+  }
+
+  /* ── PACKAGES 3-UP (Pricing) ──────────────────────────── */
+  .packages-grid {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .package {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: rgba(98,87,73,0.05);
+    border: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .package--featured {
+    background: rgba(226,106,74,0.07);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px rgba(226,106,74,0.18);
+  }
+  .package__pill {
+    position: absolute;
+    top: -9px;
+    left: 14px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--navy-deep);
+    background: var(--gold);
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .package__name {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+  }
+  .package__desc {
+    margin-top: 4px;
+    font-size: 11.5px;
+    color: var(--ink-mute);
+    line-height: 1.45;
+  }
+  .package__price {
+    margin-top: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--gold);
+    line-height: 1;
+    letter-spacing: -0.018em;
+  }
+  .package__price small {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0;
+  }
+  .package__price--inquiry {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft);
+  }
+  .package__meta {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+  }
+  .package__cta {
+    margin-top: auto;
+    padding-top: 14px;
+  }
+  .package__cta a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--ink-white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(98,87,73,0.08);
+    border: 1px solid var(--rule);
+    transition: all 0.18s ease;
+  }
+  .package__cta a:hover { background: rgba(98,87,73,0.12); }
+  .package--featured .package__cta a {
+    background: var(--gold);
+    color: var(--navy-deep);
+    border-color: transparent;
+  }
+  .package--featured .package__cta a:hover { background: var(--gold-deep); }
+  @media (max-width: 820px) {
+    .packages-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── TAX ROW (Gut zu wissen) ──────────────────────────── */
+  .tax-row {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .tax-item {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(98,87,73,0.04);
+    border: 1px solid var(--rule);
+    font-size: 11.5px;
+    color: var(--ink-mute);
+    line-height: 1.5;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .tax-item__dot {
+    flex-shrink: 0;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 6px;
+  }
+  .tax-item--coral .tax-item__dot { background: var(--coral); }
+  .tax-item strong { color: var(--ink-soft); font-weight: 600; }
+  .tax-item a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(226,106,74,0.45);
+  }
+  @media (max-width: 720px) {
+    .tax-row { grid-template-columns: 1fr; }
+  }
+
+  /* ── INLINE ESCALATION (lives inside the Pakete-Karte, under the cards) ─ */
+  .pakete-escalation {
+    margin-top: 22px;
+    padding: 22px 18px 8px;
+    border-top: 1px dashed var(--rule-strong);
+    text-align: center;
+  }
+  .pakete-escalation__q {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  .pakete-escalation__q em { color: var(--coral); font-style: italic; font-weight: 600; }
+  .pakete-escalation__a {
+    margin-top: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* ── MID-PAGE ESCALATION (Sixt binary-choice punch) ───── */
+  .escalation {
+    padding: 22px 24px;
+    text-align: center;
+  }
+  .escalation__question {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+    line-height: 1.25;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  .escalation__question em {
+    color: var(--coral);
+    font-style: italic;
+    font-weight: 700;
+  }
+  .escalation__answer {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+  }
+
+  /* ── FLOATING P.S. ─────────────────────────────────────── */
+  .ps {
+    margin-top: 6px;
+    padding: 16px 22px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--gold);
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ── INLINE HOST CREDENTIAL (compact line in hero) ────── */
+  .credential {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .credential__avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: var(--navy-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .credential__text {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    min-width: 0;
+  }
+  .credential__text strong { color: var(--ink-white); font-weight: 600; }
+  .credential__text em {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  /* ── CONCIERGE 3-STEP (inline row inside one card) ────── */
+  .concierge-steps {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .concierge-step {
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(98,87,73,0.04);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .concierge-step__num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--gold);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+  }
+  .concierge-step__title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+  }
+  .concierge-step__body {
+    margin-top: 2px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: var(--ink-mute);
+  }
+  .concierge-steps--4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 900px) {
+    .concierge-steps,
+    .concierge-steps--4 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .concierge-steps,
+    .concierge-steps--4 { grid-template-columns: 1fr; }
+  }
+
+  /* ── INLINE TAX-NOTE under host options ───────────────── */
+  .host-card__tax {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--rule);
+    font-size: 11.5px;
+    line-height: 1.55;
+    color: var(--ink-mute);
+  }
+  .host-card__tax strong { color: var(--ink-soft); font-weight: 600; }
+  .host-card__tax a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(226,106,74,0.45);
+  }
+  .host-card__tax a:hover { border-bottom-color: var(--gold); }
+
+  /* ── HOST SECTION (long bio) ─────────────────────────── */
+  .host-section { padding: 28px; }
+  .host-section__grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 18px;
+  }
+  .host-section__portrait {
+    width: 180px;
+    height: 220px;
+    border-radius: 20px;
+    background:
+      linear-gradient(135deg, rgba(255,200,61,0.30), rgba(255,122,89,0.30)),
+      linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02));
+    border: 1px solid var(--rule);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 72px;
+    color: var(--ink-white);
+    letter-spacing: -0.02em;
+    overflow: hidden;
+    position: relative;
+  }
+  .host-section__portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .host-section__bio { min-width: 0; }
+  .host-section__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.018em;
+    line-height: 1.1;
+  }
+  .host-section__role {
+    margin-top: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .host-section__bio p {
+    margin-top: 16px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 56ch;
+  }
+  .host-section__bio p strong { color: var(--ink-white); font-weight: 600; }
+  .host-section__bio p em {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink-white);
+    font-weight: 400;
+  }
+  .host-section__credentials {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .host-section__credentials .cred-chip {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(98,87,73,0.06);
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  @media (max-width: 720px) {
+    .host-section__grid { grid-template-columns: 1fr; gap: 18px; }
+    .host-section__portrait { width: 120px; height: 144px; font-size: 52px; }
+  }
+
+  /* ── COLOPHON ─────────────────────────────────────────── */
+  .colophon {
+    text-align: center;
+    padding: 12px 0 4px;
+    font-size: 11.5px;
+    color: var(--ink-faint);
+  }
+  .colophon a {
+    color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--rule-strong);
+  }
+  .colophon a:hover { color: var(--ink-white); }
+
+  /* ── MOBILE / TABLET ──────────────────────────────────── */
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+      padding: 12px;
+      gap: 12px;
+    }
+    .sidebar {
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px 14px;
+      gap: 10px;
+      overflow-x: auto;
+    }
+    .sidebar__sep { width: 1px; height: 24px; margin: 0 4px; }
+    .nav-btn { width: 40px; height: 40px; }
+    .sidebar__brand { margin-bottom: 0; width: 40px; height: 40px; }
+    .row-host { grid-template-columns: 1fr; }
+    .row-stats { grid-template-columns: 1fr 1fr; }
+    .row-flex { grid-template-columns: 1fr; }
+    .usecases-grid { grid-template-columns: 1fr 1fr; }
+    .stage { background-attachment: scroll; }
+    .row-hero { padding: 24px 22px; }
+    .hero__title { font-size: 1.9rem; }
+    .topbar__eyebrow { font-size: 9.5px; letter-spacing: 1.8px; }
+    .profile-chip__name { display: none; }
+  }
+  @media (max-width: 520px) {
+    .usecases-grid { grid-template-columns: 1fr; }
+    .stat-card { padding: 12px 14px; gap: 10px; }
+    .stat-ring { width: 40px; height: 40px; }
+    .stat-card__value { font-size: 18px; }
+  }
 </style>
 </head>
 <body>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <p class="eyebrow hero__eyebrow">Salon AI · Executive AI Labs</p>
-  <h1 class="hero__title">Sie können mit KI<br><em>nichts anfangen?</em></h1>
-  <p class="hero__sub">Wir wetten <em>drei Stunden</em> dagegen.</p>
-  <p class="hero__framing">Ein kuratierter Abend für Entscheidungsträger:innen. Kein Vortrag — Sie bauen Ihren eigenen KI-Agenten.</p>
-  <a href="#pakete" class="hero__cta">Lab anfragen →</a>
-</section>
+<div class="stage">
+  <div class="app">
 
-<!-- ============ GELEITET VON ============ -->
-<section class="section">
-  <p class="eyebrow section__eyebrow">Geleitet von</p>
-  <h2>Substanz trifft <em>Erlebnis.</em></h2>
-  <div class="hosts">
-    <div class="host">
-      <div class="host__avatar">F</div>
-      <div>
-        <p class="host__name">Franziska Wittleder · <em>Founder</em></p>
-        <p class="host__role">10+ Jahre Amazon (Ring), Writer &amp; SoundCloud · KI-Produkte für Millionen Nutzer:innen. Bringt die KI- und Produkt-Substanz.</p>
+    <!-- ── MAIN ────────────────────────────────────────── -->
+    <div class="main">
+
+      <!-- TOPBAR sits OUTSIDE the dashboard so it floats over the cloud -->
+      <div class="topbar">
+        <span class="topbar__eyebrow">Salon AI · Executive AI Labs</span>
       </div>
-    </div>
-    <div class="host">
-      <div class="host__avatar host__avatar--tatiana">T</div>
-      <div>
-        <p class="host__name">Tatiana von Mallinckrodt</p>
-        <p class="host__role">Head of PR bei gestalten (Berliner Verlag für Design &amp; visuelle Kultur). Bringt Inszenierung, Erzählung, kuratiertes Erlebnis.</p>
-      </div>
+
+      <!-- DASHBOARD: one big container holding all sub-zones -->
+      <main class="dashboard">
+
+      <!-- 1 · HERO -->
+      <section class="card row-hero" id="home">
+        <span class="card__eyebrow">Executive AI Labs</span>
+        <h1 class="hero__title">Sie können mit KI nichts anfangen?<br><em>Wir wetten drei Stunden dagegen.</em></h1>
+        <p class="hero__strapline">Ein kuratierter Abend für Entscheidungsträger:innen. Kein Vortrag — Sie bauen Ihren eigenen KI-Agenten.</p>
+        <div class="hero__ctas">
+          <a href="#pakete" class="btn btn--primary">Lab anfragen →</a>
+        </div>
+      </section>
+
+      <!-- 2 · GELEITET VON (Hosts) -->
+      <section class="card" id="hosts">
+        <span class="card__eyebrow">Geleitet von</span>
+        <div class="hosts-grid">
+          <div class="host-mini">
+            <div class="host-mini__avatar">F</div>
+            <div>
+              <div class="host-mini__name">Franziska Wittleder</div>
+              <p class="host-mini__role"><strong>Founder</strong> · 10+ Jahre Amazon (Ring), Writer &amp; SoundCloud · KI-Produkte für Millionen Nutzer:innen. Bringt die KI- und Produkt-Substanz.</p>
+            </div>
+          </div>
+          <div class="host-mini">
+            <div class="host-mini__avatar host-mini__avatar--tatiana">T</div>
+            <div>
+              <div class="host-mini__name">Tatiana von Mallinckrodt</div>
+              <p class="host-mini__role"><strong>Head of PR</strong> bei gestalten (Berliner Verlag für Design &amp; visuelle Kultur). Bringt Inszenierung, Erzählung und das kuratierte Erlebnis.</p>
+            </div>
+          </div>
+        </div>
+        <p class="hosts-synth">Substanz trifft Erlebnis.</p>
+      </section>
+
+      <!-- 3 · WARUM IHR ES SELBST MACHT (Conviction) -->
+      <section class="card" id="warum">
+        <span class="card__eyebrow">Warum Sie es selbst machen</span>
+        <p style="margin-top:10px;font-size:13.5px;line-height:1.55;color:var(--ink-mute);">Viele Entscheidungsträger:innen denken, KI sei etwas zum Delegieren. Das Gegenteil ist der Fall.</p>
+        <div class="conviction-list">
+          <div class="conviction-item">
+            <div class="conviction-item__num">1</div>
+            <p class="conviction-item__text"><strong>Nur wer KI selbst angefasst hat,</strong> kann entscheiden, wie sie in der Organisation eingesetzt werden soll.</p>
+          </div>
+          <div class="conviction-item">
+            <div class="conviction-item__num">2</div>
+            <p class="conviction-item__text"><strong>Jede:r (!) kann KI direkt im Day-to-Day nutzen</strong> — die Ideen liefern wir.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 · SO LÄUFT'S (4-Step Concierge) -->
+      <section class="card" id="ablauf">
+        <span class="card__eyebrow">So läuft's · Concierge, kein Shop</span>
+        <div class="concierge-steps concierge-steps--4">
+          <div class="concierge-step">
+            <div class="concierge-step__num">01</div>
+            <div>
+              <div class="concierge-step__title">Runde zusammenstellen</div>
+              <p class="concierge-step__body">Team oder kuratiert</p>
+            </div>
+          </div>
+          <div class="concierge-step">
+            <div class="concierge-step__num">02</div>
+            <div>
+              <div class="concierge-step__title">Termin anfragen</div>
+              <p class="concierge-step__body">Kein offenes Ticket</p>
+            </div>
+          </div>
+          <div class="concierge-step">
+            <div class="concierge-step__num">03</div>
+            <div>
+              <div class="concierge-step__title">Anzahlung 30%</div>
+              <p class="concierge-step__body">Sichert Termin</p>
+            </div>
+          </div>
+          <div class="concierge-step">
+            <div class="concierge-step__num">04</div>
+            <div>
+              <div class="concierge-step__title">Der Lab-Abend</div>
+              <p class="concierge-step__body">Immersiv · Essen &amp; Drinks</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 · PAKETE (3 packages) -->
+      <section class="card" id="pakete">
+        <span class="card__eyebrow">Pakete</span>
+        <div class="packages-grid">
+          <article class="package">
+            <div class="package__name">Leaders &amp; Founders</div>
+            <p class="package__desc">Einzelne Entscheidungsträger:innen, gemischte Peer-Runde</p>
+            <div class="package__price">150 € <small>/ Person</small></div>
+            <div class="package__meta">ab 10–12 Personen</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Leaders%20%26%20Founders">Platz vormerken →</a></div>
+          </article>
+          <article class="package package--featured">
+            <span class="package__pill">Beliebteste Wahl</span>
+            <div class="package__name">Firmen-Leadership-Team</div>
+            <p class="package__desc">Führungsteam einer Firma, privat. In-House, auf euren Kontext.</p>
+            <div class="package__price package__price--inquiry">auf Anfrage</div>
+            <div class="package__meta">Pauschale · ½ Tag oder Abend</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Firmen-Leadership-Team">Briefing anfragen →</a></div>
+          </article>
+          <article class="package">
+            <div class="package__name">Follow-up Deep Dive</div>
+            <p class="package__desc">Vertiefung nach einem ersten Lab. Maßgeschneidert, optional 2-teilig.</p>
+            <div class="package__price package__price--inquiry">auf Anfrage</div>
+            <div class="package__meta">Pauschale · individuell</div>
+            <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Deep%20Dive">Deep-Dive anfragen →</a></div>
+          </article>
+        </div>
+
+        <!-- Inline escalation directly under the Paket-Karten -->
+        <div class="pakete-escalation">
+          <p class="pakete-escalation__q">KI nutzen — <em>oder abgehängt werden?</em></p>
+          <p class="pakete-escalation__a">Wir nehmen Ihnen eine der zwei Entscheidungen ab.</p>
+        </div>
+      </section>
+
+      <!-- 6 · GUT ZU WISSEN (Steuer) -->
+      <section class="card" id="steuer">
+        <span class="card__eyebrow">Gut zu wissen</span>
+        <div class="tax-row">
+          <div class="tax-item"><span class="tax-item__dot"></span><span><strong>Firma zahlt?</strong> Weiterbildung, steuerfrei nach § 3 Nr. 19 EStG · Rechnung läuft an die Firma. <a href="/preview/erstattung/">Details →</a></span></div>
+          <div class="tax-item tax-item--coral"><span class="tax-item__dot"></span><span><strong>Selbst zahlen?</strong> Werbungskosten — effektiv ~30–42% günstiger über die Steuer. <a href="/preview/erstattung/">Details →</a></span></div>
+        </div>
+      </section>
+
+      </main>
+      <!-- /DASHBOARD -->
+
+      <p class="colophon">Salon AI · Executive AI Labs · <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a></p>
+
     </div>
   </div>
-</section>
-
-<!-- ============ WARUM SIE ES SELBST MACHEN ============ -->
-<section class="section">
-  <p class="eyebrow section__eyebrow">Warum Sie es selbst machen</p>
-  <h2>KI ist <em>keine Delegationsaufgabe.</em></h2>
-  <p class="section__lede">Viele Entscheidungsträger:innen denken, KI sei etwas zum Delegieren. Das Gegenteil ist der Fall.</p>
-  <ol class="conviction">
-    <li><strong>Nur wer KI selbst angefasst hat,</strong> kann entscheiden, wie sie in der Organisation eingesetzt werden soll.</li>
-    <li><strong>Jede:r (!) kann KI direkt im Day-to-Day nutzen</strong> — die Ideen liefern wir.</li>
-  </ol>
-</section>
-
-<!-- ============ SO LÄUFT'S ============ -->
-<section class="section section--wide">
-  <p class="eyebrow section__eyebrow">So läuft's · Concierge, kein Shop</p>
-  <h2>Vier Schritte. <em>Ein Lab.</em></h2>
-  <div class="steps">
-    <div class="step">
-      <span class="step__num">01</span>
-      <p class="step__title">Runde zusammenstellen</p>
-      <p class="step__sub">Team oder kuratierte Peer-Runde</p>
-    </div>
-    <div class="step">
-      <span class="step__num">02</span>
-      <p class="step__title">Termin anfragen</p>
-      <p class="step__sub">Kein offenes Ticket</p>
-    </div>
-    <div class="step">
-      <span class="step__num">03</span>
-      <p class="step__title">Anzahlung 30%</p>
-      <p class="step__sub">Sichert Termin und Runde</p>
-    </div>
-    <div class="step">
-      <span class="step__num">04</span>
-      <p class="step__title">Der Lab-Abend</p>
-      <p class="step__sub">Immersiv · Essen &amp; Drinks</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PAKETE ============ -->
-<section class="section section--wide" id="pakete">
-  <p class="eyebrow section__eyebrow">Pakete</p>
-  <h2>Drei Formate. <em>Eine Wette.</em></h2>
-  <div class="packages">
-    <article class="package">
-      <p class="package__name">Leaders &amp; Founders</p>
-      <p class="package__desc">Einzelne Entscheidungsträger:innen, gemischte Peer-Runde.</p>
-      <p class="package__price">150 € <small>/ Person</small></p>
-      <p class="package__meta">ab 10–12 Personen</p>
-      <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Leaders%20%26%20Founders">Platz vormerken →</a></div>
-    </article>
-    <article class="package package--featured">
-      <span class="package__pill">Beliebteste Wahl</span>
-      <p class="package__name">Firmen-Leadership-Team</p>
-      <p class="package__desc">Führungsteam einer Firma, privat. In-House, auf euren Kontext.</p>
-      <p class="package__price package__price--inquiry">auf Anfrage</p>
-      <p class="package__meta">Pauschale · ½ Tag oder Abend</p>
-      <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Firmen-Leadership-Team">Briefing anfragen →</a></div>
-    </article>
-    <article class="package">
-      <p class="package__name">Follow-up Deep Dive</p>
-      <p class="package__desc">Vertiefung nach einem ersten Lab. Maßgeschneidert.</p>
-      <p class="package__price package__price--inquiry">auf Anfrage</p>
-      <p class="package__meta">Pauschale · individuell</p>
-      <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Deep%20Dive">Deep-Dive anfragen →</a></div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ ESKALATION ============ -->
-<section class="escalation">
-  <p class="escalation__q">KI nutzen — <em>oder abgehängt werden?</em></p>
-  <p class="escalation__a">Wir nehmen Ihnen eine der zwei Entscheidungen ab.</p>
-</section>
-
-<!-- ============ GUT ZU WISSEN ============ -->
-<section class="section">
-  <p class="eyebrow section__eyebrow">Gut zu wissen</p>
-  <h2>Saubere <em>Abrechnung.</em></h2>
-  <div class="steuer">
-    <p class="steuer__item"><strong>Firma zahlt?</strong> Weiterbildung, steuerfrei nach § 3 Nr. 19 EStG. Rechnung läuft an die Firma. <a href="/preview/erstattung/">Details →</a></p>
-    <p class="steuer__item steuer__item--coral"><strong>Selbst zahlen?</strong> Als Werbungskosten absetzbar — effektiv ~30–42% günstiger über die Steuer. <a href="/preview/erstattung/">Details →</a></p>
-  </div>
-</section>
-
-<!-- ============ P.S. ============ -->
-<p class="ps">„Es ist noch legal, KI nicht zu verstehen.<br>Wir sagen nur: <em>zunehmend seltsam.</em>"</p>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  Salon AI · Executive AI Labs · <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a>
-</footer>
+</div>
 
 </body>
 </html>
