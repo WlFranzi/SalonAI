@@ -778,6 +778,34 @@
     .tax-row { grid-template-columns: 1fr; }
   }
 
+  /* ── MID-PAGE ESCALATION (Sixt binary-choice punch) ───── */
+  .escalation {
+    padding: 22px 24px;
+    text-align: center;
+  }
+  .escalation__question {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+    line-height: 1.25;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  .escalation__question em {
+    color: var(--coral);
+    font-style: italic;
+    font-weight: 700;
+  }
+  .escalation__answer {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+  }
+
   /* ── FLOATING P.S. ─────────────────────────────────────── */
   .ps {
     margin-top: 6px;
@@ -1166,6 +1194,12 @@
             <div class="package__cta"><a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Deep%20Dive">Deep-Dive anfragen →</a></div>
           </article>
         </div>
+      </section>
+
+      <!-- 5.5 · ESCALATION (mid-page Sixt punch zwischen Pakete und Steuer) -->
+      <section class="card escalation">
+        <p class="escalation__question">KI nutzen — <em>oder abgehängt werden?</em></p>
+        <p class="escalation__answer">Wir nehmen Ihnen eine der zwei Entscheidungen ab.</p>
       </section>
 
       <!-- 6 · GUT ZU WISSEN (Steuer) -->
