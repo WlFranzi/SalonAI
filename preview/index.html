@@ -59,15 +59,16 @@
     z-index: 1;
   }
 
-  /* ── LAYOUT GRID ──────────────────────────────────────── */
+  /* ── LAYOUT (single column, one viewport) ────────────── */
   .app {
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: 76px 1fr;
+    max-width: 1080px;
+    margin: 0 auto;
     min-height: 100vh;
     padding: 18px;
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
   }
 
   /* ── SIDEBAR ──────────────────────────────────────────── */
@@ -139,11 +140,11 @@
     -webkit-backdrop-filter: blur(34px) saturate(80%) brightness(1.02);
     border: 1px solid var(--rule-strong);
     box-shadow: 0 30px 70px rgba(15,30,51,0.40), inset 0 1px 0 rgba(255,255,255,0.12);
-    border-radius: 32px;
-    padding: 22px;
+    border-radius: 28px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
   }
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .dashboard { background: rgba(15,30,51,0.90); }
@@ -277,28 +278,28 @@
   .card__eyebrow--iris::before { background: var(--iris); }
 
   /* ── ROW 1: HERO ───────────────────────────────────────── */
-  .row-hero { padding: 32px 30px; }
+  .row-hero { padding: 26px 28px 22px; }
   .hero__title {
-    margin-top: 14px;
+    margin-top: 10px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: clamp(2rem, 4.4vw, 2.7rem);
-    line-height: 1.08;
+    font-size: clamp(1.7rem, 3.6vw, 2.3rem);
+    line-height: 1.1;
     color: var(--ink-white);
     letter-spacing: -0.018em;
     text-wrap: balance;
   }
   .hero__title em { font-style: italic; color: var(--gold); font-weight: 400; }
   .hero__strapline {
-    margin-top: 12px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 14.5px;
     line-height: 1.5;
     color: var(--ink-soft);
     max-width: 56ch;
     font-weight: 400;
   }
   .hero__ctas {
-    margin-top: 22px;
+    margin-top: 16px;
     display: flex; gap: 10px; flex-wrap: wrap;
   }
 
@@ -334,10 +335,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
-  .host-card { padding: 22px; }
+  .host-card { padding: 18px 20px; }
   .host-card__title {
-    margin-top: 14px;
-    font-size: 22px;
+    margin-top: 10px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--ink-white);
     letter-spacing: -0.012em;
@@ -345,42 +346,42 @@
   }
   .host-card__title em { font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold); font-weight: 400; }
   .host-card__meta {
-    margin-top: 8px;
-    font-size: 12.5px;
+    margin-top: 6px;
+    font-size: 11.5px;
     font-weight: 600;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.65);
     text-transform: uppercase;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.3px;
   }
   .host-card__body {
-    margin-top: 14px;
-    font-size: 14px;
+    margin-top: 12px;
+    font-size: 13.5px;
     line-height: 1.55;
     color: var(--ink-soft);
   }
   .host-card__bullets {
-    margin-top: 14px;
+    margin-top: 12px;
     list-style: none;
     padding: 0;
   }
   .host-card__bullets li {
     position: relative;
-    padding-left: 18px;
-    margin-top: 6px;
-    font-size: 13px;
+    padding-left: 16px;
+    margin-top: 4px;
+    font-size: 12.5px;
     color: var(--ink-soft);
-    line-height: 1.5;
+    line-height: 1.45;
   }
   .host-card__bullets li::before {
     content: '';
     position: absolute;
-    left: 0; top: 8px;
-    width: 6px; height: 6px;
+    left: 0; top: 7px;
+    width: 5px; height: 5px;
     border-radius: 50%;
     background: var(--gold);
   }
   .host-card--corporate .host-card__bullets li::before { background: var(--coral); }
-  .host-card__cta { margin-top: 20px; }
+  .host-card__cta { margin-top: 14px; }
 
   /* ── ROW 3: STATS (mini ring cards) ───────────────────── */
   .row-stats {
@@ -545,40 +546,80 @@
   .inquiry__btn--send:hover { background: #ffd55a; }
   .inquiry__btn svg { width: 16px; height: 16px; }
 
-  /* ── CONCIERGE 3-STEP ─────────────────────────────────── */
-  .concierge-steps {
+  /* ── INLINE HOST CREDENTIAL (compact line in hero) ────── */
+  .credential {
     margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .credential__avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: var(--navy-deep);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .credential__text {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    min-width: 0;
+  }
+  .credential__text strong { color: var(--ink-white); font-weight: 600; }
+  .credential__text em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  /* ── CONCIERGE 3-STEP (inline row inside one card) ────── */
+  .concierge-steps {
+    margin-top: 12px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
   .concierge-step {
-    padding: 16px 16px 14px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.04);
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
     border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
   .concierge-step__num {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 22px;
     color: var(--gold);
     line-height: 1;
     letter-spacing: -0.02em;
+    flex-shrink: 0;
   }
   .concierge-step__title {
-    margin-top: 8px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--ink-white);
     letter-spacing: -0.005em;
+    line-height: 1.25;
   }
   .concierge-step__body {
-    margin-top: 6px;
-    font-size: 12.5px;
-    line-height: 1.5;
-    color: var(--ink-soft);
+    margin-top: 2px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: var(--ink-mute);
   }
   @media (max-width: 720px) {
     .concierge-steps { grid-template-columns: 1fr; }
@@ -741,30 +782,6 @@
 <div class="stage">
   <div class="app">
 
-    <!-- ── SIDEBAR ─────────────────────────────────────── -->
-    <aside class="sidebar" aria-label="Navigation">
-      <div class="sidebar__brand" title="Salon AI">SA</div>
-      <div class="sidebar__sep"></div>
-      <a href="#home" class="nav-btn is-active" title="Home" aria-label="Home">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V9.5z"/></svg>
-      </a>
-      <a href="#host" class="nav-btn" title="Host" aria-label="Host">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11h-6"/><path d="M19 8v6"/></svg>
-      </a>
-      <a href="#corporate" class="nav-btn" title="Corporate" aria-label="Corporate">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
-      </a>
-      <a href="#usecases" class="nav-btn" title="Use cases" aria-label="Use cases">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-      </a>
-      <a href="#story" class="nav-btn" title="Story" aria-label="Story">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M16 3v5h5"/><path d="M8 13h8"/><path d="M8 17h6"/></svg>
-      </a>
-      <a href="#contact" class="nav-btn" title="Contact" aria-label="Contact">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1 0 2 1 2 2v12c0 1-1 2-2 2H4c-1 0-2-1-2-2V6c0-1 1-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      </a>
-    </aside>
-
     <!-- ── MAIN ────────────────────────────────────────── -->
     <div class="main">
 
@@ -790,212 +807,77 @@
 
       <!-- HERO -->
       <section class="card row-hero" id="home">
-        <span class="card__eyebrow">Ein Tischgespräch mit KI</span>
-        <h1 class="hero__title">Du verstehst KI nicht wirklich, <em>bis du mit ihr gebaut hast.</em></h1>
-        <p class="hero__strapline">Salon AI ist weniger Vortrag, mehr Gespräch. Ein Abend in kleiner Runde, an dem jede Person ihren eigenen KI-Assistenten baut — für die eigenen Aufgaben. Du lädst ein. Wir bringen das Format.</p>
+        <span class="card__eyebrow">Executive AI Labs</span>
+        <h1 class="hero__title">KI ist eine <em>Führungsfrage.</em><br>Bringt sie an euren Tisch.</h1>
+        <p class="hero__strapline">Privat-Labs und Boardroom-Labs in kleiner Runde — Executives bauen ihren eigenen KI-Agenten an einem Abend. Du lädst ein. Wir bringen das Format.</p>
         <div class="hero__ctas">
-          <a href="#host" class="btn btn--primary">Privaten Salon ausrichten →</a>
-          <a href="#corporate" class="btn btn--ghost">Corporate Salon anfragen</a>
+          <a href="#host" class="btn btn--primary">Lab anfragen →</a>
+        </div>
+        <div class="credential">
+          <div class="credential__avatar">F</div>
+          <p class="credential__text">Geleitet von <strong>Franziska Wittleder</strong> · <em>Founder</em> · 15+ Jahre KI bei <strong>Amazon (Ring), Writer, SoundCloud</strong> — Produkte für Millionen Nutzer:innen.</p>
         </div>
       </section>
 
       <!-- HOST OPTIONS -->
       <section class="row-host">
         <article class="card host-card" id="host">
-          <span class="card__eyebrow">Privat-Salon</span>
-          <h2 class="host-card__title">Dein <em>Tisch.</em> Deine Gäste.</h2>
-          <p class="host-card__meta">12–20 Personen · Ein Abend · Bei dir oder kuratierter Location</p>
-          <p class="host-card__body">Du lädst deine kleine Runde ein — Freund:innen, Vertraute, Weggefährt:innen. Wir bringen Format, Moderation und Catering. Am Ende des Abends hat jede Person ihren eigenen KI-Assistenten gebaut.</p>
+          <span class="card__eyebrow">Privat-Lab</span>
+          <h2 class="host-card__title">Dein <em>Tisch.</em> Deine Runde.</h2>
+          <p class="host-card__meta">10–15 Executives · ein Abend · bei dir oder kuratiert</p>
           <ul class="host-card__bullets">
-            <li>Wir gestalten den Abend gemeinsam mit dir</li>
             <li>Eigene „Frage des Abends" wählbar</li>
-            <li>Dinner &amp; Drinks inklusive</li>
+            <li>Diskret, kuratiert, intim</li>
+            <li>Catering inklusive</li>
           </ul>
           <div class="host-card__cta">
-            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Privat-Salon&amp;body=Liebe%20Franziska%2C%0A%0Aich%20w%C3%BCrde%20gerne%20einen%20privaten%20Salon%20mit%20meiner%20Runde%20ausrichten.%0A%0AAnzahl%20Personen%3A%0AOrt%2FRegion%3A%0AWunschdatum%2Fzeitraum%3A%0ATheme%2FFrage%20des%20Abends%3A%0A%0AHerzlich%2C" class="btn btn--primary">Anfrage senden →</a>
+            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Privat-Lab" class="btn btn--primary">Privat-Lab anfragen →</a>
           </div>
-          <p class="host-card__tax"><strong>Selbst zahlen?</strong> Als Werbungskosten absetzbar — effektiv ~30–42% günstiger. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
+          <p class="host-card__tax"><strong>Selbst zahlen?</strong> Werbungskosten — ~30–42% effektiv günstiger. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
         </article>
         <article class="card host-card host-card--corporate" id="corporate">
-          <span class="card__eyebrow card__eyebrow--coral">Corporate-Salon</span>
-          <h2 class="host-card__title">Für dein <em>Team.</em></h2>
-          <p class="host-card__meta">Ab 12 Personen · Halb- bis Ganztags · Bei euch oder extern</p>
-          <p class="host-card__body">Vorstand, Aufsichtsrat, Strategy-Team oder Senior Leadership — wir bringen Salon AI in dein Unternehmen. Kein Workshop in einem Konferenzraum, sondern ein kuratierter Abend mit Tiefe und konkretem Output.</p>
+          <span class="card__eyebrow card__eyebrow--coral">Boardroom Lab</span>
+          <h2 class="host-card__title">Für euer <em>Leadership-Team.</em></h2>
+          <p class="host-card__meta">8–15 Führungskräfte · ½ Tag oder Abend · bei euch</p>
           <ul class="host-card__bullets">
             <li>Anwendungsfälle für eure Branche &amp; Rollen</li>
             <li>Jede:r baut den eigenen Agenten</li>
-            <li>Auf Wunsch mit Briefing-Vorgespräch</li>
+            <li>Inklusive Briefing-Vorgespräch</li>
           </ul>
           <div class="host-card__cta">
-            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Corporate-Salon&amp;body=Liebe%20Franziska%2C%0A%0Awir%20w%C3%BCrden%20gerne%20einen%20Salon%20AI%20f%C3%BCr%20unser%20Team%20ausrichten.%0A%0AUnternehmen%3A%0ATeam%2FRolle%3A%0AAnzahl%20Personen%3A%0AOrt%2FRegion%3A%0AWunschdatum%2Fzeitraum%3A%0AZiel%20des%20Abends%3A%0A%0AHerzlich%2C" class="btn btn--coral">Briefing anfragen →</a>
+            <a href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%E2%80%94%20Boardroom%20Lab" class="btn btn--coral">Briefing anfragen →</a>
           </div>
-          <p class="host-card__tax"><strong>Firma zahlt?</strong> Steuerfrei für Teilnehmer:innen nach § 3 Nr. 19 EStG · Rechnung läuft an die Firma. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
+          <p class="host-card__tax"><strong>Firma zahlt?</strong> Steuerfrei nach § 3 Nr. 19 EStG. <a href="/preview/erstattung/">Erstattungs-Kit →</a></p>
         </article>
       </section>
 
       <!-- CONCIERGE 3-STEP -->
       <section class="card" id="ablauf">
-        <span class="card__eyebrow">So läuft's</span>
-        <h3 style="margin-top:10px;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Concierge, <em style="font-family:'Playfair Display',serif;color:var(--gold);font-weight:400;">kein Shop.</em></h3>
+        <span class="card__eyebrow">So läuft's · Concierge, kein Shop</span>
         <div class="concierge-steps">
           <div class="concierge-step">
             <div class="concierge-step__num">01</div>
-            <div class="concierge-step__title">Termin vormerken</div>
-            <p class="concierge-step__body">Unverbindlich. Wir melden uns binnen 48h.</p>
+            <div>
+              <div class="concierge-step__title">Termin vormerken</div>
+              <p class="concierge-step__body">Unverbindlich · 48h Antwort</p>
+            </div>
           </div>
           <div class="concierge-step">
             <div class="concierge-step__num">02</div>
-            <div class="concierge-step__title">Abstimmung · 15 Min</div>
-            <p class="concierge-step__body">Ziel, Runde, Datum klären — auf Augenhöhe.</p>
+            <div>
+              <div class="concierge-step__title">Abstimmung · 15 Min</div>
+              <p class="concierge-step__body">Ziel, Runde, Datum klären</p>
+            </div>
           </div>
           <div class="concierge-step">
             <div class="concierge-step__num">03</div>
-            <div class="concierge-step__title">Anzahlung 30%</div>
-            <p class="concierge-step__body">Sichert Termin und Runde. Rest nach dem Lab.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- STATS -->
-      <section class="row-stats" id="stats">
-        <article class="card stat-card">
-          <div class="stat-ring stat-ring--gold">
-            <svg viewBox="0 0 48 48">
-              <circle class="stat-ring__track" cx="24" cy="24" r="20"/>
-              <circle class="stat-ring__fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="25"/>
-            </svg>
-            <div class="stat-ring__icon">●</div>
-          </div>
-          <div class="stat-card__data">
-            <div class="stat-card__value">80%</div>
-            <div class="stat-card__label">Methode</div>
-            <div class="stat-card__sub">Du baust selbst</div>
-          </div>
-        </article>
-        <article class="card stat-card">
-          <div class="stat-ring stat-ring--coral">
-            <svg viewBox="0 0 48 48">
-              <circle class="stat-ring__track" cx="24" cy="24" r="20"/>
-              <circle class="stat-ring__fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="100"/>
-            </svg>
-            <div class="stat-ring__icon">★</div>
-          </div>
-          <div class="stat-card__data">
-            <div class="stat-card__value">20%</div>
-            <div class="stat-card__label">Anwendung</div>
-            <div class="stat-card__sub">Frage des Abends</div>
-          </div>
-        </article>
-        <article class="card stat-card">
-          <div class="stat-ring stat-ring--leaf">
-            <svg viewBox="0 0 48 48">
-              <circle class="stat-ring__track" cx="24" cy="24" r="20"/>
-              <circle class="stat-ring__fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="0"/>
-            </svg>
-            <div class="stat-ring__icon">👥</div>
-          </div>
-          <div class="stat-card__data">
-            <div class="stat-card__value">12–20</div>
-            <div class="stat-card__label">Gäste</div>
-            <div class="stat-card__sub">Kuratierte Runde</div>
-          </div>
-        </article>
-        <article class="card stat-card">
-          <div class="stat-ring stat-ring--iris">
-            <svg viewBox="0 0 48 48">
-              <circle class="stat-ring__track" cx="24" cy="24" r="20"/>
-              <circle class="stat-ring__fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="13"/>
-            </svg>
-            <div class="stat-ring__icon">✦</div>
-          </div>
-          <div class="stat-card__data">
-            <div class="stat-card__value">4.9</div>
-            <div class="stat-card__label">Rating</div>
-            <div class="stat-card__sub">aus Salons '25 / '26</div>
-          </div>
-        </article>
-      </section>
-
-      <!-- USECASES + QUOTE -->
-      <section class="row-flex">
-        <article class="card" id="usecases">
-          <span class="card__eyebrow">Anwendungsfälle</span>
-          <h3 style="margin-top:10px;font-size:18px;font-weight:700;letter-spacing:-0.01em;">Was dein KI-Assistent <em style="font-family:'Playfair Display',serif;color:var(--gold);font-weight:400;">automatisieren</em> kann.</h3>
-          <div class="usecases-grid">
-            <div class="uc">
-              <div class="uc__icon">🏛</div>
-              <div class="uc__cat">Politik</div>
-              <div class="uc__line">23 MEPs identifizieren &amp; individuell anschreiben.</div>
-            </div>
-            <div class="uc">
-              <div class="uc__icon">💼</div>
-              <div class="uc__cat">Family Office</div>
-              <div class="uc__line">Memos screenen, DD-Fragen strukturieren.</div>
-            </div>
-            <div class="uc">
-              <div class="uc__icon">📣</div>
-              <div class="uc__cat">PR &amp; Brand</div>
-              <div class="uc__line">Pressespiegel + Statement-Drafts in Minuten.</div>
-            </div>
-            <div class="uc">
-              <div class="uc__icon">⚖️</div>
-              <div class="uc__cat">Aufsichtsrat</div>
-              <div class="uc__line">Board-Pakete auf Risiken durchforsten.</div>
-            </div>
-            <div class="uc">
-              <div class="uc__icon">🎨</div>
-              <div class="uc__cat">Creative</div>
-              <div class="uc__line">Moodboards, Decks, Briefings — schneller.</div>
-            </div>
-            <div class="uc">
-              <div class="uc__icon">🇪🇺</div>
-              <div class="uc__cat">EU-Bürger:in</div>
-              <div class="uc__line">Konsultationen + grenzüberschreitende Anträge.</div>
-            </div>
-          </div>
-        </article>
-        <article class="card quote-card" id="story">
-          <div>
-            <span class="card__eyebrow card__eyebrow--iris">Aus den Salons</span>
-            <div class="quote__mark">"</div>
-            <p class="quote__text">Selten ein Format mit so viel intellektueller Tiefe und echter Spielfreude.</p>
-          </div>
-          <cite class="quote__cite">Prof. Dr. Robert Schleip · Faszienforschung</cite>
-        </article>
-      </section>
-
-      <!-- ÜBER DEN HOST (long bio card) -->
-      <section class="card host-section" id="about">
-        <span class="card__eyebrow">Über den Host</span>
-        <div class="host-section__grid">
-          <div class="host-section__portrait" aria-label="Franziska Wittleder">F</div>
-          <div class="host-section__bio">
-            <div class="host-section__name">Franziska Wittleder</div>
-            <div class="host-section__role">Founder im Bereich KI und Movement</div>
-            <p>Seit 15 Jahren arbeite ich in den Research-Teams von Firmen, in denen ich KI-Produkte gebaut habe, die von <strong>Millionen Nutzer:innen</strong> verwendet werden — <em>Amazon (Ring), Writer und SoundCloud.</em></p>
-            <p>Heute veranstalte ich exklusive <strong>Executive AI Labs</strong> für Entscheidungsträger:innen, die verstehen wollen, wie KI ihre Organisation, ihre Produkte und ihre Wettbewerbsfähigkeit verändert.</p>
-            <div class="host-section__credentials">
-              <span class="cred-chip">Amazon · Ring</span>
-              <span class="cred-chip">Writer</span>
-              <span class="cred-chip">SoundCloud</span>
-              <span class="cred-chip">USA · EU</span>
-              <span class="cred-chip">15+ Jahre</span>
+            <div>
+              <div class="concierge-step__title">Anzahlung 30%</div>
+              <p class="concierge-step__body">Sichert Termin · Rest nach Lab</p>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- INQUIRY -->
-      <form class="card row-inquiry" id="contact" action="mailto:luckysprouts@duck.com" method="get" onsubmit="event.preventDefault(); window.location.href='mailto:luckysprouts@duck.com?subject=Salon%20AI%20Anfrage&body='+encodeURIComponent(this.q.value);">
-        <span class="card__eyebrow" style="margin-right:4px;">Anfrage</span>
-        <input type="text" name="q" class="inquiry__input" placeholder="Was interessiert dich? Privater Abend, Corporate, andere Frage …" />
-        <button type="button" class="inquiry__btn" title="Schreib uns" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1 0 2 1 2 2v12c0 1-1 2-2 2H4c-1 0-2-1-2-2V6c0-1 1-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </button>
-        <button type="submit" class="inquiry__btn inquiry__btn--send" title="Send" aria-label="Send">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-      </form>
 
       </main>
       <!-- /DASHBOARD -->
