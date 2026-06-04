@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Erstattungs-Kit · Salon AI</title>
+<link rel="canonical" href="https://www.salon-ai.eu/preview/erstattung/" />
+<meta name="description" content="Salon AI Erstattungs-Kit — so läuft die Abrechnung, egal ob die Firma zahlt oder du selbst." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy-deep: #0F1E33;
+    --gold: #FFC83D;
+    --coral: #FF7A59;
+    --leaf: #4ade80;
+    --ink-white: #fff;
+    --ink-soft: rgba(255,255,255,0.82);
+    --ink-mute: rgba(255,255,255,0.58);
+    --ink-faint: rgba(255,255,255,0.35);
+    --rule: rgba(255,255,255,0.16);
+    --rule-strong: rgba(255,255,255,0.28);
+    --card-bg: rgba(15,30,51,0.55);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink-white);
+    background: var(--navy-deep);
+    line-height: 1.6;
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.005em;
+  }
+  .stage {
+    position: relative;
+    min-height: 100vh;
+    background:
+      url('/Mai-stepbystepguide/clouds/sky-hero.jpg') center top/cover no-repeat fixed,
+      var(--navy-deep);
+    padding: 22px 18px 60px;
+  }
+  .stage::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 50% 22%, rgba(15,30,51,0) 30%, rgba(15,30,51,0.4) 100%),
+      linear-gradient(180deg, rgba(15,30,51,0.18) 0%, rgba(15,30,51,0) 30%, rgba(15,30,51,0.50) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 16px;
+  }
+  .card {
+    background: var(--card-bg);
+    backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(28px) saturate(80%) brightness(1.02);
+    border: 1px solid var(--rule);
+    box-shadow: 0 20px 50px rgba(15,30,51,0.30), inset 0 1px 0 rgba(255,255,255,0.10);
+    border-radius: 24px;
+    padding: 24px;
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .card { background: rgba(15,30,51,0.88); }
+  }
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px 4px;
+  }
+  .back-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 8px 16px 8px 12px;
+    border-radius: 999px;
+    background: rgba(15,30,51,0.50);
+    border: 1px solid var(--rule);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: all 0.18s ease;
+  }
+  .back-link:hover { background: rgba(255,255,255,0.10); color: var(--ink-white); }
+  .topbar__eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.4px; color: rgba(255,255,255,0.78);
+  }
+  .topbar__eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    line-height: 1.1;
+    letter-spacing: -0.018em;
+    color: var(--ink-white);
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); font-weight: 400; }
+  .hero p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    max-width: 60ch;
+  }
+  .card__eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2.4px; color: rgba(255,255,255,0.78);
+  }
+  .card__eyebrow::before {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold);
+  }
+  .card__eyebrow--coral::before { background: var(--coral); }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 760px) {
+    .columns { grid-template-columns: 1fr; }
+  }
+
+  .opt h2 {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink-white);
+    letter-spacing: -0.012em;
+    line-height: 1.2;
+  }
+  .opt h2 em { font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold); font-weight: 400; }
+  .opt h3 {
+    margin-top: 22px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-white);
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+  .opt h3:first-of-type { margin-top: 18px; }
+  .opt p {
+    margin-top: 10px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .opt p strong { color: var(--ink-white); font-weight: 600; }
+  .opt ol {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  .opt ol li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .opt ol li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0; top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    background: rgba(255,200,61,0.14);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+  .opt--coral ol li::before { background: rgba(255,122,89,0.14); color: var(--coral); }
+  .opt ol li strong { color: var(--ink-white); font-weight: 600; }
+  .opt ol li em { font-style: italic; color: var(--ink-white); }
+  .callout {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--rule);
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .callout strong { color: var(--ink-white); }
+
+  .deliverables { padding: 18px 22px; }
+  .deliverables h3 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    color: var(--gold);
+  }
+  .deliverables p {
+    margin-top: 8px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .deliverables p strong { color: var(--ink-white); }
+
+  .colophon {
+    text-align: center;
+    padding: 8px 0 0;
+    font-size: 11.5px;
+    color: var(--ink-faint);
+  }
+  .colophon a {
+    color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--rule-strong);
+  }
+
+  @media (max-width: 640px) {
+    .stage { padding: 14px 12px 50px; background-attachment: scroll; }
+    .card { padding: 20px; border-radius: 22px; }
+    .opt h2 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="container">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <a href="/preview/" class="back-link">← zurück</a>
+      <span class="topbar__eyebrow">Erstattungs-Kit</span>
+    </div>
+
+    <!-- HERO -->
+    <section class="card hero">
+      <h1>So <em>läuft</em> die Abrechnung.</h1>
+      <p>Egal, ob deine Firma zahlt oder du selbst — beide Wege sind sauber, dokumentiert und steuerlich sinnvoll. Hier in zwei Minuten erklärt.</p>
+    </section>
+
+    <!-- TWO OPTIONS -->
+    <section class="columns">
+
+      <!-- OPTION A: FIRMA ZAHLT -->
+      <article class="card opt">
+        <span class="card__eyebrow">Option A</span>
+        <h2>Firma <em>zahlt.</em></h2>
+
+        <h3>Weg 1 — Firma bucht direkt</h3>
+        <ol>
+          <li>Freigabe der Führungskraft einholen <em>(Vorlage liefern wir mit)</em>.</li>
+          <li>Wir stellen die <strong>Rechnung direkt auf die Firma</strong> aus — Kleinunternehmer ohne USt, mit § 19-Hinweis.</li>
+          <li>Firma überweist und bucht als <strong>Betriebsausgabe</strong> („Fortbildung") → mindert den Gewinn, GmbH spart ~30% Steuern.</li>
+          <li>Für dich kein geldwerter Vorteil — <strong>steuerfrei nach § 3 Nr. 19 EStG</strong>. Nichts auf der Gehaltsabrechnung.</li>
+        </ol>
+
+        <h3>Weg 2 — Du zahlst vor, Firma erstattet</h3>
+        <ol>
+          <li>Schriftliche <strong>Zusage der Firma</strong> vorab einholen.</li>
+          <li>Du kaufst das Ticket, bekommst von uns Rechnung + Teilnahmebestätigung.</li>
+          <li>Reichst beides als <strong>Spesen-/Auslagenabrechnung</strong> ein.</li>
+          <li>Firma erstattet steuerfrei (gleiche § 3 Nr. 19-Logik).</li>
+        </ol>
+      </article>
+
+      <!-- OPTION B: DU SELBST -->
+      <article class="card opt opt--coral">
+        <span class="card__eyebrow card__eyebrow--coral">Option B</span>
+        <h2>Du zahlst <em>selbst.</em></h2>
+
+        <p class="callout"><strong>Wichtig zuerst:</strong> Du musst deine Firma <strong>nicht fragen</strong> — sie ist gar nicht beteiligt. „Werbungskosten" heißt einfach „beruflich veranlasste Ausgaben". Läuft nur zwischen dir und dem Finanzamt.</p>
+
+        <h3>Schritt für Schritt</h3>
+        <ol>
+          <li><strong>Du buchst und bezahlst</strong> das Ticket selbst.</li>
+          <li>Du hebst die Belege auf: Rechnung, Zahlungsnachweis, Teilnahmebestätigung <em>(bekommst du automatisch)</em>.</li>
+          <li>Einmal im Jahr machst du deine <strong>Steuererklärung</strong> — ohne die Firma.</li>
+          <li>Du trägst den Betrag ein unter <strong>„Werbungskosten → Fortbildungskosten"</strong> in der <strong>Anlage N</strong>. Ein Feld, eine Zahl.</li>
+          <li>Finanzamt zieht den Betrag von deinem zu versteuernden Einkommen ab. Du bekommst grob <strong>30–42% zurück</strong> — aus 150 € werden real ~90–105 €.</li>
+        </ol>
+
+        <p class="callout"><strong>Das war's.</strong> Kein Antrag bei der Firma. Keine Genehmigung. Kein Lohnbüro.</p>
+      </article>
+
+    </section>
+
+    <!-- WAS WIR LIEFERN -->
+    <section class="card deliverables">
+      <h3>Was wir dir mitgeben</h3>
+      <p><strong>Rechnung sofort</strong> · <strong>Teilnahmebestätigung / Zertifikat</strong> · <strong>Agenda + Lernziele</strong> (belegt das „betriebliche Interesse") · auf Wunsch: <strong>Mail-Vorlage</strong> für die Freigabe durch die Führungskraft.</p>
+    </section>
+
+    <p class="colophon">Salon AI · Erstattungs-Kit · <a href="/preview/">zurück zu Salon AI</a></p>
+
+  </div>
+</div>
+
+</body>
+</html>
