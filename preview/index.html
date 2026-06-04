@@ -126,10 +126,69 @@
 
   /* ── MAIN ─────────────────────────────────────────────── */
   .main {
-    display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 16px;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* ── DASHBOARD: ONE big outer card holding all sub-zones ─ */
+  .dashboard {
+    background: var(--card-bg);
+    backdrop-filter: blur(34px) saturate(80%) brightness(1.02);
+    -webkit-backdrop-filter: blur(34px) saturate(80%) brightness(1.02);
+    border: 1px solid var(--rule-strong);
+    box-shadow: 0 30px 70px rgba(15,30,51,0.40), inset 0 1px 0 rgba(255,255,255,0.12);
+    border-radius: 32px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .dashboard { background: rgba(15,30,51,0.90); }
+  }
+
+  /* Inner cards (zones inside the dashboard) lose their heavy glass —
+     they become sub-rubrics with a subtle tint and no shadow */
+  .dashboard .card {
+    background: rgba(255,255,255,0.045);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    border: 1px solid var(--rule);
+    border-radius: 18px;
+    padding: 18px 20px;
+  }
+  .dashboard .card.row-hero {
+    background: rgba(255,255,255,0.07);
+    border-color: var(--rule-strong);
+    padding: 28px 28px 26px;
+  }
+  .dashboard .host-section { padding: 22px; }
+  .dashboard .row-inquiry { padding: 8px 10px 8px 18px; }
+  .dashboard .stat-card { padding: 14px 16px; }
+  .dashboard .quote-card { padding: 20px; }
+  /* Rows that group sub-cards inside the dashboard sit flush, tighter gaps */
+  .dashboard .row-host,
+  .dashboard .row-stats,
+  .dashboard .row-flex {
+    gap: 12px;
+  }
+  /* Thin internal divider between zones (optional) */
+  .zone-divider {
+    height: 1px;
+    background: var(--rule);
+    border: none;
+    margin: 2px 0;
+  }
+  .zone-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    color: var(--ink-mute);
+    padding: 4px 4px 0;
   }
 
   /* ── TOPBAR ───────────────────────────────────────────── */
@@ -709,9 +768,9 @@
     <!-- ── MAIN ────────────────────────────────────────── -->
     <div class="main">
 
-      <!-- TOPBAR -->
+      <!-- TOPBAR sits OUTSIDE the dashboard so it floats over the cloud -->
       <div class="topbar">
-        <span class="topbar__eyebrow">Salon AI · Tischgespräche mit KI</span>
+        <span class="topbar__eyebrow">Salon AI · Executive AI Labs</span>
         <div class="topbar__actions">
           <button class="icon-btn" aria-label="Settings" title="Settings">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09c0 .66.39 1.25 1 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01c.26.61.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
@@ -725,6 +784,9 @@
           </a>
         </div>
       </div>
+
+      <!-- DASHBOARD: one big container holding all sub-zones -->
+      <main class="dashboard">
 
       <!-- HERO -->
       <section class="card row-hero" id="home">
@@ -935,7 +997,10 @@
         </button>
       </form>
 
-      <p class="colophon">Salon AI · Tischgespräche mit KI · <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a></p>
+      </main>
+      <!-- /DASHBOARD -->
+
+      <p class="colophon">Salon AI · Executive AI Labs · <a href="mailto:luckysprouts@duck.com">luckysprouts@duck.com</a></p>
 
     </div>
   </div>
