@@ -55,15 +55,23 @@
   em { font-style: italic; color: var(--coral); }
   strong { font-weight: 600; color: var(--ink); }
 
-  /* ── STAGE (warm paper · dotted embedding atmosphere) ─── */
+  /* ── STAGE (cloud sky photo · index-vision background) ─── */
   .stage {
     position: relative;
     min-height: 100vh;
     background:
-      radial-gradient(circle, rgba(107,78,142,0.09) 1px, transparent 1.4px) 0 0 / 48px 48px fixed,
-      var(--paper-warm);
+      url('/Mai-stepbystepguide/clouds/sky-hero.jpg') center top/cover no-repeat fixed,
+      #aac8e3;
   }
-  .stage::before { display: none; }
+  .stage::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 80% at 50% 22%, rgba(20,40,70,0) 30%, rgba(20,40,70,0.18) 100%),
+      linear-gradient(180deg, rgba(20,40,70,0.06) 0%, rgba(20,40,70,0) 38%, rgba(20,40,70,0.12) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
 
   /* ── LAYOUT (single column, one viewport) ────────────── */
   .app {
@@ -139,12 +147,14 @@
     gap: 14px;
   }
 
-  /* ── DASHBOARD: ONE big paper card holding all sub-zones in a 2D grid ─ */
+  /* ── DASHBOARD: ONE big translucent glass card (index-vision formula) ─ */
   .dashboard {
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    box-shadow: 0 24px 60px rgba(46,37,32,0.10), 0 2px 6px rgba(46,37,32,0.04);
-    border-radius: 24px;
+    background: rgba(255,255,255,0.62);
+    backdrop-filter: blur(34px) saturate(140%);
+    -webkit-backdrop-filter: blur(34px) saturate(140%);
+    border: 1px solid rgba(255,255,255,0.72);
+    box-shadow: 0 32px 74px rgba(40,50,70,0.17), inset 0 1px 0 rgba(255,255,255,0.6);
+    border-radius: 32px;
     padding: 22px;
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -164,18 +174,19 @@
   .dashboard #pakete { grid-area: pakete; }
   .dashboard #steuer { grid-area: steuer; }
 
-  /* Inner cards: warm-paper sub-rubrics, subtle border, no heavy shadow */
+  /* Inner cards: lightly tinted sub-rubrics that sit on the glass parent */
   .dashboard .card {
-    background: var(--paper-tint);
-    border: 1px solid var(--rule);
-    box-shadow: none;
-    border-radius: 16px;
+    background: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.55);
+    box-shadow: 0 4px 18px rgba(40,50,70,0.05);
+    border-radius: 18px;
     padding: 16px 18px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
   .dashboard .card.row-hero {
-    background: var(--paper-warm);
+    background: rgba(255,255,255,0.62);
+    border-color: rgba(255,255,255,0.62);
     padding: 22px 24px;
   }
   /* Tight gaps inside multi-card rows */
@@ -205,11 +216,12 @@
   .topbar__eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     font-size: 10.5px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 2.4px; color: var(--ink-soft);
+    letter-spacing: 2.4px; color: rgba(255,255,255,0.92);
+    text-shadow: 0 1px 12px rgba(40,50,70,0.40);
   }
   .topbar__eyebrow::before {
     content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: var(--gold);
+    background: var(--iris);
   }
   .topbar__actions {
     display: flex; align-items: center; gap: 10px;
@@ -270,11 +282,11 @@
   .card__eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 2.4px; color: var(--ink-soft);
+    letter-spacing: 2.4px; color: var(--iris);
   }
   .card__eyebrow::before {
     content: ''; width: 5px; height: 5px; border-radius: 50%;
-    background: var(--gold);
+    background: var(--iris);
   }
   .card__eyebrow--coral::before { background: var(--coral); }
   .card__eyebrow--leaf::before { background: var(--leaf); }
@@ -301,8 +313,31 @@
     max-width: 56ch;
     font-weight: 400;
   }
+  .hero__framing {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-left: 2px solid var(--iris);
+    background: rgba(255,255,255,0.42);
+    border-radius: 4px;
+  }
+  .hero__framing-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 0;
+  }
+  .hero__framing-line + .hero__framing-line { margin-top: 4px; }
+  .hero__framing-line--coda {
+    margin-top: 8px !important;
+    font-size: 15px;
+    color: var(--gold-deep);
+  }
+  .hero__framing-line em { color: var(--coral); font-style: italic; font-weight: 500; }
+
   .hero__ctas {
-    margin-top: 16px;
+    margin-top: 18px;
     display: flex; gap: 10px; flex-wrap: wrap;
   }
 
@@ -1107,6 +1142,13 @@
         <span class="card__eyebrow">Executive AI Labs</span>
         <h1 class="hero__title">Sie können mit KI nichts anfangen?<br><em>Wir wetten drei Stunden dagegen.</em></h1>
         <p class="hero__strapline">Ein kuratierter Abend für Entscheidungsträger:innen. Kein Vortrag — Sie bauen Ihren eigenen KI-Agenten.</p>
+
+        <div class="hero__framing">
+          <p class="hero__framing-line">Drei fokussierte Stunden · <em>kleine Runde</em> · keine Programmierkenntnisse nötig.</p>
+          <p class="hero__framing-line">Gutes Essen, gute Drinks, durchdachte Gespräche. Kommen Sie wie Sie sind.</p>
+          <p class="hero__framing-line hero__framing-line--coda"><em>Verlassen Sie den Abend mit der Sicherheit, jedes KI-System zu führen.</em></p>
+        </div>
+
         <div class="hero__ctas">
           <a href="#pakete" class="btn btn--primary">Lab anfragen →</a>
         </div>
