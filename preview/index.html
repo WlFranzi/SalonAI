@@ -780,12 +780,8 @@
     transition: background 0.18s ease;
   }
   .package__cta a:hover { background: rgba(255,255,255,0.85); }
-  .package--featured .package__cta a {
-    background: var(--accent);
-    color: #fff;
-    border-color: transparent;
-  }
-  .package--featured .package__cta a:hover { background: var(--accent-hi); }
+  /* Featured package keeps the highlight via its border + pill — CTA stays
+     the same dezent glass pill as the others (user: "gleich und dezent") */
   @media (max-width: 820px) {
     .packages-grid { grid-template-columns: 1fr; }
   }
