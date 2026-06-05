@@ -218,15 +218,14 @@
     box-shadow: var(--v-shadow-strong), var(--v-shadow-inset);
     padding: 32px 32px 28px;
   }
-  /* Sub-panels (host-mini, conviction-item, concierge-step, package, tax-item)
-     stay lighter so they don't compete with their parent .card */
-  .dashboard .host-mini,
+  /* Sub-panels: MORE opaque than the parent .card so the inner cards POP,
+     not less. The parent .card is 0.58 — inner panels go up to 0.78. */
   .dashboard .conviction-item,
   .dashboard .package,
   .dashboard .tax-item {
-    background: rgba(255,255,255,0.45);
-    border: 1px solid rgba(255,255,255,0.55);
-    box-shadow: var(--v-shadow-inset);
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(255,255,255,0.85);
+    box-shadow: 0 4px 14px rgba(40,60,85,0.06), var(--v-shadow-inset);
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
   }
@@ -361,30 +360,39 @@
     font-weight: 400;
   }
   .hero__framing {
-    margin-top: 20px;
-    padding: 14px 16px 14px 18px;
-    background: var(--v-glass);
-    backdrop-filter: blur(12px) saturate(130%);
-    -webkit-backdrop-filter: blur(12px) saturate(130%);
-    border: 1px solid var(--v-glass-border);
-    border-left: 2px solid var(--iris);
-    border-radius: 16px;
-    box-shadow: var(--v-shadow-inset);
+    margin-top: 18px;
+    padding: 12px 0 4px;
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--rule);
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
   .hero__framing-line {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-style: italic;
-    font-size: 15.5px;
-    line-height: 1.5;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-style: normal;
+    font-size: 13.5px;
+    line-height: 1.55;
     color: var(--ink-soft);
     margin: 0;
   }
   .hero__framing-line + .hero__framing-line { margin-top: 4px; }
   .hero__framing-line--coda {
-    margin-top: 8px !important;
-    font-size: 15.5px;
+    margin-top: 4px !important;
+    font-size: 13.5px;
     color: var(--ink);
     font-weight: 500;
+  }
+  /* Override the global gradient em INSIDE the framing — quiet ink-bold instead */
+  .hero__framing-line em {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    background: none;
+    -webkit-text-fill-color: var(--ink);
+    color: var(--ink);
   }
 
   .hero__ctas {
@@ -672,35 +680,24 @@
     gap: 12px;
   }
   .host-mini {
-    padding: 14px 16px;
-    border-radius: 14px;
-    background: rgba(255,255,255,0.55);
-    border: 1px solid var(--rule);
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(255,255,255,0.85);
+    box-shadow: 0 4px 14px rgba(40,60,85,0.06), var(--v-shadow-inset);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
     min-width: 0;
   }
-  .host-mini > div { min-width: 0; flex: 1; }
-  .host-mini__avatar {
-    width: 36px; height: 36px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.55);
-    border: 1px solid var(--v-glass-border);
-    color: var(--coral);
-    display: flex; align-items: center; justify-content: center;
+  .host-mini > div { min-width: 0; }
+  .host-mini__avatar { display: none; }
+  .host-mini__name {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-style: italic;
+    font-size: 19px;
     font-weight: 500;
-    font-size: 18px;
-  }
-  .host-mini__avatar--tatiana { color: var(--iris); }
-  .host-mini__name {
-    font-size: 13px;
-    font-weight: 600;
     color: var(--ink);
-    letter-spacing: -0.005em;
+    letter-spacing: -0.012em;
     line-height: 1.3;
   }
   .host-mini__role {
@@ -764,10 +761,10 @@
 
   /* ── PACKAGES 3-UP (Pricing) ──────────────────────────── */
   .packages-grid {
-    margin-top: 14px;
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 16px;
   }
   .package {
     padding: 14px 18px;
