@@ -7,71 +7,61 @@
 <title>Salon AI · Preview</title>
 <link rel="canonical" href="https://www.salon-ai.eu/preview/" />
 <meta name="description" content="Salon AI — Preview: Tischgespräche mit KI als privater oder Corporate-Salon. Du lädst ein, wir bringen das Format." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Apple SF stack: no web fonts needed, system fonts used -->
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    /* Warm-paper palette adopted from Mai-stepbystepguide */
+    /* Apple-restrained palette: neutrals + one accent */
     --paper:       #ffffff;
-    --paper-tint:  #fafafa;
-    --paper-warm:  #f5f1ea;
-    --ink:         #0e0c0a;
-    --ink-soft:    #6b6259;
-    --ink-mute:    rgba(14,12,10,0.55);
-    --ink-faint:   rgba(14,12,10,0.32);
-    --rule:        #eae6df;
-    --rule-strong: rgba(14,12,10,0.18);
-    --gold:        #5c4f43;
-    --gold-deep:   #2c2520;
-    --iris:        #6b4e8e;
-    --iris-deep:   #3b285a;
-    --coral:       #e26a4a;
-    --coral-soft:  #fdf0eb;
-    --leaf:        #7a8c5c;
-    --watermark:   #f0ece4;
-    /* Glass tints — warm cream over cloud sky */
-    --card-bg:     rgba(245,241,234,0.80);
-    --card-bg-hi:  rgba(255,253,247,0.92);
-    /* Legacy aliases used in pre-existing rules — point them to the new tokens */
+    --paper-tint:  #f5f5f7;
+    --paper-warm:  #fbfbfd;
+    --ink:         #1d1d1f;
+    --ink-soft:    #6e6e73;
+    --ink-mute:    rgba(29,29,31,0.55);
+    --ink-faint:   rgba(29,29,31,0.30);
+    --rule:        rgba(0,0,0,0.08);
+    --rule-strong: rgba(0,0,0,0.14);
+    --accent:      #0071e3;
+    --accent-hi:   #0077ed;
+    /* Legacy aliases — point all old tokens at the neutral palette */
+    --gold:        var(--ink);
+    --gold-deep:   var(--ink);
+    --iris:        var(--ink-soft);
+    --iris-deep:   var(--ink);
+    --coral:       var(--ink);
+    --coral-soft:  var(--paper-tint);
+    --leaf:        var(--ink-soft);
+    --watermark:   var(--paper-tint);
+    --card-bg:     rgba(255,255,255,0.78);
+    --card-bg-hi:  rgba(255,255,255,0.88);
     --ink-white:   var(--ink);
     --navy-deep:   var(--paper-warm);
     --navy:        var(--paper-warm);
   }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
     color: var(--ink);
     background: var(--paper-warm);
     line-height: 1.55;
-    font-size: 14.5px;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
     letter-spacing: -0.005em;
   }
-  /* index-vision pattern: italic em is always coral */
-  em { font-style: italic; color: var(--coral); }
+  /* Apple style: emphasis via weight, not coral italic */
+  em { font-style: normal; font-weight: 600; color: var(--ink); }
   strong { font-weight: 600; color: var(--ink); }
 
-  /* ── STAGE (cloud sky photo · index-vision background) ─── */
+  /* ── STAGE (solid off-white, Apple product page) ─── */
   .stage {
     position: relative;
     min-height: 100vh;
-    background:
-      url('/Mai-stepbystepguide/clouds/sky-hero.jpg') center top/cover no-repeat fixed,
-      #aac8e3;
+    background: var(--paper-warm);
   }
-  .stage::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(120% 80% at 50% 22%, rgba(20,40,70,0) 30%, rgba(20,40,70,0.18) 100%),
-      linear-gradient(180deg, rgba(20,40,70,0.06) 0%, rgba(20,40,70,0) 38%, rgba(20,40,70,0.12) 100%);
-    pointer-events: none;
-    z-index: 1;
-  }
+  .stage::before { display: none; }
 
   /* ── LAYOUT (single column, one viewport) ────────────── */
   .app {
@@ -105,8 +95,8 @@
     display: flex; align-items: center; justify-content: center;
     background: linear-gradient(135deg, var(--gold), #f59e0b);
     color: var(--navy-deep);
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
@@ -147,15 +137,13 @@
     gap: 14px;
   }
 
-  /* ── DASHBOARD: ONE big translucent glass card (index-vision formula) ─ */
+  /* ── DASHBOARD: clean white card on off-white (Apple product page) ─ */
   .dashboard {
-    background: rgba(255,255,255,0.62);
-    backdrop-filter: blur(34px) saturate(140%);
-    -webkit-backdrop-filter: blur(34px) saturate(140%);
-    border: 1px solid rgba(255,255,255,0.72);
-    box-shadow: 0 32px 74px rgba(40,50,70,0.17), inset 0 1px 0 rgba(255,255,255,0.6);
-    border-radius: 32px;
-    padding: 22px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    border-radius: 22px;
+    padding: 24px;
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     grid-template-areas:
@@ -174,20 +162,20 @@
   .dashboard #pakete { grid-area: pakete; }
   .dashboard #steuer { grid-area: steuer; }
 
-  /* Inner cards: lightly tinted sub-rubrics that sit on the glass parent */
+  /* Inner cards: clean off-white panels with subtle borders */
   .dashboard .card {
-    background: rgba(255,255,255,0.55);
-    border: 1px solid rgba(255,255,255,0.55);
-    box-shadow: 0 4px 18px rgba(40,50,70,0.05);
-    border-radius: 18px;
-    padding: 16px 18px;
+    background: var(--paper-tint);
+    border: 1px solid var(--rule);
+    box-shadow: none;
+    border-radius: 16px;
+    padding: 20px 22px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
   .dashboard .card.row-hero {
-    background: rgba(255,255,255,0.62);
-    border-color: rgba(255,255,255,0.62);
-    padding: 22px 24px;
+    background: var(--paper);
+    border-color: var(--rule);
+    padding: 28px 28px 26px;
   }
   /* Tight gaps inside multi-card rows */
   .dashboard .row-host,
@@ -215,14 +203,10 @@
   }
   .topbar__eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
-    font-size: 10.5px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 2.4px; color: rgba(255,255,255,0.92);
-    text-shadow: 0 1px 12px rgba(40,50,70,0.40);
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 2.4px; color: var(--ink-soft);
   }
-  .topbar__eyebrow::before {
-    content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: var(--iris);
-  }
+  .topbar__eyebrow::before { display: none; }
   .topbar__actions {
     display: flex; align-items: center; gap: 10px;
   }
@@ -256,8 +240,8 @@
   .profile-chip__avatar {
     width: 30px; height: 30px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--coral), var(--gold));
-    color: var(--navy-deep);
+    background: var(--paper-tint);
+    color: var(--ink);
     display: flex; align-items: center; justify-content: center;
     font-weight: 700; font-size: 12px;
   }
@@ -280,23 +264,17 @@
     .card { background: rgba(15,30,51,0.88); }
   }
   .card__eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 2.4px; color: var(--iris);
+    display: inline-block;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 2.2px; color: var(--ink-soft);
   }
-  .card__eyebrow::before {
-    content: ''; width: 5px; height: 5px; border-radius: 50%;
-    background: var(--iris);
-  }
-  .card__eyebrow--coral::before { background: var(--coral); }
-  .card__eyebrow--leaf::before { background: var(--leaf); }
-  .card__eyebrow--iris::before { background: var(--iris); }
+  .card__eyebrow::before { display: none; }
 
   /* ── ROW 1: HERO ───────────────────────────────────────── */
   .row-hero { padding: 26px 28px 22px; }
   .hero__title {
     margin-top: 10px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: clamp(1.7rem, 3.6vw, 2.3rem);
     line-height: 1.1;
@@ -304,7 +282,7 @@
     letter-spacing: -0.018em;
     text-wrap: balance;
   }
-  .hero__title em { font-style: italic; color: var(--coral); font-weight: 500; }
+  .hero__title em { font-style: normal; color: var(--coral); font-weight: 500; }
   .hero__strapline {
     margin-top: 10px;
     font-size: 14.5px;
@@ -314,27 +292,26 @@
     font-weight: 400;
   }
   .hero__framing {
-    margin-top: 18px;
-    padding: 14px 16px;
-    border-left: 2px solid var(--iris);
-    background: rgba(255,255,255,0.42);
-    border-radius: 4px;
+    margin-top: 20px;
+    padding: 16px 18px;
+    background: var(--paper-tint);
+    border-radius: 12px;
   }
   .hero__framing-line {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
     font-size: 14.5px;
-    line-height: 1.45;
-    color: var(--ink);
+    line-height: 1.5;
+    color: var(--ink-soft);
     margin: 0;
   }
   .hero__framing-line + .hero__framing-line { margin-top: 4px; }
   .hero__framing-line--coda {
     margin-top: 8px !important;
-    font-size: 15px;
-    color: var(--gold-deep);
+    font-size: 14.5px;
+    color: var(--ink);
+    font-weight: 600;
   }
-  .hero__framing-line em { color: var(--coral); font-style: italic; font-weight: 500; }
+  .hero__framing-line em { color: var(--ink); font-weight: 600; }
 
   .hero__ctas {
     margin-top: 18px;
@@ -344,27 +321,29 @@
   /* ── BUTTONS ──────────────────────────────────────────── */
   .btn {
     display: inline-flex; align-items: center; gap: 8px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
     padding: 11px 22px;
     border-radius: 999px;
     text-decoration: none;
-    letter-spacing: 0.2px;
+    letter-spacing: 0;
     border: 1px solid transparent;
-    transition: all 0.18s ease;
+    transition: background 0.18s ease;
     cursor: pointer;
+    background: var(--accent);
+    color: #fff;
   }
-  .btn--primary { background: var(--gold); color: var(--navy-deep); }
-  .btn--primary:hover { background: var(--gold-deep); transform: translateY(-1px); }
-  .btn--coral { background: var(--coral); color: #fff; }
-  .btn--coral:hover { background: var(--gold-deep); transform: translateY(-1px); }
+  .btn:hover { background: var(--accent-hi); }
+  /* Variant classes still exist in HTML — alias them all to the Apple-blue base */
+  .btn--primary, .btn--coral { background: var(--accent); color: #fff; }
+  .btn--primary:hover, .btn--coral:hover { background: var(--accent-hi); }
   .btn--ghost {
     background: transparent;
-    color: var(--ink-white);
-    border-color: var(--rule-strong);
+    color: var(--accent);
+    border-color: var(--accent);
   }
-  .btn--ghost:hover { background: rgba(98,87,73,0.06); border-color: var(--ink-faint); }
+  .btn--ghost:hover { background: rgba(0,113,227,0.06); }
   .btn svg { width: 14px; height: 14px; }
 
   /* ── ROW 2: HOST OPTIONS ──────────────────────────────── */
@@ -382,7 +361,7 @@
     letter-spacing: -0.012em;
     line-height: 1.18;
   }
-  .host-card__title em { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold); font-weight: 400; }
+  .host-card__title em { font-family: inherit; font-style: normal; color: var(--gold); font-weight: 400; }
   .host-card__meta {
     margin-top: 6px;
     font-size: 11.5px;
@@ -522,7 +501,7 @@
     padding: 22px;
   }
   .quote__mark {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: inherit;
     font-size: 56px;
     color: var(--gold);
     opacity: 0.7;
@@ -530,8 +509,8 @@
     margin-bottom: -4px;
   }
   .quote__text {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 17px;
     line-height: 1.35;
     color: var(--ink-white);
@@ -604,15 +583,15 @@
     width: 36px; height: 36px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--coral), var(--gold));
-    color: var(--navy-deep);
+    background: var(--paper-tint);
+    color: var(--ink);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     font-size: 15px;
   }
-  .host-mini__avatar--tatiana { background: linear-gradient(135deg, var(--iris), var(--coral)); }
+  .host-mini__avatar--tatiana { background: var(--paper-tint); }
   .host-mini__name {
     font-size: 14px;
     font-weight: 700;
@@ -628,8 +607,8 @@
   .host-mini__role strong { color: var(--ink-soft); font-weight: 600; }
   .hosts-synth {
     margin-top: 10px;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 13px;
     color: var(--gold);
     text-align: center;
@@ -691,20 +670,20 @@
     position: relative;
   }
   .package--featured {
-    background: rgba(226,106,74,0.07);
-    border-color: var(--gold);
-    box-shadow: 0 0 0 1px rgba(226,106,74,0.18);
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    box-shadow: none;
   }
   .package__pill {
     position: absolute;
     top: -9px;
     left: 14px;
-    font-size: 9px;
-    font-weight: 700;
+    font-size: 10px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.6px;
-    color: var(--navy-deep);
-    background: var(--gold);
+    color: #fff;
+    background: var(--ink);
     padding: 3px 10px;
     border-radius: 999px;
   }
@@ -722,7 +701,7 @@
   }
   .package__price {
     margin-top: 12px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 24px;
     color: var(--gold);
@@ -738,8 +717,8 @@
     letter-spacing: 0;
   }
   .package__price--inquiry {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 18px;
     color: var(--ink-soft);
   }
@@ -824,8 +803,8 @@
     text-align: center;
   }
   .pakete-escalation__q {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 500;
     font-size: clamp(1.4rem, 2.6vw, 1.85rem);
     line-height: 1.2;
@@ -833,11 +812,11 @@
     letter-spacing: -0.012em;
     text-wrap: balance;
   }
-  .pakete-escalation__q em { color: var(--coral); font-style: italic; font-weight: 600; }
+  .pakete-escalation__q em { color: var(--coral); font-style: normal; font-weight: 600; }
   .pakete-escalation__a {
     margin-top: 8px;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 14px;
     color: var(--ink-soft);
     line-height: 1.5;
@@ -849,8 +828,8 @@
     text-align: center;
   }
   .escalation__question {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 400;
     font-size: clamp(1.3rem, 2.8vw, 1.7rem);
     line-height: 1.25;
@@ -860,7 +839,7 @@
   }
   .escalation__question em {
     color: var(--coral);
-    font-style: italic;
+    font-style: normal;
     font-weight: 700;
   }
   .escalation__answer {
@@ -876,8 +855,8 @@
     margin-top: 6px;
     padding: 16px 22px;
     text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.45;
     color: var(--gold);
@@ -897,11 +876,11 @@
   .credential__avatar {
     width: 36px; height: 36px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--coral), var(--gold));
-    color: var(--navy-deep);
+    background: var(--paper-tint);
+    color: var(--ink);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     flex-shrink: 0;
@@ -914,8 +893,8 @@
   }
   .credential__text strong { color: var(--ink-white); font-weight: 600; }
   .credential__text em {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     color: var(--gold);
     font-weight: 400;
   }
@@ -937,8 +916,8 @@
     gap: 12px;
   }
   .concierge-step__num {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     color: var(--gold);
@@ -1004,9 +983,9 @@
       linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02));
     border: 1px solid var(--rule);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: inherit;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
     font-size: 72px;
     color: var(--ink-white);
     letter-spacing: -0.02em;
@@ -1030,8 +1009,8 @@
   }
   .host-section__role {
     margin-top: 8px;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     font-size: 18px;
     color: var(--gold);
     font-weight: 400;
@@ -1046,8 +1025,8 @@
   }
   .host-section__bio p strong { color: var(--ink-white); font-weight: 600; }
   .host-section__bio p em {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
+    font-family: inherit;
+    font-style: normal;
     color: var(--ink-white);
     font-weight: 400;
   }
