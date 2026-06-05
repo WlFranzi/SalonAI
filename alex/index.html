@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Was unimitierbar bleibt · Salon AI × Alexandra von Rehlingen</title>
+<link rel="canonical" href="https://www.salon-ai.eu/alex/" />
+<meta name="description" content="Ein privater Salon AI Abend für luxuriöse PR und Lifestyle-Marken in Hamburg. Was eine PR-Agentur in 40 Jahren gebaut hat, kann KI in vier Stunden imitieren. Was bleibt unimitierbar? Gastgeberinnen: Franziska Wittleder & Tatiana von Mallinckrodt. By invitation." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RZV4QPFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2RZV4QPFD', { page_path: '/alex/' });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   THEME — gestalten-Verlag Editorial × Salon AI signature
+   Warm ivory paper, subtle iris embedding-atmosphere, coral→iris
+   gradient em, Cormorant italic editorial typography.
+   ============================================================ */
+:root{
+  --paper:      #faf8f4;
+  --paper-tint: #f5f1ea;
+  --paper-warm: #efe8db;
+  --ink:        #1a1612;
+  --ink-soft:   #5e544a;
+  --ink-mute:   rgba(26,22,18,0.55);
+  --ink-faint:  rgba(26,22,18,0.32);
+  --rule:       #e6dfd3;
+  --rule-strong: rgba(26,22,18,0.18);
+  --iris:       #6b4e8e;
+  --iris-deep:  #3b285a;
+  --coral:      #c4625a;
+  --coral-soft: #fdf0eb;
+  --gold:       #5c4f43;
+  --v-gradient-text: linear-gradient(135deg, #c4625a 0%, #8a72b8 100%);
+  --serif: 'Cormorant Garamond', Didot, Georgia, serif;
+  --sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;min-width:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{
+  font-family:var(--sans);
+  font-size:17px;line-height:1.7;letter-spacing:0.005em;
+  color:var(--ink);background:var(--paper);
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
+  /* Iris-dot embedding atmosphere from index-vision */
+  background-image: radial-gradient(circle, rgba(107,78,142,.07) 1px, transparent 1.4px);
+  background-size: 48px 48px;
+  background-attachment: fixed;
+}
+img,svg,video{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ============ TYPOGRAFIE ============ */
+h1,h2,h3{
+  font-family:var(--serif);font-weight:500;line-height:1.05;
+  letter-spacing:-.012em;color:var(--ink);
+}
+em{
+  font-style:italic;font-weight:500;
+  background:var(--v-gradient-text);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:#c4625a;
+}
+strong{font-weight:600;color:var(--ink)}
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  display:inline-block;
+}
+
+/* ============ NAVIGATION (top floating pill) ============ */
+.back-link{
+  position:fixed;top:1.25rem;left:1.5rem;z-index:50;
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:600;
+  background:rgba(250,248,244,.85);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  padding:.55rem 1rem;border-radius:999px;
+  border:1px solid var(--rule);
+  box-shadow:0 4px 14px rgba(60,50,40,0.06);
+  transition:all 0.18s ease;
+}
+.back-link:hover{color:var(--ink);background:rgba(250,248,244,1)}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:80vh;padding:8rem 2rem 4rem;
+  display:flex;flex-direction:column;justify-content:center;
+  max-width:1180px;margin:0 auto;
+}
+.hero__eyebrow{margin-bottom:1.8rem}
+.hero__title{
+  font-size:clamp(2.6rem,7vw,5.2rem);font-weight:400;font-style:italic;
+  line-height:.98;letter-spacing:-.018em;
+  margin-bottom:1.4rem;max-width:18ch;text-wrap:balance;
+}
+.hero__title em{
+  font-style:italic;font-weight:400;
+  background:var(--v-gradient-text);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero__sub{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.3rem,2.4vw,1.7rem);
+  line-height:1.4;color:var(--ink-soft);
+  max-width:42ch;margin-bottom:2rem;
+}
+.hero__meta{
+  margin-top:1.4rem;font-family:var(--sans);font-size:.66rem;
+  font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--ink-mute);
+}
+.hero__hosts{
+  margin-top:.5rem;font-family:var(--serif);font-style:italic;
+  font-size:1rem;color:var(--ink-soft);
+}
+
+/* ============ SECTIONS — editorial flow ============ */
+.section{
+  max-width:780px;margin:0 auto;padding:5rem 2rem;
+}
+.section--wide{max-width:1080px}
+.section__eyebrow{margin-bottom:1.2rem;display:block}
+.section h2{
+  font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;font-style:italic;
+  line-height:1.1;margin-bottom:1.4rem;text-wrap:balance;max-width:24ch;
+}
+.section__lede{
+  font-family:var(--serif);font-style:italic;font-size:1.18rem;
+  line-height:1.55;color:var(--ink-soft);max-width:58ch;margin-bottom:1.4rem;
+}
+.section p{
+  margin-bottom:1rem;font-size:1rem;line-height:1.7;color:var(--ink);
+  max-width:60ch;
+}
+
+/* ============ ANNOTATION BLOCK (iris-left-border) ============ */
+.annotation{
+  margin:2rem 0;padding:1.2rem 1.5rem;
+  border-left:2px solid var(--iris);
+  background:rgba(107,78,142,0.04);
+  border-radius:0 12px 12px 0;
+}
+.annotation p{
+  font-family:var(--serif);font-style:italic;font-size:1.15rem;
+  line-height:1.5;color:var(--ink);margin:0;max-width:none;
+}
+.annotation cite{
+  display:block;margin-top:.6rem;font-style:normal;
+  font-family:var(--sans);font-size:.66rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+/* ============ THEMES (4 questions block) ============ */
+.themes{
+  display:grid;grid-template-columns:1fr;gap:2.4rem;margin-top:2rem;
+}
+.theme{padding-left:1.2rem;border-left:1px solid var(--rule)}
+.theme__title{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:1.5rem;line-height:1.15;color:var(--ink);
+  margin-bottom:.6rem;letter-spacing:-.008em;
+}
+.theme p{font-size:.98rem;line-height:1.65;color:var(--ink-soft);margin-bottom:.6rem}
+.theme p.q{
+  font-family:var(--serif);font-style:italic;font-size:1.08rem;
+  color:var(--ink);margin-top:1rem;line-height:1.45;max-width:none;
+}
+@media(min-width:760px){.themes{grid-template-columns:1fr 1fr;gap:3rem 2.4rem}}
+
+/* ============ FORMAT (Build / Dinner / Debate) ============ */
+.format{display:grid;grid-template-columns:1fr;gap:2.5rem;margin-top:2rem}
+.part__label{
+  font-family:var(--sans);font-size:.7rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--coral);
+  margin-bottom:.6rem;
+}
+.part__title{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:1.8rem;line-height:1.1;color:var(--ink);margin-bottom:.8rem;
+}
+.part p{font-size:1rem;color:var(--ink-soft);max-width:none}
+.part ul{
+  margin-top:1rem;padding:0;list-style:none;
+  display:grid;grid-template-columns:1fr;gap:.4rem;
+}
+.part ul li{
+  position:relative;padding-left:1.4rem;
+  font-family:var(--serif);font-style:italic;font-size:1.05rem;
+  color:var(--ink);line-height:1.45;
+}
+.part ul li::before{
+  content:'—';position:absolute;left:0;top:0;color:var(--coral);font-weight:600;
+}
+.dinner{
+  text-align:center;padding:1.5rem 0;
+  font-family:var(--sans);font-size:.72rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  position:relative;
+}
+.dinner::before,.dinner::after{
+  content:'';position:absolute;top:50%;width:60px;height:1px;
+  background:var(--rule);
+}
+.dinner::before{left:calc(50% - 130px)}
+.dinner::after{right:calc(50% - 130px)}
+.part .questions p{
+  margin-top:.8rem;font-family:var(--serif);font-style:italic;
+  font-size:1.05rem;color:var(--ink);line-height:1.45;
+}
+.part .questions p strong{
+  font-family:var(--sans);font-style:normal;font-weight:600;
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--coral);display:block;margin-bottom:.2rem;
+}
+.outcome{
+  margin-top:2.2rem;padding:1.4rem 1.6rem;
+  border:1px solid var(--rule);border-radius:14px;
+  background:rgba(196,98,90,0.04);
+}
+.outcome strong{
+  font-family:var(--sans);font-weight:600;font-size:.66rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--coral);
+  display:block;margin-bottom:.6rem;
+}
+.outcome p{
+  font-family:var(--serif);font-style:italic;font-size:1.12rem;
+  color:var(--ink);line-height:1.45;margin:0;
+}
+
+/* ============ HOSTS ============ */
+.hosts-grid{
+  display:grid;grid-template-columns:1fr;gap:2rem;margin-top:1.6rem;
+}
+.host__name{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:1.45rem;color:var(--ink);margin-bottom:.3rem;
+}
+.host__name em{font-style:italic;background:none;-webkit-text-fill-color:var(--coral);color:var(--coral)}
+.host__role{font-size:.95rem;line-height:1.6;color:var(--ink-soft)}
+@media(min-width:680px){.hosts-grid{grid-template-columns:1fr 1fr;gap:3rem}}
+
+/* ============ FORMAT META (private rules) ============ */
+.private{margin-top:1.6rem;text-align:center}
+.private p{
+  font-family:var(--serif);font-style:italic;font-size:1.1rem;
+  color:var(--ink-soft);line-height:1.6;margin:0 auto;max-width:50ch;
+}
+
+/* ============ RSVP ============ */
+.rsvp{
+  max-width:780px;margin:2rem auto 0;padding:3rem 2rem 5rem;
+  text-align:center;
+}
+.rsvp__intro{
+  font-family:var(--serif);font-style:italic;font-size:1.3rem;
+  color:var(--ink);margin-bottom:.6rem;
+}
+.rsvp__sign{
+  font-family:var(--serif);font-style:italic;font-size:1.1rem;
+  color:var(--coral);margin-bottom:2rem;
+}
+.rsvp__btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--ink);color:var(--paper);
+  font-family:var(--sans);font-size:.7rem;font-weight:600;
+  padding:1.1rem 2.4rem;border-radius:999px;
+  letter-spacing:.22em;text-transform:uppercase;
+  min-height:54px;min-width:160px;
+  transition:all .2s ease;text-decoration:none;
+}
+.rsvp__btn:hover{
+  background:var(--iris-deep);transform:translateY(-1px);
+  box-shadow:0 12px 28px rgba(59,40,90,0.18);
+}
+.rsvp__note{
+  margin-top:1.4rem;font-family:var(--serif);font-style:italic;
+  font-size:.95rem;color:var(--ink-mute);
+}
+
+/* ============ FOOTER ============ */
+.footer{
+  max-width:1080px;margin:0 auto;padding:2.4rem 2rem 3rem;
+  text-align:center;font-family:var(--sans);font-size:.66rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-mute);
+  font-weight:600;border-top:1px solid var(--rule);
+}
+.footer a{color:var(--ink-soft);border-bottom:1px solid var(--rule)}
+.footer a:hover{color:var(--coral)}
+
+/* ============ MOBILE ============ */
+@media(max-width:680px){
+  body{font-size:16px}
+  .back-link{top:1rem;left:1rem;padding:.45rem .85rem}
+  .hero{padding:6rem 1.5rem 3rem;min-height:75vh}
+  .section{padding:3.5rem 1.5rem}
+  .rsvp{padding:2.5rem 1.5rem 4rem}
+  .dinner::before,.dinner::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<a href="https://salon-ai.eu/" class="back-link">← Salon AI</a>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <p class="eyebrow hero__eyebrow">Salon AI · Hamburg · By Invitation</p>
+  <h1 class="hero__title">Was <em>unimitierbar</em> bleibt.</h1>
+  <p class="hero__sub">Ein privater Abend für die, die Marken, Geschmack und Vertrauen bauen — in einem Zeitalter, in dem KI alles andere produziert.</p>
+  <p class="hero__meta">Frühjahr 2026 · Hamburg · 12 Plätze</p>
+  <p class="hero__hosts">Gastgeberinnen: Franziska Wittleder &amp; Tatiana von Mallinckrodt</p>
+</section>
+
+<!-- ============ WARUM DIESES GESPRÄCH ============ -->
+<section class="section">
+  <p class="eyebrow section__eyebrow">Warum dieses Gespräch</p>
+  <h2>Was eine PR-Agentur in <em>40 Jahren</em> gebaut hat, kann KI in vier Stunden imitieren.</h2>
+  <p class="section__lede">KI schreibt Pitches. KI klont Brand-Voice. KI generiert Pressemitteilungen, identifiziert Journalist:innen, entwirft Moodboards, baut Event-Konzepte. Was eine Agentur über Jahrzehnte als Differenzierung aufgebaut hat — Geschwindigkeit, Reichweite, Material — ist in Minuten reproduzierbar.</p>
+  <p>Die Frage ist also nicht, ob KI Luxus-PR verändert. Sondern <em>was unimitierbar bleibt</em> — und wer entscheidet, wo KI in eine Welt von Krug, Pomellato, Montblanc rein darf, und wo nie.</p>
+
+  <div class="annotation">
+    <p>Dieser Abend hat einen Standpunkt: KI ist Werkzeug, nicht Strategie. Sie ersetzt vieles. Sie ersetzt nicht das, was Luxus eigentlich ist.</p>
+    <cite>— Standpunkt des Abends</cite>
+  </div>
+</section>
+
+<!-- ============ VIER FRAGEN ============ -->
+<section class="section section--wide">
+  <p class="eyebrow section__eyebrow">Vier Fragen an der Schwelle</p>
+  <h2>Vier Fragen, die <em>Luxus-PR</em> heute beantworten muss.</h2>
+
+  <div class="themes">
+
+    <div class="theme">
+      <p class="theme__title">Aura im Zeitalter der <em>Skalierung</em></p>
+      <p>Luxus lebt von Knappheit, Mystik, Zeit, Handwerk. KI ist Skalierung, sofort, unendlich, Automatisierung. Die zwei Logiken kollidieren frontal.</p>
+      <p class="q"><em>Wo darf KI in die Welt von Armani, Krug, Pomellato — und wo nie?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Das Netzwerk, das KI <em>nicht bauen kann</em></p>
+      <p>40 Jahre Vertrauen, Dinner-Tafeln, diplomatisches Protokoll, echte Beziehungen. Was davon ist automatisierbar — und was bleibt heilig?</p>
+      <p class="q"><em>Was verlieren Marken, wenn Pitches algorithmisch werden statt persönlich?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Die Substanz hinter der <em>Entscheidung</em></p>
+      <p>Jedes Briefing, jeder Pitch, jede Gästeliste. KI entwirft jetzt. Wo behauptet sich Geschmack? Wo bleibt Urteilskraft die Währung der Senioren?</p>
+      <p class="q"><em>Was kann eine 25-jährige Beraterin mit ChatGPT — und was nicht?</em></p>
+    </div>
+
+    <div class="theme">
+      <p class="theme__title">Das Langsame, das <em>Bedeutungsvolle</em></p>
+      <p>KI produziert unbegrenzten Content. Aber Luxusmarken brauchen Sinn — und Nachhaltigkeit ist längst kein Add-on mehr.</p>
+      <p class="q"><em>Kann KI dem Langsamen, Bedeutungsvollen dienen — oder beschleunigt sie unweigerlich das Wegwerfbare?</em></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FORMAT ============ -->
+<section class="section section--wide">
+  <p class="eyebrow section__eyebrow">Format</p>
+  <h2>Bauen, <em>dinieren,</em> debattieren.</h2>
+
+  <div class="format">
+
+    <div class="part">
+      <p class="part__label">Teil I · 2 Stunden</p>
+      <p class="part__title">Bauen</p>
+      <p>Hands-on mit den KI-Werkzeugen, die Ihre Agentur — oder die der Konkurrenz — schon morgen einsetzt. In kleinen Gruppen bauen Sie Prototypen wie:</p>
+      <ul>
+        <li>Pitch-Generator für Lifestyle &amp; Fashion</li>
+        <li>Press-Release-Drafter im eigenen Brand-Tone</li>
+        <li>Journalist-Recherche-Agent</li>
+        <li>Moodboard- und Kampagnen-Konzept-Generator</li>
+        <li>Influencer-Discovery &amp; Relationship-Mapper</li>
+        <li>Brand-Voice-Klone — und ihre Grenzen</li>
+      </ul>
+      <p style="margin-top:1.2rem;"><em>Keine KI-Vorkenntnisse nötig.</em> Ziel ist nicht technische Perfektion, sondern Anschauungsunterricht: was kann KI heute wirklich, was nicht — und an welcher Stelle merken Sie es Ihrem eigenen Geschäft an?</p>
+    </div>
+
+    <div class="dinner">Dinner Break · Informelles Gespräch</div>
+
+    <div class="part">
+      <p class="part__label">Teil II · 2 Stunden</p>
+      <p class="part__title">Debattieren</p>
+      <p>Nach dem Dinner kehren wir zu den <em>vier Fragen</em> zurück — nun mit Prototypen auf dem Tisch und Erfahrungen aus dem Bauen:</p>
+      <div class="questions">
+        <p><strong>Aura im Zeitalter der Skalierung</strong> Wo darf KI in die Welt unserer Kunden — und wo nie?</p>
+        <p><strong>Das unimitable Netzwerk</strong> Welcher Teil der Beziehungsarbeit ist heilig?</p>
+        <p><strong>Die Substanz der Entscheidung</strong> Wo bleibt Geschmack das Pricing-Argument?</p>
+        <p><strong>Das Langsame, das Bedeutungsvolle</strong> Wie schützt man Sinn in einem Medium, das auf Beschleunigung optimiert ist?</p>
+      </div>
+      <div class="outcome">
+        <strong>Sie verlassen den Abend mit</strong>
+        <p>Einem KI-Werkzeug, das Sie selbst gebaut haben. Einer klaren Position für Ihr nächstes Kunden-Gespräch. Und einer schärferen Linie zwischen dem, was KI ersetzt — und dem, was Ihre Agentur unersetzbar macht.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ HOSTS ============ -->
+<section class="section">
+  <p class="eyebrow section__eyebrow">Geleitet von</p>
+  <h2>Substanz trifft <em>Erlebnis.</em></h2>
+  <div class="hosts-grid">
+    <div class="host">
+      <p class="host__name">Franziska Wittleder · <em>Founder Movaut</em></p>
+      <p class="host__role">Informatikerin und Product. Hat KI-Produkte gebaut, die Millionen Menschen nutzen. Bringt die KI- und Produkt-Substanz.</p>
+    </div>
+    <div class="host">
+      <p class="host__name">Tatiana von Mallinckrodt · <em>Head of PR, gestalten</em></p>
+      <p class="host__role">Berliner Verlag für Design &amp; visuelle Kultur. Bringt Inszenierung, Erzählung und das kuratierte Erlebnis. Versteht Ihre Welt.</p>
+    </div>
+  </div>
+
+  <div class="annotation" style="margin-top:2.4rem;">
+    <p>Ein Abend zwischen zwei Disziplinen, die selten am selben Tisch sitzen: tiefes Technik-Verständnis und tiefes Verständnis für Marken, die Aura tragen.</p>
+    <cite>— Die Idee dieser Gastgeberinnen-Konstellation</cite>
+  </div>
+</section>
+
+<!-- ============ PRIVATE FORMAT ============ -->
+<section class="section">
+  <p class="eyebrow section__eyebrow">Format · Privatissime</p>
+  <div class="private">
+    <p>Ein privates Dinner-Gespräch. Eine kuratierte Runde aus der deutschen Luxus-, Lifestyle-, Mode- und Hospitality-Welt. <em>Keine Vorträge. Keine Panels. Keine Aufnahmen.</em> Eine kleine Gruppe, die ehrlich darüber redet, was eine KI-flutete Welt für ein Handwerk wie Ihres bedeutet — und was sie nicht bedeutet.</p>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="rsvp">
+  <p class="rsvp__intro">Liebe Alexandra, kommen Sie?</p>
+  <p class="rsvp__sign">— Franziska &amp; Tatiana</p>
+  <a class="rsvp__btn"
+     href="mailto:luckysprouts@duck.com?subject=Salon%20AI%20%C3%97%20Hamburg%20%C2%B7%20Was%20unimitierbar%20bleibt&amp;body=Liebe%20Franziska%2C%20liebe%20Tatiana%2C%0A%0Ader%20Salon%20interessiert%20mich.%0A%0AName%3A%0AAgentur%2FRolle%3A%0AAnmerkung%3A%0A%0AHerzlich%2C"
+     onclick="gtag('event', 'rsvp_click', { 'event_name': 'salon_alex' });">
+    Antworten →
+  </a>
+  <p class="rsvp__note">Datum und Ort folgen mit der Bestätigung.<br>Diskret. Kuratiert. By invitation only.</p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  Salon AI · Hamburg · By invitation only
+</footer>
+
+</body>
+</html>
