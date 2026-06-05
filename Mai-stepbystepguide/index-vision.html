@@ -2735,20 +2735,20 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
         <!-- STAGE 1: Einzelne Wörter werden zu Punkten -->
         <g class="stage stage--1">
           <circle class="pencil-fill" cx="280" cy="200" r="9"/>
-          <text class="label-serif" x="280" y="184" text-anchor="middle" font-size="16">Hund</text>
+          <text class="label-serif" x="280" y="184" text-anchor="middle" font-size="16">Start-up</text>
 
-          <circle class="pencil-fill" cx="220" cy="170" r="6"/>
-          <text class="label-serif" x="220" y="158" text-anchor="middle">Welpe</text>
+          <circle class="pencil-fill" cx="200" cy="170" r="6"/>
+          <text class="label-serif" x="200" y="158" text-anchor="middle">Pitch Deck</text>
 
-          <circle class="pencil-fill" cx="335" cy="225" r="6"/>
-          <text class="label-serif" x="335" y="247" text-anchor="middle">Katze</text>
+          <circle class="pencil-fill" cx="355" cy="225" r="6"/>
+          <text class="label-serif" x="355" y="247" text-anchor="middle">Obstkorb</text>
 
-          <circle class="pencil-fill" cx="255" cy="250" r="6"/>
-          <text class="label-serif" x="255" y="272" text-anchor="middle">Maus</text>
+          <circle class="pencil-fill" cx="250" cy="252" r="6"/>
+          <text class="label-serif" x="250" y="274" text-anchor="middle">Insolvenz</text>
 
           <!-- Far away word -->
-          <circle class="pencil-fill" cx="580" cy="110" r="6"/>
-          <text class="label-serif" x="580" y="98" text-anchor="middle">Aktenschrank</text>
+          <circle class="pencil-fill" cx="585" cy="110" r="6"/>
+          <text class="label-serif" x="585" y="98" text-anchor="middle">der Drucker im 3. Stock</text>
 
           <!-- Hand annotation -->
           <text class="label-hand" x="200" y="320" fill="#3a3633" text-anchor="middle">ähnliche Bedeutung →</text>
@@ -2812,16 +2812,16 @@ Nachher (~10 Min/Tag): Eine Audio-KI hört im Hintergrund sicher beim Patienteng
       <p class="eyebrow">I.3 · die Karte verstehen · 3 Min</p>
       <h3>Erst mal: <em>was ist überhaupt</em><br>ein Punkt im Embedding-Raum?</h3>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
-        Dieser <em>Embedding-Raum</em> ist <strong>wie eine riesige Wort-Wolke</strong> — die <em>Eingangs-Landkarte</em> des Sprachmodells, nur radikal vereinfacht dargestellt (das Modell selbst ist die viele Schichten darüber). Jedes Wort wird in Zahlen umgewandelt und kriegt im <em>Training</em> einen festen Platz. <strong>„König"</strong> und <strong>„Königin"</strong> wurden in Milliarden Texten ähnlich verwendet — also liegen sie nebeneinander. Genauso <strong>Hund · Welpe · Katze · Maus</strong>.
+        Stell dir den <em>Embedding-Raum</em> wie eine <strong>riesige Wort-Landkarte</strong> vor. Sie ist die <em>Eingangsschicht</em> des Sprachmodells — also nur die unterste Ebene; das eigentliche Modell besteht aus vielen weiteren Schichten darüber. Hier stark vereinfacht dargestellt — aber im Kern funktioniert es genau so, und mit diesem Bild kannst du praktisch arbeiten, jeden Tag.
       </p>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:.8rem">
-        Sachen, die nichts miteinander zu tun haben, liegen weit weg: <strong>Aktenschrank</strong>.
+        So funktioniert sie: Jedes Wort wird in Zahlen übersetzt und kriegt im <em>Training</em> einen festen Platz auf der Karte. Wörter, die in Milliarden Texten in ähnlichen Zusammenhängen vorkamen, landen <em>nah beieinander</em> — <strong>„König"</strong> und <strong>„Königin"</strong> zum Beispiel, oder <strong>Start-up · Pitch Deck · Obstkorb · Insolvenz</strong>. Wörter, die nichts miteinander zu tun haben, liegen weit auseinander: irgendwo da hinten <strong>der Drucker im 3. Stock</strong>.
       </p>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:.8rem">
-        Wichtig: Ein einzelnes <em>Wort</em> ist ein <em>Punkt</em>. Ein ganzes <em>Argument</em> oder ein längerer Text ist kein Punkt mehr — sondern eine <em>Wolke</em> aus vielen Punkten, eine ganze Region im Raum.
+        Ein wichtiger Punkt: Ein einzelnes <em>Wort</em> ist ein einziger <em>Punkt</em> auf der Karte. Ein ganzes <em>Argument</em> oder ein längerer Text ist kein Punkt mehr — sondern eine <em>Wolke</em> aus vielen Punkten, eine ganze Region im Raum.
       </p>
       <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:.8rem">
-        Diese Geometrie ist das eigentliche Werkzeug der KI — nicht <em>„Verstehen"</em>, sondern <em>Nähe im Raum.</em>
+        Und genau diese Geometrie ist das eigentliche Werkzeug der KI — nicht <em>„Verstehen"</em>, sondern <em>Nähe im Raum.</em>
       </p>
       <p style="font-family:var(--serif);font-size:1.08rem;color:var(--ink-soft);margin-top:1.2rem;font-style:italic;border-left:1px solid var(--rule);padding-left:1rem;line-height:1.5">
         Die KI hat <em>kein Bild im Kopf. Kein Gefühl. Keine Erinnerung.</em><br>
