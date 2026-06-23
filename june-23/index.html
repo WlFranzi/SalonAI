@@ -4431,10 +4431,34 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
 
 <!-- ============ FINALE — die Frage des Abends (Europa-KI) ============ -->
 <section class="text-section text-section--wide" id="europa-frage">
-  <p class="eyebrow" style="text-align:center">Die Frage des Abends</p>
-  <h2 style="text-align:center">Welche KI kann <em>nur von Europäer:innen</em><br>gebaut werden?</h2>
-  <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:1.5rem auto;text-align:center">
-    Jetzt hast du das Werkzeug, um sie nicht nur zu <em>fühlen</em>, sondern zu <em>bauen</em>. Lass sie uns gemeinsam beantworten — mit allem, was heute Abend dazugekommen ist.
+  <p class="eyebrow" style="text-align:center">Der Brainstorm des Abends</p>
+  <h2 style="text-align:center">Wie lässt sich erreichen, dass sich Europäer:innen<br><em>mehr europäisch</em> fühlen?</h2>
+
+  <figure style="max-width:680px;margin:2.2rem auto 0;text-align:center">
+    <img src="what-do-europeans-feel-most-attached-to-their-region-their-v0-0gy650wtd8371.png" alt="Karte: Woran fühlen sich Europäer:innen am stärksten gebunden — ihrer Region, ihrem Land oder Europa" style="width:100%;height:auto;border-radius:18px;box-shadow:var(--v-shadow)">
+    <figcaption class="eyebrow" style="margin-top:.9rem;text-align:center">Woran fühlen sich Europäer:innen am stärksten gebunden? — Region, Land, Europa</figcaption>
+  </figure>
+
+  <div class="grid-section__grid" style="max-width:980px;margin-left:auto;margin-right:auto">
+    <div class="grid-card">
+      <p class="grid-card__label">① Region</p>
+      <h3 class="grid-card__title">Wo das Herz oft zuerst schlägt</h3>
+      <p class="grid-card__body">Bayern, Katalonien, Schottland — die <em>nächste</em> Heimat. Konkret, sichtbar, im Alltag spürbar.</p>
+    </div>
+    <div class="grid-card">
+      <p class="grid-card__label">② Land</p>
+      <h3 class="grid-card__title">Für die meisten die stärkste Bindung</h3>
+      <p class="grid-card__body">Hier sitzt die Identität — Sprache, Pass, Nationalmannschaft. Das <em>blaue</em> Europa der Karte.</p>
+    </div>
+    <div class="grid-card">
+      <p class="grid-card__label">③ Europa</p>
+      <h3 class="grid-card__title">Fast überall zuletzt</h3>
+      <p class="grid-card__body">Genau hier ist der <em>Spielraum</em> — und unsere Frage des Abends.</p>
+    </div>
+  </div>
+
+  <p class="lead" style="border-left:none;padding-left:0;max-width:64ch;margin:2.5rem auto 0;text-align:center">
+    Europa hat Pässe — aber <em>keine Lagerfeuer</em>. Jetzt hast du das Werkzeug, um nicht nur darüber zu reden, sondern es mit der KI <em>kreativ durchzudenken</em>: Welche Idee würde ein Gefühl bauen?
   </p>
 
 
@@ -4449,15 +4473,16 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   .plan__btn:hover{background:var(--coral);transform:translateY(-1px)}
   </style>
   <div class="plan">
-    <p class="plan__hd">Beschreibe deinen Plan — ein paar Denkanstöße:</p>
+    <p class="plan__hd">Schreib dir mit der KI einen Plan — die Operationen vom Abend, jetzt für Ideen:</p>
     <ul style="margin:0 0 1.1rem;padding-left:1.1rem;font-family:var(--serif);font-size:.92rem;line-height:1.45;color:var(--ink-soft);display:flex;flex-direction:column;gap:.3rem">
-      <li>der KI <em>drei richtig gute Beispiele</em> zeigen</li>
-      <li>ein <em>Gremium</em> erstellen, das jeweils ein eigenes Beispiel erarbeitet</li>
-      <li>die <em>vier Prüf-Fragen</em> an die Antwort hängen</li>
-      <li>erst mit der KI zusammen einen <em>Plan</em> erstellen — dann ausführen, damit die Antwort <em>durchdacht und vielfältig</em> wird</li>
+      <li><em>Verorten</em> — ein Gremium aus sehr verschiedenen Stimmen (jede Stimme ein anderer Punkt im Raum)</li>
+      <li><em>Richtung zeigen</em> — die KI mit Vorher → Nachher-Beispielen anschubsen</li>
+      <li><em>Abziehen</em> — rechnen: „Zugehörigkeit − Bürokratie", und das Gegenteil denken</li>
+      <li><em>Streuen &amp; Clustern</em> — viele wilde Ideen, dann auf einer Landkarte zu wenigen bündeln</li>
+      <li><em>Distanz messen</em> — mit den vier Prüf-Fragen die ehrlichste finden · erst Plan, dann ausführen</li>
     </ul>
-    <textarea class="plan__field" id="plan-field" placeholder="Dein Plan in eigenen Worten — was soll die KI tun, mit welchem Material, wer prüft am Ende?"></textarea>
-    <button type="button" class="plan__btn" id="plan-btn">Plan gegenlesen</button>
+    <textarea class="plan__field" id="plan-field" placeholder="Dein Plan in eigenen Worten — welche Operationen lässt du die KI nacheinander ausführen, um Ideen zu erzeugen?"></textarea>
+    <button type="button" class="plan__btn" id="plan-btn">Beispiel-Lösung ansehen</button>
   </div>
   <script>
   (function(){
@@ -4473,41 +4498,35 @@ Zitier mit Dateinamen, wenn du dich beziehst.</pre>
   </script>
 
   <details class="europa-reveal" id="europa-reveal">
-    <summary>Beispiel-Prompt zum Vergleich ansehen, hier klicken</summary>
+    <summary>Beispiel-Lösung ansehen, hier klicken</summary>
     <div class="prompt-card" id="europa-prompt">
-    <p class="prompt-card__label"><span>Prompt — die Frage des Abends, mit KI beantwortet</span><button class="copy-btn" type="button">kopieren</button></p>
-    <pre class="prompt-card__body">Du bist ein weltweit führender Stratege für technologische Geopolitik, Systemdesign und vergleichende Regierungslehre. Schau dir die Benchmark-Beispiele unten an, um die erwartete strategische Tiefe, den Ton und das Ambitionsniveau zu verstehen. Nutze diese Beispiele als Inspiration und meine Eingabe (unten) — und entwirf mir eine messerscharfe, visionäre Analyse für ein neues technologisches Ökosystem.
+    <p class="prompt-card__label"><span>Prompt — Ideen erzeugen mit Mathe-mit-Worten-Operationen</span><button class="copy-btn" type="button">kopieren</button></p>
+    <pre class="prompt-card__body">Du hilfst mir, eine Frage KREATIV zu lösen — mit denselben Operationen, die wir heute Abend gelernt haben: Ideen sind Punkte, Brainstormen ist Geometrie.
 
-### Mein strategischer Kontext:
+### Die Frage
 
-• Mein Kernfokus: Das geopolitische und regulatorische Potenzial Europas im Bereich der Künstlichen Intelligenz („Sovereign &amp; Compliant AI").
+Wie fühlen sich 450 Mio. Menschen über 27 Nationen hinweg im Alltag als Europäer:innen — nicht nur am Wahltag? (Heute fühlen sich die meisten zuerst ihrer Region oder ihrem Land verbunden. Europa kommt fast überall zuletzt.)
 
-• Die Entscheidung, die für mich den Unterschied macht: Die Beantwortung der Frage: Welche Art von KI kann strukturell, rechtlich und philosophisch NUR von Europäer:innen gebaut und erfolgreich skaliert werden?
+### Geh in dieser Reihenfolge vor — und zeig mir jeden Schritt:
 
-• Mein aktueller Informations-Engpass / Energiefresser: Das dominante Narrativ, dass Europa technologisch abgehängt ist und sich zwischen dem hyper-kapitalistischen US-Modell („Move fast and break things", Monopole, urheberrechtliche Grauzonen) und dem staatlich-autoritären China-Modell (totale Überwachung, ideologische Zensur) entscheiden muss.
+1. VERORTEN (Gremium) — Bilde 4 sehr unterschiedliche Stimmen: eine 16-Jährige aus Lissabon, ein Bürgermeister, eine Künstlerin, ein Skeptiker. Jede steht an einem anderen Punkt — also sieht jede etwas anderes.
 
+2. RICHTUNG ZEIGEN (Vorher → Nachher) — Hier 3 Beispiele, wo aus Abstraktem ein Gefühl wurde. Lern die Richtung daraus:
+• Sport: Nationen trennen → der Ryder Cup macht aus Europäern EIN Team.
+• Alltag: Grenzen &amp; Stempel → Erasmus + offene Grenzen + ein Euro.
+• Symbol: 27 Hymnen → eine Geschichte, die jedes Kind kennt.
 
-### Benchmark-Beispiele (Die Vorher-Nachher-Logik exzellenter Systeme):
+3. ABZIEHEN (Subtraktion &amp; Inversion) — Rechne laut mit: „Zugehörigkeit − Bürokratie = ?", „Heimat − Nationalstaat = ?". Und invertiere: Was würde Europäer:innen garantiert NICHT verbinden? Dreh die Antwort um — dort liegen oft die besten Ideen.
 
-Lebensmittelsicherheit &amp; Regulatorik —
-Vorher (Träges Standard-System): Ein Land agiert nach dem Nachsorgeprinzip. Schäden müssen erst wissenschaftlich und juristisch bewiesen werden, um ein Produkt zu verbieten. Konsumenten kämpfen mit intransparenten Inhaltsstoffen, während Unternehmen Risiken auf die Allgemeinheit abwälzen.
-Nachher (Benchmark-Hebel): Ein System etabliert das strikte Präventionsprinzip (EU-Vorgabe). Stoffe müssen ihre Unbedenklichkeit beweisen, *bevor* sie auf den Markt kommen. Das Vertrauen ist so gigantisch, dass diese zertifizierten Produkte (z.B. europäische Babynahrung) in unregulierten Märkten wie den USA zu einem unbezahlbaren Statussymbol und Graumarkt-Premiumprodukt werden.
+4. STREUEN (viele Pfade) — Wirf bewusst 12 wilde Ideen aus, nicht 3 brave.
 
-Altersvorsorge &amp; Demografie —
-Vorher (Träges Standard-System): Reine Umlagesysteme kollabieren unter dem demografischen Wandel. Sie verharren in einer permanenten Steuerzuschuss-Spirale, belasten die arbeitende Bevölkerung massiv und erzeugen gleichzeitig flächendeckende Altersarmut.
-Nachher (Benchmark-Hebel): Ein resilienter System-Hebel (Schweizer 3-Säulen-Modell) koppelt eine einkommensununabhängige Rente ohne Beitragsbemessungsgrenze mit echter, privatwirtschaftlich verwalteter Kapitalbildung. Reiche zahlen viel ein, erhalten aber einen gedeckelten Maximalsatz. Das System widersteht der Überalterung und sichert Wohlstand sozial gerecht ab.
+5. CLUSTERN (Landkarte) — Gruppiere die 12 zu 3 Regionen und benenne jede.
 
-Gesundheitswesen &amp; Incentivierung —
-Vorher (Träges Standard-System): Fragmentierte Systeme incentivieren Krankheit über das „Fee-for-Service"-Modell. Mehr Operationen, mehr Medikamente und mehr Liegetage bedeuten mehr Umsatz für Krankenhäuser. Die Gesunderhaltung des Patienten ist finanziell unattraktiv.
-Nachher (Benchmark-Hebel): Vertikale Integration (Kaiser Permanente Logik). Versicherung und Leistungserbringer sind dieselbe Entität. Das System verdient Geld, wenn Menschen *gesund* bleiben. Es investiert massiv in digitale Vorsorge und Prävention und beweist, dass Profitabilität und exzellente Patientenversorgung durch richtige Anreize Hand in Hand gehen.
+6. DISTANZ MESSEN (Prüf-Fragen) — Prüf jede Region ehrlich: Berührt sie das Herz, nicht nur den Kopf? Wirkt sie in Lissabon UND Tallinn? Morgen startbar? Verbindet sie — oder spaltet sie?
 
----
+7. NO-GO-ZONEN — Bleib weg von: Kitsch, Parteipolitik, „noch ein EU-Gipfel".
 
-### DEINE AUFGABE:
-
-Analysiere nun auf exakt demselben Niveau die Fragestellung meines strategischen Kontexts.
-
-Entwirf das „Vorher" (die aktuelle Dominanz von US- und China-KI mit ihren blinden Flecken) und das „Nachher" (das disruptive Potenzial einer spezifisch europäischen KI-Architektur). Zeige auf, wie europäische Werte, der EU AI Act, Datenschutz (DSGVO) und kontinentale Philosophie nicht als Wachstumsbremse, sondern als der ultimative, globale System-Hebel für eine neue Klasse von KI-Systemen fungieren.</pre>
+Bestätige zuerst diesen Plan mit mir. Dann gib mir die EINE Idee, die du selbst umsetzen würdest — und den ersten Schritt.</pre>
     </div>
   </details>
 
