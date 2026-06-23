@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backup — I.5 „Wort für Wort" (für PowerPoint)</title>
+<style>
+  body{font-family:Georgia,'Times New Roman',serif;color:#1a1410;background:#faf7f1;line-height:1.6;max-width:980px;margin:0 auto;padding:3rem 1.5rem}
+  .eyebrow{font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#a4502e;font-weight:600;margin-bottom:.6rem}
+  h2,h3{font-weight:600;line-height:1.15;margin:.4rem 0 1rem}
+  h2{font-size:2rem}h3{font-size:1.4rem}
+  em{font-style:italic;color:#c4625a}
+  .two-col-scroll{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;margin:2rem 0}
+  .two-col-scroll__step{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid #e7e0d2}
+  .master-card{background:#fff;border:1px solid #e7e0d2;border-radius:16px;padding:1.4rem;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+  .master-card svg{width:100%;height:auto;display:block}
+  .master-card__caption{font-style:italic;color:#5c4f43;font-size:.95rem;margin-top:.6rem;text-align:center}
+  .pencil-stroke{stroke:#2a2520;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .pencil-fill{fill:#2a2520}
+  .label-serif{font-family:Georgia,serif;fill:#1a1410;font-size:13px}
+  .label-hand{font-family:'Segoe Script','Bradley Hand',cursive;fill:#3a3633;font-size:14px}
+  .label-sans{font-family:Arial,sans-serif;fill:#5c4f43;font-size:11px;letter-spacing:.1em}
+  .exkurs{border:1px solid #e7e0d2;border-radius:12px;margin:2rem 0;background:#fff}
+  .exkurs__summary{padding:1rem 1.3rem;cursor:pointer;list-style:none}
+  .exkurs__label{font-family:Arial,sans-serif;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#a4502e;font-weight:700;margin-right:.8rem}
+  .exkurs__title{font-style:italic}
+  .exkurs__toggle{float:right;font-family:Arial,sans-serif;font-size:.7rem;color:#a4502e}
+  .exkurs__body{padding:0 1.3rem 1.3rem}
+  .deeper-note{border-left:3px solid #8a72b8;background:#fff;padding:1.2rem 1.4rem;border-radius:0 12px 12px 0;margin:2rem 0}
+  .deeper-note__label{font-family:Arial,sans-serif;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#4a3566;font-weight:700;display:block;margin-bottom:.5rem}
+  .konsequenz{display:block;margin-top:.6rem;font-style:italic;color:#5c4f43}
+  .backup-note{background:#fff3e9;border:1px solid #f0c9b3;border-radius:10px;padding:1rem 1.3rem;font-family:Arial,sans-serif;font-size:.85rem;color:#5c4f43;margin-bottom:2.5rem}
+</style>
+</head>
+<body>
+<p class="backup-note"><strong>Backup-Notiz:</strong> Diese Sektion „I.5 · Wort für Wort" wurde am 28.05.2026 aus <em>index-vision.html</em> entfernt (ersetzt durch „Rechnen im Raum mit Worten"). Hier aufbewahrt für die spätere PowerPoint-Nutzung — Text kopierbar, Grafik per Screenshot verwendbar.</p>
+
+<!-- ============ I.5 — Heißt: KI ist Mathe + Wort-für-Wort-Visualisierung (merged) ============ -->
+<section class="two-col-scroll" data-stage="1" id="i6">
+  <div class="two-col-scroll__media">
+    <div class="master-card">
+      <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg">
+        <!-- Immer sichtbar: Startpunkt + dein Prompt -->
+        <g>
+          <circle class="pencil-fill" cx="120" cy="210" r="11"/>
+          <text class="label-serif" x="120" y="240" text-anchor="middle">dein Prompt</text>
+          <text class="label-hand" x="120" y="260" text-anchor="middle">"Schreib mir eine…"</text>
+        </g>
+
+        <!-- STAGE 1: Erste Kandidaten + Mail wird gewählt -->
+        <g class="stage stage--1">
+          <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M132,210 L230,180"/>
+          <circle cx="240" cy="180" r="9" fill="#e26a4a"/>
+          <text class="label-serif" x="252" y="178">"Mail"</text>
+          <text class="label-hand" x="252" y="195" fill="#e26a4a">0.71</text>
+          <circle cx="220" cy="140" r="6"/>
+          <text class="label-serif" x="232" y="138">"Brief"</text>
+          <text class="label-hand" x="232" y="155">0.18</text>
+          <circle cx="200" cy="250" r="6"/>
+          <text class="label-serif" x="212" y="252">"Nachricht"</text>
+          <text class="label-hand" x="212" y="269">0.08</text>
+        </g>
+
+        <!-- STAGE 2: an erscheint -->
+        <g class="stage stage--2">
+          <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M249,180 L340,160"/>
+          <circle cx="350" cy="160" r="9" fill="#e26a4a"/>
+          <text class="label-serif" x="362" y="158">"an"</text>
+          <text class="label-hand" x="362" y="175" fill="#e26a4a">0.84</text>
+          <circle cx="335" cy="120" r="5"/>
+          <text class="label-serif" x="347" y="117" font-size="11">"für"</text>
+          <text class="label-hand" x="347" y="132" font-size="14">0.10</text>
+        </g>
+
+        <!-- STAGE 3: meinen Chef erscheint -->
+        <g class="stage stage--3">
+          <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M359,160 L450,140"/>
+          <circle cx="460" cy="140" r="9" fill="#e26a4a"/>
+          <text class="label-serif" x="472" y="138">"meinen"</text>
+          <text class="label-hand" x="472" y="155" fill="#e26a4a">0.62</text>
+          <path class="pencil-stroke" stroke-width="2" stroke-dasharray="3,4" d="M469,140 L560,125"/>
+          <circle cx="570" cy="125" r="9" fill="#e26a4a"/>
+          <text class="label-serif" x="582" y="123">"Chef"</text>
+          <text class="label-hand" x="582" y="140" fill="#e26a4a">0.55</text>
+          <text x="350" y="380" font-family="Caveat" font-size="22" fill="#3a3633" text-anchor="middle">Wort für Wort. Jedes ist das nächste auf der Route.</text>
+        </g>
+      </svg>
+      <p class="master-card__caption">Scroll mit — die Route wächst Wort für Wort: <em>„Mail" → „an" → „meinen" → „Chef"</em>.</p>
+    </div>
+  </div>
+  <div class="two-col-scroll__content">
+    <div class="two-col-scroll__step" data-step="1">
+      <p class="eyebrow">I.5 · Wort für Wort · 5 Min</p>
+      <h3>Heißt: KI ist <em>wirklich nur</em><br>komplexe Mathe.</h3>
+      <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
+        Sobald du einen Prompt eingibst, tippt das Modell den Text <em>Wort für Wort</em> weiter — immer das nächste Wort, das am besten zum bisherigen Text passt.
+      </p>
+      <p style="font-family:var(--serif);font-size:1.08rem;color:var(--ink-soft);margin-top:1.1rem;font-style:italic;border-left:1px solid var(--rule);padding-left:1rem;line-height:1.5">
+        <strong style="font-style:normal;color:var(--coral);font-family:var(--sans);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:.4rem">Schritt 1 — drei Kandidaten</strong>
+        Aus dem Prompt schaut die KI in alle Richtungen: <em>Mail</em> (0.71), <em>Brief</em> (0.18), <em>Nachricht</em> (0.08). Das wahrscheinlichste leuchtet auf.
+      </p>
+    </div>
+    <div class="two-col-scroll__step" data-step="2">
+      <h3>Schritt 2 — <em>vom neuen Punkt aus.</em></h3>
+      <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
+        Sobald <em>"Mail"</em> gewählt ist, wird er der neue Schwerpunkt. Drumherum erscheinen die nächsten Kandidaten — meist wird Grammatik wie <em>"an"</em> sehr wahrscheinlich.
+      </p>
+      <p style="font-family:var(--serif);font-size:1.05rem;color:var(--ink-soft);margin-top:.8rem;font-style:italic">
+        Das Modell denkt vereinfacht: „Welches Wort kommt jetzt am wahrscheinlichsten?" — wählt es, und die Frage startet neu.
+      </p>
+    </div>
+    <div class="two-col-scroll__step" data-step="3">
+      <h3>Schritt 3 — <em>und nochmal. Und nochmal.</em></h3>
+      <p style="font-family:var(--serif);font-size:1.15rem;line-height:1.55;color:var(--ink);margin-top:1.2rem">
+        Jedes generierte Wort verschiebt den Schwerpunkt. So entsteht <em>"meinen Chef"</em>, dann <em>"wegen der Verspätung"</em> — Wort für Wort.
+      </p>
+      <p style="font-family:var(--serif);color:var(--ink-soft);font-style:italic;margin-top:.8rem;border-left:1px solid var(--rule);padding-left:1rem;font-size:1.02rem;line-height:1.5">
+        Übrigens: Genau deshalb werden lange Texte oft <em>fehleranfälliger</em>. Das Modell muss sich bei Wort 500 noch an Wort 1 erinnern — je länger der Kontext, desto schwerer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXKURS (collapsible) — nach I.6 Schritt 3: Reasoning-Modelle ============ -->
+<details class="exkurs">
+  <summary class="exkurs__summary">
+    <span class="exkurs__label">Exkurs</span>
+    <span class="exkurs__title">Stimmt das auch für <em>Reasoning-Modelle</em>?</span>
+    <span class="exkurs__toggle">Ausklappen</span>
+  </summary>
+  <div class="exkurs__body">
+    <div class="exkurs__analogy" style="margin:0">
+      <p style="margin-bottom:.9rem"><em>Klassische Modelle</em> sind wie ein Experte, dem du eine Frage stellst und der sofort anfängt zu sprechen, ohne Luft zu holen. Er weiß beim ersten Wort noch nicht, wie der Satz enden wird.</p>
+      <p style="margin:0"><em>Reasoning-Modelle</em> sind derselbe Experte — aber wenn du ihm die Frage stellst, hält er erst für 30 Sekunden den Mund, geht im Kopf verschiedene Lösungswege durch, verwirft die schlechten, korrigiert seine eigenen Fehler — und gibt dir <em>dann</em> die perfekte, durchdachte Antwort.</p>
+    </div>
+  </div>
+</details>
+
+<!-- ============ DEEPER-NOTE — nach I.6 (Karpathy: Tokens statt Wörter) ============ -->
+<section class="deeper-note" aria-label="Vertiefung">
+  <span class="deeper-note__label">Wenn du tiefer willst</span>
+  <p class="deeper-note__text">
+    Die KI tippt eigentlich nicht <em>Wörter</em>, sondern <em>Sub-Word-Tokens</em> aus einem Vokabular von 50.000–100.000 Einheiten. Ein Wort wie "Verspätung" kann aus zwei oder drei Tokens bestehen.
+    <span class="konsequenz">Praktisch ändert sich nichts. Aber genau deshalb werden lange Texte fehleranfälliger — jeder Token-Schritt kann driften.</span>
+  </p>
+</section>
+
+</body>
+</html>

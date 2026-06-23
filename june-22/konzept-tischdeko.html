@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon AI · Tischdeko-Dramaturgie</title>
+<style>
+  /* ============ Apple Vision Pro / visionOS aesthetic ============ */
+  :root{
+    --ink:        #1d1d1f;          /* Apple near-black */
+    --ink-soft:   #4a4650;
+    --ink-faint:  #8a8590;
+    --glass:      rgba(255,255,255,.55);
+    --glass-2:    rgba(255,255,255,.38);
+    --glass-line: rgba(255,255,255,.70);
+    --iris:       #8b6fc4;          /* softened iris */
+    --iris-glass: rgba(139,111,196,.18);
+    --coral:      #f0876a;          /* softened coral */
+    --coral-glass:rgba(240,135,106,.20);
+    --mint:       #79c9b0;
+    --mint-glass: rgba(121,201,176,.20);
+    --gold:       #e3b778;
+    --gold-glass: rgba(227,183,120,.22);
+    --r:          30px;
+    --r-sm:       20px;
+    --shadow:     0 22px 60px -20px rgba(60,40,80,.28), 0 8px 24px -12px rgba(60,40,80,.18);
+    --font:       'SF Pro Display','SF Pro Text',-apple-system,BlinkMacSystemFont,'Inter',
+                  'Helvetica Neue',sans-serif;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+
+  html{scroll-behavior:smooth}
+
+  body{
+    font-family:var(--font);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:-.01em;
+    min-height:100vh;
+    /* warm, sunlit "room" — the visionOS environment */
+    background:
+      radial-gradient(120% 90% at 12% 8%,  rgba(255,222,200,.85) 0%, transparent 55%),
+      radial-gradient(110% 80% at 88% 4%,  rgba(214,200,240,.80) 0%, transparent 50%),
+      radial-gradient(130% 100% at 70% 95%,rgba(196,230,222,.70) 0%, transparent 55%),
+      radial-gradient(120% 110% at 20% 100%,rgba(255,210,196,.55) 0%, transparent 55%),
+      linear-gradient(160deg,#f6efe8 0%, #efeaf2 50%, #eaf1ee 100%);
+    background-attachment:fixed;
+    padding:clamp(20px,5vw,72px) clamp(16px,5vw,40px) 120px;
+  }
+
+  .wrap{max-width:1060px;margin:0 auto}
+
+  /* ---------- glass primitives ---------- */
+  .glass{
+    background:var(--glass);
+    backdrop-filter:blur(40px) saturate(180%);
+    -webkit-backdrop-filter:blur(40px) saturate(180%);
+    border:1px solid var(--glass-line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  /* top inner sheen, like visionOS panels */
+  .glass::before{
+    content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    background:linear-gradient(180deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 22%);
+    mix-blend-mode:screen;
+  }
+
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:7px 16px;border-radius:100px;
+    background:var(--glass-2);
+    border:1px solid var(--glass-line);
+    backdrop-filter:blur(20px) saturate(180%);
+    -webkit-backdrop-filter:blur(20px) saturate(180%);
+    font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .dot{width:9px;height:9px;border-radius:50%}
+  .dot--iris{background:var(--iris)} .dot--coral{background:var(--coral)}
+  .dot--mint{background:var(--mint)} .dot--gold{background:var(--gold)}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(34px,5vw,60px);margin-bottom:26px}
+  .hero h1{
+    font-size:clamp(2.2rem,6vw,4rem);
+    font-weight:700;line-height:1.02;letter-spacing:-.03em;
+    margin:18px 0 14px;
+  }
+  .hero h1 em{font-style:normal;color:var(--iris)}
+  .hero .lede{font-size:clamp(1.05rem,2.2vw,1.32rem);color:var(--ink-soft);max-width:60ch;font-weight:420}
+  .hero .meta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+
+  /* ---------- section heads ---------- */
+  .sec-head{display:flex;align-items:center;gap:14px;margin:46px 4px 18px}
+  .sec-head h2{font-size:1.5rem;font-weight:680;letter-spacing:-.02em}
+  .sec-head .pill{margin-left:auto}
+
+  /* ---------- run of show timeline ---------- */
+  .row{display:grid;grid-template-columns:1fr;gap:18px}
+  .step{padding:26px 28px}
+  .step__top{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .step__akt{
+    font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    padding:5px 12px;border-radius:100px;color:#fff;
+  }
+  .ak-iris{background:var(--iris)} .ak-coral{background:var(--coral)}
+  .ak-mint{background:var(--mint)} .ak-gold{background:var(--gold)}
+  .step__obj{font-size:.82rem;font-weight:600;color:var(--ink-faint);letter-spacing:.02em}
+  .step h3{font-size:1.18rem;font-weight:650;letter-spacing:-.015em;margin-bottom:8px}
+  .step p{color:var(--ink-soft);font-size:1rem}
+  .step p + p{margin-top:8px}
+  .step .q{
+    display:inline-block;margin-top:12px;padding:10px 16px;border-radius:14px;
+    background:var(--glass-2);border:1px solid var(--glass-line);
+    font-style:italic;color:var(--ink);font-size:.96rem;
+  }
+
+  /* two-up cards (peak / end) */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .big{padding:30px 32px}
+  .big .tag{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+  .big h3{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin:10px 0 10px}
+  .big p{color:var(--ink-soft);font-size:1.04rem}
+  .big--peak{background:linear-gradient(155deg,var(--coral-glass),var(--glass) 60%)}
+  .big--end{background:linear-gradient(155deg,var(--iris-glass),var(--glass) 60%)}
+
+  /* signature */
+  .sig{padding:32px;background:linear-gradient(155deg,var(--gold-glass),var(--glass) 65%)}
+  .sig h3{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:14px}
+  .sig .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  .sig .card{padding:20px 22px;border-radius:var(--r-sm);background:var(--glass-2);border:1px solid var(--glass-line)}
+  .sig .card .k{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
+  .sig .card p{color:var(--ink-soft);font-size:.98rem}
+
+  /* checklist */
+  .check{padding:30px 32px}
+  .check ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  .check li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-soft);font-size:.99rem}
+  .check li::before{
+    content:"";flex:none;width:22px;height:22px;border-radius:7px;margin-top:2px;
+    background:var(--mint-glass);border:1px solid var(--glass-line);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2355a98f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:center;
+  }
+  .check li b{color:var(--ink);font-weight:600}
+
+  .kicker{margin:54px 4px 0;color:var(--ink-faint);font-size:.92rem;text-align:center}
+
+  @media(max-width:720px){
+    .duo,.sig .grid,.check ul{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero glass">
+    <span class="pill"><span class="dot dot--iris"></span>Salon AI · Dramaturgie-Konzept</span>
+    <h1>Der Tisch ist der <em>Bildschirm.</em></h1>
+    <p class="lede">Jedes Objekt auf dem Tisch ist ein Stück Curriculum. Über den Abend
+      kippt die Deko von <em style="font-style:normal;color:var(--coral)">Orakel</em> zu
+      <em style="font-style:normal;color:var(--mint)">Landkarte</em> — die Verwandlung der
+      Tischdeko <i>ist</i> der Lernbogen: ein Abend, an dem KI aufhört, Magie zu sein.</p>
+    <div class="meta">
+      <span class="pill"><span class="dot dot--coral"></span>Tisch-zentriert</span>
+      <span class="pill"><span class="dot dot--mint"></span>Gemieteter Raum · intim</span>
+      <span class="pill"><span class="dot dot--gold"></span>Kein Beamer nötig</span>
+    </div>
+  </header>
+
+  <!-- RUN OF SHOW -->
+  <div class="sec-head">
+    <h2>Run of Show</h2>
+    <span class="pill">Jedes Objekt = ein Inhalt</span>
+  </div>
+
+  <div class="row">
+
+    <article class="step glass">
+      <div class="step__top">
+        <span class="step__akt ak-gold">Ankunft</span>
+        <span class="step__obj">Objekt · versiegeltes Kuvert am Platz</span>
+      </div>
+      <h3>„Was die Maschine über dich denkt."</h3>
+      <p>Statt Namenskärtchen: ein gewachssiegeltes Kuvert. Das Modell hat vorab jeden Gast
+        (nur Name + Titel) eingeschätzt — Auto, Wein, größte Unsicherheit. Alle öffnen
+        gleichzeitig, lesen reihum. Gelächter und Wiedererkennung.</p>
+      <p>Das <i>ist</i> schon der Bias-Inhalt (I.9) — als Tisch-Objekt, null Technik.</p>
+    </article>
+
+    <article class="step glass">
+      <div class="step__top">
+        <span class="step__akt ak-iris">Akt I.3</span>
+        <span class="step__obj">Objekt · Tischläufer + Word-Math-Kärtchen</span>
+      </div>
+      <h3>Der Läufer ist das Embedding-Raster — die Gäste bestücken ihn.</h3>
+      <p>Gelöste Rätselkarten werden auf den geprägten Punkte-Läufer gelegt. Über den Abend
+        wächst <i>eine gemeinsame Landkarte</i> mitten auf dem Tisch — sie bauen sie, nicht ein Beamer.</p>
+      <span class="q">„Deutschland − Berlin + Tokio = ___"  ·  „Arzt − Krankenhaus + Gericht = ___"</span>
+    </article>
+
+    <article class="step glass">
+      <div class="step__top">
+        <span class="step__akt ak-coral">Akt I.7</span>
+        <span class="step__obj">Objekt · Menükarte</span>
+      </div>
+      <h3>Das Menü ist Vektor-Arithmetik. Essbar.</h3>
+      <p>Jeder Gang steht als Gleichung auf der Karte; der Tisch rät, was kommt. „Mathe mit
+        Worten" landet im Mund, nicht auf einer Folie.</p>
+      <span class="q">Burrata − Italien + Japan = Tofu-Yuzu  ·  Schnitzel − Wien + Tokio = Katsu</span>
+    </article>
+
+    <article class="step glass">
+      <div class="step__top">
+        <span class="step__akt ak-iris">Akt I.9</span>
+        <span class="step__obj">Objekt · schiefes Mittelstück + leerer Platz</span>
+      </div>
+      <h3>Das schiefe Mittelstück hat Methode: „Schlagseite".</h3>
+      <p>Der Leuchter steht den ganzen Abend leicht schief — sieht aus wie ein Versehen.
+        Auflösung: Das Modell <i>lehnt</i> in seine Default-Welt. Daneben ein leer gedeckter
+        Platz „Ada Lovelace" — kommt im Trainingsdatensatz kaum vor, <i>deshalb</i> rät die
+        Maschine „Tech = Mann". Stiller und härter als jede Animation.</p>
+    </article>
+
+    <article class="step glass">
+      <div class="step__top">
+        <span class="step__akt ak-mint">Akt IV</span>
+        <span class="step__obj">Objekt · vier Untersetzer unter den Gläsern</span>
+      </div>
+      <h3>Die vier Kritiker liegen unter den Gläsern.</h3>
+      <p>CFO · Compliance-Anwältin · Veteran · skeptische Kundin. Wer sein Glas hebt, findet
+        seinen Kritiker. Ein Freiwilliger gibt einen echten Plan ein — die vier Urteile kommen
+        als Zettel an die Gläser. Comedy mit echtem Einsatz.</p>
+    </article>
+
+  </div>
+
+  <!-- PEAK + END -->
+  <div class="sec-head"><h2>Peak &amp; Ende</h2><span class="pill">woran man sich erinnert</span></div>
+  <div class="duo">
+    <article class="big glass big--peak">
+      <span class="tag">Höhepunkt · Akt V</span>
+      <h3>Der Gast richtet das schiefe Mittelstück auf.</h3>
+      <p>Jeder baut live einen kleinen Skill, der ihn <i>richtig</i> kennt. Wer fertig ist,
+        stellt den Leuchter gerade. Sichtbarer Kontrollwechsel: aus „die Maschine lehnt" wird
+        „<i>ich</i> habe sie austariert" — mit den Händen am Tisch, nicht auf einer Leinwand.</p>
+    </article>
+    <article class="big glass big--end">
+      <span class="tag">Starkes Ende</span>
+      <h3>Der zweite Umschlag.</h3>
+      <p>„Was die Maschine <i>jetzt</i> über dich weiß." Dieselbe Person — diesmal aus ihrem
+        eigenen Kontext geschrieben, nicht aus dem Klischee. Der Eröffnungswitz löst sich in
+        der Hand auf. Bookend.</p>
+    </article>
+  </div>
+
+  <!-- SIGNATURE -->
+  <div class="sec-head"><h2>Signature-Moment</h2><span class="pill">nur bei uns</span></div>
+  <article class="sig glass">
+    <h3>Zwei Umschläge + das Aufrichten des Leuchters.</h3>
+    <p style="color:var(--ink-soft)">Persönlich, witzig, und exakt der Lerninhalt — der Klischee-Umschlag
+      vom Anfang löst sich am Ende im echten auf.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="k">Signature-Ritual</div>
+        <p>Klischee-Umschlag → schiefer Leuchter → gerader Leuchter → echter Umschlag.
+          Ein roter Faden, der jeden Gast durch den Abend trägt.</p>
+      </div>
+      <div class="card">
+        <div class="k">Zum Mitnehmen</div>
+        <p>Der zweite Umschlag <b>und</b> der eigene Stapel Word-Math-Karten vom Läufer —
+          die Landkarte, die man selbst gelegt hat, kommt mit nach Hause.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- CHECKLIST -->
+  <div class="sec-head"><h2>Was Tati vorbereitet</h2><span class="pill">Tisch-zentriert</span></div>
+  <article class="check glass">
+    <ul>
+      <li><span><b>Zwei Umschlag-Sets pro Gast</b> — Wachssiegel, Website-Look. Das Hero-Objekt.</span></li>
+      <li><span><b>Tischläufer</b> mit geprägtem Embedding-Raster + Stapel Word-Math-Kärtchen.</span></li>
+      <li><span><b>Menükarte als Gleichungen</b> — 2–3 Gänge als Vektor-Rätsel, mit Küche abgestimmt.</span></li>
+      <li><span><b>Ein bewusst schiefes Mittelstück</b>, das man am Ende gerade stellen kann.</span></li>
+      <li><span><b>Leer gedeckter „Ada Lovelace"-Platz</b> mit Namenskärtchen.</span></li>
+      <li><span><b>Vier Kritiker-Untersetzer</b> + vier Zettel an den Gläsern.</span></li>
+      <li><span><b>Palette durchziehen</b> — Iris / Coral / warmes Papier.</span></li>
+      <li><span><b>Ein Signature-Duft</b>, kein Beamer-Zwang — alles lebt vom Tisch.</span></li>
+    </ul>
+  </article>
+
+  <p class="kicker">Nichts auf dem Tisch ist Deko, die man weglassen könnte.<br>
+    Der schiefe Leuchter <i>ist</i> der Bias. Das Menü <i>ist</i> die Mathe. Der Läufer <i>ist</i> die Landkarte.</p>
+
+</div>
+</body>
+</html>
