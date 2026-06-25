@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon AI × HiPP — Ein Abend für Ihre Führung</title>
+<meta name="description" content="Salon AI für HiPP-Führungskräfte: ein immersiver Abend, an dem KI aufhört, Magie zu sein.">
+<meta property="og:title" content="Salon AI × HiPP — KI, für die man mit seinem Namen einsteht.">
+<meta property="og:description" content="Ein Abend, an dem KI aufhört, Magie zu sein. Für Ihre Führungskräfte — hands-on, in Klartext.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0e0c0a; --ink-soft:#5c5650; --rule:#e7e2da;
+    --coral:#e26a4a; --pink:#c4356a; --iris:#3b285a;
+    --serif:'Cormorant Garamond',Didot,Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    --glass:rgba(255,255,255,.72);
+    --glass-strong:rgba(255,255,255,.82);
+    --glass-border:rgba(255,255,255,.6);
+    --shadow:0 10px 40px rgba(40,60,90,.10);
+  }
+  *{box-sizing:border-box}
+  html{font-size:118%;-webkit-text-size-adjust:100%}
+  body{
+    margin:0; font-family:var(--sans); color:var(--ink); line-height:1.6;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(255,255,255,.55), transparent 60%),
+      linear-gradient(180deg,#a9cdec 0%, #bcd8ef 22%, #d3e6f4 48%, #eaf3fa 74%, #f6fafd 100%);
+    background-attachment:fixed; min-height:100vh;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:3.4rem 1.4rem 4rem}
+  .eyebrow{font-family:var(--sans); font-size:.74rem; letter-spacing:.22em; text-transform:uppercase; color:var(--ink-soft); font-weight:600}
+  em{font-style:italic; color:var(--coral); font-weight:500}
+
+  /* Hero */
+  .hero{text-align:center; margin-bottom:2.6rem}
+  .hero h1{font-family:var(--serif); font-weight:600; line-height:1.02; letter-spacing:-.01em;
+    font-size:clamp(2.4rem,6.5vw,4.4rem); margin:1rem 0 .6rem}
+  .hero h1 em{color:var(--pink); font-style:italic}
+  .hero .sub{font-family:var(--serif); font-style:italic; font-size:clamp(1.2rem,2.6vw,1.6rem); color:var(--iris); margin:0 auto; max-width:30ch}
+
+  /* Glass card */
+  .card{
+    background:var(--glass); backdrop-filter:blur(16px) saturate(135%); -webkit-backdrop-filter:blur(16px) saturate(135%);
+    border:1px solid var(--glass-border); border-radius:24px; box-shadow:var(--shadow);
+    padding:2rem 2.1rem; margin:1.4rem 0;
+  }
+  .card h2{font-family:var(--serif); font-style:italic; font-weight:600; font-size:clamp(1.5rem,3.2vw,2.1rem); line-height:1.1; margin:.2rem 0 1rem; color:var(--ink)}
+  .card h2 em{color:var(--pink)}
+  .card p{font-size:1.02rem; margin:0 0 .9rem}
+  .card p:last-child{margin-bottom:0}
+  .lead{font-family:var(--serif); font-size:1.2rem; line-height:1.5; color:var(--ink)}
+
+  /* 3-up grid */
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:.4rem}
+  .mini{background:rgba(255,255,255,.6); border:1px solid var(--glass-border); border-left:3px solid var(--coral); border-radius:12px; padding:1rem 1.1rem}
+  .mini b{display:block; font-family:var(--sans); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--coral); margin-bottom:.4rem}
+  .mini span{font-family:var(--serif); font-size:1.04rem; line-height:1.4; color:var(--ink)}
+
+  /* outcome list */
+  ul.out{list-style:none; margin:.6rem 0 0; padding:0; display:flex; flex-direction:column; gap:.7rem}
+  ul.out li{position:relative; padding-left:1.7rem; font-size:1.05rem; line-height:1.45}
+  ul.out li::before{content:'→'; position:absolute; left:0; top:0; color:var(--pink); font-weight:700}
+
+  /* values row */
+  .values{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.4rem}
+  .chip{font-family:var(--sans); font-size:.92rem; background:rgba(196,53,106,.08); color:#8a2750; border:1px solid rgba(196,53,106,.22); border-radius:999px; padding:.4rem 1rem}
+
+  /* facts */
+  .facts{display:grid; grid-template-columns:1fr 1fr; gap:.7rem 1.6rem}
+  .facts div{border-bottom:1px solid var(--rule); padding:.5rem 0}
+  .facts dt{font-family:var(--sans); font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:.15rem}
+  .facts dd{margin:0; font-family:var(--serif); font-size:1.08rem; color:var(--ink)}
+
+  /* pull line */
+  .pull{text-align:center; font-family:var(--serif); font-style:italic; font-size:clamp(1.4rem,3.4vw,2rem); line-height:1.25; color:var(--iris); margin:2.4rem auto; max-width:24ch}
+  .pull em{color:var(--pink)}
+
+  /* CTA */
+  .cta{text-align:center}
+  .cta h2{margin-bottom:.6rem}
+  .cta a.btn{display:inline-block; margin-top:.8rem; background:var(--ink); color:#fff; text-decoration:none;
+    font-family:var(--sans); font-weight:600; font-size:.98rem; padding:.85rem 1.8rem; border-radius:999px; transition:background .15s,transform .15s}
+  .cta a.btn:hover{background:var(--pink); transform:translateY(-1px)}
+  .cta .link{display:block; margin-top:1rem; font-family:var(--sans); font-size:.82rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none}
+
+  .foot{text-align:center; font-family:var(--serif); font-style:italic; color:var(--ink-soft); font-size:.95rem; margin-top:2.4rem}
+
+  @media(max-width:680px){
+    .grid3{grid-template-columns:1fr}
+    .facts{grid-template-columns:1fr}
+    .card{padding:1.6rem 1.4rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 1 · Kopf -->
+  <header class="hero">
+    <p class="eyebrow">Salon AI × HiPP · Ein Abend für Ihre Führung</p>
+    <h1>KI, für die man mit<br>seinem <em>Namen</em> einsteht.</h1>
+    <p class="sub">Ein Abend, an dem KI aufhört, Magie zu sein.</p>
+  </header>
+
+  <!-- 2 · Haken -->
+  <section class="card">
+    <p class="lead">KI verändert gerade jede Branche — auch Ihre. Die Frage ist nicht <em>ob</em>, sondern <em>wie</em> man sie nutzt: ohne Qualität, Vertrauen und Werte zu verwässern.</p>
+    <p>Genau dafür ist dieser Abend. Keine Theorie, keine Hype-Folien. Ihre Führungskräfte begreifen KI <em>von innen</em> — und nehmen sie selbst in die Hand.</p>
+  </section>
+
+  <!-- 3 · Problem -->
+  <section class="card">
+    <h2>Warum das <em>jetzt</em> zählt.</h2>
+    <div class="grid3">
+      <div class="mini"><b>Reden ≠ verstehen</b><span>Führung entscheidet über KI aus Bauchgefühl statt aus Souveränität.</span></div>
+      <div class="mini"><b>Angst blockiert</b><span>Sorge um Kontrolle und Daten verhindert sinnvolle Anwendung.</span></div>
+      <div class="mini"><b>Zu kurz gedacht</b><span>„KI = ChatGPT" — der größere Hebel bleibt ungenutzt.</span></div>
+    </div>
+  </section>
+
+  <!-- 4 · Was der Salon AI ist -->
+  <section class="card">
+    <h2>Was der <em>Salon AI</em> ist.</h2>
+    <p class="lead">Ein kuratierter, immersiver Abend — kein Frontal-Vortrag. Ihre Führungskräfte verstehen, <em>wie</em> KI denkt, und bauen am eigenen Laptop ihren ersten KI-Helfer. In Klartext, für strategische Köpfe ohne Technik-Hintergrund.</p>
+  </section>
+
+  <!-- 5 · Outcomes -->
+  <section class="card">
+    <h2>Was Ihre Führungskräfte<br>am nächsten Morgen <em>können</em>.</h2>
+    <ul class="out">
+      <li>KI als <em>Werkzeug</em> statt Magie einschätzen — gute von schlechten Anwendungen unterscheiden.</li>
+      <li>Spürbar <em>bessere Ergebnisse</em> aus KI holen — mit Prompts, die funktionieren.</li>
+      <li>Wissen, wo die <em>Grenzen für Vertrauliches</em> liegen — und souverän damit umgehen.</li>
+      <li>Einen <em>wiederverwendbaren KI-Helfer</em> für die eigene Arbeit gebaut haben.</li>
+    </ul>
+  </section>
+
+  <!-- 6 · Warum HiPP -->
+  <section class="card">
+    <h2>Warum das zu <em>HiPP</em> passt.</h2>
+    <p>Weil KI hier nicht als Hype kommt, sondern als Haltung: <em>Verantwortung</em> vor Tempo. Werkzeuge, die Ihre <em>Qualitätsstandards stützen</em> statt verwässern. Und die Bereitschaft, für das Ergebnis <em>mit dem eigenen Namen</em> einzustehen — auf KI übertragen.</p>
+    <div class="values">
+      <span class="chip">Verantwortung statt Hype</span>
+      <span class="chip">Qualität, die KI stützt</span>
+      <span class="chip">Mit dem eigenen Namen</span>
+    </div>
+  </section>
+
+  <!-- pull line -->
+  <p class="pull">Kein Seminar. Ein <em>Erlebnis</em>, nach dem Ihre Führung KI nicht mehr fürchtet — sondern führt.</p>
+
+  <!-- 7 · Eckdaten -->
+  <section class="card">
+    <h2>Auf einen Blick.</h2>
+    <dl class="facts">
+      <div><dt>Format</dt><dd>Immersiver Abend, hands-on</dd></div>
+      <div><dt>Dauer</dt><dd>ca. 3 Stunden</dd></div>
+      <div><dt>Für wen</dt><dd>Mid- bis Senior-Management</dd></div>
+      <div><dt>Mitbringen</dt><dd>nur ein Laptop</dd></div>
+      <div><dt>Ort &amp; Termin</dt><dd>inhouse oder offsite — nach Absprache</dd></div>
+      <div><dt>Sprache</dt><dd>Deutsch</dd></div>
+    </dl>
+  </section>
+
+  <!-- 9 · CTA -->
+  <section class="card cta">
+    <h2>Lust auf einen Abend, <em>der bleibt</em>?</h2>
+    <p>Lassen Sie uns einen Termin finden, der für Ihre Führung passt.</p>
+    <a class="btn" href="mailto:franziska.wittleder@gmail.com?subject=Salon%20AI%20f%C3%BCr%20HiPP-F%C3%BChrungskr%C3%A4fte">Termin anfragen</a>
+    <a class="link" href="https://salon-ai.eu">salon-ai.eu</a>
+  </section>
+
+  <p class="foot">Salon AI · ein Abend, an dem KI aufhört, Magie zu sein.</p>
+
+</div>
+</body>
+</html>
